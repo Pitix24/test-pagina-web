@@ -22,7 +22,15 @@ Route::get('premium', function () {
 });
 Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('nosotros',function() {
+    return view('home.us');
+});
+
+
+
+
+
+
 Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 
 

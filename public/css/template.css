@@ -1,0 +1,90 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+}
+
+.social-container {
+  position: fixed;
+  /* Siempre visible en el lado izquierdo */
+  top: 50%;
+  /* Posicionado verticalmente en el centro */
+  left: 0px;
+  /* Alineado a la izquierda */
+  transform: translateY(-50%);
+  /* Centrado verticalmente */
+  display: flex;
+  flex-direction: column;
+  /* Coloca los elementos uno debajo del otro */
+  gap: 1px;
+  /* Espaciado entre los botones */
+}
+
+.social-button img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-button img:hover {
+  transform: scale(1.1);
+  /* Animación de agrandamiento al pasar el cursor */
+}
+.container-fluid {
+    background-color: #03424E;
+    /* Color de fondo similar */
+  }
+  
+  h4 {
+    color: #F6A42C;
+    /* Color de texto naranja */
+  }
+  
+  h1 {
+    color: #ffffff;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+  }
+  
+  h2 {
+    color: #03424E;
+  }
+  
+  h3 {
+    color: #ffffff;
+  }
+  
+  h5 {
+    color: #ffffff;
+    font-size: 500px;
+  }
+  
+  .text-warning {
+    color: #F6A42C !important;
+    /* Color de texto para "TUS HOGAR" */
+  }
+  
+  .btn-warning {
+    background-color: #F6A42C;
+    border-color: #F6A42C;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    border-radius: 0.25rem;
+  }
+  
+  .d-flex img {
+    border-radius: 50%;
+  }
+  .transparencia_pie {
+    width: 100%;
+    /* Ajuste opcional */
+    height: auto;
+    /* Ajuste opcional */
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
