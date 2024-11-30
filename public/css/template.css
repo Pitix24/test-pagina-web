@@ -9,7 +9,7 @@ html {
 .social-container {
   position: fixed;
   /* Siempre visible en el lado izquierdo */
-  top: 50%;
+  top: 40%;
   /* Posicionado verticalmente en el centro */
   left: 0px;
   /* Alineado a la izquierda */
@@ -87,4 +87,25 @@ html {
     /* Ajuste opcional */
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+  .transparencia_left{
+    width: 100%;
+  
+    height: 100%;
+    /* Ajuste opcional */
+    mask-image: linear-gradient(to left, black 20%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to left, black 20%, transparent 100%);
+
+margin-left: 14px;
+   
+  }
+  
+  .text-overlay {
+    position: absolute;
+    left: 8%; /* Ajusta este valor para controlar cuánto se superpone */
+
+    
+    z-index: 0;
+
+    padding: 5px 10px;
   }
