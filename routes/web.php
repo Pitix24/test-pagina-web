@@ -26,7 +26,9 @@ Route::get('nosotros',function() {
     return view('home.us');
 });
 
-
+Route::get('proyectos',function() {
+    return view('home.project');
+});
 
 
 
@@ -34,52 +36,20 @@ Route::get('nosotros',function() {
 Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 
 
-Route::resource('Socio Comercial', App\Http\Controllers\StudentController::class);
 
 
-Route::resource('Mis-certificados', App\Http\Controllers\CertificationStudentController::class);
-Route::post('course_detail',[App\Http\Controllers\CourseController::class, 'course_detail']);
-   Route::post('certification_detail',[App\Http\Controllers\CertificationController::class, 'certification_detail']);
+
 
 
 Route::group(['middleware' => ['role:Socio Comercial|Coach|Coordinación']], function () {
 
 
-Route::resource('Mi-examen', App\Http\Controllers\QualificationController::class);
-Route::resource('Mis-cursos', App\Http\Controllers\StudentCourseController::class);
 
 
-   Route::post('qualificationStore',[App\Http\Controllers\QualificationController::class, 'store']);
-   Route::post('qualificationEdit',[App\Http\Controllers\QualificationController::class, 'edit']);
-   Route::post('qualificationUpdate',[App\Http\Controllers\QualificationController::class, 'update']);
-   Route::post('qualificationDestroy',[App\Http\Controllers\QualificationController::class, 'destroy']);
-   Route::post('qualificationShow',[App\Http\Controllers\QualificationController::class, 'show']);
-   
-  Route::post('qualification_certification',[App\Http\Controllers\QualificationController::class, 'qualification_certification']);
 
-   Route::resource("evaluaciones", App\Http\Controllers\EvaluationController::class);
-   Route::post('evaluationStore',[App\Http\Controllers\EvaluationController::class, 'store']);
-   Route::post('evaluationEdit',[App\Http\Controllers\EvaluationController::class, 'edit']);
-   Route::post('evaluationUpdate',[App\Http\Controllers\EvaluationController::class, 'update']);
-   Route::post('evaluationDestroy',[App\Http\Controllers\EvaluationController::class, 'destroy']);
-   Route::post('evaluationShow',[App\Http\Controllers\EvaluationController::class, 'show']);
 
-       Route::resource("examenes", App\Http\Controllers\ExamController::class);
-   Route::post('examStore',[App\Http\Controllers\ExamController::class, 'store']);
-   Route::post('examEdit',[App\Http\Controllers\ExamController::class, 'edit']);
-   Route::post('examUpdate',[App\Http\Controllers\ExamController::class, 'update']);
-   Route::post('examDestroy',[App\Http\Controllers\ExamController::class, 'destroy']);
-   Route::post('examShow',[App\Http\Controllers\ExamController::class, 'show']);
 });
 
-
-
-   Route::resource("registros", App\Http\Controllers\RegistryController::class);
-   Route::post('registryStore',[App\Http\Controllers\RegistryController::class, 'store']);
-   Route::post('registryEdit',[App\Http\Controllers\RegistryController::class, 'edit']);
-   Route::post('registryUpdate',[App\Http\Controllers\RegistryController::class, 'update']);
-   Route::post('registryDestroy',[App\Http\Controllers\RegistryController::class, 'destroy']);
-   Route::post('registryShow',[App\Http\Controllers\RegistryController::class, 'show']);
 
 
 
@@ -89,44 +59,6 @@ Route::get('/Coordinación', [App\Http\Controllers\HomeController::class, 'siste
 Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 /////////////////////////////////////////
 Route::group(['middleware' => ['role:Coordinación|Coach']], function () {
-
-
-
-   Route::post('exam_detail',[App\Http\Controllers\ExamController::class, 'exam_detail']);
-
-        //Route::resource("preguntas", App\Http\Controllers\QuestionController::class);
-
-
-
-
-
-   Route::post('registry_detail',[App\Http\Controllers\RegistryDetailController::class, 'registry_detail']);
-
-   Route::resource("registros_mantenimiento", App\Http\Controllers\RegistryDetailController::class);
-   Route::post('registry_detailStore',[App\Http\Controllers\RegistryDetailController::class, 'store']);
-   Route::post('registry_detailEdit',[App\Http\Controllers\RegistryDetailController::class, 'edit']);
-   Route::post('registry_detailUpdate',[App\Http\Controllers\RegistryDetailController::class, 'update']);
-   Route::post('registry_detailDestroy',[App\Http\Controllers\RegistryDetailController::class, 'destroy']);
-   Route::post('registry_detailShow',[App\Http\Controllers\RegistryDetailController::class, 'show']);
-
-   
-   Route::resource("cursos", App\Http\Controllers\CourseController::class);
-   Route::post('courseStore',[App\Http\Controllers\CourseController::class, 'store']);
-   Route::post('courseEdit',[App\Http\Controllers\CourseController::class, 'edit']);
-   Route::post('courseUpdate',[App\Http\Controllers\CourseController::class, 'update']);
-   Route::post('courseDestroy',[App\Http\Controllers\CourseController::class, 'destroy']);
-
-
-
-
-   Route::post('certificationStore',[App\Http\Controllers\CertificationController::class, 'store']);
-   Route::post('certificationEdit',[App\Http\Controllers\CertificationController::class, 'edit']);
-   Route::post('certificationUpdate',[App\Http\Controllers\CertificationController::class, 'update']);
-   Route::post('certificationDestroy',[App\Http\Controllers\CertificationController::class, 'destroy']);
-   Route::post('certificationShow',[App\Http\Controllers\CertificationController::class, 'show']);
-
-
-
 
 
 
@@ -166,9 +98,6 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
    Route::post('category_productEdit',"ProductController@category_productEdit");
 
 
- Route::resource("inscripcion", App\Http\Controllers\InscriptionController::class);
-Route::post('inscriptionStore',[App\Http\Controllers\InscriptionController::class, 'store']);
-
 
    Route::resource('usuarios', App\Http\Controllers\UserController::class);
    Route::post('userCreate', 'UserController@create');
@@ -207,24 +136,9 @@ Route::post('inscriptionStore',[App\Http\Controllers\InscriptionController::clas
 
 
 
-   Route::resource("horarios", App\Http\Controllers\ScheduleController::class);
-   Route::post('scheduleStore',[App\Http\Controllers\ScheduleController::class, 'store']);
-   Route::post('scheduleEdit',[App\Http\Controllers\ScheduleController::class, 'edit']);
-   Route::post('scheduleUpdate',[App\Http\Controllers\ScheduleController::class, 'update']);
-   Route::post('scheduleDestroy',[App\Http\Controllers\ScheduleController::class, 'destroy']);
-   Route::post('scheduleShow',[App\Http\Controllers\ScheduleController::class, 'show']);
 
 
 
-
-
-
-   Route::resource("Socio Comercials", App\Http\Controllers\StudentController::class);
-   Route::post('studentStore',[App\Http\Controllers\StudentController::class, 'store']);
-   Route::post('studentEdit',[App\Http\Controllers\StudentController::class, 'edit']);
-   Route::post('studentUpdate',[App\Http\Controllers\StudentController::class, 'update']);
-   Route::post('studentDestroy',[App\Http\Controllers\StudentController::class, 'destroy']);
-   Route::post('studentShow',[App\Http\Controllers\StudentController::class, 'show']);
 
 // Route::get('qrcode', function () {
 //      return QrCode::size(300)->generate('https://certificados.socialdata-peru.com/');
@@ -237,22 +151,6 @@ Route::post('inscriptionStore',[App\Http\Controllers\InscriptionController::clas
    Route::post('socialMediaShare',[App\Http\Controllers\SocialMediaController::class, 'share']);
 
 //
-
-
-  Route::post('certificaciones/certificationSavePhoto',[App\Http\Controllers\CertificationController::class, 'savePhoto']);
-
-
-    Route::get('certificaciones/{id}/{type}/{cid}/{cert}',[App\Http\Controllers\CertificationController::class, 'report']);
-
-   Route::post('certificationGenerate',[App\Http\Controllers\RegistryDetailController::class, 'certificationGenerate']);
-    //  Route::post('certificationOpen',[App\Http\Controllers\RegistryDetailController::class, 'certificationGenerate']);
-    //obtener registry_detail_id para poder generar el certificado despuees
-         Route::resource("certificados_mantenimiento", App\Http\Controllers\CertificationController::class);
-          Route::get('Socio Comercial-certificados',[App\Http\Controllers\CertificationController::class, 'student']);
-     
-    
-
- Route::resource("certificados", App\Http\Controllers\CertificateController::class);
 
 
  Route::get('logout',[\App\Http\Controllers\Auth\LoginController::class, 'logout']);
@@ -309,19 +207,8 @@ Route::post('inscriptionStore',[App\Http\Controllers\InscriptionController::clas
     
 });
 
-Route::controller(ExamController::class)->group(function(){
-   
-    Route::post('exams-import', 'import')->name('exams.import');
-
-});
 
 
-Route::controller(RegistryDetailController::class)->group(function(){
-   
-    Route::post('registry_detail-import', 'import')->name('registry_detail.import');
-    Route::post('registryDetailImportGoogle', 'importGoogle');
-
-});
 
 //////////////////////////////////////////////////
 
