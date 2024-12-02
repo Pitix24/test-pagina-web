@@ -37,8 +37,8 @@
 
                 </p>
                 <p class="d-sm-block d-md-none d-lg-none d-xl-none text-left  fs-1 text-white text-overlay"style="word-spacing: 2px;
-                    margin-left: -20px;margin-top:-10px;
-                    ">
+                                margin-left: -20px;margin-top:-10px;
+                                ">
 
                     Somos una inmobiliaria completamente peruana,<br>
                     dedicada a la creación de proyectos inmobiliarios <br>
@@ -61,32 +61,39 @@
     <style>
         .borde-derecha {
 
-            border-right: 5px solid;
+            border-left: 5px solid;
             border-color: white;
 
         }
     </style>
 
-    <div class="container-fluid py-1"style="background-color: #F6A42C;">
-        <div class="container mt-10">
-            <div class="row"style="margin-top:50px">
-                <div class="col-xl-1 col-lg-0 col-md-0 col-sm-0">
+    <div class="container-fluid py-1"style="background-color:  #FF9D0D;">
+        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
+            <div class="row">
+                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
                 </div>
-                <div class="d-none d-xl-block col-xl-2 d-flex align-content-center borde-derecha"
+                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
+                    <h2 class="fs-10 text-end"><b>MISIÓN</b> </h2>
+                </div>
+                <div
+                    class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-8 text-end"style=""><b>MISIÓN</b> </h2>
+                </div>
+                <div
+                    class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>MISIÓN</b> </h2>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
                     style="clip-path: inset(20px 0 30px 0);">
-                    <h2 class="fs-10"style="padding-left:40px"><b>MISIÓN</b> </h2>
-                </div>
-                <div class="d-none d-lg-block d-xl-none col-lg-4 d-flex align-content-center borde-derecha">
-                    <h2 class="fs-8"style="padding-left:180px;"><b>MISIÓN</b> </h2>
-                </div>
-
-                <div class="col-xl-1 col-lg-1   d-flex align-content-center">
-                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png" width="80px" height="50%"
-                        alt="" srcset="" style="margin-top:50%">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                        alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
 
                 </div>
-                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7">
-                    <p style="color:#03424E;text-align:justify; ">
+                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -96,8 +103,11 @@
                         </b>
                     </p>
                 </div>
-                <div class="d-none d-lg-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#03424E;text-align:justify; ">
+                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
+
+                </div>
+                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -107,29 +117,194 @@
                         </b>
                     </p>
                 </div>
-                <div class="col-xl-1 col-lg-0 col-md-0 col-sm-0">
+                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
+
+                </div>
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                        <b>
+                            Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
+                            y
+                            eco sostenibles. Ofrecemos asesoramiento integral para satisfacer tus necesidades inmobiliarias
+                            y
+                            maximizar tu rentabilidad con integridad y empatía.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
+
                 </div>
             </div>
             <p></p>
         </div>
+    </div>
+    <div class="container-fluid py-1"style="background-color: #FFAC32">
+        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
+            <div class="row">
+                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
+                </div>
+                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
+                    <h2 class="fs-10 text-end"><b>VISIÓN</b> </h2>
+                </div>
+                <div
+                    class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-8 text-end"style=""><b>VISIÓN</b> </h2>
+                </div>
+                <div
+                    class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>VISIÓN</b> </h2>
+                </div>
 
-        {{-- <div class="section vision mt-4">
-            <div class="icon">
-                <i class="bi bi-eye"></i>
+                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
+                    style="clip-path: inset(20px 0 30px 0);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                        alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
+
+                </div>
+                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
+                        <b>
+                            Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
+                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
+                        </b>
+                    </p>
+                </div>
+                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
+
+                </div>
+                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                        <b>
+                            Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
+                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
+                        </b>
+                    </p>
+                </div>
+                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
+
+                </div>
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                        <b>
+                            Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
+                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
+
+                </div>
             </div>
-            <div class="divider"></div>
-            <div class="content">
-                <h3>VISIÓN</h3>
-                <p>Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles, liderando
-                    en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.</p>
+            <p></p>
+        </div>
+    </div>
+    <div class="container-fluid py-1"style="background-color: #FF9D0D;">
+        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
+            <div class="row">
+                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
+                </div>
+                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
+                    <h2 class="fs-10 text-end"><b>VALORES</b> </h2>
+                </div>
+                <div
+                    class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-8 text-end"style=""><b>VALORES</b> </h2>
+                </div>
+                <div
+                    class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                ">
+                    <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>VALORES</b> </h2>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
+                    style="clip-path: inset(20px 0 30px 0);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                        alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
+
+                </div>
+                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
+                        <b>
+                            Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
+                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
+                        </b>
+                    </p>
+                </div>
+                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
+
+                </div>
+                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                        <b>
+                            Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
+                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
+                        </b>
+                    </p>
+                </div>
+                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
+
+                </div>
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                        <b>
+                            Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
+                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
+                        </b>
+                    </p>
+                </div>
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
+
+                </div>
             </div>
-        </div> --}}
+            <p></p>
+        </div>
     </div>
 
 
+    <p></p>
 
+    <div class="container my-5">
+        <div class="row align-items-center mt-10">
+            <!-- Columna izquierda: Reproductor multimedia -->
+            <div class="col-lg-6 col-md-12 mb-10">
+                <div class="ratio ratio-16x9">
+                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
 
+                    </lite-youtube>
 
+                </div>
+            </div>
+
+            <!-- Columna derecha: Texto descriptivo -->
+            <div class="d-none d-md-block col-lg-6 col-md-12  mt-2">
+                <div class="container">
+                    <h2 class="fs-10">
+                        <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
+                    </h2>
+                    <p class="text-primary fs-7" style="text-align: justify">
+                        Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
+                        terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
+                    </p>
+
+                </div>
+            </div>
+            <div class=" d-md-none col-lg-6 col-md-12  ">
+                <div class="container">
+                    <h2 class="fs-10">
+                        <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
+                    </h2>
+                    <p class="text-primary fs-4" style="text-align: justify">
+                        Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
+                        terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -176,76 +351,102 @@
             font-size: 1rem;
         }
     </style>
+<style>
+.card {
+    position: relative;
+    overflow: hidden; /* Asegura que los elementos no desborden */
+    mask-image: linear-gradient(to bottom, #ffffff 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #ffffff 70%, transparent 100%);
+    height: 500px;
+    transition: transform 0.3s ease; /* Transición suave para efectos de hover */
+}
+
+/* Asegura que el degradado no cambie en hover */
+.card:hover {
+    mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
+    transform: scale(1.05); /* Efecto opcional de escalado */
+}
+
+/* Si quieres que las imágenes se mantengan constantes en hover */
+.card-img {
+    transition: transform 0.3s ease; /* Agrega transición a la imagen */
+}
+
+.card:hover .card-img {
+    transform: scale(1.1); /* Opcional: ligero zoom de la imagen */
+}
 
 
+</style>
+<section class="container-fluid">
     <div class="container py-5">
-        <div class="row g-4">
-            <div class="col-md-3">
+        <div class="row g-4 mt-xl-10 mb-xl-10">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-6 col-lg-3">
                 <div class="card position-relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Respeto" class="card-img">
+                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
+                     alt="Respeto" class="card-img">
                     <div class="card-overlay">
-                        <h5 class="card-title">RESPETOSSSS12SSS</h5>
-                        <p class="card-text">LIMA</p>
+                        <h5 class="card-title text-white">RESPETO</h5>
+                        <p class="card-text text-white" style="padding-bottom: 50px">LIMA</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 col-lg-3">
                 <div class="card position-relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Empatía" class="card-img">
+                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Empatía" class="card-img">
                     <div class="card-overlay">
-                        <h5 class="card-title">EMPATÍA</h5>
-                        <p class="card-text">Read More</p>
+                        <h5 class="card-title text-white">EMPATÍA</h5>
+                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6 col-lg-3">
                 <div class="card position-relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Integridad" class="card-img">
+                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Integridad" class="card-img">
                     <div class="card-overlay">
-                        <h5 class="card-title">INTEGRIDAD</h5>
-                        <p class="card-text">Read More</p>
+                        <h5 class="card-title text-white">INTEGRIDAD</h5>
+                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6 col-lg-3">
                 <div class="card position-relative">
-                    <img src="https://via.placeholder.com/300x200" alt="Compromiso" class="card-img">
+                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Compromiso" class="card-img">
                     <div class="card-overlay">
-                        <h5 class="card-title">COMPROMISO</h5>
-                        <p class="card-text">Read More</p>
+                        <h5 class="card-title text-white">COMPROMISO</h5>
+                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</section>
 
 
 
 
+<p></p>
 
 
 
-
-
-
-
-
-
-
-
-
-    <p></p>
-
-    <div class="container my-5 mt-10">
-        <div class="row">
+<div class="container my-5 mt-lg-5">
+       
+        <div class="row container">
+            <h2 class="display-6"> <b>PREGUNTAS FRECUENTES</b>  </h2>
             <!-- Preguntas frecuentes (acordeón) -->
             <div class="col-md-8">
                 <div class="accordion" id="faqAccordion">
                     <div class="accordion-item">
+                        
                         <h2 class="accordion-header" id="headingOne">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne">
-                                ¿Cuáles son las opciones de pago?
+                                ¿Cuáles son las opciones de pago para la adquisición de mi lote?
                             </button>
                         </h2>
                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"
@@ -275,7 +476,8 @@
 
             <!-- Tarjeta izquierda -->
             <div class="col-md-4">
-                <div id="leftCard" class="card p-3 text-white bg-dark">
+                <div id="leftCard" class="p-3 text-white bg-dark" style="border-radius: 20px;text-align:center">
+                    <br>
                     <p id="dynamicContent">Selecciona una pregunta para ver el detalle aquí.</p>
                 </div>
             </div>
@@ -285,7 +487,7 @@
         document.querySelectorAll('.accordion-collapse').forEach(collapse => {
             collapse.addEventListener('show.bs.collapse', function() {
                 const content = collapse.getAttribute('data-content');
-                document.getElementById('dynamicContent').innerText = `Detalles sobre: ${content}`;
+                document.getElementById('dynamicContent').innerText = ` ${content}`;
             });
         });
     </script>
