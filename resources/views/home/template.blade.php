@@ -37,7 +37,7 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
-          <a class="navbar-brand me-0 py-0 m-2 " href="index.html"> <img src="ayba/1.png" alt="img-fluid"
+          <a class="navbar-brand me-0 py-0 m-2 " href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
               width="80px" />
           </a>
           <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
@@ -52,28 +52,28 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px; ">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docs/index.html" target="_blank" style="color:#F6A42C">
+                <a class="nav-link" aria-current="page" href="{{url('/')}}"  style="color:#F6A42C">
                   <b style=" word-spacing: 9px;">INICIO </b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docs/index.html" target="_blank" style="color:#03424E">
+                <a class="nav-link" aria-current="page" href="{{url('nosotros')}}" style="color:#03424E">
                   <b style=" word-spacing: 9px;">NOSOTROS </b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docs/index.html" target="_blank" style="color:#03424E">
+                <a class="nav-link" aria-current="page" href="{{url('proyectos')}}" style="color:#03424E">
                   <b style=" word-spacing: 9px;">PROYECTOS </b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docs/index.html" target="_blank" style="color:#03424E">
+                <a class="nav-link" aria-current="page" href="{{url('blog')}}" style="color:#03424E">
                   <b style=" word-spacing: 9px;">BLOG </b></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="docs/index.html" target="_blank" style="color:#03424E">
+                <a class="nav-link" aria-current="page" href="{{url('contacto')}}" style="color:#03424E">
                   <b style=" word-spacing: 9px;">CONTÁCTANOS </b></a>
               </li>
 
               <li class="nav-item ms-2">
-                <a class="btn btn-hover-shadow" href="main/authentication-login2.html"
+                <a class="btn btn-hover-shadow" href="https://pagos.aybarcorp.com"
                   style="color:white;border-radius:100px;background-color:#F6A42C;width: 190px;">
                   <b>PAGA TU LOTE</b>
                 </a>
