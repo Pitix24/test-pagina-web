@@ -29,6 +29,9 @@ Route::get('nosotros',function() {
 Route::get('proyectos',function() {
     return view('home.project');
 });
+Route::get('blog',function() {
+    return view('home.blog');
+});
 
 
 
