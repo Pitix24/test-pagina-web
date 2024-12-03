@@ -23,7 +23,7 @@ mask-image: linear-gradient(to top, #000000 60%, transparent 100%);
 /* -webkit-mask-image: linear-gradient(to top, #000000 60%, transparent 100%); */
 }
     </style>
-    <section class="position-relative text-white" style="background-color: #03242b ">
+    <section class=" text-white" style="background-color: #03242b ">
         <div
             class="d-none  d-md-block
             pt-xl-4 pt-5 pt-sm-5  w-100 position-absolute

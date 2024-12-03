@@ -32,6 +32,9 @@ Route::get('proyectos',function() {
 Route::get('blog',function() {
     return view('home.blog');
 });
+Route::get('contacto',function() {
+    return view('home.contact');
+});
 
 
 

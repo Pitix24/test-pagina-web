@@ -85,7 +85,7 @@
     </header>
 
 
-<div class="social-container p-2 pt-3 pb-3"
+{{-- <div class="social-container p-2 pt-3 pb-3"
 style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
 <a href="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" target="_blank"
@@ -98,7 +98,7 @@ style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-r
 <a href="https://www.linkedin.com" target="_blank" class="social-button">
   <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
 </a>
-</div>
+</div> --}}
 
 @yield("content")
 

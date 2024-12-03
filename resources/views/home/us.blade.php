@@ -13,7 +13,7 @@
                 <h4 class="d-none d-md-block d-xl-none d-lg-none fs-7  text-start"style="margin-top:-45%">
                     <b>¿QUIÉNES SOMOS?</b>
                 </h4>
-                <h4 class="  d-md-none d-xl-none d-lg-none fs-2  text-start"style="margin-top:-28%">
+                <h4 class="  d-md-none d-xl-none d-lg-none fs-2 text-start"style="margin-top:-48%;">
 
                     <b>¿QUIÉNES SOMOS?</b>
                 </h4>
@@ -40,18 +40,23 @@
                                 margin-left: -20px;margin-top:-10px;
                                 ">
 
-                    Somos una inmobiliaria completamente peruana,<br>
-                    dedicada a la creación de proyectos inmobiliarios <br>
-                    de terrenos de todas las familias del Perú. <br>
+                    Somos una inmobiliaria completamente<br> peruana,
+                    dedicada a la creación de<br> proyectos  inmobiliarios 
+                    de terrenos de <br> todas lasfamilias  del Perú.
 
 
                 </p>
 
             </div>
-            <div class="col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6">
+            <div class="d-none d-md-block d-lg-block d-xl-block col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6">
                 <img class="transparencia_left" style="" width="100%"
                     src="https://www.humaniq.com.mx/blog/wp-content/uploads/2023/09/altos-ejecutivos-scaled.jpeg"
                     alt="" srcset="">
+            </div>
+            <div class="d-sm-block d-md-none d-lg-none d-xl-none col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6"style="height:100px">
+                <img class="transparencia_left" style="" width="100%"
+                    src="https://www.humaniq.com.mx/blog/wp-content/uploads/2023/09/altos-ejecutivos-scaled.jpeg"
+                    alt="" srcset="" >
             </div>
         </div>
     </div>
@@ -61,8 +66,8 @@
     <style>
         .borde-derecha {
 
-            border-left: 5px solid;
-            border-color: white;
+                /* border-left: 5px solid;
+                border-color: white; */
 
         }
     </style>
@@ -86,9 +91,9 @@
                     <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>MISIÓN</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
-                    style="clip-path: inset(20px 0 30px 0);">
-                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex borde-derecha "
+                    style="clip-path: inset(0px 0 0px 0);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="100%" height="50%"
                         alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
 
                 </div>
@@ -117,10 +122,8 @@
                         </b>
                     </p>
                 </div>
-                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
-
-                </div>
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+               
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
                     <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
@@ -131,9 +134,7 @@
                         </b>
                     </p>
                 </div>
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
-
-                </div>
+             
             </div>
             <p></p>
         </div>
@@ -157,9 +158,9 @@
                     <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>VISIÓN</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
-                    style="clip-path: inset(20px 0 30px 0);">
-                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4 col-md-2 d-flex borde-derecha "
+                    style="clip-path: inset(0px 0 0px 0);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="100%" height="50%"
                         alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
 
                 </div>
@@ -185,7 +186,7 @@
                 <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
 
                 </div>
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
                     <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
@@ -219,9 +220,9 @@
                     <h2 class="fs-7 text-end"style="padding-left:50px;padding-top:35px"><b>VALORES</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-6 col-6  col-md-2 d-flex borde-derecha "
-                    style="clip-path: inset(20px 0 30px 0);">
-                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="70px" height="50%"
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex borde-derecha "
+                    style="clip-path: inset(0px 0 0px 0);">
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="100%" height="50%"
                         alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
 
                 </div>
@@ -247,7 +248,7 @@
                 <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
 
                 </div>
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-10">
+                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
                     <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
@@ -271,7 +272,7 @@
             <!-- Columna izquierda: Reproductor multimedia -->
             <div class="col-lg-6 col-md-12 mb-10">
                 <div class="ratio ratio-16x9">
-                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
+                    <lite-youtube  videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
 
                     </lite-youtube>
 
