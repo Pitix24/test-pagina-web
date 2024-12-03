@@ -5,6 +5,7 @@ use App\Http\Controllers\RegistryDetailController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,14 +48,6 @@ Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])-
 
 
 
-Route::group(['middleware' => ['role:Socio Comercial|Coach|Coordinación']], function () {
-
-
-
-
-
-
-});
 
 
 
@@ -64,12 +57,7 @@ Route::group(['middleware' => ['role:Socio Comercial|Coach|Coordinación']], fun
 Route::get('/Coordinación', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 /////////////////////////////////////////
-Route::group(['middleware' => ['role:Coordinación|Coach']], function () {
 
-
-
- 
-});
 
 
 

@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css" />
   <link rel="stylesheet" href="css/template.css" />
-  @vite(['resources/css/app.css', 'resources/js/app.js'])
+  {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 
 </head>
 
