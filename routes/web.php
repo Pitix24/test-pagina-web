@@ -17,12 +17,23 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-Route::get('premium', function () {
 
-      return view('vista2');
-});
+
+Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
+
+
+
+
+
+
+
+
 Auth::routes();
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/',function() {
+    return view('home.home');
+});
+
 Route::get('nosotros',function() {
     return view('home.us');
 });

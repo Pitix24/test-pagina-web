@@ -6,8 +6,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Favicon icon-->
-  <link rel="shortcut icon" type="image/png" href="ayba/1.png" />
+  <link rel="icon" type="image/jpg" href="{{ asset('ayba/favicon.png') }}" />
   <!-- Core Css -->
   <link rel="stylesheet" href="assets/css/styles.css" />
   <title>AybarCorp</title>
@@ -16,10 +15,21 @@
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css" />
   <link rel="stylesheet" href="css/template.css" />
   @vite(['resources/css/app.css', 'resources/js/app.js'])
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<style>
+body {
+  font-family: 'Montserrat', sans-serif; /* Aplica Montserrat como fuente principal */
+  font-size: 16px; /* Tamaño base del texto */
+
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+
+</style>
+<body >
   <!-- Preloader -->
   <div class="preloader"><img src="ayba/1.png" alt="loader" class="lds-ripple img-fluid" /></div>
   <div style="background-color: #03424E; height: 80px;margin-bottom: -10px;"
@@ -39,7 +49,7 @@
         <div class="container">
         
               <a class="position-relative navbar-brand me-0 py-0 m-2 " href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
-                width="80px"style="margin-left:150%" />
+                width="80px"style="margin-left:0%" />
             </a>
          
       

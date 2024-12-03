@@ -12,12 +12,12 @@ class HomeController extends Controller
      *
      * @return void
      */
-    // public function __construct()
-    // {
-    //     $this->middleware('auth');
+    public function __construct()
+    {
+        $this->middleware('auth');
 
 
-    // }
+    }
 
     /**
      * Show the application dashboard.
@@ -29,14 +29,14 @@ class HomeController extends Controller
        $users= Auth::user();
 
       //  return $users->roles_;
-    //  return view('home',compact("users"));
-    return view("home.home");
+      return view('home',compact("users"));
+  //  return view("home.home");
     }
     public function sistema()
     {
        $users= Auth::user();
 
 
-      return view('sistema',compact("users"));
+   //   return view('sistema',compact("users"));
     }
 }

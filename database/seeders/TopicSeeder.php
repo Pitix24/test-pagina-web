@@ -14,7 +14,7 @@ class TopicSeeder extends Seeder
     public function run(): void
     {
         Topic::create([
-            'course_id' => '1',
+            
             'user_id' => '2',
             'description' => 'Sql Server',
             'detail' =>'detalles',
@@ -24,7 +24,7 @@ class TopicSeeder extends Seeder
             
         ]);
         Topic::create([
-            'course_id' => '1',
+            
             'user_id' => '2',
             'description' => 'Python',
             'detail' =>'detalles',
