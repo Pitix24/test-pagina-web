@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/libs/aos/dist/aos.css" />
   <link rel="stylesheet" href="css/template.css" />
-  {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+  @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 </head>
 
@@ -37,9 +37,16 @@
     <header class="header">
       <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
-          <a class="navbar-brand me-0 py-0 m-2 " href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
-              width="80px" />
-          </a>
+        
+              <a class="position-relative navbar-brand me-0 py-0 m-2 " href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
+                width="80px"style="margin-left:150%" />
+            </a>
+         
+      
+        
+          {{-- <a class=" navbar-brand me-0 py-0 m-2 text-end" href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
+            width="80px" />
+        </a> --}}
           <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -85,20 +92,7 @@
     </header>
 
 
-{{-- <div class="social-container p-2 pt-3 pb-3"
-style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
-<a href="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" target="_blank"
-  class="social-button">
-  <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Instagram">
-</a>
-<a href="https://www.facebook.com" target="_blank" class="social-button">
-  <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
-</a>
-<a href="https://www.linkedin.com" target="_blank" class="social-button">
-  <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
-</a>
-</div> --}}
 
 @yield("content")
 
@@ -332,6 +326,97 @@ style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-r
         </form>
       </div>
     </div>
+
+
+
+
+
+    <style>
+
+      /* Estilos para el botón flotante de WhatsApp */
+      .whatsapp-container {
+          position: fixed;
+          bottom: 80px;
+          right: 20px;
+          display: flex;
+          align-items: center;
+      }
+  
+      .whatsapp-btn {
+  background-color: #25d366;
+  /* Color de fondo del botón */
+  border-radius: 50%;
+  /* Hace que el botón tenga forma circular */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 0px rgba(233, 19, 19, 0.3);
+  /* Desenfoque negro adicional */
+  margin-right: 10px; /* Espacio entre el botón y el mensaje */
+}
+
+  
+      .whatsapp-btn a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          line-height: 50px;
+          color: #fff;
+          /* Color del ícono */
+          font-size: 30px;
+      }
+  
+      .whatsapp-message {
+          background-color: #023039;
+          color: #fff;
+          padding: 10px;
+          border-radius: 20px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          font-family: Arial, sans-serif;
+          font-size: 10px;
+          white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+      }
+  </style>
+  
+  
+  
+    </div>
+      <div class="whatsapp-container">
+          <div class="whatsapp-message">
+              ¿Necesitas ayuda?
+          </div>
+          <div class="whatsapp-btn">
+              <a href="#" target="_blank" title="Enviar mensaje por WhatsApp">
+          
+                  <i class="ti ti-brand-whatsapp"></i>
+              </a>
+          </div>
+    
+      </div>
+  
+
+
+
+
+      <div class="social-container  p-2 pt-3 pb-3"
+      style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
+      
+      <a href="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" target="_blank"
+        class="social-button">
+        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="social-button">
+        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" class="social-button">
+        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
+      </a>
+      </div>
+
+
+
+
+
 
     <div class="dark-transparent sidebartoggler"></div>
     <script src="assets/js/vendor.min.js"></script>
