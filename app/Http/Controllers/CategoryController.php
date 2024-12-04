@@ -22,7 +22,7 @@ class CategoryController extends Controller
     {
         //
         $category = Category::orderBy('id','DESC')->get();
-        return view("category", compact("category"));
+        return view("category.category", compact("category"));
     }
 
     /**
@@ -34,7 +34,7 @@ class CategoryController extends Controller
     {
         //
         $category = Category::orderBy('id','DESC')->get();
-        return view("categorytable", compact("category"));
+        return view("category.categorytable", compact("category"));
     }
 
     /**

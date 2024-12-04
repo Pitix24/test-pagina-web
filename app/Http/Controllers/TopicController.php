@@ -24,11 +24,8 @@ class TopicController extends Controller
     }
     public function index()
     {
-        $course_id = Session::get('course_id');
-        $course = Course::where("id", "=", $course_id)->get();
-        $topic = Topic::where("course_id", "=", $course_id)->get();
-        $category = Category::all();
-        return view("topic", compact("topic", "category", "course"));
+        $topic = Topic::all();
+        return view("topic.topic", compact("topic"));
         //
     }
 
@@ -37,10 +34,10 @@ class TopicController extends Controller
      */
     public function create()
     {
-        $course_id = Session::get('course_id');
-        $topic = Topic::where("course_id", "=", $course_id)->get();
+        
+        $topic = Topic::all();
 
-        return view("topictable", compact("topic"));
+        return view("topic.topictable", compact("topic"));
     }
     public function report(Request $request)
     {

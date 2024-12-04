@@ -1,4 +1,5 @@
-<table id="file_export" class="table w-100 table-striped table-bordered display text-nowrap">
+
+<table id="file_export" class="text-center table table-hover table-bordered table-striped table-responsive">
     <thead>
         <!-- start row -->
         <tr>
@@ -9,7 +10,7 @@
                     srcset=""></th>
             <th>ID</th>
             <th>Estado</th>
-            <th> <i class="fab fa-whatsapp"style="color:green"></i></th>
+            <th>  <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i></th>
             <th>Dni</th>
             <th>Paterno</th>
             <th>Materno</th>
@@ -34,13 +35,16 @@
                 </td>
                 <td>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success note-icon-pencil" data-toggle="modal"
-                        data-target="#exampleModal"
+                    <button type="button" class="btn btn-success ti ti-pencil" 
+                    data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                         onclick="userEdit('{{ $users->id }}'); Up();  return false"></button>
+
+
+                      
                 </td>
                 <td>
-                    <!-- <button class="note-icon-pencil" ></button> -->
-                    <button class="btn btn-danger note-icon-trash"
+                 
+                    <button class="btn btn-danger ti ti-trash"
                         onclick="userDestroy('{{ $users->id }}'); return false"></button>
                 </td>
 
@@ -49,9 +53,10 @@
                 <td>{{ $users->id }}</td>
                 <td>
                     @if ($users->session == '')
-                        <span class="badge badge-danger">Inactivo</span>
+                 
+                        <span class="badge text-bg-danger">Inactivo</span>
                     @else
-                        <span class="badge badge-success">Activo</span>
+                        <span class="badge text-bg-success">Activo</span>
                     @endif
                 </td>
                 <td>
@@ -59,7 +64,7 @@
                         $whatsapp = 'https://api.whatsapp.com/send?phone=' . $users->cellphone;
                     @endphp
                     <a target="_blank" href="{{ $whatsapp }}">
-                        <i class="fab fa-whatsapp"style="color:green;margin-left:8px"></i>
+                        <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i>
 
                     </a>
                 </td>
@@ -104,7 +109,7 @@
                   srcset=""></th>
           <th>ID</th>
           <th>Estado</th>
-          <th> <i class="fab fa-whatsapp"style="color:green"></i></th>
+          <th>  <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i></th>
           <th>Dni</th>
           <th>Paterno</th>
           <th>Materno</th>
@@ -117,3 +122,15 @@
         <!-- end row -->
     </tfoot>
 </table>
+
+
+
+
+
+
+
+
+    <script>
+ 
+      </script>
+    

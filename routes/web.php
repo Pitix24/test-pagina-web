@@ -47,6 +47,9 @@ Route::get('blog',function() {
 Route::get('contacto',function() {
     return view('home.contact');
 });
+Route::get('users',function() {
+    return view('user.usertable');
+});
 
 
 

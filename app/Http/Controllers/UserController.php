@@ -48,7 +48,7 @@ class UserController extends Controller
     public function create()
     {
         $user = User::orderBy('id','DESC')->get();
-        return view('usertable', compact('user'));
+        return view('user.usertable', compact('user'));
     }
 
     /**
@@ -78,6 +78,7 @@ class UserController extends Controller
             $user->email = $request->email;
             $user->sex = $request->sex;
             $user->save();
+            $user->assignRole("Administrador");
 
         } catch (\Exception $e) {
             // do task when error

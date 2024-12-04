@@ -154,6 +154,7 @@
     {{-- {{ $user->onEachSide(1)->links() }} --}}
     <p></p>
     <div id="mycontent">
+        
         @include('usertable')
     </div>
 
