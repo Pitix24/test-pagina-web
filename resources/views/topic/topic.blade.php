@@ -6,7 +6,8 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h4 class="mb-4 mb-md-0 card-title">Blog</h4>
+                            <h1>Blog</h1>
+                            {{-- <h1 class="mb-4 mb-md-0 card-title">Blog</h1> --}}
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item d-flex align-items-center">
@@ -27,18 +28,95 @@
             </div>
 
             <div class="datatables">
-
                 <!-- start File export -->
                 <div class="card">
                     <div class="card-body">
-                      
+                        <form action="" method="post" role="form" id="topic"
+                            name="form"enctype="multipart/form-data">
+                            <input type="hidden" name="id" id="id">
+                            {{ csrf_field() }}
+                            <h6>Descripción :</h6>
+                            <input type="text" name="description" id="description" class="form-control">
+                            <h6>Tipo :</h6>
+                            <select name="type" id="type"class="form-control">
+                                <option value="video">Video</option>
+                                <option value="read">Lectura</option>
+                            </select>
+                            <br>
+                            <h6>Portada</h6>
+                            <p></p>
+                            <div class="col-12">
+                                <input class="form-control" type="file" id="imgInp" name="photo"
+                                    onchange="readImage(this,'#blah');">
+
+                            </div>
+                            <div class="col-12">
+                                <br>
+                                <img id="blah" name="fotografia" src="https://placehold.co/500x350" alt="Tu imagen"
+                                    class="" width="100%" height="200px">
+                                <p></p>
+                            </div>
+
+                            <p>
+
+
+
+                                <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}">
+
+                            <div class="col-12" data-select2-id="23">
+                                <div class="form-group" data-select2-id="22">
+                                    <h6>Categorías :</h6>
+
+
+
+
+                                    <select name="category[]"id="category" class="select2 select2-hidden-accessible"
+                                        multiple="" data-placeholder="Any" style="width: 100%;" data-select2-id="1"
+                                        tabindex="-1" aria-hidden="true">
+                                        {{-- <option data-select2-id="16" value="1" selected >número 0</option>
+                                        <option data-select2-id="17" value="1" >número 1</option>
+                                        </option> --}}
+
+                                        @foreach ($category as $item)
+                                            @if ($loop->first)
+                                                <option selected value="{{ $item->id }}">{{ $item->description }}
+                                                </option>
+                                            @else
+                                                <option value="{{ $item->id }}">{{ $item->description }}</option>
+                                            @endif
+                                        @endforeach
+
+
+                                    </select>
+                                </div>
+                            </div>
+                            <p></p>
+
+                            </p>
+                            <h6>Contenido :</h6>
+                            <textarea id="my-textarea"style="height:'900px'" name="post">
+                           
+                            <p></p>
+                          </textarea>
+                            <br>
+                            <h6>Detalle : </h6>
+                            <input type="text" name="detail" id="detail" class="form-control">
+                            <p></p>
+                            <input type="button" value="Nuevo" class="btn mb-1 me-1 bg-primary-subtle text-primary"
+                                onclick="New();$('#topic')[0].reset();reset_textarea();" name="new">
+                            <input type="button" value="Guardar" class="btn mb-1 me-1 bg-success-subtle text-success"
+                            id="create" onclick="topicStore()"
+                                name="create">
+                            <input type="button" value="Modificar" class="btn mb-1 me-1 bg-danger-subtle text-danger"id="update"
+                                onclick="topicUpdate();" name="update">
+                            <p></p>
+                        </form>
+
+                        <p>
+
+                        </p>
                         <p class="card-subtitle mb-3">
-                            <!-- success header modal -->
-                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
-                                data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                                 onclick="New();$('#topic')[0].reset();">
-                                Agregar
-                            </button>
+                           
                         </p>
                         <div class="mb-2">
                             <h4 class="card-title mb-0">Exportar</h4>
@@ -94,7 +172,8 @@
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
 
-                            Descripción : <input type="text" name="description" id="description" class="form-control">
+                            Descripción : <input type="text" name="description" id="description"
+                                class="form-control">
 
                             Detalle : <input type="text" name="detail" id="detail" class="form-control">
 
@@ -104,10 +183,10 @@
                             onclick="New();$('#topic')[0].reset();" name="new">
                         <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
                             onclick="topicStore()" id="create">
-                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="topicUpdate();"
-                            id="update">
+                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
+                            onclick="topicUpdate();" id="update">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                      </form>
+                        </form>
 
 
 

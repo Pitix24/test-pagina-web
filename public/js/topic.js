@@ -51,8 +51,8 @@ function topicStore() {
   var formData = new FormData(document.getElementById("topic"));
 
   // Mostrar la barra de progreso y el mensaje de "Cargando..."
-  document.getElementById("progress-container").style.display = 'block'; // Asegura que la barra y el mensaje estén visibles
-  document.getElementById("progress-message").innerText = "Cargando...";
+  // document.getElementById("progress-container").style.display = 'block'; // Asegura que la barra y el mensaje estén visibles
+  // document.getElementById("progress-message").innerText = "Cargando...";
 
   axios({
     method: "post",
@@ -60,21 +60,11 @@ function topicStore() {
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
-    },
-    onUploadProgress: function(progressEvent) {
-      if (progressEvent.lengthComputable) {
-        // Calculamos el porcentaje de progreso
-        var percent = Math.round((progressEvent.loaded * 100) / progressEvent.total);
-        
-        // Actualizamos la barra de progreso
-        document.getElementById("progress-bar").style.width = percent + "%";
-      }
     }
+
   })
     .then(function(response) {
-      // Al finalizar la carga, actualizamos el mensaje
-      document.getElementById("progress-message").innerText = "Completado";
-      document.getElementById("progress-bar").style.width = '100%';  // Aseguramos que la barra se llene completamente
+     
 
       // Handle success
       var contentdiv = document.getElementById("mycontent");
@@ -82,17 +72,11 @@ function topicStore() {
       // Carga PDF, CSV, Excel, etc.
       datatable_load();
       alert("Registrado Correctamente");
-
-      // Ocultamos la barra de progreso después de la carga
-      setTimeout(function() {
-        document.getElementById("progress-container").style.display = 'none';
-      }, 1000); // Ocultar la barra después de 1 segundo para mostrar el "Completado"
+   
     })
-    .catch(function(error) {
+    .catch(function(response) {
       // En caso de error
-      alert('Error al registrar, asegúrece de que los archivos no excedan 10mb')
-      //console.log(error);
-      document.getElementById("progress-message").innerText = "Error al cargar";
+      console.log(response);
     });
 }
 

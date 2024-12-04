@@ -52,6 +52,9 @@ Route::get('users',function() {
 });
 
 
+Route::get('editor',function() {
+    return view('editor');
+});
 
 
 Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');

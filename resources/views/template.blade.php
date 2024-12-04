@@ -12,6 +12,10 @@
 
     <!-- Core Css -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
+   <!-- Summernote CSS -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 
     <title>Aybar Corp</title>
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
@@ -70,7 +74,7 @@
                         </div>
                         <div class="sidebarmenu">
                             <div class="brand-logo d-flex align-items-center nav-logo">
-                                <a href="../main/index.html" class="text-nowrap logo-img">
+                                <a href="{{url('/')}}" class="text-nowrap logo-img">
                                     <img src="{{ asset('ayba/2.png') }}"width="120px" alt="Logo" />
                                 </a>
 
@@ -91,7 +95,7 @@
                                     <!-- Dashboard -->
                                     <!-- ---------------------------------- -->
                                     <li class="sidebar-item">
-                                        <a class="sidebar-link" href="../main/index.html" aria-expanded="false">
+                                        <a class="sidebar-link" href="#" aria-expanded="false">
                                             <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
                                             <span class="hide-menu">Dashboard</span>
                                         </a>
@@ -113,12 +117,12 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="../main/eco-shop.html">
-                                                    <span class="icon-small"></span> Usuario
+                                                <a class="sidebar-link" href="{{url('usuarios')}}">
+                                                    <span class="icon-small"></span> Usuarios
                                                 </a>
                                             </li>
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="../main/eco-shop-detail.html">
+                                                <a class="sidebar-link" href="#">
                                                     <span class="icon-small"></span>Roles
                                                 </a>
                                             </li>
@@ -133,17 +137,17 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="../main/blog-posts.html">
+                                                <a class="sidebar-link" href="{{url('temas')}}">
                                                     <span class="icon-small"></span>Blog
                                                     Posts
                                                 </a>
                                             </li>
-                                            <li class="sidebar-item">
+                                            {{-- <li class="sidebar-item">
                                                 <a class="sidebar-link" href="../main/blog-detail.html">
                                                     <span class="icon-small"></span>Blog
                                                     Details
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </li>
 
@@ -278,24 +282,17 @@
                                                 <div class="message-body">
                                                     <a href="javascript:void(0)"
                                                         class="p-2 dropdown-item h6 rounded-1">
-                                                        My Profile
+                                                        Mi Perfil
                                                     </a>
-                                                    <a href="javascript:void(0)"
+                                    
+                                                   
+                                                    {{-- <a href="javascript:void(0)"
                                                         class="p-2 dropdown-item h6 rounded-1">
-                                                        My Subscription
-                                                    </a>
-                                                    <a href="javascript:void(0)"
-                                                        class="p-2 dropdown-item h6 rounded-1">
-                                                        My Statements <span
-                                                            class="badge bg-danger-subtle text-danger rounded ms-8">4</span>
-                                                    </a>
-                                                    <a href="javascript:void(0)"
-                                                        class="p-2 dropdown-item h6 rounded-1">
-                                                        Account Settings
-                                                    </a>
+                                                        Configuraciones
+                                                    </a> --}}
                                                     <a href="../main/authentication-login2.html"
                                                         class="p-2 dropdown-item h6 rounded-1">
-                                                        Sign Out
+                                                        Salir
                                                     </a>
                                                 </div>
                                             </div>
@@ -806,55 +803,7 @@
                                     <!-- ------------------------------- -->
                                     <!-- start language Dropdown -->
                                     <!-- ------------------------------- -->
-                                    <li class="nav-item dropdown nav-icon-hover-bg rounded-circle">
-                                        <a class="nav-link" href="javascript:void(0)" id="drop2"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="../assets/images/flag/icon-flag-en.svg" alt="matdash-img"
-                                                width="20px" height="20px"
-                                                class="rounded-circle object-fit-cover round-20" />
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up"
-                                            aria-labelledby="drop2">
-                                            <div class="message-body">
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="../assets/images/flag/icon-flag-en.svg"
-                                                            alt="matdash-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">English (UK)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="../assets/images/flag/icon-flag-cn.svg"
-                                                            alt="matdash-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">中国人 (Chinese)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="../assets/images/flag/icon-flag-fr.svg"
-                                                            alt="matdash-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">français (French)</p>
-                                                </a>
-                                                <a href="javascript:void(0)"
-                                                    class="d-flex align-items-center gap-2 py-3 px-4 dropdown-item">
-                                                    <div class="position-relative">
-                                                        <img src="../assets/images/flag/icon-flag-sa.svg"
-                                                            alt="matdash-img" width="20px" height="20px"
-                                                            class="rounded-circle object-fit-cover round-20" />
-                                                    </div>
-                                                    <p class="mb-0 fs-3">عربي (Arabic)</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
+                                  
                                     <!-- ------------------------------- -->
                                     <!-- end language Dropdown -->
                                     <!-- ------------------------------- -->
@@ -2176,7 +2125,49 @@
 
 
 
+    <!-- jQuery -->
+    {{-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> --}}
+  
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Summernote JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Inicializar el editor Summernote extendido
+            $('#my-textarea').summernote({
+                height: 400, // Altura del editor
+                placeholder: 'Escribe algo aquí...',
+                toolbar: [
+                    ['style', ['style']],
+                    ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
+                    ['fontname', ['fontname']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['table', ['table']],
+                    ['insert', ['link', 'picture', 'video', 'hr']],
+                    ['view', ['fullscreen', 'codeview', 'help']],
+                    ['history', ['undo', 'redo']]
+                ]
+            });
+        });
+    </script>
+      <script>
+        function reset_textarea() {
+
+            document.getElementsByClassName('note-editable')[0].innerHTML = "";
+        }
+    </script>
+        <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
+                            
+      <script defer>
+        $(function() {
+            $('.select2').select2()
+        });
+    </script>
 </body>
 
 

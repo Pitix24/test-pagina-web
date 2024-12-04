@@ -24,8 +24,11 @@ class TopicController extends Controller
     }
     public function index()
     {
+
+        
         $topic = Topic::all();
-        return view("topic.topic", compact("topic"));
+        $category = Category::all();
+        return view("topic.topic", compact("topic", "category"));
         //
     }
 
@@ -63,20 +66,11 @@ class TopicController extends Controller
      */
     public function store(Request $request)
     {
-
-        $course_id = Session::get('course_id');
-
-
         $topic = new Topic;
         $topic->description = $request->description;
-        $topic->course_id = $course_id;
         $topic->user_id = Auth::user()->id;
         $topic->detail = $request->detail;
         $topic->post = $request->post;
-        $topic->instruction = $request->instruction;
-        $topic->point = $request->point;
-        $topic->time = $request->time;
-        $topic->video = $request->video;
         $topic->type = $request->type;
         //file
         if ($request->file('photo') != null) {
