@@ -25,7 +25,7 @@ class TopicController extends Controller
     public function index()
     {
 
-        
+
         $topic = Topic::all();
         $category = Category::all();
         return view("topic.topic", compact("topic", "category"));
@@ -37,7 +37,7 @@ class TopicController extends Controller
      */
     public function create()
     {
-        
+
         $topic = Topic::all();
 
         return view("topic.topictable", compact("topic"));
@@ -45,21 +45,20 @@ class TopicController extends Controller
     public function report(Request $request)
     {
 
-        $topic = Topic::where('course_id', '=', $request->course_id)
-        ->where('id', '=', $request->topic_id)->get();
+        $topic = Topic::where("description", "=", $request->blog_description)->get();
 
-        $count = Topic::where('user_id', '=', $topic[0]->user_id)->count();
-            return view("vista2", compact("topic","count"));
-       // return view("student.curso_topic", compact("topic"));
+        // $count = Topic::where('user_id', '=', $topic[0]->user_id)->count();
+        return view("home.topic_detail", compact("topic"));
+        // return view("student.curso_topic", compact("topic"));
     }
     public function topic_list(Request $request)
     {
 
         $topic_list = Topic::where('course_id', '=', $request->course_id)->get();
 
-      
-            return view("topic.topic_list", compact("topic_list"));
-       // return view("student.curso_topic", compact("topic"));
+
+        return view("topic.topic_list", compact("topic_list"));
+        // return view("student.curso_topic", compact("topic"));
     }
     /**
      * Store a newly created resource in storage.
@@ -72,6 +71,7 @@ class TopicController extends Controller
         $topic->detail = $request->detail;
         $topic->post = $request->post;
         $topic->type = $request->type;
+        $topic->url = $request->url;
         //file
         if ($request->file('photo') != null) {
             $request->photo = fileStore($request->file('photo'), "imageusers");

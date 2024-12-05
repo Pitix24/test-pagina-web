@@ -92,7 +92,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('topicShow',[App\Http\Controllers\TopicController::class, 'show']);
 
 
-    Route::get('cursos/{course_id}/{tema}/{topic_id}',[App\Http\Controllers\TopicController::class, 'report']);
+    Route::get('blog/{blog_description}',[App\Http\Controllers\TopicController::class, 'report']);
     Route::get('topic_list/{course_id}',[App\Http\Controllers\TopicController::class, 'topic_list']);
 
 

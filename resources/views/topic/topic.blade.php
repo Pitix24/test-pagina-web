@@ -122,11 +122,7 @@
                             <h4 class="card-title mb-0">Exportar</h4>
                         </div>
                         <div class="table-responsive"id="mycontent">
-
-
-
                             @include('topic.topictable')
-
                         </div>
                     </div>
                 </div>

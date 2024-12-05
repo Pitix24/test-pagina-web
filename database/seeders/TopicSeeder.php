@@ -21,6 +21,7 @@ class TopicSeeder extends Seeder
             'instruction' =>'Instrucciones',
                 'video'=> 'https://www.youtube.com/watch?v=DFg1V-rO6Pg',
             'type' => 'video',
+            'url' => 'sql-server',
             
         ]);
         Topic::create([
@@ -30,8 +31,8 @@ class TopicSeeder extends Seeder
             'detail' =>'detalles',
             'instruction' =>'Instrucciones',
                 'video'=> 'https://www.youtube.com/watch?v=DFg1V-rO6Pg',
-            'type' => 'video',
-            
+                'url' => 'sql-server-2',
+                'type' => 'video',
         ]);
     }
 }
