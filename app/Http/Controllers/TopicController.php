@@ -71,7 +71,7 @@ class TopicController extends Controller
         $topic->detail = $request->detail;
         $topic->post = $request->post;
         $topic->type = $request->type;
-        $topic->url = $request->url;
+        $topic->url = $request->description;
         //file
         if ($request->file('photo') != null) {
             $request->photo = fileStore($request->file('photo'), "imageusers");

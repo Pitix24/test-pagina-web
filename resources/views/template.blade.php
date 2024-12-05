@@ -290,7 +290,7 @@
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Configuraciones
                                                     </a> --}}
-                                                    <a href="../main/authentication-login2.html"
+                                                    <a href="{{url('logout')}}"
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Salir
                                                     </a>
