@@ -12,8 +12,8 @@
 
     <!-- Core Css -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
-   <!-- Summernote CSS -->
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet">
+    <!-- Summernote CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet">
     <!-- jQuery -->
     <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
 
@@ -74,7 +74,7 @@
                         </div>
                         <div class="sidebarmenu">
                             <div class="brand-logo d-flex align-items-center nav-logo">
-                                <a href="{{url('/')}}" class="text-nowrap logo-img">
+                                <a href="{{ url('/') }}" class="text-nowrap logo-img">
                                     <img src="{{ asset('ayba/2.png') }}"width="120px" alt="Logo" />
                                 </a>
 
@@ -105,9 +105,9 @@
                                         <span class="sidebar-divider"></span>
                                     </li>
 
-                                    <li class="nav-small-cap">
+                                    {{-- <li class="nav-small-cap">
                                         <span class="hide-menu">Módulos</span>
-                                    </li>
+                                    </li> --}}
 
                                     <li class="sidebar-item">
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
@@ -117,40 +117,112 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{url('usuarios')}}">
+                                                <a class="sidebar-link" href="{{ url('admin/usuarios') }}">
                                                     <span class="icon-small"></span> Usuarios
                                                 </a>
                                             </li>
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="#">
-                                                    <span class="icon-small"></span>Roles
+                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                    <span class="icon-small"></span> Clientes
                                                 </a>
                                             </li>
 
                                         </ul>
                                     </li>
                                     <li class="sidebar-item">
-                                        <a class="sidebar-link has-arrow" href="javascript:void(0)"
+                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
-                                            <iconify-icon icon="solar:widget-4-line-duotone"></iconify-icon>
-                                            <span class="hide-menu">Blog</span>
+                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                            <span class="hide-menu">Secciones</span>
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{url('temas')}}">
-                                                    <span class="icon-small"></span>Blog
-                                                    Posts
+                                                <a class="sidebar-link" href="{{ url('seccion/inicio') }}">
+                                                    <span class="icon-small"></span> Inicio
                                                 </a>
                                             </li>
-                                            {{-- <li class="sidebar-item">
-                                                <a class="sidebar-link" href="../main/blog-detail.html">
-                                                    <span class="icon-small"></span>Blog
-                                                    Details
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('seccion/nosotros') }}">
+                                                    <span class="icon-small"></span>Nosotros
                                                 </a>
-                                            </li> --}}
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('seccion/proyectos') }}">
+                                                    <span class="icon-small"></span>Proyectos
+
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('seccion/blogs') }}">
+                                                    <span class="icon-small"></span>Blogs
+
+                                                </a>
+                                            </li>
+
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/contacto') }}">
+                                                    <span class="icon-small"></span>Contacto
+                                                </a>
+                                            </li>
+
                                         </ul>
                                     </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
+                                            aria-expanded="false">
+                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                            <span class="hide-menu">Blogs</span>
+                                        </a>
+                                        <ul aria-expanded="false" class="collapse first-level">
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                    <span class="icon-small"></span> Blogs
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
+                                            aria-expanded="false">
+                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                            <span class="hide-menu">Proyectos</span>
+                                        </a>
+                                        <ul aria-expanded="false" class="collapse first-level">
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                    <span class="icon-small"></span> Proyectos
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
+                                            aria-expanded="false">
+                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                            <span class="hide-menu">Tema</span>
+                                        </a>
+                                        <ul aria-expanded="false" class="collapse first-level">
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                    <span class="icon-small"></span> Logotipo
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/temas') }}">
+                                                    <span class="icon-small"></span>Colores
 
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/proyectos') }}">
+                                                    <span class="icon-small"></span>Redes Sociales
+
+                                                </a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
 
                                 </ul>
                             </nav>
@@ -284,13 +356,13 @@
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Mi Perfil
                                                     </a>
-                                    
-                                                   
+
+
                                                     {{-- <a href="javascript:void(0)"
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Configuraciones
                                                     </a> --}}
-                                                    <a href="{{url('logout')}}"
+                                                    <a href="{{ url('logout') }}"
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Salir
                                                     </a>
@@ -803,7 +875,7 @@
                                     <!-- ------------------------------- -->
                                     <!-- start language Dropdown -->
                                     <!-- ------------------------------- -->
-                                  
+
                                     <!-- ------------------------------- -->
                                     <!-- end language Dropdown -->
                                     <!-- ------------------------------- -->
@@ -1895,7 +1967,7 @@
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 
-    <script src="{{asset('assets/libs/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{ asset('assets/libs/datatables.net/js/jquery.dataTables.min.js') }}"></script>
     <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
@@ -1905,7 +1977,7 @@
 
     <script defer>
         function datatable_load() {
-        
+
 
             // 
             //    File export                              //
@@ -2127,7 +2199,7 @@
 
     <!-- jQuery -->
     {{-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> --}}
-  
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -2135,14 +2207,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
 
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // Inicializar el editor Summernote extendido
             $('#my-textarea').summernote({
                 height: 400, // Altura del editor
                 placeholder: 'Escribe algo aquí...',
                 toolbar: [
                     ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript', 'subscript', 'clear']],
+                    ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript',
+                        'subscript', 'clear'
+                    ]],
                     ['fontname', ['fontname']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
@@ -2155,15 +2229,15 @@
             });
         });
     </script>
-      <script>
+    <script>
         function reset_textarea() {
 
             document.getElementsByClassName('note-editable')[0].innerHTML = "";
         }
     </script>
-        <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
-                            
-      <script defer>
+    <script src="{{ asset('plugins/select2/js/select2.full.min.js') }}"></script>
+
+    <script defer>
         $(function() {
             $('.select2').select2()
         });

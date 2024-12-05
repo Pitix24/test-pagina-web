@@ -17,11 +17,17 @@
 
                     <b>¿QUIÉNES SOMOS?</b>
                 </h4>
-                <p class="d-none d-xl-block text-justify container fs-7 text-white text-overlay" style="word-spacing: 15px">
+                <style>
+                    .sds{
+                        text-align: justify
+                    }
+                </style>
+                <p class="d-none d-xl-block  container fs-7  text-white text-overlay " style="word-spacing: 15px;">
 
-                    Somos una inmobiliaria completamente<br> peruana,
-                    dedicada a la creación de<br> proyectos inmobiliarios
-                    de terrenos de <br> todas las familias del Perú. Ofrecemos <br>
+                    Somos una inmobiliaria completamente<br>
+                    peruana, dedicada &nbsp;a la creación de<br>
+                    proyectos inmobiliarios de terrenos de <br>
+                    todas las familias del Perú. Ofrecemos<br>
                     terrenos exclusivos en el país.
 
                 </p>
@@ -98,7 +104,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -112,7 +118,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -124,7 +130,7 @@
                 </div>
                
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -165,7 +171,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -176,7 +182,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -187,7 +193,7 @@
 
                 </div>
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -227,7 +233,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
@@ -238,7 +244,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
@@ -249,7 +255,7 @@
 
                 </div>
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.

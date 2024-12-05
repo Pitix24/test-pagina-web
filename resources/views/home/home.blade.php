@@ -1,8 +1,6 @@
 @extends('home.template')
 @section('content')
-    <div class="container-fluid text-light py-5 degradado-centro" style="background-color: #03424E;">
-
-
+    <div class="container-fluid text-light py-5 degradado-centro" style="background-color: #13434d;">
         <div class="row h-100">
 
             <div class="col-md-1">
@@ -10,7 +8,7 @@
             </div>
 
             <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
-            <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
+                <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
 
 
             <!-- Columna izquierda con texto e imágenes -->
@@ -29,7 +27,7 @@
             <style>
                 .degradado-centro {
 
-                    background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
+                    background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
 
                 }
             </style>
@@ -46,28 +44,32 @@
                     <p></p>
                     <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
                     <form>
-                        <label for="projectInterest" class="text-light ">ESTOY INTERESADO(A) EN UN PROYECTO</label>
+                       
 
-                        <div class="form-group mb-3">
-                            <label for="name" class="text-light"></label>
-                            <input type="text" class="text-white form-control" id="name"
-                                placeholder="Nombres y Apellidos">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="tb-nombre" name="tb-nombre"
+                                oninput="" placeholder="Nombres y Apellidos:" style="color: white;">
+                            <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="phone" class="text-light">Número de teléfono</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Número de teléfono">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="telefono" name="tb-nombre"
+                                oninput=""placeholder="Número de teléfono" style="color: white;">
+                            <label for="telefono" style="color: white;">Número de teléfono</label>
                         </div>
-                        <div class="form-group mb-3">
-                            <label for="dni" class="text-light">DNI</label>
-                            <input type="text" class="form-control" id="dni" placeholder="Número de DNI">
+
+                      
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="dni" placeholder="Número de DNI" style="color: white;">
+                            <label for="dni" class=" text-light">DNI</label>
                         </div>
-                        <div class="form-group mb-3">
+                        <div class="form-floating mb-3 h-5">
+                            <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;" placeholder="Escribe tu mensaje"></textarea>
                             <label for="message" class="text-light">Mensaje</label>
-                            <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje"></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" class=" btn btn-warning btn-block"
-                                style="color:white;border-radius:100px;background-color:#F6A42C;width: 250px;">Enviar mis
+                                style="color:white;border-radius:100px;background-color:#FFA726;width: 250px;">Enviar mis
                                 datos</button>
                             <p></p>
                         </div>
@@ -155,13 +157,13 @@
     </div>
 
     <div class="container text-light py-1">
-        <h4 class="text-center display-3" style="margin:40px"><b style="color:#03424E">¿POR QUÉ</b> <b> COMPRAR UN
+        <h4 class="text-center display-3" style="margin:40px"><b style="color:#13434d">¿POR QUÉ</b> <b> COMPRAR UN
                 LOTE?</b> </h4>
         <p></p>
         <div class="row">
 
             <div class="col-sm-12 col-lg-6 col-xl-3 col-md-12">
-                <div class="card" style="border-color:#03424E;border-width:1px">
+                <div class="card" style="border-color:#13434d;border-width:1px">
                     <div class="card-body p-4 text-center">
                         <p></p>
                         <img src="../assets/images/profile/user-11.jpg" alt="matdash-img"
@@ -171,7 +173,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3 col-md-12">
-                <div class="card" style="border-color:#03424E;border-width:1px">
+                <div class="card" style="border-color:#13434d;border-width:1px">
                     <div class="card-body p-4 text-center">
                         <p></p>
                         <img src="../assets/images/profile/user-11.jpg" alt="matdash-img"
@@ -182,7 +184,7 @@
             </div>
 
             <div class="col-sm-12 col-lg-6 col-xl-3 col-md-12">
-                <div class="card" style="border-color:#03424E;border-width:1px">
+                <div class="card" style="border-color:#13434d;border-width:1px">
                     <div class="card-body p-4 text-center">
                         <p></p>
                         <img src="../assets/images/profile/user-11.jpg" alt="matdash-img"
@@ -192,7 +194,7 @@
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6 col-xl-3 col-md-12">
-                <div class="card" style="border-color:#03424E;border-width:1px">
+                <div class="card" style="border-color:#13434d;border-width:1px">
                     <div class="card-body p-4 text-center">
                         <p></p>
                         <img src="../assets/images/profile/user-11.jpg" alt="matdash-img"
@@ -211,7 +213,7 @@
             <p></p>
 
             <a class="btn btn-hover-shadow" href="#"
-                style="color:white;border-radius:20px;background-color:#F6A42C;margin:20px">
+                style="color:white;border-radius:20px;background-color:#FFA726;margin:20px">
                 <b>
                     <h3 class="display-7 p-6 pb-1"><b>&nbsp;DESCUBRE NUESTROS PROYECTOS&nbsp;</b> </h3>
 
@@ -226,7 +228,7 @@
 
 
                                 <div class="col-lg-4">
-                                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px">
+                                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px">
                                         <div class="card-body p-1 text-center">
                                             <p></p>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
@@ -238,7 +240,7 @@
                                             <p>Lotes desde 120 m2</p>
 
                                             <a class="btn btn-hover-shadow" href="#"
-                                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px">
+                                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px">
 
                                                 > &nbsp;CONOCER MÁS&nbsp;
 
@@ -248,7 +250,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px">
+                                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px">
                                         <div class="card-body p-1 text-center">
                                             <p></p>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
@@ -260,7 +262,7 @@
                                             <p>Lotes desde 120 m2</p>
 
                                             <a class="btn btn-hover-shadow" href="#"
-                                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px">
+                                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px">
                                                 <!-- <span class="carousel-control-next-icon"></span> -->
                                                 > &nbsp;CONOCER MÁS&nbsp;
 
@@ -270,7 +272,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px">
+                                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px">
                                         <div class="card-body p-1 text-center">
                                             <p></p>
                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
@@ -282,7 +284,7 @@
                                             <p>Lotes desde 120 m2</p>
 
                                             <a class="btn btn-hover-shadow" href="#"
-                                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px">
+                                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px">
 
                                                 > &nbsp;CONOCER MÁS&nbsp;
 
@@ -300,8 +302,8 @@
 
                     </div>
                     <!-- <div class="carousel-item" data-bs-interval="2000">
-            <img src="../assets/images/blog/blog-img2.jpg" class="d-block w-100" alt="...">
-          </div> -->
+                <img src="../assets/images/blog/blog-img2.jpg" class="d-block w-100" alt="...">
+              </div> -->
 
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev"
@@ -336,34 +338,34 @@
                 <h4 class="display-5 d-lg-block d-xxl-block d-sm-none d-none"
                     style="word-spacing: 13px; letter-spacing: 8px;">
                     <b>CONFÍA EN </b>
-                    <b style="color:#03424E">AYBAR CORP</b>
+                    <b style="color:#13434d">AYBAR CORP</b>
                 </h4>
 
                 <h4 class="fs-10 d-lg-none text-center" style="word-spacing: 13px;letter-spacing:3px"><b>CONFÍA EN </b>
-                    <b style="color:#03424E"> AYBAR CORP</b>
+                    <b style="color:#13434d"> AYBAR CORP</b>
                 </h4>
 
 
-                <p class="fs-8 d-none d-lg-block d-xxl-block d-sm-none" style="color:#03424E;">Construye un futuro sólido
+                <p class="fs-8 d-none d-lg-block d-xxl-block d-sm-none" style="color:#13434d;">Construye un futuro sólido
                     para
                     tu familia
                     <br> invirtiendo en
                     confianza.
                 </p>
-                <p class="fs-4 d-lg-none" style="color:#03424E;text-align: justify">Construye un futuro sólido para tu
+                <p class="fs-4 d-lg-none" style="color:#13434d;text-align: justify">Construye un futuro sólido para tu
                     familia
                     invirtiendo en confianza.</p>
 
 
 
                 <a class="btn btn-hover-shadow" href="#"
-                    style="color:white;border-radius:20px;background-color:#F6A42C;margin-bottom:20px"> > &nbsp;CONOCER
+                    style="color:white;border-radius:20px;background-color:#FFA726;margin-bottom:20px"> > &nbsp;CONOCER
                     MÁS&nbsp;</a>
 
 
                 <div class="row">
                     <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #03424E;">
+                        <div class="card" style="background-color: #13434d;">
 
                             <div class="card-body text-center text-white ">
 
@@ -379,7 +381,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #03424E;">
+                        <div class="card" style="background-color: #13434d;">
                             <div class="card-body text-center text-white ">
                                 <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                     width="40%" alt="">
@@ -389,7 +391,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #03424E;">
+                        <div class="card" style="background-color: #13434d;">
                             <div class="card-body text-center text-white ">
                                 <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                     width="40%" alt="">
@@ -403,7 +405,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
 
-                        <div class="card" style="background-color: #03424E;">
+                        <div class="card" style="background-color: #13434d;">
                             <div class="card-body text-center text-white ">
                                 <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                     width="40%" alt="">
@@ -413,7 +415,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #03424E;">
+                        <div class="card" style="background-color: #13434d;">
                             <div class="card-body text-center text-white ">
                                 <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                     width="40%" alt="">
@@ -421,13 +423,13 @@
                                 <p class="fs-2">Zonas verdes proporsionadas.</p>
                             </div>
                         </div>
-                        <!-- <div class="card" style="background-color: #03424E;">
-                <div class="card-body text-center text-white ">
-                  <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="40%" alt="">
-                  <p class="fs-6"><b>+ 2,000 KM 2</b></p>
-                  <p class="fs-2">Zonas verdes proporsionadas.</p>
-                </div>
-              </div> -->
+                        <!-- <div class="card" style="background-color: #13434d;">
+                    <div class="card-body text-center text-white ">
+                      <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="40%" alt="">
+                      <p class="fs-6"><b>+ 2,000 KM 2</b></p>
+                      <p class="fs-2">Zonas verdes proporsionadas.</p>
+                    </div>
+                  </div> -->
                     </div>
                 </div>
 

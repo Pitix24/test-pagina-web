@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="{{ asset('ayba/favicon.png') }}" />
     <!-- Core Css -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}" />
     <title>AybarCorp</title>
     <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="assets/libs/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/libs/aos/dist/aos.css" />
-    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="{{asset('assets/libs/owl.carousel/dist/assets/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('assets/libs/aos/dist/aos.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/template.css')}}" />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
@@ -33,13 +33,13 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader"><img src="ayba/1.png" alt="loader" class="lds-ripple img-fluid" /></div>
-    <div style="background-color: #03424E; height: 80px;margin-bottom: -10px;"
+    <div class="preloader"><img src="{{asset('ayba/1.png')}}" alt="loader" class="lds-ripple img-fluid" /></div>
+    <div style="background-color: #13434d; height: 80px;margin-bottom: -10px;"
         class="d-none d-xs-flex d-lg-flex  justify-content-center align-items-center">
         <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; ">
             <b style="font-size:x-large;color:white; ">ENCUENTRA TU LOTE SOÑADO AQUÍ &nbsp;</b>
             <a href="#" class="  btn bg-white"
-                style="color:#03424E;height: 40px; margin-bottom: 10px;
+                style="color:#13434d;height: 40px; margin-bottom: 10px;
      border-radius: 100px;width: 300px;
      ">
                 <b>MÁS INFORMACIÓN</b>
@@ -52,7 +52,7 @@
                 <div class="container">
 
                     <a class="position-relative navbar-brand me-0 py-0 m-2 " href="{{ url('/') }}"> <img
-                            src="ayba/1.png" alt="img-fluid" width="80px"style="margin-left:0%" />
+                            src="{{asset('ayba/1.png')}}" alt="img-fluid" width="80px"style="margin-left:0%" />
                     </a>
 
 
@@ -73,8 +73,8 @@
                         <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px; ">
                             <li class="nav-item">
                               @php
-                              $color_nav_enable = '#F6A42C';
-                              $color_nav_disable = '#03424E';
+                              $color_nav_enable = '#FFA726';
+                              $color_nav_disable = '#13434d';
                           @endphp
                           
                           <li class="nav-item">
@@ -112,7 +112,7 @@
 
                             <li class="nav-item ms-2">
                                 <a class="btn btn-hover-shadow" href="https://pagos.aybarcorp.com"
-                                    style="color:white;border-radius:100px;background-color:#F6A42C;width: 190px;">
+                                    style="color:white;border-radius:100px;background-color:#FFA726;width: 190px;">
                                     <b>PAGA TU LOTE</b>
                                 </a>
                             </li>
@@ -132,7 +132,7 @@
                 <div class="row">
                     <div
                         class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center  text-lg-start text-md-start   mt-10">
-                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#F6A42C ">Contáctanos</h3>
+                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#FFA726 ">Contáctanos</h3>
                         <!-- <h4 clas="d-lg-none "style="margin-top:30px;margin-left:0px"><span> Contáctanos</span></h4> -->
 
                         <ul class="text-white mt-4 ">
@@ -147,7 +147,7 @@
                     <div
                         class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center  text-center  text-lg-start text-md-end mt-10">
 
-                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#F6A42C ">Descubre más</h3>
+                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#FFA726 ">Descubre más</h3>
                         <p></p>
                         <div class="row">
                             <div class="col-6">
@@ -174,7 +174,7 @@
                     <!-- <div class="col-4 d-none d-sm-block"></div> -->
 
                     <div class="mt-4 text-center col-xl-4 mt-10">
-                        <img src="ayba/4.png" width="40%" alt="" srcset=""><br>
+                        <img src="{{asset('ayba/4.png')}}" width="40%" alt="" srcset=""><br>
                         <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png"
                             width="45px" alt="">
                         <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png"
@@ -193,7 +193,7 @@
         </div>
 
 
-        <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#03424E;">
+        <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">
                 <div class="justify-content-center">
@@ -322,7 +322,7 @@
             ¿Necesitas ayuda?
         </div>
         <div class="whatsapp-btn">
-            <a href="#" target="_blank" title="Enviar mensaje por WhatsApp">
+            <a href="https://wa.me/970579363" target="_blank" title="Enviar mensaje por WhatsApp">
 
                 <i class="ti ti-brand-whatsapp"></i>
             </a>
@@ -337,16 +337,17 @@
     <div class="social-container  p-2 pt-3 pb-3"
         style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
-        <a href="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" target="_blank"
+        <a href="https://www.facebook.com/aybarcorpoficial" target="_blank" class="social-button">
+            <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/aybarcorpoficial" target="_blank"
             class="social-button">
             <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Instagram">
         </a>
-        <a href="https://www.facebook.com" target="_blank" class="social-button">
-            <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
-        </a>
-        <a href="https://www.linkedin.com" target="_blank" class="social-button">
+        <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank" class="social-button">
             <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
         </a>
+        
     </div>
 
 
@@ -355,19 +356,19 @@
 
 
     <div class="dark-transparent sidebartoggler"></div>
-    <script src="assets/js/vendor.min.js"></script>
+    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
     <!-- Import Js Files -->
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
-    <script src="assets/js/theme/app.init.js"></script>
-    <script src="assets/js/theme/theme.js"></script>
-    <script src="assets/js/theme/app.min.js"></script>
-    <script src="assets/js/theme/sidebarmenu.js"></script>
+    <script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/libs/simplebar/dist/simplebar.min.js')}}"></script>
+    <script src="{{asset('assets/js/theme/app.init.js')}}"></script>
+    <script src="{{asset('assets/js/theme/theme.js')}}"></script>
+    <script src="{{asset('assets/js/theme/app.min.js')}}"></script>
+    <script src="{{asset('assets/js/theme/sidebarmenu.js')}}"></script>
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/js/landingpage/landingpage.js"></script>
+    <script src="{{asset('assets/libs/owl.carousel/dist/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('assets/libs/aos/dist/aos.js')}}"></script>
+    <script src="{{asset('assets/js/landingpage/landingpage.js')}}"></script>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
 </body>

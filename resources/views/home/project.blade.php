@@ -99,7 +99,7 @@ mask-image: linear-gradient(to top, #000000 60%, transparent 100%);
     <body>
       <div class="container py-5">
         <h2 class="display-6 text-center mb-4"style="word-spacing:8px;letter-spacing:3px"><b>UBICA TU PRÓXIMO HOGAR</b> </h2>
-        <p class="fs-7 text-justify mb-5"style="color:#03424E">
+        <p class="fs-7 text-justify mb-5"style="color:#13434d">
           Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios
           de terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
         </p>

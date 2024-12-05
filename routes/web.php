@@ -47,25 +47,22 @@ Route::get('blog',function() {
 Route::get('contacto',function() {
     return view('home.contact');
 });
-Route::get('users',function() {
-    return view('user.usertable');
-});
+
+Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index']);
+Route::post('CustomerCreate', [App\Http\Controllers\CustomerController::class, 'create']);
+Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store']);
+Route::post('CustomerDestroy',[App\Http\Controllers\CustomerController::class, 'destroy']);
+Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit']);
 
 
-Route::get('editor',function() {
-    return view('editor');
-});
+Route::get('admin/proyectos', [App\Http\Controllers\ProjectController::class, 'index']);
+Route::post('ProjectCreate', [App\Http\Controllers\ProjectController::class, 'create']);
+Route::post('ProjectStore', [App\Http\Controllers\ProjectController::class, 'store']);
+Route::post('ProjectDestroy',[App\Http\Controllers\ProjectController::class, 'destroy']);
+Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit']);
 
 
 Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-
-
-
-
-
-
-
-
 
 
 
@@ -80,20 +77,19 @@ Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'siste
 
 Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial']], function () {
     //
-    Route::get('hola',function (){
-        return view('student.vista');
-    });
+   
 
-    Route::resource("temas", App\Http\Controllers\TopicController::class);
+    Route::resource("admin/temas", App\Http\Controllers\TopicController::class);
     Route::post('topicStore',[App\Http\Controllers\TopicController::class, 'store']);
     Route::post('topicEdit',[App\Http\Controllers\TopicController::class, 'edit']);
     Route::post('topicUpdate',[App\Http\Controllers\TopicController::class, 'update']);
     Route::post('topicDestroy',[App\Http\Controllers\TopicController::class, 'destroy']);
     Route::post('topicShow',[App\Http\Controllers\TopicController::class, 'show']);
 
+    
+
 
     Route::get('blog/{blog_description}',[App\Http\Controllers\TopicController::class, 'report']);
-    Route::get('topic_list/{course_id}',[App\Http\Controllers\TopicController::class, 'topic_list']);
 
 
    Route::resource("categorias", App\Http\Controllers\CategoryController::class);
@@ -110,7 +106,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
 
 
 
-   Route::resource('usuarios', App\Http\Controllers\UserController::class);
+   Route::resource('admin/usuarios', App\Http\Controllers\UserController::class);
    Route::post('userCreate', 'UserController@create');
    Route::post('userStore', [App\Http\Controllers\UserController::class, 'store']);
    Route::post('userDestroy',[App\Http\Controllers\UserController::class, 'destroy']);

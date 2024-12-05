@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h4 class="mb-4 mb-md-0 card-title">Usuarios</h4>
+                            <h4 class="mb-4 mb-md-0 card-title">Clientes</h4>
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item d-flex align-items-center">
@@ -16,7 +16,7 @@
                                     </li>
                                     <li class="breadcrumb-item" aria-current="page">
                                         <span class="badge fw-medium fs-2 bg-primary-subtle text-primary">
-                                            Usuarios
+                                            Clientes
                                         </span>
                                     </li>
                                 </ol>
@@ -31,12 +31,12 @@
                 <!-- start File export -->
                 <div class="card">
                     <div class="card-body">
-
+                       
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                                onclick="New();$('#user')[0].reset();">
+                                 onclick="New();$('#Customer')[0].reset();">
                                 Agregar
                             </button>
                         </p>
@@ -47,7 +47,7 @@
 
 
 
-                            @include('user.usertable')
+                            @include('Customer.Customertable')
 
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-success text-white">
                         <h4 class="modal-title text-white" id="success-header-modalLabel">
-                            Usuarios
+                            Clientes
                         </h4>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -89,8 +89,8 @@
                     <div class="modal-body">
 
 
-                        <form action="" method="post" role="form" id="user"
-                            name="user"enctype="multipart/form-data">
+                        <form action="" method="post" role="form" id="Customer"
+                            name="Customer"enctype="multipart/form-data">
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
 
@@ -101,25 +101,25 @@
                             Celular<input type="number" name="cellphone" class="form-control"value="99999999">
                             Email<input type="text" name="email" class="form-control">
                             Contraseña<input type="password" name="password" class="form-control"value="12345678">
-                            <br>
+                           <br>
                             Sexo
-                            <div class="row text-center">
-                                <div class="col 6">
+                        <div class="row text-center">
+                            <div class="col 6">
 
-                                    <input class="form-check-input" type="radio" name="sex" id="M"
-                                        value="M" checked>
-                                    <label class="form-check-label" for="exampleRadios1">
-                                        Masculino
-                                    </label>
-                                </div>
-                                <div class="col 6">
-                                    <input class="form-check-input" type="radio" name="sex" id="F"
-                                        value="F">
-                                    <label class="form-check-label" for="exampleRadios1">
-                                        Femenino
-                                    </label>
-                                </div>
+                                <input class="form-check-input" type="radio" name="sex" id="M"
+                                value="M" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Masculino
+                            </label>
                             </div>
+                            <div class="col 6">
+                                <input class="form-check-input" type="radio" name="sex" id="F"
+                                value="F">
+                            <label class="form-check-label" for="exampleRadios1">
+                                Femenino
+                            </label>
+                            </div>
+                        </div>
 
                             <br>
                             Fecha de Nacimiento :
@@ -128,29 +128,17 @@
                                     <select name="day" class="form-control">
                                         <option>Dia</option>
                                         <?php for ($a = 1; $a <= 31; $a++) {
-                                              if ($a == 1) {
-                                                echo "<option value='$a' selected>" . $a . '</option>';
-                                               
-                                            } else {
-                                                echo "<option value='$a'>" . $a . '</option>';
-                                            }
-                                          
+                                            echo "<option value='$a'>" . $a . '</option>';
                                         } ?>
                                     </select>
                                 </div>
                                 <div class="col s4">
                                     <select name="month" class="form-control">
                                         <option>Mes</option>
-
                                         <?php
                                         $mes = ['', 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
                                         for ($b = 1; $b <= 12; $b++) {
-                                            if ($b == 1) {
-                                                echo "<option value='$b' selected >" . $mes[$b] . '</option>';
-                                            } else {
-                                                echo "<option value='$b'>" . $mes[$b] . '</option>';
-                                            }
-                                           
+                                            echo "<option value='$b'>" . $mes[$b] . '</option>';
                                         }
                                         ?>
                                     </select>
@@ -159,10 +147,8 @@
                                     <select name="year" class="form-control">
                                         <option>Año</option>
                                         <?php
-                                        $c = 2023;
-                                        echo "<option value='2024' selected> 2024</option>" ;
+                                        $c = 2020;
                                         while ($c >= 1905) {
-
                                             echo "<option value='$c'>" . $c . '</option>';
                                             $c = $c - 1;
                                         }
@@ -175,12 +161,11 @@
                                 <div class="form-group row">
                                     Fotografía
 
-
-
-                                    <input class="form-control" type="file" id="imgInp"
-                                        name="photo"onchange="readImage(this,'#blah');">
-
-
+                                
+                                        
+                                        <input class="form-control" type="file" id="imgInp" name="photo"onchange="readImage(this,'#blah');">
+                                   
+                                   
 
                                 </div>
                                 <div class="size-100">
@@ -189,19 +174,19 @@
                                         class="img-bordered" width="100%">
                                 </div>
                             </div>
-
+                        
 
 
                     </div>
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary"
-                            onclick="New();$('#user')[0].reset();" name="new">
+                            onclick="New();$('#Customer')[0].reset();" name="new">
                         <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="userStore()" id="create">
-                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
-                            onclick="userUpdate();" id="update">
+                            onclick="CustomerStore()" id="create">
+                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="CustomerUpdate();"
+                            id="update">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </form>
+                      </form>
 
 
 

@@ -11,6 +11,7 @@ use App\Models\CategoryDetail;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
 class TopicController extends Controller
 {
     /**
@@ -48,7 +49,7 @@ class TopicController extends Controller
         $topic = Topic::where("description", "=", $request->blog_description)->get();
 
         // $count = Topic::where('user_id', '=', $topic[0]->user_id)->count();
-        return view("home.topic_detail", compact("topic"));
+        return view("blog_detail", compact("topic"));
         // return view("student.curso_topic", compact("topic"));
     }
     public function topic_list(Request $request)
@@ -71,7 +72,7 @@ class TopicController extends Controller
         $topic->detail = $request->detail;
         $topic->post = $request->post;
         $topic->type = $request->type;
-        $topic->url = $request->description;
+        $topic->url =  Str::slug($request->description,'-') . time();
         //file
         if ($request->file('photo') != null) {
             $request->photo = fileStore($request->file('photo'), "imageusers");
