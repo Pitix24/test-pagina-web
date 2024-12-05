@@ -253,7 +253,9 @@
                     </li>
                     {{-- <li class="nav-item mt-3"><a class="nav-link fs-3 text-dark" href="#">Pages</a></li> --}}
                 </ul>
-                <a href="{{url('logout')}}" class="btn btn-primary w-100 py-2">Salir</a>
+                <a href="{{url('login')}}" class="btn btn-primary w-100 py-2">Administrar</a>
+                <br>
+                <a href="{{url('logout')}}" class="btn btn-secondary w-100 py-2">Salir</a>
                 {{-- <form class="d-flex mt-3" role="search">
                     <a href="main/authentication-login2.html" class="btn btn-primary w-100 py-2">Login</a>
                 </form> --}}
