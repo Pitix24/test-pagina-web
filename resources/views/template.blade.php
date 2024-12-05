@@ -20,7 +20,7 @@
     <title>Aybar Corp</title>
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+
     <script src="{{ asset('js/user.js') }}"></script>
     <script src="{{ asset('js/category.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
