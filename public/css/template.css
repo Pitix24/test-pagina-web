@@ -21,14 +21,14 @@ html {
   /* Coloca los elementos uno debajo del otro */
   gap: 0px;
   /* Espaciado entre los botones */
-  height:140px;
+  height:180px;
 }
 
 .social-button img {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  margin-top: -10px;
+  margin-top: 0px;
   transition: transform 0.2s ease;
 }
 
