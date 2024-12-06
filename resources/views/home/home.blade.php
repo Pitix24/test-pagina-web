@@ -1,87 +1,220 @@
 @extends('home.template')
 @section('content')
-    <div class="container-fluid text-light py-5 degradado-centro" style="background-color: #081c20;">
-        <div class="row h-100">
-
-            <div class="col-md-1">
-
-            </div>
-
-            <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
-                        <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
 
 
-            <!-- Columna izquierda con texto e imágenes -->
-            <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-                <img src="ayba/4.png" alt="" width="90px">
-                <h4 class="text-white font-weight-bold" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
-                <h4 class="font-weight-bold text-warning" style="letter-spacing: 10px;">TU HOGAR</h4>
-                <p class="lead mb-4">¡No pierdas más tiempo y asegura el lote de tus sueños hoy mismo, con facilidades de
-                    pago
-                    y ubicaciones estratégicas!</p>
-                <h3>¿Dudas o consultas?</h3>
-                <p class="mb-4">Nuestros números de atención al cliente:</p>
-                <p>970 579 363 - 970 574 495 - 977 637 651</p>
+<div id="carouselExample" class="carousel slide text-white" data-bs-ride="carousel"style=""data-bs-interval="8000">
+    <div class="carousel-inner" style="; display: flex; align-items: center;">
+      
 
-            </div>
-            <style>
-                .degradado-centro {
-
-                    background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
-
-                }
-            </style>
-            <div class="col d-none d-lg-block   col-lg-4">
-                <img src="ayba/album.png" alt="" srcset="" width="100%" style="padding-top: 150px;">
-            </div>
-
-            <!-- Columna derecha con formulario -->
-            <div class="col col-md-5 col-lg-3 col-sm-12">
-                <div class="p-3 rounded"
-                    style="background-color: #055261;color:white;
-        box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
-      ">
-                    <p></p>
-                    <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
-                    <form>
-
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="tb-nombre" name="tb-nombre" oninput=""
-                                placeholder="Nombres y Apellidos:" style="color: white;">
-                            <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="telefono" name="tb-nombre"
-                                oninput=""placeholder="Número de teléfono" style="color: white;">
-                            <label for="telefono" style="color: white;">Número de teléfono</label>
-                        </div>
-
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="dni" placeholder="Número de DNI"
-                                style="color: white;">
-                            <label for="dni" class=" text-light">DNI</label>
-                        </div>
-                        <div class="form-floating mb-3 h-5">
-                            <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;"
-                                placeholder="Escribe tu mensaje"></textarea>
-                            <label for="message" class="text-light">Mensaje</label>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class=" btn btn-warning btn-block"
-                                style="color:white;border-radius:100px;background-color:#FFA726;width: 250px;">Enviar mis
-                                datos</button>
+        <!-- Diapositiva 2: Imagen de Fondo -->
+        <div class="carousel-item active text-center position-relative py-5"style="background-color: #13434d">
+            <div class="container" style="background-color: #13434d">
+                <div class="row h-100">
+    
+    
+    
+                    <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
+                                    <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
+    
+    
+                    <!-- Columna izquierda con texto e imágenes -->
+                    <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
+                        <img src="ayba/4.png" alt="" width="90px">
+                        <h4 class="text-white font-weight-bold" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
+                        <h4 class="font-weight-bold text-warning" style="letter-spacing: 10px;">TU HOGAR</h4>
+                        <p class="lead mb-4">¡No pierdas más tiempo y asegura el lote de tus sueños hoy mismo, con facilidades
+                            de
+                            pago
+                            y ubicaciones estratégicas!</p>
+                        <h3 style="color:#FFA726">¿Dudas o consultas?</h3>
+                        <p class="mb-4">Nuestros números de atención al cliente:</p>
+                        <p>970 579 363 - 970 574 495 - 977 637 651</p>
+    
+                    </div>
+                    <style>
+                        .degradado-centro {
+    
+                            background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
+    
+                        }
+                    </style>
+                    <div class=" d-none d-lg-block   col-lg-4 col-xl-5">
+                        <img src="ayba/album.png" alt="" srcset="" width="100%" style="padding-top: 150px;">
+                    </div>
+    
+                    <!-- Columna derecha con formulario -->
+                    <div class="col col-md-6 col-lg-3 col-sm-12">
+                        <div class="p-3 rounded"
+                            style="background-color: #055261;color:white;
+                                                      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                             <p></p>
+                            <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
+                            <form>
+    
+    
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="tb-nombre" name="tb-nombre" oninput=""
+                                        placeholder="Nombres y Apellidos:" style="color: white;">
+                                    <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
+                                </div>
+    
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="telefono" name="tb-nombre"
+                                        oninput=""placeholder="Número de teléfono" style="color: white;">
+                                    <label for="telefono" style="color: white;">Número de teléfono</label>
+                                </div>
+    
+    
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="dni" placeholder="Número de DNI"
+                                        style="color: white;">
+                                    <label for="dni" class=" text-light">DNI</label>
+                                </div>
+                                <div class="form-floating mb-3 h-5">
+                                    <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;"
+                                        placeholder="Escribe tu mensaje"></textarea>
+                                    <label for="message" class="text-light">Mensaje</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class=" btn btn-warning btn-block"
+                                        style="color:white;border-radius:100px;background-color:#FFA726;width: 100%;">Enviar mis
+                                        datos</button>
+                                    <p></p>
+                                </div>
+    
+                            </form>
                         </div>
-
-                    </form>
+                    </div>
+    
+    
+    
                 </div>
             </div>
+        </div>
 
+          <!-- Diapositiva 1: Video de YouTube -->
+          <div class="carousel-item  position-relative"style="height:600px">
+            
+            <iframe 
+                src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&mute=1&loop=1&playlist=68tbz0AyBUs&controls=0&showinfo=0&modestbranding=1"
+                frameborder="0" 
+                
+                allow="autoplay; encrypted-media" 
+                allowfullscreen 
+                class="w-100 h-100"
+               
+                style="object-fit: cover;">
+            </iframe>
+            <div class="position-absolute top-50 start-50 translate-middle text-end">
+                <h1 class="display-3 fw-bold"><span style="color: #FFA726;"></span></h1>
+                <p class="fs-5"></p>
+            </div>
         </div>
     </div>
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {{-- <div class="container-fluid text-light py-5 degradado-centro" style="background-color: #081c20;">
+        <div class="container">
+            <div class="row h-100">
+
+
+
+                <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
+                                <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
+
+
+                <!-- Columna izquierda con texto e imágenes -->
+                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
+                    <img src="ayba/4.png" alt="" width="90px">
+                    <h4 class="text-white font-weight-bold" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
+                    <h4 class="font-weight-bold text-warning" style="letter-spacing: 10px;">TU HOGAR</h4>
+                    <p class="lead mb-4">¡No pierdas más tiempo y asegura el lote de tus sueños hoy mismo, con facilidades
+                        de
+                        pago
+                        y ubicaciones estratégicas!</p>
+                    <h3 style="color:#FFA726">¿Dudas o consultas?</h3>
+                    <p class="mb-4">Nuestros números de atención al cliente:</p>
+                    <p>970 579 363 - 970 574 495 - 977 637 651</p>
+
+                </div>
+                <style>
+                    .degradado-centro {
+
+                        background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
+
+                    }
+                </style>
+                <div class=" d-none d-lg-block   col-lg-4 col-xl-5">
+                    <img src="ayba/album.png" alt="" srcset="" width="100%" style="padding-top: 150px;">
+                </div>
+
+                <!-- Columna derecha con formulario -->
+                <div class="col col-md-6 col-lg-3 col-sm-12">
+                    <div class="p-3 rounded"
+                        style="background-color: #055261;color:white;
+                                                  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                        <p></p>
+                        <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
+                        <form>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="tb-nombre" name="tb-nombre" oninput=""
+                                    placeholder="Nombres y Apellidos:" style="color: white;">
+                                <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="telefono" name="tb-nombre"
+                                    oninput=""placeholder="Número de teléfono" style="color: white;">
+                                <label for="telefono" style="color: white;">Número de teléfono</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="dni" placeholder="Número de DNI"
+                                    style="color: white;">
+                                <label for="dni" class=" text-light">DNI</label>
+                            </div>
+                            <div class="form-floating mb-3 h-5">
+                                <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;"
+                                    placeholder="Escribe tu mensaje"></textarea>
+                                <label for="message" class="text-light">Mensaje</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class=" btn btn-warning btn-block"
+                                    style="color:white;border-radius:100px;background-color:#FFA726;width: 100%;">Enviar mis
+                                    datos</button>
+                                <p></p>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div> --}}
 
 
 
@@ -110,40 +243,87 @@
             width: 100%;
         }
     </style>
+
+
+
+
     <div class="container-fluid text-light py-5"style="background-image: url('{{ asset('ayba/bg.png') }}')">
         <div class="text-center">
-            <h1>VIVE EN LA MEJOR ZONA</h1>
-            <p></p>
 
 
 
 
-            <div class="container">
-                <div class="row">
 
+            <div class="container py-2">
 
-                    <div class="col-lg-4">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
+                <h1>VIVE EN LA MEJOR ZONA</h1>
+                <p>
+                    &nbsp;&nbsp;
+                </p>
+                <!-- Carrusel para pantallas pequeñas y medianas -->
+                <div id="responsiveCarousel" class="carousel slide d-lg-none" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Primera diapositiva -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                                        class="rounded-1 border-2"></lite-youtube>
+                                </div>
 
-                        </lite-youtube>
+                            </div>
+                        </div>
+                        <!-- Segunda diapositiva -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                                        class="rounded-1 border-2"></lite-youtube>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-md-4 mb-3">
+                                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                                        class="rounded-1 border-2"></lite-youtube>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-4">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
+                    <!-- Controles del carrusel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#responsiveCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#responsiveCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
 
-                        </lite-youtube>
+                <!-- Grilla para pantallas grandes -->
+                <div class="row d-none d-lg-flex mt-4">
+                    <div class="col-lg-4 mb-3">
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                            class="rounded-1 border-2"></lite-youtube>
                     </div>
-
-                    <div class="col-lg-4">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3">
-
-                        </lite-youtube>
+                    <div class="col-lg-4 mb-3">
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                            class="rounded-1 border-2"></lite-youtube>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
+                            class="rounded-1 border-2"></lite-youtube>
                     </div>
 
                 </div>
-
             </div>
-
 
 
 
@@ -154,7 +334,7 @@
 
         </div>
 
-        </lite-youtube>
+
 
     </div>
 
@@ -174,7 +354,8 @@
                             <div class="el-card-item pb-5" style="border: 1px solid black; border-radius: 20px;">
                                 <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center"
                                     style="margin-top: 5vh;">
-                                    <img src="{{ asset('ayba/agua.png') }}" alt="Inversion Segura" style="width: 50%;border-radius:0px">
+                                    <img src="{{ asset('ayba/agua.png') }}" alt="Inversion Segura"
+                                        style="width: 50%;border-radius:0px">
                                 </div>
                                 <div class="el-card-content text-center">
                                     <h4 class="mb-0 card-title">INVERSIÓN<br>SEGURA</h4>
@@ -255,7 +436,8 @@
                     <div class="el-card-item pb-5" style="border: 1px solid black; border-radius: 20px;">
                         <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center"
                             style="margin-top: 5vh;">
-                            <img src="{{ asset('ayba/agua.png') }}" alt="Inversion Segura" style="width: 50%;border-radius:0px">
+                            <img src="{{ asset('ayba/agua.png') }}" alt="Inversion Segura"
+                                style="width: 50%;border-radius:0px">
                         </div>
                         <div class="el-card-content text-center">
                             <h4 class="mb-0 card-title">INVERSION<br>SEGURA</h4>
@@ -478,122 +660,171 @@
 
     </div>
 
-    <div class="container-fluid  py-1 " style="background-color: #ffffff;">
+    <div class="container-fluid py-1" style="background-color: #ffffff;">
         <div class="row m-10">
-            <div class=" d-xl-none col-1">
-
+            <!-- Imagen -->
+            <div class="col-12 d-md-none d-xl-block col-xl-5 mt-lg-5">
+                <img class="transparencia_pie" src="ayba/familia.png" style="margin-top: 0%;" width="100%" alt="">
             </div>
-            <div class="col-10 col-xl-5 mt-lg-5">
-
-                <img class="transparencia_pie" src="ayba/familia.png"class="mt-10"  style="margin-top: 0%;" width="100%"
-                    alt="" srcset="">
-            </div>
-            <div class=" d-xl-none col-1">
-
-            </div>
-            <div class="col-xl-6" style="margin-top: 50px;">
     
-
-<div class="container">
-    <h4 class="display-5 d-lg-block d-xl-block d-sm-none d-none"
-    style="word-spacing: 13px; letter-spacing: 8px;">
-    <b>CONFÍA EN </b>
-    <b style="color:#13434d">AYBAR CORP</b>
-</h4>
-
-<h4 class="fs-8 d-lg-none text-center" style="word-spacing: 13px;letter-spacing:3px"><b>CONFÍA EN </b>
-    <b style="color:#13434d"> AYBAR CORP</b>
-</h4>
-
-
-<p class="fs-7 d-none d-lg-block d-xxl-block d-sm-none" style="color:#13434d;">Construye un futuro sólido
-    para tu familia invirtiendo en confianza.
-</p>
-<p class="fs-4 d-lg-none" style="color:#13434d;text-align: justify">Construye un futuro sólido para tu
-    familia
-    invirtiendo en confianza.</p>
-
-
-
-<a class="btn btn-hover-shadow" href="#"
-    style="color:white;border-radius:20px;background-color:#FFA726;margin-bottom:20px"> > &nbsp;CONOCER
-    MÁS&nbsp;</a>
-       <div class="row">
-                    <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #13434d;">
-
-                            <div class="card-body text-center text-white ">
-
-                                <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
-                                    width="40%" alt="">
-                                <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
-                                <p class="fs-1" style="margin-bottom:3% ;text-align:justify">Con la mejor inversión en
-                                    la construcción
-                                    de un futuro
-                                    estable para tu familia.</p>
-
+            <!-- Contenido -->
+            <div class="col-xl-7" style="margin-top: 50px;">
+                <div class="container">
+                    <h4 class="display-5 d-lg-block d-xl-block d-sm-none d-none"
+                        style="word-spacing: 13px; letter-spacing: 8px;">
+                        <b>CONFÍA EN </b><b style="color:#13434d">AYBAR CORP</b>
+                    </h4>
+                    <h4 class="fs-8 d-lg-none text-center" style="word-spacing: 13px;letter-spacing:3px">
+                        <b>CONFÍA EN </b><b style="color:#13434d">AYBAR CORP</b>
+                    </h4>
+                    <p class="fs-7 d-none d-lg-block d-xxl-block d-sm-none" style="color:#13434d;">
+                        Construye un futuro sólido para tu familia invirtiendo en confianza.
+                    </p>
+                    <p class="fs-4 d-lg-none" style="color:#13434d;text-align: justify;">
+                        Construye un futuro sólido para tu familia invirtiendo en confianza.
+                    </p>
+                    <a class="btn btn-hover-shadow" href="#"
+                        style="color:white;border-radius:20px;background-color:#FFA726;margin-bottom:20px">
+                        > &nbsp;CONOCER MÁS&nbsp;
+                    </a>
+    
+                    <!-- Carrusel para pantallas SM -->
+                    <div id="carouselExample" class="carousel slide d-md-none" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Diapositiva 1 -->
+                            <div class="carousel-item active">
+                                <div class="card" style="background-color: #13434d;">
+                                    <div class="card-body text-center text-white">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                            width="60px" alt="">
+                                        <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
+                                        <p class="fs-1" style="margin-bottom:3%; text-align: justify;">
+                                            Con la mejor inversión en la construcción de un futuro estable para tu familia.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diapositiva 2 -->
+                            <div class="carousel-item">
+                                <div class="card" style="background-color: #13434d;">
+                                    <div class="card-body text-center text-white">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                            width="60px" alt="">
+                                        <p class="fs-6"><b>+ DE 5 AÑOS</b></p>
+                                        <p class="fs-2">De experiencia en el mercado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diapositiva 3 -->
+                            <div class="carousel-item">
+                                <div class="card" style="background-color: #13434d;">
+                                    <div class="card-body text-center text-white">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                            width="60px" alt="">
+                                        <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diapositiva 4 -->
+                            <div class="carousel-item">
+                                <div class="card" style="background-color: #13434d;">
+                                    <div class="card-body text-center text-white">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                            width="60px" alt="">
+                                        <p class="fs-6"><b>+ DE 1,000</b></p>
+                                        <p class="fs-2">Adquirieron nuestros proyectos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Diapositiva 5 -->
+                            <div class="carousel-item">
+                                <div class="card" style="background-color: #13434d;">
+                                    <div class="card-body text-center text-white">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                            width="60px" alt="">
+                                        <p class="fs-6"><b>+ 2,000 KM 2</b></p>
+                                        <p class="fs-2">Zonas verdes proporcionadas.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- Controles del Carrusel -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #13434d;">
-                            <div class="card-body text-center text-white ">
-                                <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
-                                    width="40%" alt="">
-                                <p class="fs-6"><b> + DE 5 AÑOS</b></p>
-                                <p class="fs-2">De experiencia en el mercado.</p>
+    
+                    <!-- Grilla para pantallas MD y superiores -->
+                    <div class="row d-none d-md-flex mt-4">
+                        <div class="col-lg-4 col-md-6 col-xl-4">
+                            <div class="card" style="background-color: #13434d;">
+                                <div class="card-body text-center text-white">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                        width="60px" alt="">
+                                    <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
+                                    <p class="fs-1" style="margin-bottom:3%; text-align: justify;">
+                                        Con la mejor inversión en la construcción de un futuro estable para tu familia.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #13434d;">
-                            <div class="card-body text-center text-white ">
-                                <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
-                                    width="40%" alt="">
-                                <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
-                                <p class="fs-2"></p>
+                        <div class="col-lg-4 col-md-6 col-xl-4">
+                            <div class="card" style="background-color: #13434d;">
+                                <div class="card-body text-center text-white">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                        width="60px" alt="">
+                                    <p class="fs-6"><b>+ DE 5 AÑOS</b></p>
+                                    <p class="fs-2">De experiencia en el mercado.</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-2 d-lg-block d-none">
-
-                    </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-
-                        <div class="card" style="background-color: #13434d;">
-                            <div class="card-body text-center text-white ">
-                                <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
-                                    width="40%" alt="">
-                                <p class="fs-6"><b>+ DE 1,000</b></p>
-                                <p class="fs-2">Adquirieron nuestros proyectos.</p>
+                        <div class="d-none d-md-block  d-lg-none col-md-3"></div>
+                        <div class="col-lg-4 col-md-6 col-xl-4">
+                            <div class="card" style="background-color: #13434d;">
+                                <div class="card-body text-center text-white">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                        width="60px" alt="">
+                                    <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 col-md-6 col-xl-4">
-                        <div class="card" style="background-color: #13434d;">
-                            <div class="card-body text-center text-white ">
-                                <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
-                                    width="40%" alt="">
-                                <p class="fs-6"><b>+ 2,000 KM 2</b></p>
-                                <p class="fs-2">Zonas verdes proporsionadas.</p>
+                        <div class="col-md-2 col-xl-2"></div>
+                        <div class="col-lg-4 col-md-6 col-xl-4">
+                            <div class="card" style="background-color: #13434d;">
+                                <div class="card-body text-center text-white">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                        width="60px" alt="">
+                                    <p class="fs-6"><b>+ DE 1,000</b></p>
+                                    <p class="fs-2">Adquirieron nuestros proyectos.</p>
+                                </div>
                             </div>
                         </div>
-                        <!-- <div class="card" style="background-color: #13434d;">
-                            <div class="card-body text-center text-white ">
-                              <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="40%" alt="">
-                              <p class="fs-6"><b>+ 2,000 KM 2</b></p>
-                              <p class="fs-2">Zonas verdes proporsionadas.</p>
+                       
+                        <div class="col-lg-4 col-md-6 col-xl-4">
+                            <div class="card" style="background-color: #13434d;">
+                                <div class="card-body text-center text-white">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
+                                        width="60px" alt="">
+                                    <p class="fs-6"><b>+ 2,000 KM 2</b></p>
+                                    <p class="fs-2">Zonas verdes proporcionadas.</p>
+                                </div>
                             </div>
-                          </div> -->
+                        </div>
                     </div>
                 </div>
-</div>
-         
-           
-                
-
             </div>
         </div>
-
     </div>
+    
+    
+
+
+
 @endsection

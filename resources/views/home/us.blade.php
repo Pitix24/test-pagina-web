@@ -207,6 +207,16 @@
             <p></p>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+    
     <div class="container-fluid py-1"style="background-color: #FF9D0D;">
         <div class="container mt-xl-10 mt-md-3 mt-sm-0">
             <div class="row">
@@ -273,6 +283,11 @@
 
     <p></p>
 
+
+
+
+
+    
     <div class="container my-5">
         <div class="row align-items-center mt-10">
             <!-- Columna izquierda: Reproductor multimedia -->
@@ -314,7 +329,47 @@
     </div>
 
 
+    <div class="container-fluid py-5" style="margin: 0; padding-right: 0; padding-left: 0; ">
+        <div class="row row-cols-md-4 text-center contenedor-cards" style="display: flex; justify-content: center; align-items: center; padding: 3vh; margin: 0; background-color: #13434d;">
+          
+          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card1" style="border: 2px solid rgba(0, 0, 0, 0);">
+            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://pruebaaybar.credilotesperu.com/imagen/imagenxd.png); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
+              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
+                  <h2 style="text-align: start; color: white; margin-top:-120px">RESPETO</h2>
+                  <p style="text-align: start; color: white; ">Lima</p>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card2" style="border: 2px solid rgba(0, 0, 0, 0);">
+            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://pruebaaybar.credilotesperu.com/imagen/imagenxd.png); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
+              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
+                  <h2 style="text-align: start; color: white; margin-top:-120px ">EMPATIA</h2>
+                  <p style="text-align: start; color: white; ">Lima</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card3" style="border: 2px solid rgba(0, 0, 0, 0);">
+            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://pruebaaybar.credilotesperu.com/imagen/imagenxd.png); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
+              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
+                  <h2 style="text-align: start; color: white; margin-top:-120px ">INTEGRIDAD</h2>
+                  <p style="text-align: start; color: white; ">Lima</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card4" style="border: 2px solid rgba(0, 0, 0, 0);">
+            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://pruebaaybar.credilotesperu.com/imagen/imagenxd.png); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
+              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
+                  <h2 style="text-align: start; color: white; margin-top:-120px ">COMPROMISO</h2>
+                  <p style="text-align: start; color: white; ">Lima</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+  </div>
 
 
 
@@ -386,53 +441,7 @@
 
 
 </style>
-<section class="container-fluid">
-    <div class="container py-5">
-        <div class="row g-4 mt-xl-10 mb-xl-10">
-            <!-- Tarjeta 1 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card position-relative">
-                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg"
-                     alt="Respeto" class="card-img">
-                    <div class="card-overlay">
-                        <h5 class="card-title text-white">RESPETO</h5>
-                        <p class="card-text text-white" style="padding-bottom: 50px">LIMA</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 2 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card position-relative">
-                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Empatía" class="card-img">
-                    <div class="card-overlay">
-                        <h5 class="card-title text-white">EMPATÍA</h5>
-                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 3 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card position-relative">
-                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Integridad" class="card-img">
-                    <div class="card-overlay">
-                        <h5 class="card-title text-white">INTEGRIDAD</h5>
-                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Tarjeta 4 -->
-            <div class="col-md-6 col-lg-3">
-                <div class="card position-relative">
-                    <img src="https://psicologiamonzo.com/wp-content/uploads/2019/03/multiracial-grupo-joven-gente-toma-selfie_1139-1032.jpg" alt="Compromiso" class="card-img">
-                    <div class="card-overlay">
-                        <h5 class="card-title text-white">COMPROMISO</h5>
-                        <p class="card-text text-white" style="padding-bottom: 50px">Read More</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 
 
 

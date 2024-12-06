@@ -7,9 +7,10 @@ html {
 }
 
 .social-container {
+ 
   position: fixed;
   /* Siempre visible en el lado izquierdo */
-  top: 40%;
+  top: 50%;
   /* Posicionado verticalmente en el centro */
   left: 0px;
   /* Alineado a la izquierda */
@@ -18,23 +19,25 @@ html {
   display: flex;
   flex-direction: column;
   /* Coloca los elementos uno debajo del otro */
-  gap: 1px;
+  gap: 0px;
   /* Espaciado entre los botones */
+  height:140px;
 }
 
 .social-button img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   cursor: pointer;
+  margin-top: -10px;
   transition: transform 0.2s ease;
 }
 
 .social-button img:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
   /* Animación de agrandamiento al pasar el cursor */
 }
 .container-fluid {
-    background-color: #13434d;
+    background-color: #13434d ;
     /* Color de fondo similar */
   }
   

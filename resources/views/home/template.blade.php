@@ -331,11 +331,16 @@
     </div>
 
 
+<style>
+    .wdwdw{
+
+    }
+</style>
 
 
-
-    <div class="social-container  p-2 pt-3 pb-3"
-        style="background-color: #f6a52c00;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
+<div class="d-none d-md-block">
+    <div class="social-container   p-2 pt-3 pb-3"
+        style="background-color: #FFA726;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
         <a href="https://www.facebook.com/aybarcorpoficial" target="_blank" class="social-button">
             <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
@@ -349,6 +354,8 @@
         </a>
         
     </div>
+</div>
+
 
 
 
