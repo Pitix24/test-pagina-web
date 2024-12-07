@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
 
+    <link rel="stylesheet" href="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.css') }}">
+
+    
     <script src="{{ asset('js/user.js') }}"></script>
     <script src="{{ asset('js/category.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
@@ -137,34 +140,15 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('seccion/inicio') }}">
-                                                    <span class="icon-small"></span> Inicio
+                                                <a class="sidebar-link" href="{{ url('admin/secciones') }}">
+                                                    <span class="icon-small"></span> Secciones
                                                 </a>
                                             </li>
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('seccion/nosotros') }}">
-                                                    <span class="icon-small"></span>Nosotros
+                                                <a class="sidebar-link" href="{{ url('admin/plantilla') }}">
+                                                    <span class="icon-small"></span> Plantilla
                                                 </a>
                                             </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('seccion/proyectos') }}">
-                                                    <span class="icon-small"></span>Proyectos
-
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('seccion/blogs') }}">
-                                                    <span class="icon-small"></span>Blogs
-
-                                                </a>
-                                            </li>
-
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/contacto') }}">
-                                                    <span class="icon-small"></span>Contacto
-                                                </a>
-                                            </li>
-
                                         </ul>
                                     </li>
                                     <li class="sidebar-item">
@@ -2242,6 +2226,17 @@
             $('.select2').select2()
         });
     </script>
+
+
+ <!-- solar icons -->
+ <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+ <script src="{{ asset('assets/libs/jquery-asColor/dist/jquery-asColor.min.js') }}"></script>
+ <script src="{{ asset('assets/libs/jquery-asGradient/dist/jquery-asGradient.min.js') }}"></script>
+ <script src="{{ asset('assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js') }}"></script>
+ <script src="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.min.js') }}"></script>
+ <script src="{{ asset('assets/js/plugins/colorpicker-init.js') }}"></script>
+ 
+
 </body>
 
 
