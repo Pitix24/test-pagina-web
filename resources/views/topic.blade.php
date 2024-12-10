@@ -268,6 +268,6 @@
             });
         })
         // Si deseas cambiar el texto después de la inicialización, puedes hacerlo así:
-        $('#summernote').summernote('code', '<p> </p>');
+        $('#summernote').summernote('code', '');
     </script>
 @endsection

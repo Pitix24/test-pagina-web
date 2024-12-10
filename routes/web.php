@@ -80,7 +80,8 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('SectionStore', [App\Http\Controllers\SectionController::class, 'store']);
     Route::post('SectionDestroy', [App\Http\Controllers\SectionController::class, 'destroy']);
     Route::post('SectionEdit', [App\Http\Controllers\SectionController::class, 'edit']);
-    
+    Route::post('SectionUpdate', [App\Http\Controllers\SectionController::class, 'update']);
+    Route::post('SectionUpdateDinamic', [App\Http\Controllers\SectionController::class, 'updateDinamic']);
 
     Route::get('admin/proyectos', [App\Http\Controllers\ProjectController::class, 'index']);
     Route::post('ProjectCreate', [App\Http\Controllers\ProjectController::class, 'create']);
@@ -88,26 +89,32 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('ProjectDestroy', [App\Http\Controllers\ProjectController::class, 'destroy']);
     Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit']);
 
-    //ADMINISTRATIVO
-    Route::get('home_edit/home', function () {
-        return view('home_edit.home');
-    });
-    Route::get('home_edit/plantilla', function () {
-        return view('home_edit.template');
-    });
-    Route::get('home_edit/nosotros', function () {
-        return view('home_edit.us');
-    });
 
-    Route::get('home_edit/proyectos', function () {
-        return view('home_edit.project');
-    });
-    Route::get('home_edit/blog', function () {
-        return view('home_edit.blog');
-    });
-    Route::get('home_edit/contacto', function () {
-        return view('home_edit.contact');
-    });
+   //ADMINISTRATIVO
+    Route::get('home_edit/plantilla', [App\Http\Controllers\Home_edit::class, 'template']);
+    Route::get('home_edit/inicio', [App\Http\Controllers\Home_edit::class, 'home']);
+    Route::get('home_edit/nosotros', [App\Http\Controllers\Home_edit::class, 'us']);
+    Route::get('home_edit/proyectos', [App\Http\Controllers\Home_edit::class, 'project']);
+    Route::get('home_edit/blog', [App\Http\Controllers\Home_edit::class, 'blog']);
+    Route::get('home_edit/contacto', [App\Http\Controllers\Home_edit::class, 'contact']);
+ 
+ 
+    // Route::get('home_edit/plantilla', function () {
+    //     return view('home_edit.template');
+    // });
+    // Route::get('home_edit/nosotros', function () {
+    //     return view('home_edit.us');
+    // });
+
+    // Route::get('home_edit/proyectos', function () {
+    //     return view('home_edit.project');
+    // });
+    // Route::get('home_edit/blog', function () {
+    //     return view('home_edit.blog');
+    // });
+    // Route::get('home_edit/contacto', function () {
+    //     return view('home_edit.contact');
+    // });
 
 
 

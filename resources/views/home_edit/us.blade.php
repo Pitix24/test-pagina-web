@@ -56,12 +56,12 @@
             </div>
             <div class="d-none d-md-block d-lg-block d-xl-block col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6">
                 <img class="transparencia_left" style="" width="100%"
-                    src="https://www.humaniq.com.mx/blog/wp-content/uploads/2023/09/altos-ejecutivos-scaled.jpeg"
+                    src="https://familia.edu.mx/wp-content/uploads/2020/03/que-es-la-persona-2.jpg"
                     alt="" srcset="">
             </div>
             <div class="d-sm-block d-md-none d-lg-none d-xl-none col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6"style="height:100px">
                 <img class="transparencia_left" style="" width="100%"
-                    src="https://www.humaniq.com.mx/blog/wp-content/uploads/2023/09/altos-ejecutivos-scaled.jpeg"
+                    src="https://familia.edu.mx/wp-content/uploads/2020/03/que-es-la-persona-2.jpg"
                     alt="" srcset="" >
             </div>
         </div>

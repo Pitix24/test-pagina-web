@@ -21,11 +21,10 @@
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.css') }}">
-
-    
+    <link href="{{asset('css/template.css')}}" rel="stylesheet">
     <script src="{{ asset('js/user.js') }}"></script>
     <script src="{{ asset('js/category.js') }}"></script>
+    <script src="{{ asset('js/section.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
@@ -2229,12 +2228,8 @@
 
 
  <!-- solar icons -->
- <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
- <script src="{{ asset('assets/libs/jquery-asColor/dist/jquery-asColor.min.js') }}"></script>
- <script src="{{ asset('assets/libs/jquery-asGradient/dist/jquery-asGradient.min.js') }}"></script>
- <script src="{{ asset('assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js') }}"></script>
- <script src="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.min.js') }}"></script>
- <script src="{{ asset('assets/js/plugins/colorpicker-init.js') }}"></script>
+
+ {{-- <script src="{{ asset('assets/js/plugins/colorpicker-init.js') }}"defer></script> --}}
  
 
 </body>

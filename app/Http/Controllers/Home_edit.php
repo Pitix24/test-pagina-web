@@ -3,17 +3,38 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Section;
 class Home_edit extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+
+    }
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function template()
     {
-        //
+        $section = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+        return view('home_edit.template',compact('section'));
     }
-
+    public function home()
+    {
+        $section = Section::where("module","=","2")->orderBy("nivel","asc")->get();
+        return view('home_edit.home',compact('section'));
+    }
+    public function us()
+    {
+        $section = Section::where("module","=","3")->orderBy("nivel","asc")->get();
+        return view('home_edit.us',compact('section'));
+    }
+    public function contact()
+    {
+        $section = Section::where("module","=","4")->orderBy("nivel","asc")->get();
+        return view('home_edit.us',compact('section'));
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -41,9 +62,9 @@ class Home_edit extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Request $id)
     {
-        //
+   
     }
 
     /**

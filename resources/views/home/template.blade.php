@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/jpg" href="{{ asset('ayba/favicon.png') }}" />
     <!-- Core Css -->
-    <link rel="stylesheet" href="{{asset('assets/css/styles.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}" />
     <title>AybarCorp</title>
     <!-- Owl Carousel  -->
-    <link rel="stylesheet" href="{{asset('assets/libs/owl.carousel/dist/assets/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/libs/aos/dist/aos.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/template.css')}}" />
+    <link rel="stylesheet" href="{{ asset('assets/libs/owl.carousel/dist/assets/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/libs/aos/dist/aos.css') }}" />
+    <link rel="stylesheet" href="{{ asset('css/template.css') }}" />
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
@@ -33,7 +33,7 @@
 
 <body>
     <!-- Preloader -->
-    <div class="preloader"><img src="{{asset('ayba/1.png')}}" alt="loader" class="lds-ripple img-fluid" /></div>
+    <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
     <div style="background-color: #13434d; height: 80px;margin-bottom: -10px;"
         class="d-none d-xs-flex d-lg-flex  justify-content-center align-items-center">
         <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; ">
@@ -52,14 +52,11 @@
                 <div class="container">
 
                     <a class="position-relative navbar-brand me-0 py-0 m-2 " href="{{ url('/') }}"> <img
-                            src="{{asset('ayba/1.png')}}" alt="img-fluid" width="80px"style="margin-left:0%" />
+                            src="{{ asset('ayba/1.png') }}" alt="img-fluid" width="80px"style="margin-left:0%" />
                     </a>
 
 
 
-                    {{-- <a class=" navbar-brand me-0 py-0 m-2 text-end" href="{{url('/')}}"> <img src="ayba/1.png" alt="img-fluid"
-            width="80px" />
-        </a> --}}
                     <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -72,43 +69,43 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px; ">
                             <li class="nav-item">
-                              @php
-                              $color_nav_enable = '#FFA726';
-                              $color_nav_disable = '#13434d';
-                          @endphp
-                          
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="{{ url('/') }}"
-                                  style="color: {{ request()->is('/') ? $color_nav_enable : $color_nav_disable }}">
-                                  <b style="word-spacing: 9px;">INICIO</b>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="{{ url('nosotros') }}"
-                                  style="color: {{ request()->is('nosotros') ? $color_nav_enable : $color_nav_disable }}">
-                                  <b style="word-spacing: 9px;">NOSOTROS</b>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="{{ url('proyectos') }}"
-                                  style="color: {{ request()->is('proyectos') ? $color_nav_enable : $color_nav_disable }}">
-                                  <b style="word-spacing: 9px;">PROYECTOS</b>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" aria-current="page" href="{{ url('blog') }}"
-                                  style="color: {{ request()->is('blog') ? $color_nav_enable : $color_nav_disable }}">
-                                  <b style="word-spacing: 9px;">BLOG</b>
-                              </a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{ url('contacto') }}"
-                                style="color: {{ request()->is('contacto') ? $color_nav_enable : $color_nav_disable }}">
-                                 <b style=" word-spacing: 9px;">CONTÁCTANOS </b></a>
-                          
-                        </li>
-                         
-                            
+                                @php
+                                    $color_nav_enable = '#FFA726';
+                                    $color_nav_disable = '#13434d';
+                                @endphp
+
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url('/') }}"
+                                    style="color: {{ request()->is('/') ? $color_nav_enable : $color_nav_disable }}">
+                                    <b style="word-spacing: 9px;">INICIO</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url('nosotros') }}"
+                                    style="color: {{ request()->is('nosotros') ? $color_nav_enable : $color_nav_disable }}">
+                                    <b style="word-spacing: 9px;">NOSOTROS</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url('proyectos') }}"
+                                    style="color: {{ request()->is('proyectos') ? $color_nav_enable : $color_nav_disable }}">
+                                    <b style="word-spacing: 9px;">PROYECTOS</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url('blog') }}"
+                                    style="color: {{ request()->is('blog') ? $color_nav_enable : $color_nav_disable }}">
+                                    <b style="word-spacing: 9px;">BLOG</b>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="{{ url('contacto') }}"
+                                    style="color: {{ request()->is('contacto') ? $color_nav_enable : $color_nav_disable }}">
+                                    <b style=" word-spacing: 9px;">CONTÁCTANOS </b></a>
+
+                            </li>
+
+
 
                             <li class="nav-item ms-2">
                                 <a class="btn btn-hover-shadow" href="https://pagos.aybarcorp.com"
@@ -174,7 +171,7 @@
                     <!-- <div class="col-4 d-none d-sm-block"></div> -->
 
                     <div class="mt-4 text-center col-xl-4 mt-10">
-                        <img src="{{asset('ayba/4.png')}}" width="40%" alt="" srcset=""><br>
+                        <img src="{{ asset('ayba/4.png') }}" width="40%" alt="" srcset=""><br>
                         <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png"
                             width="45px" alt="">
                         <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png"
@@ -219,7 +216,7 @@
         <div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header p-4">
-                <img src="{{asset('ayba/1.png')}}" alt="matdash-img" class="img-fluid" width="150" />
+                <img src="{{ asset('ayba/1.png') }}" alt="matdash-img" class="img-fluid" width="150" />
             </div>
             <div class="offcanvas-body p-4">
                 <ul class="navbar-nav justify-content-end flex-grow-1">
@@ -234,28 +231,28 @@
                      
                         </ul>
                     </li> --}}
-              
+
                     <li class="nav-item mt-3">
                         <a class="nav-link fs-3 text-dark active" aria-current="page"
-                            href="{{url('/')}}">Inicio</a>
+                            href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="nav-item mt-3">
                         <a class="nav-link fs-3 text-dark active" aria-current="page"
-                            href="{{url('nosotros')}}">Nosotros</a>
+                            href="{{ url('nosotros') }}">Nosotros</a>
                     </li>
                     <li class="nav-item mt-3">
                         <a class="nav-link fs-3 text-dark active" aria-current="page"
-                            href="{{url('proyectos')}}">Proyectos</a>
+                            href="{{ url('proyectos') }}">Proyectos</a>
                     </li>
                     <li class="nav-item mt-3">
                         <a class="nav-link fs-3 text-dark active" aria-current="page"
-                            href="{{url('blog')}}">Blogs</a>
+                            href="{{ url('blog') }}">Blogs</a>
                     </li>
                     {{-- <li class="nav-item mt-3"><a class="nav-link fs-3 text-dark" href="#">Pages</a></li> --}}
                 </ul>
-                <a href="{{url('login')}}" class="btn btn-primary w-100 py-2">Administrar</a>
+                <a href="{{ url('login') }}" class="btn btn-primary w-100 py-2">Administrar</a>
                 <br>
-                <a href="{{url('logout')}}" class="btn btn-secondary w-100 py-2">Salir</a>
+                <a href="{{ url('logout') }}" class="btn btn-secondary w-100 py-2">Salir</a>
                 {{-- <form class="d-flex mt-3" role="search">
                     <a href="main/authentication-login2.html" class="btn btn-primary w-100 py-2">Login</a>
                 </form> --}}
@@ -331,30 +328,23 @@
     </div>
 
 
-<style>
-    .wdwdw{
 
-    }
-</style>
+    <div class="d-none d-md-block">
+        <div class="social-container   p-2 pt-3 pb-3"
+            style="background-color: #FFA726;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
+            <a href="https://www.facebook.com/aybarcorpoficial" target="_blank" class="social-button">
+                <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/aybarcorpoficial" target="_blank" class="social-button">
+                <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank" class="social-button">
+                <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
+            </a>
 
-<div class="d-none d-md-block">
-    <div class="social-container   p-2 pt-3 pb-3"
-        style="background-color: #FFA726;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
-
-        <a href="https://www.facebook.com/aybarcorpoficial" target="_blank" class="social-button">
-            <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
-        </a>
-        <a href="https://www.instagram.com/aybarcorpoficial" target="_blank"
-            class="social-button">
-            <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Instagram">
-        </a>
-        <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank" class="social-button">
-            <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="LinkedIn">
-        </a>
-        
+        </div>
     </div>
-</div>
 
 
 
@@ -363,19 +353,19 @@
 
 
     <div class="dark-transparent sidebartoggler"></div>
-    <script src="{{asset('assets/js/vendor.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendor.min.js') }}"></script>
     <!-- Import Js Files -->
-    <script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('assets/libs/simplebar/dist/simplebar.min.js')}}"></script>
-    <script src="{{asset('assets/js/theme/app.init.js')}}"></script>
-    <script src="{{asset('assets/js/theme/theme.js')}}"></script>
-    <script src="{{asset('assets/js/theme/app.min.js')}}"></script>
-    <script src="{{asset('assets/js/theme/sidebarmenu.js')}}"></script>
+    <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/libs/simplebar/dist/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/theme/app.init.js') }}"></script>
+    <script src="{{ asset('assets/js/theme/theme.js') }}"></script>
+    <script src="{{ asset('assets/js/theme/app.min.js') }}"></script>
+    <script src="{{ asset('assets/js/theme/sidebarmenu.js') }}"></script>
     <!-- solar icons -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
-    <script src="{{asset('assets/libs/owl.carousel/dist/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('assets/libs/aos/dist/aos.js')}}"></script>
-    <script src="{{asset('assets/js/landingpage/landingpage.js')}}"></script>
+    <script src="{{ asset('assets/libs/owl.carousel/dist/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/libs/aos/dist/aos.js') }}"></script>
+    <script src="{{ asset('assets/js/landingpage/landingpage.js') }}"></script>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js"></script>
 </body>

@@ -39,16 +39,15 @@
                             <input type="text" name="description" id="description" class="form-control">
                             <h6>Página :</h6>
                             <select name="module" id="module"class="form-control">
-                                <option value="1">Inicio</option>
-                                <option value="2">Nosotros</option>
-                                <option value="3">Proyectos</option>
-                                <option value="4">Blog</option>
-                                <option value="5">Contacto</option>
+                                <option value="1">Plantilla</option>
+                                <option value="2">Inicio</option>
+                                <option value="3">Nosotros</option>
+                                <option value="4">Proyectos</option>
+                                <option value="5">Blog</option>
+                                <option value="6">Contacto</option>
 
                             </select>
                             <br>
-
-
 
 
                             <p></p>
@@ -57,7 +56,7 @@
                             <h6>Contenido :</h6>
                             <textarea id="my-textarea"style="height:'900px'" name="code">
                            
-                            <p></p>
+                          
                           </textarea>
                             <br>
                             <h6>Nivel :</h6>
@@ -74,32 +73,55 @@
                                 <option value="10">Nivel 10</option>
 
                             </select>
+                              <link rel="stylesheet" href="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.css') }}">
 
-                            <h6>Color :</h6>
-                            <div
-                                class="minicolors minicolors-theme-bootstrap minicolors-position-bottom minicolors-position-left minicolors-focus">
-                                <input type="text" id="letter-case" class="form-control demo minicolors-input"
-                                    data-lettercase="uppercase" value="#abcdef" size="7"><span
-                                    class="minicolors-swatch minicolors-sprite minicolors-input-swatch"><span
-                                        class="minicolors-swatch-color"
-                                        style="opacity: 1; background-color: rgb(212, 34, 108);"></span></span>
-                                <div class="minicolors-panel minicolors-slider-hue" style="display: block;">
-                                    <div class="minicolors-slider minicolors-sprite">
-                                        <div class="minicolors-picker" style="top: 10.3933px;"></div>
-                                    </div>
-                                    <div class="minicolors-opacity-slider minicolors-sprite">
-                                        <div class="minicolors-picker"></div>
-                                    </div>
-                                    <div class="minicolors-grid minicolors-sprite"
-                                        style="background-color: rgb(255, 0, 106);">
-                                        <div class="minicolors-grid-inner"></div>
-                                        <div class="minicolors-picker" style="top: 25px; left: 126px;">
-                                            <div></div>
-                                        </div>
-                                    </div>
+    
+                            {{-- <h6>Color :</h6>
+              
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                  <div class="mb-3">
+                                
+                                    <input type="text"name="color" id="position-bottom-left" class="form-control demo" data-position="bottom left" value="#13434d" />
+                                  </div>
+                                  
                                 </div>
-                            </div>
+                              </div>
+                            <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js" ></script>
+                            <script src="{{ asset('assets/libs/jquery-asColor/dist/jquery-asColor.min.js') }}"></script>
+                            <script src="{{ asset('assets/libs/jquery-asGradient/dist/jquery-asGradient.min.js') }}"></script>
+                            <script src="{{ asset('assets/libs/jquery-asColorPicker/dist/jquery-asColorPicker.min.js') }}"></script>
+                            <script src="{{ asset('assets/libs/@claviska/jquery-minicolors/jquery.minicolors.min.js') }}"></script>
+<script>
+    $(".demo").each(function () {
+  $(this).minicolors({
+    control: $(this).attr("data-control") || "hue",
+    defaultValue: $(this).attr("data-defaultValue") || "",
+    format: $(this).attr("data-format") || "hex",
+    keywords: $(this).attr("data-keywords") || "",
+    inline: $(this).attr("data-inline") === "true",
+    letterCase: $(this).attr("data-letterCase") || "lowercase",
+    opacity: $(this).attr("data-opacity"),
+    position: $(this).attr("data-position") || "bottom left",
+    swatches: $(this).attr("data-swatches")
+      ? $(this).attr("data-swatches").split("|")
+      : [],
+    change: function (value, opacity) {
+      if (!value) return;
+      if (opacity) value += ", " + opacity;
+      if (typeof console === "object") {
+        console.log(value);
+      }
+    },
+    theme: "bootstrap",
+  });
+});
 
+</script> --}}
+
+
+ 
                             <h6>Detalle : </h6>
                             <input type="text" name="detail" id="detail" class="form-control">
                             <p></p>
@@ -143,65 +165,11 @@
     <div class="button-group">
 
 
-        <!-- /.modal -->
-        <!-- danger header modal -->
-
-        <!-- /.modal -->
-
-        <!-- /.modal -->
-
-        <!-- success Header Modal -->
-        <div id="success-header-modal" class="modal fade" tabindex="-1" aria-labelledby="success-header-modalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header modal-colored-header bg-success text-white">
-                        <h4 class="modal-title text-white" id="success-header-modalLabel">
-                            Blog
-                        </h4>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-
-
-                        <form action="" method="post" role="form" id="section"
-                            name="section"enctype="multipart/form-data">
-                            <input type="hidden" name="id" id="id">
-                            {{ csrf_field() }}
-
-                            Descripción : <input type="text" name="description" id="description"
-                                class="form-control">
-
-                            Detalle : <input type="text" name="detail" id="detail" class="form-control">
-
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button" value="Nuevo" class="btn btn-primary"
-                            onclick="New();$('#section')[0].reset();" name="new">
-                        <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="sectionStore()" id="create">
-                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
-                            onclick="sectionUpdate();" id="update">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        </form>
-
-
-
-
-
-
-
-                    </div>
-
-                </div>
-                <!-- /.modal-content -->
-            </div>
-            <!-- /.modal-dialog -->
-        </div>
+    
         <!-- /.modal -->
 
 
         <!-- /.modal -->
     </div>
+
 @endsection
