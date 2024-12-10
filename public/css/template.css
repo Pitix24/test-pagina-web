@@ -37,12 +37,12 @@ html {
   /* Animación de agrandamiento al pasar el cursor */
 }
 .container-fluid {
-    background-color: #13434d ;
+    background-color: #03424E  #03424E;
     /* Color de fondo similar */
   }
   
   h4 {
-    color: #FFA726;
+    color: #F6A42C;
     /* Color de texto naranja */
   }
   
@@ -66,14 +66,14 @@ html {
   }
   
   .text-warning {
-    color: #FFA726 !important;
+    color: #F6A42C !important;
    
     /* Color de texto para "TUS HOGAR" */
   }
   
   .btn-warning {
-    background-color: #FFA726;
-    border-color: #FFA726;
+    background-color: #F6A42C;
+    border-color: #F6A42C;
   }
   
   .form-group input,

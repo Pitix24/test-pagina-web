@@ -34,12 +34,12 @@
 <body>
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
-    <div style="background-color: #13434d; height: 80px;margin-bottom: -10px;"
+    <div style="background-color: #03424E; height: 80px;margin-bottom: -10px;"
         class="d-none d-xs-flex d-lg-flex  justify-content-center align-items-center">
         <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; ">
             <b style="font-size:x-large;color:white; ">ENCUENTRA TU LOTE SOÑADO AQUÍ &nbsp;</b>
             <a href="#" class="  btn bg-white"
-                style="color:#13434d;height: 40px; margin-bottom: 10px;
+                style="color:#03424E;height: 40px; margin-bottom: 10px;
      border-radius: 100px;width: 300px;
      ">
                 <b>MÁS INFORMACIÓN</b>
@@ -70,8 +70,8 @@
                         <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px; ">
                             <li class="nav-item">
                                 @php
-                                    $color_nav_enable = '#FFA726';
-                                    $color_nav_disable = '#13434d';
+                                    $color_nav_enable = '#F6A42C';
+                                    $color_nav_disable = '#03424E';
                                 @endphp
 
                             <li class="nav-item">
@@ -109,7 +109,7 @@
 
                             <li class="nav-item ms-2">
                                 <a class="btn btn-hover-shadow" href="https://pagos.aybarcorp.com"
-                                    style="color:white;border-radius:100px;background-color:#FFA726;width: 190px;">
+                                    style="color:white;border-radius:100px;background-color:#F6A42C;width: 190px;">
                                     <b>PAGA TU LOTE</b>
                                 </a>
                             </li>
@@ -124,12 +124,12 @@
 
         @yield('content')
 
-        <div class="container-fluid  py-1" style="background-color: #055c6d;">
+        <div class="container-fluid  py-1" style="background-color: #045463;">
             <div class="container">
                 <div class="row">
                     <div
                         class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center  text-lg-start text-md-start   mt-10">
-                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#FFA726 ">Contáctanos</h3>
+                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#F6A42C ">Contáctanos</h3>
                         <!-- <h4 clas="d-lg-none "style="margin-top:30px;margin-left:0px"><span> Contáctanos</span></h4> -->
 
                         <ul class="text-white mt-4 ">
@@ -144,7 +144,7 @@
                     <div
                         class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center  text-center  text-lg-start text-md-end mt-10">
 
-                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#FFA726 ">Descubre más</h3>
+                        <h3 clas="" style="margin-top:30px;margin-left:0px;color:#F6A42C ">Descubre más</h3>
                         <p></p>
                         <div class="row">
                             <div class="col-6">
@@ -190,7 +190,7 @@
         </div>
 
 
-        <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
+        <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#03424E;">
 
             <div class="container">
                 <div class="justify-content-center">
@@ -331,7 +331,7 @@
 
     <div class="d-none d-md-block">
         <div class="social-container   p-2 pt-3 pb-3"
-            style="background-color: #FFA726;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
+            style="background-color: #F6A42C;border-top-right-radius: 20px;border-bottom-right-radius: 20px;">
 
             <a href="https://www.facebook.com/aybarcorpoficial" target="_blank" class="social-button">
                 <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-0.png" alt="Facebook">
@@ -345,13 +345,6 @@
 
         </div>
     </div>
-
-
-
-
-
-
-
     <div class="dark-transparent sidebartoggler"></div>
     <script src="{{ asset('assets/js/vendor.min.js') }}"></script>
     <!-- Import Js Files -->

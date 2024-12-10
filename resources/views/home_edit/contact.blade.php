@@ -14,7 +14,7 @@
    
   </section>
 
-  <section class="  text-white" style="background-color: #FFA726">
+  <section class="  text-white" style="background-color: #F6A42C">
   <div class="container BG-WA ">
     <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
       <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>

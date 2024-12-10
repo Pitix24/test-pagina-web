@@ -5,8 +5,8 @@
 
 
             <!-- Diapositiva 2: Imagen de Fondo -->
-            <div class="carousel-item active text-center position-relative py-5"style="background-color: #13434d">
-                <div class="container" style="background-color: #13434d">
+            <div class="carousel-item active text-center position-relative py-5"style="background-color: #03424E">
+                <div class="container" style="background-color: #03424E">
                     <div class="row h-100">
 
 
@@ -26,7 +26,7 @@
                                 de
                                 pago
                                 y ubicaciones estratégicas!</p>
-                            <h3 style="color:#FFA726">¿Dudas o consultas?</h3>
+                            <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
                             <p class="mb-4">Nuestros números de atención al cliente:</p>
                             <p>970 579 363 - 970 574 495 - 977 637 651</p>
 
@@ -34,7 +34,7 @@
                         <style>
                             .degradado-centro {
 
-                                background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
+                                background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
 
                             }
                         </style>
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="text-center">
                                         <button type="submit" class=" btn btn-warning btn-block"
-                                            style="color:white;border-radius:100px;background-color:#FFA726;width: 100%;">Enviar
+                                            style="color:white;border-radius:100px;background-color:#F6A42C;width: 100%;">Enviar
                                             mis
                                             datos</button>
                                         <p></p>
@@ -103,7 +103,7 @@
                     style="object-fit: cover;">
                 </iframe>
                 <div class="position-absolute top-50 start-50 translate-middle text-end">
-                    <h1 class="display-3 fw-bold"><span style="color: #FFA726;"></span></h1>
+                    <h1 class="display-3 fw-bold"><span style="color: #F6A42C;"></span></h1>
                     <p class="fs-5"></p>
                 </div>
             </div>
@@ -150,7 +150,7 @@
                         de
                         pago
                         y ubicaciones estratégicas!</p>
-                    <h3 style="color:#FFA726">¿Dudas o consultas?</h3>
+                    <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
                     <p class="mb-4">Nuestros números de atención al cliente:</p>
                     <p>970 579 363 - 970 574 495 - 977 637 651</p>
 
@@ -158,7 +158,7 @@
                 <style>
                     .degradado-centro {
 
-                        background: radial-gradient(circle, #fffcfc31 -100%, #13434d 100%);
+                        background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
 
                     }
                 </style>
@@ -201,7 +201,7 @@
                             </div>
                             <div class="text-center">
                                 <button type="submit" class=" btn btn-warning btn-block"
-                                    style="color:white;border-radius:100px;background-color:#FFA726;width: 100%;">Enviar mis
+                                    style="color:white;border-radius:100px;background-color:#F6A42C;width: 100%;">Enviar mis
                                     datos</button>
                                 <p></p>
                             </div>
@@ -341,7 +341,7 @@
 
     <div class="container py-1">
         <h4 class="text-center display-4" style="margin:40px">
-            <b style="color:#13434d">¿POR QUÉ</b> <b>COMPRAR UN LOTE?</b>
+            <b style="color:#03424E">¿POR QUÉ</b> <b>COMPRAR UN LOTE?</b>
         </h4>
 
         <!-- Carrusel (visible solo en pantallas pequeñas) -->
@@ -522,7 +522,7 @@
     <div class="container-fluid py-4" style="background-image: url('{{ asset('ayba/bg.png') }}')">
         <div class="text-center">
             <a class="btn btn-hover-shadow" href="#"
-                style="color:white;border-radius:20px;background-color:#FFA726;margin:20px;">
+                style="color:white;border-radius:20px;background-color:#F6A42C;margin:20px;">
                 <h3 class="display-7 p-6 pb-1"><b>&nbsp;DESCUBRE NUESTROS PROYECTOS&nbsp;</b></h3>
             </a>
         </div>
@@ -536,7 +536,7 @@
                     <!-- Tarjeta 1 -->
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-center">
-                            <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px; width: 90%;">
+                            <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
                                 <div class="card-body p-1 text-center">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                         alt="matdash-img" class="w-100 mb-4" width="80"
@@ -545,7 +545,7 @@
                                     <p>------------</p>
                                     <p>Lotes desde 120 m2</p>
                                     <a class="btn btn-hover-shadow" href="#"
-                                        style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                        style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                         > &nbsp;CONOCER MÁS&nbsp;
                                     </a>
                                 </div>
@@ -555,7 +555,7 @@
                     <!-- Tarjeta 2 -->
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                            <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px; width: 90%;">
+                            <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
                                 <div class="card-body p-1 text-center">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                         alt="matdash-img" class="w-100 mb-4" width="80"
@@ -564,7 +564,7 @@
                                     <p>------------</p>
                                     <p>Lotes desde 120 m2</p>
                                     <a class="btn btn-hover-shadow" href="#"
-                                        style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                        style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                         > &nbsp;CONOCER MÁS&nbsp;
                                     </a>
                                 </div>
@@ -574,7 +574,7 @@
                     <!-- Tarjeta 3 -->
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                            <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px; width: 90%;">
+                            <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
                                 <div class="card-body p-1 text-center">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                         alt="matdash-img" class="w-100 mb-4" width="80"
@@ -583,7 +583,7 @@
                                     <p>------------</p>
                                     <p>Lotes desde 120 m2</p>
                                     <a class="btn btn-hover-shadow" href="#"
-                                        style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                        style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                         > &nbsp;CONOCER MÁS&nbsp;
                                     </a>
                                 </div>
@@ -611,7 +611,7 @@
             <!-- Grilla para pantallas medianas y grandes -->
             <div class="row d-none d-md-flex justify-content-center">
                 <div class="col-md-6 col-lg-4 col-xl-4  mb-3">
-                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px;">
+                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;">
                         <div class="card-body p-1 text-center">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                 alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
@@ -619,14 +619,14 @@
                             <p>------------</p>
                             <p>Lotes desde 120 m2</p>
                             <a class="btn btn-hover-shadow" href="#"
-                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                 > &nbsp;CONOCER MÁS&nbsp;
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px;">
+                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;">
                         <div class="card-body p-1 text-center">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                 alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
@@ -634,14 +634,14 @@
                             <p>------------</p>
                             <p>Lotes desde 120 m2</p>
                             <a class="btn btn-hover-shadow" href="#"
-                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                 > &nbsp;CONOCER MÁS&nbsp;
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                    <div class="card" style="border-color:#13434d;color:#13434d;border-width:1px;">
+                    <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;">
                         <div class="card-body p-1 text-center">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1cw_qzpNR151OeqDPIT-VzzkT95iMdaDRfA&s"
                                 alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
@@ -649,7 +649,7 @@
                             <p>------------</p>
                             <p>Lotes desde 120 m2</p>
                             <a class="btn btn-hover-shadow" href="#"
-                                style="color:white;border-radius:20px;background-color:#FFA726;margin:10px;">
+                                style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                 > &nbsp;CONOCER MÁS&nbsp;
                             </a>
                         </div>
@@ -673,19 +673,19 @@
                 <div class="container">
                     <h4 class="display-5 d-lg-block d-xl-block d-sm-none d-none"
                         style="word-spacing: 13px; letter-spacing: 8px;">
-                        <b>CONFÍA EN </b><b style="color:#13434d">AYBAR CORP</b>
+                        <b>CONFÍA EN </b><b style="color:#03424E">AYBAR CORP</b>
                     </h4>
                     <h4 class="fs-8 d-lg-none text-center" style="word-spacing: 13px;letter-spacing:3px">
-                        <b>CONFÍA EN </b><b style="color:#13434d">AYBAR CORP</b>
+                        <b>CONFÍA EN </b><b style="color:#03424E">AYBAR CORP</b>
                     </h4>
-                    <p class="fs-7 d-none d-lg-block d-xxl-block d-sm-none" style="color:#13434d;">
+                    <p class="fs-7 d-none d-lg-block d-xxl-block d-sm-none" style="color:#03424E;">
                         Construye un futuro sólido para tu familia invirtiendo en confianza.
                     </p>
-                    <p class="fs-4 d-lg-none" style="color:#13434d;text-align: justify;">
+                    <p class="fs-4 d-lg-none" style="color:#03424E;text-align: justify;">
                         Construye un futuro sólido para tu familia invirtiendo en confianza.
                     </p>
                     <a class="btn btn-hover-shadow" href="#"
-                        style="color:white;border-radius:20px;background-color:#FFA726;margin-bottom:20px">
+                        style="color:white;border-radius:20px;background-color:#F6A42C;margin-bottom:20px">
                         > &nbsp;CONOCER MÁS&nbsp;
                     </a>
 
@@ -694,7 +694,7 @@
                         <div class="carousel-inner">
                             <!-- Diapositiva 1 -->
                             <div class="carousel-item active">
-                                <div class="card" style="background-color: #13434d;">
+                                <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
                                         <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                             width="60px" alt="">
@@ -707,7 +707,7 @@
                             </div>
                             <!-- Diapositiva 2 -->
                             <div class="carousel-item">
-                                <div class="card" style="background-color: #13434d;">
+                                <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
                                         <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                             width="60px" alt="">
@@ -718,7 +718,7 @@
                             </div>
                             <!-- Diapositiva 3 -->
                             <div class="carousel-item">
-                                <div class="card" style="background-color: #13434d;">
+                                <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
                                         <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                             width="60px" alt="">
@@ -728,7 +728,7 @@
                             </div>
                             <!-- Diapositiva 4 -->
                             <div class="carousel-item">
-                                <div class="card" style="background-color: #13434d;">
+                                <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
                                         <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                             width="60px" alt="">
@@ -739,7 +739,7 @@
                             </div>
                             <!-- Diapositiva 5 -->
                             <div class="carousel-item">
-                                <div class="card" style="background-color: #13434d;">
+                                <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
                                         <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                             width="60px" alt="">
@@ -765,7 +765,7 @@
                     <!-- Grilla para pantallas MD y superiores -->
                     <div class="row d-none d-md-flex mt-4">
                         <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="card" style="background-color: #13434d;">
+                            <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
                                     <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                         width="60px" alt="">
@@ -777,7 +777,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="card" style="background-color: #13434d;">
+                            <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
                                     <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                         width="60px" alt="">
@@ -788,7 +788,7 @@
                         </div>
                         <div class="d-none d-md-block  d-lg-none col-md-3"></div>
                         <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="card" style="background-color: #13434d;">
+                            <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
                                     <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                         width="60px" alt="">
@@ -798,7 +798,7 @@
                         </div>
                         <div class="col-md-2 col-xl-2"></div>
                         <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="card" style="background-color: #13434d;">
+                            <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
                                     <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                         width="60px" alt="">
@@ -809,7 +809,7 @@
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-xl-4">
-                            <div class="card" style="background-color: #13434d;">
+                            <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
                                     <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1"
                                         width="60px" alt="">

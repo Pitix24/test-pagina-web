@@ -107,7 +107,7 @@
                   </div>
                   <button type="submit"
                   class="btn btn-primary w-100 py-8 mb-4 rounded-2"
-                  style="background-color: #023039;font-weight: 100%; height:40px;width:70%; border-radius: 20px;border-color:#FFA726">
+                  style="background-color: #023039;font-weight: 100%; height:40px;width:70%; border-radius: 20px;border-color:#F6A42C">
                   <span style="color:white; font-size: 1em;">Ingresar</span>
               </button>
 

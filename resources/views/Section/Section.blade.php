@@ -83,7 +83,7 @@
                                 <div class="col-lg-12">
                                   <div class="mb-3">
                                 
-                                    <input type="text"name="color" id="position-bottom-left" class="form-control demo" data-position="bottom left" value="#13434d" />
+                                    <input type="text"name="color" id="position-bottom-left" class="form-control demo" data-position="bottom left" value="#03424E" />
                                   </div>
                                   
                                 </div>

@@ -104,7 +104,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#13434d;text-align:justify; " class="m-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -118,7 +118,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -130,7 +130,7 @@
                 </div>
                
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
@@ -171,7 +171,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#13434d;text-align:justify; " class="m-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -182,7 +182,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -193,7 +193,7 @@
 
                 </div>
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
                             liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
@@ -243,7 +243,7 @@
 
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#13434d;text-align:justify; " class="m-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
@@ -254,7 +254,7 @@
 
                 </div>
                 <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-5">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
@@ -265,7 +265,7 @@
 
                 </div>
                 <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#13434d;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
+                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
                         <b>
                             Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
                             humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
@@ -330,7 +330,7 @@
 
 
     <div class="container-fluid py-5" style="margin: 0; padding-right: 0; padding-left: 0; ">
-        <div class="row row-cols-md-4 text-center contenedor-cards" style="display: flex; justify-content: center; align-items: center; padding: 3vh; margin: 0; background-color: #13434d;">
+        <div class="row row-cols-md-4 text-center contenedor-cards" style="display: flex; justify-content: center; align-items: center; padding: 3vh; margin: 0; background-color: #03424E;">
           
           <div class="col-md-6 col-lg-6 col-xl-3 col-12 card1" style="border: 2px solid rgba(0, 0, 0, 0);">
             <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://pruebaaybar.credilotesperu.com/imagen/imagenxd.png); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">

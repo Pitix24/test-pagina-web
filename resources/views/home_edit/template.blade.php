@@ -2,10 +2,6 @@
 <html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme">
 
 <head>
-
-
-
-
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -71,7 +67,7 @@
 
             <div class="container mt-5">
 
-                <h1 style="color:#13434d">{{ $sections->description }}
+                <h1 style="color:#03424E">{{ $sections->description }}
                     <input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
                         onclick="sectionUpdateDinamic('{{ $i }}')" name="create">
                 </h1>
