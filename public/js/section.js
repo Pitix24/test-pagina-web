@@ -61,7 +61,7 @@ function sectionUpdateDinamic(id) {
       //datatable_load();
 
       alert("Modificado Correctamente");
-    //  window.location.reload();
+      window.location.reload();
    
     })
     .catch(function(response) {

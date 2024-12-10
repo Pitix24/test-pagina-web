@@ -46,7 +46,9 @@
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
 
+<div id="mycontent">
 
+</div>
 
 
     <div id="main-wrapper flex-column">
