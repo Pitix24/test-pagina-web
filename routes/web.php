@@ -29,9 +29,17 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 
 
 Auth::routes();
+
+   //USUARIOS
+   Route::get('home/inicio', [App\Http\Controllers\Home_demoController::class, 'home']);
+
+
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/', function () {
-    return view('home.home');
+   return redirect('home/inicio');
+    // return view('home.home');
 });
 
 Route::get('nosotros', function () {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Role;
+use App\Models\Section;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -35,6 +36,7 @@ class HomeController extends Controller
         return view('user.user', compact('user', 'roles'));
   //  return view("home.home");
     }
+ 
     public function sistema()
     {
        $users= Auth::user();
