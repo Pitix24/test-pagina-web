@@ -146,7 +146,7 @@
                             <h4 class="card-title mb-0">Exportar</h4>
                         </div>
                         <div class="table-responsive"id="mycontent">
-                            @include('section.sectiontable')
+                            @include('Section.Sectiontable')
                         </div>
                     </div>
                 </div>
