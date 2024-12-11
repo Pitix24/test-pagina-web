@@ -2,7 +2,7 @@ function userCreate() {
 
     axios({
             method: 'post',
-            url: 'userCreate',
+            url: '../userCreate',
          //   data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -27,7 +27,7 @@ function userStore() {
     var formData = new FormData(document.getElementById("user"));
     axios({
             method: 'post',
-            url: 'userStore',
+            url: '../userStore',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -55,7 +55,7 @@ function userDestroy(id) {
         formData.append("id", id);
         axios({
                 method: 'post',
-                url: "userDestroy",
+                url: "../userDestroy",
                 data: formData,
                 headers: {
                     'Content-Type': 'multipart/form-data'
@@ -82,7 +82,7 @@ function userImportGoogle() {
         formData.append("range", document.getElementById("range").value);
         axios({
                 method: 'post',
-                url: "userImportGoogle",
+                url: "../userImportGoogle",
                 data: formData,
                 headers: {
                     'Content-Type': 'multipart/form-data'
@@ -109,7 +109,7 @@ function userEdit(id) {
     formData.append("id", id);
     axios({
             method: 'post',
-            url: 'userEdit',
+            url: '../userEdit',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -160,7 +160,7 @@ function userUpdate() {
     var formData = new FormData(document.getElementById("user"));
     axios({
             method: 'post',
-            url: 'userUpdate',
+            url: '../userUpdate',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -209,7 +209,7 @@ function userUpdateProfile() {
     var formData = new FormData(document.getElementById("user"));
     axios({
             method: 'post',
-            url: 'userUpdateProfile',
+            url: '../userUpdateProfile',
             data: formData,
         })
         .then(function(response) {
@@ -231,7 +231,7 @@ function userRoleStore() {
     var formData = new FormData(document.getElementById("user_role"));
     axios({
             method: 'post',
-            url: 'userRoleStore',
+            url: '../userRoleStore',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -254,7 +254,7 @@ function userRoleEdit(id) {
     formData.append("id",id);
     axios({
             method: 'post',
-            url: 'userRoleEdit',
+            url: '../userRoleEdit',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -279,7 +279,7 @@ function userRoleDestroy(role_name,id) {
         formData.append("role_name",role_name);
         axios({
                 method: 'post',
-                url: 'userRoleDestroy',
+                url: '../userRoleDestroy',
                 data: formData,
                 headers: {
                     'Content-Type': 'multipart/form-data'

@@ -1,4 +1,4 @@
-@extends('home.template')
+@extends('home_edit.template')
 @section('content')
     <div class="container-fluid">
         <div class="row ">

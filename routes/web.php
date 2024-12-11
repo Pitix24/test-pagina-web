@@ -31,44 +31,17 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 Auth::routes();
 
    //USUARIOS
-   Route::get('home/inicio', [App\Http\Controllers\Home_demoController::class, 'home']);
-
+   Route::get('/', [App\Http\Controllers\Home_demoController::class, 'home']);
+   Route::get('nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
+   Route::get('proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
+   Route::get('blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
+   Route::get('contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
 
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', function () {
-   return redirect('home/inicio');
-    // return view('home.home');
-});
-
-Route::get('nosotros', function () {
-    return view('home.us');
-});
-
-Route::get('proyectos', function () {
-    return view('home.project');
-});
-Route::get('blog', function () {
-    return view('home.blog');
-});
-Route::get('contacto', function () {
-    return view('home.contact');
-});
 
 
-
-
-
-
-Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-
-
-
-
-Route::get('Coach', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-Route::get('/Coordinación', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 /////////////////////////////////////////
 
 
@@ -76,7 +49,16 @@ Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'siste
 
 Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial']], function () {
     //
+    Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
 
+
+
+
+    Route::get('Coach', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
+    Route::get('/Coordinación', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
+    Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
+
+    
     Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index']);
     Route::post('CustomerCreate', [App\Http\Controllers\CustomerController::class, 'create']);
     Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store']);

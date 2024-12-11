@@ -30,10 +30,20 @@ class Home_edit extends Controller
         $section = Section::where("module","=","3")->orderBy("nivel","asc")->get();
         return view('home_edit.us',compact('section'));
     }
-    public function contact()
+    public function project()
     {
         $section = Section::where("module","=","4")->orderBy("nivel","asc")->get();
-        return view('home_edit.us',compact('section'));
+        return view('home_edit.project',compact('section'));
+    }
+    public function blog()
+    {
+        $section = Section::where("module","=","5")->orderBy("nivel","asc")->get();
+        return view('home_edit.blog',compact('section'));
+    }
+    public function contact()
+    {
+        $section = Section::where("module","=","6")->orderBy("nivel","asc")->get();
+        return view('home_edit.contact',compact('section'));
     }
     /**
      * Show the form for creating a new resource.

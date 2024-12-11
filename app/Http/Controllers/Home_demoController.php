@@ -19,6 +19,30 @@ class Home_demoController extends Controller
         $section = Section::where("module","=","2")->orderBy("nivel","asc")->get();
         return view('home_demo.home',compact('section',"section_template"));
     }
+    public function us()
+    {
+        $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+        $section = Section::where("module","=","3")->orderBy("nivel","asc")->get();
+        return view('home_demo.us',compact('section',"section_template"));
+    }
+    public function project()
+    {
+        $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+        $section = Section::where("module","=","4")->orderBy("nivel","asc")->get();
+        return view('home_demo.project',compact('section',"section_template"));
+    }
+    public function blog()
+    {
+        $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+        $section = Section::where("module","=","5")->orderBy("nivel","asc")->get();
+        return view('home_demo.blog',compact('section',"section_template"));
+    }
+    public function contact()
+    {
+        $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+        $section = Section::where("module","=","6")->orderBy("nivel","asc")->get();
+        return view('home_demo.contact',compact('section',"section_template"));
+    }
     /**
      * Show the form for creating a new resource.
      */

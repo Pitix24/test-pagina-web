@@ -17,7 +17,7 @@
         <!-- end row -->
     </thead>
     <tbody>
-        @foreach ($category as $categorys)
+        @foreach ($project as $projects)
             <tr>
          
 
@@ -25,7 +25,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success ti ti-pencil" 
                     data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                        onclick="categoryEdit('{{ $categorys->id }}'); Up();  return false"></button>
+                        onclick="projectEdit('{{ $projects->id }}'); Up();  return false"></button>
 
 
                       
@@ -33,17 +33,17 @@
                 <td>
                  
                     <button class="btn btn-danger ti ti-trash"
-                        onclick="categoryDestroy('{{ $categorys->id }}'); return false"></button>
+                        onclick="projectDestroy('{{ $projects->id }}'); return false"></button>
                 </td>
 
 
 
-                <td>{{ $categorys->id }}</td>
+                <td>{{ $projects->id }}</td>
                
                 
-                <td>{{ $categorys->description }}</td>
+                <td>{{ $projects->description }}</td>
 
-                <td>{{ $categorys->detail }}</td>
+                <td>{{ $projects->detail }}</td>
                
              
 

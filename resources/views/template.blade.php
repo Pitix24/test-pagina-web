@@ -144,8 +144,33 @@
                                                 </a>
                                             </li>
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/plantilla') }}">
+                                                <a class="sidebar-link" href="{{ url('home_edit/plantilla') }}">
                                                     <span class="icon-small"></span> Plantilla
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('home_edit/inicio') }}">
+                                                    <span class="icon-small"></span> Inicio
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('home_edit/nosotros') }}">
+                                                    <span class="icon-small"></span>Nosotros
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('home_edit/proyectos') }}">
+                                                    <span class="icon-small"></span>Proyectos
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('home_edit/blog') }}">
+                                                    <span class="icon-small"></span>Blogs
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('home_edit/contacto') }}">
+                                                    <span class="icon-small"></span>Contáctos
                                                 </a>
                                             </li>
                                         </ul>
@@ -172,7 +197,7 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                <a class="sidebar-link" href="{{ url('admin/proyectos') }}">
                                                     <span class="icon-small"></span> Proyectos
                                                 </a>
                                             </li>

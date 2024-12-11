@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h4 class="mb-4 mb-md-0 card-title">Categorías</h4>
+                            <h4 class="mb-4 mb-md-0 card-title">Proyectos</h4>
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item d-flex align-items-center">
@@ -16,7 +16,7 @@
                                     </li>
                                     <li class="breadcrumb-item" aria-current="page">
                                         <span class="badge fw-medium fs-2 bg-primary-subtle text-primary">
-                                            Categorías
+                                            Proyectos
                                         </span>
                                     </li>
                                 </ol>
@@ -47,7 +47,7 @@
 
 
 
-                            @include('category.categorytable')
+                            @include('project.projecttable')
 
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-success text-white">
                         <h4 class="modal-title text-white" id="success-header-modalLabel">
-                            Categorías
+                            Projectos
                         </h4>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
