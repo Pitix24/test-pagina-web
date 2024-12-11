@@ -94,88 +94,21 @@
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
 
-                            Dni<input name="dni" type="number" class="form-control"value="99999999">
+                            Dni<input name="dni" type="number" class="form-control"value="99999999" required>
                             Paterno<input name="firstname" type="text" class="form-control">
                             Materno<input name="lastname" type="text" class="form-control">
-                            Nombres<input name="names" type="text" class="form-control">
+                            Nombres<input name="names" type="text" class="form-control"required>
                             Celular<input type="number" name="cellphone" class="form-control"value="99999999">
-                            Email<input type="text" name="email" class="form-control">
-                            Contraseña<input type="password" name="password" class="form-control"value="12345678">
-                           <br>
-                            Sexo
-                        <div class="row text-center">
-                            <div class="col 6">
-
-                                <input class="form-check-input" type="radio" name="sex" id="M"
-                                value="M" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                                Masculino
-                            </label>
-                            </div>
-                            <div class="col 6">
-                                <input class="form-check-input" type="radio" name="sex" id="F"
-                                value="F">
-                            <label class="form-check-label" for="exampleRadios1">
-                                Femenino
-                            </label>
-                            </div>
-                        </div>
+                            Mensaje<input type="text" name="message" class="form-control">
+                           
 
                             <br>
-                            Fecha de Nacimiento :
-                            <div class="row">
-                                <div class="col s4">
-                                    <select name="day" class="form-control">
-                                        <option>Dia</option>
-                                        <?php for ($a = 1; $a <= 31; $a++) {
-                                            echo "<option value='$a'>" . $a . '</option>';
-                                        } ?>
-                                    </select>
-                                </div>
-                                <div class="col s4">
-                                    <select name="month" class="form-control">
-                                        <option>Mes</option>
-                                        <?php
-                                        $mes = ['', 'Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-                                        for ($b = 1; $b <= 12; $b++) {
-                                            echo "<option value='$b'>" . $mes[$b] . '</option>';
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                                <div class="col s4">
-                                    <select name="year" class="form-control">
-                                        <option>Año</option>
-                                        <?php
-                                        $c = 2020;
-                                        while ($c >= 1905) {
-                                            echo "<option value='$c'>" . $c . '</option>';
-                                            $c = $c - 1;
-                                        }
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                            <p></p>
-                            <div class="container align-content-center">
-                                <div class="form-group row">
-                                    Fotografía
-
-                                
-                                        
-                                        <input class="form-control" type="file" id="imgInp" name="photo"onchange="readImage(this,'#blah');">
-                                   
-                                   
-
-                                </div>
-                                <div class="size-100">
-                                    <br>
-                                    <img id="blah" name="fotografia" src="https://placehold.co/150" alt="Tu imagen"
-                                        class="img-bordered" width="100%">
-                                </div>
-                            </div>
-                        
-
+                            Proyecto : 
+                            <select name="project_id" id="project_id"class="form-control">
+                                @foreach ($Project as $item)
+                                    <option value="{{$item->id}}">{{$item->title}}</option>
+                                @endforeach
+                            </select>
 
                     </div>
                     <div class="modal-footer">

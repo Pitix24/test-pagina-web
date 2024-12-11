@@ -3,18 +3,27 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\Project;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
 
 class CustomerController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $customer = Customer::orderBy('id','DESC')->get();
-        return view('Customer.Customer', compact('customer'));
+        $Customer = Customer::orderBy('id','DESC')->get();
+        $Project = Project::orderBy('id','DESC')->get();
+        return view('Customer.Customer', compact('Customer',"Project"));
     }
 
     /**
@@ -22,21 +31,31 @@ class CustomerController extends Controller
      */
     public function create()
     {
-        //
+        $Customer = Customer::orderBy('id','DESC')->get();
+        return view('Customer.Customertable', compact('Customer'));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCustomerRequest $request)
+    public function store(Request $request)
     {
-        //
+        $Customer = new Customer;
+        $Customer->firstname = $request->firstname;
+        $Customer->lastname = $request->lastname;
+        $Customer->names = $request->names;
+        $Customer->dni = $request->dni;
+        $Customer->message = $request->message;
+        $Customer->project_id = $request->project_id;
+        $Customer->cellphone = $request->cellphone;
+        $Customer->save();
+        return $this->create();
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Customer $customer)
+    public function show(Request $request)
     {
         //
     }
@@ -44,24 +63,35 @@ class CustomerController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Customer $customer)
+    public function edit(Request $request)
     {
-        //
+        $Customer = Customer::find($request->id);
+        return $Customer;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateCustomerRequest $request, Customer $customer)
+    public function update(Request $request)
     {
-        //
+        $Customer =  Customer::find($request->id);
+        $Customer->firstname = $request->firstname;
+        $Customer->lastname = $request->lastname;
+        $Customer->names = $request->names;
+        $Customer->dni = $request->dni;
+        $Customer->message = $request->message;
+        $Customer->project_id = $request->project_id;
+        $Customer->cellphone = $request->cellphone;
+        $Customer->save();
+        return $this->create();
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Customer $customer)
+    public function destroy(Request $request)
     {
-        //
+        Customer::find($request->id)->delete();
+        return $this->create();
     }
 }

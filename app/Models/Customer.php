@@ -11,4 +11,7 @@ class Customer extends Model
         'dni','firstname','lastname','names','cellphone','message','project_id'
     ];
     use HasFactory;
+    public function project(){
+        return $this->belongsTo(Project::class,"project_id");
+    }
 }

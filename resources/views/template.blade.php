@@ -27,6 +27,7 @@
     <script src="{{ asset('js/section.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
     <script src="{{ asset('js/project.js') }}"></script>
+    <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
 

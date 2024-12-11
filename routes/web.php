@@ -64,6 +64,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store']);
     Route::post('CustomerDestroy', [App\Http\Controllers\CustomerController::class, 'destroy']);
     Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit']);
+    Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update']);
 
     Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index']);
     Route::post('SectionCreate', [App\Http\Controllers\SectionController::class, 'create']);
