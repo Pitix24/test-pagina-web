@@ -1,220 +1,8 @@
 @extends('home_edit.template')
+
+
 @section('content')
-    <div id="carouselExample" class="carousel slide text-white" data-bs-ride="carousel"style="" data-bs-interval="8000">
-        <div class="carousel-inner" style="; display: flex; align-items: center;">
 
-
-            <!-- Diapositiva 2: Imagen de Fondo -->
-            <div class="carousel-item active text-center position-relative py-5"style="background-color: #03424E">
-                <div class="container" style="background-color: #03424E">
-                    <div class="row h-100">
-
-
-
-                        <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
-                                        <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
-
-
-                        <!-- Columna izquierda con texto e imágenes -->
-                        <div
-                            class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-                            <img src="ayba/4.png" alt="" width="90px">
-                            <h4 class="text-white font-weight-bold" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
-                            <h4 class="font-weight-bold text-warning" style="letter-spacing: 10px;">TU HOGAR</h4>
-                            <p class="lead mb-4">¡No pierdas más tiempo y asegura el lote de tus sueños hoy mismo, con
-                                facilidades
-                                de
-                                pago
-                                y ubicaciones estratégicas!</p>
-                            <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
-                            <p class="mb-4">Nuestros números de atención al cliente:</p>
-                            <p>970 579 363 - 970 574 495 - 977 637 651</p>
-
-                        </div>
-                        <style>
-                            .degradado-centro {
-
-                                background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
-
-                            }
-                        </style>
-                        <div class=" d-none d-lg-block   col-lg-4 col-xl-5">
-                            <img src="ayba/album.png" alt="" srcset="" width="100%"
-                                style="padding-top: 150px;">
-                        </div>
-
-                        <!-- Columna derecha con formulario -->
-                        <div class="col col-md-6 col-lg-3 col-sm-12">
-                            <div class="p-3 rounded"
-                                style="background-color: #055261;color:white;
-                                                      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                                <p></p>
-                                <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
-                                <form>
-
-
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="tb-nombre" name="tb-nombre"
-                                            oninput="" placeholder="Nombres y Apellidos:" style="color: white;">
-                                        <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="telefono" name="tb-nombre"
-                                            oninput=""placeholder="Número de teléfono" style="color: white;">
-                                        <label for="telefono" style="color: white;">Número de teléfono</label>
-                                    </div>
-
-
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="dni"
-                                            placeholder="Número de DNI" style="color: white;">
-                                        <label for="dni" class=" text-light">DNI</label>
-                                    </div>
-                                    <div class="form-floating mb-3 h-5">
-                                        <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;"
-                                            placeholder="Escribe tu mensaje"></textarea>
-                                        <label for="message" class="text-light">Mensaje</label>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class=" btn btn-warning btn-block"
-                                            style="color:white;border-radius:100px;background-color:#F6A42C;width: 100%;">Enviar
-                                            mis
-                                            datos</button>
-                                        <p></p>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Diapositiva 1: Video de YouTube -->
-            <div class="carousel-item  position-relative"style="height:600px">
-
-                <iframe
-                    src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&mute=1&loop=1&playlist=68tbz0AyBUs&controls=0&showinfo=0&modestbranding=1"
-                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="w-100 h-100"
-                    style="object-fit: cover;">
-                </iframe>
-                <div class="position-absolute top-50 start-50 translate-middle text-end">
-                    <h1 class="display-3 fw-bold"><span style="color: #F6A42C;"></span></h1>
-                    <p class="fs-5"></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-indicators">
-            <button type="button"style="background-color:orange" data-bs-target="#carouselExample" data-bs-slide-to="0"
-                class="active" aria-current="true" aria-label="Diapositiva 1"></button>
-            <button type="button"style="background-color:orange" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                aria-label="Diapositiva 2"></button>
-            <button type="button"style="background-color:orange" data-bs-target="#carouselExample" data-bs-slide-to="2"
-                aria-label="Diapositiva 3"></button>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {{-- <div class="container-fluid text-light py-5 degradado-centro" style="background-color: #081c20;">
-        <div class="container">
-            <div class="row h-100">
-
-
-
-                <!-- <img src="facebook-icon.png" alt="Facebook" class="mx-2" width="40">
-                                <img src="linkedin-icon.png" alt="LinkedIn" class="mx-2" width="40"> -->
-
-
-                <!-- Columna izquierda con texto e imágenes -->
-                <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center text-center">
-                    <img src="ayba/4.png" alt="" width="90px">
-                    <h4 class="text-white font-weight-bold" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
-                    <h4 class="font-weight-bold text-warning" style="letter-spacing: 10px;">TU HOGAR</h4>
-                    <p class="lead mb-4">¡No pierdas más tiempo y asegura el lote de tus sueños hoy mismo, con facilidades
-                        de
-                        pago
-                        y ubicaciones estratégicas!</p>
-                    <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
-                    <p class="mb-4">Nuestros números de atención al cliente:</p>
-                    <p>970 579 363 - 970 574 495 - 977 637 651</p>
-
-                </div>
-                <style>
-                    .degradado-centro {
-
-                        background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
-
-                    }
-                </style>
-                <div class=" d-none d-lg-block   col-lg-4 col-xl-5">
-                    <img src="ayba/album.png" alt="" srcset="" width="100%" style="padding-top: 150px;">
-                </div>
-
-                <!-- Columna derecha con formulario -->
-                <div class="col col-md-6 col-lg-3 col-sm-12">
-                    <div class="p-3 rounded"
-                        style="background-color: #055261;color:white;
-                                                  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                        <p></p>
-                        <h6 class="text-center text-light mb-4">QUIERO INFORMACIÓN DE UN LOTE</h6>
-                        <form>
-
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="tb-nombre" name="tb-nombre" oninput=""
-                                    placeholder="Nombres y Apellidos:" style="color: white;">
-                                <label for="tb-nombre" style="color: white;">Nombres y Apellidos:</label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="telefono" name="tb-nombre"
-                                    oninput=""placeholder="Número de teléfono" style="color: white;">
-                                <label for="telefono" style="color: white;">Número de teléfono</label>
-                            </div>
-
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="dni" placeholder="Número de DNI"
-                                    style="color: white;">
-                                <label for="dni" class=" text-light">DNI</label>
-                            </div>
-                            <div class="form-floating mb-3 h-5">
-                                <textarea style="height: 100px;color:white" class="form-control" id="message" rows="3" style="color: white;"
-                                    placeholder="Escribe tu mensaje"></textarea>
-                                <label for="message" class="text-light">Mensaje</label>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class=" btn btn-warning btn-block"
-                                    style="color:white;border-radius:100px;background-color:#F6A42C;width: 100%;">Enviar mis
-                                    datos</button>
-                                <p></p>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-
-
-            </div>
-        </div>
-    </div> --}}
 
 
 
@@ -244,10 +32,10 @@
         }
     </style>
 
+    
 
 
-
-    <div class="container-fluid text-light py-5"style="background-image: url('{{ asset('ayba/bg.png') }}')">
+    {{-- <div class="container-fluid text-light py-5"style="background-image: url('{{ asset('ayba/bg.png') }}')">
         <div class="text-center">
 
 
@@ -310,16 +98,13 @@
                 <!-- Grilla para pantallas grandes -->
                 <div class="row d-none d-lg-flex mt-4">
                     <div class="col-lg-4 mb-3">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
-                            class="rounded-1 border-2"></lite-youtube>
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1 border-2"></lite-youtube>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
-                            class="rounded-1 border-2"></lite-youtube>
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1 border-2"></lite-youtube>
                     </div>
                     <div class="col-lg-4 mb-3">
-                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;"
-                            class="rounded-1 border-2"></lite-youtube>
+                        <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1 border-2"></lite-youtube>
                     </div>
 
                 </div>
@@ -492,7 +277,7 @@
 
 
         </div>
-    </div>
+    </div> --}}
 
 
 
@@ -517,7 +302,7 @@
 
 
 
-
+{{-- 
 
     <div class="container-fluid py-4" style="background-image: url('{{ asset('ayba/bg.png') }}')">
         <div class="text-center">
@@ -822,5 +607,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 @endsection

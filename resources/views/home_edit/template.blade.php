@@ -51,11 +51,6 @@
 
 
 
-
-
-
-
-
         @php
             $i = 0;
         @endphp
@@ -64,9 +59,9 @@
                 $i = $i + 1;
                 echo $sections->code;
             @endphp
-
+    
             <div class="container mt-5">
-
+    
                 <h1 style="color:#03424E">{{ $sections->description }}
                     <input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
                         onclick="sectionUpdateDinamic('{{ $i }}')" name="create">
@@ -76,20 +71,25 @@
                     <!-- Textarea para el editor -->
                     <div class="form-group">
                         <textarea name="code" id="my-textarea" class="my-textarea form-control" rows="10">
-                    @php
-
-                        echo $sections->code;
-                    @endphp
-                 </textarea>
+                          @php
+                                 echo $sections->code;
+                            @endphp
+                        </textarea>
                     </div>
                 </form>
             </div>
         @endforeach
+    
+
+
+
+
+
+     
+        @yield("content");
 
 
     </div>
-
-
 
 
 

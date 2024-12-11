@@ -12,7 +12,7 @@
             <th>Descripción</th>
             <th>Página</th>
             <th>Nivel</th>
-            <th>Color</th>
+            {{-- <th>Color</th> --}}
             <th>Detalle</th>
 
         </tr>
@@ -44,12 +44,12 @@
                
                 
                 <td>{{ $sections->description }}</td>
-                {{-- @php
+                @php
                     $secciones =array("secciones","Plantilla","Inicio","Nosotros","Proyectos","Blog","Contáctanos")
-                @endphp --}}
-                <td>{{ $sections->module }}</td>
+                @endphp
+                <td>{{ $secciones[$sections->module] }}</td>
                 <td>{{ $sections->nivel }}</td>
-                <td>{{ $sections->color }}</td>
+                {{-- <td>{{ $sections->color }}</td> --}}
 
                 <td>{{ $sections->detail }}</td>
                
@@ -70,7 +70,7 @@
         <th>Descripción</th>
         <th>Página</th>
         <th>Nivel</th>
-        <th>Color</th>
+        {{-- <th>Color</th> --}}
         <th>Detalle</th>
         </tr>
         <!-- end row -->

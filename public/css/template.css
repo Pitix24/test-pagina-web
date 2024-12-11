@@ -158,3 +158,9 @@ margin-left: 14px;
     white-space: nowrap;
     /* Evita que el texto se divida en varias líneas */
 }
+
+.degradado-centro {
+
+  background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
+
+}
