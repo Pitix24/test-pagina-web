@@ -78,6 +78,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('ProjectStore', [App\Http\Controllers\ProjectController::class, 'store']);
     Route::post('ProjectDestroy', [App\Http\Controllers\ProjectController::class, 'destroy']);
     Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit']);
+    Route::post('ProjectUpdate', [App\Http\Controllers\ProjectController::class, 'update']);
 
 
    //ADMINISTRATIVO

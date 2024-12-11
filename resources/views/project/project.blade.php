@@ -36,7 +36,7 @@
                             <!-- success header modal -->
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                                 onclick="New();$('#category')[0].reset();">
+                                 onclick="New();$('#Project')[0].reset();">
                                 Agregar
                             </button>
                         </p>
@@ -47,7 +47,7 @@
 
 
 
-                            @include('project.projecttable')
+                            @include('Project.Projecttable')
 
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                 <div class="modal-content">
                     <div class="modal-header modal-colored-header bg-success text-white">
                         <h4 class="modal-title text-white" id="success-header-modalLabel">
-                            Projectos
+                            Proyectos
                         </h4>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
@@ -89,22 +89,39 @@
                     <div class="modal-body">
 
 
-                        <form action="" method="post" role="form" id="category"
-                            name="category"enctype="multipart/form-data">
+                        <form action="" method="post" role="form" id="Project"
+                            name="Project"enctype="multipart/form-data">
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
-
+                            Título : <input type="text" name="title" id="description" class="form-control">
                             Descripción : <input type="text" name="description" id="description" class="form-control">
 
                             Detalle : <input type="text" name="detail" id="detail" class="form-control">
+                            <div class="container align-content-center">
+                                <div class="form-group row">
+                                    Fotografía
 
+
+
+                                    <input class="form-control" type="file" id="imgInp"
+                                        name="image_1"onchange="readImage(this,'#blah');">
+
+
+
+                                </div>
+                                <div class="size-100">
+                                    <br>
+                                    <img id="blah" name="fotografia" src="https://placehold.co/150" alt="Tu imagen"
+                                        class="img-bordered" width="100%">
+                                </div>
+                            </div>
                     </div>
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary"
-                            onclick="New();$('#category')[0].reset();" name="new">
+                            onclick="New();$('#Project')[0].reset();" name="new">
                         <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="categoryStore()" id="create">
-                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="categoryUpdate();"
+                            onclick="ProjectStore()" id="create">
+                        <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="ProjectUpdate();"
                             id="update">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                       </form>

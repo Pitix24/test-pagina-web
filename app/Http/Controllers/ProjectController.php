@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
-
+use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
     public function __construct()
@@ -20,8 +20,8 @@ class ProjectController extends Controller
     public function index()
     {
           //
-          $project = Project::orderBy('id','DESC')->get();
-          return view("project.project", compact("project"));
+          $Project = Project::orderBy('id','DESC')->get();
+          return view("Project.Project", compact("Project"));
     }
 
     /**
@@ -29,15 +29,27 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        //
+        $Project = Project::orderBy('id','DESC')->get();
+        return view("Project.Projecttable", compact("Project"));
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProjectRequest $request)
+    public function store(Request $request)
     {
-        //
+        $Project = new Project;
+        $Project->title = $request->title;
+        $Project->description = $request->description;
+        $Project->detail = $request->detail;
+
+             //file
+             if ($request->file('image_1') != null) {
+                $request->image_1 = fileStore($request->file('image_1'), "resource");
+                $Project->image_1 = $request->image_1;
+            }
+        $Project->save();
+        return $this->create();
     }
 
     /**
@@ -51,24 +63,39 @@ class ProjectController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Project $project)
+    public function edit(Request $request)
     {
-        //
+        $Project=Project::find($request->id);
+        return $Project;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProjectRequest $request, Project $project)
+    public function update(Request $request)
     {
-        //
+        $Project = Project::find($request->id);
+        $Project->title = $request->title;
+        $Project->description = $request->description;
+        $Project->detail = $request->detail;
+        
+             //file
+             if ($request->file('image_1') != null) {
+                $request->image_1 = fileStore($request->file('image_1'), "resource");
+                $Project->image_1 = $request->image_1;
+            }
+        $Project->save();
+        return $this->create();
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Project $project)
+    public function destroy(Request $request)
     {
-        //
+        $table = Project::find($request["id"]);
+        fileDestroy($table->image_1, "resource");
+        Project::find($request->id)->delete();
+        return $this->create();
     }
 }

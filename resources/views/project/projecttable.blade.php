@@ -9,6 +9,7 @@
             <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                     srcset=""></th>
             <th>ID</th>
+            <th>Título</th>
             <th>Descripción</th>
             <th>Detalle</th>
             
@@ -17,7 +18,7 @@
         <!-- end row -->
     </thead>
     <tbody>
-        @foreach ($project as $projects)
+        @foreach ($Project as $Projects)
             <tr>
          
 
@@ -25,7 +26,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success ti ti-pencil" 
                     data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                        onclick="projectEdit('{{ $projects->id }}'); Up();  return false"></button>
+                        onclick="ProjectEdit('{{ $Projects->id }}'); Up();  return false"></button>
 
 
                       
@@ -33,17 +34,17 @@
                 <td>
                  
                     <button class="btn btn-danger ti ti-trash"
-                        onclick="projectDestroy('{{ $projects->id }}'); return false"></button>
+                        onclick="ProjectDestroy('{{ $Projects->id }}'); return false"></button>
                 </td>
 
 
 
-                <td>{{ $projects->id }}</td>
+                <td>{{ $Projects->id }}</td>
                
-                
-                <td>{{ $projects->description }}</td>
+                <td>{{ $Projects->title }}</td>                
+                <td>{{ $Projects->description }}</td>
 
-                <td>{{ $projects->detail }}</td>
+                <td>{{ $Projects->detail }}</td>
                
              
 
@@ -59,6 +60,7 @@
         <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                 srcset=""></th>
         <th>ID</th>
+        <th>Título</th>
         <th>Descripción</th>
         <th>Detalle</th>
         
