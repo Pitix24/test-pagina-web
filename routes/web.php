@@ -39,6 +39,7 @@ Auth::routes();
 
 
    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
+   Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic']);
    
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -67,7 +68,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit']);
     Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update']);
 
-    Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic']);
+  
   
 
     Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index']);
