@@ -7,7 +7,8 @@ use App\Models\Project;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
-
+use App\Models\User;
+use App\Notifications\CustomerNotification;
 class CustomerController extends Controller
 {
     public function __construct()
@@ -53,6 +54,11 @@ class CustomerController extends Controller
     }
     public function storePublic(Request $request)
     {
+
+        $user = User::find(3); // Encuentra al usuario que recibirá la notificación
+        $user->notify(new CustomerNotification());
+
+
        $Customer = new Customer;
         
         $Customer->names = $request->names;
