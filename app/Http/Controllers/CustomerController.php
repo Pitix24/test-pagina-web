@@ -50,13 +50,14 @@ class CustomerController extends Controller
     }
     public function storePublic(Request $request)
     {
-
+        //funciona localmente con hostinguer
         // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
         // $user->notify(new CustomerNotification());
 
-        Mail::raw('Correo de prueba', function ($message) {
+        //funciona en goddady
+        Mail::raw('Cliente nuevo', function ($message) {
             $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
-                    ->subject('Prueba desde Laravel')
+                    ->subject('Un cliente se ha registrado')
                     ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
         });
 
