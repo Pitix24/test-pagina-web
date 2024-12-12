@@ -2236,6 +2236,7 @@
                     ['view', ['fullscreen', 'codeview', 'help']],
                     ['history', ['undo', 'redo']]
                 ]
+             
             });
         });
     </script>

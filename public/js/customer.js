@@ -24,7 +24,53 @@ function CustomerStore() {
         });
 
 }
+ // Función para cargar proyectos desde el servidor
+ function ProjectList() {
+    axios.get('../ProjectList') // Cambia esta ruta a tu endpoint en Laravel
+        .then(response => {
+            const select = document.getElementById('project_id');
+            const projects = response.data; // Asegúrate de que este formato sea un array de objetos [{id, name}]
+            // Iterar sobre los proyectos y crear opciones
+            projects.forEach(project => {
+                const option = document.createElement('option');
+                option.value = project.id;
+                option.textContent = project.title;
+                select.appendChild(option);
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar los proyectos:', error);
+        });
 
+
+}
+
+function CustomerStorePublic() {
+    var formData = new FormData(document.getElementById("Customer"));
+    axios({
+            method: 'post',
+            url: '../CustomerStorePublic',
+            data: formData,
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
+        .then(function(response) {
+            //handle success
+            var contentdiv = document.getElementById("mycontent");
+            contentdiv.innerHTML = response.data;
+                 //carga pdf- csv - excel
+              
+         //  alert(response.data);
+           alert('Registrado Correctamente');
+                 window.location.reload();
+        })
+        .catch(function(response) {
+            //handle error
+            console.log(response);
+        });
+
+}
 function CustomerDestroy(id) {
     if (confirm("Esta seguro de Eliminar?")) {
         var formData = new FormData(document.getElementById("Customer"));

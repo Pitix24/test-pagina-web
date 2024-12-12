@@ -4,7 +4,9 @@
 @section('content')
 
 
-
+<form method="post" id="Customer">
+    @csrf
+    
 
 @php
 $i = 0;
@@ -18,7 +20,7 @@ $i = 0;
 
 @endforeach
 
-
+</form>
 
     <p></p>
 
@@ -37,6 +39,10 @@ $i = 0;
                 }
             });
         });
+
+        //traer los projectos
+            // Ejecutar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', ProjectList);
     </script>
     <style>
         lite-youtube {

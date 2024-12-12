@@ -23,6 +23,12 @@
                 }
             });
         });
+
+
+//traer los projectos
+            // Ejecutar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', ProjectList);
+
     </script>
     <style>
         lite-youtube {

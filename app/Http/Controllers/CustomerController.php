@@ -51,7 +51,24 @@ class CustomerController extends Controller
         $Customer->save();
         return $this->create();
     }
-
+    public function storePublic(Request $request)
+    {
+       $Customer = new Customer;
+        
+        $Customer->names = $request->names;
+        $Customer->dni = $request->dni;
+        $Customer->message = $request->message;
+        $Customer->project_id = "1";
+        $Customer->cellphone = $request->cellphone;
+        $Customer->save();
+ 
+    
+    }
+    public function ProjectList()
+    {
+        $Project = Project::orderBy('id','DESC')->get();
+        return $Project;
+    }
     /**
      * Display the specified resource.
      */
