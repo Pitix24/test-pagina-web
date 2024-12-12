@@ -55,7 +55,7 @@ class CustomerController extends Controller
         // $user->notify(new CustomerNotification());
 
         Mail::raw('Correo de prueba', function ($message) {
-            $message->to('tu_correo_gmail@gmail.com') // Cambia por un correo real
+            $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
                     ->subject('Prueba desde Laravel')
                     ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
         });
