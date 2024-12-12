@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
 use App\Models\User;
+use Illuminate\Support\Facades\Mail;
 use App\Notifications\CustomerNotification;
 class CustomerController extends Controller
 {
@@ -50,8 +51,14 @@ class CustomerController extends Controller
     public function storePublic(Request $request)
     {
 
-        $user = User::find(3); // Encuentra al usuario que recibirá la notificación
-        $user->notify(new CustomerNotification());
+        // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
+        // $user->notify(new CustomerNotification());
+
+        Mail::raw('Correo de prueba', function ($message) {
+            $message->to('tu_correo_gmail@gmail.com') // Cambia por un correo real
+                    ->subject('Prueba desde Laravel')
+                    ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
+        });
 
 
        $Customer = new Customer;
