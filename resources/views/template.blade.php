@@ -357,7 +357,7 @@
                                                                 class="text-success fs-11">Pro</span>
                                                         </h5>
                                                         <p class="mb-0 text-dark">
-                                                            david@wrappixel.com
+                                                          {{Auth::user()->names}} {{Auth::user()->firstname}}  {{Auth::user()->lastname}}
                                                         </p>
                                                     </div>
                                                 </div>

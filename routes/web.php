@@ -38,7 +38,8 @@ Auth::routes();
    Route::get('contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
 
 
-
+   Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
+   
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -67,7 +68,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update']);
 
     Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic']);
-    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
+  
 
     Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index']);
     Route::post('SectionCreate', [App\Http\Controllers\SectionController::class, 'create']);

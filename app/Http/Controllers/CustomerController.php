@@ -58,7 +58,7 @@ class CustomerController extends Controller
         $Customer->names = $request->names;
         $Customer->dni = $request->dni;
         $Customer->message = $request->message;
-        $Customer->project_id = "1";
+        $Customer->project_id = $request->project_id;
         $Customer->cellphone = $request->cellphone;
         $Customer->save();
  
