@@ -50,8 +50,8 @@ class CustomerController extends Controller
     public function storePublic(Request $request)
     {
 
-        // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
-        // $user->notify(new CustomerNotification());
+        $user = User::find(3); // Encuentra al usuario que recibirá la notificación
+        $user->notify(new CustomerNotification());
 
 
        $Customer = new Customer;
