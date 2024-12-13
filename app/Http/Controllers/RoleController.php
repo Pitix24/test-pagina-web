@@ -20,9 +20,9 @@ class RoleController extends Controller
     }
     public function index()
     {
-        $role= Role::orderBy('id','DESC')->get();
+        $Role= Role::orderBy('id','DESC')->get();
         $permission= Permission::all();
-        return view("role", compact("role",'permission'));
+        return view("Role.Role", compact("Role",'permission'));
     }
 
     /**
@@ -32,8 +32,8 @@ class RoleController extends Controller
      */
     public function create()
     {
-        $role = Role::orderBy('id','DESC')->get();
-        return view("roletable", compact("role"));
+        $Role = Role::orderBy('id','DESC')->get();
+        return view("Role.Roletable", compact("Role"));
     }
 
     /**
@@ -59,12 +59,7 @@ class RoleController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
-    {
-        $show="%".$request["show"]."%";
-        $role=Role::where('name',"like",$show)->all();
-        return view('roletable',compact('role'));
-    }
+   
 
     /**
      * Show the form for editing the specified resource.

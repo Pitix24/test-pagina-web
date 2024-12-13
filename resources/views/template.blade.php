@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicon icon-->
-    <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+    <link rel="icon" type="image/jpg" href="{{ asset('ayba/favicon.png') }}" />
 
     <!-- Core Css -->
     <link rel="stylesheet" href="../assets/css/styles.css" />
@@ -28,6 +28,7 @@
     <script src="{{ asset('js/topic.js') }}"></script>
     <script src="{{ asset('js/project.js') }}"></script>
     <script src="{{ asset('js/image.js') }}"></script>
+    <script src="{{ asset('js/role.js') }}"></script>
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
@@ -124,6 +125,16 @@
                                             <li class="sidebar-item">
                                                 <a class="sidebar-link" href="{{ url('admin/usuarios') }}">
                                                     <span class="icon-small"></span> Usuarios
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/permisos') }}">
+                                                    <span class="icon-small"></span> Permisos
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/roles') }}">
+                                                    <span class="icon-small"></span> Roles
                                                 </a>
                                             </li>
                                             <li class="sidebar-item">
@@ -288,7 +299,7 @@
                             <div class="d-flex align-items-center justify-content-between">
                                 <ul
                                     class="navbar-nav flex-row mx-auto ms-lg-auto align-items-center justify-content-center">
-                                    <li class="nav-item dropdown">
+                                    {{-- <li class="nav-item dropdown">
                                         <a href="javascript:void(0)"
                                             class="nav-link nav-icon-hover-bg rounded-circle d-flex d-lg-none align-items-center justify-content-center"
                                             type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar"
@@ -296,7 +307,7 @@
                                             <iconify-icon icon="solar:sort-line-duotone"
                                                 class="fs-6"></iconify-icon>
                                         </a>
-                                    </li>
+                                    </li> --}}
                                     <li class="nav-item">
                                         <a class="nav-link moon dark-layout nav-icon-hover-bg rounded-circle"
                                             href="javascript:void(0)">
@@ -309,13 +320,13 @@
                                                 class="sun fs-6"></iconify-icon>
                                         </a>
                                     </li>
-                                    <li class="nav-item d-block d-xl-none">
+                                    {{-- <li class="nav-item d-block d-xl-none">
                                         <a class="nav-link nav-icon-hover-bg rounded-circle" href="javascript:void(0)"
                                             data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             <iconify-icon icon="solar:magnifer-line-duotone"
                                                 class="fs-6"></iconify-icon>
                                         </a>
-                                    </li>
+                                    </li> --}}
 
 
                                     <!-- ------------------------------- -->
@@ -393,7 +404,7 @@
                     <!-- apps Dropdown in Small screen -->
                     <!-- ------------------------------- -->
                     <!--  Mobilenavbar -->
-                    <div class="offcanvas offcanvas-start pt-0" data-bs-scroll="true" tabindex="-1"
+                    {{-- <div class="offcanvas offcanvas-start pt-0" data-bs-scroll="true" tabindex="-1"
                         id="mobilenavbar" aria-labelledby="offcanvasWithBothOptionsLabel">
                         <nav class="sidebar-nav scroll-sidebar">
                             <div class="offcanvas-header justify-content-between">
@@ -531,9 +542,9 @@
                                 </ul>
                             </div>
                         </nav>
-                    </div>
+                    </div> --}}
                 </div>
-                <div class="app-header with-horizontal">
+                {{-- <div class="app-header with-horizontal">
                     <nav class="navbar navbar-expand-xl container-fluid p-0">
                         <ul class="navbar-nav align-items-center">
                             <li class="nav-item d-flex d-xl-none">
@@ -951,11 +962,11 @@
                         </div>
                     </nav>
 
-                </div>
+                </div> --}}
             </header>
             <!--  Header End -->
 
-            <aside class="left-sidebar with-horizontal">
+            {{-- <aside class="left-sidebar with-horizontal">
                 <!-- Sidebar scroll-->
                 <div>
                     <!-- Sidebar navigation-->
@@ -1660,7 +1671,7 @@
                     <!-- End Sidebar navigation -->
                 </div>
                 <!-- End Sidebar scroll-->
-            </aside>
+            </aside> --}}
 
             @yield('content')
 

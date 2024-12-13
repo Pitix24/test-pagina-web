@@ -164,3 +164,6 @@ margin-left: 14px;
   background: radial-gradient(circle, #fffcfc31 -100%, #03424E 100%);
 
 }
+.card-body img{
+  border-radius: 0px !important;
+}

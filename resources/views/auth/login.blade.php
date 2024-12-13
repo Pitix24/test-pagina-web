@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Favicon icon-->
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <link rel="icon" type="image/jpg" href="{{ asset('ayba/favicon.png') }}" />
 
   <!-- Core Css -->
   <link rel="stylesheet" href="../assets/css/styles.css" />

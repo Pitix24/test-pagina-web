@@ -3,11 +3,12 @@
     <thead>
         <!-- start row -->
         <tr>
-            <th>Rol</th>
             <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                srcset=""></th>
+            {{-- <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                     srcset=""></th>
             <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                    srcset=""></th>
+                    srcset=""></th> --}}
             <th>ID</th>
             <th>Estado</th>
             <th>  <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i></th>
@@ -26,14 +27,38 @@
     <tbody>
         @foreach ($user as $users)
             <tr>
-         
                 <td>
+                    <div class="dropdown dropstart">
+                        <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="ti ti-dots-vertical fs-6"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
+                          
+                          <li>
+                            <a 
+                          onclick="userEdit('{{ $users->id }}'); Up();  return false"  data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
+                          class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
+                            <i class="fs-4 ti ti-edit"></i>Editar
+                          </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"
+                            onclick="userDestroy('{{ $users->id }}'); return false"
+                            >
+                              <i class="fs-4 ti ti-trash"></i>Delete
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                   
+                  </td>
+                {{-- <td>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn" data-toggle="modal"
                         style="background-color:#023039;color:#ffffff" data-target="#exampleModal2"
                         onclick="userRoleEdit('{{ $users->id }}');  return false">Roles</button>
-                </td>
-                <td>
+                </td> --}}
+                {{-- <td>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success ti ti-pencil" 
                     data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
@@ -46,7 +71,7 @@
                  
                     <button class="btn btn-danger ti ti-trash"
                         onclick="userDestroy('{{ $users->id }}'); return false"></button>
-                </td>
+                </td> --}}
 
 
 
@@ -102,22 +127,24 @@
     <tfoot>
         <!-- start row -->
         <tr>
-          <th>Rol</th>
-          <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                  srcset=""></th>
-          <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                  srcset=""></th>
-          <th>ID</th>
-          <th>Estado</th>
-          <th>  <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i></th>
-          <th>Dni</th>
-          <th>Paterno</th>
-          <th>Materno</th>
-          <th>Nombres</th>
-          <th>Celular </th>
-          <th>Email</th>
-          <th>Foto</th>
-          <th>Rol ó Cargo</th>
+            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                srcset=""></th>
+            {{-- <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                    srcset=""></th>
+            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                    srcset=""></th> --}}
+            <th>ID</th>
+            <th>Estado</th>
+            <th>  <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i></th>
+            <th>Dni</th>
+            <th>Paterno</th>
+            <th>Materno</th>
+            <th>Nombres</th>
+            <th>Celular </th>
+            <th>Email</th>
+            <th>Foto</th>
+            <th>Rol ó Cargo</th>
+
         </tr>
         <!-- end row -->
     </tfoot>

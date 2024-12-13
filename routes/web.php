@@ -164,12 +164,12 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('userRoleEdit', [App\Http\Controllers\UserController::class, 'userRoleEdit']);
     Route::post('userRoleDestroy', [App\Http\Controllers\UserController::class, 'userRoleDestroy']);
 
-    Route::resource("roles", App\Http\Controllers\RoleController::class);
-    Route::post('roleStore', [App\Http\Controllers\RoleController::class, 'store']);
-    Route::post('roleEdit', [App\Http\Controllers\RoleController::class, 'edit']);
-    Route::post('roleUpdate', [App\Http\Controllers\RoleController::class, 'update']);
-    Route::post('roleDestroy', [App\Http\Controllers\RoleController::class, 'destroy']);
-    Route::post('roleShow', [App\Http\Controllers\RoleController::class, 'show']);
+    Route::resource("admin/roles", App\Http\Controllers\RoleController::class);
+    Route::post('RoleStore', [App\Http\Controllers\RoleController::class, 'store']);
+    Route::post('RoleEdit', [App\Http\Controllers\RoleController::class, 'edit']);
+    Route::post('RoleUpdate', [App\Http\Controllers\RoleController::class, 'update']);
+    Route::post('RoleDestroy', [App\Http\Controllers\RoleController::class, 'destroy']);
+    Route::post('RoleShow', [App\Http\Controllers\RoleController::class, 'show']);
 
     Route::post('rolePermissionStore', [App\Http\Controllers\RolePermissionController::class, 'store']);
     Route::post('rolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit']);
