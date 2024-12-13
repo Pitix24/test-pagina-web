@@ -10,7 +10,9 @@
                     srcset=""></th>
             <th>ID</th>
             <th>Título</th>
+            <th>Url</th>
             <th>Imágen</th>
+
             <th>Descripción</th>
             <th>Detalle</th>
             
@@ -19,7 +21,7 @@
         <!-- end row -->
     </thead>
     <tbody>
-        @foreach ($Project as $Projects)
+        @foreach ($Image as $Images)
             <tr>
          
 
@@ -27,7 +29,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-success ti ti-pencil" 
                     data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                        onclick="ProjectEdit('{{ $Projects->id }}'); Up();  return false"></button>
+                        onclick="ImageEdit('{{ $Images->id }}'); Up();  return false"></button>
 
 
                       
@@ -35,25 +37,23 @@
                 <td>
                  
                     <button class="btn btn-danger ti ti-trash"
-                        onclick="ProjectDestroy('{{ $Projects->id }}'); return false"></button>
+                        onclick="ImageDestroy('{{ $Images->id }}'); return false"></button>
                 </td>
 
 
 
-                <td>{{ $Projects->id }}</td>
+                <td>{{ $Images->id }}</td>
                
-                <td>{{ $Projects->title }}</td>  
-                <td>
-                  @if ($Projects->image_1!="")
-                  <img width="70px" src="{{url('../resource/'.$Projects->image_1 )}}" alt="" srcset="">
-                    
+                <td>{{ $Images->title }}</td>
+                <td><a target="_blank" href="{{url('resource/'.$Images->url)}}">{{url('resource/'.$Images->url)}}
+                </a>
+                    </td>        
+                    <td>
+                        <img width="70px" src="{{url('../resource/'.$Images->url)}}" alt="" srcset="">
+                     </td>        
+                <td>{{ $Images->description }}</td>
 
-                  @endif
-                   
-                 </td>                 
-                <td>{{ $Projects->description }}</td>
-
-                <td>{{ $Projects->detail }}</td>
+                <td>{{ $Images->detail }}</td>
                
              
 
@@ -70,7 +70,9 @@
                 srcset=""></th>
         <th>ID</th>
         <th>Título</th>
+        <th>Url</th>
         <th>Imágen</th>
+
         <th>Descripción</th>
         <th>Detalle</th>
         

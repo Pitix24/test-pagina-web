@@ -124,7 +124,7 @@ function userEdit(id) {
 
             if(response.data["photo"]!=null){
 
-                user.fotografia.src ="imageusers/"+ response.data["photo"];
+                user.fotografia.src ="../imageusers/"+ response.data["photo"];
             }
             else{
                 user.fotografia.src ="https://placehold.co/150";

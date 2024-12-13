@@ -1,9 +1,9 @@
 
-function categoryStore() {
-    var formData = new FormData(document.getElementById("category"));
+function ImageStore() {
+    var formData = new FormData(document.getElementById("Image"));
     axios({
             method: 'post',
-            url: '../categoryStore',
+            url: '../ImageStore',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -24,12 +24,12 @@ function categoryStore() {
 
 }
 
-function categoryEdit(id) {
-    var formData = new FormData(document.getElementById("category"));
+function ImageEdit(id) {
+    var formData = new FormData(document.getElementById("Image"));
     formData.append("id",id);
     axios({
             method: 'post',
-            url: '../categoryEdit',
+            url: '../ImageEdit',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -38,11 +38,11 @@ function categoryEdit(id) {
         .then(function(response) {
             //handle success
             var contentdiv = document.getElementById("mycontent");
-           // contentdiv.innerHTML = response.data["description"];
-            category.id.value=response.data["id"];
-            category.description.value=response.data["description"];
-            category.detail.value=response.data["detail"];
-
+            image.id.value=response.data["id"];
+            image.title.value=response.data["title"];
+            image.description.value=response.data["description"];
+            image.detail.value=response.data["detail"];
+            image.fotografia.src ="../resource/"+ response.data["image_1"];
         })
         .catch(function(response) {
             //handle error
@@ -51,11 +51,11 @@ function categoryEdit(id) {
 
 }
 
-function categoryUpdate() {
-    var formData = new FormData(document.getElementById("category"));
+function ImageUpdate() {
+    var formData = new FormData(document.getElementById("Image"));
     axios({
             method: 'post',
-            url: '../categoryUpdate',
+            url: '../ImageUpdate',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -77,14 +77,14 @@ function categoryUpdate() {
 
 }
 
-function categoryDestroy(id) {
+function ImageDestroy(id) {
 
 if(confirm("¿Quieres eliminar este registro?")){
-  var formData = new FormData(document.getElementById("category"));
+  var formData = new FormData(document.getElementById("Image"));
     formData.append("id",id)
     axios({
             method: 'post',
-            url: '../categoryDestroy',
+            url: '../ImageDestroy',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -106,11 +106,11 @@ if(confirm("¿Quieres eliminar este registro?")){
 }
 }
 
-function categoryShow() {
+function ImageShow() {
     var formData = new FormData(document.getElementById("show"));
     axios({
             method: 'post',
-            url: '../categoryShow',
+            url: '../ImageShow',
             data: formData,
         })
         .then(function(response) {

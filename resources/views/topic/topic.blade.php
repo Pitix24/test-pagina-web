@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h1>Blog</h1>
+                            <h1 class="card-title">Blog</h1>
                             {{-- <h1 class="mb-4 mb-md-0 card-title">Blog</h1> --}}
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">

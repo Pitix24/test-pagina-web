@@ -4,7 +4,7 @@ function topicDetail(id, registry_detail_id) {
   formData.append("registry_detail_id", registry_detail_id);
   axios({
     method: "post",
-    url: "topic_detail",
+    url: "../topic_detail",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -29,7 +29,7 @@ function topicDetailStudent(id, registry_detail_id) {
   formData.append("registry_detail_id", registry_detail_id);
   axios({
     method: "post",
-    url: "topic_detail",
+    url: "../topic_detail",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -56,7 +56,7 @@ function topicStore() {
 
   axios({
     method: "post",
-    url: "topicStore",
+    url: "../topicStore",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -86,7 +86,7 @@ function topicEdit(id) {
   formData.append("id", id);
   axios({
     method: "post",
-    url: "topicEdit",
+    url: "../topicEdit",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -117,7 +117,7 @@ function topicUpdate() {
   var formData = new FormData(document.getElementById("topic"));
   axios({
     method: "post",
-    url: "topicUpdate",
+    url: "../topicUpdate",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -143,7 +143,7 @@ function topicDestroy(id) {
     formData.append("id", id);
     axios({
       method: "post",
-      url: "topicDestroy",
+      url: "../topicDestroy",
       data: formData,
       headers: {
         "Content-Type": "multipart/form-data"
@@ -168,7 +168,7 @@ function topicShow() {
   var formData = new FormData(document.getElementById("show"));
   axios({
     method: "post",
-    url: "topicShow",
+    url: "../topicShow",
     data: formData
   })
     .then(function(response) {

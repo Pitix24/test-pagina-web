@@ -43,6 +43,13 @@ function ProjectEdit(id) {
             Project.title.value=response.data["title"];
             Project.description.value=response.data["description"];
             Project.detail.value=response.data["detail"];
+            if(response.data["image_1"]!=null){
+
+                Project.fotografia.src ="../resource/"+ response.data["image_1"];
+            }
+            else{
+                Project.fotografia.src ="https://placehold.co/150";
+            }
 
         })
         .catch(function(response) {

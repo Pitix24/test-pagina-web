@@ -61,8 +61,6 @@ class CustomerController extends Controller
                     
                     ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
         });
-
-
        $Customer = new Customer;
         
         $Customer->names = $request->names;

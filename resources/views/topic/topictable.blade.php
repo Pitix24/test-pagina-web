@@ -4,8 +4,7 @@
         <!-- start row -->
         <tr>
             
-            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                    srcset=""></th>
+            
             <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                     srcset=""></th>
             <th>ID</th>
@@ -21,15 +20,6 @@
             <tr>
          
 
-                <td>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-success ti ti-pencil" 
-                    data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                        onclick="topicEdit('{{ $topics->id }}'); Up();  return false"></button>
-
-
-                      
-                </td>
                 <td>
                  
                     <button class="btn btn-danger ti ti-trash"
@@ -53,9 +43,7 @@
     </tbody>
     <tfoot>
         <!-- start row -->
-        <tr>
-            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                srcset=""></th>
+        
         <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                 srcset=""></th>
         <th>ID</th>

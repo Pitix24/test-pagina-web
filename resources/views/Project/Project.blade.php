@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h4 class="mb-4 mb-md-0 card-title">Proyectos</h4>
+                            <h1  class="text-primary">Proyectos</h1>
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item d-flex align-items-center">
@@ -36,7 +36,7 @@
                             <!-- success header modal -->
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                                 onclick="New();$('#Project')[0].reset();">
+                                 onclick="New();$('#Project')[0].reset();Project.fotografia.src ='https://placehold.co/150';">
                                 Agregar
                             </button>
                         </p>

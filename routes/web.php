@@ -62,13 +62,16 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
 
     
     Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index']);
-    Route::post('CustomerCreate', [App\Http\Controllers\CustomerController::class, 'create']);
     Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store']);
     Route::post('CustomerDestroy', [App\Http\Controllers\CustomerController::class, 'destroy']);
     Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit']);
     Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update']);
 
-  
+    Route::get('admin/imagenes', [App\Http\Controllers\ImageController::class, 'index']);
+    Route::post('ImageStore', [App\Http\Controllers\ImageController::class, 'store']);
+    Route::post('ImageDestroy', [App\Http\Controllers\ImageController::class, 'destroy']);
+    Route::post('ImageEdit', [App\Http\Controllers\ImageController::class, 'edit']);
+    Route::post('ImageUpdate', [App\Http\Controllers\ImageController::class, 'update']);
   
 
     Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index']);
@@ -120,7 +123,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
 
 
 
-    Route::resource("admin/temas", App\Http\Controllers\TopicController::class);
+    Route::resource("admin/blog", App\Http\Controllers\TopicController::class);
     Route::post('topicStore', [App\Http\Controllers\TopicController::class, 'store']);
     Route::post('topicEdit', [App\Http\Controllers\TopicController::class, 'edit']);
     Route::post('topicUpdate', [App\Http\Controllers\TopicController::class, 'update']);
@@ -133,7 +136,7 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::get('blog/{blog_description}', [App\Http\Controllers\TopicController::class, 'report']);
 
 
-    Route::resource("categorias", App\Http\Controllers\CategoryController::class);
+    Route::resource("admin/categorias", App\Http\Controllers\CategoryController::class);
     Route::post('categoryStore', [App\Http\Controllers\CategoryController::class, 'store']);
     Route::post('categoryEdit', [App\Http\Controllers\CategoryController::class, 'edit']);
     Route::post('categoryUpdate', [App\Http\Controllers\CategoryController::class, 'update']);

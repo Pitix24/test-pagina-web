@@ -27,6 +27,7 @@
     <script src="{{ asset('js/section.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
     <script src="{{ asset('js/project.js') }}"></script>
+    <script src="{{ asset('js/image.js') }}"></script>
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
@@ -101,7 +102,7 @@
                                     <li class="sidebar-item">
                                         <a class="sidebar-link" href="#" aria-expanded="false">
                                             <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
-                                            <span class="hide-menu">Dashboard</span>
+                                            <span class="hide-menu">Administrador</span>
                                         </a>
                                     </li>
 
@@ -185,8 +186,13 @@
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                <a class="sidebar-link" href="{{ url('admin/blog') }}">
                                                     <span class="icon-small"></span> Blogs
+                                                </a>
+                                            </li>
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/categorias') }}">
+                                                    <span class="icon-small"></span> Categoría
                                                 </a>
                                             </li>
                                         </ul>
@@ -209,26 +215,15 @@
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
                                             <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
-                                            <span class="hide-menu">Tema</span>
+                                            <span class="hide-menu">Imágenes</span>
                                         </a>
                                         <ul aria-expanded="false" class="collapse first-level">
                                             <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
-                                                    <span class="icon-small"></span> Logotipo
+                                                <a class="sidebar-link" href="{{ url('admin/imagenes') }}">
+                                                    <span class="icon-small"></span> Imágenes
                                                 </a>
                                             </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/temas') }}">
-                                                    <span class="icon-small"></span>Colores
-
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/proyectos') }}">
-                                                    <span class="icon-small"></span>Redes Sociales
-
-                                                </a>
-                                            </li>
+                                         
 
 
                                         </ul>
@@ -353,12 +348,15 @@
                                                         class="rounded-circle" width="56" height="56"
                                                         alt="matdash-img" />
                                                     <div>
-                                                        <h5 class="mb-0 fs-12">David McMichael <span
-                                                                class="text-success fs-11">Pro</span>
-                                                        </h5>
                                                         <p class="mb-0 text-dark">
-                                                          {{Auth::user()->names}} {{Auth::user()->firstname}}  {{Auth::user()->lastname}}
-                                                        </p>
+                                                            {{Auth::user()->names}} {{Auth::user()->firstname}}  {{Auth::user()->lastname}}
+                                                          </p>
+                                                        <span
+                                                        class="text-success fs-11">Pro</span>
+                                                        {{-- <h5 class="mb-0 fs-12">David McMichael 
+                                                            
+                                                        </h5> --}}
+                                                       
                                                     </div>
                                                 </div>
                                                 <div class="message-body">
