@@ -209,37 +209,7 @@ class UserController extends Controller
       // }
     }
 
-    public function userRoleEdit(Request $request)
-    {
-
-        $user = User::find($request->id);
-        return view("user_roletable", compact("user"));
-    }
-    public function userRoleDestroy(Request $request)
-    {
-       // return $request->id;
-        $user=User::find($request->id);
-        try {
-            $user->removeRole($request->role_name);
-        } catch (\Exception $th) {
-            return $th->getMessage();
-        }
-
-        return $this->userRoleTable($request->id);
-    }
-    public function userRoleStore(Request $request)
-    {
-
-        $user = User::find($request->id);
-        $user->assignRole($request->role);
-        return view("user_roletable", compact("user"));
-    }
-    public function userRoleTable($id)
-    {
-
-        $user = User::find($id);
-        return view("user_roletable", compact("user"));
-    }
+  
    public function import() 
     {
         Excel::import(new ImportUsers, request()->file('file'));

@@ -47,8 +47,6 @@ class RoleController extends Controller
         // create role
         $role = new Role;
         $role->name = $request->name;
-        // asignar role
-        $role->syncPermissions("administrar");
         $role->save();
         return $this->create();
     }
@@ -101,34 +99,6 @@ class RoleController extends Controller
         Role::find($request->id)->delete();
         return $this->create();
     }
-    public function rolePermissionEdit(Request $request)
-    {
-
-      //  $role = Role::find($request->id);
-        //return view("role_permissiontable", compact("role"));
-        return "hola";
-    }
-    public function rolePermissionDestroy(Request $request)
-    {
-
-        $role=Role::find($request->id);
-        $role->revokePermissionTo($request->permission_name);
-
-        return $this->rolePermissionTable($request->id);
-    }
-    public function rolePermissionStore(Request $request)
-    {
-
-        $role = Role::find($request->id);
-
-        $role->givePermissionTo($request->permission);
-        return view("role_permissiontable", compact("role"));
-    }
-    public function rolePermissionTable($id)
-    {
-
-        $role = Role::find($id);
-        return view("role_permissiontable", compact("role"));
-    }
+    
 
 }

@@ -218,6 +218,51 @@
         </div>
         <!-- /.modal -->
 
+        <div id="success-header-modal2" class="modal fade" tabindex="-1" aria-labelledby="success-header-modalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header modal-colored-header bg-success text-white">
+                    <h4 class="modal-title text-white" id="success-header-modalLabel">
+                        Roles
+                    </h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+
+                    <form action="" method="post" role="form" id="User_role"
+                        name="User_role"enctype="multipart/form-data">
+                        <input type="hidden" name="id" >
+                        {{ csrf_field() }}
+         
+                    <br>
+                        <div id="mycontent_detail">
+                          
+                        </div>
+                </div>
+                <div class="modal-footer">
+                   
+                    <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
+                        onclick="UserRoleUpdate()" >
+               
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </form>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
 
         <!-- /.modal -->
     </div>

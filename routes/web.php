@@ -160,9 +160,9 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('userUpdateProfile', [App\Http\Controllers\UserController::class, 'updateProfile']);
     // Route::post('userImportGoogle', [App\Http\Controllers\UserController::class, 'importGoogle'])->name("userImportGoogle");
 
-    Route::post('userRoleStore', [App\Http\Controllers\UserController::class, 'userRoleStore']);
-    Route::post('userRoleEdit', [App\Http\Controllers\UserController::class, 'userRoleEdit']);
-    Route::post('userRoleDestroy', [App\Http\Controllers\UserController::class, 'userRoleDestroy']);
+    Route::post('UserRoleUpdate', [App\Http\Controllers\UserRoleController::class, 'update']);
+    Route::post('UserRoleEdit', [App\Http\Controllers\UserRoleController::class, 'edit']);
+
 
     Route::resource("admin/roles", App\Http\Controllers\RoleController::class);
     Route::post('RoleStore', [App\Http\Controllers\RoleController::class, 'store']);

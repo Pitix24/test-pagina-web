@@ -33,7 +33,13 @@
                           <i class="ti ti-dots-vertical fs-6"></i>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
-                          
+                            <li>
+                                <a 
+                              onclick="UserRoleEdit('{{ $users->id }}'); Up();  return false"  data-bs-toggle="modal" data-bs-target="#success-header-modal2" fdprocessedid="cw61t3"
+                              class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
+                                <i class="fs-4 ti ti-user"></i>Roles
+                              </a>
+                              </li>
                           <li>
                             <a 
                           onclick="userEdit('{{ $users->id }}'); Up();  return false"  data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"

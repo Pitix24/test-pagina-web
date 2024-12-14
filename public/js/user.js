@@ -227,11 +227,12 @@ function userUpdateProfile() {
 }
 
 
-function userRoleStore() {
-    var formData = new FormData(document.getElementById("user_role"));
+function UserRoleEdit(id) {
+    var formData = new FormData(document.getElementById("User_role"));
+    formData.append("id", id);
     axios({
             method: 'post',
-            url: '../userRoleStore',
+            url: '../UserRoleEdit',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -241,7 +242,8 @@ function userRoleStore() {
             //handle success
             var contentdiv = document.getElementById("mycontent_detail");
             contentdiv.innerHTML = response.data;
-            userCreate();
+            User_role.id.value = id;
+            
         })
         .catch(function(response) {
             //handle error
@@ -249,55 +251,27 @@ function userRoleStore() {
         });
 
 }
-function userRoleEdit(id) {
-    var formData = new FormData(document.getElementById("user_role"));
-    formData.append("id",id);
+
+
+function UserRoleUpdate() {
+    var formData = new FormData(document.getElementById("User_role"));
     axios({
-            method: 'post',
-            url: '../userRoleEdit',
-            data: formData,
-            headers: {
-                'Content-Type': 'multipart/form-data'
-            }
-        })
-        .then(function(response) {
-            //handle success
-            var contentdiv = document.getElementById("mycontent_detail");
-            contentdiv.innerHTML = response.data;
-            user_role.id.value=id;
-        })
-        .catch(function(response) {
-            //handle error
-            console.log(response);
-        });
-
-}
-function userRoleDestroy(role_name,id) {
-    if(confirm("¿Quieres eliminar este registro?")){
-        var formData = new FormData(document.getElementById("user_role"));
-        formData.append("id",id);
-        formData.append("role_name",role_name);
-        axios({
-                method: 'post',
-                url: '../userRoleDestroy',
-                data: formData,
-                headers: {
-                    'Content-Type': 'multipart/form-data'
-                }
-            })
-            .then(function(response) {
-                //handle success
-                var contentdiv = document.getElementById("mycontent_detail");
-                contentdiv.innerHTML = response.data;
-                //actualizamos la tabla
-                userCreate();
-            })
-            .catch(function(response) {
-                //handle error
-                console.log(response);
-            });
-    }
-
-
-}
-
+      method: "post",
+      url: "../UserRoleUpdate",
+      data: formData,
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    })
+      .then(function(response) {
+        //handle success
+      //  var contentdiv = document.getElementById("mycontent_detail");
+      //  contentdiv.innerHTML = response.data;
+        alert("Roles Actualizados Correctamente");
+        window.location.reload();
+      })
+      .catch(function(response) {
+        //handle error
+        console.log(response);
+      });
+  }
