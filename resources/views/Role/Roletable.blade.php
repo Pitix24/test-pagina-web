@@ -63,6 +63,8 @@
         <tr>
             <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                 srcset=""></th>
+                <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                    srcset=""></th>
         <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                 srcset=""></th>
         <th>ID</th>
