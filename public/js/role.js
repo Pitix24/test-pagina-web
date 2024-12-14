@@ -117,11 +117,11 @@ function RoleShow() {
     });
 }
 
-function RolePermissionStore() {
+function RolePermissionUpdate() {
   var formData = new FormData(document.getElementById("Role_permission"));
   axios({
     method: "post",
-    url: "../RolePermissionStore",
+    url: "../RolePermissionUpdate",
     data: formData,
     headers: {
       "Content-Type": "multipart/form-data"
@@ -129,8 +129,10 @@ function RolePermissionStore() {
   })
     .then(function(response) {
       //handle success
-      var contentdiv = document.getElementById("mycontent_detail");
-      contentdiv.innerHTML = response.data;
+    //  var contentdiv = document.getElementById("mycontent_detail");
+    //  contentdiv.innerHTML = response.data;
+      alert("Permisos Actualizados Correctamente");
+      window.location.reload();
     })
     .catch(function(response) {
       //handle error
@@ -138,7 +140,7 @@ function RolePermissionStore() {
     });
 }
 function RolePermissionEdit(id) {
-  var formData = new FormData(document.getElementById("Role_permission"));
+  var formData = new FormData(document.getElementById("Role"));
   formData.append("id", id);
   axios({
     method: "post",
@@ -159,27 +161,4 @@ function RolePermissionEdit(id) {
       console.log(response);
     });
 }
-function RolePermissionDestroy(permission_name, id) {
-  if (confirm("¿Quieres eliminar este registro?")) {
-    var formData = new FormData(document.getElementById("Role_permission"));
-    formData.append("id", id);
-    formData.append("permission_name", permission_name);
-    axios({
-      method: "post",
-      url: "../RolePermissionDestroy",
-      data: formData,
-      headers: {
-        "Content-Type": "multipart/form-data"
-      }
-    })
-      .then(function(response) {
-        //handle success
-        var contentdiv = document.getElementById("mycontent_detail");
-        contentdiv.innerHTML = response.data;
-      })
-      .catch(function(response) {
-        //handle error
-        console.log(response);
-      });
-  }
-}
+

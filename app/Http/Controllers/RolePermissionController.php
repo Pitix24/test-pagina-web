@@ -17,8 +17,6 @@ class RolePermissionController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-
-
     }
     public function index()
     {
@@ -63,9 +61,14 @@ class RolePermissionController extends Controller
      * @param  \App\Models\Role_permission  $role_permission
      * @return \Illuminate\Http\Response
      */
-    public function edit(Role_permission $role_permission)
+    public function edit(Request $request)
     {
-        //
+        $Role = Role::findOrFail($request->id);
+        // Obtén todos los permisos
+        $permissions = Permission::all();
+        // Obtén los IDs de los permisos asignados al rol
+        $assignedPermissions = $Role->permissions->pluck('id')->toArray();
+        return View("Role.RolePermissionCheck", compact("Role", "assignedPermissions", "permissions"));
     }
 
     /**
@@ -75,10 +78,18 @@ class RolePermissionController extends Controller
      * @param  \App\Models\Role_permission  $role_permission
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Role_permission $role_permission)
+    public function update(Request $request)
     {
-        //
+        // Encuentra el rol
+        $Role = Role::findOrFail($request->id);
+        // Obtén la lista de permisos seleccionados (puede ser null si no se seleccionó nada)
+        $permissions = $request->input('permissionList', []);
+        // Sincroniza los permisos del rol
+        $Role->syncPermissions($permissions);
+
+        //return 'Permisos actualizados correctamente.';
     }
+
 
     /**
      * Remove the specified resource from storage.

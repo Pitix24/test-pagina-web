@@ -24,7 +24,7 @@
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-warning ti ti-user" 
                     data-bs-toggle="modal" data-bs-target="#success-header-modal2" fdprocessedid="cw61t3"
-                        onclick="RoleEdit('{{ $Roles->id }}'); Up();  return false"></button>
+                        onclick="RolePermissionEdit('{{ $Roles->id }}'); Up();  return false"></button>
 
 
                       

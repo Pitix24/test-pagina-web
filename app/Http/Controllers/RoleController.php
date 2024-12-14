@@ -21,8 +21,8 @@ class RoleController extends Controller
     public function index()
     {
         $Role= Role::orderBy('id','DESC')->get();
-        $permission= Permission::all();
-        return view("Role.Role", compact("Role",'permission'));
+       
+        return view("Role.Role", compact("Role"));
     }
 
     /**
@@ -72,6 +72,7 @@ class RoleController extends Controller
         $role = Role::find($request->id);
         return $role;
     }
+  
 
     /**
      * Update the specified resource in storage.
@@ -103,7 +104,7 @@ class RoleController extends Controller
     public function rolePermissionEdit(Request $request)
     {
 
-        $role = Role::find($request->id);
+      //  $role = Role::find($request->id);
         //return view("role_permissiontable", compact("role"));
         return "hola";
     }

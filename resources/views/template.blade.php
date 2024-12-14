@@ -127,11 +127,7 @@
                                                     <span class="icon-small"></span> Usuarios
                                                 </a>
                                             </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/permisos') }}">
-                                                    <span class="icon-small"></span> Permisos
-                                                </a>
-                                            </li>
+                                          
                                             <li class="sidebar-item">
                                                 <a class="sidebar-link" href="{{ url('admin/roles') }}">
                                                     <span class="icon-small"></span> Roles

@@ -171,10 +171,9 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
     Route::post('RoleDestroy', [App\Http\Controllers\RoleController::class, 'destroy']);
     Route::post('RoleShow', [App\Http\Controllers\RoleController::class, 'show']);
 
-    Route::post('rolePermissionStore', [App\Http\Controllers\RolePermissionController::class, 'store']);
-    Route::post('rolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit']);
-    Route::post('rolePermissionDestroy', [App\Http\Controllers\RolePermissionController::class, 'destroy']);
-
+    Route::post('RolePermissionUpdate', [App\Http\Controllers\RolePermissionController::class, 'update']);
+    Route::post('RolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit']);
+   
 
 
 

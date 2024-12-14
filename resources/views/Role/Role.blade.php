@@ -135,25 +135,20 @@
                     <div class="modal-body">
 
 
-                        <form action="" method="post" role="form" id="Permission"
-                            name="Permission"enctype="multipart/form-data">
+                        <form action="" method="post" role="form" id="Role_permission"
+                            name="Role_permission"enctype="multipart/form-data">
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
              
                         <br>
                             <div id="mycontent_detail">
-                                @if (isset($Role) == null)
-    
-                                @else
-                                    @include('Role.RolePermissionCheck')
-                                @endif
-    
+                              
                             </div>
                     </div>
                     <div class="modal-footer">
                        
-                        <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="PermissionStore()" id="create">
+                        <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
+                            onclick="RolePermissionUpdate()" id="create">
                    
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </form>
