@@ -11,7 +11,12 @@ class StoreCustomerRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+       
+       
+       
+        return true;
+
+
     }
 
     /**
@@ -22,7 +27,15 @@ class StoreCustomerRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'names' => 'required|min:5|max:50',
+            'dni' => 'required|min:8|max:15',
+            'project_id' => 'required|min:1|max:20',
+            'cellphone' => 'required|min:8|max:15',
+            'message' => 'required|min:5|max:200'
         ];
+    }
+    public function messages(){
+        return ['message.max' => 'Superó el límite permitido'
+    ];
     }
 }

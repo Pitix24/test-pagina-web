@@ -48,27 +48,31 @@ class CustomerController extends Controller
         $Customer->save();
         return $this->create();
     }
-    public function storePublic(Request $request)
+    public function storePublic(StoreCustomerRequest $request)
     {
         //funciona localmente con hos
         // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
         // $user->notify(new CustomerNotification());
-        $data =$request->names;
-        //funciona en goddady
-        Mail::raw('Cliente nuevo: ' . $data, function ($message) use ($data) {
-            $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
-                    ->subject('Un cliente se ha registrado')
+        // $data =$request->names;
+        // //funciona en goddady
+        // Mail::raw('Cliente nuevo: ' . $data, function ($message) use ($data) {
+        //     $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
+        //             ->subject('Un cliente se ha registrado')
                     
-                    ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
-        });
+        //             ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
+        // });
+        $data = $request->validated();
+
+
        $Customer = new Customer;
-        
-        $Customer->names = $request->names;
-        $Customer->dni = $request->dni;
-        $Customer->message = $request->message;
-        $Customer->project_id = $request->project_id;
-        $Customer->cellphone = $request->cellphone;
+        //data es un array
+        $Customer->names = $data["names"];
+        $Customer->dni = $data["dni"];
+        $Customer->project_id = $data["project_id"];
+        $Customer->cellphone = $data["cellphone"];
+        $Customer->message = $data["message"];
         $Customer->save();
+  
  
     
     }

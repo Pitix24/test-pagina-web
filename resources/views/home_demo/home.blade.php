@@ -40,9 +40,18 @@ $i = 0;
             });
         });
 
-        //traer los projectos
+        //traer los projectos y los agrega a un select
             // Ejecutar cuando el DOM esté listo
     document.addEventListener('DOMContentLoaded', ProjectList);
+
+//descuenta el ingreso de caracteres en message
+    function updateCounter() {
+        const input = document.getElementById("message");
+        const charCount = document.getElementById("charCount");
+        charCount.textContent = input.value.length;
+    }
+
+
     </script>
     <style>
         lite-youtube {

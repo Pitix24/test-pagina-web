@@ -67,6 +67,7 @@ function CustomerStorePublic() {
         })
         .catch(function(response) {
             //handle error
+            alert('Verifíque los datos correctamente');
             console.log(response);
         });
 

@@ -26,7 +26,7 @@
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
 </head>
 
-<style>
+{{-- <style>
     body {
         font-family: 'Montserrat', sans-serif;
         /* Aplica Montserrat como fuente principal */
@@ -36,9 +36,67 @@
         line-height: 1.6;
         /* Altura de línea para mejor legibilidad */
     }
-</style>
+</style> --}}
+<style type="text/css">
+ 
 
-<body>
+    @font-face {
+        font-family: "Montserrat-Bold";
+        src: url("{{ asset('fuente_montserrat/Montserrat-Bold.ttf') }}");
+        font-weight: 600;
+        font-style: bold;
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Regular';
+        src: url("{{ asset('fuente_montserrat/Montserrat-Regular.ttf') }}") format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Montserrat-BoldItalic';
+        src: url("{{ asset('fuente_montserrat/Montserrat-BoldItalic.ttf') }}") format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Montserrat-Medium';
+        src: url("{{ asset('fuente_montserrat/Montserrat-Medium.ttf') }}") format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Montserrat-SemiBold';
+        src: url("{{ asset('fuente_montserrat/Montserrat-SemiBold.ttf') }}") format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+</style>
+  <style>
+    .dt-buttons button {
+        border-radius: 10px !important;
+        font-family: Montserrat-Bold;
+
+    }
+
+    .dt-buttons button span {
+
+        font-color: #ffffff !important;
+    }
+    body p{
+        font-family:Montserrat-Regular
+    }
+    body .navbar{
+        font-family:Montserrat-Bold
+    }
+    body h1, h2, h3, h4, h5, h6{
+        font-family:Montserrat-Bold
+    }
+</style>
+<body >
 
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
@@ -46,8 +104,6 @@
 <div id="mycontent">
 
 </div>
-
-
     <div id="main-wrapper flex-column">
    
 
