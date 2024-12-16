@@ -74,6 +74,7 @@ class SectionController extends Controller
     {
         $section = Section::find($request->id);
         $section->code = $request->code;
+        $section->nivel = $request->nivel;
         $section->save();
     }
     /**

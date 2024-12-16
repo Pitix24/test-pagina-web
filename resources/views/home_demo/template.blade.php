@@ -86,15 +86,7 @@
 
         font-color: #ffffff !important;
     }
-    body p{
-        font-family:Montserrat-Regular
-    }
-    body .navbar{
-        font-family:Montserrat-Bold
-    }
-    body h1, h2, h3, h4, h5, h6{
-        font-family:Montserrat-Bold
-    }
+
 </style>
 <body >
 

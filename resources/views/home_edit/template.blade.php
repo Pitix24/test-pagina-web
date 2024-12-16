@@ -63,12 +63,27 @@
             @endphp
 </form>
             <div class="container mt-5">
-    
+            
+           
                 <h1 style="color:#03424E">{{ $sections->description }}
                     <input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
                         onclick="sectionUpdateDinamic('{{ $i }}')" name="create">
+                        
                 </h1>
                 <form action=""name="section{{ $i }}" id="section{{ $i }}">
+                    <span>Nivel : </span>
+               
+              
+
+                    <select name="nivel" id="nivel{{ $i }}" class="form-control">
+                        @for ($nivel = 1; $nivel <= 20; $nivel++)
+                            <option value="{{ $nivel }}" {{ ($nivel == $sections->nivel) ? 'selected' : '' }}>
+                                {{ $nivel }}
+                            </option>
+                        @endfor
+                    </select>
+                    
+                     <br>
                     <input type="hidden" name="id"value="{{ $sections->id }}">
                     <!-- Textarea para el editor -->
                     <div class="form-group">
