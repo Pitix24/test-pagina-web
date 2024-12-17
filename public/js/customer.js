@@ -47,6 +47,8 @@ function CustomerStore() {
 
 function CustomerStorePublic() {
     var formData = new FormData(document.getElementById("Customer"));
+    let code_country = init.getSelectedCountryData().dialCode; 
+    formData.append("code_country", code_country);
     axios({
             method: 'post',
             url: '../CustomerStorePublic',
@@ -61,14 +63,16 @@ function CustomerStorePublic() {
             contentdiv.innerHTML = response.data;
                  //carga pdf- csv - excel
               
-         //  alert(response.data);
+             alert(code_country);
+     
            alert('Registrado Correctamente');
                  window.location.reload();
         })
         .catch(function(response) {
             //handle error
+          
             alert('Verifíque los datos correctamente');
-            console.log(response);
+            window.location.reload();
         });
 
 }

@@ -17,7 +17,9 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 
-
+Route::get('prueba', function () {
+    return view("index");
+});
 
 Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 

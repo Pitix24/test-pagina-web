@@ -67,7 +67,7 @@
                 <td>{{ $Customers->names }}</td>
                 <td>
                     @php
-                        $whatsapp = 'https://api.whatsapp.com/send?phone=51' . $Customers->cellphone;
+                        $whatsapp = 'https://api.whatsapp.com/send?phone=' . $Customers->cellphone;
                     @endphp
                     <a target="_blank" href="{{ $whatsapp }}">
                         <i class="ti ti-brand-whatsapp fs-7"style="color:green;"></i>

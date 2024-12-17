@@ -213,3 +213,27 @@ margin-left: 14px;
 .card-body img{
   border-radius: 0px !important;
 }
+
+#iti-0__country-listbox {
+  background-color: #055261; /* Fondo azul oscuro */
+  color: #fff; /* Texto blanco */
+  position: absolute; /* Necesario para z-index */
+  z-index: 9999; /* Valor alto para estar por encima de todo */
+}
+
+.iti--allow-dropdown{
+  width:100% !important
+}
+input::placeholder { /* Navegadores modernos */
+  color: white !important;
+  opacity: 1; /* Hace que el color sea totalmente visible */
+}
+
+input::-webkit-input-placeholder { /* Chrome, Safari, Opera */
+  color: white !important;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder { /* Internet Explorer */
+  color: white !important;
+}

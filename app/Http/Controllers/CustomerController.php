@@ -69,7 +69,7 @@ class CustomerController extends Controller
         $Customer->names = $data["names"];
         $Customer->dni = $data["dni"];
         $Customer->project_id = $data["project_id"];
-        $Customer->cellphone = $data["cellphone"];
+        $Customer->cellphone = $data["code_country"]. $data["cellphone"];
         $Customer->message = $data["message"];
         $Customer->save();
   

@@ -24,6 +24,10 @@
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
 </head>
 
 {{-- <style>
@@ -175,6 +179,16 @@
                     ['history', ['undo', 'redo']]
                 ]
             });
+        });
+    </script>
+      <script>
+        const input = document.querySelector("#phone");
+
+        // Inicialización de intl-tel-input con Perú como valor predeterminado
+     const init =   window.intlTelInput(input, {
+            initialCountry: "pe", // Código de país ISO 3166-1 Alpha-2 para Perú
+            separateDialCode: true, // Muestra el código de país separado
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
         });
     </script>
 </body>
