@@ -63,7 +63,7 @@ function CustomerStorePublic() {
             contentdiv.innerHTML = response.data;
                  //carga pdf- csv - excel
               
-             alert(code_country);
+            
      
            alert('Registrado Correctamente');
                  window.location.reload();
