@@ -47,6 +47,7 @@ function CustomerStore() {
 
 function CustomerStorePublic() {
     var formData = new FormData(document.getElementById("Customer"));
+    //obtener codigo de país seleccionado
     let code_country = init.getSelectedCountryData().dialCode; 
     formData.append("code_country", code_country);
     axios({
@@ -61,7 +62,7 @@ function CustomerStorePublic() {
             //handle success
             var contentdiv = document.getElementById("mycontent");
             contentdiv.innerHTML = response.data;
-                 //carga pdf- csv - excel
+            
               
             
      
