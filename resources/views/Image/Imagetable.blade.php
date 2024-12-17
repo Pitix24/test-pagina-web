@@ -11,7 +11,7 @@
             <th>ID</th>
             <th>Título</th>
             <th>Url</th>
-            <th>Imágen</th>
+           
 
             <th>Descripción</th>
             <th>Detalle</th>
@@ -48,9 +48,7 @@
                 <td><a target="_blank" href="{{url('resource/'.$Images->url)}}">{{url('resource/'.$Images->url)}}
                 </a>
                     </td>        
-                    <td>
-                        <img width="70px" src="{{url('../resource/'.$Images->url)}}" alt="" srcset="">
-                     </td>        
+                    
                 <td>{{ $Images->description }}</td>
 
                 <td>{{ $Images->detail }}</td>
@@ -71,7 +69,7 @@
         <th>ID</th>
         <th>Título</th>
         <th>Url</th>
-        <th>Imágen</th>
+       
 
         <th>Descripción</th>
         <th>Detalle</th>
