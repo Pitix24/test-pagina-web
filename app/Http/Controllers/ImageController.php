@@ -75,9 +75,11 @@ class ImageController extends Controller
         $Image->title = $request->title;
         $Image->description = $request->description;
         $Image->detail = $request->detail;
-        $request->image_1 = fileStore($request->file('image_1'), "resource");
-        $Image->image_1 = $request->image_1;
-        $Image->url = $request->image_1;
+        //eliminar imagen anterior
+        $table = Image::find($request["id"]);
+        fileDestroy($table->image_1, "resource");
+        //guarda la nueva
+        fileUpdate($request->file('image_1'), "resource", $Image->image_1);
         $Image->save();
         return $this->create();
     }

@@ -23,6 +23,16 @@ function fileStore($photo, $directory)
         return    $imageName;
     }
 }
+function fileUpdate($photo, $directory,$imagename)
+{
+    if ($photo != "") {
+
+     $imageName = $imagename;
+        //move imageFile
+        $photo->move($directory, $imageName);
+        return    $imageName;
+    }
+}
 function fileDestroy($photo, $directory)
 {
     try {
