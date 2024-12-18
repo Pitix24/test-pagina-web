@@ -12,6 +12,7 @@
             <th>Descripción</th>
             <th>Página</th>
             <th>Nivel</th>
+            <th>Editado por:</th>
             {{-- <th>Color</th> --}}
             <th>Detalle</th>
 
@@ -49,6 +50,7 @@
                 @endphp
                 <td>{{ $secciones[$sections->module] }}</td>
                 <td>{{ $sections->nivel }}</td>
+                <td>{{ $sections->user->firstname }} {{ $sections->user->names }}</td>
                 {{-- <td>{{ $sections->color }}</td> --}}
 
                 <td>{{ $sections->detail }}</td>
@@ -70,6 +72,7 @@
         <th>Descripción</th>
         <th>Página</th>
         <th>Nivel</th>
+        <th>Editado por:</th>
         {{-- <th>Color</th> --}}
         <th>Detalle</th>
         </tr>

@@ -10,4 +10,8 @@ class Section extends Model
     use HasFactory;
     protected $fillable = [
         'description','code','nivel','color', 'detail' ];
+    
+    public function user(){
+        return $this->belongsTo(User::class,"updated_by");
+    }
 }

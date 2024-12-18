@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use \Illuminate\Support\Facades\Auth;
 use App\Models\Section;
 use Illuminate\Http\Request;
 class SectionController extends Controller
@@ -35,6 +36,7 @@ class SectionController extends Controller
         $section->nivel = $request->nivel;
         $section->module = $request->module;
         $section->detail = $request->detail;
+        $section->updated_by = Auth::user()->id;
         $section->save();
         
        
@@ -68,6 +70,7 @@ class SectionController extends Controller
         $section->nivel = $request->nivel;
         $section->module = $request->module;
         $section->detail = $request->detail;
+        $section->updated_by = Auth::user()->id;
         $section->save();
     }
     public function updateDinamic(Request $request)
