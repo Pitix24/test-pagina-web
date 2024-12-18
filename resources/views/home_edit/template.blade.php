@@ -178,6 +178,12 @@
                 separateDialCode: true, // Muestra el código de país separado
                 utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
             });
+
+           
+           
+           
+
+
         </script>
 
 </body>
