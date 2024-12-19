@@ -1,5 +1,35 @@
 @extends('home_demo.template')
 @section('content')
+
+
+@php
+$i = 0;
+@endphp
+@foreach ($section as $sections)
+@php
+    $i = $i + 1;
+    echo $sections->code;
+@endphp
+
+
+@endforeach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="container-fluid">
         <div class="row ">
 
@@ -17,11 +47,7 @@
 
                     <b>¿QUIÉNES SOMOS?</b>
                 </h4>
-                <style>
-                    .sds{
-                        text-align: justify
-                    }
-                </style>
+           
                 <p class="d-none d-xl-block  container fs-7  text-white text-overlay " style="word-spacing: 15px;">
 
                     Somos una inmobiliaria completamente<br>
