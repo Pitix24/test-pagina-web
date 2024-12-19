@@ -164,8 +164,8 @@
                     ['view', ['fullscreen', 'codeview', 'help']],
                     ['history', ['undo', 'redo']]
                 ],
-    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat','Montserrat-Bold','Montserrat-SemiBold'], // Agrega Montserrat aquí
-    fontNamesIgnoreCheck: ['Montserrat','Montserrat-Bold','Montserrat-SemiBold'] // Ignora el chequeo para la fuente personalizada
+    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat','Montserrat-Bold','Montserrat-SemiBold','Montserrat-Regular'], // Agrega Montserrat aquí
+    fontNamesIgnoreCheck: ['Montserrat','Montserrat-Regular','Montserrat-Bold','Montserrat-SemiBold'] // Ignora el chequeo para la fuente personalizada
             
                    
             });
