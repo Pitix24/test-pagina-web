@@ -119,8 +119,8 @@
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary"
                             onclick="New();$('#Project')[0].reset();" name="new">
-                        <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="ProjectStore()" id="create">
+                        @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
+                            onclick="ProjectStore()" id="create">@endcanany
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="ProjectUpdate();"
                             id="update">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

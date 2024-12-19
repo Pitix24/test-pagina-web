@@ -1,4 +1,6 @@
+
 @foreach ($permissions as $permission)
+
 <div class="form-check">
     <input 
         class="form-check-input" 

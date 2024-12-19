@@ -85,9 +85,9 @@
                 <td>
                     @if ($users->session == '')
                  
-                        <span class="badge text-bg-danger">Inactivo</span>
+                        <span class="badge text-bg-danger">Off</span>
                     @else
-                        <span class="badge text-bg-success">Activo</span>
+                        <span class="badge text-bg-success">On</span>
                     @endif
                 </td>
                 <td>

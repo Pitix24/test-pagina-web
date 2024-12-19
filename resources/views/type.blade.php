@@ -61,8 +61,8 @@
                                         <div class="modal-footer"style="font-family:Montserrat-Bold">
                                             <input type="button" value="Nuevo" class="btn" style="font-family:Montserrat-SemiBold;background-color:#023039;color:#ffffff"
                                                 onclick="New();$('#type')[0].reset();" name="new">
-                                            <input type="button" value="Guardar" class="btn btn-success"id="create"
-                                                onclick="typeStore()" name="create">
+                                            @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn btn-success"id="create"
+                                                onclick="typeStore()" name="create">@endcanany
                                             <input type="button" value="Modificar" class="btn btn-danger"id="update"
                                                 onclick="typeUpdate();" name="update">
                                             <button type="button" class="btn btn-secondary"

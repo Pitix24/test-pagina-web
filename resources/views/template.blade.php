@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="../assets/libs/datatables.net-bs5/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.dataTables.min.css">
 
-    <link href="{{asset('css/template.css')}}" rel="stylesheet">
+    <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <script src="{{ asset('js/user.js') }}"></script>
     <script src="{{ asset('js/category.js') }}"></script>
     <script src="{{ asset('js/section.js') }}"></script>
@@ -103,7 +103,7 @@
                                     <li class="sidebar-item">
                                         <a class="sidebar-link" href="#" aria-expanded="false">
                                             <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
-                                            <span class="hide-menu">Administrador</span>
+                                            <span class="hide-menu">{{ Auth::user()->names }}</span>
                                         </a>
                                     </li>
 
@@ -114,33 +114,35 @@
                                     {{-- <li class="nav-small-cap">
                                         <span class="hide-menu">Módulos</span>
                                     </li> --}}
+                                    @canany('administrar','usuarios')
+                                        <li class="sidebar-item">
+                                            <a class="sidebar-link has-arrow " href="javascript:void(0)"
+                                                aria-expanded="false">
+                                                <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                                <span class="hide-menu">Usuarios</span>
+                                            </a>
+                                            <ul aria-expanded="false" class="collapse first-level">
+                                                <li class="sidebar-item">
+                                                    <a class="sidebar-link" href="{{ url('admin/usuarios') }}">
+                                                        <span class="icon-small"></span> Usuarios
+                                                    </a>
+                                                </li>
 
-                                    <li class="sidebar-item">
-                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
-                                            aria-expanded="false">
-                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
-                                            <span class="hide-menu">Usuarios</span>
-                                        </a>
-                                        <ul aria-expanded="false" class="collapse first-level">
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/usuarios') }}">
-                                                    <span class="icon-small"></span> Usuarios
-                                                </a>
-                                            </li>
-                                          
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/roles') }}">
-                                                    <span class="icon-small"></span> Roles
-                                                </a>
-                                            </li>
-                                            <li class="sidebar-item">
-                                                <a class="sidebar-link" href="{{ url('admin/clientes') }}">
-                                                    <span class="icon-small"></span> Clientes
-                                                </a>
-                                            </li>
+                                                <li class="sidebar-item">
+                                                    <a class="sidebar-link" href="{{ url('admin/roles') }}">
+                                                        <span class="icon-small"></span> Roles
+                                                    </a>
+                                                </li>
+                                                <li class="sidebar-item">
+                                                    <a class="sidebar-link" href="{{ url('admin/clientes') }}">
+                                                        <span class="icon-small"></span> Clientes
+                                                    </a>
+                                                </li>
 
-                                        </ul>
-                                    </li>
+                                            </ul>
+                                        </li>
+                                    @endcanany
+                                    @canany('administrar','secciones')
                                     <li class="sidebar-item">
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
@@ -185,6 +187,8 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    @endcanany
+                                    @canany('administrar','blogs')
                                     <li class="sidebar-item">
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
@@ -204,6 +208,8 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    @endcanany
+                                    @canany('administrar','proyectos')
                                     <li class="sidebar-item">
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
@@ -218,6 +224,8 @@
                                             </li>
                                         </ul>
                                     </li>
+                                    @endcanany
+                                    @canany('administrar','imagenes')
                                     <li class="sidebar-item">
                                         <a class="sidebar-link has-arrow " href="javascript:void(0)"
                                             aria-expanded="false">
@@ -230,12 +238,12 @@
                                                     <span class="icon-small"></span> Imágenes
                                                 </a>
                                             </li>
-                                         
+
 
 
                                         </ul>
                                     </li>
-
+                                    @endcanany
                                 </ul>
                             </nav>
 
@@ -356,14 +364,14 @@
                                                         alt="matdash-img" />
                                                     <div>
                                                         <p class="mb-0 text-dark">
-                                                            {{Auth::user()->names}} {{Auth::user()->firstname}}  {{Auth::user()->lastname}}
-                                                          </p>
-                                                        <span
-                                                        class="text-success fs-11">Pro</span>
+                                                            {{ Auth::user()->names }} {{ Auth::user()->firstname }}
+                                                            {{ Auth::user()->lastname }}
+                                                        </p>
+                                                        <span class="text-success fs-11">Pro</span>
                                                         {{-- <h5 class="mb-0 fs-12">David McMichael 
                                                             
                                                         </h5> --}}
-                                                       
+
                                                     </div>
                                                 </div>
                                                 <div class="message-body">
@@ -1686,8 +1694,7 @@
                 <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">
                     Settings
                 </h4>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body" data-simplebar style="height: calc(100vh - 80px)">
                 <h6 class="fw-semibold fs-4 mb-2">Theme</h6>
@@ -1761,8 +1768,8 @@
                         autocomplete="off" />
                     <label
                         class="btn p-9 btn-outline-primary rounded-2 d-flex align-items-center justify-content-center"
-                        onclick="handleColorTheme('Green_Theme')" for="green-theme-layout"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME">
+                        onclick="handleColorTheme('Green_Theme')" for="green-theme-layout" data-bs-toggle="tooltip"
+                        data-bs-placement="top" data-bs-title="GREEN_THEME">
                         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-4">
                             <i class="ti ti-check text-white d-flex icon fs-5"></i>
                         </div>
@@ -1783,8 +1790,8 @@
                         autocomplete="off" />
                     <label
                         class="btn p-9 btn-outline-primary rounded-2 d-flex align-items-center justify-content-center"
-                        onclick="handleColorTheme('Orange_Theme')" for="orange-theme-layout"
-                        data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ORANGE_THEME">
+                        onclick="handleColorTheme('Orange_Theme')" for="orange-theme-layout" data-bs-toggle="tooltip"
+                        data-bs-placement="top" data-bs-title="ORANGE_THEME">
                         <div class="color-box rounded-circle d-flex align-items-center justify-content-center skin-6">
                             <i class="ti ti-check text-white d-flex icon fs-5"></i>
                         </div>
@@ -1812,14 +1819,12 @@
                 <h6 class="mt-5 fw-semibold fs-4 mb-2">Container Option</h6>
 
                 <div class="d-flex flex-row gap-3 customizer-box" role="group">
-                    <input type="radio" class="btn-check" name="layout" id="boxed-layout"
-                        autocomplete="off" />
+                    <input type="radio" class="btn-check" name="layout" id="boxed-layout" autocomplete="off" />
                     <label class="btn p-9 btn-outline-primary rounded-2" for="boxed-layout">
                         <i class="icon ti ti-layout-distribute-vertical fs-7 me-2"></i>Boxed
                     </label>
 
-                    <input type="radio" class="btn-check" name="layout" id="full-layout"
-                        autocomplete="off" />
+                    <input type="radio" class="btn-check" name="layout" id="full-layout" autocomplete="off" />
                     <label class="btn p-9 btn-outline-primary rounded-2" for="full-layout">
                         <i class="icon ti ti-layout-distribute-horizontal fs-7 me-2"></i>Full
                     </label>
@@ -2241,10 +2246,15 @@
                     ['view', ['fullscreen', 'codeview', 'help']],
                     ['history', ['undo', 'redo']]
                 ],
-    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat','Montserrat-Bold','Montserrat-SemiBold','Montserrat-Regular'], // Agrega Montserrat aquí
-    fontNamesIgnoreCheck: ['Montserrat','Montserrat-Regular','Montserrat-Bold','Montserrat-SemiBold'] // Ignora el chequeo para la fuente personalizada
-            
-             
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact',
+                    'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat', 'Montserrat-Bold',
+                    'Montserrat-SemiBold', 'Montserrat-Regular'
+                ], // Agrega Montserrat aquí
+                fontNamesIgnoreCheck: ['Montserrat', 'Montserrat-Regular', 'Montserrat-Bold',
+                    'Montserrat-SemiBold'
+                ] // Ignora el chequeo para la fuente personalizada
+
+
             });
         });
     </script>
@@ -2263,10 +2273,10 @@
     </script>
 
 
- <!-- solar icons -->
+    <!-- solar icons -->
 
- {{-- <script src="{{ asset('assets/js/plugins/colorpicker-init.js') }}"defer></script> --}}
- 
+    {{-- <script src="{{ asset('assets/js/plugins/colorpicker-init.js') }}"defer></script> --}}
+
 
 </body>
 

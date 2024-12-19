@@ -102,8 +102,8 @@
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary" onclick="New();$('#Role')[0].reset();"
                             name="new">
-                        <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="RoleStore()" id="create">
+                        @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
+                            onclick="RoleStore()" id="create">@endcanany
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
                             onclick="RoleUpdate();" id="update">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -148,9 +148,9 @@
                             </div>
                     </div>
                     <div class="modal-footer">
-                       
+                        @canany('administrar', 'agregar')
                         <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
-                            onclick="RolePermissionUpdate()" id="create">
+                            onclick="RolePermissionUpdate()" id="create">@endcanany
                    
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </form>

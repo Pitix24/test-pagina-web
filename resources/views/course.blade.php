@@ -127,8 +127,8 @@
                 <div class="modal-footer"style="font-family:Montserrat-Bold">
                     <input type="button" value="Nuevo" class="btn" style="font-family:Montserrat-SemiBold;background-color:#023039;color:#ffffff" onclick="New();$('#course')[0].reset();"
                         name="new">
-                    <input type="button" value="Guardar" class="btn btn-success"id="create" onclick="courseStore()"
-                        name="create">
+                    @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn btn-success"id="create" onclick="courseStore()"
+                        name="create">@endcanany
                     <input type="button" value="Modificar" class="btn btn-danger"id="update" onclick="courseUpdate();"
                         name="update">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

@@ -6,7 +6,7 @@
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="d-sm-flex align-items-center justify-space-between">
-                            <h1  class="text-primary">Usuarios</h1>
+                            <h1 class="text-primary">Usuarios</h1>
                             <nav aria-label="breadcrumb" class="ms-auto">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item d-flex align-items-center">
@@ -33,12 +33,14 @@
                     <div class="card-body">
 
                         <p class="card-subtitle mb-3">
-                            <!-- success header modal -->
-                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
-                                data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
-                                onclick="New();$('#user')[0].reset();">
-                                Agregar
-                            </button>
+                            @canany('administrar', 'agregar')
+                                <!-- success header modal -->
+                                <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                                    data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
+                                    onclick="New();$('#user')[0].reset();">
+                                    Agregar
+                                </button>
+                            @endcanany
                         </p>
                         <div class="mb-2">
                             <h4 class="card-title mb-0">Exportar</h4>
@@ -75,6 +77,7 @@
         <!-- /.modal -->
 
         <!-- success Header Modal -->
+
         <div id="success-header-modal" class="modal fade" tabindex="-1" aria-labelledby="success-header-modalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
@@ -128,13 +131,11 @@
                                     <select name="day" class="form-control">
                                         <option>Dia</option>
                                         <?php for ($a = 1; $a <= 31; $a++) {
-                                              if ($a == 1) {
+                                            if ($a == 1) {
                                                 echo "<option value='$a' selected>" . $a . '</option>';
-                                               
                                             } else {
                                                 echo "<option value='$a'>" . $a . '</option>';
                                             }
-                                          
                                         } ?>
                                     </select>
                                 </div>
@@ -150,7 +151,6 @@
                                             } else {
                                                 echo "<option value='$b'>" . $mes[$b] . '</option>';
                                             }
-                                           
                                         }
                                         ?>
                                     </select>
@@ -160,9 +160,8 @@
                                         <option>Año</option>
                                         <?php
                                         $c = 2023;
-                                        echo "<option value='2024' selected> 2024</option>" ;
+                                        echo "<option value='2024' selected> 2024</option>";
                                         while ($c >= 1905) {
-
                                             echo "<option value='$c'>" . $c . '</option>';
                                             $c = $c - 1;
                                         }
@@ -196,10 +195,14 @@
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary"
                             onclick="New();$('#user')[0].reset();" name="new">
-                        <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
-                            onclick="userStore()" id="create">
+                        @canany('administrar', 'agregar')
+                            <input type="button" value="Guardar" class="btn bg-success-subtle text-success "
+                                onclick="userStore()" id="create">
+                        @endcanany
+                        @canany('administrar', 'editar')
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
                             onclick="userUpdate();" id="update">
+                        @endcanany
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </form>
 
@@ -219,50 +222,50 @@
         <!-- /.modal -->
 
         <div id="success-header-modal2" class="modal fade" tabindex="-1" aria-labelledby="success-header-modalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header modal-colored-header bg-success text-white">
-                    <h4 class="modal-title text-white" id="success-header-modalLabel">
-                        Roles
-                    </h4>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header modal-colored-header bg-success text-white">
+                        <h4 class="modal-title text-white" id="success-header-modalLabel">
+                            Roles
+                        </h4>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+
+                        <form action="" method="post" role="form" id="User_role"
+                            name="User_role"enctype="multipart/form-data">
+                            <input type="hidden" name="id">
+                            {{ csrf_field() }}
+
+                            <br>
+                            <div id="mycontent_detail">
+
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+
+                        <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
+                            onclick="UserRoleUpdate()">
+
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </form>
+
+
+
+
+
+
+
+                    </div>
+
                 </div>
-                <div class="modal-body">
-
-
-                    <form action="" method="post" role="form" id="User_role"
-                        name="User_role"enctype="multipart/form-data">
-                        <input type="hidden" name="id" >
-                        {{ csrf_field() }}
-         
-                    <br>
-                        <div id="mycontent_detail">
-                          
-                        </div>
-                </div>
-                <div class="modal-footer">
-                   
-                    <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
-                        onclick="UserRoleUpdate()" >
-               
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </form>
-
-
-
-
-
-
-
-                </div>
-
+                <!-- /.modal-content -->
             </div>
-            <!-- /.modal-content -->
+            <!-- /.modal-dialog -->
         </div>
-        <!-- /.modal-dialog -->
-    </div>
 
         <!-- /.modal -->
     </div>

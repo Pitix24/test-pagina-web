@@ -15,7 +15,7 @@ class TopicSeeder extends Seeder
     {
         Topic::create([
             
-            'user_id' => '2',
+            'user_id' => '1',
             'description' => 'Sql Server',
             'detail' =>'detalles',
             'instruction' =>'Instrucciones',
@@ -26,7 +26,7 @@ class TopicSeeder extends Seeder
         ]);
         Topic::create([
             
-            'user_id' => '2',
+            'user_id' => '1',
             'description' => 'Python',
             'detail' =>'detalles',
             'instruction' =>'Instrucciones',
