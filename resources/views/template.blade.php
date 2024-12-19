@@ -2240,7 +2240,9 @@
                     ['insert', ['link', 'picture', 'video', 'hr']],
                     ['view', ['fullscreen', 'codeview', 'help']],
                     ['history', ['undo', 'redo']]
-                ]
+                ],
+    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat-Light','Montserrat-Bold','Montserrat-SemiBold'], // Agrega Montserrat aquí
+    fontNamesIgnoreCheck: ['Montserrat-Light','Montserrat-Bold','Montserrat-SemiBold'] // Ignora el chequeo para la fuente personalizada
              
             });
         });
