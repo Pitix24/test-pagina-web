@@ -69,7 +69,7 @@
                 echo $sections->code;
             @endphp
 </form>
-            <div class="container mt-5">
+            <div class="container-fluid mt-5 bg-white" >
             
            
                 <h1 style="color:#03424E">{{ $sections->description }}
