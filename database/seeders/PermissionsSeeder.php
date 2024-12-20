@@ -39,8 +39,11 @@ class PermissionsSeeder extends Seeder
         Permission::create(['name' => 'actualizar']);
         Permission::create(['name' => 'eliminar']);
 
-         Role::create(['name' => 'Asistente']);
-         
+        $role0 = Role::create(['name' => 'Asistente']);
+
+        // Asignar todos los permisos menos "usuarios" y "administrar"
+        $permissions = Permission::whereNotIn('name', ['usuarios', 'administrar'])->get();
+        $role0->syncPermissions($permissions);
 
         Permission::create(['name' => 'administrar']);
         $role = Role::create(['name' => 'Administrador']);
