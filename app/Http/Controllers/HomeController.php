@@ -31,10 +31,10 @@ class HomeController extends Controller
        $users= Auth::user();
 
       //  return $users->roles_;
-      $user = User::orderBy('id','DESC')->get();
-        $roles = Role::all();
-        return view('user.user', compact('user', 'roles'));
-  //  return view("home.home");
+    //   $user = User::orderBy('id','DESC')->get();
+    //     $roles = Role::all();
+    //     return view('user.user', compact('user', 'roles'));
+    return redirect("admin");
     }
  
     public function sistema()

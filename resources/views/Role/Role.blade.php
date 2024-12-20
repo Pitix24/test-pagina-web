@@ -34,6 +34,7 @@
 
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
+
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                 onclick="New();$('#Role')[0].reset();">
@@ -102,10 +103,12 @@
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary" onclick="New();$('#Role')[0].reset();"
                             name="new">
-                        @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
+                        @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
                             onclick="RoleStore()" id="create">@endcanany
+                     @canany(['administrar', 'actualizar'])
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
                             onclick="RoleUpdate();" id="update">
+                      @endcanany
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </form>
 
@@ -148,9 +151,10 @@
                             </div>
                     </div>
                     <div class="modal-footer">
-                        @canany('administrar', 'agregar')
-                        <input type="button" value="Actualizar" class="btn bg-success-subtle text-success "
-                            onclick="RolePermissionUpdate()" id="create">@endcanany
+                        @canany(['administrar', 'actualizar'])
+                        <input type="button" value="Actualizar" class=" btn bg-success-subtle text-success "
+                            onclick="RolePermissionUpdate()" id="create">
+                        @endcanany
                    
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </form>

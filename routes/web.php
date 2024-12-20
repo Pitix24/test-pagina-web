@@ -51,86 +51,55 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial']], function () {
+Route::group(['middleware' => ['auth']], function () {
     //
-    Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
+    Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema')->middleware('permission:administrar');
 
-
-
-
-    Route::get('Coach', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-    Route::get('/Coordinación', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-    Route::get('/Administrador', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema');
-
+   
+    Route::get('admin', [App\Http\Controllers\UserController::class, 'profile']);
     
-    Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index']);
-    Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store']);
-    Route::post('CustomerDestroy', [App\Http\Controllers\CustomerController::class, 'destroy']);
-    Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit']);
-    Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update']);
+    Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index'])->middleware('permission:administrar|clientes');
+    Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('CustomerDestroy', [App\Http\Controllers\CustomerController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('CustomerEdit', [App\Http\Controllers\CustomerController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('CustomerUpdate', [App\Http\Controllers\CustomerController::class, 'update'])->middleware('permission:administrar|actualizar');
 
-    Route::get('admin/imagenes', [App\Http\Controllers\ImageController::class, 'index']);
-    Route::post('ImageStore', [App\Http\Controllers\ImageController::class, 'store']);
-    Route::post('ImageDestroy', [App\Http\Controllers\ImageController::class, 'destroy']);
-    Route::post('ImageEdit', [App\Http\Controllers\ImageController::class, 'edit']);
-    Route::post('ImageUpdate', [App\Http\Controllers\ImageController::class, 'update']);
+    Route::get('admin/imagenes', [App\Http\Controllers\ImageController::class, 'index'])->middleware('permission:administrar|imagenes');
+    Route::post('ImageStore', [App\Http\Controllers\ImageController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('ImageDestroy', [App\Http\Controllers\ImageController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('ImageEdit', [App\Http\Controllers\ImageController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('ImageUpdate', [App\Http\Controllers\ImageController::class, 'update'])->middleware('permission:administrar|actualizar');
   
 
-    Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index']);
-    Route::post('SectionCreate', [App\Http\Controllers\SectionController::class, 'create']);
-    Route::post('SectionStore', [App\Http\Controllers\SectionController::class, 'store']);
-    Route::post('SectionDestroy', [App\Http\Controllers\SectionController::class, 'destroy']);
-    Route::post('SectionEdit', [App\Http\Controllers\SectionController::class, 'edit']);
-    Route::post('SectionUpdate', [App\Http\Controllers\SectionController::class, 'update']);
+    Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index'])->middleware('permission:administrar|secciones');
+    Route::post('SectionStore', [App\Http\Controllers\SectionController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('SectionDestroy', [App\Http\Controllers\SectionController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('SectionEdit', [App\Http\Controllers\SectionController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('SectionUpdate', [App\Http\Controllers\SectionController::class, 'update'])->middleware('permission:administrar|actualizar');
     Route::post('SectionUpdateDinamic', [App\Http\Controllers\SectionController::class, 'updateDinamic']);
 
-    Route::get('admin/proyectos', [App\Http\Controllers\ProjectController::class, 'index']);
-    Route::post('ProjectCreate', [App\Http\Controllers\ProjectController::class, 'create']);
-    Route::post('ProjectStore', [App\Http\Controllers\ProjectController::class, 'store']);
-    Route::post('ProjectDestroy', [App\Http\Controllers\ProjectController::class, 'destroy']);
-    Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit']);
-    Route::post('ProjectUpdate', [App\Http\Controllers\ProjectController::class, 'update']);
+    Route::get('admin/proyectos', [App\Http\Controllers\ProjectController::class, 'index'])->middleware('permission:administrar|proyectos');
+    Route::post('ProjectStore', [App\Http\Controllers\ProjectController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('ProjectDestroy', [App\Http\Controllers\ProjectController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('ProjectUpdate', [App\Http\Controllers\ProjectController::class, 'update'])->middleware('permission:administrar|actualizar');
 
 
    //ADMINISTRATIVO
-    Route::get('home_edit/plantilla', [App\Http\Controllers\Home_edit::class, 'template']);
-    Route::get('home_edit/inicio', [App\Http\Controllers\Home_edit::class, 'home']);
-    Route::get('home_edit/nosotros', [App\Http\Controllers\Home_edit::class, 'us']);
-    Route::get('home_edit/proyectos', [App\Http\Controllers\Home_edit::class, 'project']);
-    Route::get('home_edit/blog', [App\Http\Controllers\Home_edit::class, 'blog']);
-    Route::get('home_edit/contacto', [App\Http\Controllers\Home_edit::class, 'contact']);
+    Route::get('home_edit/plantilla', [App\Http\Controllers\Home_edit::class, 'template'])->middleware('permission:administrar|editar_plantilla');
+    Route::get('home_edit/inicio', [App\Http\Controllers\Home_edit::class, 'home'])->middleware('permission:administrar|editar_inicio');
+    Route::get('home_edit/nosotros', [App\Http\Controllers\Home_edit::class, 'us'])->middleware('permission:administrar|editar_nosotros');
+    Route::get('home_edit/proyectos', [App\Http\Controllers\Home_edit::class, 'project'])->middleware('permission:administrar|editar_proyectos');
+    Route::get('home_edit/blog', [App\Http\Controllers\Home_edit::class, 'blog'])->middleware('permission:administrar|editar_blog');
+    Route::get('home_edit/contacto', [App\Http\Controllers\Home_edit::class, 'contact'])->middleware('permission:administrar|editar_contactos');
  
  
-    // Route::get('home_edit/plantilla', function () {
-    //     return view('home_edit.template');
-    // });
-    // Route::get('home_edit/nosotros', function () {
-    //     return view('home_edit.us');
-    // });
 
-    // Route::get('home_edit/proyectos', function () {
-    //     return view('home_edit.project');
-    // });
-    // Route::get('home_edit/blog', function () {
-    //     return view('home_edit.blog');
-    // });
-    // Route::get('home_edit/contacto', function () {
-    //     return view('home_edit.contact');
-    // });
-
-
-
-
-
-
-
-
-    Route::resource("admin/blog", App\Http\Controllers\TopicController::class);
-    Route::post('topicStore', [App\Http\Controllers\TopicController::class, 'store']);
-    Route::post('topicEdit', [App\Http\Controllers\TopicController::class, 'edit']);
-    Route::post('topicUpdate', [App\Http\Controllers\TopicController::class, 'update']);
-    Route::post('topicDestroy', [App\Http\Controllers\TopicController::class, 'destroy']);
-    Route::post('topicShow', [App\Http\Controllers\TopicController::class, 'show']);
+    Route::resource("admin/blog", App\Http\Controllers\TopicController::class)->middleware('permission:administrar|blogs');
+    Route::post('topicStore', [App\Http\Controllers\TopicController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('topicEdit', [App\Http\Controllers\TopicController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('topicUpdate', [App\Http\Controllers\TopicController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('topicDestroy', [App\Http\Controllers\TopicController::class, 'destroy'])->middleware('permission:administrar|eliminar');
 
 
 
@@ -139,62 +108,45 @@ Route::group(['middleware' => ['role:Coordinación|Administrador|Socio Comercial
 
 
     Route::resource("admin/categorias", App\Http\Controllers\CategoryController::class);
-    Route::post('categoryStore', [App\Http\Controllers\CategoryController::class, 'store']);
-    Route::post('categoryEdit', [App\Http\Controllers\CategoryController::class, 'edit']);
-    Route::post('categoryUpdate', [App\Http\Controllers\CategoryController::class, 'update']);
-    Route::post('categoryDestroy', [App\Http\Controllers\CategoryController::class, 'destroy']);
-    Route::post('categoryShow', [App\Http\Controllers\CategoryController::class, 'show']);
+    Route::post('categoryStore', [App\Http\Controllers\CategoryController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('categoryEdit', [App\Http\Controllers\CategoryController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('categoryUpdate', [App\Http\Controllers\CategoryController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('categoryDestroy', [App\Http\Controllers\CategoryController::class, 'destroy'])->middleware('permission:administrar|eliminar');
 
 
-    Route::post('category_productDestroy', "ProductController@category_productDestroy");
-    Route::post('category_productStore', "ProductController@category_productStore");
-    Route::post('category_productEdit', "ProductController@category_productEdit");
-
-
-
-    Route::resource('admin/usuarios', App\Http\Controllers\UserController::class);
-    Route::post('userCreate', 'UserController@create');
-    Route::post('userStore', [App\Http\Controllers\UserController::class, 'store']);
-    Route::post('userDestroy', [App\Http\Controllers\UserController::class, 'destroy']);
-    Route::post('userEdit', [App\Http\Controllers\UserController::class, 'edit']);
-    Route::post('userUpdate', [App\Http\Controllers\UserController::class, 'update']);
+    Route::resource('admin/usuarios', App\Http\Controllers\UserController::class)->middleware('permission:administrar|usuarios');
+    Route::post('userStore', [App\Http\Controllers\UserController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('userDestroy', [App\Http\Controllers\UserController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('userEdit', [App\Http\Controllers\UserController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('userUpdate', [App\Http\Controllers\UserController::class, 'update'])->middleware('permission:administrar|actualizar');
     Route::post('userShow', [App\Http\Controllers\UserController::class, 'show']);
     Route::post('userUpdateProfile', [App\Http\Controllers\UserController::class, 'updateProfile']);
     // Route::post('userImportGoogle', [App\Http\Controllers\UserController::class, 'importGoogle'])->name("userImportGoogle");
 
-    Route::post('UserRoleUpdate', [App\Http\Controllers\UserRoleController::class, 'update']);
-    Route::post('UserRoleEdit', [App\Http\Controllers\UserRoleController::class, 'edit']);
+    Route::post('UserRoleUpdate', [App\Http\Controllers\UserRoleController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('UserRoleEdit', [App\Http\Controllers\UserRoleController::class, 'edit'])->middleware('permission:administrar|editar');
 
 
-    Route::resource("admin/roles", App\Http\Controllers\RoleController::class);
-    Route::post('RoleStore', [App\Http\Controllers\RoleController::class, 'store']);
-    Route::post('RoleEdit', [App\Http\Controllers\RoleController::class, 'edit']);
-    Route::post('RoleUpdate', [App\Http\Controllers\RoleController::class, 'update']);
-    Route::post('RoleDestroy', [App\Http\Controllers\RoleController::class, 'destroy']);
-    Route::post('RoleShow', [App\Http\Controllers\RoleController::class, 'show']);
+    Route::resource("admin/roles", App\Http\Controllers\RoleController::class)->middleware('permission:administrar|usuarios');
+    Route::post('RoleStore', [App\Http\Controllers\RoleController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('RoleEdit', [App\Http\Controllers\RoleController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('RoleUpdate', [App\Http\Controllers\RoleController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('RoleDestroy', [App\Http\Controllers\RoleController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+ 
 
-    Route::post('RolePermissionUpdate', [App\Http\Controllers\RolePermissionController::class, 'update']);
-    Route::post('RolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit']);
+    Route::post('RolePermissionUpdate', [App\Http\Controllers\RolePermissionController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('RolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit'])->middleware('permission:administrar|editar');
    
 
 
 
-    Route::resource("tipos", App\Http\Controllers\TypeController::class);
-    Route::post('typeStore', [App\Http\Controllers\TypeController::class, 'store']);
-    Route::post('typeEdit', [App\Http\Controllers\TypeController::class, 'edit']);
-    Route::post('typeUpdate', [App\Http\Controllers\TypeController::class, 'update']);
-    Route::post('typeDestroy', [App\Http\Controllers\TypeController::class, 'destroy']);
-    Route::post('typeShow', [App\Http\Controllers\TypeController::class, 'show']);
+    Route::resource("tipos", App\Http\Controllers\TypeController::class)->middleware('permission:administrar|tipos');
+    Route::post('typeStore', [App\Http\Controllers\TypeController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('typeEdit', [App\Http\Controllers\TypeController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('typeUpdate', [App\Http\Controllers\TypeController::class, 'update'])->middleware('permission:administrar|actualizar');
+    Route::post('typeDestroy', [App\Http\Controllers\TypeController::class, 'destroy'])->middleware('permission:administrar|eliminar');
 
 
-
-
-
-
-
-    // Route::get('qrcode', function () {
-//      return QrCode::size(300)->generate('https://certificados.socialdata-peru.com/');
-//  });
 
 });
 
@@ -308,9 +260,6 @@ Route::get('login/microsoft/callback', function () {
 
 
 Route::get('google_sheet', [\App\Http\Controllers\GoogleSheetController::class, 'index']);
-
-
-
 
 
 //925680958 936158747

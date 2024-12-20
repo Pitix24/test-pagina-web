@@ -39,7 +39,11 @@ class UserController extends Controller
         $roles = Role::all();
         return view('user.user', compact('user', 'roles'));
     }
-
+    public function profile()
+    {
+        
+        return view('user.profile');
+    }
     /**
      * Show the form for creating a new resource.
      *

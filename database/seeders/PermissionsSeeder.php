@@ -20,6 +20,7 @@ class PermissionsSeeder extends Seeder
     public function run(): void
     {
         //permisos
+        Permission::create(['name' => 'clientes']);
         Permission::create(['name' => 'usuarios']);
         Permission::create(['name' => 'blogs']);
         Permission::create(['name' => 'proyectos']);
@@ -35,9 +36,11 @@ class PermissionsSeeder extends Seeder
 
         Permission::create(['name' => 'agregar']);
         Permission::create(['name' => 'editar']);
+        Permission::create(['name' => 'actualizar']);
         Permission::create(['name' => 'eliminar']);
 
-
+         Role::create(['name' => 'Asistente']);
+         
 
         Permission::create(['name' => 'administrar']);
         $role = Role::create(['name' => 'Administrador']);
