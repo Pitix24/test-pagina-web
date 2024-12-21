@@ -18,8 +18,10 @@ use Laravel\Socialite\Facades\Socialite;
 */
 
 Route::get('prueba', function () {
-    return view("index");
+    return view("home.home");
 });
+Route::get('/ejecutar', [App\Http\Controllers\GenerateProductionController::class, 'generate']);
+
 
 Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 
