@@ -34,11 +34,13 @@
 
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
+                            @canany(['administrar', 'agregar'])
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                 onclick="New();$('#Image')[0].reset();image.fotografia.src ='https://placehold.co/150';">
                                 Agregar
                             </button>
+                            @endcanany
                         </p>
                         <div class="mb-2">
                             <h4 class="card-title mb-0">Exportar</h4>
