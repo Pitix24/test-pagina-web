@@ -271,7 +271,7 @@
                     <input type="button" value="Nuevo" class="btn"
                         style="font-family:Montserrat-SemiBold;background-color:#023039;color:#ffffff"
                         onclick="New();$('#user')[0].reset();"   name="new">
-                    @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn btn-success" onclick="userStore()" id="create">@endcanany
+                    @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn btn-success" onclick="userStore()" id="create">@endcanany
                     <input type="button" value="Modificar" class="btn btn-danger" onclick="userUpdate();"
                         id="update">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>

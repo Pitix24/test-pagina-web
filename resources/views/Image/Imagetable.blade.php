@@ -30,7 +30,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
                            
-                            @canany('administrar', 'editar')
+                            @canany(['administrar', 'editar'])
                                 <li>
                                     <a data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                     onclick="ImageEdit('{{ $Images->id }}'); Up();  return false" 
@@ -39,7 +39,7 @@
                                     </a>
                                 </li>
                             @endcanany
-                            @canany('administrar', 'eliminar')
+                            @canany(['administrar', 'eliminar'])
                             <li>
                                 <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"
                                 onclick="ImageDestroy('{{ $Images->id }}'); return false">

@@ -30,7 +30,7 @@
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="">
                            
-                            @canany('administrar', 'editar')
+                            @canany(['administrar', 'editar'])
                                 <li>
                                     <a     onclick="sectionEdit('{{ $sections->id }}'); Up();  return false"
                                         class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
@@ -38,7 +38,7 @@
                                     </a>
                                 </li>
                             @endcanany
-                            @canany('administrar', 'eliminar')
+                            @canany(['administrar', 'eliminar'])
                             <li>
                                 <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"
                                 onclick="sectionDestroy('{{ $sections->id }}'); return false">

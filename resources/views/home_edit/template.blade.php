@@ -73,7 +73,7 @@
             
            
                 <h1 style="color:#03424E">{{ $sections->description }}
-                    @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
+                    @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
                         onclick="sectionUpdateDinamic('{{ $i }}')" name="create">@endcanany
                         
                 </h1>

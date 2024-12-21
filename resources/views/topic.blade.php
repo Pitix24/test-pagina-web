@@ -190,7 +190,7 @@
             <input type="button" value="Nuevo" class="btn"
                 style="font-family:Montserrat-SemiBold;background-color:#023039;color:#ffffff"
                 onclick="New();$('#topic')[0].reset();reset_textarea();" name="new">
-            @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn btn-success"id="create" onclick="topicStore()" name="create">@endcanany
+            @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn btn-success"id="create" onclick="topicStore()" name="create">@endcanany
             <input type="button" value="Modificar" class="btn btn-danger"id="update" onclick="topicUpdate();"
                 name="update">
 
@@ -244,7 +244,7 @@
                 <div class="modal-footer"style="font-family:Montserrat-Bold">
                     <input type="button" value="Nuevo" class="btn" style="font-family:Montserrat-SemiBold;background-color:#023039;color:#ffffff" onclick="New();$('#topic')[0].reset();"
                         name="new">
-                    @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn btn-success"id="create" onclick="topicStore()"
+                    @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn btn-success"id="create" onclick="topicStore()"
                         name="create">@endcanany
                     <input type="button" value="Modificar" class="btn btn-danger"id="update" onclick="topicUpdate();"
                         name="update">

@@ -102,7 +102,7 @@
                     <div class="modal-footer">
                         <input type="button" value="Nuevo" class="btn btn-primary"
                             onclick="New();$('#category')[0].reset();" name="new">
-                        @canany('administrar', 'agregar')<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
+                        @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
                             onclick="categoryStore()" id="create">@endcanany
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="categoryUpdate();"
                             id="update">
