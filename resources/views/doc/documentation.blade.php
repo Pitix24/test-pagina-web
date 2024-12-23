@@ -50,7 +50,30 @@
                                           
                                         </section>
                                      
-                           
+                                        <h6></h6>
+                                        <section>
+                                            <div class="table-responsive text-center">
+                                                <h3 class="text-primary">Subida de imágenes</h3>
+                                                <iframe
+                                                style="border-radius: 10px"
+                                                src="https://drive.google.com/file/d/1pzfiPWR6o_9JOzoHQ27UugLVFYAlK6WM/preview" 
+                                                width="1000px" height="600px" allow="autoplay"></iframe>
+                                        
+                                            </div>
+                                          
+                                        </section>
+                                        <h6></h6>
+                                        <section>
+                                            <div class="table-responsive text-center">
+                                                <h3 class="text-primary">Cambiar Imágenes</h3>
+                                                <iframe
+                                                style="border-radius: 10px"
+                                                src="https://drive.google.com/file/d/1LsgxqkSKREdoK5QHaM5c8mfOdrFpRISM/preview" 
+                                                width="1000px" height="600px" allow="autoplay"></iframe>
+                                        
+                                            </div>
+                                          
+                                        </section>
                                     </form>
                                 </div>
                             </div>
