@@ -26,7 +26,7 @@ class GenerateProductionController extends Controller
        $counter += 1;
 
        $newContent .= $section->code . "\n";
-       if ($request->module==1&& $counter===2) {
+       if ($request->module==1&& $counter===1) {
         $newContent .= "@yield('content')" . "\n";
     }
       
