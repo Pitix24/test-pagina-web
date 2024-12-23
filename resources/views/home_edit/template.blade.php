@@ -24,13 +24,13 @@
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
-   
 
-      <!-- CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
-    
-      <!-- JS -->
-      <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
 </head>
 
 <style>
@@ -50,69 +50,80 @@
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
 
-<div id="mycontent">
 
-</div>
+
+
+
+    <div id="mycontent">
+
+    </div>
 
 
     <div id="main-wrapper flex-column">
 
-<form method="post" id="Customer">
-@csrf
+        <form method="post" id="Customer">
+            @csrf
 
-        @php
-            $i = 0;
-        @endphp
-        @foreach ($section as $sections)
             @php
-                $i = $i + 1;
-                echo $sections->code;
+                $i = 0;
             @endphp
-</form>
-            <div class="container-fluid mt-5 bg-white" >
-            
-           
-                <h1 style="color:#03424E">{{ $sections->description }}
-                    @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn mb-1 me-1 bg-success text-white" id="create"
-                        onclick="sectionUpdateDinamic('{{ $i }}')" name="create">@endcanany
-                        
-                </h1>
-                <form action=""name="section{{ $i }}" id="section{{ $i }}">
-                    <span>Nivel : </span>
-               
-              
+            @foreach ($section as $sections)
+                @php
+                    $i = $i + 1;
+                    echo $sections->code;
+                @endphp
+        </form>
+        <div class="container-fluid mt-5 bg-white">
 
-                    <select name="nivel" id="nivel{{ $i }}" class="form-control">
-                        @for ($nivel = 1; $nivel <= 20; $nivel++)
-                            <option value="{{ $nivel }}" {{ ($nivel == $sections->nivel) ? 'selected' : '' }}>
-                                {{ $nivel }}
-                            </option>
-                        @endfor
-                    </select>
-                    
-                     <br>
-                    <input type="hidden" name="id"value="{{ $sections->id }}">
-                    <!-- Textarea para el editor -->
-                    <div class="form-group">
-                        <textarea name="code" id="my-textarea" class="my-textarea form-control" rows="10">
+
+            <h1 style="color:#03424E">{{ $sections->description }}
+                @canany(['administrar', 'agregar'])
+                    <input type="button" value="Guardar vista Previa" class="btn mb-1 me-1 bg-success text-white" id="create"
+                        onclick="sectionUpdateDinamic('{{ $i }}')" name="create">
+                @endcanany
+                @canany(['administrar', 'actualizar'])
+                    <a  class="btn mb-1 me-1 bg-danger text-white"
+                    href="generate/{{$sections->module}}"
+                    >Guardar en Producción</a>
+                @endcanany
+
+            </h1>
+            <form action=""name="section{{ $i }}" id="section{{ $i }}">
+                <span>Nivel : </span>
+
+
+
+                <select name="nivel" id="nivel{{ $i }}" class="form-control">
+                    @for ($nivel = 1; $nivel <= 20; $nivel++)
+                        <option value="{{ $nivel }}" {{ $nivel == $sections->nivel ? 'selected' : '' }}>
+                            {{ $nivel }}
+                        </option>
+                    @endfor
+                </select>
+
+                <br>
+                <input type="hidden" name="id"value="{{ $sections->id }}">
+                <!-- Textarea para el editor -->
+                <div class="form-group">
+                    <textarea name="code" id="my-textarea" class="my-textarea form-control" rows="10">
                           @php
-                                 echo $sections->code;
-                            @endphp
+                              echo $sections->code;
+                          @endphp
                         </textarea>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>
+        </div>
         @endforeach
-    
 
 
 
 
 
-     
-        @yield("content");
 
-   
+
+        @yield('content');
+
+
 
     </div>
 
@@ -164,29 +175,28 @@
                     ['view', ['fullscreen', 'codeview', 'help']],
                     ['history', ['undo', 'redo']]
                 ],
-    fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact', 'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat','Montserrat-Bold','Montserrat-SemiBold','Montserrat-Regular'], // Agrega Montserrat aquí
-    fontNamesIgnoreCheck: ['Montserrat','Montserrat-Regular','Montserrat-Bold','Montserrat-SemiBold'] // Ignora el chequeo para la fuente personalizada
-            
-                   
+                fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', 'Helvetica', 'Impact',
+                    'Tahoma', 'Times New Roman', 'Verdana', 'Manrope', 'Montserrat', 'Montserrat-Bold',
+                    'Montserrat-SemiBold', 'Montserrat-Regular'
+                ], // Agrega Montserrat aquí
+                fontNamesIgnoreCheck: ['Montserrat', 'Montserrat-Regular', 'Montserrat-Bold',
+                    'Montserrat-SemiBold'
+                ] // Ignora el chequeo para la fuente personalizada
+
+
             });
         });
     </script>
-  <script>
-            const input = document.querySelector("#phone");
-    
-            // Inicialización de intl-tel-input con Perú como valor predeterminado
-            window.intlTelInput(input, {
-                initialCountry: "pe", // Código de país ISO 3166-1 Alpha-2 para Perú
-                separateDialCode: true, // Muestra el código de país separado
-                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
-            });
+    <script>
+        const input = document.querySelector("#phone");
 
-           
-           
-           
-
-
-        </script>
+        // Inicialización de intl-tel-input con Perú como valor predeterminado
+        window.intlTelInput(input, {
+            initialCountry: "pe", // Código de país ISO 3166-1 Alpha-2 para Perú
+            separateDialCode: true, // Muestra el código de país separado
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
+        });
+    </script>
 
 </body>
 

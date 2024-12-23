@@ -7,19 +7,31 @@ use Illuminate\Http\Request;
 
 class GenerateProductionController extends Controller
 {
-    public function generate()
+    public function generate(Request $request)
 {
     // Obtener datos de la base de datos
-    $sections = Section::where("module", "=", "2")->get();
+    $sections = Section::where("module", "=", $request->module)->orderBy("nivel","asc")->get();
+    
+    $page = "views/production/".$request->module.".blade.php";
 
+    
     // Leer el contenido actual del archivo
-    $filePath = resource_path('views/production/home.blade.php');
+    $filePath = resource_path($page);
     $currentContent = File::exists($filePath) ? File::get($filePath) : '';
 
     // Iniciar el contenido que deseas reemplazar
     $newContent = '';
+    $counter =0;
     foreach ($sections as $section) {
-        $newContent .= $section->code . "\n";
+       $counter += 1;
+
+       $newContent .= $section->code . "\n";
+       if ($request->module==1&& $counter===2) {
+        $newContent .= "@yield('content')" . "\n";
+    }
+      
+       
+     
     }
 
     // Buscar la sección a modificar

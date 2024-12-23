@@ -35,11 +35,33 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 Auth::routes();
 
    //USUARIOS
-   Route::get('/', [App\Http\Controllers\Home_demoController::class, 'home']);
-   Route::get('nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
-   Route::get('proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
-   Route::get('blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
-   Route::get('contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
+   Route::get('/home_demo', [App\Http\Controllers\Home_demoController::class, 'home']);
+   Route::get('/home_demo/nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
+   Route::get('/home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
+   Route::get('/home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
+   Route::get('/home_demo/contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
+
+
+   Route::get('/', function () {
+    return view("production.2");
+});
+Route::get('/nosotros', function () {
+    return view("production.3");
+});
+Route::get('/proyectos', function () {
+    return view("production.4");
+});
+Route::get('/blog', function () {
+    return view("production.5");
+});
+Route::get('/contacto', function () {
+    return view("production.6");
+});
+
+
+
+
+
 
 
    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
@@ -148,7 +170,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('typeUpdate', [App\Http\Controllers\TypeController::class, 'update'])->middleware('permission:administrar|actualizar');
     Route::post('typeDestroy', [App\Http\Controllers\TypeController::class, 'destroy'])->middleware('permission:administrar|eliminar');
 
-
+    Route::get('home_edit/generate/{module}', [App\Http\Controllers\GenerateProductionController::class, 'generate'])->middleware('permission:administrar|actualizar');
 
 });
 

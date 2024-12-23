@@ -1,4 +1,4 @@
-@extends("home.template")
+@extends('production.1')
 @section("content")
     
  <!-- Sección completa -->
