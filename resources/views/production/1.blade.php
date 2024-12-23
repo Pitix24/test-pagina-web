@@ -16,11 +16,8 @@
     <link rel="stylesheet" href="{{ asset('css/template.css') }}" />
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Summernote CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
-    <script src="{{ asset('js/section.js') }}"></script>
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
@@ -287,13 +284,6 @@
 
 
 
-
-
-
-
-
-
-
     <script src="{{ asset('assets/js/vendor.min.js') }}"></script>
     <script src="{{ asset('assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/libs/simplebar/dist/simplebar.min.js') }}"></script>
@@ -311,31 +301,9 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
 
-    <script>
-        $(document).ready(function() {
-            // Inicializar el editor Summernote extendido
-            $('.my-textarea').summernote({
-                height: 400, // Altura del editor
-                placeholder: 'Escribe algo aquí...',
-                toolbar: [
-                    ['style', ['style']],
-                    ['font', ['bold', 'italic', 'underline', 'strikethrough', 'superscript',
-                        'subscript', 'clear'
-                    ]],
-                    ['fontname', ['fontname']],
-                    ['fontsize', ['fontsize']],
-                    ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['table', ['table']],
-                    ['insert', ['link', 'picture', 'video', 'hr']],
-                    ['view', ['fullscreen', 'codeview', 'help']],
-                    ['history', ['undo', 'redo']]
-                ]
-            });
-        });
-    </script>
+
+    
     <script>
         const input = document.querySelector("#phone");
 

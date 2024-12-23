@@ -94,7 +94,7 @@
                         <a class="navbar-brand" href="{{ url('/') }}">
                             <img src="{{ asset('ayba/3.png') }}" alt="" width="130px">
                         </a>
-                        <b style="font-family: Montalban;color:#ffffff;font-size:100%">| Academy</b>
+                        
                     </div>
                     <div class="col col-lg-2">
 
