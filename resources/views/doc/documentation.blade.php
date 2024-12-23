@@ -37,7 +37,7 @@
                                 <div class="wizard-content">
                                     <form action="#" class="tab-wizard wizard-circle">
                                         <!-- Step 1 -->
-                                        <h6></h6>
+                                        <h6>Editar enlaces</h6>
                                         <section>
                                             <div class="table-responsive text-center">
                                                 <h3 class="text-primary">Editar enlaces</h3>
@@ -50,7 +50,7 @@
                                           
                                         </section>
                                      
-                                        <h6></h6>
+                                        <h6>Subida de imágenes</h6>
                                         <section>
                                             <div class="table-responsive text-center">
                                                 <h3 class="text-primary">Subida de imágenes</h3>
@@ -62,7 +62,7 @@
                                             </div>
                                           
                                         </section>
-                                        <h6></h6>
+                                        <h6>Cambiar Imágenes</h6>
                                         <section>
                                             <div class="table-responsive text-center">
                                                 <h3 class="text-primary">Cambiar Imágenes</h3>
