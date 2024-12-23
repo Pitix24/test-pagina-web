@@ -172,6 +172,10 @@ Route::group(['middleware' => ['auth']], function () {
 
     Route::get('home_edit/generate/{module}', [App\Http\Controllers\GenerateProductionController::class, 'generate'])->middleware('permission:administrar|actualizar');
 
+
+    Route::get('admin/documentacion', function(){
+        return view('doc.documentation');
+    });
 });
 
 

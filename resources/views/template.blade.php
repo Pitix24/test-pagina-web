@@ -264,6 +264,23 @@
                                         </ul>
                                     </li>
                                     @endcanany
+                                    <li class="sidebar-item">
+                                        <a class="sidebar-link has-arrow " href="javascript:void(0)"
+                                            aria-expanded="false">
+                                            <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
+                                            <span class="hide-menu">Documentación</span>
+                                        </a>
+                                        <ul aria-expanded="false" class="collapse first-level">
+                                            <li class="sidebar-item">
+                                                <a class="sidebar-link" href="{{ url('admin/documentacion') }}">
+                                                    <span class="icon-small"></span> Video tutoriales
+                                                </a>
+                                            </li>
+
+
+
+                                        </ul>
+                                    </li>
                                 </ul>
                             </nav>
 

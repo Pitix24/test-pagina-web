@@ -34,11 +34,13 @@
                       
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
+                            @canany(["administrar","agregar"])
                             <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                  onclick="New();$('#category')[0].reset();">
                                 Agregar
                             </button>
+                            @endcanany
                         </p>
                         <div class="mb-2">
                             <h4 class="card-title mb-0">Exportar</h4>
@@ -104,8 +106,10 @@
                             onclick="New();$('#category')[0].reset();" name="new">
                         @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn bg-success-subtle text-success "
                             onclick="categoryStore()" id="create">@endcanany
+                            @canany(['administrar', 'actualizar'])
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger" onclick="categoryUpdate();"
                             id="update">
+                            @endcanany
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                       </form>
 
