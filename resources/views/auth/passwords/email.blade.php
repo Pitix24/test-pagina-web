@@ -9,12 +9,12 @@
   <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
   <!-- Favicon icon-->
-  <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="{{asset('ayba/1.png')}}" />
 
   <!-- Core Css -->
   <link rel="stylesheet" href="../../assets/css/styles.css" />
 
-  <title>MatDash Bootstrap Admin</title>
+  <title>Aybar Corp</title>
 </head>
 
 <body>
