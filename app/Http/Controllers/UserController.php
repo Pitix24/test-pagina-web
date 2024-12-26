@@ -18,6 +18,7 @@ use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Socialite\Facades\Socialite;
 use App\Services\GoogleSheetService;
+
 class UserController extends Controller
 {
     use Notifiable;
@@ -30,18 +31,16 @@ class UserController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
-
-
     }
     public function index()
     {
-        $user = User::orderBy('id','DESC')->get();
+        $user = User::orderBy('id', 'DESC')->get();
         $roles = Role::all();
         return view('user.user', compact('user', 'roles'));
     }
     public function profile()
     {
-        
+
         return view('user.profile');
     }
     /**
@@ -51,7 +50,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $user = User::orderBy('id','DESC')->get();
+        $user = User::orderBy('id', 'DESC')->get();
         return view('user.usertable', compact('user'));
     }
 
@@ -83,7 +82,6 @@ class UserController extends Controller
             $user->sex = $request->sex;
             $user->save();
             $user->assignRole("Administrador");
-
         } catch (\Exception $e) {
             // do task when error
             //   return  $e->getMessage();   // insert query
@@ -118,7 +116,7 @@ class UserController extends Controller
         //     $user->role_name=  $valor->name;
         // }
 
-            return $user;
+        return $user;
     }
 
     /**
@@ -142,12 +140,9 @@ class UserController extends Controller
             $users->cellphone = $request->cellphone;
             $users->email = $request->email;
             $users->sex = $request->sex;
-             $users->password =  Hash::make($request->password);
-            // try {
-            //     $users->assignRole($request->role);
-            // } catch (\Exception $e) {
-            //     return $e->getMessage();
-            // }
+
+            $users->password =  Hash::make($request->password);
+
 
             $users->save();
         } else {
@@ -164,10 +159,10 @@ class UserController extends Controller
             $users->email = $request->email;
             $users->sex = $request->sex;
             $users->photo = $request->photo;
-               $users->password =  Hash::make($request->password);
+            $users->password =  Hash::make($request->password);
             $users->save();
         }
-        
+
         return   $this->create();
     }
 
@@ -186,79 +181,74 @@ class UserController extends Controller
     }
     public function updateProfile(Request $request)
     {
-        
-     //  $request->datebirth = datebirth($request->day, $request->month, $request->year);
-     //  if ($request->photo == "") {
-           $users = User::find($request->id);
-                     $users->cellphone = $request->cellphone;
-                         $users->names = $request->names;
-      $users->firstname = $request->firstname;
-      $users->lastname = $request->lastname;
 
-        $users->sex=   $request->sex;
-  
-     //      $users->datebirth = $request->datebirth;
-     //      $users->cellphone = $request->cellphone;
+        $request->datebirth = datebirth($request->day, $request->month, $request->year);
+        //  if ($request->photo == "") {
+        $users = User::find($request->id);
+        $users->cellphone = $request->cellphone;
+        $users->names = $request->names;
+        $users->firstname = $request->firstname;
+        $users->lastname = $request->lastname;
 
-           $users->save();
-     //  } else {
-      //      $table = User::find($request->id);
-      //      fileDestroy($table->photo, "imageusers");
-       //     $request->photo = fileStore($request->file('photo'), "imageusers");
-      //      $users = User::find($request->id);
-       //     $users->datebirth = $request->datebirth;
-       //     $users->cellphone = $request->cellphone;
-       //     $users->photo = $request->photo;
-       //     $users->save();
-      // }
+        $users->sex =   $request->sex;
+
+        $users->datebirth = $request->datebirth;
+        $users->cellphone = $request->cellphone;
+
+        if ($request->photo != "") {
+            $table = User::find($request->id);
+            fileDestroy($table->photo, "imageusers");
+            $request->photo = fileStore($request->file('photo'), "imageusers");
+            $users->photo = $request->photo;
+        }
+        if ($request->password!="") {
+            $users->password =  Hash::make($request->password);
+        }
+
+
+        $users->save();
+    
     }
 
-  
-   public function import() 
+
+    public function import()
     {
         Excel::import(new ImportUsers, request()->file('file'));
-            
+
         return back();
     }
-    public function importGoogle(Request $request){
-     //   $request->id_sheet = '1ShgVLdsBMDAW2v0Xzk3JL8xls0KlKUEUMzY5mlTvwds'; 
-     //   $request->range = 'hoja!A1:H10'; // Ajusta el rango según tu hoja de cálculo
+    public function importGoogle(Request $request)
+    {
+        //   $request->id_sheet = '1ShgVLdsBMDAW2v0Xzk3JL8xls0KlKUEUMzY5mlTvwds'; 
+        //   $request->range = 'hoja!A1:H10'; // Ajusta el rango según tu hoja de cálculo
 
-   
-            $google = New GoogleSheetService();
-            $data =   $google->getSheetDataWithHeaders($request->id_sheet, $request->range);
-     
-            $object = json_decode(json_encode($data));
-           // return $object;
-            // return var_dump($data);
 
-            foreach ($object as $row) {
-                $existingStudent = User::where('email', $row->email)->first();
+        $google = new GoogleSheetService();
+        $data =   $google->getSheetDataWithHeaders($request->id_sheet, $request->range);
 
-                if ($existingStudent) {
-                    continue;
-                }
-                else{
-                    $user1 = new User([
-                        'dni'       => $row->dni,
-                        'names'     => $row->nombres,
-                        'firstname' => $row->paterno,
-                        'lastname'  => $row->materno,
-                        'email'     => $row->email,
-                        'password'  => Hash::make($row->password),
-                        'sex'       => substr($row->sexo, 0, 1),
-                        'cellphone' => $row->celular,
-                    ]);
-                    $user1->save();
-                    $user1->assignRole('Socio Comercial');
-                }
-                
-              
+        $object = json_decode(json_encode($data));
+        // return $object;
+        // return var_dump($data);
+
+        foreach ($object as $row) {
+            $existingStudent = User::where('email', $row->email)->first();
+
+            if ($existingStudent) {
+                continue;
+            } else {
+                $user1 = new User([
+                    'dni'       => $row->dni,
+                    'names'     => $row->nombres,
+                    'firstname' => $row->paterno,
+                    'lastname'  => $row->materno,
+                    'email'     => $row->email,
+                    'password'  => Hash::make($row->password),
+                    'sex'       => substr($row->sexo, 0, 1),
+                    'cellphone' => $row->celular,
+                ]);
+                $user1->save();
+                $user1->assignRole('Socio Comercial');
             }
-          
-          
-
-
-     
+        }
     }
 }
