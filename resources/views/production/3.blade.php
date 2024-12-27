@@ -255,8 +255,8 @@
                     <h2 class="fs-10">
                         <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
                     </h2>
-                    <p class="text-primary fs-7" style="text-align: justify">
-                        <span style="font-size: 18px;">Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
+                    <p class="text fs-7" style="text-align: justify;color:#03424E">
+                        <span style="font-size: 18px; font-family: Montserrat-SemiBold;">Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
                         terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.</span>
                     </p>
 
@@ -267,7 +267,7 @@
                     <h2 class="fs-10">
                         <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
                     </h2>
-                    <p class="text-primary fs-4" style="text-align: justify">
+                    <p class="text fs-4" style="text-align: justify;color:#03424E">
                         Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
                         terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
                     </p>

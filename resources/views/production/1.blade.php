@@ -89,17 +89,16 @@
 
 
         <!-- INICIO SECCION -->
+<header class="header">
 <div style="background-color: #13434d; height: 60px;" class="pt-2 d-none d-xs-flex d-lg-flex  justify-content-center align-items-center">
-        <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; ">
-            <b style="color:white; ">ENCUENTRA TU LOTE SOÑADO AQUÍ  </b>
+        <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; "><b style="color:white; ">ENCUENTRA TU LOTE SOÑADO AQUÍ  </b>
             <a href="https://bit.ly/PGWSP" class="  btn bg-white" style="color:#13434d;height: 40px; margin-bottom: 10px;
      border-radius: 100px;width: 300px;
      ">
                 <b>MÁS INFORMACIÓN</b>
             </a>
         </div>
-    </div>
-<header class="header fixed-header">
+    </div>     
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
@@ -127,7 +126,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="proyectos">                            PROYECTOS                        </a>
+                        <a class="nav-link" aria-current="page" style="color: #13434d" href="proyectos">PROYECTOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="https://aybar.credilotesperu.com/blog" style="color: #13434d">
@@ -155,32 +154,29 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-start mt-10">
-                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3><ul class="text-white mt-4"><li><i class=""></i><div style="text-align: left;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); width: 21.1153px; height: 20.6562px; float: left;"></div></li><li><div style="text-align: left;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); font-size: 14px;">(+51) 970 579 363</span></div><div style="text-align: left;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" style="width: 22.5px; height: 22.0027px; float: left;" class="note-float-left"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); font-size: 14px;">(+51) 977 637 351</span></div></li>
-                    <li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" style="text-align: left; width: 22.5px; height: 22.0217px; float: left;" class="note-float-left"><div style="text-align: left;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); font-size: 14px;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight);">Jr. Los Viñedos 170, La Molina</span></span><br></div></li>
-                    <li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" style="text-align: left; width: 28.5px; height: 27.889px; float: left;" class="note-float-left"><div style="text-align: left;"><span style="font-family: Montserrat, sans-serif; font-size: 14px;">Av. Circunvalación Del Golf Los Incas 134&nbsp;</span><span style="font-family: Montserrat, sans-serif; font-size: 14px; color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight);">Patio Panorama, Santiago de Surco</span></div></li>
-                </ul>
+                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3><ul class="text-white mt-4" style="--bs-text-opacity: 1;"><li><h3 style="margin-top: 30px;"><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 25.7683px; height: 25.1875px; float: left;"></span></font></h3></li><li><div><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px;">(51) 01-9049838</span></span></font></div><div><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px;"><br></span></span></font></div></li><li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" class="note-float-left" style="width: 25.5px; height: 24.951px; float: left;"><div><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat, sans-serif; font-size: 14px;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular;">Av. Circunvalación Del Golf Los Incas&nbsp;</span></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular; font-size: 14px;">134<br></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Patio Panorama,&nbsp; Piso 19.&nbsp;</span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Santiago de Surco.</span></div></li></ul>
             </div>
 
             <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10">
                 <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
-                <p></p>
+         
                 <div class="row">
                     <div class="col-6">
                         <ul class="text-white mt-4">
-                            <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat; font-size: 14px;">Inicio</span></a></li>
-                            <li><a style="color:white" href="../contacto"><span style="font-family: Montserrat; font-size: 14px;">Contáctanos</span></a></li>
-                           <li><a style="color:white" href="../nosotros"><span style="font-family: Montserrat; font-size: 14px;">Quiénes somos</span></a></li>
-                       <li><a style="color:white" href="#"><span style="font-family: Montserrat; font-size: 14px;">Preguntas frecuentes</span></a></li>
+                            <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a></li>
+                            <li><a style="color:white" href="../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a></li>
+                           <li><a style="color:white" href="../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes somos</span></a></li>
+                       <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas frecuentes</span></a></li>
                       
                    
                         </ul>
                     </div>
                     <div class="col-6">
                         <ul class="text-white mt-4">
-<li><a style="color:white" href="../blog"><span style="font-family: Montserrat; font-size: 14px;">Blog</span></a></li>
-                          <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat; font-size: 14px;">Proyectos</span></a></li>
-                          <li><a style="color:white" href="#"><span style="font-family: Montserrat; font-size: 14px;">Términos y condiciones</span></a></li>
-                          <li><a style="color:white" href="#"><span style="font-family: Montserrat; font-size: 14px;">Libro de reclamaciones</span></a></li>
+<li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a></li>
+                          <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a></li>
+                          <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y condiciones</span></a></li>
+                          <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de reclamaciones</span></a></li>
                          
                            
                     
@@ -190,7 +186,7 @@
             </div>
 
             <div class="mt-4 text-center col-xl-4 mt-10">
-                <img src="../ayba/4.png" width="40%" alt="" srcset="" style="width: 152.5px; height: 152.5px;"><br>
+                <img src="../ayba/4.png" width="40%" alt="" srcset="" style="width: 137.75px; height: 137.75px;"><br>
 <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="https://aybar.credilotesperu.com/resource/1734378917_icons8-facebook-50.png" width="45px" alt="">
 </a>
 <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank">   <img src="https://aybar.credilotesperu.com/resource/1734379420_icons8-tiktok-50.png" width="45px" alt="">

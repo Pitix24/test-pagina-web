@@ -203,7 +203,9 @@
                         <input type="button" value="Modificar" class="btn bg-danger-subtle text-danger"
                             onclick="userUpdate();" id="update">
                         @endcanany
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                           
+                            Cerrar</button>
                         </form>
 
 

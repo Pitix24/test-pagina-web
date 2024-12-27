@@ -15,10 +15,10 @@
                     <!-- Columna izquierda con imagen -->
                     <div class="col-lg-6 col-xl-4 col-md-6   text-center align-content-center">
 
-                  <img src="https://aybar.credilotesperu.com/resource/1734547017_circulo.png" width="100%" class="align-content-center" style="margin-bottom:145%">
+                  <img src="https://aybar.credilotesperu.com/resource/1734547017_circulo.png" width="100%" class="align-content-center" style="margin-top:-20%">
 
                         
-     <div style="margin-top:-220%">
+     <div style="margin-top:-80%">
 
                         <!-- Contenido encima -->
                         <img src="../ayba/4.png" alt="" width="50px">
@@ -42,7 +42,7 @@
 
                     <!-- Columna derecha con formulario -->
                     <div class="col col-md-6 col-lg-6 col-xl-3 col-sm-12">
-<p></p>
+
                         <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                             <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO INFORMACIÓN DE UN LOTE</span></b></p>
                       
@@ -70,21 +70,30 @@
 
 
 
-<div class="form-check">
-   <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
-   <label class="form-check-label fs-3" for="txtTratamiento_datos"><div style="text-align: left;"><span style="font-family: Montserrat, sans-serif; font-size: 12px; text-align: justify;">He leído y acepto la&nbsp;</span><a class="text-warning" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="font-family: Montserrat, sans-serif; --bs-text-opacity: 1; font-size: 12px; text-align: justify; cursor: pointer;">Política para envío de comunicaciones comerciales.</a></div></label></div><span style="font-size: 9px;">
+<div class="form-check text-start">
+  <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+  <label class="form-check-label fs-3" for="txtTratamientoDatos">
+    <span class="fs-2">He leído y acepto la </span>
+    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
+      Política para envío de comunicaciones comerciales.
+    </a>
+  </label>
+</div>
 
-</span><div class="form-check"><span style="font-size: 9px;">
-   </span><input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
-   <label class="form-check-label" for="txtTratamiento_datos2"><div style="text-align: justify;" class="fs-2"><span style="text-align: left; font-size: 0.75rem; font-family: Montserrat, sans-serif;">He leído&nbsp; y&nbsp; acepto&nbsp; el&nbsp;&nbsp;</span><a class="text-warning" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="--bs-text-opacity: 1; text-align: left; font-size: 0.75rem; font-family: Montserrat, sans-serif; cursor: pointer;">Tratamiento de mis datos personales.</a></div></label></div><span style="font-size: 9px;">
+<div class="form-check text-start ">
+  <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+  <label class="form-check-label fs-3" for="txtTratamientoDatos2">
+    <span class="fs-2">He leído y acepto el </span>
+    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
+      Tratamiento de mis datos personales.
+    </a>
+  </label>
+</div>
 
 
 
 
-
-                            
-
-                            </span><div class="text-center"><span style="font-size: 9px;">
+<div class="text-center"><span style="font-size: 9px;">
 
                                 </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
                                     <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis datos</span>
@@ -476,7 +485,7 @@
                             <div class="carousel-item active">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                        <img src="http://aybar.credilotesperu.com/resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
                                         <p class="fs-1" style="margin-bottom:3%; text-align: justify;">
                                             Con la mejor inversión en la construcción de un futuro estable para tu familia.
@@ -488,7 +497,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                        <img src="http://aybar.credilotesperu.com/resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ DE 5 AÑOS</b></p>
                                         <p class="fs-2">De experiencia en el mercado.</p>
                                     </div>
@@ -498,7 +507,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                        <img src="http://aybar.credilotesperu.com/resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
                                     </div>
                                 </div>
@@ -507,7 +516,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                        <img src="http://aybar.credilotesperu.com/resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ DE 1,000</b></p>
                                         <p class="fs-2">Adquirieron nuestros proyectos.</p>
                                     </div>
@@ -517,7 +526,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                        <img src="http://aybar.credilotesperu.com/resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ 2,000 KM 2</b></p>
                                         <p class="fs-2">Zonas verdes proporcionadas.</p>
                                     </div>
@@ -540,20 +549,16 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
-                                    <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
-                                    <p class="fs-1" style="margin-bottom:3%; text-align: justify;">
-                                        Con la mejor inversión en la construcción de un futuro estable para tu familia.
-                                    </p>
+                                    <img src="http://aybar.credilotesperu.com/resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="" style="width: 25%;">
+                                    <p class="fs-5"><span style="font-size: 12px;"><b>+ DE 300 PROYECTOS<br></b></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-size: 11px; font-weight: var(--bs-body-font-weight); text-align: justify;">Con la mejor inversión en la construcción de un futuro estable para tu familia.</span></p><p></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
-                                    <p class="fs-6"><b>+ DE 5 AÑOS</b></p>
-                                    <p class="fs-2">De experiencia en el mercado.</p>
+                                    <img src="http://aybar.credilotesperu.com/resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="" style="">
+                                    <p class="fs-6"><b>+ DE 5 AÑOS<br></b><span style="font-size: 12px;">De experiencia en el mercado.</span></p>
                                 </div>
                             </div>
                         </div>
@@ -561,7 +566,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                    <img src="http://aybar.credilotesperu.com/resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="" style="">
                                     <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
                                 </div>
                             </div>
@@ -570,7 +575,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                    <img src="http://aybar.credilotesperu.com/resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
                                     <p class="fs-6"><b>+ DE 1,000</b></p>
                                     <p class="fs-2">Adquirieron nuestros proyectos.</p>
                                 </div>
@@ -580,7 +585,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/210/210684.png" class="mb-1" width="60px" alt="">
+                                    <img src="http://aybar.credilotesperu.com/resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
                                     <p class="fs-6"><b>+ 2,000 KM 2</b></p>
                                     <p class="fs-2">Zonas verdes proporcionadas.</p>
                                 </div>
