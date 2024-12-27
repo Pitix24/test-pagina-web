@@ -299,9 +299,10 @@
 
             <!--  Header Start -->
             <header class="topbar">
-                <div class="progress" id="progress_bar">
-                    <div class="progress-bar text-bg-danger" style="width: 0%; height: 6px" role="progressbar">
+                <div class="progress" >
+                    <div class="progress-bar text-bg-danger"id="progress_bar" style="width: 0%; height: 6px" role="progressbar">
                     </div>
+                    
                 </div>
                 <div class="with-vertical">
 

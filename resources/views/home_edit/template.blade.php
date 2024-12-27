@@ -49,7 +49,11 @@
 
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
-
+    <div class="progress" >
+        <div class="progress-bar text-bg-danger"id="progress_bar" style="width: 0%; height: 6px" role="progressbar">
+        </div>
+        
+    </div>
 
 
 
