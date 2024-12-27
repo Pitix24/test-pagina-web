@@ -240,7 +240,7 @@
 <div class="container my-5">
         <div class="row align-items-center mt-10">
             <!-- Columna izquierda: Reproductor multimedia -->
-            <div class="col-lg-6 col-md-12 mb-10">
+            <div class="col-lg-12 col-md-12 mb-10">
                 <div class="ratio ratio-16x9">
                     <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3" title="Play: Video">
 
@@ -249,31 +249,8 @@
                 </div>
             </div>
 
-            <!-- Columna derecha: Texto descriptivo -->
-            <div class="d-none d-md-block col-lg-6 col-md-12  mt-2">
-                <div class="container">
-                    <h2 class="fs-10">
-                        <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
-                    </h2>
-                    <p class="text fs-7" style="text-align: justify;color:#03424E">
-                        <span style="font-size: 18px; font-family: Montserrat-SemiBold;">Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
-                        terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.</span>
-                    </p>
-
-                </div>
-            </div>
-            <div class=" d-md-none col-lg-6 col-md-12  ">
-                <div class="container">
-                    <h2 class="fs-10">
-                        <b><span class="text-warning fw-bold">SOMOS</span> AYBAR CORP</b>
-                    </h2>
-                    <p class="text fs-4" style="text-align: justify;color:#03424E">
-                        Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios de
-                        terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
-                    </p>
-
-                </div>
-            </div>
+           
+           
         </div>
     </div>
 <div class="container-fluid py-5" style="margin: 0; padding-right: 0; padding-left: 0; ">
