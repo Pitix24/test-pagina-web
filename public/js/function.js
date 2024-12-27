@@ -146,3 +146,17 @@ function selectSearchProduct(){
 
 
 
+    $(document).ready(function () {
+        // Cuando el checkbox principal se selecciona/deselecciona
+        $('#check_massive').on('change', function () {
+          // Cambia el estado de todos los checkboxes en la tabla
+          $('.rowCheckbox').prop('checked', this.checked);
+        });
+      
+        // Opcional: Sincronizar el estado del checkbox principal
+        $('.rowCheckbox').on('change', function () {
+          let allChecked = $('.rowCheckbox').length === $('.rowCheckbox:checked').length;
+          $('#check_massive').prop('checked', allChecked);
+        });
+      });
+      

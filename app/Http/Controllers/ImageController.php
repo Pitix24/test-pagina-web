@@ -94,4 +94,14 @@ class ImageController extends Controller
         Image::find($request->id)->delete();
         return $this->create();
     }
+    public function destroyAll(Request $request)
+    {
+        // foreach ($request->deleteAll as $deleteAll) {
+            
+        //     Image::find($deleteAll)->delete();
+            
+        // }
+       // return $this->create();
+       return $request;
+    }
 }

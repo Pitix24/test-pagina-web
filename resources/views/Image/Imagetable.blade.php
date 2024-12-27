@@ -5,8 +5,11 @@
         <tr>
             
           
-            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                    srcset=""></th>
+            <th class="sort">
+                <input id="check_massive" type="checkbox" class="form-check-input" name="" id="">
+            </th>
+                    <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                        srcset=""></th>
             <th>ID</th>
             <th>Título</th>
             <th>Url</th>
@@ -22,6 +25,9 @@
     <tbody>
         @foreach ($Image as $Images)
             <tr>
+                <td>
+                    <input type="checkbox"class="form-check-input rowCheckbox" name="deleteAll[]" value="{{$Images->id}}">
+                </td>
                 <td>
                     <div class="dropdown dropstart">
                         <a href="javascript:void(0)" class="text-muted" id="dropdownMenuButton" data-bs-toggle="dropdown"
@@ -76,7 +82,8 @@
     <tfoot>
         <!-- start row -->
         <tr>
-           
+            <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
+                srcset=""></th>
         <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                 srcset=""></th>
         <th>ID</th>

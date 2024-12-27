@@ -41,6 +41,13 @@
                                 Agregar
                             </button>
                             @endcanany
+                            @canany(['administrar', 'eliminar'])
+                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                               
+                                onclick="ImageDestroyAll();return false">
+                                Eliminar selección
+                            </button>
+                            @endcanany
                         </p>
                         <div class="mb-2">
                             <h4 class="card-title mb-0">Exportar</h4>
@@ -113,7 +120,7 @@
                                 </div>
                                 <div class="size-100" style="background-color: #f0f0f0; padding: 10px;">
                                     <br>
-                                    <img id="blah" name="fotografia" src="ruta-a-tu-imagen.png" alt="Tu imagen"
+                                    <img id="blah" name="fotografia" src="https://placehold.co/150';" alt="Tu imagen"
                                         class="img-bordered" width="100%">
                                 </div>
 
