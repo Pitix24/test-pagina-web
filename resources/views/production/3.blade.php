@@ -253,47 +253,75 @@
            
         </div>
     </div>
-<div class="container-fluid py-5" style="margin: 0; padding-right: 0; padding-left: 0; ">
-        <div class="row row-cols-md-4 text-center  contenedor-cards" style="display: flex; justify-content: center; align-items: center; padding: 3vh; margin: 0; background-color: #03424E;">
-          
-          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card1" style="border: 2px solid rgba(0, 0, 0, 0);">
-            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url('https://aybar.credilotesperu.com/resource/1734732644_Respeto_webp.jpg'); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
-              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
-                  <h2 style="text-align: start; color: white; margin-top:-120px">RESPETO</h2>
-                  <p style="text-align: start; color: white; "><br></p>
-              </div>
-            </div>
-          </div>
+<div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel" style="background-image:url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
 
-          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card2" style="border: 2px solid rgba(0, 0, 0, 0);">
-            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url('https://aybar.credilotesperu.com/resource/1734732735_Empatia_webp.jpg'); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
-              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
-                  <h2 style="text-align: start; color: white; margin-top:-120px ">EMPATIA</h2>
-                  <p style="text-align: start; color: white; "><br></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card3" style="border: 2px solid rgba(0, 0, 0, 0);">
-            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url(https://aybar.credilotesperu.com/resource/1734731495_Integridad_webp.jpg); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
-              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
-                  <h2 style="text-align: start; color: white; margin-top:-120px ">INTEGRIDAD</h2>
-                  <p style="text-align: start; color: white; "><br></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-6 col-xl-3 col-12 card4" style="border: 2px solid rgba(0, 0, 0, 0);">
-            <div class="card rounded-3 shadow-sm mt-4" style="background-image: url('https://aybar.credilotesperu.com/resource/1734732519_Compromiso_webp-(1).jpg'); height: 50vh; background-size: cover; background-repeat: round; display: flex; justify-content: flex-end;">
-              <div class="xd" style="text-align: start; color: white; padding-left: 2vh;">
-                  <h2 style="text-align: start; color: white; margin-top:-120px ">COMPROMISO</h2>
-                  <p style="text-align: start; color: white; "><br></p>
-              </div>
-            </div>
-          </div>
-
-      </div>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
   </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <div class="row" style="justify-content: center;">
+        <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
+          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
+            <div class="container" style="text-align: center; color: white; ">
+              <h2 style="text-align: center; color: white;">RESPETO</h2>
+              <p style="text-align: justify; color: white;padding: 45px;">Promover relaciones sólidas entre los miembros del equipo, mejorando la comunicación, incentivando la colaboración y la productividad. Los colaboradores que se sienten valorados presentan altos niveles de motivación y compromiso con la organización.</p>
+            </div>
+          </div>
+        </div>
+            <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
+          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
+            <div class="container" style="text-align: center; color: white; padding: 15px;">
+              <h2 style="text-align: center; color: white;">EMPATÍA</h2>
+              <p style="text-align: justify; color: white;padding: 45px;"><span style="font-size: 14px;">Impulsar que cada miembro del equipo comprenda y conecte con el punto de vista, las emociones y las necesidades del otro, para llegar a acuerdos efectivos y mucho más humanos. Construir y consolidar las relaciones interpersonales. Capacidad de generar esos vínculos enriquecedores en sus relaciones organizacionales.</span></p>
+            </div>
+          </div>
+        </div>
+              <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
+          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
+            <div class="container" style="text-align: center; color: white; padding: 15px;">
+              <h2 style="text-align: center; color: white;">SOLIDARIDAD</h2>
+              <p style="text-align: justify; color: white;padding: 45px;">Cooperar y ayudarse mutuamente representando un bien en común. Trabajar junto con otros miembros del equipo y con todos los demás integrantes de la empresa un mismo objetivo en común. Puede ser un proyecto, si lo miramos al detalle, o también puede ser el bien general de la empresa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="row" style="justify-content: center;">
+              <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
+          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
+            <div class="container" style="text-align: center; color: white; padding: 15px;">
+              <h2 style="text-align: center; color: white;">INTEGRIDAD</h2>
+              <p style="text-align: justify; color: white;padding: 45px;"><span style="font-size: 14px;">Actuar con honestidad, transparencia y ser congruente entre las palabras, decisiones y acciones en función al valor y creencias particulares que cada persona tenga. Crear relaciones transparentes, comunicación clara, asertiva, oportuna y abierta, e implementando todos los mecanismos para promover una cultura respetuosa y ética.</span></p>
+            </div>
+          </div>
+        </div>
+             <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
+          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
+            <div class="container" style="text-align: center; color: white; padding: 15px;">
+              <h2 style="text-align: center; color: white;">COMPROMISO</h2>
+              <p style="text-align: justify; color: white;padding: 45px;">Incentivar el logro de los objetivos de cada equipo humano, apoyo y aceptación de las metas y valores de la organización. Ejercer un esfuerzo importante y considerable entre los miembros de la empresa y un deseo de permanecer y comprometerse con ella.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <div class="container my-5 mt-lg-5">
 
         <div class="row container">
