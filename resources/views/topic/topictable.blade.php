@@ -9,6 +9,7 @@
                     srcset=""></th>
             <th>ID</th>
             <th>Descripción</th>
+            <th>Url</th>
             <th>Detalle</th>
             
 
@@ -32,6 +33,11 @@
                
                 
                 <td>{{ $topics->description }}</td>
+                <td>
+                    <a href="../blog/{{$topics->url}}">
+                        {{ $topics->url }}
+                    </a>
+                    </td>
 
                 <td>{{ $topics->detail }}</td>
                
@@ -41,18 +47,7 @@
             </tr>
         @endforeach
     </tbody>
-    <tfoot>
-        <!-- start row -->
-        
-        <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
-                srcset=""></th>
-        <th>ID</th>
-        <th>Descripción</th>
-        <th>Detalle</th>
-        
-        </tr>
-        <!-- end row -->
-    </tfoot>
+
 </table>
 
 

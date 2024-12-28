@@ -46,10 +46,10 @@ class TopicController extends Controller
     public function report(Request $request)
     {
 
-        $topic = Topic::where("description", "=", $request->blog_description)->get();
+        $topic = Topic::where("url", "=", $request->url)->get();
 
         // $count = Topic::where('user_id', '=', $topic[0]->user_id)->count();
-        return view("blog_detail", compact("topic"));
+        return view("topic.topic_detail", compact("topic"));
         // return view("student.curso_topic", compact("topic"));
     }
     public function topic_list(Request $request)

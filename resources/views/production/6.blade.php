@@ -1,26 +1,7 @@
 @extends('production.1')
 @section("content")
     
- <!-- Sección completa -->
- <section class=" bg-dark text-white">
-    <!-- Barra lateral -->
-  
-    <!-- Contenido central -->
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
-        <h1 class="fw-bold">PORTADA</h1>
-      </div>
-    </div>
-   
-  </section>
 
-  <section class="  text-white" style="background-color: #F6A42C">
-  <div class="container BG-WA ">
-    <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-      <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>
-    </div>
-  </div>
-</section>
 
 
 <style>
@@ -58,7 +39,32 @@
     }
   </style>
 
-  <div class="container py-5">
+
+  
+
+
+<!-- INICIO SECCION -->
+<!-- Sección completa -->
+ <section class=" bg-dark text-white">
+    <!-- Barra lateral -->
+  
+    <!-- Contenido central -->
+    <div class="container-fluid py-5">
+      <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
+        <h1 class="fw-bold">PORTADA</h1>
+      </div>
+    </div>
+   
+  </section>
+
+  <section class="  text-white" style="background-color: #F6A42C">
+  <div class="container BG-WA ">
+    <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
+      <h2 style="word-spacing: 8px;letter-spacing:2px">CONTACTO</h2>
+    </div>
+  </div>
+</section>
+<div class="container py-5">
     <div class="row g-4">
       <!-- Panel izquierdo -->
       <div class="col-md-5">
@@ -73,7 +79,7 @@
       <!-- Formulario -->
       <div class="col-md-7">
         <div class="form-container">
-          <form>
+          
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
               <input type="text" id="username" class="form-control" placeholder="Enter email or username">
@@ -86,7 +92,7 @@
               <label for="phone" class="form-label">Phone</label>
               <div class="input-group">
                 <input type="tel" id="phone" class="form-control" placeholder="Enter phone number">
-                <button class="btn btn-outline-warning" type="button">Verify</button>
+               
               </div>
             </div>
             <div class="mb-3">
@@ -114,7 +120,7 @@
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Write Anything</label>
-              <textarea id="message" class="form-control" rows="3" placeholder="Enter your text here"></textarea>
+              
             </div>
             <div class="mb-3">
               <label for="options" class="form-label">Select an option below</label>
@@ -135,14 +141,12 @@
               </label>
             </div>
             <button type="submit" class="btn btn-custom w-100">Submit</button>
-          </form>
+          
         </div>
       </div>
     </div>
   </div>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe" 
-  width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-   referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- FIN SECCION -->
 
 @endsection

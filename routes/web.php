@@ -129,7 +129,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 
-    Route::get('blog/{blog_description}', [App\Http\Controllers\TopicController::class, 'report']);
+    Route::get('blog/{url}', [App\Http\Controllers\TopicController::class, 'report']);
 
 
     Route::resource("admin/categorias", App\Http\Controllers\CategoryController::class);

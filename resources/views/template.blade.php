@@ -101,7 +101,7 @@
                                     <!-- Dashboard -->
                                     <!-- ---------------------------------- -->
                                     <li class="sidebar-item">
-                                        <a class="sidebar-link" href="#" aria-expanded="false">
+                                        <a class="sidebar-link" href="admin" aria-expanded="false">
                                             <iconify-icon icon="solar:atom-line-duotone"></iconify-icon>
                                             <span class="hide-menu">{{ Auth::user()->names }}</span>
                                         </a>
@@ -420,7 +420,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="message-body">
-                                                    <a href="javascript:void(0)"
+                                                    <a href="admin"
                                                         class="p-2 dropdown-item h6 rounded-1">
                                                         Mi Perfil
                                                     </a>

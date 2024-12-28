@@ -1,26 +1,6 @@
 @extends('production.1')
 @section("content")
-    
- <!-- Sección completa -->
- <section class=" bg-dark text-white">
-    <!-- Barra lateral -->
   
-    <!-- Contenido central -->
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
-        <h1 class="fw-bold">PORTADA</h1>
-      </div>
-    </div>
-   
-  </section>
-
-  <section class="  text-white" style="background-color: #F6A42C">
-  <div class="container BG-WA ">
-    <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-      <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>
-    </div>
-  </div>
-</section>
 
 <style>
     /* Personalización de las tarjetas */
@@ -52,7 +32,29 @@
     }
   </style>
 
-  <div class="container  py-5">
+
+
+<!-- INICIO SECCION -->
+<section class=" bg-dark text-white">
+        <!-- Barra lateral -->
+
+        <!-- Contenido central -->
+        <div class="container-fluid py-5">
+            <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
+                <h1 class="fw-bold">PORTADA</h1>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="  text-white" style="background-color: #F6A42C">
+        <div class="container BG-WA ">
+            <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
+                <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>
+            </div>
+        </div>
+    </section>
+<div class="container  py-5">
     <div class="row g-4">
       <!-- Tarjeta 1 -->
       <div class="col-md-4">
@@ -89,26 +91,6 @@
       </div>
     </div>
   </div>
+<!-- FIN SECCION -->
 
 @endsection
-<!-- INICIO SECCION -->
-<section class=" bg-dark text-white">
-        <!-- Barra lateral -->
-
-        <!-- Contenido central -->
-        <div class="container-fluid py-5">
-            <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
-                <h1 class="fw-bold">PORTADA</h1>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="  text-white" style="background-color: #F6A42C">
-        <div class="container BG-WA ">
-            <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-                <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>
-            </div>
-        </div>
-    </section>
-<!-- FIN SECCION -->
