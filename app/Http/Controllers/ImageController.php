@@ -96,12 +96,15 @@ class ImageController extends Controller
     }
     public function destroyAll(Request $request)
     {
-        // foreach ($request->deleteAll as $deleteAll) {
+        foreach ($request->deleteAll as $deleteAllId) {
             
-        //     Image::find($deleteAll)->delete();
+            $table = Image::find($deleteAllId);
+            fileDestroy($table->image_1, "resource");
+            Image::find($deleteAllId)->delete();
             
-        // }
-       // return $this->create();
-       return $request;
+        }
+       return $this->create();
+      
     }
+   
 }

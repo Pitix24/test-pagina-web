@@ -10,9 +10,12 @@ function readImage(input,idimage) {
       var reader = new FileReader();
       reader.onload = function(e) {
         $(idimage).attr('src', e.target.result); // Renderizamos la imagen
+       
+        
       }
       reader.readAsDataURL(input.files[0]);
     }
+
   }
 
 
@@ -144,8 +147,7 @@ function selectSearchProduct(){
 
 
 
-
-
+function selectCheckAll() {
     $(document).ready(function () {
         // Cuando el checkbox principal se selecciona/deselecciona
         $('#check_massive').on('change', function () {
@@ -159,4 +161,7 @@ function selectSearchProduct(){
           $('#check_massive').prop('checked', allChecked);
         });
       });
-      
+        
+}
+
+selectCheckAll(); 

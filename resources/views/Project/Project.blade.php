@@ -34,7 +34,7 @@
                       
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
-                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                            <button type="button" class="btn mb-1 me-1 btn-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                  onclick="New();$('#Project')[0].reset();Project.fotografia.src ='https://placehold.co/150';">
                                 Agregar

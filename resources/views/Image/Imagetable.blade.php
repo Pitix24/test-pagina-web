@@ -1,4 +1,4 @@
-
+<form id="deleteAll">
 <table id="file_export" class=" table table-hover table-bordered table-striped table-responsive">
     <thead>
         <!-- start row -->
@@ -6,7 +6,8 @@
             
           
             <th class="sort">
-                <input id="check_massive" type="checkbox" class="form-check-input" name="" id="">
+          
+                <input id="check_massive" type="checkbox"onclick="selectCheckAll();" class="form-check-input" name="" id="">
             </th>
                     <th><img width="20" src="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" alt=""
                         srcset=""></th>
@@ -22,6 +23,8 @@
         </tr>
         <!-- end row -->
     </thead>
+   
+        @csrf
     <tbody>
         @foreach ($Image as $Images)
             <tr>
@@ -79,6 +82,7 @@
             </tr>
         @endforeach
     </tbody>
+
     <tfoot>
         <!-- start row -->
         <tr>
@@ -98,7 +102,7 @@
         <!-- end row -->
     </tfoot>
 </table>
-
+</form>
 
 
 

@@ -35,14 +35,14 @@
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
                             @canany(['administrar', 'agregar'])
-                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                            <button type="button" class="btn mb-1 me-1 btn-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                 onclick="New();$('#Image')[0].reset();image.fotografia.src ='https://placehold.co/150';">
                                 Agregar
                             </button>
                             @endcanany
                             @canany(['administrar', 'eliminar'])
-                            <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                            <button type="button" class="btn mb-1 me-1 btn-danger"
                                
                                 onclick="ImageDestroyAll();return false">
                                 Eliminar selección
@@ -102,7 +102,7 @@
                             name="image"enctype="multipart/form-data">
                             <input type="hidden" name="id" id="id">
                             {{ csrf_field() }}
-                            Título : <input type="text" name="title" id="description" class="form-control">
+                            Título : <input type="text" name="title" id="title" class="form-control">
                             Descripción : <input type="text" name="description" id="description" class="form-control">
 
                             Detalle : <input type="text" name="detail" id="detail" class="form-control">
@@ -113,7 +113,7 @@
 
 
                                     <input class="form-control" type="file" id="imgInp"
-                                        name="image_1"onchange="readImage(this,'#blah');" accept=".jpg,.png,.svg,.jpeg">
+                                        name="image_1"onchange="readImage(this,'#blah');image.title.value=this.files[0].name" accept=".jpg,.png,.svg,.jpeg,.webm">
 
 
 

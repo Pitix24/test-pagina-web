@@ -35,7 +35,7 @@
                         <p class="card-subtitle mb-3">
                             @canany(['administrar', 'agregar'])
                                 <!-- success header modal -->
-                                <button type="button" class="btn mb-1 me-1 bg-success-subtle text-success"
+                                <button type="button" class="btn mb-1 me-1 btn-success"
                                     data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                     onclick="New();$('#user')[0].reset();">
                                     Agregar

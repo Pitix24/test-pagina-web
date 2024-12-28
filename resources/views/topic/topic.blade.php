@@ -104,7 +104,7 @@
                             <p></p>
                             <input type="button" value="Nuevo" class="btn mb-1 me-1 bg-primary-subtle text-primary"
                                 onclick="New();$('#topic')[0].reset();reset_textarea();" name="new">
-                            @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn mb-1 me-1 bg-success-subtle text-success"
+                            @canany(['administrar', 'agregar'])<input type="button" value="Guardar" class="btn mb-1 me-1 btn-success"
                             id="create" onclick="topicStore()"
                                 name="create">@endcanany
                             <input type="button" value="Modificar" class="btn mb-1 me-1 bg-danger-subtle text-danger"id="update"

@@ -146,29 +146,34 @@ function ImageDestroy(id) {
 }
 function ImageDestroyAll() {
   if (confirm("¿Quieres eliminar de forma masiva?")) {
-    var formData = new FormData(document.getElementById("Image"));
-    axios({
-      method: "post",
-      url: "../ImageDestroyAll",
-      data: formData,
-      headers: {
-        "Content-Type": "multipart/form-data"
-      }
-    })
+      // Obtén el formulario por su ID
+      var form = document.getElementById("deleteAll");
+      var formData = new FormData(form); // Crea el FormData con todos los campos del formulario
+
+      // Enviar los datos al servidor usando Axios
+      axios({
+          method: "post",
+          url: "../ImageDestroyAll",
+          data: formData,
+          headers: {
+              "Content-Type": "multipart/form-data"
+          }
+      })
       .then(function(response) {
-        //handle success
         var contentdiv = document.getElementById("mycontent");
         contentdiv.innerHTML = response.data;
-        //carga pdf- csv - excel
-        datatable_load();
-        alert("Eliminado Correctamente");
+          // Manejar éxito
+          datatable_load();
+        alert("Eliminados correctamente");
       })
-      .catch(function(response) {
-        //handle error
-        console.log(response);
+      .catch(function(error) {
+          // Manejar error
+          console.error("Error al enviar la solicitud:", error);
+          alert("Ocurrió un error al procesar la solicitud.");
       });
   }
 }
+
 function ImageShow() {
   var formData = new FormData(document.getElementById("show"));
   axios({
