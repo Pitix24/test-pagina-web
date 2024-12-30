@@ -70,6 +70,7 @@
 
             @php
                 $i = 0;
+                $module= array("module","/","/nosotros","/proyectos","/blog","/contacto");
             @endphp
             @foreach ($section as $sections)
                 @php
@@ -85,6 +86,8 @@
                     <input type="button" value="Guardar vista Previa" class="btn mb-1 me-1 bg-success text-white" id="create"
                         onclick="sectionUpdateDinamic('{{ $i }}')" name="create">
                 @endcanany
+                <a  class="btn mb-1 me-1 bg-warning text-white"
+                href="../home_demo{{$module[$sections->module]}}" target="_blank">Vista Previa</a>
                 @canany(['administrar', 'actualizar'])
                     <a  class="btn mb-1 me-1 bg-danger text-white"
                     href="generate/{{$sections->module}}"
