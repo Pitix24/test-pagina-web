@@ -5,7 +5,8 @@ use App\Http\Controllers\RegistryDetailController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
-
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,6 +40,7 @@ Auth::routes();
    Route::get('/home_demo/nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
    Route::get('/home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
    Route::get('/home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
+   Route::get('blog/topicPublic', [App\Http\Controllers\TopicPublicController::class, 'index']);
    Route::get('/home_demo/contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
 
 
@@ -67,6 +69,7 @@ Route::get('/contacto', function () {
    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
    Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:4,1440');
    
+   Route::get('blog/{url}', [App\Http\Controllers\TopicPublicController::class, 'report']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -129,7 +132,6 @@ Route::group(['middleware' => ['auth']], function () {
 
 
 
-    Route::get('blog/{url}', [App\Http\Controllers\TopicController::class, 'report']);
 
 
     Route::resource("admin/categorias", App\Http\Controllers\CategoryController::class);

@@ -20,6 +20,7 @@
 
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
+    <script src="{{ asset('js/topic.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
 
@@ -82,9 +83,7 @@
     <!-- Preloader -->
     <div class="preloader"><img src="{{ asset('ayba/1.png') }}" alt="loader" class="lds-ripple img-fluid" /></div>
 
-    <div id="mycontent">
-
-    </div>
+  
     <div id="main-wrapper flex-column">
 
 
@@ -154,7 +153,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-start mt-10">
-                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3><ul class="text-white mt-4" style="--bs-text-opacity: 1;"><li><h3 style="margin-top: 30px;"><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 25.7683px; height: 25.1875px; float: left;"></span></font></h3></li><li><div><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px;">(51) 01-9049838</span></span></font></div><div><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px;"><br></span></span></font></div></li><li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" class="note-float-left" style="width: 25.5px; height: 24.951px; float: left;"><div><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat, sans-serif; font-size: 14px;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular;">Av. Circunvalación Del Golf Los Incas&nbsp;</span></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular; font-size: 14px;">134<br></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Patio Panorama,&nbsp; Piso 19.&nbsp;</span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Santiago de Surco.</span></div></li></ul>
+                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3><ul class="text-white mt-4" style="--bs-text-opacity: 1;"><li><h3 style="margin-top: 30px;"><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 37.5px; height: 36.6573px; float: left;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">(51) 01-9049838<br></span></span></font></h3></li><li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" class="note-float-left" style="width: 38.5px; height: 37.6503px; float: left;"><div><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat, sans-serif; font-size: 14px;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular;">Av. Circunvalación Del Golf Los Incas&nbsp;</span></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular; font-size: 14px;">134<br></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Patio Panorama,&nbsp; Piso 19.&nbsp;</span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Santiago de Surco.</span></div></li></ul>
             </div>
 
             <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10">

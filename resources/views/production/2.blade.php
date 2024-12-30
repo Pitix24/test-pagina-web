@@ -456,7 +456,7 @@
         <div class="row m-10">
             <!-- Imagen -->
             <div class="col-12 d-md-none d-xl-block col-xl-5 mt-lg-5">
-                <img class="transparencia_pie" src="../ayba/familia.png" style="margin-top: 0%;" width="100%" alt="">
+                <img class="transparencia_pie" src="../ayba/familia.jpg" style="margin-top: 0%;" width="100%" alt="">
             </div>
 
             <!-- Contenido -->
@@ -485,7 +485,7 @@
                             <div class="carousel-item active">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="http://aybar.credilotesperu.com/resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="">
+                                        <img src="../resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-5"><b>+ DE 300 PROYECTOS</b></p>
                                         <p class="fs-1" style="margin-bottom:3%; text-align: justify;">
                                             Con la mejor inversión en la construcción de un futuro estable para tu familia.
@@ -497,7 +497,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="http://aybar.credilotesperu.com/resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="">
+                                        <img src="../resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ DE 5 AÑOS</b></p>
                                         <p class="fs-2">De experiencia en el mercado.</p>
                                     </div>
@@ -507,7 +507,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="http://aybar.credilotesperu.com/resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="">
+                                        <img src="../resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
                                     </div>
                                 </div>
@@ -516,7 +516,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="http://aybar.credilotesperu.com/resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
+                                        <img src="../resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ DE 1,000</b></p>
                                         <p class="fs-2">Adquirieron nuestros proyectos.</p>
                                     </div>
@@ -526,7 +526,7 @@
                             <div class="carousel-item">
                                 <div class="card" style="background-color: #03424E;">
                                     <div class="card-body text-center text-white">
-                                        <img src="http://aybar.credilotesperu.com/resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
+                                        <img src="../resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
                                         <p class="fs-6"><b>+ 2,000 KM 2</b></p>
                                         <p class="fs-2">Zonas verdes proporcionadas.</p>
                                     </div>
@@ -549,7 +549,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="http://aybar.credilotesperu.com/resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="" style="width: 25%;">
+                                    <img src="../resource/1734978023_Mesa%20de%20trabajo%2033.png" class="mb-1" width="60px" alt="" style="width: 25%;">
                                     <p class="fs-5"><span style="font-size: 12px;"><b>+ DE 300 PROYECTOS<br></b></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-size: 11px; font-weight: var(--bs-body-font-weight); text-align: justify;">Con la mejor inversión en la construcción de un futuro estable para tu familia.</span></p><p></p>
                                 </div>
                             </div>
@@ -557,7 +557,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="http://aybar.credilotesperu.com/resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="" style="">
+                                    <img src="../resource/1734977986_+%20de%205%20a%C3%B1os.png" class="mb-1" width="60px" alt="" style="">
                                     <p class="fs-6"><b>+ DE 5 AÑOS<br></b><span style="font-size: 12px;">De experiencia en el mercado.</span></p>
                                 </div>
                             </div>
@@ -566,7 +566,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="http://aybar.credilotesperu.com/resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="" style="">
+                                    <img src="../resource/1734978047_proyectos%20sostenibles.png" class="mb-1" width="60px" alt="" style="">
                                     <p class="fs-6"><b>PROYECTOS SOSTENIBLES</b></p>
                                 </div>
                             </div>
@@ -575,7 +575,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="http://aybar.credilotesperu.com/resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
+                                    <img src="../resource/1734977972_+%20de%201,000.png" class="mb-1" width="60px" alt="">
                                     <p class="fs-6"><b>+ DE 1,000</b></p>
                                     <p class="fs-2">Adquirieron nuestros proyectos.</p>
                                 </div>
@@ -585,7 +585,7 @@
                         <div class="col-lg-4 col-md-6 col-xl-4">
                             <div class="card" style="background-color: #03424E;">
                                 <div class="card-body text-center text-white">
-                                    <img src="http://aybar.credilotesperu.com/resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
+                                    <img src="../resource/1734977955_+%202,000.png" class="mb-1" width="60px" alt="">
                                     <p class="fs-6"><b>+ 2,000 KM 2</b></p>
                                     <p class="fs-2">Zonas verdes proporcionadas.</p>
                                 </div>

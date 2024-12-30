@@ -35,13 +35,13 @@
 
 
 <!-- INICIO SECCION -->
-<section class=" bg-dark text-white">
+<section class="  text-white">
         <!-- Barra lateral -->
 
         <!-- Contenido central -->
-        <div class="container-fluid py-5">
-            <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
-                <h1 class="fw-bold">PORTADA</h1>
+        <div class="container-fluid " style="background-image:url('http://aybar_laravel.test/resource/1734733260_fondo-.jpg')">
+            <div class="row justify-content-center align-items-center text-center">
+                <img src="http://aybar_laravel.test/resource/1735568084_imagenes.png" style="width: 1000px;">
             </div>
         </div>
 
@@ -55,42 +55,14 @@
         </div>
     </section>
 <div class="container  py-5">
-    <div class="row g-4">
-      <!-- Tarjeta 1 -->
-      <div class="col-md-4">
-        <div class="card custom-card text-center">
-          <div class="card-body">
-            <img src="https://wallpapers.com/images/hd/blogging-backdrop-with-laptop-msaf9d67o4r5dl74.jpg" class="img-fluid mb-3" alt="Icono">
-            <h5 class="card-title fw-bold">LOTES DE TERRENO EN PERÚ</h5>
-            <p class="card-text text-muted">Resumen del artículo</p>
-            <a href="#" class="btn custom-btn">Conocer más</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tarjeta 2 -->
-      <div class="col-md-4">
-        <div class="card custom-card text-center">
-          <div class="card-body">
-            <img src="https://wallpapers.com/images/hd/blogging-backdrop-with-laptop-msaf9d67o4r5dl74.jpg" class="img-fluid mb-3" alt="Icono">
-            <h5 class="card-title fw-bold">ARTÍCULO 2</h5>
-            <p class="card-text text-muted">Resumen del artículo</p>
-            <a href="#" class="btn custom-btn">Conocer más</a>
-          </div>
-        </div>
-      </div>
-      <!-- Tarjeta 3 -->
-      <div class="col-md-4">
-        <div class="card custom-card text-center">
-          <div class="card-body">
-            <img src="https://wallpapers.com/images/hd/blogging-backdrop-with-laptop-msaf9d67o4r5dl74.jpg" class="img-fluid mb-3" alt="Icono">
-            <h5 class="card-title fw-bold">ARTÍCULO 3</h5>
-            <p class="card-text text-muted">Resumen del artículo</p>
-            <a href="#" class="btn custom-btn">Conocer más</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="row g-4" id="mycontent">
+     
   </div>
+</div>
 <!-- FIN SECCION -->
 
+<script>
+  topicPublic();
+
+</script>
 @endsection

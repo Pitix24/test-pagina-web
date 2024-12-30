@@ -237,3 +237,17 @@ input::-webkit-input-placeholder { /* Chrome, Safari, Opera */
 input:-ms-input-placeholder { /* Internet Explorer */
   color: white !important;
 }
+.borde-contenedor{
+  display: flex;
+  
+
+
+  background-color: #f0f0f0;
+}
+.borde-derecha{
+  border-right: solid 5px rgb(255, 255, 255);
+
+
+  border-radius: 5px;
+  
+}

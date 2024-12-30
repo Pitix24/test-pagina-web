@@ -113,6 +113,55 @@ function topicEdit(id) {
     });
 }
 
+function topicPublic() {
+  axios({
+    method: "get",
+    url:  "../blog/topicPublic",
+  })
+    .then(function (response) {
+     
+      var contentdiv = document.getElementById("mycontent");
+
+      // Verifica que el contenedor exista
+      if (contentdiv) {
+        contentdiv.innerHTML = ""; // Limpia el contenido anterior
+
+        // Accede al array correcto y verifica que exista
+        const topics = response.data.data || response.data; // Ajusta según tu estructura
+        if (Array.isArray(topics)) {
+          topics.forEach(function (item) {
+            if (item.image_1 === null) {
+              item.image_1 = "1734977972_+%20de%201,000.png";
+            }
+            let card = `
+              <div class="col-md-4">
+                <div class="card custom-card text-center">
+                  <div class="card-body">
+                    <img src="resource/${item.image_1}"style="width:80%" class="img-fluid mb-3" alt="Icono">
+                    <h5 class="card-title fw-bold">${item.description}</h5>
+                    <p class="card-text text-muted">${item.detail}</p>
+                    <a target="_blank" href="blog/${item.url}" class="btn custom-btn">Conocer más</a>
+                  </div>
+                </div>
+              </div>
+            `;
+            contentdiv.innerHTML += card;
+          });
+        } else {
+          console.error("El formato de datos no es un array:", topics);
+        }
+      } else {
+        console.error("Elemento con ID 'mycontent' no encontrado.");
+      }
+    })
+    .catch(function (error) {
+      console.error("Error en la solicitud:", error.response || error.message);
+    });
+}
+
+
+
+
 function topicUpdate() {
   var formData = new FormData(document.getElementById("topic"));
   axios({

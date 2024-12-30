@@ -44,26 +44,17 @@
 
 
 <!-- INICIO SECCION -->
-<!-- Sección completa -->
- <section class=" bg-dark text-white">
-    <!-- Barra lateral -->
-  
-    <!-- Contenido central -->
-    <div class="container-fluid py-5">
-      <div class="row justify-content-center align-items-center text-center" style="height: 300px;">
-        <h1 class="fw-bold">PORTADA</h1>
-      </div>
-    </div>
-   
-  </section>
+<section class="  text-white">
+        <!-- Barra lateral -->
 
-  <section class="  text-white" style="background-color: #F6A42C">
-  <div class="container BG-WA ">
-    <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-      <h2 style="word-spacing: 8px;letter-spacing:2px">CONTACTO</h2>
-    </div>
-  </div>
-</section>
+        <!-- Contenido central -->
+        <div class="container-fluid " style="background-image:url('http://aybar_laravel.test/resource/1734733260_fondo-.jpg')">
+            <div class="row justify-content-center align-items-center text-center">
+                <img src="http://aybar_laravel.test/resource/1735568084_imagenes.png" style="width: 1000px;">
+            </div>
+        </div>
+
+    </section>
 <div class="container py-5">
     <div class="row g-4">
       <!-- Panel izquierdo -->

@@ -43,15 +43,8 @@ class TopicController extends Controller
 
         return view("topic.topictable", compact("topic"));
     }
-    public function report(Request $request)
-    {
-
-        $topic = Topic::where("url", "=", $request->url)->get();
-
-        // $count = Topic::where('user_id', '=', $topic[0]->user_id)->count();
-        return view("topic.topic_detail", compact("topic"));
-        // return view("student.curso_topic", compact("topic"));
-    }
+  
+ 
     public function topic_list(Request $request)
     {
 
@@ -75,7 +68,7 @@ class TopicController extends Controller
         $topic->url =  Str::slug($request->description,'-') . time();
         //file
         if ($request->file('photo') != null) {
-            $request->photo = fileStore($request->file('photo'), "imageusers");
+            $request->photo = fileStore($request->file('photo'), "resource");
             $topic->image_1 = $request->photo;
         }
         //file
@@ -146,8 +139,8 @@ class TopicController extends Controller
 
         // if ($request->file('photo') != null) {
         //    // $table = topic::find($request["id"]);
-        //     fileDestroy($topic->photo, "imageusers");
-        //     $request->photo = fileStore($request->file('photo'), "imageusers");
+        //     fileDestroy($topic->photo, "resource");
+        //     $request->photo = fileStore($request->file('photo'), "resource");
         //     $topic->photo = $request->photo;
         // }
 
@@ -162,7 +155,7 @@ class TopicController extends Controller
     public function destroy(Request $request)
     {
         $table = Topic::find($request["id"]);
-        fileDestroy($table->image_1, "imageusers");
+        fileDestroy($table->image_1, "resource");
         fileDestroy($table->resource_1, "resource");
         fileDestroy($table->file_1, "file");
         fileDestroy($table->file_2, "file");

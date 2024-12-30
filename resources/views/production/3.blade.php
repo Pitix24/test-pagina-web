@@ -62,32 +62,27 @@
 <div class="container-fluid py-1" style="background-color:  #FF9D0D;">
         <div class="container mt-xl-10 mt-md-3 mt-sm-0">
             <div class="row">
-                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
                 </div>
-                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
-                    <h2 class="fs-10 text-end"><b><span style="font-family: Montserrat-SemiBold;">MISIÓN</span></b> </h2>
+                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
+                    <h2 class="fs-10 pr-5  text-center"><b><span style="font-family: Montserrat-SemiBold;">MISIÓN</span></b> </h2>
                 </div>
                 <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
                 ">
                     <h2 class="fs-8 text-end" style=""><b>MISIÓN</b> </h2>
                 </div>
-                <div class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
+                <div class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center 
                 ">
                     <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>MISIÓN</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex borde-derecha " style="clip-path: inset(0px 0 0px 0);">
-                        <img src="https://aybar.credilotesperu.com/resource/1734640986_Mision.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10">
-                </div>
-                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
-                        <b>
-                            <span style="font-family: Montserrat-Regular; font-size: 16px;">Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
+                        <img src="https://aybar.credilotesperu.com/resource/1734640986_Mision.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10"></div><div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 "><p style="color:#03424E;text-align:justify; " class="m-10"><span style="font-family: Montserrat-SemiBold; font-size: 14px;"><b>Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
                             y
                             eco sostenibles. Ofrecemos asesoramiento integral para satisfacer tus necesidades inmobiliarias
                             y
-                            maximizar tu rentabilidad con integridad y empatía.</span>
-                        </b>
+                            maximizar tu rentabilidad con integridad y empatía.</b></span>
+                        
                     </p>
                 </div>
                 <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
@@ -124,10 +119,10 @@
     <div class="container-fluid py-1" style="background-color: #FFAC32">
         <div class="container mt-xl-10 mt-md-3 mt-sm-0">
             <div class="row">
-                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
                 </div>
-                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
-                    <h2 class="fs-10 text-end"><b><span style="font-family: Montserrat-SemiBold;">VISIÓN</span></b> </h2>
+                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
+                    <h2 class="fs-10 text-center"><b><span style="font-family: Montserrat-SemiBold;">VISIÓN</span></b> </h2>
                 </div>
                 <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
                 ">
@@ -138,15 +133,15 @@
                     <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>VISIÓN</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4 col-md-2 d-flex borde-derecha " style="clip-path: inset(0px 0 0px 0);">
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4 col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
                  <img src="https://aybar.credilotesperu.com/resource/1734727625_Vision.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10">
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
                     <p style="color:#03424E;text-align:justify; " class="m-10">
-                        <b>
-                            <span style="font-family: Montserrat-Regular; font-size: 18px;">Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
-                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.</span>
-                        </b>
+                        
+                            <span style="font-family: Montserrat-SemiBold; font-size: 16px;"><b>Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
+                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.</b></span>
+                        
                     </p>
                 </div>
                 <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
@@ -183,10 +178,10 @@
     <div class="container-fluid py-1" style="background-color: #FF9D0D;">
         <div class="container mt-xl-10 mt-md-3 mt-sm-0">
             <div class="row">
-                <div class="col-xl-2 col-lg-0 col-md-0 col-sm-0 col-0">
+                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
                 </div>
-                <div class="col-0 d-none d-xl-block col-xl-2 d-flex align-content-center">
-                    <h2 class="fs-10 text-end"><b><span style="font-family: Montserrat-SemiBold;">VALORES</span></b> </h2>
+                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
+                    <h2 class="fs-10 text-center"><b><span style="font-family: Montserrat-SemiBold;">VALORES</span></b> </h2>
                 </div>
                 <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
                 ">
@@ -197,15 +192,15 @@
                     <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>VALORES</b> </h2>
                 </div>
 
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex borde-derecha " style="clip-path: inset(0px 0 0px 0);">
+                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
                    <img src="https://aybar.credilotesperu.com/resource/1734727656_Valores.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10">
                 </div>
                 <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
                     <p style="color:#03424E;text-align:justify; " class="m-10">
-                        <b>
-                            <span style="font-family: Montserrat-Regular; font-size: 18px;">Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
-                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.</span>
-                        </b>
+                        
+                            <span style="font-family: Montserrat-SemiBold; font-size: 16px;"><b>Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
+                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.</b></span>
+                        
                     </p>
                 </div>
                 <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
@@ -242,7 +237,7 @@
             <!-- Columna izquierda: Reproductor multimedia -->
             <div class="col-lg-12 col-md-12 mb-10">
                 <div class="ratio ratio-16x9">
-                    <lite-youtube videoid="68tbz0AyBUs" style="width: 100%;" class="rounded-1  border-2 mb-3" title="Play: Video">
+                    <lite-youtube videoid="68tbz0AyBUs" posterquality="maxresdefault" style="width: 100%;" class="rounded-1  border-2 mb-3" title="Play: Video">
 
                     </lite-youtube>
 

@@ -240,7 +240,7 @@
 
                 <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex borde-derecha "
                     style="clip-path: inset(0px 0 0px 0);">
-                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="100%" height="50%"
+                    <img src="https://cdn-icons-png.flaticon.com/512/556/556202.png " width="80%" 
                         alt="" srcset="" style="" class="mt-xl-5 mt-lg-5 mt-md-4 m-10 ">
 
                 </div>
