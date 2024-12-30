@@ -48,7 +48,7 @@
         <!-- Barra lateral -->
 
         <!-- Contenido central -->
-        <div class="container-fluid " style="background-image:url('http://aybar_laravel.test/resource/1734733260_fondo-.jpg')">
+        <div class="container-fluid " style="background-image:url('../resource/1734733260_fondo-.jpg')">
             <div class="row justify-content-center align-items-center text-center">
                 <img src="http://aybar_laravel.test/resource/1735568084_imagenes.png" style="width: 1000px;">
             </div>
