@@ -70,7 +70,7 @@
 
             @php
                 $i = 0;
-                $module= array("module","/","/nosotros","/proyectos","/blog","/contacto");
+                $module= array("module","/plantilla","/inicio","/nosotros","/proyectos","/blog","/contacto");
             @endphp
             @foreach ($section as $sections)
                 @php
@@ -90,8 +90,7 @@
                 href="../home_demo{{$module[$sections->module]}}" target="_blank">Vista Previa</a>
                 @canany(['administrar', 'actualizar'])
                     <a  class="btn mb-1 me-1 bg-danger text-white"
-                    href="generate/{{$sections->module}}"
-                    >Guardar en Producción</a>
+                   onclick="sectionGenerate('{{$sections->module}}');return false"  href="#">Guardar en Producción</a>
                 @endcanany
 
             </h1>
@@ -134,12 +133,88 @@
 
     </div>
 
+    <!-- FOOTER FLOTANTE-->
+    <style>
+        #fixed-footer {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+          z-index: 1050; /* Para asegurarte que esté encima */
+          background-color: #092126; /* Color del fondo del footer */
+          border-top: 1px solid #ddd;
+          box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .close-footer {
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          cursor: pointer;
+        }
+      </style>
 
+    <div id="fixed-footer" class="text-center py-3">
+        <span class="close-footer">&times;</span>
+        <div class="row">
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" href="plantilla" style="color: #ffffff">
+                    <b style="word-spacing: 1px;"class="fs-2">PLANTILLA</b>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" href="inicio" style="color: #ffffff">
+                    <b style="word-spacing: 1px;"class="fs-2">INICIO</b>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" href="nosotros" style="color: #ffffff">
+                    <b style="word-spacing: 1px;"class="fs-2">NOSOTROS</b>
+                </a>
+            </div>
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" style="color: #ffffff" href="proyectos">
+                    <b style="word-spacing: 1px;"class="fs-2">PROYECTOS</b>
+                    </a>
+            </div>
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" href="blog" style="color: #ffffff">
+                    <b style="word-spacing: 1px;"class="fs-2">BLOG</b>
+                </a>
+            </div>
+     
+            <div class="col-2">
+                <a class="nav-link" aria-current="page" href="contacto" style="color: #ffffff">
+                    <b style="word-spacing: 1px;"class="fs-2">CONTÁCTANOS</b>
+                </a>
+    
+            </div>
+          
+    
+   
+           
+   
+           
+       
+          
+       
+              
+                  
+                    
+              
+         
+                
 
+           
+      
+        </div>
+      </div>
+      <script>
+        // Función para ocultar el footer al hacer clic en la X
+        document.querySelector('.close-footer').addEventListener('click', function () {
+          document.getElementById('fixed-footer').style.display = 'none';
+        });
+      </script>
 
-
-
-
+ <!-- FOOTER FLOTANTE-->
 
 
 

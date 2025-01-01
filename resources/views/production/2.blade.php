@@ -619,27 +619,27 @@
         });
 
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const liteYTVideos = document.querySelectorAll('lite-youtube');
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     const liteYTVideos = document.querySelectorAll('lite-youtube');
 
-            liteYTVideos.forEach(video => {
-                video.addEventListener('click', function() {
-                    // Forzar autoplay y mute al cargar el iframe
-                    const iframe = video.querySelector('iframe');
-                    if (iframe) {
-                        const src = iframe.src;
-                        if (!src.includes('autoplay=1')) {
-                            iframe.src = src + '&autoplay=1&mute=1';
-                        }
-                    }
-                });
+        //     liteYTVideos.forEach(video => {
+        //         video.addEventListener('click', function() {
+        //             // Forzar autoplay y mute al cargar el iframe
+        //             const iframe = video.querySelector('iframe');
+        //             if (iframe) {
+        //                 const src = iframe.src;
+        //                 if (!src.includes('autoplay=1')) {
+        //                     iframe.src = src + '&autoplay=1&mute=0';
+        //                 }
+        //             }
+        //         });
 
-                // Simular un clic para iniciar el autoplay automáticamente
-                setTimeout(() => {
-                    video.click();
-                }, 1000); // Retraso de 1 segundo para garantizar la carga
-            });
-        });
+        //         // Simular un clic para iniciar el autoplay automáticamente
+        //         setTimeout(() => {
+        //             video.click();
+        //         }, 1000); // Retraso de 1 segundo para garantizar la carga
+        //     });
+        // });
 
 
 

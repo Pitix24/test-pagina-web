@@ -158,49 +158,49 @@
                                         <ul aria-expanded="false" class="collapse first-level">
                                             @canany(['administrar', 'secciones'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('admin/secciones') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('admin/secciones') }}">
                                                         <span class="icon-small"></span> Secciones
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_plantilla'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/plantilla') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/plantilla') }}">
                                                         <span class="icon-small"></span> Plantilla
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_inicio'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/inicio') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/inicio') }}">
                                                         <span class="icon-small"></span> Inicio
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_nosotros'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/nosotros') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/nosotros') }}">
                                                         <span class="icon-small"></span>Nosotros
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_proyectos'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/proyectos') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/proyectos') }}">
                                                         <span class="icon-small"></span>Proyectos
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_blog'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/blog') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/blog') }}">
                                                         <span class="icon-small"></span>Blogs
                                                     </a>
                                                 </li>
                                             @endcanany
                                             @canany(['administrar', 'editar_contactos'])
                                                 <li class="sidebar-item">
-                                                    <a class="sidebar-link" href="{{ url('home_edit/contacto') }}">
+                                                    <a target="_blank" class="sidebar-link" href="{{ url('home_edit/contacto') }}">
                                                         <span class="icon-small"></span>Contáctos
                                                     </a>
                                                 </li>

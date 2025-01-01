@@ -53,7 +53,7 @@ class GenerateProductionController extends Controller
 
     // Retornar una respuesta
     return response()->json([
-        'message' => 'El archivo home.blade.php ha sido actualizado correctamente.',
+        'message' => 'El archivo  ha sido actualizado correctamente.',
         'filePath' => $filePath,
     ]);
 }

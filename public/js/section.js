@@ -105,6 +105,34 @@ function sectionEdit(id) {
     });
 }
 
+
+
+function sectionGenerate(id) {
+  var formData = new FormData();
+  formData.append("id", id);
+  axios({
+    method: "get",
+    url: "generate/"+id,
+    data: formData,
+    headers: {
+      "Content-Type": "multipart/form-data"
+    }
+  })
+    .then(function(response) {
+      //handle success
+      var contentdiv = document.getElementById("mycontent");
+      // contentdiv.innerHTML = response.data["description"];
+
+    
+      alert(response.data["message"]+" "+response.data["filePath"]);
+    })
+    .catch(function(response) {
+      //handle error
+      console.log(response);
+    });
+}
+
+
 function sectionUpdate() {
   var formData = new FormData(document.getElementById("section"));
   axios({
@@ -158,22 +186,4 @@ function sectionDestroy(id) {
   }
 }
 
-function sectionShow() {
-  var formData = new FormData(document.getElementById("show"));
-  axios({
-    method: "post",
-    url: "sectionShow",
-    data: formData
-  })
-    .then(function(response) {
-      //handle success
-      var contentdiv = document.getElementById("mycontent");
-      contentdiv.innerHTML = response.data;
-      //carga pdf- csv - excel
-      datatable_load();
-    })
-    .catch(function(response) {
-      //handle error
-      console.log(response);
-    });
-}
+
