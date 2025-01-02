@@ -67,14 +67,14 @@ html {
   /* Coloca los elementos uno debajo del otro */
   gap: -0px;
   /* Espaciado entre los botones */
-  height:180px;
+  height:150px;
 }
 
 .social-button img {
   width: 40px;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top:5px;
   transition: transform 0.2s ease;
 }
 

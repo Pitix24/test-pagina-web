@@ -13,6 +13,12 @@ class Home_demoController extends Controller
     {
         //
     }
+    public function template()
+    {
+        $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();
+     
+        return view('home_demo.template',compact("section_template"));
+    }
     public function home()
     {
         $section_template = Section::where("module","=","1")->orderBy("nivel","asc")->get();

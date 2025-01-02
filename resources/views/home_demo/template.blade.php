@@ -113,13 +113,13 @@
                 $i = $i + 1;
                 echo $section_templates->code;
             @endphp
-            @if ($section_templates->nivel=="2")
+            @if ($section_templates->nivel=="1")
                     @yield("content");
             @endif
         
         @endforeach
     
-
+       
 
 
 

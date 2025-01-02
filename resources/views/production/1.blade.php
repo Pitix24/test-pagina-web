@@ -101,7 +101,7 @@
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
-            <a class="position-relative navbar-brand me-0 py-0 m-2 " href="https://aybar.credilotesperu.com"> 
+            <a class="position-relative navbar-brand me-0 py-0 m-2 " href="/"> 
                 <img src="../ayba/1.png" alt="img-fluid" width="80px" style="margin-left:0%">
             </a>
 
@@ -149,7 +149,7 @@
     </nav>
 </header>
 @yield('content')
-<div class="container-fluid py-1" style="background-color: #054E5C;">
+<p>                          </p><div class="container-fluid py-1" style="background-color: #054E5C;">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-start mt-10">
@@ -184,22 +184,14 @@
                 </div>
             </div>
 
-            <div class="mt-4 text-center col-xl-4 mt-10">
-                <img src="../ayba/4.png" width="40%" alt="" srcset="" style="width: 137.75px; height: 137.75px;"><br>
-<a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="https://aybar.credilotesperu.com/resource/1734378917_icons8-facebook-50.png" width="45px" alt="">
+            <div class="mt-4 text-center col-xl-4 mt-10"><a href="../login" target="_blank"><img src="../ayba/4.png" width="40%" alt="" srcset="" style="width: 137.75px; height: 137.75px;"></a><br>
+<a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1734378917_icons8-facebook-50.png" width="45px" alt="">
 </a>
-<a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank">   <img src="https://aybar.credilotesperu.com/resource/1734379420_icons8-tiktok-50.png" width="45px" alt="">
+<a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank">   <img src="../resource/1734379420_icons8-tiktok-50.png" width="45px" alt="">
 </a>
-     <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank">   <img src="https://aybar.credilotesperu.com/resource/1734379216_icons8-instagram-50.png" width="45px" alt="">
+     <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank">   <img src="../resource/1734379216_icons8-instagram-50.png" width="45px" alt="">
 </a>         
-            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank">   <img src="https://aybar.credilotesperu.com/resource/1734379160_icons8-linkedin-50.png" width="45px" alt="">
-</a>             
-                
-                <p></p>
-            </div>
-        </div>
-    </div>
-</div>
+            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank">   <img src="../resource/1734379160_icons8-linkedin-50.png" width="45px" alt=""></a></div></div></div></div><p></p>
 <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">
@@ -255,21 +247,21 @@
     <div class="offcanvas-body p-4">
         <ul class="navbar-nav justify-content-end flex-grow-1">
             <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="https://aybar.credilotesperu.com">Inicio</a>
+                <a class="nav-link fs-3 text-dark active" aria-current="page" href="/">Inicio</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="https://aybar.credilotesperu.com/nosotros">Nosotros</a>
+                <a class="nav-link fs-3 text-dark active" aria-current="page" href="nosotros">Nosotros</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="https://aybar.credilotesperu.com/proyectos">Proyectos</a>
+                <a class="nav-link fs-3 text-dark active" aria-current="page" href="proyectos">Proyectos</a>
             </li>
             <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="https://aybar.credilotesperu.com/blog">Blogs</a>
+                <a class="nav-link fs-3 text-dark active" aria-current="page" href="blog">Blogs</a>
             </li>
         </ul>
-        <a href="https://aybar.credilotesperu.com/login" class="btn btn-primary w-100 py-2">Administrar</a>
+        <a href="login" class="btn btn-primary w-100 py-2">Administrar</a>
         <br>
-        <a href="https://aybar.credilotesperu.com/logout" class="btn btn-secondary w-100 py-2">Salir</a>
+        <a href="logout" class="btn btn-secondary w-100 py-2">Salir</a>
     </div>
 </div>
 <!-- FIN SECCION -->

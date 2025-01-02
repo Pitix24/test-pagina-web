@@ -36,7 +36,8 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 Auth::routes();
 
    //USUARIOS
-   Route::get('home_demo', [App\Http\Controllers\Home_demoController::class, 'home']);
+   Route::get('home_demo/plantilla', [App\Http\Controllers\Home_demoController::class, 'template']);
+   Route::get('home_demo/inicio', [App\Http\Controllers\Home_demoController::class, 'home']);
    Route::get('home_demo/nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
    Route::get('home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
    Route::get('home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
