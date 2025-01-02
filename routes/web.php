@@ -32,6 +32,11 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 
 
 
+use App\Http\Controllers\ChatbotController;
+
+Route::get('/chat', [ChatbotController::class, 'index']);
+Route::post('/chatPost', [ChatbotController::class, 'chat']);
+
 
 Auth::routes();
 
