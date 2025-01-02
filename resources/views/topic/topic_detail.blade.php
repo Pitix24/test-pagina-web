@@ -1,8 +1,23 @@
 @extends("production.1")
 @section("content")
+
+
+<section class="  text-white" style="background-color: #F6A42C">
+  <div class="container BG-WA ">
+      <div class="row justify-content-center pt-1 align-items-center text-center" style="height: 80px;">
+          <h3 style="word-spacing: 8px;letter-spacing:2px">
+            {{ strtoupper($topic[0]->description)}}</h3>
+      </div>
+  </div>
+</section>
+
     <div class="py-y container">
+    <p></p>
+    @foreach ($topic[0]->categoryDetail as $item)
+    <span class="mb-1 badge text-bg-success">{{$item->category->description}}</span>
+    @endforeach
       @php
-      echo $topic[0]->id;
+      echo $topic[0]->post;
     @endphp
     </div>
 
@@ -10,7 +25,7 @@
 
 </div>
 <script>
-  topicPublic();
+  
 
 </script>
 <style>

@@ -191,7 +191,7 @@
 </a>
      <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank">   <img src="../resource/1734379216_icons8-instagram-50.png" width="45px" alt="">
 </a>         
-            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank">   <img src="../resource/1734379160_icons8-linkedin-50.png" width="45px" alt=""></a></div></div></div></div><p></p>
+            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank">   <img src="../resource/1734379160_icons8-linkedin-50.png" width="45px" alt=""></a></div></div></div></div>
 <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">

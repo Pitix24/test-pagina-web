@@ -50,10 +50,10 @@
                                     onchange="readImage(this,'#blah');">
 
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 text-center">
                                 <br>
                                 <img id="blah" name="fotografia" src="https://placehold.co/500x350" alt="Tu imagen"
-                                    class="" width="100%" height="200px">
+                                    class="" width="500px" height="300px">
                                 <p></p>
                             </div>
 
