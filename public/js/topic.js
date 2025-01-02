@@ -133,14 +133,15 @@ function topicPublic() {
             if (item.image_1 === null) {
               item.image_1 = "1734977972_+%20de%201,000.png";
             }
+            
             let card = `
               <div class="col-md-4">
                 <div class="card custom-card text-center">
                   <div class="card-body">
-                    <img src="resource/${item.image_1}"style="width:80%" class="img-fluid mb-3" alt="Icono">
+                    <img src="../resource/${item.image_1}"style="width:80%" class="img-fluid mb-3" alt="Icono">
                     <h5 class="card-title fw-bold">${item.description}</h5>
                     <p class="card-text text-muted">${item.detail}</p>
-                    <a target="_blank" href="blog/${item.url}" class="btn custom-btn">Conocer más</a>
+                    <a target="_blank" href="http://${window.location.hostname +"/blog/"+ item.url}" class="btn custom-btn">Conocer más</a>
                   </div>
                 </div>
               </div>

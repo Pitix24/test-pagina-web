@@ -21,9 +21,15 @@ class TopicPublicController extends Controller
     }
     public function report(Request $request)
     {
+        $topic = Topic::where("url", "=", $request->url)->first();
+        if ($topic=="") {
+            abort(404);
+        }
+        else{
+            return view("topic.topic_detail", compact("topic"));
 
-        $topic = Topic::where("url", "=", $request->url)->get();
-        return view("topic.topic_detail", compact("topic"));
+        }
+        
   
     }
     /**

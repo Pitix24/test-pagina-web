@@ -6,28 +6,53 @@
   <div class="container BG-WA ">
       <div class="row justify-content-center pt-1 align-items-center text-center" style="height: 80px;">
           <h3 style="word-spacing: 8px;letter-spacing:2px">
-            {{ strtoupper($topic[0]->description)}}</h3>
+            {{ strtoupper($topic->description)}}</h3>
       </div>
   </div>
 </section>
 
     <div class="py-y container">
     <p></p>
-    @foreach ($topic[0]->categoryDetail as $item)
+    @foreach ($topic->categoryDetail as $item)
     <span class="mb-1 badge text-bg-success">{{$item->category->description}}</span>
     @endforeach
       @php
-      echo $topic[0]->post;
+      echo $topic->post;
     @endphp
-    </div>
 
-<div class="container" id="mycontent">
+<script>
+  topicPublic()
+</script>
+<div class="container row py-5" id="mycontent">
 
 </div>
-<script>
-  
 
+
+<div id="disqus_thread"></div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document,
+            s = d.createElement('script');
+        s.src = 'https://ayba-corp.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a
+        href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
 <style>
     /* Personalización de las tarjetas */
     .custom-card {
