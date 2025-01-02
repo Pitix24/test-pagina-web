@@ -115,44 +115,25 @@
                 <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px;">
                     <li class="nav-item"></li>
                     <li class="nav-item">
-<<<<<<< HEAD
                         <a class="nav-link" aria-current="page" href="../../" style="color: #FFA726">
-=======
-                        <a class="nav-link" aria-current="page" href="../" style="color: #FFA726">
->>>>>>> c6b48c83db26dbd15cb55f90aa0e8292224321a6
                             <b style="word-spacing: 9px;">INICIO</b>
                         </a>
                     </li>
                     <li class="nav-item">
-<<<<<<< HEAD
                         <a class="nav-link" aria-current="page" href="../../nosotros" style="color: #13434d">
-=======
-                        <a class="nav-link" aria-current="page" href="../nosotros" style="color: #13434d">
->>>>>>> c6b48c83db26dbd15cb55f90aa0e8292224321a6
                             <b style="word-spacing: 9px;">NOSOTROS</b>
                         </a>
                     </li>
                     <li class="nav-item">
-<<<<<<< HEAD
                         <a class="nav-link" aria-current="page" style="color: #13434d" href="../../proyectos">PROYECTOS</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../../blog" style="color: #13434d">
-=======
-                        <a class="nav-link" aria-current="page" style="color: #13434d" href="../proyectos">PROYECTOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../blog" style="color: #13434d">
->>>>>>> c6b48c83db26dbd15cb55f90aa0e8292224321a6
                             <b style="word-spacing: 9px;">BLOG</b>
                         </a>
                     </li>
                     <li class="nav-item">
-<<<<<<< HEAD
                         <a class="nav-link" aria-current="page" href="../../contacto" style="color: #13434d">
-=======
-                        <a class="nav-link" aria-current="page" href="../contacto" style="color: #13434d">
->>>>>>> c6b48c83db26dbd15cb55f90aa0e8292224321a6
                             <b style="word-spacing: 9px;">CONTÁCTANOS</b>
                         </a>
                     </li>
