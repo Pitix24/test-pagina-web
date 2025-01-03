@@ -95,6 +95,15 @@
                             {{ csrf_field() }}
                             Título : <input type="text" name="title" id="description" class="form-control">
                             Descripción : <input type="text" name="description" id="description" class="form-control">
+                            Locación : <input type="text" name="location" id="location" class="form-control">
+                            Proyecto :
+                            <select name="country" id="country" class="form-control">
+                                <option value="lima">Lima</option>
+                                <option value="ica">Ica</option>
+                                <option value="tarapoto">Tarapoto</option>
+                                <option value="iquitos">Iquitos</option>
+                            </select>
+                                                      
 
                             Detalle : <input type="text" name="detail" id="detail" class="form-control">
                             <div class="container align-content-center">

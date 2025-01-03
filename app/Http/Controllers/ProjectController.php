@@ -8,12 +8,7 @@ use App\Http\Requests\UpdateProjectRequest;
 use Illuminate\Http\Request;
 class ProjectController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-
-
-    }
+ 
     /**
      * Display a listing of the resource.
      */
@@ -23,7 +18,18 @@ class ProjectController extends Controller
           $Project = Project::orderBy('id','DESC')->get();
           return view("Project.Project", compact("Project"));
     }
+    public function projectDetail(Request $request)
+    {
+        $Project = Project::where("country", "=", $request->url)->first();
+        if ($Project=="") {
+            abort(404);
+        }
+        else{
+            return view("Project.Project_detail",compact("Project"));
 
+        }
+        
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -42,6 +48,8 @@ class ProjectController extends Controller
         $Project->title = $request->title;
         $Project->description = $request->description;
         $Project->detail = $request->detail;
+        $Project->location = $request->location;
+        $Project->country = $request->country;
 
              //file
              if ($request->file('image_1') != null) {
@@ -78,7 +86,8 @@ class ProjectController extends Controller
         $Project->title = $request->title;
         $Project->description = $request->description;
         $Project->detail = $request->detail;
-        
+        $Project->location = $request->location;
+        $Project->country = $request->country;
              //file
              if ($request->file('image_1') != null) {
                 $request->image_1 = fileStore($request->file('image_1'), "resource");

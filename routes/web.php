@@ -35,8 +35,9 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 use App\Http\Controllers\ChatbotController;
 
 Route::get('/chat', [ChatbotController::class, 'index']);
-Route::post('/chatPost', [ChatbotController::class, 'chat']);
+Route::post('/chatPost', [ChatbotController::class, 'chat'])->middleware('throttle:80,1440');
 
+Route::get('proyectos/{country}', [App\Http\Controllers\ProjectController::class, 'projectDetail']);
 
 Auth::routes();
 

@@ -104,7 +104,7 @@
 
     <!-- INICIO SECCION -->
 <section class=" text-white" style="background-color:#03424E ">
-<p> &nbsp;
+<p>  
 </p>
 
 
@@ -164,9 +164,12 @@
                     <div class="hover-content">
                         <p class="fw-bold">Explora las oportunidades en Lima</p>
                     </div>
+
+                    <a href="proyectos/lima">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>
+</a>
                 </div>
             </div>
 
@@ -178,9 +181,11 @@
                     <div class="hover-content">
                         <p class="fw-bold">Descubre los proyectos en Ica</p>
                     </div>
+  <a href="proyectos/ica">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>
+</a>
                 </div>
             </div>
 
@@ -195,9 +200,11 @@
                     <div class="hover-content">
                         <p class="fw-bold">Explora las oportunidades en Tarapoto</p>
                     </div>
+                   <a href="proyectos/tarapoto">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>
+</a>
                 </div>
             </div>
 
@@ -209,9 +216,11 @@
                     <div class="hover-content">
                         <p class="fw-bold">Descubre los proyectos en Iquitos</p>
                     </div>
+                <a href="proyectos/iquitos">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>
+</a>
                 </div>
             </div>
         </div>
