@@ -172,7 +172,7 @@
 
             <!-- Tarjeta Ica -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%">"&gt;
+                <div class="card card-hover shadow" style="position: relative;width:100%">
                     <img src="../resource/1735593994_Ica.png" class="card-img-top" alt="Ica">
                     <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">ICA</h1>
                     <div class="hover-content">
@@ -189,7 +189,7 @@
 
             <!-- Tarjeta Tarapoto -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%">"&gt;
+                <div class="card card-hover shadow" style="position: relative;width:100%">
                     <img src="../resource/1735587620_Tarapoto.jpg" class="card-img-top" alt="Tarapoto">
                     <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">TARAPOTO</h1>
                     <div class="hover-content">
@@ -203,7 +203,7 @@
 
             <!-- Tarjeta Iquitos -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%">"&gt;
+                <div class="card card-hover shadow" style="position: relative;width:100%">
                     <img src="../resource/1735593987_Iquitos.png" class="card-img-top" alt="Iquitos">
                     <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">IQUITOS</h1>
                     <div class="hover-content">

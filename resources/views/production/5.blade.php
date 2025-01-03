@@ -35,25 +35,20 @@
 
 
 <!-- INICIO SECCION -->
-<section class="  text-white">
-        <!-- Barra lateral -->
+<section class="text-white">
+    <!-- Contenido central -->
+    <div class="justify-content-center align-items-center text-center" style="background: linear-gradient(to bottom, #13434d 10%, transparent 40%), url('../resource/1735921011_portada_1_para_seccion_blog__2_.png'); background-size: cover; background-position: center; min-height: 300px; position: relative;">
+        <img src="../resource/1735921011_portada_1_para_seccion_blog__2_.png" alt="Imagen de fondo" style="width: 100%; visibility: hidden;">
+    </div>
+</section>
 
-        <!-- Contenido central -->
-        <div class="container-fluid " style="background-image:url('../resource/1734733260_fondo-.jpg')">
-            <div class="row justify-content-center align-items-center text-center">
-                <img src="../resource/1735568084_imagenes.png" style="width: 1000px;">
-            </div>
+<section class="text-white" style="background-color: #F6A42C">
+    <div class="container BG-WA">
+        <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
+            <h2 style="word-spacing: 8px; letter-spacing: 2px;">NOTICIAS RELACIONADAS</h2>
         </div>
-
-    </section>
-
-    <section class="  text-white" style="background-color: #F6A42C">
-        <div class="container BG-WA ">
-            <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-                <h2 style="word-spacing: 8px;letter-spacing:2px">NOTICIAS RELACIONADAS</h2>
-            </div>
-        </div>
-    </section>
+    </div>
+</section>
 <div class="container  py-5">
     <div class="row g-4" id="mycontent">
      

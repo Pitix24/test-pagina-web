@@ -17,6 +17,13 @@ class ChatbotController extends Controller
         $apiKey = env('OPENAI_API_KEY'); // Obtiene la clave API desde el archivo .env
         $userInput = $request->input('message'); // Captura el mensaje del usuario desde la solicitud
 
+        // Validar que el mensaje no esté vacío
+        if (empty($userInput)) {
+            return response()->json([
+                'reply' => 'Por favor, ingresa un mensaje válido.',
+            ], 400);
+        }
+
         try {
             // Configuración del cliente HTTP
             $client = new Client();
@@ -28,11 +35,12 @@ class ChatbotController extends Controller
                     'Content-Type' => 'application/json'
                 ],
                 'json' => [
-                    'model' => 'gpt-4o-mini', // Especifica el modelo a usar
+                    'model' => 'ft:gpt-4o-mini-2024-07-18:personal::AlcZGD1v', // Especifica el modelo a usar
+                    'temperature' => 1, // Respuestas consistentes
                     'messages' => [
                         [
-                            'role' => 'system',
-                            'content' => 'You are a helpful assistant.', // Configura el comportamiento general del asistente
+                            "role" => "system",
+                            "content" => "Eres un asistente especializado en cursos de programación. Responde únicamente con información relacionada a los cursos y sus precios."
                         ],
                         [
                             'role' => 'user',
@@ -46,7 +54,7 @@ class ChatbotController extends Controller
             $result = json_decode($response->getBody(), true);
 
             // Extraer el contenido generado por el modelo
-            $reply = $result['choices'][0]['message']['content'] ?? 'No se obtuvo respuesta.';
+            $reply = $result['choices'][0]['message']['content'] ?? 'No se obtuvo respuesta del modelo.';
 
             // Retornar la respuesta en formato JSON al cliente
             return response()->json([

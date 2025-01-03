@@ -264,7 +264,173 @@
         <a href="logout" class="btn btn-secondary w-100 py-2">Salir</a>
     </div>
 </div>
+
+
+
+
+
 <!-- FIN SECCION -->
+
+
+
+    <style>
+        /* Estilo para el botón flotante */
+        #chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        #chatbot-button {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #chatbot-button img {
+            width: 30px;
+            height: 30px;
+        }
+
+        #chatbot-label {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        /* Estilo para la ventana de chat */
+        #chatbot-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #chatbot-header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #chat-box {
+            flex: 1;
+            padding: 10px;
+            overflow-y: scroll;
+            border-top: 1px solid #ddd;
+        }
+
+        #chat-input {
+            display: flex;
+            border-top: 1px solid #ddd;
+        }
+
+        #user-input {
+            flex: 1;
+            border: none;
+            padding: 10px;
+        }
+
+        #send-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+
+    <!-- Contenedor del botón flotante -->
+    <div id="chatbot-container" onclick="toggleChat()">
+        <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy tu asistente virtual</div>
+        <div id="chatbot-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
+        </div>
+    </div>
+
+    <!-- Ventana de Chat -->
+    <div id="chatbot-window">
+        <div id="chatbot-header">Chatbot Aybar</div>
+        <div id="chat-box"></div>
+        <div id="chat-input">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje..." class="form-control" onkeydown="handleKeyPress(event)">
+            <button id="send-button" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+
+    <script>
+        let chatInitialized = false;
+
+        // Función para alternar la visibilidad de la ventana de chat
+        function toggleChat() {
+            const chatWindow = document.getElementById('chatbot-window');
+            chatWindow.style.display = chatWindow.style.display === 'none' || chatWindow.style.display === '' ? 'flex' : 'none';
+
+            // Enviar saludo al abrir el chat por primera vez
+            if (!chatInitialized) {
+                const chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML += `<div><strong>Aybar:</strong> ¡Hola! Soy tu asistente virtual. ¿En qué puedo ayudarte hoy?</div>`;
+                chatInitialized = true;
+            }
+        }
+
+        // Función para enviar mensajes al chatbot
+        async function sendMessage() {
+            const input = document.getElementById('user-input').value;
+            const chatBox = document.getElementById('chat-box');
+
+            if (input.trim() === '') return; // Evitar mensajes vacíos
+
+            // Mostrar el mensaje del usuario en el chat
+            chatBox.innerHTML += `<div><strong>Tú:</strong> ${input}</div>`;
+            document.getElementById('user-input').value = ''; // Limpiar el campo de entrada
+
+            try {
+                const response = await axios.post('/chatPost', { message: input });
+                const reply = response.data.reply;
+
+                // Mostrar la respuesta del chatbot en el chat
+                chatBox.innerHTML += `<div><strong>Aybar:</strong> ${reply}</div>`;
+            } catch (error) {
+                chatBox.innerHTML += `<div><strong>Aybar:</strong> Error al procesar la solicitud.</div>`;
+            }
+
+            // Desplazar el scroll hacia abajo automáticamente
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // Función para manejar el evento de presionar Enter
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        }
+    </script>
+
+
+
+
+
+
 
 
     </div>
