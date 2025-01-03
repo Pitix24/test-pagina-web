@@ -7,119 +7,174 @@
 
         <!-- INICIO SECCION -->
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
-    <div class="carousel-inner" style="display: flex; align-items: center;">
-        <!-- Diapositiva 1 -->
-        <div class="carousel-item text-center py-5 active" style="background-image:url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
-            <div class="container-fluid" style=" background-color: transparent;">
-                <div class="row h-100">
-                    <!-- Columna izquierda con imagen -->
-                    <div class="col-lg-6 col-xl-4 col-md-6   text-center align-content-center">
+            <div class="carousel-inner" style="display: flex; align-items: center;">
+                <!-- Diapositiva 1 -->
+                <div class="carousel-item text-center py-5 active" style="background-image:url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
+                    <div class="container-fluid" style=" background-color: transparent;">
+                        <div class="row h-100">
+                            <!-- Columna izquierda con imagen -->
+                            <div class="col-lg-6 col-xl-4 col-md-6   text-center align-content-center">
 
-                  <img src="https://aybar.credilotesperu.com/resource/1734547017_circulo.png" width="100%" class="align-content-center" style="margin-top:-20%">
+                                <img src="https://aybar.credilotesperu.com/resource/1734547017_circulo.png" width="100%" class="align-content-center" style="margin-top:-20%">
 
-                        
-     <div style="margin-top:-80%">
 
-                        <!-- Contenido encima -->
-                        <img src="../ayba/4.png" alt="" width="50px">
-                        <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;">HACIENDO REALIDAD</h4>
-                        <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">TU HOGAR</h4>
-                        <p class="lead mb-4 fs-3">
-</p>
-<div class="container">
-                            ¡No pierdas más tiempo y asegura el lote de  tus <br> sueños  hoy mismo, con facilidades de pago y <br> ubicaciones estratégicas!
-</div>                        
-<p></p>
-                        <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
-                        <p class="mb-4">Nuestros números de atención al cliente:</p>
-                        <p>970 579 363 - 970 574 495 - 977 637 651</p>
-       </div>             
-</div>
-                    <!-- Columna central con imagen adicional -->
-                    <div class="d-none d-xl-block col-xl-5  align-content-center">
-                        <img src="https://aybar.credilotesperu.com/resource/1734446605_portada%20de%20aybar%20-%20inicio2.jpg" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
-                    </div>
+                                <div style="margin-top:-80%">
 
-                    <!-- Columna derecha con formulario -->
-                    <div class="col col-md-6 col-lg-6 col-xl-3 col-sm-12">
-
-                        <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                            <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO INFORMACIÓN DE UN LOTE</span></b></p>
-                      
-
-                            <select class="form-control" name="project_id" id="project_id" style="color: white; background-color: #055261">
-                                <option value="">Seleccione un proyecto</option>
-                            </select>
-                            <br>
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
-                            </div>
-         <div class="form-floating mb-3">
-                                <input type="text" id="phone" class="form-control" name="cellphone" placeholder="Número de Teléfono" style="color: white;width:100%">
-                            </div>
-                                                     <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
-                          
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()"><div class="form-text text-white"><p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                                    <!-- Contenido encima -->
+                                    <img src="../ayba/4.png" alt="" width="50px">
+                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;">HACIENDO
+                                        REALIDAD</h4>
+                                    <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">TU HOGAR
+                                    </h4>
+                                    <p class="lead mb-4 fs-3">
+                                    </p>
+                                    <div class="container">
+                                        ¡No pierdas más tiempo y asegura el lote de tus <br> sueños hoy mismo, con
+                                        facilidades de pago y <br> ubicaciones estratégicas!
+                                    </div>
+                                    <p></p>
+                                    <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
+                                    <p class="mb-4">Nuestros números de atención al cliente:</p>
+                                    <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white"><p>(51) 01-9049838</p></a>
                                 </div>
                             </div>
+                            <!-- Columna central con imagen adicional -->
+                            <div class="d-none d-xl-block col-xl-5  align-content-center">
+                                <img src="https://aybar.credilotesperu.com/resource/1734446605_portada%20de%20aybar%20-%20inicio2.jpg" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
+                            </div>
+
+                            <!-- Columna derecha con formulario -->
+                            <div class="col col-md-6 col-lg-6 col-xl-3 col-sm-12">
+
+                                <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                                    <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO
+                                                INFORMACIÓN DE UN LOTE</span></b></p>
+
+
+                                    <select class="form-control" name="project_id" id="project_id" style="color: white; background-color: #055261">
+                                        <option value="">Seleccione un proyecto</option>
+                                    </select>
+                                    <br>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" id="phone" class="form-control" name="cellphone" placeholder="Número de Teléfono" style="color: white;width:100%">
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
+
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()">
+                                        <div class="form-text text-white">
+                                            <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                                        </div>
+                                    </div>
 
 
 
-<div class="form-check text-start">
-  <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
-  <label class="form-check-label fs-3" for="txtTratamientoDatos">
-    <span class="fs-2">He leído y acepto la </span>
-    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
-      Política para envío de comunicaciones comerciales.
-    </a>
-  </label>
-</div>
+                                    <div class="form-check text-start">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+                                        <label class="form-check-label fs-3" for="txtTratamientoDatos">
+                                            <span class="fs-2">He leído y acepto la </span>
+                                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
+                                                Política para envío de comunicaciones comerciales.
+                                            </a>
+                                        </label>
+                                    </div>
 
-<div class="form-check text-start ">
-  <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
-  <label class="form-check-label fs-3" for="txtTratamientoDatos2">
-    <span class="fs-2">He leído y acepto el </span>
-    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
-      Tratamiento de mis datos personales.
-    </a>
-  </label>
-</div>
-
-
+                                    <div class="form-check text-start ">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+                                        <label class="form-check-label fs-3" for="txtTratamientoDatos2">
+                                            <span class="fs-2">He leído y acepto el </span>
+                                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
+                                                Tratamiento de mis datos personales.
+                                            </a>
+                                        </label>
+                                    </div>
 
 
-<div class="text-center"><span style="font-size: 9px;">
 
-                                </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
-                                    <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis datos</span>
-                                </span></button><span style="font-size: 9px;">
-                            </span></div><span style="font-size: 9px;">
-                        </span></div><span style="font-size: 9px;">
-                    </span></div><span style="font-size: 9px;">
 
-                </span></div><span style="font-size: 9px;">
-            </span></div><span style="font-size: 9px;">
-        </span></div><span style="font-size: 9px;">
+                                    <div class="text-center"><span style="font-size: 9px;">
 
-        </span><!-- Diapositiva 2: Video de YouTube -->
-        <div class="carousel-item position-relative " style="height: 600px;">
-            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" class="w-100 h-100" style="object-fit: cover;"></iframe>
+                                        </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                                <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
+                                                    datos</span>
+                                            </span></button><span style="font-size: 9px;">
+                                        </span></div><span style="font-size: 9px;">
+                                    </span>
+                                </div><span style="font-size: 9px;">
+                                </span>
+                            </div><span style="font-size: 9px;">
+
+                            </span>
+                        </div><span style="font-size: 9px;">
+                        </span>
+                    </div><span style="font-size: 9px;">
+                    </span>
+                </div>
+                <span style="font-size: 9px;">
+
+                </span><!-- Diapositiva 2: Video de YouTube -->
+                <div class="carousel-item position-relative " style="height: 600px;">
+                    <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" class="w-100 h-100" style="object-fit: cover;"></iframe>
+                </div>
+                <div class="carousel-item text-center py-5 " style="background-image:url('../resource/1734733260_fondo-.jpg')">
+                    <div class="container-fluid" style=" background-color: transparent;">
+                        <div class="row h-100">
+                            <!-- Columna izquierda con imagen -->
+                            <div class="col-lg-6 col-xl-4 col-md-6   text-center align-content-center">
+
+                                <img src="../resource/1734547017_circulo.png" width="100%" class="align-content-center" style="margin-top:-20%">
+
+
+                                <div style="margin-top:-80%">
+
+                                    <!-- Contenido encima -->
+                                    <img src="../ayba/4.png" alt="" width="50px">
+                                    <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">LOTES ENTREGADOS  </h4>
+                                   
+                                       
+                                            <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"> TIERRA GALICIA <br> Y LUGO</h4>
+
+                                           
+                                    <p class="lead mb-4 fs-3">
+                                    </p>
+                                    <div class="container">
+                                        ¡Así como cambiamos la vida de muchas <br> familias podemos cambiar la tuya!
+                                    </div>
+                                    <img src="http://aybar_laravel.test/resource/1735944556_logos.png" width="250px" alt="">
+                                    <p></p>
+                                    
+                                </div>
+                            </div>
+                            <!-- Columna central con imagen adicional -->
+                            <div class="d-none d-lg-block d-md-block  d-xl-block col-xl-8 col-lg-6 col-md-6  align-content-center">
+                                <img src="../resource/1735568084_imagenes.png" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
+                            </div>
+
+                            <span style="font-size: 9px;">
+
+                            </span>
+                        </div><span style="font-size: 9px;">
+                        </span>
+                    </div><span style="font-size: 9px;">
+                    </span>
+                </div>
+            </div><span style="font-size: 9px;">
+
+            </span><!-- Indicadores del Carrusel -->
+            <div class="carousel-indicators">
+                <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Diapositiva 2" class="active" aria-current="true"></button>
+                <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="1" class="" aria-label="Diapositiva 1"></button>
+                <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="2" class="" aria-label="Diapositiva 3"></button>
+
+            </div>
         </div>
-    </div><span style="font-size: 9px;">
-
-    </span><!-- Indicadores del Carrusel -->
-    <div class="carousel-indicators">
-        <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Diapositiva 2" class="active" aria-current="true"></button>
-        <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="1" class="" aria-label="Diapositiva 1"></button>
-
-    </div>
-</div><span style="font-size: 9px;">                        
-</span><br><span style="font-size: 9px;">                        </span>
 <div class="container-fluid text-light py-5" style="background-image: url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
         <div class="text-center">
 
