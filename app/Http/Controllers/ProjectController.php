@@ -20,7 +20,7 @@ class ProjectController extends Controller
     }
     public function projectDetail(Request $request)
     {
-        $Project = Project::where("country", "=", $request->url)->first();
+        $Project = Project::where("country", "=", $request->country)->first();
         if ($Project=="") {
             abort(404);
         }
