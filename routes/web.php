@@ -214,24 +214,26 @@ Route::get('/auth/google/callback', function () {
             Auth::login($finduser);
             return redirect('/home');
         } else {
-            //user is not yet created, so create first
-            $newUser = User::create([
-                'names' => $user->name,
-                'firstname' => '',
-                'lastname' => '',
-                'email' => $user->email,
-                'google_id' => $user->id,
-                'password' => Hash::make('onedigital123')
-            ]);
 
-            $newUser->save();
-            //login as the new user
-            Auth::login($newUser);
-            $newUser->assignRole('Socio Comercial');
-            //
-            //  $newUser->createToken(request()->device_name)->plainTextToken ;
-            // go to the dashboard
-            return redirect('/home');
+            return redirect('/login');
+            // //user is not yet created, so create first
+            // $newUser = User::create([
+            //     'names' => $user->name,
+            //     'firstname' => '',
+            //     'lastname' => '',
+            //     'email' => $user->email,
+            //     'google_id' => $user->id,
+            //     'password' => Hash::make('onedigital123')
+            // ]);
+
+            // $newUser->save();
+            // //login as the new user
+            // Auth::login($newUser);
+            // $newUser->assignRole('Socio Comercial');
+            // //
+            // //  $newUser->createToken(request()->device_name)->plainTextToken ;
+            // // go to the dashboard
+            // return redirect('/home');
         }
         //catch exceptions
     } catch (Exception $e) {
