@@ -33,7 +33,7 @@ return [
     'google' => [
     'client_id' => env('GOOGLE_CLIENT_ID'),
     'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-    'redirect' => 'https://onedigitallcertificado.com/auth/google/callback',
+    'redirect' => env('APP_URL').'/auth/google/callback',
 ],
 'microsoft' => [
     'client_id' => env('MICROSOFT_CLIENT_ID'),
