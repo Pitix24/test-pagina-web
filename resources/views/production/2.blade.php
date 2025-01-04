@@ -35,7 +35,9 @@
                                     <p></p>
                                     <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
                                     <p class="mb-4">Nuestros números de atención al cliente:</p>
-                                    <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white"><p>(51) 01-9049838</p></a>
+                                    <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
+                                        <p>(51) 01-9049838</p>
+                                    </a>
                                 </div>
                             </div>
                             <!-- Columna central con imagen adicional -->
@@ -136,12 +138,14 @@
 
                                     <!-- Contenido encima -->
                                     <img src="../ayba/4.png" alt="" width="50px">
-                                    <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">LOTES ENTREGADOS  </h4>
-                                   
-                                       
-                                            <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"> TIERRA GALICIA <br> Y LUGO</h4>
+                                    <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">LOTES
+                                        ENTREGADOS </h4>
 
-                                           
+
+                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"> TIERRA
+                                        GALICIA <br> Y LUGO</h4>
+
+
                                     <p class="lead mb-4 fs-3">
                                     </p>
                                     <div class="container">
@@ -149,12 +153,13 @@
                                     </div>
                                     <img src="http://aybar_laravel.test/resource/1735944556_logos.png" width="250px" alt="">
                                     <p></p>
-                                    
+
                                 </div>
                             </div>
                             <!-- Columna central con imagen adicional -->
                             <div class="d-none d-lg-block d-md-block  d-xl-block col-xl-8 col-lg-6 col-md-6  align-content-center">
-                                <img src="../resource/1735568084_imagenes.png" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
+                                <img src="../resource/1735568084_imagenes.png" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;padding-bottom:38px;padding-top:38px">
+                                <p></p>
                             </div>
 
                             <span style="font-size: 9px;">
