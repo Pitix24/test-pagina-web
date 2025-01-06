@@ -1,15 +1,2 @@
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-
-    # Verifica si la solicitud es para un archivo o directorio existente
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-
-    # Redirige todas las solicitudes al directorio public
-    RewriteRule ^(.*)$ public/$1 [L]
-
-    # Si se accede directamente a public, permite la solicitud
-    RewriteCond %{REQUEST_URI} ^/public
-    RewriteRule ^ - [L]
-</IfModule>
-
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]

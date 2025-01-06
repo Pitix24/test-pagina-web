@@ -192,15 +192,15 @@
             <div class="col-xl-2 col-0"></div>
             <div class="col-xl-2 col-0"></div>
 
-            <!-- Tarjeta Tarapoto -->
+            <!-- Tarjeta Huaral -->
             <div class="col-lg-6 col-xl-4 col-md-6">
                 <div class="card card-hover shadow" style="position: relative;width:100%">
-                    <img src="../resource/1735587620_Tarapoto.jpg" class="card-img-top" alt="Tarapoto">
-                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">TARAPOTO</h1>
+                    <img src="../resource/1736172777_Huaral.png" class="card-img-top" alt="Huaral">
+                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUARAL</h1>
                     <div class="hover-content">
-                        <p class="fw-bold">Explora las oportunidades en Tarapoto</p>
+                        <p class="fw-bold">Explora las oportunidades en Huaral</p>
                     </div>
-                   <a href="proyectos/tarapoto">
+                   <a href="proyectos/huaral">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>
@@ -208,15 +208,15 @@
                 </div>
             </div>
 
-            <!-- Tarjeta Iquitos -->
+            <!-- Tarjeta Huacho -->
             <div class="col-lg-6 col-xl-4 col-md-6">
                 <div class="card card-hover shadow" style="position: relative;width:100%">
-                    <img src="../resource/1735593987_Iquitos.png" class="card-img-top" alt="Iquitos">
-                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">IQUITOS</h1>
+                    <img src="../resource/1736172763_Huacho.png" class="card-img-top" alt="Huacho">
+                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUACHO</h1>
                     <div class="hover-content">
-                        <p class="fw-bold">Descubre los proyectos en Iquitos</p>
+                        <p class="fw-bold">Descubre los proyectos en Huacho</p>
                     </div>
-                <a href="proyectos/iquitos">
+                <a href="proyectos/huacho">
                     <div class="button">
                         <span class="arrow"></span>
                     </div>

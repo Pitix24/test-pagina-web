@@ -48,13 +48,43 @@
         <!-- Barra lateral -->
 
         <!-- Contenido central -->
-        <div class="container-fluid " style="background-image:url('../resource/1734733260_fondo-.jpg')">
+   <div class="container-fluid pt-5" style="background: linear-gradient(to right, #053A49 5% ,#0A7081 100%); width: 100%;">
             <div class="row justify-content-center align-items-center text-center">
-                <img src="../resource/1735568084_imagenes.png" style="width: 1000px;">
-            </div>
-        </div>
+<div class="col-xl-4 d-none d-xl-block d-lg-xl-block" style="margin-right:-7%">
+<img src="../resource/1736173424_lineas.png" style="width: 70%;">
+<img src="../resource/1736173417_imagen%20de%20asesores%20.png" style="width: 70%; margin-top: -70%; margin-bottom:-10px">
 
-    </section>
+</div>
+<div class="  col-xl-4">
+  <!-- Contenido encima -->
+                                    <img src="../ayba/4.png" alt="" width="50px" style="width: 68.6719px; height: 68.6719px;">
+
+                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"><span style="font-size: 30px;">&nbsp;<span style="font-size: 24px;">CONTÁCTANOS Y&nbsp;</span></span></h4><span style="font-size: 24px;">
+                                    </span><h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;"><span style="font-size: 24px;">OPTÉN TU LOTE</span></h4>
+<center>
+<hr style=" width: 70%; height: 2px; background-color: #F6A42C;">
+
+</center>
+                                    <p class="lead mb-4 fs-3">
+                                    </p>
+                                    <div class="container">
+                                        <span style="font-size: 18px;"><span style="font-size: 18px; font-family: Montserrat-Regular;">¡Nosotros hacemos realidad el terreno de tus</span><br>&nbsp;sueños!</span><span style="font-size: 18px; font-family: Montserrat-Regular;">
+                                    </span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
+                                    </span><p><img src="../resource/1736173406_casa.png" style="width: 50%;"><br>
+</p><span style="font-size: 18px; font-family: Montserrat-Regular;">
+                               
+</span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
+                
+            </span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
+        </span></div></section>
+<div class="text-center container pt-5">
+<h4 class="fs-9" style="font-family: Montserrat-Bold;">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE IDEAL</h4>
+<p class="fs-5  d-xl-none"><span style="color:#055261;font-family: Montserrat-Regular;">Selecciona la opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto contigo.</span></p>
+<p class="fs-8 mt-7 d-none d-xl-block"><span style="color:#055261;font-family: Montserrat-Regular;">Selecciona la opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto contigo.</span></p>
+</div>
+
+
+
 <div class="container py-5">
     <div class="row g-4">
       <!-- Panel izquierdo -->

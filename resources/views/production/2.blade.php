@@ -9,7 +9,12 @@
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
             <div class="carousel-inner" style="display: flex; align-items: center;">
                 <!-- Diapositiva 1 -->
-                <div class="carousel-item text-center py-5 active" style="background-image:url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
+                <div class="carousel-item text-center py-5 active" style="
+    background-image: url('../resource/1734733260_fondo-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+">
                     <div class="container-fluid" style=" background-color: transparent;">
                         <div class="row h-100">
                             <!-- Columna izquierda con imagen -->
@@ -125,7 +130,12 @@
                 <div class="carousel-item position-relative " style="height: 600px;">
                     <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" class="w-100 h-100" style="object-fit: cover;"></iframe>
                 </div>
-                <div class="carousel-item text-center py-5 " style="background-image:url('../resource/1734733260_fondo-.jpg')">
+                <div class="carousel-item text-center py-5 " style="
+    background-image: url('../resource/1734733260_fondo-.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+">
                     <div class="container-fluid" style=" background-color: transparent;">
                         <div class="row h-100">
                             <!-- Columna izquierda con imagen -->
@@ -151,7 +161,7 @@
                                     <div class="container">
                                         ¡Así como cambiamos la vida de muchas <br> familias podemos cambiar la tuya!
                                     </div>
-                                    <img src="http://aybar_laravel.test/resource/1735944556_logos.png" width="250px" alt="">
+                                    <img src="../resource/1735944556_logos.png" width="250px" alt="">
                                     <p></p>
 
                                 </div>
@@ -238,16 +248,16 @@
                 <!-- Grilla para pantallas grandes -->
                 <div class="row d-none d-lg-flex mt-4">
                     <div class="col-lg-4 mb-3">
-                       <iframe src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&amp;mute=1&amp;controls=1&amp;loop=1&amp;playlist=rdxrSIrZISE" style="width:100%;border-radius:5px;height:100%">
-        </iframe>
+                     <lite-youtube videoid="rdxrSIrZISE" posterquality="maxresdefault" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+        
                     </div>
                     <div class="col-lg-4 mb-3">
-                                         <iframe src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&amp;mute=1&amp;controls=1&amp;loop=1&amp;playlist=uuw6UDjl0oo" style="width:100%;border-radius:5px;height:100%">
-        </iframe>
+                                        <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+        
                     </div>
                     <div class="col-lg-4 mb-3">
-                                         <iframe src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&amp;mute=1&amp;controls=1&amp;loop=1&amp;playlist=aguyG7M828M" style="width:100%;border-radius:5px;height:250px">
-        </iframe>
+                                     <lite-youtube videoid="aguyG7M828M" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+        
                     </div>
 
                 </div>
