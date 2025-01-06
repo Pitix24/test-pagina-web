@@ -9,6 +9,7 @@
                     srcset=""></th>
             <th>ID</th>
             <th>Título</th>
+            <th>Departamento</th>
             <th>Imágen</th>
             <th>Descripción</th>
             <th>Detalle</th>
@@ -58,6 +59,7 @@
                 <td>{{ $Projects->id }}</td>
                
                 <td>{{ $Projects->title }}</td>  
+                <td>{{ $Projects->country }}</td>  
                 <td>
                   @if ($Projects->image_1!="")
                   <img width="70px" src="{{url('../resource/'.$Projects->image_1 )}}" alt="" srcset="">

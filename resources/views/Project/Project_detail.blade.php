@@ -18,14 +18,6 @@
 </div>
 
 
-
-
-
-
-
-
-
-
     <section class="  text-white" style="background-color: #F6A42C">
         <div class="container BG-WA ">
             <div class="row justify-content-center pt-1 align-items-center text-center" style="height: 80px;">
