@@ -8,6 +8,31 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <!-- Agregar un token CSRF para la seguridad de Laravel -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        #messages {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+        #messagesList {
+            list-style-type: none;
+            padding: 0;
+        }
+        #messagesList li {
+            margin-bottom: 10px;
+        }
+        #sendMessageForm textarea {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
 </head>
 <body>
     <h1>Chat del Thread</h1>
@@ -20,41 +45,14 @@
     </form>
 
     <div id="messages">
-        <h3>Mensajes del Thread:</h3>
+        <h3>Mensajes:</h3>
         <ul id="messagesList">
-            <!-- Aquí se cargarán los mensajes del thread -->
+            <!-- Aquí se cargarán los mensajes -->
         </ul>
     </div>
 
     <script>
         const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
-
-        // Función para obtener los mensajes del thread
-        function fetchMessages() {
-            axios.get('/get-thread-messages', {
-                headers: {
-                    'X-CSRF-TOKEN': csrfToken // Token CSRF para proteger la solicitud
-                }
-            })
-            .then(response => {
-                const messages = response.data.messages.data || []; // Obtén los mensajes del thread
-                const messagesList = document.getElementById('messagesList');
-                messagesList.innerHTML = ''; // Limpia la lista actual
-
-                messages.forEach(msg => {
-                    const li = document.createElement('li');
-                    li.textContent = `${msg.role === 'user' ? 'Tú' : 'Bot'}: ${msg.content[0].text.value}`;
-                    messagesList.appendChild(li);
-                });
-            })
-            .catch(error => {
-                console.error("Error al obtener los mensajes:", error.response?.data || error.message);
-                alert("Hubo un error al cargar los mensajes del thread. Inténtalo de nuevo.");
-            });
-        }
-
-        // Cargar mensajes al cargar la página
-        window.onload = fetchMessages;
 
         // Función para enviar un mensaje
         document.getElementById('sendMessageForm').addEventListener('submit', function (e) {
@@ -69,15 +67,27 @@
             }
 
             // Enviar el mensaje al servidor
-            axios.post('/send-message', { message: message }, {
+            axios.post('/chatPost', { message: message }, {
                 headers: {
                     'X-CSRF-TOKEN': csrfToken
                 }
             })
             .then(response => {
-                // Limpiar el campo de texto y recargar mensajes
+                const reply = response.data.reply; // Respuesta del servidor
+                const messagesList = document.getElementById('messagesList');
+
+                // Mostrar el mensaje del usuario
+                const userMessage = document.createElement('li');
+                userMessage.textContent = `Tú: ${message}`;
+                messagesList.appendChild(userMessage);
+
+                // Mostrar la respuesta del bot
+                const botMessage = document.createElement('li');
+                botMessage.textContent = `Bot: ${reply}`;
+                messagesList.appendChild(botMessage);
+
+                // Limpiar el campo de texto
                 document.getElementById('message').value = '';
-                fetchMessages();
             })
             .catch(error => {
                 console.error("Error al enviar el mensaje:", error.response?.data || error.message);

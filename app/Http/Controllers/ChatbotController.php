@@ -14,7 +14,7 @@ class ChatbotController extends Controller
 
     public function chat(Request $request)
     {
-        $apiKey = env('OPENAI_API_KEY'); // Obtiene la clave API desde el archivo .env
+        $serverUrl = 'http://localhost:1234/v1/chat/completions'; // URL del endpoint en LM Studio
         $userInput = $request->input('message'); // Captura el mensaje del usuario desde la solicitud
 
         // Validar que el mensaje no esté vacío
@@ -28,25 +28,26 @@ class ChatbotController extends Controller
             // Configuración del cliente HTTP
             $client = new Client();
 
-            // Realizar la solicitud POST al endpoint de OpenAI
-            $response = $client->post('https://api.openai.com/v1/chat/completions', [
+            // Realizar la solicitud POST al endpoint del modelo en LM Studio
+            $response = $client->post($serverUrl, [
                 'headers' => [
-                    'Authorization' => "Bearer $apiKey", // Clave API para autenticar
-                    'Content-Type' => 'application/json'
+                    'Content-Type' => 'application/json', // Encabezado requerido
                 ],
                 'json' => [
-                    'model' => 'ft:gpt-4o-mini-2024-07-18:personal::AlcZGD1v', // Especifica el modelo a usar
-                    'temperature' => 1, // Respuestas consistentes
+                    'model' => 'llama-3.2-1b-instruct', // Modelo especificado en tu ejemplo
                     'messages' => [
                         [
-                            "role" => "system",
-                            "content" => "Eres un asistente especializado en cursos de programación. Responde únicamente con información relacionada a los cursos y sus precios."
+                            "role" => "assistant",
+                            "content" => "Eres un especialista en ventas y responde resumido",
                         ],
                         [
                             'role' => 'user',
                             'content' => $userInput, // Mensaje del usuario
                         ],
                     ],
+                    'temperature' => 0.7, // Creatividad en las respuestas
+                    'max_tokens' => -1,  // Sin límite de tokens
+                    'stream' => false,   // Respuesta completa en una única solicitud
                 ],
             ]);
 
