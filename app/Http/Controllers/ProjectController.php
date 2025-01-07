@@ -18,18 +18,7 @@ class ProjectController extends Controller
           $Project = Project::orderBy('id','DESC')->get();
           return view("Project.Project", compact("Project"));
     }
-    public function projectDetail(Request $request)
-    {
-        $Project = Project::where("detail", "=", $request->country)->first();
-        if ($Project=="") {
-            abort(404);
-        }
-        else{
-            return view("Project.Project_detail",compact("Project"));
-
-        }
-        
-    }
+ 
     /**
      * Show the form for creating a new resource.
      */

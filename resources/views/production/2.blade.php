@@ -189,7 +189,8 @@
                 <button type="button" style="background-color: orange" data-bs-target="#carouselExample" data-bs-slide-to="2" class="" aria-label="Diapositiva 3"></button>
 
             </div>
-        </div>
+        </div>                        
+<p></p>
 <div class="container-fluid text-light py-5" style="background-image: url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
         <div class="text-center">
 

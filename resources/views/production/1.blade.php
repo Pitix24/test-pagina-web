@@ -358,13 +358,28 @@
         }
     </style>
 
+<a href="https://chatgpt.com/g/g-677d6c87f59481919ce07cf6c74af1d8-asistente-aybar-corp" target="_blank">
+<div id="chatbot-container" >
+   
+        <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy tu asistente virtual
+
+        </div>
+        
+        <div id="chatbot-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
+        </div>
+  
+   
+</div>
+</a>
+
     <!-- Contenedor del botón flotante -->
-    <div id="chatbot-container" onclick="toggleChat()">
+    {{-- <div id="chatbot-container" onclick="toggleChat()">
         <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy tu asistente virtual</div>
         <div id="chatbot-button">
             <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
         </div>
-    </div>
+    </div> --}}
 
     <!-- Ventana de Chat -->
     <div id="chatbot-window">
