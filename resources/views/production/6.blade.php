@@ -85,16 +85,28 @@
         </span></div></section>                        
 <p></p>
 <div class="text-center align-content-center" style="background-color:#054E5C;padding-top:30px;padding-bottom:10px">
-            <h2 class="mb-4"><span style="font-size: 36px;color:white">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE
-                    IDEAL</span></h2>
+            <h2 class="mb-4">
+<span style="font-size: 36px;color:white" class="d-none d-md-block">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE
+                    IDEAL</span>
+<span style="font-size: 16px;color:white" class=" d-md-none">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE
+                    IDEAL</span>
+</h2>
         </div>
 
         <div class="container text-center my-5">
 
 
-            <p class="mb-5"><span style="font-size: 24px;color:#054E5C"><span style="font-size: 30px;">Selecciona la
+            <p class="mb-5"><span style="font-size: 24px;color:#054E5C">
+
+<span style="font-size: 30px;" class="d-none d-md-block">Selecciona la
                         opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto
-                        contigo.</span></span></p>
+                        contigo.
+</span>
+<span style="font-size: 16px;" class=" d-md-none">Selecciona la
+                        opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto
+                        contigo.
+</span>
+</span></p>
             <div class="row justify-content-center g-4">
                 <!-- Card: Soy Cliente Nuevo -->
                 <div class="col-md-5">
