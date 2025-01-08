@@ -112,37 +112,38 @@
                 <i class="ti ti-menu-2 fs-9"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="letter-spacing: 1px;">
-                    <li class="nav-item"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../" style="color: #FFA726">
+                <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="">
+                    <li class="nav-item" style="letter-spacing: 1px;"></li>
+                    <li class="nav-item" style="letter-spacing: 1px;">
+                        <a class="nav-link" aria-current="page" href="../" style="color: #FFA726">
                             <b style="word-spacing: 9px;">INICIO</b>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../nosotros" style="color: #13434d">
+                    <li class="nav-item" style="letter-spacing: 1px;">
+                        <a class="nav-link" aria-current="page" href="../nosotros" style="color: #13434d">
                             <b style="word-spacing: 9px;">NOSOTROS</b>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" style="color: #13434d" href="../../proyectos">PROYECTOS</a>
+                    <li class="nav-item" style="letter-spacing: 1px;">
+                        <a class="nav-link" aria-current="page" style="color: #13434d" href="../proyectos">PROYECTOS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../blog" style="color: #13434d">
+                    <li class="nav-item" style="letter-spacing: 1px;">
+                        <a class="nav-link" aria-current="page" href="../blog" style="color: #13434d">
                             <b style="word-spacing: 9px;">BLOG</b>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../contacto" style="color: #13434d">
+                    <li class="nav-item" style="letter-spacing: 1px;">
+                        <a class="nav-link" aria-current="page" href="../contacto" style="color: #13434d">
                             <b style="word-spacing: 9px;">CONTÁCTANOS</b>
                         </a>
                     </li>
 
-                    <li class="nav-item ms-2">
+                    <li class="nav-item ms-2" style="letter-spacing: 1px;">
                         <a class="btn btn-hover-shadow" href="https://pagos.aybarcorp.com" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
                             <b>PAGA TU LOTE</b>
                         </a>
                     </li>
+ <li class="nav-item ms-2" style=""><a class="btn btn-hover-shadow" href="tel:+5101-9049838" style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 190px;"><span style="letter-spacing: 1px;"><b><font color="#ffffff">01-9049838</font></b></span><b style="color: white; letter-spacing: 1px;">&nbsp;<i class="ti ti-brand-whatsapp fs-5 "></i></b></a></li>
                 </ul>
             </div>
         </div>
@@ -264,11 +265,6 @@
         <a href="logout" class="btn btn-secondary w-100 py-2">Salir</a>
     </div>
 </div>
-
-
-
-
-
 <!-- FIN SECCION -->
 
 

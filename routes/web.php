@@ -35,7 +35,7 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 use App\Http\Controllers\ChatbotController;
 
 Route::get('/chat', [ChatbotController::class, 'index']);
-Route::post('/chatPost', [ChatbotController::class, 'chat'])->middleware('throttle:80,1440');
+Route::post('/chatPost', [ChatbotController::class, 'chat'])->middleware('throttle:1000,1440');
 
 Route::get('proyectos/{description}', [App\Http\Controllers\ProjectController::class, 'projectDetail']);
 
@@ -74,7 +74,7 @@ Route::get('/contacto', function () {
 
 
    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
-   Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:4,1440');
+   Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:200,1440');
    
    Route::get('blog/{url}', [App\Http\Controllers\TopicPublicController::class, 'report']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

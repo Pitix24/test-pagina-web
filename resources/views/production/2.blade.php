@@ -666,7 +666,8 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>                        
+<div id="mycontent"></div>
 <!-- FIN SECCION -->
     </form>
 

@@ -31,7 +31,7 @@ class StoreCustomerRequest extends FormRequest
             'dni' => 'required|min:8|max:15',
             'project_id' => 'required|min:1|max:20',
             'cellphone' => 'required|min:8|max:15',
-            'message' => 'nullable',
+        'message' => 'nullable|string|max:200',
             'code_country' => 'required',
             'data_aprobed_2'=>'required|accepted',
             'data_aprobed_1'=>'required|accepted'

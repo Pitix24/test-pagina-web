@@ -46,13 +46,14 @@ function CustomerStore() {
 }
 
 function CustomerStorePublic() {
+
     var formData = new FormData(document.getElementById("Customer"));
     //obtener codigo de país seleccionado
     let code_country = init.getSelectedCountryData().dialCode; 
     formData.append("code_country", code_country);
     axios({
             method: 'post',
-            url: '../CustomerStorePublic',
+            url: 'CustomerStorePublic',
             data: formData,
             headers: {
                 'Content-Type': 'multipart/form-data'
@@ -71,8 +72,8 @@ function CustomerStorePublic() {
         })
         .catch(function(response) {
             //handle error
-          
-            alert('Verifíque los datos correctamente');
+          console.log(response)
+           alert('Verifíque los datos correctamente');
             window.location.reload();
         });
 

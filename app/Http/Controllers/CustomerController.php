@@ -50,17 +50,18 @@ class CustomerController extends Controller
     }
     public function storePublic(StoreCustomerRequest $request)
     {
-        //funciona localmente con hos
+    //      funciona localmente con hos
         // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
         // $user->notify(new CustomerNotification());
-        // $data =$request->names;
-        // //funciona en goddady
-        // Mail::raw('Cliente nuevo: ' . $data, function ($message) use ($data) {
+        //  $name_ =$request->names;
+        // // //funciona en goddady
+        // Mail::raw('Cliente nuevo: ' . $name_, function ($message) use ($name_) {
         //     $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
         //             ->subject('Un cliente se ha registrado')
                     
         //             ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
         // });
+
         $data = $request->validated();
 
 
@@ -70,7 +71,8 @@ class CustomerController extends Controller
         $Customer->dni = $data["dni"];
         $Customer->project_id = $data["project_id"];
         $Customer->cellphone = $data["code_country"]. $data["cellphone"];
-        $Customer->message = $data["message"];
+        $Customer->message = $data["message"] ?? '';
+
         $Customer->save();
   
  
