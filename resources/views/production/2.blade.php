@@ -47,7 +47,7 @@
                             </div>
                             <!-- Columna central con imagen adicional -->
                             <div class="d-none d-xl-block col-xl-5  align-content-center">
-                                <img src="https://aybar.credilotesperu.com/resource/1734446605_portada%20de%20aybar%20-%20inicio2.jpg" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
+                                <img src="../resource/1734446605_portada%20de%20aybar%20-%20inicio2.jpg" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;">
                             </div>
 
                             <!-- Columna derecha con formulario -->

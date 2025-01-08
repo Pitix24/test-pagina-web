@@ -34,11 +34,11 @@ class ChatbotController extends Controller
                     'Content-Type' => 'application/json', // Encabezado requerido
                 ],
                 'json' => [
-                    'model' => 'llama-3.2-1b-instruct', // Modelo especificado en tu ejemplo
+                    'model' => 'hugging-quants/Llama-3.2-1B-Instruct-Q8_0-GGUF', // Modelo especificado en tu ejemplo
                     'messages' => [
                         [
                             "role" => "assistant",
-                            "content" => "Eres un especialista en ventas y responde resumido",
+                            "content" => "",
                         ],
                         [
                             'role' => 'user',
