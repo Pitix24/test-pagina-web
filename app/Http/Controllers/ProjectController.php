@@ -18,7 +18,19 @@ class ProjectController extends Controller
           $Project = Project::orderBy('id','DESC')->get();
           return view("Project.Project", compact("Project"));
     }
- 
+
+    public function public(Request $request)
+    {
+        $Project = Project::where("detail", "=", $request->description)->first();
+        if ($Project=="") {
+            abort(404);
+        }
+        else{
+            return view("Project.Project_detail",compact("Project"));
+
+        }
+        
+    }
     /**
      * Show the form for creating a new resource.
      */
@@ -34,20 +46,72 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $Project = new Project;
+    
+        // Asignación básica de campos
         $Project->title = $request->title;
         $Project->description = $request->description;
         $Project->detail = $request->detail;
         $Project->location = $request->location;
         $Project->country = $request->country;
-
-             //file
-             if ($request->file('image_1') != null) {
-                $request->image_1 = fileStore($request->file('image_1'), "resource");
-                $Project->image_1 = $request->image_1;
+    
+        // Manejo de la imagen principal
+        if ($request->file('image_1') != null) {
+            $Project->image_1 = fileStore($request->file('image_1'), "resource");
+        }
+    
+        // Manejo de fotos adicionales (photo_1 a photo_10)
+        for ($i = 1; $i <= 10; $i++) {
+            $photoField = "photo_$i";
+            if ($request->file($photoField) != null) {
+                $Project->$photoField = fileStore($request->file($photoField), "resource");
             }
+        }
+    
+        // Manejo de mapas (map_1 y map_2)
+        for ($i = 1; $i <= 2; $i++) {
+            $mapField = "map_$i";
+            if ($request->file($mapField) != null) {
+                $Project->$mapField = fileStore($request->file($mapField), "resource");
+            }
+        }
+    
+        // Manejo de videos (video_1 a video_10)
+        for ($i = 1; $i <= 10; $i++) {
+            $videoField = "video_$i";
+            if ($request->$videoField) {
+                $Project->$videoField = $request->$videoField;
+            }
+        }
+    
+        // Manejo de subproyectos (subproject_1 a subproject_5)
+        for ($i = 1; $i <= 5; $i++) {
+            $subprojectField = "subproject_$i";
+            if ($request->$subprojectField) {
+                $Project->$subprojectField = $request->$subprojectField;
+            }
+        }
+    
+        // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
+        for ($i = 1; $i <= 6; $i++) {
+            $touristField = "tourist_$i";
+            $touristImageField = "tourist_image_$i";
+    
+            if ($request->$touristField) {
+                $Project->$touristField = $request->$touristField;
+            }
+    
+            if ($request->file($touristImageField) != null) {
+                $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
+            }
+        }
+    
+        // Guardar en la base de datos
         $Project->save();
+    
+        // Retornar la vista de creación
         return $this->create();
     }
+    
 
     /**
      * Display the specified resource.
@@ -72,18 +136,69 @@ class ProjectController extends Controller
     public function update(Request $request)
     {
         $Project = Project::find($request->id);
-        $Project->title = $request->title;
-        $Project->description = $request->description;
-        $Project->detail = $request->detail;
-        $Project->location = $request->location;
-        $Project->country = $request->country;
-             //file
-             if ($request->file('image_1') != null) {
-                $request->image_1 = fileStore($request->file('image_1'), "resource");
-                $Project->image_1 = $request->image_1;
-            }
-        $Project->save();
-        return $this->create();
+     // Asignación básica de campos
+     $Project->title = $request->title;
+     $Project->description = $request->description;
+     $Project->detail = $request->detail;
+     $Project->location = $request->location;
+     $Project->country = $request->country;
+ 
+     // Manejo de la imagen principal
+     if ($request->file('image_1') != null) {
+         $Project->image_1 = fileStore($request->file('image_1'), "resource");
+     }
+ 
+     // Manejo de fotos adicionales (photo_1 a photo_10)
+     for ($i = 1; $i <= 10; $i++) {
+         $photoField = "photo_$i";
+         if ($request->file($photoField) != null) {
+             $Project->$photoField = fileStore($request->file($photoField), "resource");
+         }
+     }
+ 
+     // Manejo de mapas (map_1 y map_2)
+     for ($i = 1; $i <= 2; $i++) {
+         $mapField = "map_$i";
+         if ($request->file($mapField) != null) {
+             $Project->$mapField = fileStore($request->file($mapField), "resource");
+         }
+     }
+ 
+     // Manejo de videos (video_1 a video_10)
+     for ($i = 1; $i <= 10; $i++) {
+         $videoField = "video_$i";
+         if ($request->$videoField) {
+             $Project->$videoField = $request->$videoField;
+         }
+     }
+ 
+     // Manejo de subproyectos (subproject_1 a subproject_5)
+     for ($i = 1; $i <= 5; $i++) {
+         $subprojectField = "subproject_$i";
+         if ($request->$subprojectField) {
+             $Project->$subprojectField = $request->$subprojectField;
+         }
+     }
+ 
+     // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
+     for ($i = 1; $i <= 6; $i++) {
+         $touristField = "tourist_$i";
+         $touristImageField = "tourist_image_$i";
+ 
+         if ($request->$touristField) {
+             $Project->$touristField = $request->$touristField;
+         }
+ 
+         if ($request->file($touristImageField) != null) {
+             $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
+         }
+     }
+ 
+     // Guardar en la base de datos
+     $Project->save();
+ 
+     // Retornar la vista de creación
+     return $this->create();
     }
 
     /**
@@ -92,8 +207,41 @@ class ProjectController extends Controller
     public function destroy(Request $request)
     {
         $table = Project::find($request["id"]);
-        fileDestroy($table->image_1, "resource");
-        Project::find($request->id)->delete();
+    
+        if ($table) {
+            // Eliminar imagen principal
+            fileDestroy($table->image_1, "resource");
+    
+            // Eliminar mapas
+            for ($i = 1; $i <= 2; $i++) {
+                $mapField = "map_$i";
+                if ($table->$mapField) {
+                    fileDestroy($table->$mapField, "resource");
+                }
+            }
+    
+            // Eliminar fotos
+            for ($i = 1; $i <= 10; $i++) {
+                $photoField = "photo_$i";
+                if ($table->$photoField) {
+                    fileDestroy($table->$photoField, "resource");
+                }
+            }
+    
+            // Eliminar imágenes turísticas
+            for ($i = 1; $i <= 6; $i++) {
+                $touristImageField = "tourist_image_$i";
+                if ($table->$touristImageField) {
+                    fileDestroy($table->$touristImageField, "resource");
+                }
+            }
+    
+            // Eliminar el registro de la base de datos
+            $table->delete();
+        }
+    
+        // Redirigir al método create
         return $this->create();
     }
+    
 }

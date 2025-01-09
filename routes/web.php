@@ -37,7 +37,7 @@ use App\Http\Controllers\ChatbotController;
 Route::get('/chat', [ChatbotController::class, 'index']);
 Route::post('/chatPost', [ChatbotController::class, 'chat'])->middleware('throttle:1000,1440');
 
-Route::get('proyectos/{description}', [App\Http\Controllers\ProjectController::class, 'projectDetail']);
+Route::get('proyectos/{description}', [App\Http\Controllers\ProjectController::class, 'public']);
 
 Auth::routes();
 
@@ -118,6 +118,13 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('ProjectDestroy', [App\Http\Controllers\ProjectController::class, 'destroy'])->middleware('permission:administrar|eliminar');
     Route::post('ProjectEdit', [App\Http\Controllers\ProjectController::class, 'edit'])->middleware('permission:administrar|editar');
     Route::post('ProjectUpdate', [App\Http\Controllers\ProjectController::class, 'update'])->middleware('permission:administrar|actualizar');
+
+
+    Route::get('admin/proyectos_detalle', [App\Http\Controllers\ProjectDetailController::class, 'index'])->middleware('permission:administrar|proyectos');
+    Route::post('ProjectDetailStore', [App\Http\Controllers\ProjectDetailController::class, 'store'])->middleware('permission:administrar|agregar');
+    Route::post('ProjectDetailDestroy', [App\Http\Controllers\ProjectDetailController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+    Route::post('ProjectDetailEdit', [App\Http\Controllers\ProjectDetailController::class, 'edit'])->middleware('permission:administrar|editar');
+    Route::post('ProjectDetailUpdate', [App\Http\Controllers\ProjectDetailController::class, 'update'])->middleware('permission:administrar|actualizar');
 
 
    //ADMINISTRATIVO

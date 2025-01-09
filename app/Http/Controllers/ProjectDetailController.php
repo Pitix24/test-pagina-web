@@ -13,7 +13,8 @@ class ProjectDetailController extends Controller
      */
     public function index()
     {
-        //
+        $Project = ProjectDetail::where("project_id")->orderBy('id','DESC')->get();
+        return view("ProjectDetail.ProjectDetail", compact("ProjectDetail"));
     }
     public function list(Request $request)
     {
