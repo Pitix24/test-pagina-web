@@ -52,6 +52,9 @@ class ProjectController extends Controller
         $Project->description = $request->description;
         $Project->detail = $request->detail;
         $Project->location = $request->location;
+        $Project->land = $request->land;
+        $Project->land_count = $request->land_count;
+        
         $Project->country = $request->country;
     
         // Manejo de la imagen principal
@@ -141,7 +144,11 @@ class ProjectController extends Controller
      $Project->description = $request->description;
      $Project->detail = $request->detail;
      $Project->location = $request->location;
+     $Project->land = $request->land;
+     $Project->land_count = $request->land_count;
+     
      $Project->country = $request->country;
+
  
      // Manejo de la imagen principal
      if ($request->file('image_1') != null) {
@@ -167,9 +174,9 @@ class ProjectController extends Controller
      // Manejo de videos (video_1 a video_10)
      for ($i = 1; $i <= 10; $i++) {
          $videoField = "video_$i";
-         if ($request->$videoField) {
+         
              $Project->$videoField = $request->$videoField;
-         }
+        
      }
  
      // Manejo de subproyectos (subproject_1 a subproject_5)

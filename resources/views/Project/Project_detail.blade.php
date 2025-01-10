@@ -87,31 +87,31 @@
     </div>
 
 
-    <div class="container py-5">
+    <div class="container py-1">
         <div class="row text-center">
             <!-- Elemento 1 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#F6A42C;width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736462848_1734640986_Mision.png" alt="Placeholder" class="img-fluid p-3">
+                style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                <img src="../resource/1736540612_ICONO%201.svg" alt="Placeholder"style="margin:-15px" class="">
                 </div>
-                <p class="mt-3 fw-bold text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->location}}</p>
             </div>
             <!-- Elemento 2 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#F6A42C;width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736462848_1734640986_Mision.png" alt="Placeholder" class="img-fluid p-3">
+                    style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../resource/1736540595_ICONO%202.svg" alt="Placeholder"width="" class=""style="margin:-15px">
                 </div>
-                <p class="mt-3 fw-bold text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->land}}</p>
             </div>
             <!-- Elemento 3 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#F6A42C;width: 80px; height: 80px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736462848_1734640986_Mision.png" alt="Placeholder" class="img-fluid p-3">
+                    style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../resource/1736540585_ICONO%203.svg" alt="Placeholder"width="" class=""style="margin:-15px">
                 </div>
-                <p class="mt-3 fw-bold text-primary">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,</p>
+                <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->land_count}}</p>
             </div>
         </div>
     </div>
@@ -456,54 +456,68 @@
         <!-- Contenido sobre el video -->
         <div style="position: relative; z-index: 1; color: white;">
 
-            <div id="bootstrapCarousel" class="py-5 carousel slide" data-bs-ride="carousel"data-bs-interval="30000" >
+            <div id="bootstrapCarousel" class="py-5 carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
                 <!-- Indicadores -->
-                <div class="carousel-indicators ">
-                    <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1" style="background-color: #F6A42C"></button>
-                    <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="1"
-                        aria-label="Slide 2"style="background-color: #F6A42C"></button>
+                <div class="carousel-indicators">
+                    @php $totalSlides = 0; @endphp
+                    @for ($i = 1; $i <= 10; $i += 2)
+                        @php
+                            $video_1 = "video_" . $i;
+                            $video_2 = "video_" . ($i + 1);
+                        @endphp
+                        @if (!empty($Project->$video_1) || !empty($Project->$video_2))
+                            <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="{{ $totalSlides }}" 
+                                class="{{ $totalSlides === 0 ? 'active' : '' }}" aria-current="{{ $totalSlides === 0 ? 'true' : '' }}" 
+                                aria-label="Slide {{ $totalSlides + 1 }}" style="background-color: #F6A42C"></button>
+                            @php $totalSlides++; @endphp
+                        @endif
+                    @endfor
                 </div>
-        
+            
                 <!-- Contenido del Carrusel -->
                 <div class="carousel-inner">
-                    <!-- Primer Grupo de Videos -->
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <lite-youtube videoid="dQw4w9WgXcQ" autoload style="width: 100%; height: 300px;border-radius:10px"></lite-youtube>
+                    @php $activeSet = false; @endphp
+                    @for ($i = 1; $i <= 10; $i += 2)
+                        @php
+                            $video_1 = "video_" . $i;
+                            $video_2 = "video_" . ($i + 1);
+                        @endphp
+                        @if (!empty($Project->$video_1) || !empty($Project->$video_2))
+                            <div class="carousel-item {{ !$activeSet ? 'active' : '' }}">
+                                <div class="row">
+                                    <!-- Primer Video del Grupo -->
+                                    @if (!empty($Project->$video_1))
+                                        <div class="col-md-6">
+                                            <lite-youtube videoid="{{ $Project->$video_1 }}" autoload 
+                                                style="width: 100%; height: 300px; border-radius: 10px"></lite-youtube>
+                                        </div>
+                                    @endif
+            
+                                    <!-- Segundo Video del Grupo -->
+                                    @if (!empty($Project->$video_2))
+                                        <div class="col-md-6">
+                                            <lite-youtube videoid="{{ $Project->$video_2 }}" autoload 
+                                                style="width: 100%; height: 300px; border-radius: 10px"></lite-youtube>
+                                        </div>
+                                    @endif
+                                </div>
                             </div>
-                            <div class="col-md-6">
-                                <lite-youtube videoid="kJQP7kiw5Fk"autoload style="width: 100%; height: 300px;border-radius:10px"></lite-youtube>
-                            </div>
-                           
-                        </div>
-                    </div>
-        
-                    <!-- Segundo Grupo de Videos -->
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <lite-youtube videoid="eVTXPUF4Oz4"autoload style="width: 100%; height: 300px;border-radius:10px"></lite-youtube>
-                            </div>
-                          
-                            <div class="col-md-6">
-                                <lite-youtube videoid="L_jWHffIx5E"autoload style="width: 100%; height: 300px;border-radius:10px"></lite-youtube>
-                            </div>
-                        </div>
-                    </div>
+                            @php $activeSet = true; @endphp
+                        @endif
+                    @endfor
                 </div>
-        
+            
                 <!-- Controles de Navegación -->
-                <button class="carousel-control-prev " type="button" data-bs-target="#bootstrapCarousel" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#bootstrapCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden ">Previous</span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#bootstrapCarousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            
 
 
         </div>

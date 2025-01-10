@@ -41,6 +41,9 @@ function ProjectEdit(id) {
       Project.description.value = response.data["description"];
       Project.detail.value = response.data["detail"];
       Project.location.value = response.data["location"];
+      Project.land.value = response.data["land"];
+      Project.land_count.value = response.data["land_count"];
+
       Project.country.value = response.data["country"];
 
       // Manejo de la imagen principal

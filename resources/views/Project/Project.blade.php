@@ -70,6 +70,10 @@
                             <input type="text" name="description" id="description" class="form-control">
                             <label>Locación:</label>
                             <input type="text" name="location" id="location" class="form-control">
+                            <label>Terrenos:</label>
+                            <input type="text" name="land" id="land" class="form-control">
+                            <label>Terrenos Capacidad:</label>
+                            <input type="text" name="land_count" id="land_count" class="form-control">
                             <label>País:</label>
                             <select name="country" id="country" class="form-control">
                                 <option value="lima">Lima</option>

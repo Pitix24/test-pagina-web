@@ -21,6 +21,9 @@ return new class extends Migration
 
             $table->string('country'); // 
             $table->string('location')->nullable(); //
+            $table->string('land')->nullable(); //
+            $table->string('land_count')->nullable(); //
+            
             $table->string('map_1')->nullable(); //
             $table->string('map_2')->nullable(); //
             $table->string('photo_1')->nullable(); //

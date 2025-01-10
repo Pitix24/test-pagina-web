@@ -34,6 +34,7 @@
             border-radius: 15px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
         }
 
         .card-hover img {
@@ -170,8 +171,8 @@
         <h2 class="display-6 text-center mb-4" style="word-spacing:8px;letter-spacing:3px"><b>UBICA TU PRÓXIMO HOGAR</b>
         </h2>
         <p class="fs-7 mb-5" style="color:#03424E;text-align:center">
-            Somos una inmobiliaria completamente peruana, dedicada a la creación de proyectos inmobiliarios
-            de terrenos de todas las familias del Perú. Ofrecemos terrenos exclusivos en el país.
+            Encuentra el lugar ideal para comenzar una nueva etapa. Descubre proyectos estratégicamente ubicados, rodeados
+            de oportunidades, naturaleza y todo lo que necesitas para construir tu futuro.
         </p>
         <div class="row">
             <!-- Tarjeta Lima -->
@@ -181,8 +182,18 @@
                 <div class="card card-hover shadow" style="position: relative; width:100%;" data-bs-toggle="modal" data-bs-target="#modalLima">
                     <img src="../resource/1735593981_Lima.png" class="card-img-top" alt="Lima">
                     <h2 class="bottom-0 text-white start-20 p-3 pb-0" style="position: absolute;">LIMA METROPOLITANA</h2>
-                    <div class="hover-content">
-                        <p class="fw-bold">Explora las oportunidades en Lima</p>
+                    <div class="hover-content container text-white" style="background-color:#03424E;">
+
+                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
+                            <b class="fs-8">Lima</b><br>&nbsp; <br>
+                            <b>Más de 18 proyectos en la capital del Perú </b><br>
+                            Desde la cercanía a centros urbanos hasta vistas panorámicas al mar, nuestros proyectos en Lima
+                            te ofrecen opciones estratégicas para vivir o invertir. <br>&nbsp; <br>
+                            Están diseñados para conectar con la modernidad y
+                            tradición de la ciudad, además de garantizar un alto nivel de plusvalía.
+
+                        </p>
+
                     </div>
                     <div class="button">
                         <span class="arrow"></span>
@@ -192,7 +203,7 @@
                 <!-- Modal -->
                 <div class="modal fade" id="modalLima" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
-                   
+
                         <div class="modal-content" style="background: linear-gradient(to top, #e0e0e0 10%, #ffffff 90%);">
                             <div class="modal-header">
 
@@ -245,8 +256,19 @@
                 <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalIca">
                     <img src="../resource/1735593994_Ica.png" class="card-img-top" alt="Ica">
                     <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">ICA</h1>
-                    <div class="hover-content">
-                        <p class="fw-bold">Descubre los proyectos en Ica</p>
+                    <div class="hover-content container text-white" style="background-color:#03424E;">
+
+                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
+                            <b class="fs-8">Ica</b> <br>&nbsp; <br>
+                            <b>5 proyectos únicos en la tierra del sol y el vino</b>
+                            <br>
+                            Ica te invita a descubrir el lugar perfecto para vivir, cada proyecto está
+                            cerca de destinos turísticos,
+                            asegurando una excelente inversión y calidad de vida.
+
+
+                        </p>
+
                     </div>
                     <div class="button">
                         <span class="arrow"></span>
@@ -255,7 +277,7 @@
 
                 <div class="modal fade" id="modalIca" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
-                      
+
                         <div class="modal-content" style="background: linear-gradient(to top, #e0e0e0 10%, #ffffff 90%);">
                             <div class="modal-header">
 
@@ -319,8 +341,19 @@
                 <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalHuaral">
                     <img src="../resource/1736172777_Huaral.png" class="card-img-top" alt="Huaral">
                     <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUARAL</h1>
-                    <div class="hover-content">
-                        <p class="fw-bold">Explora las oportunidades en Huaral</p>
+                    <div class="hover-content container text-white" style="background-color:#03424E;">
+
+                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
+                            <b class="fs-8">Huaral</b> <br>&nbsp; <br>
+                            <b>Tu próxima inversión en el corazón del desarrollo</b>
+                            <br>
+                            
+                            Huaral ofrece una ubicación privilegiada, rodeada de naturaleza y conectividad.
+                            <br>&nbsp; <br>
+                             Descubre proyectos diseñados para garantizar tu bienestar y un crecimiento constante en valor.
+
+
+                        </p>
                     </div>
 
                     <div class="button">
@@ -331,7 +364,7 @@
 
                 <div class="modal fade" id="modalHuaral" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
-                       
+
                         <div class="modal-content" style="background: linear-gradient(to top, #e0e0e0 10%, #ffffff 90%);">
                             <div class="modal-header">
 
@@ -378,65 +411,73 @@
                     </div>
                 </div>
             </div>
-       
-        <!-- Tarjeta Huacho -->
-        <div class="col-lg-6 col-xl-4 col-md-6">
-            <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalHuacho">
-                <img src="../resource/1736172763_Huacho.png" class="card-img-top" alt="Huacho">
-                <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUACHO</h1>
-                <div class="hover-content">
-                    <p class="fw-bold">Descubre los proyectos en Huacho</p>
-                </div>
-                <div class="button">
-                    <span class="arrow"></span>
-                </div>
-            </div>
 
+            <!-- Tarjeta Huacho -->
+            <div class="col-lg-6 col-xl-4 col-md-6">
+                <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalHuacho">
+                    <img src="../resource/1736172763_Huacho.png" class="card-img-top" alt="Huacho">
+                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUACHO</h1>
+                    <div class="hover-content container text-white" style="background-color:#03424E;">
 
-            <div class="modal fade" id="modalHuacho" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-               
-                <div class="modal-content" style="background: linear-gradient(to top, #e0e0e0 10%, #ffffff 90%);">
-                    <div class="modal-header">
+                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
+                            <b class="fs-8">Huacho</b> <br>&nbsp; <br>
+                            <b>Proyectos estratégicos en la ciudad costera</b>
+                            <br>
+                            
+                            Ubicados en una de las zonas con mayor proyección de desarrollo, nuestros proyectos en Huacho combinan tranquilidad, acceso a servicios y una excelente oportunidad de inversión.
 
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </p>
+                     
+                       
                     </div>
-                    <div class="modal-body">
-                        <div class="container text-center">
-                            <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
-                                con megaproyectos.</h2>
+                    <div class="button">
+                        <span class="arrow"></span>
+                    </div>
+                </div>
 
-                            <div class="row align-content-center text-center justify-content-center">
-                                <div class="col-lg-4">
-                                    <a href="../proyectos/maria_drago">
 
-                                        <img src="../resource/1736199453_mariadrago.png" width="90%" alt="" srcset="" style="border-radius: 20px">
-                                        <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
-                                                <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
-                                                    más</span>
-                                            </span></button>
-                                    </a>
+                <div class="modal fade" id="modalHuacho" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content" style="background: linear-gradient(to top, #e0e0e0 10%, #ffffff 90%);">
+                            <div class="modal-header">
+
+                                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container text-center">
+                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
+                                        con megaproyectos.</h2>
+
+                                    <div class="row align-content-center text-center justify-content-center">
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/maria_drago">
+
+                                                <img src="../resource/1736199453_mariadrago.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+
+
+                                    </div>
+
+
+
                                 </div>
-                               
 
                             </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
 
-
-
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-    </div>                       </div> 
-<div>
-<video src="../resource/2rJ6omBL3yy3KT8iSburE33P6SN.mp4" autoplay="" loop="" muted="" style="width:100%"></video>   
-</div>
+    </div>
 <!-- FIN SECCION -->
 @endsection
