@@ -113,7 +113,7 @@
 
 
                                     <input class="form-control" type="file" id="imgInp"
-                                        name="image_1"onchange="readImage(this,'#blah');image.title.value=this.files[0].name" accept=".jpg,.png,.svg,.jpeg,.webm">
+                                        name="image_1"onchange="readImage(this,'#blah');image.title.value=this.files[0].name" accept=".jpg,.png,.svg,.jpeg,.webm,.gif,.mp4">
 
 
 
