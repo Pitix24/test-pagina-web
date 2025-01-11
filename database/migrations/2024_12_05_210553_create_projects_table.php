@@ -67,6 +67,16 @@ return new class extends Migration
             $table->string('subproject_3')->nullable(); //
             $table->string('subproject_4')->nullable(); //
             $table->string('subproject_5')->nullable(); //
+            $table->string('subproject_6')->nullable(); //
+
+            $table->string('subproject_image_1')->nullable(); //
+            $table->string('subproject_image_2')->nullable(); //
+            $table->string('subproject_image_3')->nullable(); //
+            $table->string('subproject_image_4')->nullable(); //
+            $table->string('subproject_image_5')->nullable(); //
+            $table->string('subproject_image_6')->nullable(); //
+
+
             $table->timestamps();
         });
     }

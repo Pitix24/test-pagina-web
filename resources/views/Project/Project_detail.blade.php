@@ -8,9 +8,9 @@
         </div>
     </div>
 
-    <div class="py-0 container-fluid text-center " style="background-color: #F6A42C">
+    <div class="py-0 container-fluid text-center " style="background-color: #FFA726">
         <div class="row">
-            <div class="col-1 py-4"style="background-color:#F6A42C">
+            <div class="col-1 py-4"style="background-color:#FFA726">
 
             </div>
 
@@ -22,7 +22,7 @@
             <div
                 class="d-none d-xl-block  col-xl-2 pt-5 pb-4"style="background-color:#03424E;margin-top:-3%;position:relative;">
                 <!-- Línea divisora -->
-                <div class="vr" style="border:solid 1px #F6A42C">
+                <div class="vr" style="border:solid 1px #FFA726">
                     &nbsp;
                     &nbsp;
                     &nbsp;
@@ -34,7 +34,7 @@
                 <h3>SEPARA TU LOTE DESDE</h3>
                 <h2 class="fw-bold text-white">PRE VENTA</h2>
             </div>
-            <div class="col-1 py-4"style="background-color:#F6A42C">
+            <div class="col-1 py-4"style="background-color:#FFA726">
 
             </div>
         </div>
@@ -52,7 +52,7 @@
 
 
     <!-- Navegación inferior -->
-    <div class="py-3"style="background-color:#F6A42C">
+    <div class="py-3"style="background-color:#FFA726">
         <div class="container text-center">
             <nav class="nav justify-content-center">
                 <a class="nav-link text-dark fw-bold" href="#ubicacion">Ubicación</a>
@@ -92,7 +92,7 @@
             <!-- Elemento 1 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
                 <img src="../resource/1736540612_ICONO%201.svg" alt="Placeholder"style="margin:-15px" class="">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->location}}</p>
@@ -100,7 +100,7 @@
             <!-- Elemento 2 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
                     <img src="../resource/1736540595_ICONO%202.svg" alt="Placeholder"width="" class=""style="margin:-15px">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->land}}</p>
@@ -108,7 +108,7 @@
             <!-- Elemento 3 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#F6A42C;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
                     <img src="../resource/1736540585_ICONO%203.svg" alt="Placeholder"width="" class=""style="margin:-15px">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{$Project->land_count}}</p>
@@ -347,18 +347,21 @@
     </style>
 
     <div class="py-1 container-fluid"
-        style="background: linear-gradient(to right, #03424E 10%, #04505f 20%, #04505f 70%, #03424E 90%)">
-        <h2 class="text-center pt-5" style="color:#F6A42C;margin-bottom:-20px">FOTOS Y VIDEOS</h2>
+        style="background: linear-gradient(to right, #011a20 0%, #043f49 30%, #043f49 80%, #011a20   100%)">
+        <h2 class="text-center pt-5" style="color:#FFA726;margin-bottom:-20px">FOTOS Y VIDEOS</h2>
         <div class="image-slider-container">
             <div class="image-slider">
-                <img src="http://aybar_laravel.test/resource/1736450467_Mapa-camtabria.png" class="hidden"
-                    alt="Imagen 1">
-                <img src="http://aybar_laravel.test/resource/1736450467_Mapa-camtabria.png" class="active"
-                    alt="Imagen 2">
-                <img src="http://aybar_laravel.test/resource/1736450467_Mapa-camtabria.png" class="hidden"
-                    alt="Imagen 3">
-                <img src="http://aybar_laravel.test/resource/1736450467_Mapa-camtabria.png" class="hidden"
-                    alt="Imagen 4">
+                @for($i = 0; $i <=10; $i++)
+                @php
+                $photo = "photo_".$i;
+                @endphp
+                @if ($Project->$photo)
+                <img src="../resource/{{$Project->$photo}}" class="hidden"
+                alt="Imagen 1">
+                @endif
+                @endfor
+              
+               
             </div>
             <div class="image-slider-indicators">
                 <span class="indicator"></span>
@@ -468,7 +471,7 @@
                         @if (!empty($Project->$video_1) || !empty($Project->$video_2))
                             <button type="button" data-bs-target="#bootstrapCarousel" data-bs-slide-to="{{ $totalSlides }}" 
                                 class="{{ $totalSlides === 0 ? 'active' : '' }}" aria-current="{{ $totalSlides === 0 ? 'true' : '' }}" 
-                                aria-label="Slide {{ $totalSlides + 1 }}" style="background-color: #F6A42C"></button>
+                                aria-label="Slide {{ $totalSlides + 1 }}" style="background-color: #FFA726"></button>
                             @php $totalSlides++; @endphp
                         @endif
                     @endfor
@@ -592,12 +595,187 @@
       </div>
     
 
+  
+
+
+      <style>
+        .flip-card-custom-wrapper {
+          perspective: 1000px;
+          position: relative;
+        }
+    
+        .flip-card-custom {
+          /* will-change: transform;
+          transform-style: preserve-3d; */
+          transform: scale(1.001);
+          transition: transform 0.6s;
+          position: relative;
+        }
+    
+        .flip-card-custom-wrapper:hover .flip-card-custom {
+          transform: rotateY(180deg);
+        }
+    
+        .flip-card-custom-front, .flip-card-custom-back {
+          backface-visibility: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: translateZ(1px);
+        }
+    
+        .flip-card-custom-back {
+          transform: rotateY(180deg);
+        }
+      </style>
+ <div class="container py-5">
+    <h2 class="text-center mb-4">Conoce Nuestros Proyectos</h2>
+    <div class="row justify-content-center g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="flip-card-custom-wrapper">
+          <div class="flip-card-custom" >
+            <div class="card  text-center p-3  text-white"style="background-image: url('../resource/{{$Project->subproject_image_1}}');
+            border:solid 4px black;border-radius:70px;
+            height:400px">
+            <div class="container-fluid">
+
+                <h3 style="">Proyecto Concluido</h3>
+            </div>
+              <h3>Pontevedra</h3>
+            <div class="text-center">
+                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                    <b>Ver Más</b>
+                </a>
+            </div>
+              
+            </div>
+            <div class="card flip-card-custom-back bg-secondary text-white text-center p-3">
+                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                    <b>Ver Más</b>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <script>
+    // Ejecutar cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', ProjectList);
+</script>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color:#054E5C">
+            <div class="modal-header">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                    <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO
+                                INFORMACIÓN DE UN LOTE</span></b></p>
+
+
+                    <select class="form-control" name="project_id" id="project_id" style="color: white; background-color: #055261">
+                        <option value="">Seleccione un proyecto</option>
+                    </select>
+                    <br>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
+                    </div>
+                    <div class="form-floating mb-3">
+
+
+                        <input type="text" id="phone" class="form-control iti__tel-input" name="cellphone" placeholder="Número de Teléfono" style="color: white; width: 100%; padding-left: 74px;" autocomplete="off" data-intl-tel-input-id="0">
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
+
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()">
+                        <div class="form-text text-white">
+                            <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-check text-start">
+                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+                        <label class="form-check-label fs-3" for="txtTratamientoDatos">
+                            <span class="fs-2">He leído y acepto la </span>
+                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
+                                Política para envío de comunicaciones comerciales.
+                            </a>
+                        </label>
+                    </div>
+
+                    <div class="form-check text-start ">
+                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+                        <label class="form-check-label fs-3" for="txtTratamientoDatos2">
+                            <span class="fs-2">He leído y acepto el </span>
+                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
+                                Tratamiento de mis datos personales.
+                            </a>
+                        </label>
+                    </div>
 
 
 
 
+                    <div class="text-center"><span style="font-size: 9px;">
 
+                        </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
+                                    datos</span>
+                            </span></button><span style="font-size: 9px;">
+                        </span></div><span style="font-size: 9px;">
+                    </span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn bg-white text-dark" style="background-color:black" data-bs-dismiss="modal">Cerrar</button>
 
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
+<p>
+    &nbsp;
+</p>
 
     <style>
         /* Personalización de las tarjetas */

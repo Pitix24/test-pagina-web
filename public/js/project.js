@@ -84,14 +84,43 @@ function ProjectEdit(id) {
       }
 
       // Manejo de subproyectos (subproject_1 a subproject_5)
-      for (let i = 1; i <= 5; i++) {
-        let subprojectField = "subproject_" + i;
-        if (response.data[subprojectField] != null) {
-          Project[subprojectField].value = response.data[subprojectField];
-        } else {
-          Project[subprojectField].value = "";
-        }
-      }
+      // for (let i = 1; i <= 6; i++) {
+      //   let subprojectField = "subproject_" + i;
+      //   if (response.data[subprojectField] != null) {
+      //     Project[subprojectField].value = response.data[subprojectField];
+      //   } else {
+      //     Project[subprojectField].value = "";
+      //   }
+      // }
+
+   // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
+   for (let i = 1; i <= 6; i++) {
+    let subProjectField = "subproject_" + i;subProjectImagePreview_1
+    let subProjectImageField = "subProjectImagePreview_" + i;
+    let subProjectImagePreview = document.getElementById(subProjectImageField);
+
+    if (response.data[subProjectField] != null) {
+      Project[subProjectField].value = response.data[subProjectField];
+    } else {
+      Project[subProjectField].value = "";
+    }
+
+    if (response.data["subproject_image_"+i] != null) {
+      subProjectImagePreview.src = "../resource/" + response.data["subproject_image_"+i];
+    } else {
+      subProjectImagePreview.src = "https://placehold.co/150";
+    }
+  }
+
+
+
+
+
+
+
+
+
+
 
       // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
       for (let i = 1; i <= 6; i++) {

@@ -6,11 +6,12 @@
             </th>
             <th>ID</th>
             <th>Título</th>
+            <th>Ver</th>
             <th>Departamento</th>
-       
+
             <th>Descripción</th>
-            <th>Detalle</th>
-     
+            <th>url</th>
+
         </tr>
     </thead>
     <tbody>
@@ -26,9 +27,9 @@
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             @canany(['administrar', 'editar'])
                                 <li>
-                                    <a onclick="ProjectEdit('{{ $Projects->id }}'); Up(); return false" 
-                                       data-bs-toggle="modal" data-bs-target="#success-header-modal"
-                                       class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
+                                    <a onclick="ProjectEdit('{{ $Projects->id }}'); Up(); return false"
+                                        data-bs-toggle="modal" data-bs-target="#success-header-modal"
+                                        class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)">
                                         <i class="fs-4 ti ti-edit"></i> Editar
                                     </a>
                                 </li>
@@ -36,7 +37,7 @@
                             @canany(['administrar', 'eliminar'])
                                 <li>
                                     <a class="dropdown-item d-flex align-items-center gap-3" href="javascript:void(0)"
-                                       onclick="ProjectDestroy('{{ $Projects->id }}'); return false">
+                                        onclick="ProjectDestroy('{{ $Projects->id }}'); return false">
                                         <i class="fs-4 ti ti-trash"></i> Eliminar
                                     </a>
                                 </li>
@@ -45,24 +46,23 @@
                     </div>
                 </td>
 
-                <!-- ID -->
+
                 <td>{{ $Projects->id }}</td>
 
-                <!-- Título -->
+
                 <td>{{ $Projects->title }}</td>
 
-                <!-- Departamento -->
+                <td>
+                    <a href="../proyectos/{{ $Projects->detail }}"target="_blank">
+                        {{url('/proyectos/'.$Projects->detail )}}
+                    </a>
+                    </td>
+
                 <td>{{ $Projects->country }}</td>
-
-              
-
-                <!-- Descripción -->
                 <td>{{ $Projects->description }}</td>
-
-                <!-- Detalle -->
                 <td>{{ $Projects->detail }}</td>
 
-          
+
             </tr>
         @endforeach
     </tbody>
@@ -73,11 +73,12 @@
             </th>
             <th>ID</th>
             <th>Título</th>
+            <th>Ver</th>
             <th>Departamento</th>
-      
+
             <th>Descripción</th>
-            <th>Detalle</th>
-       
+            <th>url</th>
+
         </tr>
     </tfoot>
 </table>
