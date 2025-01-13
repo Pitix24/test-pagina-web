@@ -602,21 +602,24 @@
         .flip-card-custom-wrapper {
           perspective: 1000px;
           position: relative;
+         
         }
-    
+      
         .flip-card-custom {
-          /* will-change: transform;
-          transform-style: preserve-3d; */
+          will-change: transform;
+          /* transform-style: preserve-3d; */
           transform: scale(1.001);
           transition: transform 0.6s;
           position: relative;
+          
         }
-    
+      
         .flip-card-custom-wrapper:hover .flip-card-custom {
           transform: rotateY(180deg);
         }
-    
-        .flip-card-custom-front, .flip-card-custom-back {
+      
+        .flip-card-custom-front, 
+        .flip-card-custom-back {
           backface-visibility: hidden;
           position: absolute;
           top: 0;
@@ -625,45 +628,54 @@
           height: 100%;
           transform: translateZ(1px);
         }
-    
+      
         .flip-card-custom-back {
           transform: rotateY(180deg);
         }
+      
+        /* Ajuste para las imágenes */
+        .flip-card-custom img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Opciones: cover, contain, fill */
+          display: block;
+        }
       </style>
- <div class="container py-5">
-    <h2 class="text-center mb-4">Conoce Nuestros Proyectos</h2>
-    <div class="row justify-content-center g-4">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="flip-card-custom-wrapper">
-          <div class="flip-card-custom" >
-            <div class="card  text-center p-3  text-white"style="background-image: url('../resource/{{$Project->subproject_image_1}}');
-            border:solid 4px black;border-radius:70px;
-            height:400px">
-            <div class="container-fluid">
-
-                <h3 style="">Proyecto Concluido</h3>
+      
+      <div class="container py-5">
+        <h2 class="text-center mb-4">Conoce Nuestros Proyectos</h2>
+        <div class="row justify-content-center g-4">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="flip-card-custom-wrapper">
+                    <div class="flip-card-custom"style="border: solid 4px black; border-radius: 30px; height: 450px;">
+                        <div class="text-center p-3 text-white" style="position: relative;">
+                            <div class="container-fluid " >
+                                <h3 style="">Proyecto Concluido</h3>
+                            </div>
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                          <p>&nbsp;</p>
+                            <div class="text-center">
+                                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; border-radius: 100px; background-color: #FFA726; width: 190px;">
+                                    <b>Ver Más</b>
+                                </a>
+                            </div>
+                        </div>
+                        <img  src="../resource/{{$Project->subproject_image_1}}"alt="" srcset=""style="border-radius: 30px;margin-top:-74%;">
+                   
+                        <div class="card flip-card-custom-back bg-secondary text-white text-center p-3">
+                            <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; border-radius: 100px; background-color: #FFA726; width: 190px;">
+                                <b>Ver Más</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-              <h3>Pontevedra</h3>
-            <div class="text-center">
-                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
-                    <b>Ver Más</b>
-                </a>
-            </div>
-              
-            </div>
-            <div class="card flip-card-custom-back bg-secondary text-white text-center p-3">
-                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
-                    <b>Ver Más</b>
-                </a>
-            </div>
-          </div>
         </div>
-      </div>
-
-
     </div>
-  </div>
 
 
 

@@ -95,8 +95,7 @@
                             </p>
                             <h6>Contenido :</h6>
                             <textarea id="my-textarea"style="height:'900px'" name="post">
-                           
-                            <p></p>
+                 
                           </textarea>
                             <br>
                             <h6>Detalle : </h6>
