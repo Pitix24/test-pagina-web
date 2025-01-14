@@ -598,85 +598,179 @@
   
 
 
+
       <style>
-        .flip-card-custom-wrapper {
+        .flip-container {
+          width: 300px;
+          height: 400px;
           perspective: 1000px;
           position: relative;
-         
-        }
-      
-        .flip-card-custom {
-          will-change: transform;
-          /* transform-style: preserve-3d; */
-          transform: scale(1.001);
-          transition: transform 0.6s;
-          position: relative;
+          margin: auto;
           
         }
-      
-        .flip-card-custom-wrapper:hover .flip-card-custom {
-          transform: rotateY(180deg);
-        }
-      
-        .flip-card-custom-front, 
-        .flip-card-custom-back {
-          backface-visibility: hidden;
+    
+        .flip-header {
           position: absolute;
           top: 0;
-          left: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: #064420;
+          color: white;
+          padding: 10px 20px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          z-index: 2;
+        }
+    
+        .flip-footer {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+     
+          color: white;
+          padding: 10px 20px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          font-size: 18px;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 2;
+          width: 80%;
+        }
+    
+        .flip-footer button {
+        
+          
+          border: none;
+          padding: 5px 10px;
+          font-size: 14px;
+          border-radius: 5px;
+          cursor: pointer;
+       
+        }
+    
+        .flip-footer button:hover {
+       
+        }
+    
+        .flip-inner {
+          position: relative;
           width: 100%;
           height: 100%;
-          transform: translateZ(1px);
+          transform-style: preserve-3d;
+          transition: transform 0.8s;
         }
-      
-        .flip-card-custom-back {
+    
+        .flip-container:hover .flip-inner {
           transform: rotateY(180deg);
         }
-      
-        /* Ajuste para las imágenes */
-        .flip-card-custom img {
+    
+        .flip-front, .flip-back {
+          position: absolute;
           width: 100%;
           height: 100%;
-          object-fit: cover; /* Opciones: cover, contain, fill */
-          display: block;
+          backface-visibility: hidden;
+          border-radius: 50px;
+          border: solid 4px #03424E;
+          overflow: hidden;
+          top: 0;
+          left: 0;
+         
+        }
+    
+        .flip-front {
+          
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+        }
+    
+        .flip-front::after {
+          content: "";
+          position: absolute;
+          bottom: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          z-index: 2;
+        }
+    
+        .flip-back {
+          background-color: #03424E;
+          transform: rotateY(180deg);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    
+        .flip-back button {
+          background-color: #03424E;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          font-size: 16px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+    
+        .flip-back button:hover {
+       
+        }
+    
+        @media (max-width: 768px) {
+          .flip-container {
+            width: 90%;
+            height: 400px;
+          }
         }
       </style>
-      
-      <div class="container py-5">
-        <h2 class="text-center mb-4">Conoce Nuestros Proyectos</h2>
-        <div class="row justify-content-center g-4">
-            <!-- Card 1 -->
-            <div class="col-md-4">
-                <div class="flip-card-custom-wrapper">
-                    <div class="flip-card-custom"style="border: solid 4px black; border-radius: 30px; height: 450px;">
-                        <div class="text-center p-3 text-white" style="position: relative;">
-                            <div class="container-fluid " >
-                                <h3 style="">Proyecto Concluido</h3>
-                            </div>
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
-                          <p>&nbsp;</p>
-                            <div class="text-center">
-                                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; border-radius: 100px; background-color: #FFA726; width: 190px;">
-                                    <b>Ver Más</b>
-                                </a>
-                            </div>
-                        </div>
-                        <img  src="../resource/{{$Project->subproject_image_1}}"alt="" srcset=""style="border-radius: 30px;margin-top:-74%;">
-                   
-                        <div class="card flip-card-custom-back bg-secondary text-white text-center p-3">
-                            <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white; border-radius: 100px; background-color: #FFA726; width: 190px;">
-                                <b>Ver Más</b>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <p class="text-center mb-5 display-5 pt-3" style="color: #03424E;font-family:Montserrat-SemiBold">CONOCE NUESTROS PROYECTOS</p>
+  <div class="row text-center justify-content-center d-flex align-content-center">
+    @for($i = 1; $i <=6; $i++)
+    @php
+     $subproject = "subproject_".$i;
+        $subproject_image = "subproject_image_".$i;
+    @endphp
+    @if ($Project->$subproject_image)
+    <div class="col-xl-2 col-lg-3 col-md-5 col-sm-8 col-11  py-5 ">
+        <div class="flip-container">
+            {{-- <div class="flip-header">Proyecto Concluido</div> --}}
+            <div class="flip-inner">
+              <div class="flip-front"style="background: linear-gradient(to top, #03424E 10%, transparent 50%), url('../resource/{{$Project->$subproject_image}}') no-repeat center/cover;"></div>
+              <div class="flip-back">
+                
+                <button>
+                    <h4>PÓRTICO DE INGRESO</h4>
+                <h4>SEGURIDAD 24/7</h4>
+                <h4>PARQUES</h4>
+                <h4>CERCO VIVO</h4>
+                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                    <b>VER MÁS »</b>
+                </a>
+                </button>
+              </div>
             </div>
-        </div>
+            <div class="flip-footer">
+              <span>{{$Project->$subproject}}</span>
+            
+                <img src="http://aybar_laravel.test/resource/1736870177_Flecha%20naranja.png"width="50px" alt="" srcset="">
+            </div>
+          </div>
     </div>
-
+    @endif
+   
+    @endfor   
+        
+</div> 
 
 
   <script>
@@ -764,30 +858,8 @@
         </div>
     </div>
 </div>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
-<p>
-    &nbsp;
-</p>
+
+
 
     <style>
         /* Personalización de las tarjetas */
