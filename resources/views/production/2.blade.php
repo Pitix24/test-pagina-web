@@ -429,7 +429,7 @@
                                 <img src="https://aybar.credilotesperu.com/resource/1734461605_SAN%20ANDRES%20-%20CARD%203.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                                 <b style="font-size: 20px;">PROYECTO <br> SAN ANDRÉS</b><p>------------</p>
                                 <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                                <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                     &gt; &nbsp;CONOCER MÁS&nbsp;
                                 </a>
                             </div>
@@ -444,7 +444,7 @@
                                 <img src="https://aybar.credilotesperu.com/resource/1734791444_LAGOON%20VILLAGE%20-%20CARD%201.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                                 <b style="font-size: 20px;">PROYECTO <br>LAGOON VILLAGE</b><p>------------</p>
                                 <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                                <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                     &gt; &nbsp;CONOCER MÁS&nbsp;
                                 </a>
                             </div>
@@ -459,7 +459,7 @@
                                 <img src="https://aybar.credilotesperu.com/resource/1734791522_JUMEIRAH%20LAKE%20-%20CARD%202.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                                 <b style="font-size: 20px;">PROYECTO <br>JUMEIRAH LAKE</b><p>------------</p>
                                 <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                                <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                                     &gt; &nbsp;CONOCER MÁS&nbsp;
                                 </a>
                             </div>
@@ -490,7 +490,7 @@
                         <b style="font-size: 20px;">PROYECTO <br> SAN ANDRÉS</b>
                         <p>------------</p>
                         <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                        <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                             &gt; &nbsp;CONOCER MÁS&nbsp;
                         </a>
                     </div>
@@ -502,7 +502,7 @@
                         <img src="https://aybar.credilotesperu.com/resource/1734791444_LAGOON%20VILLAGE%20-%20CARD%201.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                         <b style="font-size: 20px;">PROYECTO <br>LAGOON VILLAGE</b><p>------------</p>
                         <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                        <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                             &gt; &nbsp;CONOCER MÁS&nbsp;
                         </a>
                     </div>
@@ -514,7 +514,7 @@
                         <img src="https://aybar.credilotesperu.com/resource/1734791522_JUMEIRAH%20LAKE%20-%20CARD%202.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                         <b style="font-size: 20px;">PROYECTO <br>JUMEIRAH LAKE</b><p>------------</p>
                         <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
+                        <a class="btn btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
                             &gt; &nbsp;CONOCER MÁS&nbsp;
                         </a>
                     </div>
