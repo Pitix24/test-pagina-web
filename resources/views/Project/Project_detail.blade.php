@@ -762,7 +762,7 @@
             <div class="flip-footer">
               <span>{{$Project->$subproject}}</span>
             
-                <img src="http://aybar_laravel.test/resource/1736870177_Flecha%20naranja.png"width="50px" alt="" srcset="">
+                <img src="../resource/1736870177_Flecha%20naranja.png"width="50px" alt="" srcset="">
             </div>
           </div>
     </div>
