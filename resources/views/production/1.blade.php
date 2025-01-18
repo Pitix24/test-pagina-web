@@ -89,15 +89,8 @@
 
         <!-- INICIO SECCION -->
 <header class="header">
-<div style="background-color: #13434d; height: 60px;" class="pt-2 d-none d-xs-flex d-lg-flex  justify-content-center align-items-center">
-        <div class="text-center m-5 " style="letter-spacing: 1px;word-spacing: 5px; "><b style="color:white; ">ENCUENTRA TU LOTE SOÑADO AQUÍ  </b>
-            <a href="https://bit.ly/PGWSP" class="  btn bg-white" style="color:#13434d;height: 40px; margin-bottom: 10px;
-     border-radius: 100px;width: 300px;
-     ">
-                <b>MÁS INFORMACIÓN</b>
-            </a>
-        </div>
-    </div>     
+
+   
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
