@@ -1,10 +1,14 @@
 @extends('production.1')
 @section('content')
-    <div class="pb-0">
-        <div class="container-fluid ">
-            <!-- Fondo con video o imagen -->
-            <lite-youtube videoid="{{ $Project->video_1 }}" style="width: 100%;height:500px"autoplay class="rounded-1 border-2"
-                title="Play: Video"></lite-youtube>
+    <div class="">
+        <div class="container-fluid p-0">
+            <center>
+              
+    <!-- Fondo con video o imagen -->
+    <lite-youtube videoid="{{ $Project->video_1 }}" posterquality style="width: 100%;height:400px"autopause class=" "
+        title="Play: Video"></lite-youtube>
+            </center>
+        
         </div>
     </div>
 
@@ -575,14 +579,14 @@
          @for($i = 1; $i <=6; $i++)
             @php
            $tourist_image="tourist_image_". $i;
-           
+           $tourist="tourist_". $i;
             @endphp
          @if ($Project->$tourist_image!="")
             <div class="col-md-6 col-lg-3">
                 <div class="tourist-card">
                   <img src="../resource/{{$Project->$tourist_image}}" alt="Lugar Turístico 1">
                   <div class="card-body">
-                    <p class="card-title text-start">LUGARES TURISTICOS</p>
+                    <p class="card-title text-start fs-4">{{$Project->$tourist}}</p>
                     <p class="card-subtitle text-start">{{Str::Upper($Project->title) }}</p>
                   </div>
                 </div>

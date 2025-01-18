@@ -6,7 +6,7 @@ use App\Models\Project;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 class ProjectController extends Controller
 {
 
@@ -44,9 +44,9 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $Project = new Project;
-
+        
           // Asignación básica de campos
-          $Project->title = $request->title;
+          $Project->title = Str::upper($request->title);
           $Project->description = $request->description;
           $Project->detail = $request->detail;
           $Project->location = $request->location;
@@ -88,7 +88,7 @@ class ProjectController extends Controller
           for ($i = 1; $i <= 6; $i++) {
               $subprojectField = "subproject_$i";
               $subProjectImageField = "subproject_image_$i";
-              $Project->$subprojectField = $request->$subprojectField;
+              $Project->$subprojectField =Str::upper( $request->$subprojectField);
   
               if ($request->file($subProjectImageField) != null) {
                   $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
@@ -105,7 +105,7 @@ class ProjectController extends Controller
               $touristImageField = "tourist_image_$i";
   
               if ($request->$touristField) {
-                  $Project->$touristField = $request->$touristField;
+                  $Project->$touristField = Str::title($request->$touristField);
               }
   
               if ($request->file($touristImageField) != null) {
@@ -187,7 +187,7 @@ class ProjectController extends Controller
         for ($i = 1; $i <= 6; $i++) {
             $subprojectField = "subproject_$i";
             $subProjectImageField = "subproject_image_$i";
-            $Project->$subprojectField = $request->$subprojectField;
+            $Project->$subprojectField = Str::upper( $request->$subprojectField);
 
             if ($request->file($subProjectImageField) != null) {
                 $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
@@ -204,7 +204,8 @@ class ProjectController extends Controller
             $touristImageField = "tourist_image_$i";
 
             if ($request->$touristField) {
-                $Project->$touristField = $request->$touristField;
+                $Project->$touristField = Str::title($request->$touristField);
+          
             }
 
             if ($request->file($touristImageField) != null) {

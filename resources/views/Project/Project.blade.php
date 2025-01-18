@@ -81,8 +81,9 @@
                             <select name="country" id="country" class="form-control">
                                 <option value="lima">Lima</option>
                                 <option value="ica">Ica</option>
-                                <option value="tarapoto">Tarapoto</option>
-                                <option value="iquitos">Iquitos</option>
+                                <option value="huacho">Huacho</option>
+                                <option value="huaral">Huaral</option>
+                                
                             </select>
                             <label>URL:</label>
                             <input type="text" name="detail" id="detail" class="form-control">
