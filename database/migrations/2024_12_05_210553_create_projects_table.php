@@ -23,20 +23,12 @@ return new class extends Migration
             $table->string('location')->nullable(); //
             $table->string('land')->nullable(); //
             $table->string('land_count')->nullable(); //
-            
+
             $table->string('map_1')->nullable(); //
             $table->string('map_2')->nullable(); //
-            $table->string('photo_1')->nullable(); //
-            $table->string('photo_2')->nullable(); //
-            $table->string('photo_3')->nullable(); //
-            $table->string('photo_4')->nullable(); //
-            $table->string('photo_5')->nullable(); //
-            $table->string('photo_6')->nullable(); //
-            $table->string('photo_7')->nullable(); //
-            $table->string('photo_8')->nullable(); //
-            $table->string('photo_9')->nullable(); //
-            $table->string('photo_10')->nullable(); //
-            
+
+
+
             $table->string('video_1')->nullable(); //
             $table->string('video_2')->nullable(); //
             $table->string('video_3')->nullable(); //
@@ -47,34 +39,19 @@ return new class extends Migration
             $table->string('video_8')->nullable(); //
             $table->string('video_9')->nullable(); //
             $table->string('video_10')->nullable(); //
-            
-            $table->string('tourist_1')->nullable(); //
-            $table->string('tourist_2')->nullable(); //
-            $table->string('tourist_3')->nullable(); //
-            $table->string('tourist_4')->nullable(); //
-            $table->string('tourist_5')->nullable(); //
-            $table->string('tourist_6')->nullable(); //
 
-            $table->string('tourist_image_1')->nullable(); //
-            $table->string('tourist_image_2')->nullable(); //
-            $table->string('tourist_image_3')->nullable(); //
-            $table->string('tourist_image_4')->nullable(); //
-            $table->string('tourist_image_5')->nullable(); //
-            $table->string('tourist_image_6')->nullable(); //
-        
-            $table->string('subproject_1')->nullable(); //
-            $table->string('subproject_2')->nullable(); //
-            $table->string('subproject_3')->nullable(); //
-            $table->string('subproject_4')->nullable(); //
-            $table->string('subproject_5')->nullable(); //
-            $table->string('subproject_6')->nullable(); //
 
-            $table->string('subproject_image_1')->nullable(); //
-            $table->string('subproject_image_2')->nullable(); //
-            $table->string('subproject_image_3')->nullable(); //
-            $table->string('subproject_image_4')->nullable(); //
-            $table->string('subproject_image_5')->nullable(); //
-            $table->string('subproject_image_6')->nullable(); //
+            for ($i = 1; $i <= 10; $i++) {
+               
+                $table->string("tourist_$i","30")->nullable(); //
+                $table->string("tourist_image_$i","50")->nullable(); //
+            }
+            for ($i = 1; $i <= 20; $i++) {
+                $table->longText("photo_$i")->nullable(); //
+               
+                $table->longText("subproject_$i")->nullable(); //
+                $table->longText("subproject_image_$i")->nullable();
+            }
 
 
             $table->timestamps();

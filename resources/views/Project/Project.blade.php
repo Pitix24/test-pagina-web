@@ -141,7 +141,7 @@
                                     aria-labelledby="headingPhotos" data-bs-parent="#projectAccordion">
                                     <div class="accordion-body">
                                         <div class="row">
-                                            @for ($i = 1; $i <= 10; $i++)
+                                            @for ($i = 1; $i <= 20; $i++)
                                                 <div class="col-md-4 mb-3">
                                                     <label>Foto {{ $i }}:</label>
                                                     <input type="file" name="photo_{{ $i }}"
@@ -196,7 +196,7 @@
                                     aria-labelledby="headingSubprojects" data-bs-parent="#projectAccordion">
                                     <div class="accordion-body">
                                         <div class="row">
-                                            @for ($i = 1; $i <= 6; $i++)
+                                            @for ($i = 1; $i <= 20; $i++)
                                                 <div class="col-md-6 mb-2">
                                                     <label>Subproyecto {{ $i }}:</label>
                                                     <input type="text" name="subproject_{{ $i }}"

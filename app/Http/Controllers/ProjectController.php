@@ -62,7 +62,7 @@ class ProjectController extends Controller
           }
   
           // Manejo de fotos adicionales (photo_1 a photo_10)
-          for ($i = 1; $i <= 10; $i++) {
+          for ($i = 1; $i <= 20; $i++) {
               $photoField = "photo_$i";
               if ($request->file($photoField) != null) {
                   $Project->$photoField = fileStore($request->file($photoField), "resource");
@@ -85,7 +85,7 @@ class ProjectController extends Controller
           }
   
           // Manejo de subproyectos (subproject_1 a subproject_5)
-          for ($i = 1; $i <= 6; $i++) {
+          for ($i = 1; $i <= 20; $i++) {
               $subprojectField = "subproject_$i";
               $subProjectImageField = "subproject_image_$i";
               $Project->$subprojectField =Str::upper( $request->$subprojectField);
@@ -161,7 +161,7 @@ class ProjectController extends Controller
         }
 
         // Manejo de fotos adicionales (photo_1 a photo_10)
-        for ($i = 1; $i <= 10; $i++) {
+        for ($i = 1; $i <= 20; $i++) {
             $photoField = "photo_$i";
             if ($request->file($photoField) != null) {
                 $Project->$photoField = fileStore($request->file($photoField), "resource");
@@ -184,7 +184,7 @@ class ProjectController extends Controller
         }
 
         // Manejo de subproyectos (subproject_1 a subproject_5)
-        for ($i = 1; $i <= 6; $i++) {
+        for ($i = 1; $i <= 20; $i++) {
             $subprojectField = "subproject_$i";
             $subProjectImageField = "subproject_image_$i";
             $Project->$subprojectField = Str::upper( $request->$subprojectField);
