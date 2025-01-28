@@ -79,7 +79,7 @@ class ImageController extends Controller
         $table = Image::find($request["id"]);
         fileDestroy($table->image_1, "resource");
         //guarda la nueva
-        fileUpdate($request->file('image_1'), "resource", $Image->image_1);
+        $Image->url=fileUpdate($request->file('image_1'), "resource");
         $Image->save();
         return $this->create();
     }
