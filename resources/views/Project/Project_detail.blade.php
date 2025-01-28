@@ -368,6 +368,7 @@
 
 
             </div>
+            
             <div class="image-slider-indicators">
                 <span class="indicator"></span>
                 <span class="indicator"></span>
