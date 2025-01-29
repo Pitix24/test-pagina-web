@@ -23,7 +23,9 @@
     <script src="{{ asset('js/topic.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="../../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../assets/libs/aos/dist/aos.css">
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
 </head>
@@ -94,7 +96,7 @@
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
-            <a class="position-relative navbar-brand me-0 py-0 m-2 " href="/"> 
+            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 " href="/"> 
                 <img src="../resource/1738076896_logo%20aybar%20blanco.svg" alt="img-fluid" width="80px" style="margin-left:0%">
             </a>
 
@@ -132,12 +134,12 @@
                     </li>
 
                     <li class="nav-item ms-2" style="letter-spacing: 1px;">
-                        <a class="btn btn-sm btn-hover-shadow fs-3 p-1" href="https://pagos.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
+                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-3 p-1" href="https://pagos.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
                             PAGA TU LOTE
                         </a>
                     </li>
                     <li class="nav-item ms-2">
-                        <a class="btn btn-sm btn-hover-shadow fs-4 p-1 " href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
+                        <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-4 p-1 " href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
                             <i class="ti ti-brand-whatsapp fs-6">&nbsp;</i><span class="text-white">01-9049838 </span> 
                         </a>
                     </li>
@@ -149,49 +151,93 @@
     </nav>
 </header>
 @yield('content')
-<p>                          </p><div class="container-fluid py-1" style="background-color: #054E5C;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-start mt-10">
-                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3><ul class="text-white mt-4" style="--bs-text-opacity: 1;"><li><h3 style="margin-top: 30px;"><font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;"><img src="https://aybar.credilotesperu.com/resource/1734622413_icono%20telefono.png" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 37.5px; height: 36.6573px; float: left;"><span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">(51) 01-9049838<br></span></span></font></h3></li><li><img src="https://aybar.credilotesperu.com/resource/1734622376_icono%20mapa.png" class="note-float-left" style="width: 38.5px; height: 37.6503px; float: left;"><div><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat, sans-serif; font-size: 14px;"><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular;">Av. Circunvalación Del Golf Los Incas&nbsp;</span></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-weight: var(--bs-body-font-weight); font-family: Montserrat-Regular; font-size: 14px;">134<br></span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Patio Panorama,&nbsp; Piso 19.&nbsp;</span><span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">Santiago de Surco.</span></div></li></ul>
-            </div>
-
-            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10">
-                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
-         
+<p> </p>
+        <div class="container-fluid py-1" style="background-color: #054E5C;">
+            <div class="container">
                 <div class="row">
-                    <div class="col-6">
-                        <ul class="text-white mt-4">
-                            <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a></li>
-                            <li><a style="color:white" href="../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a></li>
-                           <li><a style="color:white" href="../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes somos</span></a></li>
-                       <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas frecuentes</span></a></li>
-                      
-                   
+                    <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000" class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center  text-lg-start text-md-start mt-10">
+                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3>
+                        <ul class="text-white mt-4" style="--bs-text-opacity: 1;">
+                            <li>
+                                <h3 style="margin-top: 30px;">
+                                    <font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;">
+                                            <img src="../resource/1738175771_679a751b0390btelefono.svg" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 37.5px; height: 36.6573px; float: left;">
+                                                <span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">(51)
+                                                01-9049838<br></span></span></font>
+                                </h3>
+                            </li>
+                            <li>
+                                <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class=" note-float-left" style="width: 38.5px; height: 47.6503px; float: left;">
+                             
+
+                                   
+                                    Circunvalación Del Golf Los Incas Av. 134
+                                 
+                                    <br class=" d-sm-none">
+                                        <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                        Patio Panorama,&nbsp; Piso 19.&nbsp; Santiago de Surco.</span>
+                                    <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                        </span>
+                            
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <ul class="text-white mt-4">
-<li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a></li>
-                          <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a></li>
-                          <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y condiciones</span></a></li>
-                          <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de reclamaciones</span></a></li>
-                         
-                           
-                    
-                        </ul>
+
+                    <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000" class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10">
+                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="text-white mt-4">
+                                    <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
+                                    </li>
+                                    <li><a style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
+                                    </li>
+                                    <li><a style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
+                                                somos</span></a></li>
+                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
+                                                frecuentes</span></a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="text-white mt-4">
+                                    <li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
+                                    </li>
+                                    <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
+                                    </li>
+                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
+                                                condiciones</span></a></li>
+                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
+                                                reclamaciones</span></a></li>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
+                        <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
+                            <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
+                            </div>                        
+                        <div class="col-lg-7 col-xl-12 col-md-7 col-6 " data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
+                        
+                       
+                        <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
+                        </a>
+                        <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
+                            </div>   
                     </div>
                 </div>
             </div>
-
-            <div class="mt-4 text-center col-xl-4 mt-10"><a href="../login" target="_blank"><img src="../ayba/4.png" width="40%" alt="" srcset="" style="width: 137.75px; height: 137.75px;"></a><br>
-<a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1734378917_icons8-facebook-50.png" width="45px" alt="">
-</a>
-<a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank">   <img src="../resource/1734379420_icons8-tiktok-50.png" width="45px" alt="">
-</a>
-     <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank">   <img src="../resource/1734379216_icons8-instagram-50.png" width="45px" alt="">
-</a>         
-            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank">   <img src="../resource/1734379160_icons8-linkedin-50.png" width="45px" alt=""></a></div></div></div></div>
+        </div>
 <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">
@@ -251,36 +297,35 @@
 </div>
 <!-- FIN SECCION -->
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-    // Obtiene la URL actual
-    const currentURL = window.location.pathname;
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Obtiene la URL actual
+                const currentURL = window.location.pathname;
 
-    // Mapeo de rutas a IDs
-    const menuItems = {
-        "/": "inicio",
-        "/nosotros": "nosotros",
-        "/proyectos": "proyectos",
-        "/blog": "blog",
-        "/contacto": "contacto"
-    };
+                // Mapeo de rutas a IDs
+                const menuItems = {
+                    "/": "inicio",
+                    "/nosotros": "nosotros",
+                    "/proyectos": "proyectos",
+                    "/blog": "blog",
+                    "/contacto": "contacto"
+                };
 
-    // Busca si la URL coincide con algún ID en el menú
-    for (const path in menuItems) {
-        if (currentURL === path) {
-            const element = document.getElementById(menuItems[path]);
-            if (element) {
-                element.style.textDecoration = "underline";
-                element.style.color="#FFA726";
-                element.style.textDecorationThickness = "3px"; // Grosor del subrayado
-                element.style.textDecorationColor = "white"; // Color blanco
-                element.style.textUnderlineOffset = "5px"; // Espaciado del subrayado
-            }
-        }
-    }
-});
-
-</script>
+                // Busca si la URL coincide con algún ID en el menú
+                for (const path in menuItems) {
+                    if (currentURL === path) {
+                        const element = document.getElementById(menuItems[path]);
+                        if (element) {
+                            element.style.textDecoration = "underline";
+                            element.style.color = "#FFA726";
+                            element.style.textDecorationThickness = "3px"; // Grosor del subrayado
+                            element.style.textDecorationColor = "white"; // Color blanco
+                            element.style.textUnderlineOffset = "5px"; // Espaciado del subrayado
+                        }
+                    }
+                }
+            });
+        </script>
 
 
         <style>
@@ -488,8 +533,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-
-
+    <script src="../../assets/js/plugins/animation-init.js"></script>
+    <script src="../../assets/libs/aos/dist/aos.js"></script>
+    <script src="../../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>
         const input = document.querySelector("#phone");
 
@@ -500,16 +546,16 @@
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
         });
     </script>
-        <script>
-            const input_2 = document.querySelector("#phone_2");
-    
-            // Inicialización de intl-tel-input con Perú como valor predeterminado
-            const init_2 = window.intlTelInput(input_2, {
-                initialCountry: "pe", // Código de país ISO 3166-1 Alpha-2 para Perú
-                separateDialCode: true, // Muestra el código de país separado
-                utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
-            });
-        </script>
+    <script>
+        const input_2 = document.querySelector("#phone_2");
+
+        // Inicialización de intl-tel-input con Perú como valor predeterminado
+        const init_2 = window.intlTelInput(input_2, {
+            initialCountry: "pe", // Código de país ISO 3166-1 Alpha-2 para Perú
+            separateDialCode: true, // Muestra el código de país separado
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
+        });
+    </script>
 </body>
 
 </html>
