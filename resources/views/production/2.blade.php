@@ -4,6 +4,7 @@
     .bg-responsive {
     background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 
     /* height: 85vh; */
