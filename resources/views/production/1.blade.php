@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="{{ asset('assets/libs/aos/dist/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/template.css') }}" />
 
+<style>
+    .montserrat-<uniquifier> {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+</style>
 
     {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
@@ -26,6 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../../assets/libs/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="../../assets/libs/aos/dist/aos.css">
+
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/intlTelInput.min.js"></script>
 </head>
@@ -79,7 +88,11 @@
         font-color: #ffffff !important;
     }
 </style>
+<script>
 
+
+
+</script>
 <body>
 
     <!-- Preloader -->
@@ -90,7 +103,7 @@
 
 
         <!-- INICIO SECCION -->
-<header class="header fixed-header" style="  background-color: rgba(0, 0, 0, 0.8);">
+<header class="header fixed-header"id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8);">
 
    
     <nav class="navbar navbar-expand-lg py-0">
@@ -155,7 +168,7 @@
         <div class="container-fluid py-1" style="background-color: #054E5C;">
             <div class="container">
                 <div class="row">
-                    <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000" class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center  text-lg-start text-md-start mt-10">
+                    <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-lg-start text-md-start mt-10 aos-init aos-animate">
                         <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3>
                         <ul class="text-white mt-4" style="--bs-text-opacity: 1;">
                             <li>
@@ -183,7 +196,7 @@
                         </ul>
                     </div>
 
-                    <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="1000" class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10">
+                    <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10 aos-init aos-animate">
                         <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
 
                         <div class="row">
@@ -221,9 +234,9 @@
 
                     <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
                         <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
-                            <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
+                            <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
                             </div>                        
-                        <div class="col-lg-7 col-xl-12 col-md-7 col-6 " data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
+                        <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
                         
                        
                         <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
@@ -555,6 +568,18 @@
             separateDialCode: true, // Muestra el código de país separado
             utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/js/utils.js" // Para validaciones
         });
+
+
+//         window.addEventListener("load", function() {
+//     const header = document.getElementById("mainHeader");
+
+//     if (window.innerWidth >= 992) { // LG en Bootstrap (>=992px)
+//       header.classList.add("fixed-header");
+//     }
+//   });
+
+
+
     </script>
 </body>
 

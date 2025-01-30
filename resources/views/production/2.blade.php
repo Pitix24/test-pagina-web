@@ -1,65 +1,134 @@
 @extends('production.1')
 
+<style>
+    .bg-responsive {
+    background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
 
+    /* height: 85vh; */
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 1292px) {
+    .bg-responsive {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url('../resource/1738247474_679b8d32253e5portada-inicio-1-tablet.jpg');
+    }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 987px) {
+    .bg-responsive {
+        width: 10%;
+        /* height: 90vh; */
+        background-position: center;
+        background-repeat: no-repeat;
+        /* background-size: contain; */
+        background-image: url('../resource/1738247025_679b8b712800cportada-inicio-1-celular.jpg');
+    }
+}
+    
+</style>
 @section('content')
     <form method="post" id="Customer">
         @csrf
 
         <!-- INICIO SECCION -->
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
-            <div class="carousel-inner" style="display: flex; align-items: center;">
+            
+    
+    <div class="carousel-inner" style="display: flex; align-items: center;">
+        
                 <!-- Diapositiva 1 -->
-                <div class="carousel-item text-center py-5 active" style="
-    background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;margin-top:-0%
-">
+                <div class=" carousel-item text-center pb-5 active bg-responsive">
                     <div class="container-fluid " style=" background-color: transparent;">
                         <p>&nbsp; </p>
                         <p>&nbsp; </p>
+                        <p>&nbsp; </p>
+                        <p>&nbsp; </p>
 
-
-
+                       
 
                         <div class="row h-100 ">
                             <!-- Columna izquierda con imagen -->
-                            <div class="col-lg-6 col-xl-4 col-md-6   text-center align-content-center" data-aos="slide-right" data-aos-duration="700" data-aos-delay="500">
+                            <div class="col-lg-6 col-xl-4 col-md-12 justify-content-center text-center align-content-center" data-aos="slide-right" data-aos-duration="700" data-aos-delay="500">
 
 
-
+                                <div class="d-lg-none">
+                                    <img src="../ayba/4.png" alt="" style="width: 80px;margin-top:-30px"> <br>
+                                   
+                                   
+                                </div>
 
                                 <div>
-
-                                    <!-- Contenido encima -->
-                                    <img src="../ayba/4.png" alt="" width="50px" style="width: 25%;">
-                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;">HACIENDO
-                                        REALIDAD</h4>
-                                    <h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;">TU HOGAR
-                                    </h4>
-                                    <p class="lead mb-4 fs-3">
-                                    </p>
-                                    <div class="container">
-                                        ¡No pierdas más tiempo y asegura el lote de tus <br> sueños hoy mismo, con
-                                        facilidades de pago y <br> ubicaciones estratégicas!
+                                    <div class="d-xl-none d-lg-none ">
+                                        <p>&nbsp;</p>
+                                        
+                                        
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                      
                                     </div>
+                                    <div class="d-sm-none ">
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                    </div>
+                                    <!-- Contenido encima -->
+                                    <div class="d-none d-lg-block mt-5">
+
+                                        <img src="../ayba/4.png" alt="" style="width: 50px;"> <br>
+                                        
+                                    </div>
+                                  <div class="d-sm-none">
+                                    <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
+                                        REALIDAD</span>
+                                    <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
+                                    </h4>
+                                  </div>
+                                  
+                                    <div class="d-none d-sm-block">
+                                        <span class=" text-white  fs-6" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
+                                            REALIDAD</span>
+                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
+                                        </h4>
+                                        <div class="mt-2 mb-3 subrayado mx-auto"></div>
+                                       
+                                    </div>
+                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños hoy mismo, con
+                                    facilidades de pago y <br class="d-none d-lg-block"> ubicaciones estratégicas!
+                                  
+                                    
+                                      
+                                
                                     <p></p>
-                                    <h3 style="color:#F6A42C">¿Dudas o consultas?</h3>
-                                    <p class="mb-4">Nuestros números de atención al cliente:</p>
-                                    <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
-                                        <p>(51) 01-9049838</p>
-                                    </a>
+                                    <div class="d-none d-lg-block">
+                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS O CONSULTAS?</span>
+                                       <br>  Nuestros números de atención al cliente: <br>
+                                        <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
+                                            <span class="fs-7">(51) 01-9049838</span>
+                                        </a>
+                                    </div>
+                                  
                                 </div>
                             </div>
                             <!-- Columna central con imagen adicional -->
-                            <div class="d-none d-xl-block col-xl-4  align-content-center">
+                            <div class="d-none d-lg-block col-lg-1 d-xl-block col-xl-4  align-content-center">
 
                             </div>
 
                             <!-- Columna derecha con formulario -->
-                            <div class="col col-md-6 col-lg-6 col-xl-3 col-sm-12" data-aos="flip-left" data-aos-duration="700" data-aos-delay="400">
+                            <div class="col col-md-12 col-lg-4 col-xl-3 col-sm-12" data-aos="flip-left" data-aos-duration="700" data-aos-delay="400">
 
-                                <div class="p-7 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                                <div class="p-7 mb-2 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                                     <p class="text-center text-light mb-4"><b> <span style="font-size: 16px;color:#055261">QUIERO
                                                 INFORMACIÓN DE UN LOTE</span></b></p>
 
@@ -82,9 +151,7 @@
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                        {{-- 
-
-                                         --}}
+                                       
                                         <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                         <div class="form-text text-white">
                                             <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
@@ -118,7 +185,7 @@
 
                                     <div class="text-center"><span style="font-size: 9px;">
 
-                                        </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                        </span><button type="button" class=" w-xs-100 mt-3  btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
                                                 <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
                                                     datos</span>
                                             </span></button><span style="font-size: 9px;">
@@ -135,13 +202,13 @@
                 <span style="font-size: 9px;">
 
                 </span><!-- Diapositiva 2: Video de YouTube -->
-                <div class="carousel-item position-relative " style="height: 723px;">
+                <div class="carousel-item position-relative " style="height: 756px;">
                     <div class="row">
-                        <div class="col-8 bg-black">
+                        <div class="col-12 col-sm-12 col-xl-8  bg-black ">
 
-                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:723px"></iframe>
+                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:773px"></iframe>
                         </div>
-                        <div class="col-4 container p-5 text-center align-content-center d-flex" style="background-image:url('../resource/1738091479_portada-descubre-nuestros-proyectos-escritorio.jpg')">
+                        <div class="d-none d-sm-block col-xl-4 col-12 container py-5   text-center align-content-center d-flex" style="background-image:url('../resource/1738091479_portada-descubre-nuestros-proyectos-escritorio.jpg');">
                             <div class="p-5 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);margin-top:50px">
                                 <p class="text-center text-light mb-4"><b> <span style="font-size: 16px;color:#055261">QUIERO
                                             INFORMACIÓN DE UN LOTE</span></b></p>
@@ -165,9 +232,7 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    {{-- 
-
-                                     --}}
+                               
                                     <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                     <div class="form-text text-white">
                                         <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
@@ -201,13 +266,14 @@
 
                                 <div class="text-center"><span style="font-size: 9px;">
 
-                                    </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                    </span><button type="button" class="w-xs-100 mt-3 btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
                                             <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
                                                 datos</span>
                                         </span></button><span style="font-size: 9px;">
                                     </span></div><span style="font-size: 9px;">
                                 </span>
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -215,7 +281,7 @@
     background-image: url('../resource/1734733260_fondo-.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 100vw;height: 756px;
 ">
                     <div class="container-fluid" style=" background-color: transparent;">
                         <div class="row h-100 text-center align-content-center  justify-content-center">
@@ -264,10 +330,9 @@
                     </div><span style="font-size: 9px;">
                     </span>
                 </div>
-            </div><span style="font-size: 9px;">
-
-            </span><!-- Indicadores del Carrusel -->
-            <div class="carousel-indicators">
+            </div>
+          <!-- Indicadores del Carrusel -->
+            <div class="carousel-indicators mb-3">
                 <button type="button" style=" background-color: transparent; 
         border: solid 3px orange; 
         width: 15px; 
@@ -291,12 +356,18 @@
         transform: rotate(135deg);margin-right: 20px;" data-bs-target="#carouselExample" data-bs-slide-to="2" class="" aria-label="Diapositiva 3"></button>
 
             </div>
+            
         </div>
         <p></p>
-<div class="container-fluid text-light py-5 bg-white" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1500">
+<div class="container-fluid text-light py-3 bg-white" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1500">
             <div class="text-center">
-                <div class="container py-2">
-                    <h4 class="text-center display-6" style="margin:20px; font-family: Montserrat-SemiBold;">
+                <div class="container py-1">
+                    <h4 class="d-sm-none text-center display-10" style="margin:20px; font-family: Montserrat-SemiBold;">
+                        <span style="color:#03424E; word-spacing: 10px; letter-spacing: 5px;">VIVE EN LA</span><br>
+                        <b style="font-family: Montserrat-SemiBold; word-spacing: 10px; letter-spacing: 5px;">MEJOR
+                            ZONA</b>
+                    </h4>
+                    <h4 class="d-none d-sm-block text-center display-6" style="margin:20px; font-family: Montserrat-SemiBold;">
                         <span style="color:#03424E; word-spacing: 10px; letter-spacing: 15px;">VIVE EN LA</span><br>
                         <b style="font-family: Montserrat-SemiBold; word-spacing: 10px; letter-spacing: 15px;">MEJOR
                             ZONA</b>
@@ -313,7 +384,7 @@
                             <div class="carousel-item active">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="rdxrSIrZISE" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="rdxrSIrZISE" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
                                     </div>
 
                                 </div>
@@ -322,7 +393,7 @@
                             <div class="carousel-item">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
                                     </div>
 
                                 </div>
@@ -330,7 +401,7 @@
                             <div class="carousel-item">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="aguyG7M828M" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="aguyG7M828M" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
                                     </div>
 
                                 </div>
@@ -351,15 +422,15 @@
                     <!-- Grilla para pantallas grandes -->
                     <div class="row d-none d-lg-flex mt-4">
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="rdxrSIrZISE" posterquality="maxresdefault" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="rdxrSIrZISE" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="aguyG7M828M" style="width: 100%;" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="aguyG7M828M" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
 
@@ -378,12 +449,15 @@
 
 
         </div>
-<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" class=" py-1" style="background-color:#f7f7f7">
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" class=" py-4" style="background-color:#f7f7f7">
             <div class="container">
-                <h4 class="text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+                <h4 class="d-sm-none text-center display-10" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
                     <span style="color:#03424E">¿POR QUÉ</span><br> COMPRAR UN LOTE?
                 </h4>
-                <div class="subrayado mx-auto mb-5"></div>
+                <h4 class="d-none d-sm-block text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+                    <span style="color:#03424E">¿POR QUÉ</span><br> COMPRAR UN LOTE?
+                </h4>
+                <div class="subrayado mx-auto my-md-1 mb-sm-0"></div>
 
                 <!-- Carrusel (visible solo en pantallas pequeñas) -->
                 <div id="mobileCarousel" class="carousel slide d-md-none pointer-event" data-bs-ride="carousel" data-bs-interval="3000">
@@ -391,7 +465,7 @@
                         <!-- Tarjeta 1 -->
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;">
+                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;background-color:#f7f7f7">
                                     <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                         <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                             <img src="../resource/1738095847_67993ce7b34f0inversion%20segura.svg" alt="Inversion Segura" style="width: 50%;border-radius:0px">
@@ -406,7 +480,7 @@
                         <!-- Tarjeta 2 -->
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;">
+                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;background-color:#f7f7f7">
                                     <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                         <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                             <img src="../resource/1738096177_67993e314cb8drentabilidad%20a%20largo%20plazo.svg" alt="Rentabilidad a Largo Plazo" style="width: 50%;border-radius:0px">
@@ -422,7 +496,7 @@
                         <!-- Tarjeta 3 -->
                         <div class="carousel-item">
                             <div class="d-flex justify-content-center">
-                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;">
+                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;background-color:#f7f7f7">
                                     <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                         <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                             <img src="../resource/1738096259_67993e83879f3patrimonio%20para%20tu%20familia.svg" alt="Patrimonio Familiar" style="width: 50%;border-radius:0px">
@@ -438,7 +512,7 @@
                         <!-- Tarjeta 4 -->
                         <div class="carousel-item active">
                             <div class="d-flex justify-content-center">
-                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;">
+                                <div class="card overflow-hidden" style="border-radius: 20px; width: 18rem;background-color:#f7f7f7">
                                     <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                         <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                             <img src="../resource/1738096338_67993ed21e9e1alta%20revalorizacion.svg" alt="Alta Revalorizacion" style="width: 50%;border-radius:0px">
@@ -467,7 +541,7 @@
                 <!-- Grid de tarjetas (visible en pantallas medianas y grandes) -->
                 <div class="row d-none d-md-flex el-element-overlay">
                     <div class="col-md-6 col-lg-3 mb-4 " data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card overflow-hidden" style="border-radius: 20px;">
+                        <div class="card overflow-hidden" style="border-radius: 20px;background-color:#f7f7f7">
                             <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                 <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                     <img src="../resource/1738095847_67993ce7b34f0inversion%20segura.svg" alt="Inversion Segura" style="width: 50%;border-radius:0px">
@@ -479,7 +553,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card overflow-hidden" style="border-radius: 20px;">
+                        <div class="card overflow-hidden" style="border-radius: 20px;background-color:#f7f7f7">
                             <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                 <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                     <img src="../resource/1738096177_67993e314cb8drentabilidad%20a%20largo%20plazo.svg" alt="Rentabilidad a Largo Plazo" style="width: 50%;border-radius:0px">
@@ -491,7 +565,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card overflow-hidden" style="border-radius: 20px;">
+                        <div class="card overflow-hidden" style="border-radius: 20px;background-color:#f7f7f7">
                             <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                 <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                     <img src="../resource/1738096259_67993e83879f3patrimonio%20para%20tu%20familia.svg" alt="Patrimonio Familiar" style="width: 50%;border-radius:0px">
@@ -503,7 +577,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3 mb-4" data-aos="flip-down" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card overflow-hidden" style="border-radius: 20px;">
+                        <div class="card overflow-hidden" style="border-radius: 20px;background-color:#f7f7f7">
                             <div class="el-card-item pb-5" style=" border-radius: 20px;">
                                 <div class="el-card-avatar mb-3 w-100 overflow-hidden d-flex position-relative text-center justify-content-center" style="margin-top: 5vh;">
                                     <img src="../resource/1738096338_67993ed21e9e1alta%20revalorizacion.svg" alt="Alta Revalorización" style="width: 50%;border-radius:0px">
@@ -521,7 +595,10 @@
                background-repeat: no-repeat; 
                background-size: auto 100%; 
                background-position: center;">
-    <h4 class="text-center display-6 py-3" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+               <h4 class="d-none d-sm-block text-center display-6 pt-3 pb-2" style="margin:15px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+                <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
+            </h4>
+    <h4 class="d-sm-none text-center display-10 pt-3" style="margin:15px;font-family:Montserrat-SemiBold;letter-spacing:5px">
         <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
     </h4>
     <div class="subrayado mx-auto mb-5"></div>
@@ -594,7 +671,7 @@
         <!-- Grilla para pantallas medianas y grandes -->
         <div class="row d-none d-md-flex justify-content-center">
             <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;"data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
                     <div class="card-body p-1 text-center">
                         <img src="https://aybar.credilotesperu.com/resource/1734461605_SAN%20ANDRES%20-%20CARD%203.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                         <b style="font-size: 20px;">PROYECTO <br> SAN ANDRÉS</b>
@@ -607,7 +684,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;"data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
                     <div class="card-body p-1 text-center">
                         <img src="https://aybar.credilotesperu.com/resource/1734791444_LAGOON%20VILLAGE%20-%20CARD%201.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                         <b style="font-size: 20px;">PROYECTO <br>LAGOON VILLAGE</b><p>------------</p>
@@ -619,7 +696,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;"data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
                     <div class="card-body p-1 text-center">
                         <img src="https://aybar.credilotesperu.com/resource/1734791522_JUMEIRAH%20LAKE%20-%20CARD%202.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
                         <b style="font-size: 20px;">PROYECTO <br>JUMEIRAH LAKE</b><p>------------</p>
@@ -633,14 +710,14 @@
         </div>
     </div>
 </div>
-<div class="container-fluid py-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');
+<div class="container-fluid pt-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');
  background-repeat: no-repeat; 
  background-size: cover;
       
  
                background-position: center;">
 
-<img src="../resource/1738168541_679a58dd6cbc9portada-confiaenaybar-celular.jpg" class="d-sm-none" alt="" style="border:solid white 1px;margin-bottom:-180px;margin-top:-4px;border-radius:10px" width="100%">
+<img src="../resource/1738168541_679a58dd6cbc9portada-confiaenaybar-celular.jpg" class="d-sm-none" alt="" style="border:solid white 5px;margin-bottom:-180px;margin-top:-4px;border-radius:10px" width="100%">
 
         <div class="row">
             <!-- Imagen -->
@@ -657,20 +734,18 @@
 
                     <div class="p-5 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                        
-                        <h4 class=" d-sm-none text-center display-8 aos-init aos-animate" style="margin-bottom:20px;font-family:Montserrat-SemiBold;letter-spacing:5px">
+                        <h4 class="d-sm-none text-center display-10 aos-init aos-animate" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:5px">
                             <span style="color:#03424E" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">CONFÍA EN</span><br> AYBAR CORP
                         </h4>
-                        <h4 class=" d-none d-sm-block text-center display-6 aos-init aos-animate" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+                        <h4 class="d-none d-sm-block text-center display-6 aos-init aos-animate" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
                             <span style="color:#03424E" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">CONFÍA EN</span><br> AYBAR CORP
                         </h4>
-                        <div class="subrayado mx-auto "></div>
+                        <div class="subrayado mx-auto mb-5"></div>
                          
-                        <p class="d-sm-none fs-3  text-center mt-2" style="color:#03424E;" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            Construye un futuro sólido para tu familia <br> invirtiendo en confianza.
+                        <p class="fs-6  text-center" style="color:#03424E;" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
+                            Construye un futuro sólido para tu familia <br class="d-none d-sm-block"> invirtiendo en confianza.
                         </p>
-                        <p class="d-none d-sm-block fs-6  text-center mt-5" style="color:#03424E;" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-                            Construye un futuro sólido para tu familia <br> invirtiendo en confianza.
-                        </p>
+                       
                       
     
                         <!-- Carrusel para pantallas SM -->
@@ -806,8 +881,8 @@
                         </div>
                         <div class="text-center">
 
-                            <a class="btn btn-lg btn-hover-shadow w-xs-100" href="#" style="color:white;border-radius:5px;background-color:#F6A42C;width:40%">
-                                 &nbsp;CONOCER MÁS&nbsp;
+                            <a class="btn btn-lg btn-hover-shadow" href="#" style="color:white;border-radius:5px;background-color:#F6A42C;width:50%">
+                                 &nbsp;CONOCER MÁS&nbsp;<b style="color:#03424E;font-size:30px"></b> 
                             </a>
                         </div>
                     </div>
@@ -828,170 +903,7 @@
     </div> 
 <div id="mycontent"></div>
 <!-- FIN SECCION -->
-<div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Animation</h4>
-      <p class="card-subtitle">
-        Select the animation style class and check the animation to
-        the image, you can use any of this animation to anywhere, just
-        place exact word. example
-        <code>.animated .bounce</code>
-      </p>
-      <form class="mb-4 mt-5">
-        <div class="row justify-content-center">
-          <div class="col-sm-8">
-            <div class="input-group">
-              <select class="form-select js--animations">
-                <optgroup label="Attention Seekers">
-                  <option value="bounce">bounce</option>
-                  <option value="flash">flash</option>
-                  <option value="pulse">pulse</option>
-                  <option value="rubberBand">rubberBand</option>
-                  <option value="shake">shake</option>
-                  <option value="swing">swing</option>
-                  <option value="tada">tada</option>
-                  <option value="wobble">wobble</option>
-                  <option value="jello">jello</option>
-                </optgroup>
-                <optgroup label="Bouncing Entrances">
-                  <option value="bounceIn">bounceIn</option>
-                  <option value="bounceInDown">bounceInDown</option>
-                  <option value="bounceInLeft">bounceInLeft</option>
-                  <option value="bounceInRight">bounceInRight</option>
-                  <option value="bounceInUp">bounceInUp</option>
-                </optgroup>
-                <optgroup label="Bouncing Exits">
-                  <option value="bounceOut">bounceOut</option>
-                  <option value="bounceOutDown">bounceOutDown</option>
-                  <option value="bounceOutLeft">bounceOutLeft</option>
-                  <option value="bounceOutRight">
-                    bounceOutRight
-                  </option>
-                  <option value="bounceOutUp">bounceOutUp</option>
-                </optgroup>
-                <optgroup label="Fading Entrances">
-                  <option value="fadeIn">fadeIn</option>
-                  <option value="fadeInDown">fadeInDown</option>
-                  <option value="fadeInDownBig">fadeInDownBig</option>
-                  <option value="fadeInLeft">fadeInLeft</option>
-                  <option value="fadeInLeftBig">fadeInLeftBig</option>
-                  <option value="fadeInRight">fadeInRight</option>
-                  <option value="fadeInRightBig">
-                    fadeInRightBig
-                  </option>
-                  <option value="fadeInUp">fadeInUp</option>
-                  <option value="fadeInUpBig">fadeInUpBig</option>
-                </optgroup>
-                <optgroup label="Fading Exits">
-                  <option value="fadeOut">fadeOut</option>
-                  <option value="fadeOutDown">fadeOutDown</option>
-                  <option value="fadeOutDownBig">
-                    fadeOutDownBig
-                  </option>
-                  <option value="fadeOutLeft">fadeOutLeft</option>
-                  <option value="fadeOutLeftBig">
-                    fadeOutLeftBig
-                  </option>
-                  <option value="fadeOutRight">fadeOutRight</option>
-                  <option value="fadeOutRightBig">
-                    fadeOutRightBig
-                  </option>
-                  <option value="fadeOutUp">fadeOutUp</option>
-                  <option value="fadeOutUpBig">fadeOutUpBig</option>
-                </optgroup>
-                <optgroup label="Flippers">
-                  <option value="flip">flip</option>
-                  <option value="flipInX">flipInX</option>
-                  <option value="flipInY">flipInY</option>
-                  <option value="flipOutX">flipOutX</option>
-                  <option value="flipOutY">flipOutY</option>
-                </optgroup>
-                <optgroup label="Lightspeed">
-                  <option value="lightSpeedIn">lightSpeedIn</option>
-                  <option value="lightSpeedOut">lightSpeedOut</option>
-                </optgroup>
-                <optgroup label="Rotating Entrances">
-                  <option value="rotateIn">rotateIn</option>
-                  <option value="rotateInDownLeft">
-                    rotateInDownLeft
-                  </option>
-                  <option value="rotateInDownRight">
-                    rotateInDownRight
-                  </option>
-                  <option value="rotateInUpLeft">
-                    rotateInUpLeft
-                  </option>
-                  <option value="rotateInUpRight">
-                    rotateInUpRight
-                  </option>
-                </optgroup>
-                <optgroup label="Rotating Exits">
-                  <option value="rotateOut">rotateOut</option>
-                  <option value="rotateOutDownLeft">
-                    rotateOutDownLeft
-                  </option>
-                  <option value="rotateOutDownRight">
-                    rotateOutDownRight
-                  </option>
-                  <option value="rotateOutUpLeft">
-                    rotateOutUpLeft
-                  </option>
-                  <option value="rotateOutUpRight">
-                    rotateOutUpRight
-                  </option>
-                </optgroup>
-                <optgroup label="Sliding Entrances">
-                  <option value="slideInUp">slideInUp</option>
-                  <option value="slideInDown">slideInDown</option>
-                  <option value="slideInLeft">slideInLeft</option>
-                  <option value="slideInRight">slideInRight</option>
-                </optgroup>
-                <optgroup label="Sliding Exits">
-                  <option value="slideOutUp">slideOutUp</option>
-                  <option value="slideOutDown">slideOutDown</option>
-                  <option value="slideOutLeft">slideOutLeft</option>
-                  <option value="slideOutRight">slideOutRight</option>
-                </optgroup>
-                <optgroup label="Zoom Entrances">
-                  <option value="zoomIn">zoomIn</option>
-                  <option value="zoomInDown">zoomInDown</option>
-                  <option value="zoomInLeft">zoomInLeft</option>
-                  <option value="zoomInRight">zoomInRight</option>
-                  <option value="zoomInUp">zoomInUp</option>
-                </optgroup>
-                <optgroup label="Zoom Exits">
-                  <option value="zoomOut">zoomOut</option>
-                  <option value="zoomOutDown">zoomOutDown</option>
-                  <option value="zoomOutLeft">zoomOutLeft</option>
-                  <option value="zoomOutRight">zoomOutRight</option>
-                  <option value="zoomOutUp">zoomOutUp</option>
-                </optgroup>
-                <optgroup label="Specials">
-                  <option value="hinge">hinge</option>
-                  <option value="rollIn">rollIn</option>
-                  <option value="rollOut">rollOut</option>
-                </optgroup>
-              </select>
 
-              <button class="btn btn-primary js--triggerAnimation" type="button">
-                Animate Me !
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
-      <!-- / Form -->
-      <!-- div -->
-      <div class="row justify-content-center">
-        <div class="text-center col-lg-4 col-md-6">
-          <!-- please keep inline style otherwise animation will not work -->
-          <span id="animationSandbox" style="display: block">
-            <img src="../assets/images/backgrounds/img1.jpg" class="img-fluid rounded" alt="user">
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
     </form>
     <style>
         input::placeholder {
@@ -1004,7 +916,6 @@
 
 
     </style>
-    <p></p>
 
     <script>
 
