@@ -103,7 +103,7 @@
 
 
         <!-- INICIO SECCION -->
-<header class="header fixed-header"id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8);">
+<header class="header fixed-header" id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8);">
 
    
     <nav class="navbar navbar-expand-lg py-0">
@@ -133,13 +133,15 @@
                         </b></a>
                     </li>
                     <li class="nav-item" style="letter-spacing: 1px;">
-                        <a class="nav-link" aria-current="page" style="color: white" href="../proyectos"><span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span></a>
+                        <a class="nav-link" aria-current="page" href="../proyectos" style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
+                            <span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span>
+                        </b></a>
                     </li>
-                    <li class="nav-item" style="letter-spacing: 1px;">
+                    
+                    <li class="nav-item" style="letter-sblogs: 1px;">
                         <a class="nav-link" aria-current="page" href="../blog" style="color: white">
                             <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="blog">BLOG</span></b>
-                        </a>
-                    </li>
+                        </a>                </li>
                     <li class="nav-item" style="letter-spacing: 1px;">
                         <a class="nav-link" aria-current="page" href="../contacto" style="color: white">
                             <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="contacto">CONTÁCTANOS</span></b>
@@ -284,61 +286,66 @@
         </div>
 
     </div>
-<div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header p-4">
-        <img src="/ayba/1.png" alt="matdash-img" class="img-fluid" width="150">
+<div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #000000e1">
+    <div class="offcanvas-header p-4 text-center justify-content-center">
+        <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" alt="matdash-img" class="img-fluid" width="150">
     </div>
-    <div class="offcanvas-body p-4">
-        <ul class="navbar-nav justify-content-end flex-grow-1">
-            <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="/">Inicio</a>
+    <div class="offcanvas-body ">
+        <ul class="navbar-nav  flex-grow-1 text-white">
+            <li class="nav-item mt-0 text-center">
+                <a class="nav-link fs-3  active" aria-current="page" href="/" id="inicio_2">Inicio</a>
             </li>
-            <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="nosotros">Nosotros</a>
+            <li class="nav-item mt-3 text-center">
+                <a class="nav-link fs-3  active" aria-current="page" href="../../nosotros" id="nosotros_2">Nosotros</a>
             </li>
-            <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="proyectos">Proyectos</a>
+            <li class="nav-item mt-3 text-center">
+                <a class="nav-link fs-3  active" aria-current="page" href="../../proyectos" id="proyectos_2">Proyectos</a>
             </li>
-            <li class="nav-item mt-3">
-                <a class="nav-link fs-3 text-dark active" aria-current="page" href="blog">Blogs</a>
+            <li class="nav-item mt-3 text-center">
+                <a class="nav-link fs-3  active" aria-current="page" href="../../blog" id="blogs_2">Blogs</a>
+            </li>
+            <li class="nav-item mt-3 text-center">
+                <a class="nav-link fs-3  active" aria-current="page" href="../../contacto" id="contacto_2">Contacto</a>
             </li>
         </ul>
-        <a href="login" class="btn btn-primary w-100 py-2">Administrar</a>
+        <a href="../../login" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #FFA726">Administrar</a>
         <br>
-        <a href="logout" class="btn btn-secondary w-100 py-2">Salir</a>
+        <a href="../../logout" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #054E5C">Salir</a>
     </div>
 </div>
 <!-- FIN SECCION -->
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                // Obtiene la URL actual
-                const currentURL = window.location.pathname;
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtiene la URL actual
+        const currentURL = window.location.pathname;
 
-                // Mapeo de rutas a IDs
-                const menuItems = {
-                    "/": "inicio",
-                    "/nosotros": "nosotros",
-                    "/proyectos": "proyectos",
-                    "/blog": "blog",
-                    "/contacto": "contacto"
-                };
+        // Mapeo de rutas a arrays de IDs
+        const menuItems = {
+            "/": ["inicio", "inicio_2"],
+            "/nosotros": ["nosotros", "nosotros_2"],
+            "/proyectos": ["proyectos","proyectos_2"],
+            "/blog": ["blog","blogs_2"],
+            "/contacto": ["contacto","contacto_2"]
+        };
 
-                // Busca si la URL coincide con algún ID en el menú
-                for (const path in menuItems) {
-                    if (currentURL === path) {
-                        const element = document.getElementById(menuItems[path]);
-                        if (element) {
-                            element.style.textDecoration = "underline";
-                            element.style.color = "#FFA726";
-                            element.style.textDecorationThickness = "3px"; // Grosor del subrayado
-                            element.style.textDecorationColor = "white"; // Color blanco
-                            element.style.textUnderlineOffset = "5px"; // Espaciado del subrayado
-                        }
-                    }
+        // Verifica si la URL coincide con una clave en menuItems
+        if (menuItems[currentURL]) {
+            // Itera sobre los IDs asociados a la URL y aplica el estilo
+            menuItems[currentURL].forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.style.textDecoration = "underline";
+                    element.style.color = "#FFA726";
+                    element.style.textDecorationThickness = "3px"; // Grosor del subrayado
+                    element.style.textDecorationColor = "white"; // Color blanco
+                    element.style.textUnderlineOffset = "5px"; // Espaciado del subrayado
                 }
             });
-        </script>
+        }
+    });
+</script>
+
 
 
         <style>
