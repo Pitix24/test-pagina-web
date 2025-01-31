@@ -592,109 +592,6 @@
                 </div>
             </div>
         </div>
-
-
-
-
-        <div class="container py-5">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <!-- Tarjeta 1 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tarjeta 2 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tarjeta 3 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
 <div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg'); 
                background-repeat: no-repeat; 
                background-size: auto 100%; 
@@ -715,45 +612,93 @@
                 <!-- Tarjeta 1 -->
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center">
-                        <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
-                            <div class="card-body p-1 text-center">
-                                <img src="https://aybar.credilotesperu.com/resource/1734461605_SAN%20ANDRES%20-%20CARD%203.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                                <b style="font-size: 20px;">PROYECTO <br> SAN ANDRÉS</b><p>------------</p>
-                                <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                                    &gt; &nbsp;CONOCER MÁS&nbsp;
-                                </a>
+                        <div class="card position-relative" style="width:80%;
+                        background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );background-position:center;
+                            border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        
+                           
+                            {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                            <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                                <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">Proyecto <br> San Andrés</h5>
+                                <p class="" style="color:#a3a3a3;">Lotes desde 120 m2</p>
                             </div>
+                            <a href="../../proyectos/nuevo_huaral">
+                                <div class="d-flex align-items-center justify-content-center position-absolute " style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                                  <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                                </div>
+        
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 2 -->
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center">
-                        <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
-                            <div class="card-body p-1 text-center">
-                                <img src="https://aybar.credilotesperu.com/resource/1734791444_LAGOON%20VILLAGE%20-%20CARD%201.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                                <b style="font-size: 20px;">PROYECTO <br>LAGOON VILLAGE</b><p>------------</p>
-                                <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                                    &gt; &nbsp;CONOCER MÁS&nbsp;
-                                </a>
+                        <div class="card position-relative" style="width:80%;
+                        background-image:url('../resource/1738333326_679cdc8e7d400LAGOON%20VILLAGE.png' );background-position:center;
+                            border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        
+                           
+                            {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                            <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                                <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
+                                     <br> LAGOON VILLAGE</h5>
+                                <p class="" style="color:#a3a3a3;">Lotes desde 120 m2</p>
                             </div>
+                            <a href="../../proyectos/nuevo_huaral">
+                            <div class="d-flex align-items-center justify-content-center position-absolute" style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                              <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <!-- Tarjeta 3 -->
                 <div class="carousel-item">
                     <div class="d-flex justify-content-center">
-                        <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px; width: 90%;">
-                            <div class="card-body p-1 text-center">
-                                <img src="https://aybar.credilotesperu.com/resource/1734791522_JUMEIRAH%20LAKE%20-%20CARD%202.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                                <b style="font-size: 20px;">PROYECTO <br>JUMEIRAH LAKE</b><p>------------</p>
-                                <p>Lotes desde 120 m2</p>
-                                <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                                    &gt; &nbsp;CONOCER MÁS&nbsp;
-                                </a>
+                        <div class="card position-relative" style="width:80%;
+                        background-image:url('../resource/1738333385_679cdcc9438c7Jumeirah.png' );background-position:center;
+                            border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        
+                           
+                            {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                            <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                                <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
+                                     <br> JUMEIRAH LAKE</h5>
+                                <p class="" style="color:#a3a3a3;">Lotes desde 120 m2</p>
                             </div>
+                            <a href="../../proyectos/jumeirah">
+                            <div class="d-flex align-items-center justify-content-center position-absolute" style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                              <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -774,47 +719,94 @@
     <div class="container">
         <!-- Grilla para pantallas medianas y grandes -->
         <div class="row d-none d-md-flex justify-content-center">
-            <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card-body p-1 text-center">
-                        <img src="https://aybar.credilotesperu.com/resource/1734461605_SAN%20ANDRES%20-%20CARD%203.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                        <b style="font-size: 20px;">PROYECTO <br> SAN ANDRÉS</b>
-                        <p>------------</p>
-                        <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                            &gt; &nbsp;CONOCER MÁS&nbsp;
-                        </a>
+            <div class="col-md-6 col-lg-4 col-xl-4 mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card position-relative" style="
+                background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );background-position:center;
+                    border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                
+                   
+                    {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                    <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                        <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
+                        <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
                     </div>
+                    <a href="../../proyectos/nuevo_huaral">
+                        <div class="d-flex align-items-center justify-content-center position-absolute" style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                        </div>
+
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card-body p-1 text-center">
-                        <img src="https://aybar.credilotesperu.com/resource/1734791444_LAGOON%20VILLAGE%20-%20CARD%201.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                        <b style="font-size: 20px;">PROYECTO <br>LAGOON VILLAGE</b><p>------------</p>
-                        <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                            &gt; &nbsp;CONOCER MÁS&nbsp;
-                        </a>
+            <div class="col-md-6 col-lg-4 col-xl-4 mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card position-relative" style="
+                background-image:url('../resource/1738333326_679cdc8e7d400LAGOON%20VILLAGE.png' );background-position:center;
+                    border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                
+                   
+                    {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                    <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                        <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
+                             <br> LAGOON VILLAGE</h5>
+                        <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
                     </div>
+                    <a href="../../proyectos/nuevo_huaral">
+                    <div class="d-flex align-items-center justify-content-center position-absolute" style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                      <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                    </div>
+                    </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 col-xl-4 mb-3">
-                <div class="card" style="border-color:#03424E;color:#03424E;border-width:1px;" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-                    <div class="card-body p-1 text-center">
-                        <img src="https://aybar.credilotesperu.com/resource/1734791522_JUMEIRAH%20LAKE%20-%20CARD%202.png" alt="matdash-img" class="w-100 mb-4" width="80" style="padding-top:40px">
-                        <b style="font-size: 20px;">PROYECTO <br>JUMEIRAH LAKE</b><p>------------</p>
-                        <p>Lotes desde 120 m2</p>
-                        <a class="btn btn-hover-shadow" href="#" style="color:white;border-radius:20px;background-color:#F6A42C;margin:10px;">
-                            &gt; &nbsp;CONOCER MÁS&nbsp;
-                        </a>
+            <div class="col-md-6 col-lg-4 col-xl-4 mb-3" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card position-relative" style="
+                background-image:url('../resource/1738333385_679cdcc9438c7Jumeirah.png' );background-position:center;
+                    border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                
+                   
+                    {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
+                    <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
+                        <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
+                             <br> JUMEIRAH LAKE</h5>
+                        <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
                     </div>
+                    <a href="../../proyectos/jumeirah">
+                    <div class="d-flex align-items-center justify-content-center position-absolute" style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                      <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid pt-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');
+<div class="container-fluid py-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');
  background-repeat: no-repeat; 
  background-size: cover;
       

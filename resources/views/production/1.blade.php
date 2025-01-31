@@ -585,7 +585,21 @@
 //     }
 //   });
 
+//reinicia animacion AOS
+$(document).ready(function () {
+    // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
+    function restartAOS() {
+        $("[data-aos]").removeClass("aos-animate"); // Quitar animación
+        
+        setTimeout(() => {
+            $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
+            AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
+        }, 1000);
+    }
 
+    // Ejecutar cada 3 segundos
+    setInterval(restartAOS, 40000);
+});
 
     </script>
 </body>
