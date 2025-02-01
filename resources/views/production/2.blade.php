@@ -2,37 +2,36 @@
 
 <style>
     .bg-responsive {
-    background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-
-    /* height: 85vh; */
-}
-
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1292px) {
-    .bg-responsive {
-        width: 100%;
+        background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('../resource/1738247474_679b8d32253e5portada-inicio-1-tablet.jpg');
-    }
-}
+        width: 100%;
 
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 987px) {
-    .bg-responsive {
-        width: 10%;
-        /* height: 90vh; */
-        background-position: center;
-        background-repeat: no-repeat;
-        /* background-size: contain; */
-        background-image: url('../resource/1738247025_679b8b712800cportada-inicio-1-celular.jpg');
+        /* height: 85vh; */
     }
-}
-    
+
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 1292px) {
+        .bg-responsive {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../resource/1738247474_679b8d32253e5portada-inicio-1-tablet.jpg');
+        }
+    }
+
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            width: 10%;
+            /* height: 90vh; */
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            background-image: url('../resource/1738247025_679b8b712800cportada-inicio-1-celular.jpg');
+        }
+    }
 </style>
 @section('content')
     <form method="post" id="Customer">
@@ -423,15 +422,15 @@
                     <!-- Grilla para pantallas grandes -->
                     <div class="row d-none d-lg-flex mt-4">
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="rdxrSIrZISE" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="rdxrSIrZISE" autoload="" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="uuw6UDjl0oo" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
                         <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="aguyG7M828M" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                            <lite-youtube videoid="aguyG7M828M" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
                         </div>
 
@@ -813,7 +812,7 @@
  
                background-position: center;">
 
-<img src="../resource/1738168541_679a58dd6cbc9portada-confiaenaybar-celular.jpg" class="d-sm-none" alt="" style="border:solid white 5px;margin-bottom:-180px;margin-top:-4px;border-radius:10px" width="100%">
+<img src="../resource/1738168541_679a58dd6cbc9portada-confiaenaybar-celular.jpg" class="d-lg-none" alt="" style="border:solid white 5px;margin-bottom:-180px;margin-top:-4px;border-radius:10px" width="100%">
 
         <div class="row">
             <!-- Imagen -->
@@ -977,7 +976,7 @@
                         </div>
                         <div class="text-center">
 
-                            <a class="btn btn-lg btn-hover-shadow" href="#" style="color:white;border-radius:5px;background-color:#F6A42C;width:50%">
+                            <a class="btn btn-lg btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:5px;background-color:#F6A42C;width:50%">
                                  &nbsp;CONOCER MÁS&nbsp;<b style="color:#03424E;font-size:30px"></b> 
                             </a>
                         </div>
@@ -1009,13 +1008,9 @@
             /* Asegura visibilidad */
             font-family: Montserrat-SemiBold;
         }
-
-
     </style>
 
     <script>
-
-
         //traer los projectos y los agrega a un select
         // Ejecutar cuando el DOM esté listo
         document.addEventListener('DOMContentLoaded', ProjectList);
@@ -1055,20 +1050,6 @@
         .carousel-control-next {
             z-index: 10;
             /* Asegúrate de que estén por encima del contenido */
-        }
-    </style>
-
-
-    <style>
-        .subrayado {
-            width: 60px;
-            /* Tamaño del subrayado */
-            height: 5px;
-            /* Grosor */
-            background-color: #F4A623;
-            /* Naranja */
-            margin-top: -10px;
-            /* Ajuste para acercarlo al texto */
         }
     </style>
 
@@ -1171,3 +1152,24 @@
         <!-- /.modal-dialog -->
     </div>
 @endsection
+
+<script>
+    //reinicia animacion AOS
+//reinicia animacion AOS
+$(document).ready(function () {
+    // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
+    function restartAOS() {
+        $("[data-aos='flip-left']").removeClass("aos-animate"); // Quitar animación
+        
+        setTimeout(() => {
+            $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
+            AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
+        }, 1000);
+    }
+
+    // Ejecutar cada 3 segundos
+    setInterval(restartAOS, 70000);
+});
+
+
+</script>

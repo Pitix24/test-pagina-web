@@ -1,643 +1,489 @@
 @extends('production.1')
 @section('content')
+<style>
+    .bg-responsive {
+        background-image: url('../../resource/1738348658_679d1872b2f44portada-nosotros-escritorio.jpg');
+        height:82vh;
+        background-size: cover;
+        /* height: 85vh; */
+    }
 
-<!-- INICIO SECCION -->
-<div class="container-fluid">
-        <div class="row ">
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            height:82vh;
+            background-size: cover;
+            background-image: url('../../resource/1738431952_679e5dd0a6af6portada-nosotros-tablet.jpg');
+        }
+    }
 
-            <div class="col-0 col-xl-1 col-lg-1 col-md-1 col-sm-1">
-            </div>
-            <div class="col-6 col-xl-3 col-lg-4 col-md-4 col-sm-4 align-content-center">
-                <p></p>
-                <h4 class="d-none d-xl-block d-lg-block fs-9  text-start " style="margin-top:-38%">
-                    <b>¿QUIÉNES SOMOS?</b>
-                </h4>
-                <h4 class="d-none d-md-block d-xl-none d-lg-none fs-7  text-start" style="margin-top:-45%">
-                    <b>¿QUIÉNES SOMOS?</b>
-                </h4>
-                <h4 class="  d-md-none d-xl-none d-lg-none fs-2 text-start" style="margin-top:-48%;">
-
-                    <b>¿QUIÉNES SOMOS?</b>
-                </h4>
-           
-                <p class="d-none d-xl-block  container fs-7  text-white text-overlay " style="word-spacing: 15px;">
-
-                    Somos una inmobiliaria completamente<br>
-                    peruana, dedicada &nbsp;a la creación de<br>
-                    proyectos inmobiliarios de terrenos de <br>
-                    todas las familias del Perú. Ofrecemos<br>
-                    terrenos exclusivos en el país.
-
-                </p>
-
-
-                <p class="d-none d-md-block d-lg-block d-xl-none text-justify container fs-6 text-white text-overlay" style="word-spacing: 10px">
-
-                    Somos una inmobiliaria completamente<br> peruana,
-                    dedicada a la creación de<br> proyectos inmobiliarios
-                    de terrenos de <br> todas las familias del Perú. Ofrecemos <br>
-                    terrenos exclusivos en el país.
-
-                </p>
-                <p class="d-sm-block d-md-none d-lg-none d-xl-none text-left  fs-1 text-white text-overlay" style="word-spacing: 2px;
-                                margin-left: -20px;margin-top:-10px;
-                                ">
-
-                    Somos una inmobiliaria completamente<br> peruana,
-                    dedicada a la creación de<br> proyectos  inmobiliarios 
-                    de terrenos de <br> todas lasfamilias  del Perú.
-
-
-                </p>
-
-            </div>
-            <div class="d-none d-md-block d-lg-block d-xl-block col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6">
-                <img class="transparencia_left" style="" width="100%" src="https://aybar.credilotesperu.com/resource/1734640341_empatia.jpg" alt="" srcset="">
-            </div>
-            <div class="d-sm-block d-md-none d-lg-none d-xl-none col-xl-8 col-lg-7 col-md-7 col-sm-7 col-6" style="height:100px">
-                <img class="transparencia_left" style="" width="100%" src="https://aybar.credilotesperu.com/resource/1734640341_empatia.jpg" alt="" srcset="">
-            </div>
-        </div>
-    </div>  
-<p></p>
-<div class="container-fluid py-1" style="background-color:  #FF9D0D;">
-        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
-            <div class="row">
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
-                </div>
-                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
-                    <h2 class="fs-10 pr-5  text-center"><b><span style="font-family: Montserrat-SemiBold;">MISIÓN</span></b> </h2>
-                </div>
-                <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
-                ">
-                    <h2 class="fs-8 text-end" style=""><b>MISIÓN</b> </h2>
-                </div>
-                <div class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center 
-                ">
-                    <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>MISIÓN</b> </h2>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
-                        <img src="https://aybar.credilotesperu.com/resource/1734640986_Mision.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10"></div><div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 "><p style="color:#03424E;text-align:justify; " class="m-10"><span style="font-family: Montserrat-SemiBold; font-size: 14px;"><b>Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
-                            y
-                            eco sostenibles. Ofrecemos asesoramiento integral para satisfacer tus necesidades inmobiliarias
-                            y
-                            maximizar tu rentabilidad con integridad y empatía.</b></span>
-                        
-                    </p>
-                </div>
-                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
-
-                </div>
-                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-3">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
-                            y
-                            eco sostenibles. Ofrecemos asesoramiento integral para satisfacer tus necesidades inmobiliarias
-                            y
-                            maximizar tu rentabilidad con integridad y empatía.
-                        </b>
-                    </p>
-                </div>
-               
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Somos una inmobiliaria que ayuda a los peruanos a obtener su propio lote con espacios de calidad
-                            y
-                            eco sostenibles. Ofrecemos asesoramiento integral para satisfacer tus necesidades inmobiliarias
-                            y
-                            maximizar tu rentabilidad con integridad y empatía.
-                        </b>
-                    </p>
-                </div>
-             
-            </div>
-            <p></p>
-        </div>
-    </div>
-    <div class="container-fluid py-1" style="background-color: #FFAC32">
-        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
-            <div class="row">
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
-                </div>
-                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
-                    <h2 class="fs-10 text-center"><b><span style="font-family: Montserrat-SemiBold;">VISIÓN</span></b> </h2>
-                </div>
-                <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
-                ">
-                    <h2 class="fs-8 text-end" style=""><b>VISIÓN</b> </h2>
-                </div>
-                <div class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
-                ">
-                    <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>VISIÓN</b> </h2>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4 col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
-                 <img src="https://aybar.credilotesperu.com/resource/1734727625_Vision.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10">
-                </div>
-                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
-                        
-                            <span style="font-family: Montserrat-SemiBold; font-size: 16px;"><b>Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
-                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.</b></span>
-                        
-                    </p>
-                </div>
-                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
-
-                </div>
-                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-4">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
-                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
-                        </b>
-                    </p>
-                </div>
-                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
-
-                </div>
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Queremos ser reconocidos como la mejor inmobiliaria en proyectos económicos y ecosostenibles,
-                            liderando en gestión y satisfaciendo a nuestros clientes en sus inversiones ideales.
-                        </b>
-                    </p>
-                </div>
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
-
-                </div>
-            </div>
-            <p></p>
-        </div>
-    </div>
-
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 500px) {
+        .bg-responsive {
+            height:52vh;
+            width: 100%;
+            background-size: cover;
+            background-image: url('../../resource/1738431887_679e5d8fb6295portada-nosotros-celular.jpg');
+        }
+    }
+</style>
+    <!-- INICIO SECCION -->
+<div class="py-1 position-relative bg-responsive" style=" 
+    background-position: center;
+    background-repeat: no-repeat;
  
-    <div class="container-fluid py-1" style="background-color: #FF9D0D;">
-        <div class="container mt-xl-10 mt-md-3 mt-sm-0">
-            <div class="row">
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-0 col-0">
-                </div>
-                <div class="col-0 d-none d-xl-block col-xl-4 d-flex align-content-center borde-derecha">
-                    <h2 class="fs-10 text-center"><b><span style="font-family: Montserrat-SemiBold;">VALORES</span></b> </h2>
-                </div>
-                <div class="d-none d-lg-block d-sm-block d-sm-block d-md-block col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
-                ">
-                    <h2 class="fs-8 text-end" style=""><b>VALORES</b> </h2>
-                </div>
-                <div class="d-lg-none d-sm-none d-sm-none d-md-none col-6 col-sm-6 col-md-6 d-xl-none col-lg-4 d-flex align-content-center
-                ">
-                    <h2 class="fs-7 text-end" style="padding-left:50px;padding-top:35px"><b>VALORES</b> </h2>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-sm-2 col-4  col-md-2 d-flex  " style="clip-path: inset(0px 0 0px 0);">
-                   <img src="https://aybar.credilotesperu.com/resource/1734727656_Valores.png" width="70%" height="30%" alt="" srcset="" style="background-color: white;  display: block; box-shadow: 0 0 0 8px white;" class="mt-xl-5 mt-lg-5 mt-md-4 m-10">
-                </div>
-                <div class="d-none d-xl-block col-xl-7 col-lg-7 fs-7 ">
-                    <p style="color:#03424E;text-align:justify; " class="m-10">
-                        
-                            <span style="font-family: Montserrat-SemiBold; font-size: 16px;"><b>Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
-                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.</b></span>
-                        
-                    </p>
-                </div>
-                <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none col-0 ">
-
-                </div>
-                <div class="d-none d-lg-block d-md-block d-xl-none col-xl-7 col-lg-7 fs-4">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
-                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
-                        </b>
-                    </p>
-                </div>
-                <div class="d-sm-block d-md-none d-lg-none d-xl-none col-1 ">
-
-                </div>
-                <div class=" d-sm-block d-xs-block d-lg-none d-md-none d-xl-none fs-2 col-12">
-                    <p style="color:#03424E;text-align:justify; " class="m-md-0 m-lg-10 m-xl-10">
-                        <b>
-                            Fomentamos un ambiente de trabajo colaborativo y de apoyo mutuo, valorando a nuestro equipo
-                            humano. Esto nos permite satisfacer mejor las necesidades y deseos de nuestros clientes.
-                        </b>
-                    </p>
-                </div>
-                <div class="col-xl-0 col-lg-0 col-md-0 col-sm-3 col-0">
-
-                </div>
-            </div>
-            <p></p>
-        </div>
-    </div>
-<div class="container my-5">
-        <div class="row align-items-center mt-10">
-            <!-- Columna izquierda: Reproductor multimedia -->
-            <div class="col-lg-12 col-md-12 mb-10">
-                <div class="ratio ratio-16x9">
-                    <lite-youtube videoid="68tbz0AyBUs" posterquality="maxresdefault" style="width: 100%;" class="rounded-1  border-2 mb-3" title="Play: Video">
-
-                    </lite-youtube>
-
-                </div>
-            </div>
-
-           
-           
-        </div>
-    </div>
-<div id="carouselExampleIndicators" class="carousel slide pt-5" data-bs-ride="carousel" style="background-image:url('https://aybar.credilotesperu.com/resource/1734733260_fondo-.jpg')">
-
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-  </div>
-
-  <div class="carousel-inner">
-
-    <div class="carousel-item active">
-      <div class="row" style="justify-content: center;">
-        <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
-          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
-            <div class="container" style="text-align: center; color: white; ">
-              <h2 style="text-align: center; color: white;">RESPETO</h2>
-              <p style="text-align: justify; color: white;padding: 45px;">Promover relaciones sólidas entre los miembros del equipo, mejorando la comunicación, incentivando la colaboración y la productividad. Los colaboradores que se sienten valorados presentan altos niveles de motivación y compromiso con la organización.</p>
-            </div>
-          </div>
-        </div>
-            <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
-          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
-            <div class="container" style="text-align: center; color: white; padding: 15px;">
-              <h2 style="text-align: center; color: white;">EMPATÍA</h2>
-              <p style="text-align: justify; color: white;padding: 45px;"><span style="font-size: 14px;">Impulsar que cada miembro del equipo comprenda y conecte con el punto de vista, las emociones y las necesidades del otro, para llegar a acuerdos efectivos y mucho más humanos. Construir y consolidar las relaciones interpersonales. Capacidad de generar esos vínculos enriquecedores en sus relaciones organizacionales.</span></p>
-            </div>
-          </div>
-        </div>
-              <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
-          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
-            <div class="container" style="text-align: center; color: white; padding: 15px;">
-              <h2 style="text-align: center; color: white;">SOLIDARIDAD</h2>
-              <p style="text-align: justify; color: white;padding: 45px;">Cooperar y ayudarse mutuamente representando un bien en común. Trabajar junto con otros miembros del equipo y con todos los demás integrantes de la empresa un mismo objetivo en común. Puede ser un proyecto, si lo miramos al detalle, o también puede ser el bien general de la empresa.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="carousel-item">
-      <div class="row" style="justify-content: center;">
-              <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
-          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
-            <div class="container" style="text-align: center; color: white; padding: 15px;">
-              <h2 style="text-align: center; color: white;">INTEGRIDAD</h2>
-              <p style="text-align: justify; color: white;padding: 45px;"><span style="font-size: 14px;">Actuar con honestidad, transparencia y ser congruente entre las palabras, decisiones y acciones en función al valor y creencias particulares que cada persona tenga. Crear relaciones transparentes, comunicación clara, asertiva, oportuna y abierta, e implementando todos los mecanismos para promover una cultura respetuosa y ética.</span></p>
-            </div>
-          </div>
-        </div>
-             <div class="col-xl-4 col-md-6 col-lg-6 col-sm-12">
-          <div class="card rounded-3 shadow-sm" style="height: 50vh; display: flex; justify-content: center; align-items: center; background-color: #052F3A;">
-            <div class="container" style="text-align: center; color: white; padding: 15px;">
-              <h2 style="text-align: center; color: white;">COMPROMISO</h2>
-              <p style="text-align: justify; color: white;padding: 45px;">Incentivar el logro de los objetivos de cada equipo humano, apoyo y aceptación de las metas y valores de la organización. Ejercer un esfuerzo importante y considerable entre los miembros de la empresa y un deseo de permanecer y comprometerse con ella.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    ">
+ <div class="d-none d-sm-block text-center text-white position-absolute start-50 translate-middle" style="bottom:-13%;width:500px">
+    <h4 class="p-2  text-center fs-6" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+        <span style="color:#ffffff">¿QUIÉNES</span><br> SOMOS?
+    </h4>
+    <div class="subrayado mx-auto "></div>
+   <p class=" fs-5 mt-3" style="text-align: justify">Somos una inmobiliaria completamente peruana,
+    dedicada a la creación de proyectos
+    inmobiliarios de terrenos de todas las familias del
+    Perú. Ofrecemos terrenos exclusivos en el país.</p>
+ </div>
 </div>
-<div class="container my-5 mt-lg-5">
-
-        <div class="row container">
-            <h2 class="display-6"> <b>PREGUNTAS FRECUENTES</b></h2>
-            <!-- Preguntas frecuentes (acordeón) -->
-            <div class="col-md-8">
-                <div class="accordion" id="faqAccordion">
-                    <div class="accordion-item">
-
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                ¿Cuáles son las opciones de pago para la adquisición de mi lote?
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" data-content="Opción de pago">
-                            <div class="accordion-body">
-                                Las opciones de pago incluyen transferencia bancaria, tarjeta de crédito y más.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                ¿Instapay cobra alguna tarifa?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" data-content="Tarifas de Instapay">
-                            <div class="accordion-body">
-                                Instapay cobra tarifas dependiendo del tipo de transacción.
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Puedes añadir más preguntas -->
+<div class="container py-md-5 py-1">
+    <div class="row ">
+        <!-- Card 1 -->
+        <div class="col-md-6 col-lg-4 col-12">
+            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="../resource/1738421604_679e356486d28vision.svg" class="" style="width:120px;" alt="Imagen 1">
+    
                 </div>
-            </div>
-
-            <!-- Tarjeta izquierda -->
-            <div class="col-md-4">
-                <div id="leftCard" class="p-3 text-white bg-dark" style="border-radius: 20px;text-align:center">
-                    <br>
-                    <p id="dynamicContent">Selecciona una pregunta para ver el detalle aquí.</p>
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-4" style="font-family: Montserrat-SemiBold;letter-spacing:10px;color:#03424E;margin-top:-20px;">VISIÓN</h5>
+                  <p class="card-text fs-4" style="text-align:justify;color:#03677a ">Queremos ser <b> reconocidos como la
+                    mejor inmobiliaria en proyectos
+                    económicos y ecosostenibles,</b>
+                    liderando en gestión y satisfaciendo a
+                    nuestros clientes en sus inversiones
+                    ideales.
+                  
+                </p></div>
+              </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-6 col-lg-4 col-12">
+            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="../resource/1738421620_679e3574ddae2mision.svg" class="" style="width:120px;margin-left:30px" alt="Imagen 1">
+    
                 </div>
-            </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-4" style="font-family: Montserrat-SemiBold;letter-spacing:10px;color:#03424E;margin-top:-20px;">MISIÓN</h5>
+                  <p class="card-text fs-4" style="text-align:justify;color:#03677a ">Somos una inmobiliaria que <b> ayuda a 
+                    los peruanos a obtener su propio 
+                    lote </b>con espacios de calidad y eco
+                    sostenibles. Ofrecemos
+                    asesoramiento integral para
+                    satisfacer tus necesidades
+                    inmobiliarias y maximizar tu
+                    rentabilidad con integridad y empatía.</p>
+                  
+                </div>
+              </div>
+           
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-12 col-lg-4 col-12">
+            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                    <img src="../resource/1738421610_679e356a803dfvalores.svg" class="" style="width:120px;" alt="Imagen 1">
+    
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title pb-4" style="font-family: Montserrat-SemiBold;letter-spacing:10px;color:#03424E;margin-top:-20px;">MISIÓN</h5>
+                  <p class="card-text fs-4" style="text-align:justify;color:#03677a ">Fomentamos un <b> ambiente de
+                    trabajo colaborativo y de apoyo
+                    mutuo,</b> valorando a nuestro equipo
+                    humano. Esto nos permite satisfacer
+                    mejor las necesidades y deseos de
+                    nuestros clientes.</p>
+                  
+                </div>
+              </div>
+        </div>
+      </div>
+</div>
+<div class="my-0 " data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
+      <div class="sliding-wrapper position-relative overflow-hidden">
+        <div class="slide-background d-flex w-100">
+
+
+          <div class="slide" style="margin-right:1px">
+            <iframe width="1000" height="515" src="https://www.youtube.com/embed/4Uqn76cNr7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+           </div>
+           <div class="slide">
+            <iframe width="1000" height="515" src="https://www.youtube.com/embed/LYImsD6hVx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+           </div>
+           <div class="slide">
+            <iframe width="1000" height="515" src="https://www.youtube.com/embed/eJ3sHYjSyaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+           </div>
+      
         </div>
     </div>
+    </div>
+<div class="d-none d-lg-block text-center mt-5 position-relative" style="width: 100vh; height: 90vh; margin: auto;">
+      <!-- Círculo -->
+      <div class="position-absolute top-1 start-0 w-100 h-100">
+        <img src="../../resource/1734547017_circulo.png" width="60%" style="padding:5%;" alt="" srcset="">
+      </div>
+      <div data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
+        <img src="../../resource/1738351411_679d2333ab35blogo%20aybar%20a%20color.svg" alt="Logo Aybar Corp" class="position-absolute start-50 translate-middle" style="width: 30%; margin-top:30%">
+      </div>
+      <!-- Logo en el centro -->
+     
+
+      <!-- Valores alrededor del círculo -->
+      <div class="position-absolute text-end" style="top: 5%; left: -13%; width: 350px;">
+          <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">SOLIDARIDAD</h4>
+          <div class="row">
+            <div class="col-10"></div>
+            <div class="col-2" style="width:12%; height: 6px; background-color: #F4A623;margin-top:-5px"></div>
+          </div>
+          <p class=" mt-2 text-end text-justify fs-3" style="color:#03677a">Cooperar y ayudarse mutuamente <br>
+            representando un bien en común.<br>
+            Trabajar junto con otros miembros<br>
+            del equipo y con todos los demás<br>
+            integrantes de la empresa. </p>
+      </div>
+
+      <div class="position-absolute text-start" style="top: 5%; right: -13%; width: 350px;">
+        <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">RESPETO</h4>
+
+          <div class="" style="width: 40px; height: 6px;margin-top:-5px; background-color: #F4A623;"></div>
+          <p class=" mt-2 text-start text-justify fs-3" style="color:#03677a">Promover relaciones sólidas entre<br>
+            los miembros del equipo, mejorando<br>
+            la comunicación, incentivando la<br>
+            colaboración y la productividad.  </p>
+
+      </div>
+      <div class="position-absolute text-end" style="bottom: 35%; left: -13%; width: 350px;">
+        <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">INTEGRIDAD</h4>
+        <div class="row">
+          <div class="col-10"></div>
+          <div class="col-2" style="width:12%; height: 6px; background-color: #F4A623;margin-top:-5px"></div>
+        </div>
+        <p class=" mt-2 text-end text-justify fs-3" style="color:#03677a">Actuar con honestidad, transparencia <br>
+          y ser congruente entre las palabras,<br>
+          decisiones y acciones en función al<br>
+          valor y creencias particulares que<br>
+          cada persona tenga.
+         </p>
+    </div>
+
+  
+    <div class="position-absolute text-start" style="bottom: 35%; right: -13%; width: 350px;">
+      <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">EMPATÍA</h4>
+
+        <div class="" style="width: 40px; height: 6px;margin-top:-5px; background-color: #F4A623;"></div>
+        <p class=" mt-2 text-start text-justify fs-3" style="color:#03677a">Impulsar que cada miembro del <br>
+          equipo comprenda y conecte con el<br>
+          punto de vista, las emociones y las<br>
+          necesidades del otro, para llegar a<br>
+          acuerdos efectivos y mucho más
+          humanos. </p>
+
+    </div>
+
+      <div class="position-absolute text-center" style="bottom: 22%; left: 50%; transform: translateX(-50%); width: 350px;">
+        <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">COMPROMISO</h4>  
+ 
+          <div class="mx-auto" style="width: 40px; height: 6px; background-color: #F4A623;margin-top:-5px"></div>
+          <p class="small fs-3 mt-2" style="color:#03677a">Incentivar el logro de los objetivos
+            de cada equipo   humano, apoyo y
+            aceptación de las metas y valores
+            de la organización.</p>
+      </div>
+  </div>
+
+  <div class="d-lg-none container text-center mt-5">
+    <!-- Logo -->
+    <img src="../../resource/1738351411_679d2333ab35blogo%20aybar%20a%20color.svg" alt="Logo Aybar Corp" class="mb-4" style="width: 80px;">
+
+    <!-- Primera fila (SOLIDARIDAD - RESPETO) -->
+    <div class="row">
+        <div class="col-md-6">
+          <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">SOLIDARIDAD</h4>
+            <div class="mx-auto" style="width: 40px; height: 6px;margin-top:-8px; background-color: #F4A623;"></div>
+            <p class=" mt-2 text-center text-justify fs-3" style="color:#03677a;">Cooperar y ayudarse mutuamente <br>
+              representando un bien en común.<br>
+              Trabajar junto con otros miembros<br>
+              del equipo y con todos los demás<br>
+              integrantes de la empresa. </p>
+        </div>
+        <div class="col-md-6">
+          <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">RESPETO</h4>
+          <div class="mx-auto" style="width: 40px; height: 6px;margin-top:-8px; background-color: #F4A623;"></div>
+          <p class=" mt-2 text-center text-justify fs-3" style="color:#03677a">Promover relaciones sólidas entre<br>
+            los miembros del equipo, mejorando<br>
+            la comunicación, incentivando la<br>
+            colaboración y la productividad.  </p>
+        </div>
+    </div>
+
+    <!-- Segunda fila (INTEGRIDAD - COMPROMISO) -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+          <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">INTEGRIDAD</h4>
+          <div class="mx-auto" style="width: 40px; height: 6px;margin-top:-8px; background-color: #F4A623;"></div>
+          <p class=" mt-2 text-center fs-3" style="color:#03677a">Actuar con honestidad, transparencia <br>
+            y ser congruente entre las palabras,<br>
+            decisiones y acciones en función al<br>
+            valor y creencias particulares que<br>
+            cada persona tenga.
+           </p>
+        </div>
+        <div class="col-md-6">
+            <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">COMPROMISO</h4>
+            <div class="mx-auto" style="width: 40px; height: 6px;margin-top:-8px; background-color: #F4A623;"></div>
+            <p class="small text-center fs-3 mt-2" style="color:#03677a">Incentivar el logro de los objetivos
+              de cada equipo   humano, apoyo y
+              aceptación de las metas y valores
+              de la organización.</p>
+        </div>
+    </div>
+
+    <!-- Última fila (EMPATÍA, centrado) -->
+    <div class="row mt-4">
+        <div class="col-md-12 mx-auto">
+          <h4 class="fs-7 " style="color:#03424E;letter-spacing:1px">EMPATÍA</h4>
+          <div class="mx-auto" style="width: 40px; height: 6px;margin-top:-8px; background-color: #F4A623;"></div>
+          <p class=" mt-2  text-justify fs-3" style="color:#03677a">Impulsar que cada miembro del 
+            equipo comprenda y conecte con el 
+            punto de <br> vista, las emociones y las 
+            necesidades del otro, para llegar a 
+            acuerdos efectivos <br> y mucho más
+            humanos. </p>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" class="py-4 " style="background-color:#f7f7f7">
+  
+  <div class="container mb-5  text-center justify-content-center">
+    <h4 class="d-sm-none text-center display-10" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+      <span style="color:#03424E">PREGUNTAS </span><br> FRECUENTES
+  </h4>
+    <h4 class="d-none d-sm-block text-center display-6 mt-3" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+      <span style="color:#03424E">PREGUNTAS </span><br> FRECUENTES
+  </h4>
+  <div class="subrayado mx-auto " style="margin-top:-13px"></div>
+    <div class="row  justify-content-center mt-md-5 mt-4 ">
+      
+
+        <!-- Preguntas frecuentes (acordeón) -->
+        <div class="col-md-7 container text-center align-content-center justify-content-center">
+          
+          <div class="accordion " id="faqAccordion">
+            <!-- Pregunta 1 -->
+           
+            <div class="accordion-item border rounded-3 mb-0 ">
+                <h2 class="accordion-header pt-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: white; box-shadow: none; border-radius: 10px; background-image: none !important; padding-right: 10px;">
+                        <span style="color:#03677a" class="fs-4 text-center">  ¿Cuáles son las opciones de pago para la adquisición de mi lote?</span>
+                        <span class="text-warning mx-auto">▼</span>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse pb-3" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-center " style="margin-left:5px">
+                        Las opciones de pago incluyen transferencia bancaria, tarjeta de crédito y más.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pregunta 2 -->
+            <div class="accordion-item border rounded-3 mb-0">
+              <h2 class="accordion-header pt-4">
+                  <button class="accordion-button collapsed d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: white; box-shadow: none; border-radius: 10px; background-image: none !important; padding-right: 10px;">
+                      <span style="color:#03677a" class="fs-4 text-center">¿Instapay cobra alguna tarifa?</span>
+                      <span class="text-warning mx-auto">▼</span>
+                  </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse pb-3" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body text-center" style="margin-left:5px">
+                      Instapay no cobra tarifas ocultas, pero pueden aplicar cargos según el método de pago.
+                  </div>
+              </div>
+          </div>
+          
+        </div>
+        </div>
+
+        <!-- Tarjeta izquierda -->
+      
+    </div>
+</div>
+</div>
 <!-- FIN SECCION -->
 
 
-<div class="card">
-    <div class="card-body">
-      <h4 class="card-title">Animation</h4>
-      <p class="card-subtitle">
-        Select the animation style class and check the animation to
-        the image, you can use any of this animation to anywhere, just
-        place exact word. example
-        <code>.animated .bounce</code>
-      </p>
-      <form class="mb-4 mt-5">
-        <div class="row justify-content-center">
-          <div class="col-sm-8">
-            <div class="input-group">
-              <select class="form-select js--animations">
-                <optgroup label="Attention Seekers">
-                  <option value="bounce">bounce</option>
-                  <option value="flash">flash</option>
-                  <option value="pulse">pulse</option>
-                  <option value="rubberBand">rubberBand</option>
-                  <option value="shake">shake</option>
-                  <option value="swing">swing</option>
-                  <option value="tada">tada</option>
-                  <option value="wobble">wobble</option>
-                  <option value="jello">jello</option>
-                </optgroup>
-                <optgroup label="Bouncing Entrances">
-                  <option value="bounceIn">bounceIn</option>
-                  <option value="bounceInDown">bounceInDown</option>
-                  <option value="bounceInLeft">bounceInLeft</option>
-                  <option value="bounceInRight">bounceInRight</option>
-                  <option value="bounceInUp">bounceInUp</option>
-                </optgroup>
-                <optgroup label="Bouncing Exits">
-                  <option value="bounceOut">bounceOut</option>
-                  <option value="bounceOutDown">bounceOutDown</option>
-                  <option value="bounceOutLeft">bounceOutLeft</option>
-                  <option value="bounceOutRight">
-                    bounceOutRight
-                  </option>
-                  <option value="bounceOutUp">bounceOutUp</option>
-                </optgroup>
-                <optgroup label="Fading Entrances">
-                  <option value="fadeIn">fadeIn</option>
-                  <option value="fadeInDown">fadeInDown</option>
-                  <option value="fadeInDownBig">fadeInDownBig</option>
-                  <option value="fadeInLeft">fadeInLeft</option>
-                  <option value="fadeInLeftBig">fadeInLeftBig</option>
-                  <option value="fadeInRight">fadeInRight</option>
-                  <option value="fadeInRightBig">
-                    fadeInRightBig
-                  </option>
-                  <option value="fadeInUp">fadeInUp</option>
-                  <option value="fadeInUpBig">fadeInUpBig</option>
-                </optgroup>
-                <optgroup label="Fading Exits">
-                  <option value="fadeOut">fadeOut</option>
-                  <option value="fadeOutDown">fadeOutDown</option>
-                  <option value="fadeOutDownBig">
-                    fadeOutDownBig
-                  </option>
-                  <option value="fadeOutLeft">fadeOutLeft</option>
-                  <option value="fadeOutLeftBig">
-                    fadeOutLeftBig
-                  </option>
-                  <option value="fadeOutRight">fadeOutRight</option>
-                  <option value="fadeOutRightBig">
-                    fadeOutRightBig
-                  </option>
-                  <option value="fadeOutUp">fadeOutUp</option>
-                  <option value="fadeOutUpBig">fadeOutUpBig</option>
-                </optgroup>
-                <optgroup label="Flippers">
-                  <option value="flip">flip</option>
-                  <option value="flipInX">flipInX</option>
-                  <option value="flipInY">flipInY</option>
-                  <option value="flipOutX">flipOutX</option>
-                  <option value="flipOutY">flipOutY</option>
-                </optgroup>
-                <optgroup label="Lightspeed">
-                  <option value="lightSpeedIn">lightSpeedIn</option>
-                  <option value="lightSpeedOut">lightSpeedOut</option>
-                </optgroup>
-                <optgroup label="Rotating Entrances">
-                  <option value="rotateIn">rotateIn</option>
-                  <option value="rotateInDownLeft">
-                    rotateInDownLeft
-                  </option>
-                  <option value="rotateInDownRight">
-                    rotateInDownRight
-                  </option>
-                  <option value="rotateInUpLeft">
-                    rotateInUpLeft
-                  </option>
-                  <option value="rotateInUpRight">
-                    rotateInUpRight
-                  </option>
-                </optgroup>
-                <optgroup label="Rotating Exits">
-                  <option value="rotateOut">rotateOut</option>
-                  <option value="rotateOutDownLeft">
-                    rotateOutDownLeft
-                  </option>
-                  <option value="rotateOutDownRight">
-                    rotateOutDownRight
-                  </option>
-                  <option value="rotateOutUpLeft">
-                    rotateOutUpLeft
-                  </option>
-                  <option value="rotateOutUpRight">
-                    rotateOutUpRight
-                  </option>
-                </optgroup>
-                <optgroup label="Sliding Entrances">
-                  <option value="slideInUp">slideInUp</option>
-                  <option value="slideInDown">slideInDown</option>
-                  <option value="slideInLeft">slideInLeft</option>
-                  <option value="slideInRight">slideInRight</option>
-                </optgroup>
-                <optgroup label="Sliding Exits">
-                  <option value="slideOutUp">slideOutUp</option>
-                  <option value="slideOutDown">slideOutDown</option>
-                  <option value="slideOutLeft">slideOutLeft</option>
-                  <option value="slideOutRight">slideOutRight</option>
-                </optgroup>
-                <optgroup label="Zoom Entrances">
-                  <option value="zoomIn">zoomIn</option>
-                  <option value="zoomInDown">zoomInDown</option>
-                  <option value="zoomInLeft">zoomInLeft</option>
-                  <option value="zoomInRight">zoomInRight</option>
-                  <option value="zoomInUp">zoomInUp</option>
-                </optgroup>
-                <optgroup label="Zoom Exits">
-                  <option value="zoomOut">zoomOut</option>
-                  <option value="zoomOutDown">zoomOutDown</option>
-                  <option value="zoomOutLeft">zoomOutLeft</option>
-                  <option value="zoomOutRight">zoomOutRight</option>
-                  <option value="zoomOutUp">zoomOutUp</option>
-                </optgroup>
-                <optgroup label="Specials">
-                  <option value="hinge">hinge</option>
-                  <option value="rollIn">rollIn</option>
-                  <option value="rollOut">rollOut</option>
-                </optgroup>
-              </select>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Animation</h4>
+            <p class="card-subtitle">
+                Select the animation style class and check the animation to
+                the image, you can use any of this animation to anywhere, just
+                place exact word. example
+                <code>.animated .bounce</code>
+            </p>
+            <form class="mb-4 mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <select class="form-select js--animations">
+                                <optgroup label="Attention Seekers">
+                                    <option value="bounce">bounce</option>
+                                    <option value="flash">flash</option>
+                                    <option value="pulse">pulse</option>
+                                    <option value="rubberBand">rubberBand</option>
+                                    <option value="shake">shake</option>
+                                    <option value="swing">swing</option>
+                                    <option value="tada">tada</option>
+                                    <option value="wobble">wobble</option>
+                                    <option value="jello">jello</option>
+                                </optgroup>
+                                <optgroup label="Bouncing Entrances">
+                                    <option value="bounceIn">bounceIn</option>
+                                    <option value="bounceInDown">bounceInDown</option>
+                                    <option value="bounceInLeft">bounceInLeft</option>
+                                    <option value="bounceInRight">bounceInRight</option>
+                                    <option value="bounceInUp">bounceInUp</option>
+                                </optgroup>
+                                <optgroup label="Bouncing Exits">
+                                    <option value="bounceOut">bounceOut</option>
+                                    <option value="bounceOutDown">bounceOutDown</option>
+                                    <option value="bounceOutLeft">bounceOutLeft</option>
+                                    <option value="bounceOutRight">
+                                        bounceOutRight
+                                    </option>
+                                    <option value="bounceOutUp">bounceOutUp</option>
+                                </optgroup>
+                                <optgroup label="Fading Entrances">
+                                    <option value="fadeIn">fadeIn</option>
+                                    <option value="fadeInDown">fadeInDown</option>
+                                    <option value="fadeInDownBig">fadeInDownBig</option>
+                                    <option value="fadeInLeft">fadeInLeft</option>
+                                    <option value="fadeInLeftBig">fadeInLeftBig</option>
+                                    <option value="fadeInRight">fadeInRight</option>
+                                    <option value="fadeInRightBig">
+                                        fadeInRightBig
+                                    </option>
+                                    <option value="fadeInUp">fadeInUp</option>
+                                    <option value="fadeInUpBig">fadeInUpBig</option>
+                                </optgroup>
+                                <optgroup label="Fading Exits">
+                                    <option value="fadeOut">fadeOut</option>
+                                    <option value="fadeOutDown">fadeOutDown</option>
+                                    <option value="fadeOutDownBig">
+                                        fadeOutDownBig
+                                    </option>
+                                    <option value="fadeOutLeft">fadeOutLeft</option>
+                                    <option value="fadeOutLeftBig">
+                                        fadeOutLeftBig
+                                    </option>
+                                    <option value="fadeOutRight">fadeOutRight</option>
+                                    <option value="fadeOutRightBig">
+                                        fadeOutRightBig
+                                    </option>
+                                    <option value="fadeOutUp">fadeOutUp</option>
+                                    <option value="fadeOutUpBig">fadeOutUpBig</option>
+                                </optgroup>
+                                <optgroup label="Flippers">
+                                    <option value="flip">flip</option>
+                                    <option value="flipInX">flipInX</option>
+                                    <option value="flipInY">flipInY</option>
+                                    <option value="flipOutX">flipOutX</option>
+                                    <option value="flipOutY">flipOutY</option>
+                                </optgroup>
+                                <optgroup label="Lightspeed">
+                                    <option value="lightSpeedIn">lightSpeedIn</option>
+                                    <option value="lightSpeedOut">lightSpeedOut</option>
+                                </optgroup>
+                                <optgroup label="Rotating Entrances">
+                                    <option value="rotateIn">rotateIn</option>
+                                    <option value="rotateInDownLeft">
+                                        rotateInDownLeft
+                                    </option>
+                                    <option value="rotateInDownRight">
+                                        rotateInDownRight
+                                    </option>
+                                    <option value="rotateInUpLeft">
+                                        rotateInUpLeft
+                                    </option>
+                                    <option value="rotateInUpRight">
+                                        rotateInUpRight
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Rotating Exits">
+                                    <option value="rotateOut">rotateOut</option>
+                                    <option value="rotateOutDownLeft">
+                                        rotateOutDownLeft
+                                    </option>
+                                    <option value="rotateOutDownRight">
+                                        rotateOutDownRight
+                                    </option>
+                                    <option value="rotateOutUpLeft">
+                                        rotateOutUpLeft
+                                    </option>
+                                    <option value="rotateOutUpRight">
+                                        rotateOutUpRight
+                                    </option>
+                                </optgroup>
+                                <optgroup label="Sliding Entrances">
+                                    <option value="slideInUp">slideInUp</option>
+                                    <option value="slideInDown">slideInDown</option>
+                                    <option value="slideInLeft">slideInLeft</option>
+                                    <option value="slideInRight">slideInRight</option>
+                                </optgroup>
+                                <optgroup label="Sliding Exits">
+                                    <option value="slideOutUp">slideOutUp</option>
+                                    <option value="slideOutDown">slideOutDown</option>
+                                    <option value="slideOutLeft">slideOutLeft</option>
+                                    <option value="slideOutRight">slideOutRight</option>
+                                </optgroup>
+                                <optgroup label="Zoom Entrances">
+                                    <option value="zoomIn">zoomIn</option>
+                                    <option value="zoomInDown">zoomInDown</option>
+                                    <option value="zoomInLeft">zoomInLeft</option>
+                                    <option value="zoomInRight">zoomInRight</option>
+                                    <option value="zoomInUp">zoomInUp</option>
+                                </optgroup>
+                                <optgroup label="Zoom Exits">
+                                    <option value="zoomOut">zoomOut</option>
+                                    <option value="zoomOutDown">zoomOutDown</option>
+                                    <option value="zoomOutLeft">zoomOutLeft</option>
+                                    <option value="zoomOutRight">zoomOutRight</option>
+                                    <option value="zoomOutUp">zoomOutUp</option>
+                                </optgroup>
+                                <optgroup label="Specials">
+                                    <option value="hinge">hinge</option>
+                                    <option value="rollIn">rollIn</option>
+                                    <option value="rollOut">rollOut</option>
+                                </optgroup>
+                            </select>
 
-              <button class="btn btn-primary js--triggerAnimation" type="button">
-                Animate Me !
-              </button>
+                            <button class="btn btn-primary js--triggerAnimation" type="button">
+                                Animate Me !
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- / Form -->
+            <!-- div -->
+            <div class="row justify-content-center">
+                <div class="text-center col-lg-4 col-md-6">
+                    <!-- please keep inline style otherwise animation will not work -->
+                    <span id="animationSandbox" style="display: block">
+                        <img src="../assets/images/backgrounds/img1.jpg" class="img-fluid rounded" alt="user">
+                    </span>
+                </div>
             </div>
-          </div>
         </div>
-      </form>
-      <!-- / Form -->
-      <!-- div -->
-      <div class="row justify-content-center">
-        <div class="text-center col-lg-4 col-md-6">
-          <!-- please keep inline style otherwise animation will not work -->
-          <span id="animationSandbox" style="display: block">
-            <img src="../assets/images/backgrounds/img1.jpg" class="img-fluid rounded" alt="user">
-          </span>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  <div class="container py-5">
-
-
-    <div class="sliding-wrapper position-relative overflow-hidden">
-        <div class="slide-background  w-100">
-         
-          
-          <div class="slide">
-            <div class="row ">
-                <!-- Tarjeta 1 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tarjeta 2 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Tarjeta 3 -->
-                <div class="col">
-                    <div class="card position-relative" style="
-                    background-image:url('../../resource/1738276853_679bfff554735SAN%20ANDRES.png' );
-                        border-radius: 15px; overflow: hidden; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); transition: transform 0.3s ease-in-out;" 
-                        onmouseover="this.style.transform='translateY(-5px)'" 
-                        onmouseout="this.style.transform='translateY(0)'">
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                        <p>&nbsp;</p>
-                    
-                       
-                        {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
-                        <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
-                            <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
-                            <p class="" style="color:#a3a3a3;margin-left:10px">Lotes desde 120 m2</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center position-absolute" 
-                             style="background: #FFA726; border-radius: 20%; width: 70px; height: 70px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
-                          <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset=""width="50%">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    
-</div>
 
 
 
@@ -648,75 +494,23 @@
 
 
 
-    <style>
-        .card {
-            border: none;
-            border-radius: 15px;
-            overflow: hidden;
-        }
 
-        .card img {
-            height: 100%;
-            object-fit: cover;
-        }
 
-        .card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            padding: 20px;
-            transition: background 0.3s;
-        }
 
-        .card:hover .card-overlay {
-            background: rgba(0, 0, 0, 0.8);
-        }
 
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
 
-        .card-text {
-            font-size: 1rem;
-        }
-    </style>
-    <style>
-        .card {
-            position: relative;
-            overflow: hidden;
-            /* Asegura que los elementos no desborden */
-            mask-image: linear-gradient(to bottom, #ffffff 70%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, #ffffff 70%, transparent 100%);
-            height: 500px;
 
-        }
 
-        /* Asegura que el degradado no cambie en hover */
-        .card:hover {
-            mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
-            -webkit-mask-image: linear-gradient(to bottom, #000000 90%, transparent 100%);
 
-        }
 
-        /* Si quieres que las imágenes se mantengan constantes en hover */
-        .card-img {
-            transition: transform 0.3s ease;
-            /* Agrega transición a la imagen */
-        }
-
-        .card:hover .card-img {
-            transform: scale(1.1);
-            /* Opcional: ligero zoom de la imagen */
-        }
-    </style>
+  
+          <style>
+            /* Ocultar flecha predeterminada de Bootstrap */
+            .accordion-button::after {
+                display: none !important;
+            }
+        </style>
+  
 
 
 
@@ -724,15 +518,31 @@
 
     <p></p>
 
-
-
-
     <script>
-        document.querySelectorAll('.accordion-collapse').forEach(collapse => {
-            collapse.addEventListener('show.bs.collapse', function() {
-                const content = collapse.getAttribute('data-content');
-                document.getElementById('dynamicContent').innerText = ` ${content}`;
-            });
-        });
-    </script>
+        // Inicializamos AOS
+      
+     
+        function restartAOSForEffect(effect, interval) {
+        setInterval(function () {
+          // Seleccionar elementos con el data-aos deseado y quitar la clase de animación
+          $("[data-aos='" + effect + "']").removeClass("aos-animate");
+
+          // Después de 1 segundo, volver a agregar la clase y refrescar AOS
+          setTimeout(function () {
+            $("[data-aos='" + effect + "']").addClass("aos-animate");
+            AOS.refreshHard();
+          }, 1000);
+        }, interval);
+      }
+
+      // Reinicia el efecto flip-left cada 3 segundos (3000ms)
+      restartAOSForEffect("flip-up", 3000);
+
+      // Reinicia el efecto flip-right cada 3 segundos (3000ms)
+      restartAOSForEffect("flip-right", 3000);
+
+      </script>
+
+
+    
 @endsection

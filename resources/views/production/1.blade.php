@@ -589,7 +589,7 @@
 $(document).ready(function () {
     // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
     function restartAOS() {
-        $("[data-aos]").removeClass("aos-animate"); // Quitar animación
+        $("[data-aos!='flip-left']").removeClass("aos-animate"); // Quitar animación
         
         setTimeout(() => {
             $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
@@ -598,10 +598,26 @@ $(document).ready(function () {
     }
 
     // Ejecutar cada 3 segundos
-    setInterval(restartAOS, 40000);
+    setInterval(restartAOS, 30000);
 });
 
+
+
+
+
     </script>
+      <style>
+        .subrayado {
+            width: 60px;
+            /* Tamaño del subrayado */
+            height: 5px;
+            /* Grosor */
+            background-color: #F4A623;
+            /* Naranja */
+            margin-top: -10px;
+            /* Ajuste para acercarlo al texto */
+        }
+    </style>
 </body>
 
 </html>
