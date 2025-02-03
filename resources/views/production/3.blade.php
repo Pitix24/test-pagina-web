@@ -18,7 +18,7 @@
     }
 
     /* Para pantallas pequeñas (móviles) */
-    @media (max-width: 500px) {
+    @media (max-width: 575px) {
         .bg-responsive {
             height:52vh;
             width: 100%;
@@ -39,6 +39,21 @@
     </h4>
     <div class="subrayado mx-auto "></div>
    <p class=" fs-5 mt-3" style="text-align: justify">Somos una inmobiliaria completamente peruana,
+    dedicada a la creación de proyectos
+    inmobiliarios de terrenos de todas las familias del
+    Perú. Ofrecemos terrenos exclusivos en el país.</p>
+ </div>
+
+ <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="top:12%;width:290px">
+<img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
+ </div>
+ <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:-16%;width:300px">
+    <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+        <span style="color:#ffffff">¿QUIÉNES</span><br> SOMOS?
+    </h4>
+    
+    <div class="subrayado mx-auto "></div>
+   <p class=" fs-2 mt-4" style="text-align: center">Somos una inmobiliaria completamente peruana,
     dedicada a la creación de proyectos
     inmobiliarios de terrenos de todas las familias del
     Perú. Ofrecemos terrenos exclusivos en el país.</p>

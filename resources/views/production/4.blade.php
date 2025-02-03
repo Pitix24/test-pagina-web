@@ -108,65 +108,114 @@
             /* Fondo del overlay completamente transparente */
         }
     </style>
+    <style>
+        .bg-responsive {
+            background-image: url('../../resource/1738597307_67a0e3bb9d21fportada-proyectos-escritorio.jpg');
+            height:82vh;
+            background-size: cover;
+            /* height: 85vh; */
+        }
+    
+        /* Para pantallas medianas (tablets) */
+        @media (max-width: 987px) {
+            .bg-responsive {
+                height:82vh;
+                background-size: cover;
+                background-image: url('../../resource/1738597193_67a0e3490aa87portada-proyectos-tablet.jpg');
+            }
+        }
+    
+        /* Para pantallas pequeñas (móviles) */
+        @media (max-width: 575px) {
+            .bg-responsive {
+                height:52vh;
+                width: 100%;
+                background-size: cover;
+                background-image: url('../../resource/1738598057_67a0e6a98b327portada-proyectos-celular.jpg');
+            }
+        }
+    </style>
     <!-- INICIO SECCION -->
 <section class="text-white" style="background-color:#03424E;">
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
         <div class="carousel-inner">
             <!-- Diapositiva 1 -->
-            <div class="carousel-item active">
-                <p>&nbsp;</p>
-                <div class="d-none d-md-block pt-xl-4 pt-5 pt-sm-5 w-100 position-absolute align-content-center text-center translate-middle start-50">
-                    <h4 class="fw-bold mt-5 pt-3 shadowed-text" style="word-spacing: 10px;letter-spacing: 8px">
-                        <span class="text-white" style="font-family: Montserrat-SemiBold;">CUMPLIENDO EL LOTE </span>
-                        <span style="font-family: Montserrat-SemiBold;">DE TUS SUEÑOS</span>
+            <div class="carousel-item active py-1 position-relative bg-responsive" style="    background-position: center;
+    background-repeat: no-repeat;">
+                <div class="d-none d-sm-block text-center text-white position-absolute start-50 translate-middle" style="top:57%;width:600px">
+                    <h4 class="p-2  text-center fs-7" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+                        <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                     </h4>
-                </div>
-                <div class="d-sm-block d-md-none m-1 pt-3 w-100 position-absolute align-content-center text-center translate-middle start-50">
-                    <h4 class="fs-2 fw-bold mt-5 pt-2 shadowed-text" style="word-spacing:5px;letter-spacing: 5px">
-                        <span class="text-white">CUMPLIENDO EL LOTE </span>DE TUS SUEÑOS
+                    <div class="subrayado mx-auto "></div>
+                  
+                 </div>
+                
+                 <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="top:32%;width:290px">
+                <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
+                 </div>
+                 
+                 <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:5%;width:300px">
+                    <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:5px">
+                        <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                     </h4>
-                </div>
-                <div class="d-none d-md-block">
-                    <div class="text-center pt-5">
-                        <img src="../resource/1735588521_Linea%20Amarilla.png" style="height:50px;width:500px">
-                    </div>
-                    <img src="../resource/1735588360_Imagen-de-fondo.jpg" alt="Imagen principal" class="w-100 transparencia_cabecera_xl" height="500px">
-                </div>
-                <div class="d-md-none">
-                    <div class="text-center pt-5">
-                        <img src="../resource/1735588521_Linea%20Amarilla.png" style="height:50px;width:300px">
-                    </div>
-                    <img src="../resource/1735588360_Imagen-de-fondo.jpg" alt="Imagen principal" class="w-100 transparencia_cabecera_md" height="200px">
-                </div>
+                    
+                    <div class="subrayado mx-auto " style="width:30px;height:2px"></div>
+                  
+                 </div>
             </div>
 
             <!-- Diapositiva 2 -->
-            <div class="carousel-item h-100">
-              
+            <div class=" carousel-item ">
+               
+                  <div class="video-background " style="position: relative; overflow: hidden; height: 82vh;">
+                    <video autoplay="" loop="" muted="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                      <source src="../../resource/1738600049_67a0ee71dc79f2sXRVvaPa0EZB5DNDGCHLZNucZX.mp4" type="video/mp4">
+                      Tu navegador no soporta el video.
+                    </video>
+                  
+
+               
+
+                    <div class="content d-none d-sm-block text-center text-white start-50 translate-middle" style="position: relative;  color: white; text-align: center;top:50%;width:600px">
+       
+                            <h4 class="p-2  text-center fs-7" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+                                <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
+                            </h4>
+                            <div class="subrayado mx-auto "></div>
+                          
+                         
+                  </div>
+                  <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:10%;width:300px">
+                    <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:5px">
+                        <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
+                    </h4>
+                    
+                    <div class="subrayado mx-auto " style="width:30px;height:2px"></div>
+                  
+                 </div>
                
                
                
-                <img src="../resource/1735940681_REFERENCIA.png" alt="Imagen secundaria" class="w-100" height="100%">
             </div>
         </div>
 
         <!-- Indicadores -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="bg-warning active" aria-label="Diapositiva 1" aria-current="true"></button>
-            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="bg-warning" aria-label="Diapositiva 2"></button>
-        </div>
+     
 
         <!-- Controles de navegación -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
+            <div style="color:orange;font-size:50px">
+                <
+            </div>
+     
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
+            <div style="color:orange;font-size:50px">
+                >
+            </div>
         </button>
     </div>
-</section>
+</div></section>
 <div class="container py-5">
         <h2 class="display-6 text-center mb-4" style="word-spacing:8px;letter-spacing:3px"><b>UBICA TU PRÓXIMO HOGAR</b>
         </h2>
@@ -479,5 +528,8 @@
             </div>
         </div>
     </div>
+<div>
+<video src="../resource/2rJ6omBL3yy3KT8iSburE33P6SN.mp4" autoplay="" loop="" muted="" style="width:100%"></video>   
+</div>
 <!-- FIN SECCION -->
 @endsection

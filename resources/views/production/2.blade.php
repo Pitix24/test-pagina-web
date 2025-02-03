@@ -1010,6 +1010,35 @@
         }
     </style>
 
+
+<div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" style="width:80%">
+      <div class="modal-content ">
+            <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:80vh">
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var myModal = new bootstrap.Modal(document.getElementById('autoModal'), {});
+        myModal.show();
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
     <script>
         //traer los projectos y los agrega a un select
         // Ejecutar cuando el DOM esté listo
@@ -1064,7 +1093,7 @@
                 </div>
                 <div class="modal-body">
                     <h5 class="text-warning text-center" style="font-size: 1.65rem">TRATAMIENTOS DE DATOS PERSONALES</h5>
-                    <p></p>
+              
                     <p style="text-align: justify; font-size: 15px;">
                         Declaro haber sido informado, conforme a Ley N° 29733 - Ley de Protección de Datos Personales
                         (“la Ley”) y al Decreto Supremo 003-2013/JUS - Reglamento de la Ley (“el Reglamento)”, doy mi
@@ -1130,7 +1159,7 @@
                 <div class="modal-body">
                     <h5 class="text-warning text-center" style="font-size: 1.65rem">CLÁUSULA PARA ENVÍO DE PROMOCIONES
                         COMERCIALES</h5>
-                    <p></p>
+                  
                     <p style="text-align: justify; font-size: 15px;">
                         Autorizo a <strong>AYBAR S.A.C.</strong> a utilizar mis Datos Personales y que los mismos sean
                         tratados
@@ -1155,21 +1184,19 @@
 
 <script>
     //reinicia animacion AOS
-//reinicia animacion AOS
-$(document).ready(function () {
-    // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
-    function restartAOS() {
-        $("[data-aos='flip-left']").removeClass("aos-animate"); // Quitar animación
-        
-        setTimeout(() => {
-            $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
-            AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
-        }, 1000);
-    }
+    //reinicia animacion AOS
 
-    // Ejecutar cada 3 segundos
-    setInterval(restartAOS, 70000);
-});
+        // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
+        function restartAOS() {
+            $("[data-aos='flip-left']").removeClass("aos-animate"); // Quitar animación
 
+            setTimeout(() => {
+                $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
+                AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
+            }, 1000);
+        }
 
+        // Ejecutar cada 3 segundos
+        setInterval(restartAOS, 70000);
+ 
 </script>

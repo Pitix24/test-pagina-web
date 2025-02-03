@@ -166,93 +166,97 @@
     </nav>
 </header>
 @yield('content')
-<p> </p>
-        <div class="container-fluid py-1" style="background-color: #054E5C;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-lg-start text-md-start mt-10 aos-init aos-animate">
-                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;">﻿</span>Contáctanos</h3>
-                        <ul class="text-white mt-4" style="--bs-text-opacity: 1;">
-                            <li>
-                                <h3 style="margin-top: 30px;">
-                                    <font color="rgba(0, 0, 0, 0)"><span style="font-weight: var(--bs-body-font-weight); height: 21.9928px;">
-                                            <img src="../resource/1738175771_679a751b0390btelefono.svg" class="note-float-left" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat, sans-serif; font-size: 16px; font-weight: var(--bs-body-font-weight); width: 37.5px; height: 36.6573px; float: left;">
-                                                <span style="color: rgb(255, 255, 255); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">(51)
-                                                01-9049838<br></span></span></font>
-                                </h3>
-                            </li>
-                            <li>
-                                <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class=" note-float-left" style="width: 38.5px; height: 47.6503px; float: left;">
-                             
-
-                                   
-                                    Circunvalación Del Golf Los Incas Av. 134
-                                 
+<div class="container-fluid py-1" style="background-color: #054E5C;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-lg-start text-md-start mt-10 aos-init aos-animate">
+                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;"></span>Contáctanos</h3>
+                <ul class="text-white mt-4" style="--bs-text-opacity: 1;">
+                    <li>
+                       
+                       
+                                    <img src="../resource/1738175771_679a751b0390btelefono.svg" class="note-float-left" style="width: 38.5px; height: 47.6503px;">
                                     <br class=" d-sm-none">
-                                        <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                                        Patio Panorama,&nbsp; Piso 19.&nbsp; Santiago de Surco.</span>
-                                    <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                                        </span>
-                            
+                                   
+                                    <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                        (51)
+                                        01-9049838</span>
+                        
+                                    
+                       
+                    </li>
+                    <li>
+                        <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class=" note-float-left" style="width: 38.5px; height: 47.6503px; float: left;">
+                     
+
+                           
+                            Circunvalación Del Golf Los Incas Av. 134
+                         
+                            <br class=" d-sm-none">
+                                <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                Patio Panorama,&nbsp; Piso 19.&nbsp; Santiago de Surco.</span>
+                            <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                </span>
+                    
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10 aos-init aos-animate">
+                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
+
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="text-white mt-4">
+                            <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
                             </li>
+                            <li><a style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
+                            </li>
+                            <li><a style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
+                                        somos</span></a></li>
+                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
+                                        frecuentes</span></a></li>
+
+
                         </ul>
                     </div>
-
-                    <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10 aos-init aos-animate">
-                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <ul class="text-white mt-4">
-                                    <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
-                                    </li>
-                                    <li><a style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
-                                    </li>
-                                    <li><a style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
-                                                somos</span></a></li>
-                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
-                                                frecuentes</span></a></li>
-
-
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul class="text-white mt-4">
-                                    <li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
-                                    </li>
-                                    <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
-                                    </li>
-                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
-                                                condiciones</span></a></li>
-                                    <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
-                                                reclamaciones</span></a></li>
+                    <div class="col-6">
+                        <ul class="text-white mt-4">
+                            <li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
+                            </li>
+                            <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
+                            </li>
+                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
+                                        condiciones</span></a></li>
+                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
+                                        reclamaciones</span></a></li>
 
 
 
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
-                        <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
-                            <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
-                            </div>                        
-                        <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
-                        
-                       
-                        <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
-                        </a>
-                        <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
-                        </a>
-                        <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
-                        </a>
-                        <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
-                            </div>   
+                        </ul>
                     </div>
                 </div>
             </div>
+
+            <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
+                <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
+                    <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
+                    </div>                        
+                <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
+                
+               
+                <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
+                </a>
+                <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
+                </a>
+                <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
+                    </div>   
+            </div>
         </div>
+    </div>
+</div>
 <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">
@@ -314,6 +318,9 @@
     </div>
 </div>
 <!-- FIN SECCION -->
+<!-- Agrega este código dentro del <body> de tu página -->
+ 
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -553,7 +560,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../../assets/js/plugins/animation-init.js"></script>
+    {{-- <script src="../../assets/js/plugins/animation-init.js"></script> --}}
     <script src="../../assets/libs/aos/dist/aos.js"></script>
     <script src="../../assets/libs/owl.carousel/dist/owl.carousel.min.js"></script>
     <script>
