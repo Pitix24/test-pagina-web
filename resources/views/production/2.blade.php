@@ -1012,9 +1012,9 @@
 
 
 <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" style="width:80%">
+    <div class="modal-dialog modal-lg" >
       <div class="modal-content ">
-            <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:80vh">
+            <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:70vh">
         <div class="modal-footer">
           <button type="button" class="btn bg-dark" data-bs-dismiss="modal">Cerrar</button>
         </div>
