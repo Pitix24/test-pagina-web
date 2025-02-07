@@ -28,7 +28,7 @@
                     <!-- Descripción -->
                     <p class="text-start fw-semibold text-white mt-3">
                         Este formulario es exclusivamente para expresar su disconformidad con algún producto o servicio brindado por <b>
-                            Comercializadora Extranjera Latinoamericana S.A.C.
+                            AYBAR CORP. SOCIEDAD ANONIMA CERRADA - AYBAR CORP. S.A.C
                         </b> 
                         Todos los campos son obligatorios.
                     </p>
@@ -46,9 +46,10 @@
                     <div class="card shadow-sm border-0 text-start" style="background-color:#ffffff">
                         <div class="card-body text-black">
                             <h4 class="fw-bold "style="color:#054E5C">Empresa</h4>
-                            <p><b>Razón Social:</b> Comercializadora Extranjera Latinoamericana S.A.C.</p>
-                            <p><b>RUC:</b> 20613359550</p>
-                            <p><b>Dirección Legal:</b> Av. Circunvalación Nro. 664 Interior 402,Distrito de Santiago De Surco, Provincia y Departamento de Lima 
+                            <p><b>Razón Social:</b> AYBAR CORP. SOCIEDAD ANONIMA CERRADA - AYBAR CORP. S.A.C</p>
+                            <p><b>RUC:</b> 20603865813</p>
+                            <p><b>Dirección Legal:</b> 
+Av. Circunvalación Del golf Los Incas 134 Patio Panorama, Santiago de Surco.
                             </p>
                             <p><b>Fecha actual:</b> <span id="current-date"></span></p>
                         </div>
