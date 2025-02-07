@@ -102,7 +102,7 @@ class BookController extends Controller
             El equipo de Aybar Corp", function ($message) use ($name, $email) {
                     $message->to($email)
                         ->subject('Confirmación de Reclamo - Aybar Corp')
-                        ->from('prueba_informes@aybarcorp.com', 'Aybar Corp');
+                        ->from('informesaybar@aybarcorp.com', 'Aybar Corp');
                 });
 
                 return $Book;
@@ -173,7 +173,7 @@ class BookController extends Controller
         El equipo de Aybar Corp", function ($message) use ($email) {
             $message->to($email)
                 ->subject('Revisión de Reclamo - Aybar Corp')
-                ->from('prueba_informes@aybarcorp.com', 'Aybar Corp');
+                ->from('informesaybar@aybarcorp.com', 'Aybar Corp');
         });
         
 
