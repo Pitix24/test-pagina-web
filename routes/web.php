@@ -29,6 +29,14 @@ Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 
 
 
+Route::get('admin/reclamaciones', [App\Http\Controllers\BookController::class, 'index']);
+Route::get('libro_reclamaciones', [App\Http\Controllers\BookController::class, 'indexPublic']);
+Route::post('BookStorePublic', [App\Http\Controllers\BookController::class, 'storePublic'])->middleware('throttle:50,1440');
+Route::post('BookDestroy', [App\Http\Controllers\BookController::class, 'destroy'])->middleware('permission:administrar|eliminar');
+Route::post('BookEdit', [App\Http\Controllers\BookController::class, 'edit'])->middleware('permission:administrar|editar');
+Route::post('BookUpdate', [App\Http\Controllers\BookController::class, 'update'])->middleware('permission:administrar|actualizar');
+
+
 
 
 

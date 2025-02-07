@@ -27,6 +27,7 @@
     {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
     <script src="{{ asset('js/customer.js') }}"></script>
+    <script src="{{ asset('js/Book.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <script src="{{ asset('js/topic.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
@@ -208,13 +209,13 @@
                 <div class="row">
                     <div class="col-6">
                         <ul class="text-white mt-4">
-                            <li><a href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
                             </li>
-                            <li><a style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
                             </li>
-                            <li><a style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
                                         somos</span></a></li>
-                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
                                         frecuentes</span></a></li>
 
 
@@ -222,14 +223,18 @@
                     </div>
                     <div class="col-6">
                         <ul class="text-white mt-4">
-                            <li><a style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
                             </li>
-                            <li><a style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
                             </li>
-                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
+                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
                                         condiciones</span></a></li>
-                            <li><a style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
-                                        reclamaciones</span></a></li>
+                            <li>
+                                <a style="color:white" onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="libro_reclamaciones"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
+                                    reclamaciones</span>
+                                    <img src="http://aybar_laravel.test/resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
+                                </a>
+                               </li>
 
 
 
