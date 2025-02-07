@@ -166,14 +166,14 @@ class BookController extends Controller
         🎟️ *Estado:* $Book->state
         
         📎 
-        " . (!empty($Book->file_1) ? env("APP_URL"). asset("resource/".$Book->file_1) : '') . "
+        " . (!empty($Book->file_1) ? env("APP_URL"). asset("resource/".$Book->file_1) : '') . " 
         " . (!empty($Book->file_2) ? env("APP_URL").asset("resource/".$Book->file_2) : '') . "
         
         Atentamente,
-        El equipo de ComexLat", function ($message) use ($email) {
+        El equipo de Aybar Corp", function ($message) use ($email) {
             $message->to($email)
-                ->subject('Revisión de Reclamo - ComexLat')
-                ->from('administracion@comexlat.com', 'ComexLat');
+                ->subject('Revisión de Reclamo - Aybar Corp')
+                ->from('administracion@comexlat.com', 'Aybar Corp');
         });
         
 
