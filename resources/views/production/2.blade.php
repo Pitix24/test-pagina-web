@@ -805,7 +805,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid py-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');
+<div class="container-fluid py-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');margin-bottom:-16px;
  background-repeat: no-repeat; 
  background-size: cover;
       

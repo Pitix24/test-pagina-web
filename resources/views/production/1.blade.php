@@ -166,7 +166,7 @@
     </nav>
 </header>
 @yield('content')
-<div class="container-fluid py-1" style="background-color: #054E5C;">
+<div class="container-fluid py-1" style="background-color: #054E5C; margin-top:-10px">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-5 col-lg-6 col-xl-4 justify-content-center text-lg-start text-md-start mt-10 aos-init aos-animate">
