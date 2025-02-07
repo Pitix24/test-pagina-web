@@ -998,7 +998,9 @@
     </div> 
 <div id="mycontent"></div>
 <!-- FIN SECCION -->
-
+<button type="button"id="boton-oculto-modal" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#autoModal">
+    Abrir Modal
+</button>
     </form>
     <style>
         input::placeholder {
@@ -1011,21 +1013,12 @@
     </style>
 
 
-<div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg" >
-      <div class="modal-content ">
-            <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:70vh">
-        <div class="modal-footer">
-          <button type="button" class="btn bg-dark" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        var myModal = new bootstrap.Modal(document.getElementById('autoModal'), {});
-        myModal.show();
+        var myModal = document.getElementById('boton-oculto-modal');
+        myModal.click();
     });
     </script>
 
@@ -1180,6 +1173,19 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
+
+
+
+    <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" >
+          <div class="modal-content ">
+                <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:70vh">
+            <div class="modal-footer">
+              <button type="button" class="btn  text-white" style="background-color:#005463" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
 @endsection
 
 <script>
