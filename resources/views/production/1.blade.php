@@ -232,7 +232,7 @@
                             <li>
                                 <a style="color:white" onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="libro_reclamaciones"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
                                     reclamaciones</span>
-                                    <img src="../../resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
+                                    <img src="http://aybar_laravel.test/resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
                                 </a>
                                </li>
 
@@ -283,18 +283,7 @@
                 </div>
             </div>
         </footer>
-<div class="whatsapp-container">
-        <div class="whatsapp-message">
-            ¿Necesitas ayuda?
-        </div>
-        <div class="whatsapp-btn">
-            <a href="https://bit.ly/PGWSP" target="_blank" title="Enviar mensaje por WhatsApp">
 
-                <i class="ti ti-brand-whatsapp"></i>
-            </a>
-        </div>
-
-    </div>
 <div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #000000e1">
     <div class="offcanvas-header p-4 text-center justify-content-center">
         <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" alt="matdash-img" class="img-fluid" width="150">
@@ -325,7 +314,18 @@
 <!-- FIN SECCION -->
 <!-- Agrega este código dentro del <body> de tu página -->
  
+    {{-- <div class="whatsapp-container">
+        <div class="whatsapp-message">
+            ¿Necesitas ayuda?
+        </div>
+        <div class="whatsapp-btn">
+            <a href="https://bit.ly/PGWSP" target="_blank" title="Enviar mensaje por WhatsApp">
 
+                <i class="ti ti-brand-whatsapp"></i>
+            </a>
+        </div>
+
+    </div> --}}
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
@@ -461,7 +461,7 @@
 </a> --}}
 
         <!-- Contenedor del botón flotante -->
-        <div id="chatbot-container" onclick="toggleChat()">
+        {{-- <div id="chatbot-container" onclick="toggleChat()">
             <a href="https://chatgpt.com/g/g-677d6c87f59481919ce07cf6c74af1d8-asistente-aybar-corp" target="_blank">
                 <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy
                     tu asistente virtual</div>
@@ -469,10 +469,10 @@
             <div id="chatbot-button">
                 <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
             </div>
-        </div>
+        </div> --}}
 
         <!-- Ventana de Chat -->
-        <div id="chatbot-window">
+        {{-- <div id="chatbot-window">
             <div id="chatbot-header">Chatbot Aybar</div>
             <div id="chat-box"></div>
             <div id="chat-input">
@@ -480,7 +480,7 @@
                     onkeydown="handleKeyPress(event)">
                 <button id="send-button" onclick="sendMessage()">Enviar</button>
             </div>
-        </div>
+        </div> --}}
 
 
         <script>
