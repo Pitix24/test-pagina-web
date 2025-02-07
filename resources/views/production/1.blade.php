@@ -232,7 +232,7 @@
                             <li>
                                 <a style="color:white" onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="libro_reclamaciones"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
                                     reclamaciones</span>
-                                    <img src="http://aybar_laravel.test/resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
+                                    <img src="../../resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
                                 </a>
                                </li>
 
