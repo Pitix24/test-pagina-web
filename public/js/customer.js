@@ -28,16 +28,16 @@ function CustomerStore() {
  function ProjectList() {
     axios.get('../ProjectList') // Cambia esta ruta a tu endpoint en Laravel
         .then(response => {
-            const select = document.getElementById('project_id');
-            const select2 = document.getElementById('project_id_2');
-            const projects = response.data; // Asegúrate de que este formato sea un array de objetos [{id, name}]
+          
+            let select = document.getElementById('project_id');
+            let projects = response.data; // Asegúrate de que este formato sea un array de objetos [{id, name}]
             // Iterar sobre los proyectos y crear opciones
             projects.forEach(project => {
                 const option = document.createElement('option');
                 option.value = project.id;
                 option.textContent = project.title;
+              
                 select.appendChild(option);
-                select2.appendChild(option);
             });
         })
         .catch(error => {
@@ -46,7 +46,27 @@ function CustomerStore() {
 
 
 }
+function ProjectList_2() {
+    axios.get('../ProjectList') // Cambia esta ruta a tu endpoint en Laravel
+        .then(response => {
+            let select2 = document.getElementById('project_id_2');
+        
+            let projects = response.data; // Asegúrate de que este formato sea un array de objetos [{id, name}]
+            // Iterar sobre los proyectos y crear opciones
+            projects.forEach(project => {
+                const option = document.createElement('option');
+                option.value = project.id;
+                option.textContent = project.title;
+                select2.appendChild(option);
+            
+            });
+        })
+        .catch(error => {
+            console.error('Error al cargar los proyectos:', error);
+        });
 
+
+}
 function CustomerStorePublic() {
 
     var formData = new FormData(document.getElementById("Customer"));

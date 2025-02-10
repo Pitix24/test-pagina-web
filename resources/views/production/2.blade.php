@@ -1036,6 +1036,7 @@
         //traer los projectos y los agrega a un select
         // Ejecutar cuando el DOM esté listo
         document.addEventListener('DOMContentLoaded', ProjectList);
+        document.addEventListener('DOMContentLoaded', ProjectList_2);
 
         //descuenta el ingreso de caracteres en message
         function updateCounter() {
