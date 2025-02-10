@@ -217,15 +217,15 @@
     </div>
 </div></section>
 <div class="container py-5">
-    <h4 class="d-sm-none text-center display-10" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
-        <span style="color:#03424E">UBICA TU</span><br> PRÓXIMO HOGAR
-    </h4>
-    <h4 class="d-none d-sm-block text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
-        <span style="color:#03424E">UBICA TU</span><br> PRÓXIMO HOGAR
-    </h4>
-    <div class="subrayado mx-auto mb-4"></div>
+        <h4 class="d-sm-none text-center display-10" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+            <span style="color:#03424E">UBICA TU</span><br> PRÓXIMO HOGAR
+        </h4>
+        <h4 class="d-none d-sm-block text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#03424E">UBICA TU</span><br> PRÓXIMO HOGAR
+        </h4>
+        <div class="subrayado mx-auto mb-4"></div>
 
-        
+
         <p class="fs-5 mb-5" style="color:#047991;text-align:center">
             Encuentra el lugar ideal para comenzar una nueva etapa. Descubre proyectos estratégicamente ubicados, rodeados
             de oportunidades, naturaleza y todo lo que necesitas para construir tu futuro.
@@ -234,27 +234,72 @@
             <!-- Tarjeta Lima -->
             <div class="col-xl-2 col-0"></div>
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <!-- Tarjeta -->
-                <div class="card card-hover shadow" style="position: relative; width:100%;" data-bs-toggle="modal" data-bs-target="#modalLima">
-                    <img src="../resource/1735593981_Lima.png" class="card-img-top" alt="Lima">
-                    <h2 class="bottom-0 text-white start-20 p-3 pb-0" style="position: absolute;">LIMA METROPOLITANA</h2>
-                    <div class="hover-content container text-white" style="background-color:#03424E;">
 
-                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
-                            <b class="fs-8">Lima</b><br>&nbsp; <br>
-                            <b>Más de 18 proyectos en la capital del Perú </b><br>
-                            Desde la cercanía a centros urbanos hasta vistas panorámicas al mar, nuestros proyectos en Lima
-                            te ofrecen opciones estratégicas para vivir o invertir. <br>&nbsp; <br>
-                            Están diseñados para conectar con la modernidad y
-                            tradición de la ciudad, además de garantizar un alto nivel de plusvalía.
+                <div class="card" style="cursor:pointer;background: url('../resource/1735593981_Lima.png') center/cover no-repeat; 
+                       position: relative;
+                       border-radius: 15px; 
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
+                       transition: transform 0.3s ease-in-out; 
+                       transform: translateY(0px); 
+                       color: white; 
+                       text-align: center; 
+                       padding: 20px; 
+                       height: 350px; 
+                       display: flex; 
+                       flex-direction: column; 
+                       align-items: center; 
+                       justify-content: center;
+                       overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalLima" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+           
+               <!-- Contenido normal (visible al inicio) -->
+               <div class="default-content" style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
+                           border-top-right-radius:15px;
+                           transition: opacity 0.3s ease-in-out;">
+                   <h4 style="color: #f8b400;  text-align: justify;padding:15px;padding-top:25px;margin-left:10px">
+                       LIMA <br> METROPOLITANA
+                   </h4>
+               </div>
+           
+               <!-- Contenido en hover (aparece al pasar el mouse) -->
+               <div class="hover-content" style="position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background: rgba(3, 66, 78, 0.9); /* Color encima de la imagen */
+                           border-radius: 15px;
+                           padding: 20px;
+                           opacity: 0;
+                           transition: opacity 0.3s ease-in-out;">
 
-                        </p>
+                   <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">LIMA <br> METROPOLITANA</h4>
+                   <p class="fs-2" style="text-align: justify; font-family: Montserrat-Regular;">
+                       <b>Más de 18 proyectos en la capital del Perú</b><br>
+                       Desde la cercanía a centros urbanos hasta vistas panorámicas al mar, nuestros proyectos en Lima
+                       te ofrecen opciones estratégicas para vivir o invertir. <br>&nbsp; <br>
+                       Están diseñados para conectar con la modernidad y
+                       tradición de la ciudad, además de garantizar un alto nivel de plusvalía.
+                   </p>
+               </div>
+           
+               <!-- Flecha con botón circular -->
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="cursor:pointer;background: white; 
+                           border-radius: 20%; 
+                           width: 60px; 
+                           height: 60px; 
+                           bottom: 5%; 
+                           right: 3%; 
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+                           position: absolute; 
+                           z-index: 2;">
+                   <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
+               </div>
+           </div>
+           
 
-                    </div>
-                    <div class="button">
-                        <span class="arrow"></span>
-                    </div>
-                </div>
+           
+   
+
 
                 <!-- Modal -->
                 <div class="modal fade" id="modalLima" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
@@ -309,27 +354,66 @@
 
             <!-- Tarjeta Ica -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalIca">
-                    <img src="../resource/1735593994_Ica.png" class="card-img-top" alt="Ica">
-                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">ICA</h1>
-                    <div class="hover-content container text-white" style="background-color:#03424E;">
-
-                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
-                            <b class="fs-8">Ica</b> <br>&nbsp; <br>
-                            <b>5 proyectos únicos en la tierra del sol y el vino</b>
-                            <br>
-                            Ica te invita a descubrir el lugar perfecto para vivir, cada proyecto está
-                            cerca de destinos turísticos,
-                            asegurando una excelente inversión y calidad de vida.
-
-
-                        </p>
-
-                    </div>
-                    <div class="button">
-                        <span class="arrow"></span>
-                    </div>
-                </div>
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1735593994_Ica.png') center/cover no-repeat; 
+                       position: relative; 
+                       border-radius: 15px; 
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
+                       transition: transform 0.3s ease-in-out; 
+                       transform: translateY(0px); 
+                       color: white; 
+                       text-align: center; 
+                       padding: 20px; 
+                       height: 350px; 
+                       display: flex; 
+                       flex-direction: column; 
+                       align-items: center; 
+                       justify-content: center;
+                       overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalIca" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+           
+               <!-- Contenido normal (visible al inicio) -->
+               <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
+                           border-top-right-radius:15px;
+                           transition: opacity 0.3s ease-in-out;height:100px">
+                           
+                    <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">ICA</h4>
+               </div>
+           
+               <!-- Contenido en hover (aparece al pasar el mouse) -->
+               <div class="hover-content" style="position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background: rgba(3, 66, 78, 0.9); /* Color encima de la imagen */
+                           border-radius: 15px;
+                           padding: 20px;
+                           opacity: 0;
+                           transition: opacity 0.3s ease-in-out;">
+             
+                    <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">Ica</h4>
+                    <p class="fs-3" style="text-align: justify; font-family: Montserrat-Regular;">
+                        <b>5 proyectos únicos en la tierra del sol y el vino</b><br>
+                       Ica te invita a descubrir el lugar perfecto para vivir, cada proyecto está cerca de destinos turísticos,
+                       asegurando una excelente inversión y calidad de vida.
+                    </p>
+                       
+                
+               </div>
+           
+               <!-- Flecha con botón circular -->
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
+                           border-radius: 20%; 
+                           width: 60px; 
+                           height: 60px; 
+                           bottom: 5%; 
+                           right: 3%; 
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+                           position: absolute; 
+                           z-index: 2;">
+                   <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
+               </div>
+           </div>
+            
 
                 <div class="modal fade" id="modalIca" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -394,28 +478,69 @@
 
             <!-- Tarjeta Huaral -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalHuaral">
-                    <img src="../resource/1736172777_Huaral.png" class="card-img-top" alt="Huaral">
-                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUARAL</h1>
-                    <div class="hover-content container text-white" style="background-color:#03424E;">
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172777_Huaral.png') center/cover no-repeat; 
+            position: relative; 
+            border-radius: 15px; 
+            box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
+            transition: transform 0.3s ease-in-out; 
+            transform: translateY(0px); 
+            color: white; 
+            text-align: center; 
+            padding: 20px; 
+            height: 350px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalHuaral" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
 
-                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
-                            <b class="fs-8">Huaral</b> <br>&nbsp; <br>
-                            <b>Tu próxima inversión en el corazón del desarrollo</b>
-                            <br>
-                            
-                            Huaral ofrece una ubicación privilegiada, rodeada de naturaleza y conectividad.
-                            <br>&nbsp; <br>
-                             Descubre proyectos diseñados para garantizar tu bienestar y un crecimiento constante en valor.
+    <!-- Contenido normal (visible al inicio) -->
+    <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
+                           border-top-right-radius:15px;
+                           transition: opacity 0.3s ease-in-out;height:100px">
+                           
+                    <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">HUARAL</h4>
+               </div>
+
+    <!-- Contenido en hover (aparece al pasar el mouse) -->
+    <div class="hover-content" style="position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(3, 66, 78, 0.9); /* Color encima de la imagen */
+                border-radius: 15px;
+                padding: 20px;
+                opacity: 0;
+                transition: opacity 0.3s ease-in-out;">
+
+            <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">Huaral</h4>
+            <p class="fs-3" style="text-align: justify; font-family: Montserrat-Regular;">
+                <b>Tu próxima inversión en el corazón del desarrollo</b><br>
+                Huaral ofrece una ubicación privilegiada, rodeada de naturaleza y conectividad.
+                <br>&nbsp; <br>
+                Descubre proyectos diseñados para garantizar tu bienestar y un crecimiento constante en valor.
+            </p>
+          
+            
+       
+    </div>
+
+    <!-- Flecha con botón circular -->
+    <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
+                border-radius: 20%; 
+                width: 60px; 
+                height: 60px; 
+                bottom: 5%; 
+                right: 3%; 
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+                position: absolute; 
+                z-index: 2;">
+        <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
+    </div>
+</div>
 
 
-                        </p>
-                    </div>
-
-                    <div class="button">
-                        <span class="arrow"></span>
-                    </div>
-                </div>
 
 
                 <div class="modal fade" id="modalHuaral" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
@@ -470,26 +595,66 @@
 
             <!-- Tarjeta Huacho -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card card-hover shadow" style="position: relative;width:100%" data-bs-toggle="modal" data-bs-target="#modalHuacho">
-                    <img src="../resource/1736172763_Huacho.png" class="card-img-top" alt="Huacho">
-                    <h1 class="bottom-0 start-20 p-3 pb-0" style="position: absolute;">HUACHO</h1>
-                    <div class="hover-content container text-white" style="background-color:#03424E;">
-
-                        <p class="" style="text-align: justify;font-family:Montserrat-Regular">
-                            <b class="fs-8">Huacho</b> <br>&nbsp; <br>
-                            <b>Proyectos estratégicos en la ciudad costera</b>
-                            <br>
-                            
-                            Ubicados en una de las zonas con mayor proyección de desarrollo, nuestros proyectos en Huacho combinan tranquilidad, acceso a servicios y una excelente oportunidad de inversión.
-
-                        </p>
-                     
-                       
-                    </div>
-                    <div class="button">
-                        <span class="arrow"></span>
-                    </div>
-                </div>
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172763_Huacho.png') center/cover no-repeat; 
+                       position: relative; 
+                       border-radius: 15px; 
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
+                       transition: transform 0.3s ease-in-out; 
+                       transform: translateY(0px); 
+                       color: white; 
+                       text-align: center; 
+                       padding: 20px; 
+                       height: 350px; 
+                       display: flex; 
+                       flex-direction: column; 
+                       align-items: center; 
+                       justify-content: center;
+                       overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalHuacho" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+           
+               <!-- Contenido normal (visible al inicio) -->
+               <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
+                      border-top-right-radius:15px;
+                      transition: opacity 0.3s ease-in-out;height:100px">
+                      
+               <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">HUACHO</h4>
+          </div>
+           
+               <!-- Contenido en hover (aparece al pasar el mouse) -->
+               <div class="hover-content" style="position: absolute;
+                           top: 0;
+                           left: 0;
+                           width: 100%;
+                           height: 100%;
+                           background: rgba(3, 66, 78, 0.9); /* Color encima de la imagen */
+                           border-radius: 15px;
+                           padding: 20px;
+                           opacity: 0;
+                           transition: opacity 0.3s ease-in-out;">
+        
+        <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">Huacho</h4>
+        <p class="fs-3" style="text-align: justify; font-family: Montserrat-Regular;">
+            <b>Proyectos estratégicos en la ciudad costera</b><br>
+            Ubicados en una de las zonas con mayor proyección de desarrollo, nuestros proyectos en Huacho
+            combinan tranquilidad, acceso a servicios y una excelente oportunidad de inversión.
+        </p>
+                      
+                  
+               </div>
+           
+               <!-- Flecha con botón circular -->
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
+                           border-radius: 20%; 
+                           width: 60px; 
+                           height: 60px; 
+                           bottom: 5%; 
+                           right: 3%; 
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+                           position: absolute; 
+                           z-index: 2;">
+                   <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
+               </div>
+           </div>
+           
 
 
                 <div class="modal fade" id="modalHuacho" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
@@ -535,11 +700,26 @@
             </div>
         </div>
     </div>
-<div>
- 
-</div>
 <!-- FIN SECCION -->
+<script>
+    document.querySelectorAll(".card").forEach(card => {
+    const defaultContent = card.querySelector(".default-content");
+    const hoverContent = card.querySelector(".hover-content");
 
+    if (defaultContent && hoverContent) {
+        card.addEventListener("mouseover", function () {
+            defaultContent.style.opacity = "0";
+            hoverContent.style.opacity = "1";
+        });
+
+        card.addEventListener("mouseout", function () {
+            defaultContent.style.opacity = "1";
+            hoverContent.style.opacity = "0";
+        });
+    }
+});
+
+</script>
     {{-- <div class="card">
         <div class="card-body">
             <h4 class="card-title">Animation</h4>
