@@ -12,35 +12,24 @@
         </div>
     </div>
 
-    <div class="py-0 container-fluid text-center " style="background-color: #FFA726">
-        <div class="row">
-            <div class="col-1 py-4"style="background-color:#FFA726">
+    <div class="py-0 container-fluid text-center " style="background-color: white;margin-top:-5%">
+        <div class="row content-align-center d-flex justify-content-center">
 
-            </div>
 
-            <div
-                class="col-sm-12 col-xl-4 pt-5 pb-4"style="background-color:#03424E;margin-top:-3%;position:relative;border-top-left-radius:20px;border-bottom-left-radius:20px">
-                <h3>SEPARA TU LOTE DESDE</h3>
-                <h2 class="f-bold text-white">S/ 15,000</h2>
+            <div class="col-sm-12 col-xl-3 pt-5 pb-4"style="background-color:#FFA726;position:relative;border-radius:20px">
+                <h3 class="fs-5 mt-4 ">SEPARA TU LOTE DESDE</h3>
+                <h2 class="f-bold display-3 mb-4">S/ 15,000</h2>
             </div>
-            <div
-                class="d-none d-xl-block  col-xl-2 pt-5 pb-4"style="background-color:#03424E;margin-top:-3%;position:relative;">
+            <div class="d-none d-xl-block  col-xl-1 pt-5 pb-4"style="margin-top:-3%;position:relative;width:10px ">
                 <!-- Línea divisora -->
-                <div class="vr" style="border:solid 1px #FFA726">
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                    &nbsp;
-                </div>
-            </div>
-            <div
-                class="d-none d-xl-block  col-xl-4 pt-5 pb-4"style="background-color:#03424E;margin-top:-3%;position:relative;border-top-right-radius:20px;border-bottom-right-radius:20px">
-                <h3>SEPARA TU LOTE DESDE</h3>
-                <h2 class="fw-bold text-white">PRE VENTA</h2>
-            </div>
-            <div class="col-1 py-4"style="background-color:#FFA726">
 
             </div>
+            <div class="d-none d-xl-block  col-xl-4 pt-5 pb-4"
+                style="background-color: #fcfcfc;position:relative;border-radius:20px">
+                <h2 class="fs-5 mt-4">SEPARA TU LOTE DESDE</h2>
+                <h2 class="fw-bold display-3 mb-4">PRE VENTA</h2>
+            </div>
+
         </div>
 
 
@@ -56,17 +45,7 @@
 
 
     <!-- Navegación inferior -->
-    <div class="py-3"style="background-color:#FFA726">
-        <div class="container text-center">
-            <nav class="nav justify-content-center">
-                <a class="nav-link text-dark fw-bold" href="#ubicacion">Ubicación</a>
-                <a class="nav-link text-dark fw-bold" href="#acerca">Acerca</a>
-                <a class="nav-link text-dark fw-bold" href="#galeria">Galería</a>
-                <a class="nav-link text-dark fw-bold" href="#recorridos">Recorridos</a>
-                <a class="nav-link text-dark fw-bold" href="#proyectos">Proyectos</a>
-            </nav>
-        </div>
-    </div>
+
 
 
     <!-- CSS adicional para el diseño -->
@@ -79,16 +58,21 @@
 
     <p></p>
 
-    <div class="py-0">
+    <div class="py-1 my-5">
+        <h4 class="d-sm-none text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+            <span style="color:#03424E">UBICACIÓN DE </span><br> {{ Str::upper($Project->title) }}
+        </h4>
+        <h4 class="d-none d-sm-block text-center display-6 mt-3"
+            style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#03424E">UBICACIÓN DE </span><br> {{ Str::upper($Project->title) }}
+        </h4>
+        <div class="subrayado mx-auto " style="margin-top:-13px"></div>
 
-        <div class="text-center text-white container-fluid">
-            <h2 class="pt-4 text-white">UBICACIÓN DE {{ Str::upper($Project->title) }}</h2>
-            <p class="pb-4 fs-6">Contamos con la mejor zona para comprar tu lote, estamos ubicados en</p>
-        </div>
-
-
-
+        <p class="fs-5 mb-5 mt-5 px-5" style="color:#03424E;text-align:center">
+            Contamos con la mejor zona para comprar tu lote, estamos ubicados en
+        </p>
     </div>
+
 
 
     <div class="container py-1">
@@ -96,16 +80,17 @@
             <!-- Elemento 1 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736540612_ICONO%201.svg" alt="Placeholder"style="margin:-15px" class="">
+                    style="background-color:#FFA726;width: 86px; height: 86px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../../resource/1739199900_67aa159c9a35areloj.svg" alt="Placeholder"style="margin:-15px"
+                        class="">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{ $Project->location }}</p>
             </div>
             <!-- Elemento 2 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736540595_ICONO%202.svg" alt="Placeholder"width=""
+                    style="width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../../resource/1739199924_67aa15b4ae38bterreno.svg" alt="Placeholder"width=""
                         class=""style="margin:-15px">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{ $Project->land }}</p>
@@ -113,8 +98,8 @@
             <!-- Elemento 3 -->
             <div class="col-md-4 mb-4">
                 <div class="rounded-circle  mx-auto"
-                    style="background-color:#FFA726;width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
-                    <img src="../resource/1736540585_ICONO%203.svg" alt="Placeholder"width=""
+                    style="width: 90px; height: 90px; display: flex; align-items: center; justify-content: center;">
+                    <img src="../../resource/1739199910_67aa15a6cc8f3terreno%20en%20lote.svg" alt="Placeholder"width=""
                         class=""style="margin:-15px">
                 </div>
                 <p class="mt-3 fw-bold fs-5 "style="color:#03424E">{{ $Project->land_count }}</p>
@@ -126,21 +111,24 @@
 
 
 
-<p></p>
+    <p></p>
 
 
-
+    <h4 class="mt-2 d-sm-none text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+        <span style="color:#03424E">OFRECEMOS </span> 
+    </h4>
+    <h4 class="mt-5 d-none d-sm-block text-center display-6 mt-3"
+        style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+        <span style="color:#03424E">OFRECEMOS </span> 
+    </h4>
+    <div class="subrayado mx-auto " style="margin-top:-13px"></div>
 
     <!-- Contenedor del video con contenido centrado -->
-    <div class="d-flex justify-content-center align-items-center text-center"
+    <div class=" d-flex justify-content-center align-items-center text-center"
         style="position: relative; height: 40vh; overflow: hidden;">
 
         <!-- Video de fondo -->
-        <video autoplay loop muted playsinline
-            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
-            <source src="../resource/1736518824_2rRNnUldMHGgJrM7yGrJGQ2OnAm.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
+
 
         <!-- Contenido sobre el video -->
         <div style="position: relative; z-index: 1; color: white;">
@@ -157,9 +145,9 @@
                         <div class="card mx-auto text-center"style="width: 18rem;">
 
                             <div class="card-body">
-                                <img src="../resource/1736532842_oportunidad%20de%20inversion%20v2%20(1).png"width="160px"
+                                <img src="../resource/1739200178_67aa16b20b63coportunidad%20de%20inversion.svg"width="100%"
                                     style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Oportunidad<br>de inversión
+                                <p class=" fs-4 fw-bold" style="color:#056679">Oportunidad<br>de inversión
                                 </p>
                             </div>
                         </div>
@@ -168,10 +156,10 @@
                     <div class="carousel-item">
                         <div class="card mx-auto text-center" style="width: 18rem;">
                             <div class="card-body">
-                                <img src="../resource/1736532817_portico%20de%20ingreso.png"width="160px"
+                                <img src="../../resource/1739200186_67aa16ba641eaportico.svg"width="100%"
                                     style="padding-left:40px;padding-right:40px" alt="" srcset="">
 
-                                <p class=" fs-7" style="color:#03424E">Pórtico de <br> ingreso</p>
+                                <p class=" fs-4 fw-bold" style="color:#056679">Pórtico de <br> ingreso</p>
                             </div>
                         </div>
                     </div>
@@ -179,9 +167,9 @@
                     <div class="carousel-item">
                         <div class="card mx-auto text-center" style="width: 18rem;">
                             <div class="card-body">
-                                <img src="../resource/1736532823_juegos%20para%20ni%C3%B1os.png"width="160px"
+                                <img src="../../resource/1739200195_67aa16c37f409juegos%20para%20ni%C3%B1os.svg"width="100%"
                                     style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Juegos<br> para niños</p>
+                                <p class=" fs-4 fw-bold" style="color:#056679">Juegos<br> para niños</p>
 
                             </div>
                         </div>
@@ -190,9 +178,9 @@
                     <div class="carousel-item">
                         <div class="card mx-auto text-center" style="width: 18rem;">
                             <div class="card-body">
-                                <img src="../resource/1736532833_caseta%20de%20vigilancia.png"width="160px"
+                                <img src="../../resource/1739200206_67aa16ce0e38dvigilacia%2024%20horas.svg"width="100%"
                                     style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Vigilancia <br>24 horas</p>
+                                <p class=" fs-4 fw-bold" style="color:#056679">Vigilancia <br>24 horas</p>
 
                             </div>
                         </div>
@@ -213,43 +201,43 @@
 
             <!-- Tarjetas para tamaños lg y xl -->
             <div class="container d-none d-lg-block mt-4">
-                <div class="row text-center">
-                    <div class="col-lg-3 mb-0">
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="../resource/1736532842_oportunidad%20de%20inversion%20v2%20(1).png"width="160px"
-                                    style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Oportunidad<br>de inversión</p>
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-lg-3 col-xl-2 mb-0">
+                        <div class=" card border-0 ">
+                            <div class="card-body justify-content-center">
+                                <img src="../../resource/1739200178_67aa16b20b63coportunidad%20de%20inversion.svg"width="100%"
+                                    style="" alt="" srcset="">
+                                <p class=" fs-4 fw-bold" style="color:#056679">Oportunidad<br>de inversión</p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-0">
-                        <div class="card">
+                    <div class="col-lg-3 col-xl-2 mb-0">
+                        <div class=" card border-0 ">
                             <div class="card-body">
-                                <img src="../resource/1736532817_portico%20de%20ingreso.png"width="160px"
-                                    style="padding-left:40px;padding-right:40px" alt="" srcset="">
+                                <img src="../resource/1739200186_67aa16ba641eaportico.svg"width="100%" style=""
+                                    alt="" srcset="">
 
-                                <p class=" fs-7" style="color:#03424E">Pórtico de <br> ingreso</p>
+                                <p class=" fs-4 fw-bold" style="color:#056679">Pórtico de <br> ingreso</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-0">
-                        <div class="card">
+                    <div class="col-lg-3 col-xl-2 mb-0">
+                        <div class=" card border-0 ">
                             <div class="card-body">
-                                <img src="../resource/1736532823_juegos%20para%20ni%C3%B1os.png"width="160px"
-                                    style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Juegos<br> para niños</p>
+                                <img src="../../resource/1739200195_67aa16c37f409juegos%20para%20ni%C3%B1os.svg"width="100%"
+                                    style="" alt="" srcset="">
+                                <p class=" fs-4 fw-bold" style="color:#056679">Juegos<br> para niños</p>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 mb-0">
-                        <div class="card">
+                    <div class="col-lg-3 col-xl-2 mb-0">
+                        <div class=" card border-0 ">
                             <div class="card-body">
-                                <img src="../resource/1736532833_caseta%20de%20vigilancia.png"width="160px"
-                                    style="padding-left:40px;padding-right:40px" alt="" srcset="">
-                                <p class=" fs-7" style="color:#03424E">Vigilancia <br>24 horas</p>
+                                <img src="../../resource/1739200206_67aa16ce0e38dvigilacia%2024%20horas.svg"width="100%"
+                                    style="" alt="" srcset="">
+                                <p class=" fs-4 fw-bold" style="color:#056679">Vigilancia <br>24 horas</p>
 
                             </div>
                         </div>
@@ -262,212 +250,48 @@
     </div>
 
 
-    <style>
-        .image-slider-container {
-            position: relative;
-            width: 100%;
-            height: 60vh;
-            /* Altura estándar para pantallas más grandes */
-            margin: 0 auto;
-            overflow: hidden;
-            cursor: pointer;
-        }
+   
+    <div class="my-0 " data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
+        <div class="sliding-wrapper position-relative overflow-hidden">
+            <div class="slide-background d-flex w-100">
 
-        @media (max-width: 800px) {
-            .image-slider-container {
-                height: 30vh;
-                /* Cambia la altura para pantallas pequeñas */
-            }
-        }
-
-        .image-slider {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-        }
-
-        .image-slider img {
-            position: absolute;
-            transition: transform 0.8s ease, opacity 0.8s ease;
-            width: 65%;
-            height: 70%;
-            max-width: 700px;
-            border-radius: 20px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            transform: scale(0.8) translateX(0);
-            z-index: 0;
-        }
-
-        .image-slider img.active {
-            opacity: 1;
-            transform: scale(1) translateX(0);
-            z-index: 3;
-        }
-
-        .image-slider img.prev {
-            opacity: 1;
-            transform: scale(0.8) translateX(-30%) translateY(0%);
-            z-index: 2;
-        }
-
-        .image-slider img.next {
-            opacity: 1;
-            transform: scale(0.8) translateX(30%) translateY(0%);
-            z-index: 2;
-        }
-
-        .image-slider img.hidden {
-            opacity: 0;
-            transform: scale(0.8);
-            z-index: 1;
-        }
-
-        /* Indicadores debajo del carrusel */
-        .image-slider-indicators {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .image-slider-indicators .indicator {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin: 0 8px;
-            background-color: rgba(255, 165, 0, 1);
-            /* Naranja opaco */
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            cursor: pointer;
-        }
-
-        .image-slider-indicators .indicator.active {
-            background-color: rgba(255, 165, 0, 1);
-            /* Naranja fuerte */
-            transform: scale(1.3);
-            /* Aumenta el tamaño del indicador activo */
-        }
-    </style>
-
-    <div class="py-1 container-fluid"
-        style="background: linear-gradient(to right, #011a20 0%, #043f49 30%, #043f49 80%, #011a20   100%)">
-        <h2 class="text-center pt-4" style="color:#FFA726;margin-bottom:-20px">FOTOS Y VIDEOS</h2>
-        <div class="image-slider-container" style="margin-top: -25px;margin-bottom:-30px">
-            <div class="image-slider">
                 @for ($i = 0; $i <= 20; $i++)
-                    @php
-                        $photo = 'photo_' . $i;
-                    @endphp
-                    @if ($Project->$photo)
-                        <img src="../resource/{{ $Project->$photo }}" class="hidden" alt="Imagen 1">
-                    @endif
+                    <div class="slide" style="margin-right:1px;height:400px">
+
+
+                        @php
+                            $photo = 'photo_' . $i;
+                        @endphp
+                        @if ($Project->$photo)
+                            <img src="../resource/{{ $Project->$photo }}" class="hidden"style="border-radius:0px"height="100%"
+                                alt="Imagen 1">
+                        @endif
+                    </div>
                 @endfor
 
 
-            </div>
-            
-            <div class="image-slider-indicators">
-                <span class="indicator"></span>
-                <span class="indicator"></span>
-                <span class="indicator"></span>
+
             </div>
         </div>
     </div>
 
-    <script>
-        const images = document.querySelectorAll(".image-slider img");
-        const indicators = document.querySelectorAll(".image-slider-indicators .indicator");
-
-        let currentIndex = Math.floor(images.length / 2);
-
-        // Actualizar el carrusel
-        function updateCarousel() {
-            images.forEach((img, index) => {
-                img.classList.remove("active", "prev", "next", "hidden");
-
-                if (index === currentIndex) {
-                    img.classList.add("active");
-                } else if (index === (currentIndex - 1 + images.length) % images.length) {
-                    img.classList.add("prev");
-                } else if (index === (currentIndex + 1) % images.length) {
-                    img.classList.add("next");
-                } else {
-                    img.classList.add("hidden");
-                }
-            });
-
-            // Actualizar los indicadores
-            indicators.forEach((indicator, index) => {
-                indicator.classList.remove("active");
-                if (index === currentIndex) {
-                    indicator.classList.add("active");
-                }
-            });
-        }
-
-        // Avanzar al siguiente
-        function nextImage() {
-            currentIndex = (currentIndex + 1) % images.length; // Pasa a la siguiente imagen con efecto loop
-            updateCarousel();
-        }
-
-        // Retroceder al anterior
-        function prevImage() {
-            currentIndex = (currentIndex - 1 + images.length) % images.length; // Retrocede con efecto loop
-            updateCarousel();
-        }
-
-        // Añadir eventos de clic a las imágenes
-        images.forEach((img) => {
-            img.addEventListener("click", (e) => {
-                if (e.target.classList.contains("next")) {
-                    nextImage(); // Si clic en "next", avanza
-                } else if (e.target.classList.contains("prev")) {
-                    prevImage(); // Si clic en "prev", retrocede
-                }
-            });
-        });
-
-        // Añadir eventos de clic a los indicadores
-        indicators.forEach((indicator, index) => {
-            indicator.addEventListener("click", () => {
-                currentIndex = index; // Ir directamente a la imagen seleccionada
-                updateCarousel();
-            });
-        });
-
-        // Al cargar, simular un clic en la imagen siguiente
-        document.addEventListener("DOMContentLoaded", () => {
-            setTimeout(() => {
-                nextImage();
-            }, 500); // Espera 500 ms antes de avanzar automáticamente
-        });
-
-        // Inicializar el carrusel
-        updateCarousel();
-    </script>
+   
 
 
 
-    <div class="d-flex justify-content-center align-items-center text-center"
+
+    <div class="pt-5 pb-2 d-flex justify-content-center align-items-center text-center"
         style="position: relative;  overflow: hidden;">
 
         <!-- Video de fondo -->
-        <video autoplay loop muted playsinline
-            style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); min-width: 100%; min-height: 100%; object-fit: cover; z-index: -1;">
-            <source src="../resource/1736518824_2rRNnUldMHGgJrM7yGrJGQ2OnAm.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
+    
 
         <!-- Contenido sobre el video -->
-        <div style="position: relative; z-index: 1; color: white;">
+        <div style=" color: white;">
 
             <div id="bootstrapCarousel" class="py-3 carousel slide" data-bs-ride="carousel" data-bs-interval="30000">
                 <!-- Indicadores -->
-                <div class="carousel-indicators">
+                <div class="carousel-indicators mb-3">
                     @php $totalSlides = 0; @endphp
                     @for ($i = 1; $i <= 10; $i += 2)
                         @php
@@ -475,14 +299,26 @@
                             $video_2 = 'video_' . ($i + 1);
                         @endphp
                         @if (!empty($Project->$video_1) || !empty($Project->$video_2))
-                            <button type="button" data-bs-target="#bootstrapCarousel"
-                                data-bs-slide-to="{{ $totalSlides }}" class="{{ $totalSlides === 0 ? 'active' : '' }}"
-                                aria-current="{{ $totalSlides === 0 ? 'true' : '' }}"
-                                aria-label="Slide {{ $totalSlides + 1 }}" style="background-color: #FFA726"></button>
+                            <button type="button" 
+                                data-bs-target="#bootstrapCarousel"
+                                data-bs-slide-to="{{ $totalSlides }}" 
+                                class="{{ $totalSlides === 0 ? 'active' : '' }}" 
+                                aria-current="{{ $totalSlides === 0 ? 'true' : '' }}" 
+                                aria-label="Diapositiva {{ $totalSlides + 1 }}" 
+                                style="background-color: transparent; 
+                                    border: solid 3px orange; 
+                                    width: 15px; 
+                                    height: 15px; 
+                                    border-top: none; 
+                                    border-right: none;
+                                    transform: rotate(135deg); 
+                                    margin-right: 20px;">
+                            </button>
                             @php $totalSlides++; @endphp
                         @endif
                     @endfor
                 </div>
+                
 
                 <!-- Contenido del Carrusel -->
                 <div class="carousel-inner">
@@ -494,12 +330,12 @@
                         @endphp
                         @if (!empty($Project->$video_1) || !empty($Project->$video_2))
                             <div class="carousel-item {{ !$activeSet ? 'active' : '' }}">
-                                <div class="row">
+                                <div class="row  text-center align-content-center">
                                     <!-- Primer Video del Grupo -->
                                     @if (!empty($Project->$video_1))
-                                        <div class="col-md-6">
+                                        <div class="col-md-6 mb-4 mb-lg-0" >
                                             <lite-youtube videoid="{{ $Project->$video_1 }}" autoload
-                                                style="width: 100%; height: 300px; border-radius: 10px"></lite-youtube>
+                                                style="width: 90%; height: 300px; border-radius: 10px"></lite-youtube>
                                         </div>
                                     @endif
 
@@ -507,7 +343,7 @@
                                     @if (!empty($Project->$video_2))
                                         <div class="col-md-6">
                                             <lite-youtube videoid="{{ $Project->$video_2 }}" autoload
-                                                style="width: 100%; height: 300px; border-radius: 10px"></lite-youtube>
+                                                style="width: 90%; height: 300px; border-radius: 10px"></lite-youtube>
                                         </div>
                                     @endif
                                 </div>
@@ -516,10 +352,12 @@
                         @endif
                     @endfor
                 </div>
-<p>
-    &nbsp;
-</p>
- 
+                <p>
+                    &nbsp;
+                </p>
+                <p>
+                    &nbsp;
+                </p>
                 <!-- Controles de Navegación -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#bootstrapCarousel"
                     data-bs-slide="prev">
@@ -585,10 +423,17 @@
 
 
 
-    <div class="container py-5">
-        <p class="text-center mb-5 display-5" style="color: #03424E;font-family:Montserrat-SemiBold">CONOCE
-            {{ Str::Upper($Project->title) }}</p>
-        <div class="row g-4 text-center align-content-center justify-content-center">
+    <div class="container py-1">
+        <h4 class="d-sm-none text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+            <span style="color:#03424E">CONOCE </span><br> {{ Str::Upper($Project->title) }}
+        </h4>
+        <h4 class="d-none d-sm-block text-center display-6 mt-3"
+            style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#03424E">CONOCE </span><br> {{ Str::upper($Project->title) }}
+        </h4>
+        <div class="subrayado mx-auto " style="margin-top:-13px"></div>
+       
+        <div class="mt-4 row g-4 text-center align-content-center justify-content-center">
             <!-- Card 1 -->
             @for ($i = 1; $i <= 10; $i++)
                 @php
@@ -748,17 +593,26 @@
             }
         }
     </style>
-    <p class="text-center mb-5 display-5 pt-3" style="color: #03424E;font-family:Montserrat-SemiBold">CONOCE NUESTROS
-        PROYECTOS</p>
-    <div class=""style="">
-        <div class="row text-center justify-content-center d-flex align-content-center">
+    <h4 class="mt-5 d-sm-none text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
+        <span style="color:#03424E">CONOCE </span><br> NUESTROS
+        PROYECTOS
+    </h4>
+    <h4 class="mt-5 d-none d-sm-block text-center display-6 mt-3"
+        style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
+        <span style="color:#03424E">CONOCE </span><br> NUESTROS
+        PROYECTOS
+    </h4>
+    <div class="subrayado mx-auto " style="margin-top:-13px"></div>
+
+    <div class="mt-4"style="width:100%">
+        <div class="row text-center justify-content-center d-flex align-content-center" style="width:100%">
             @for ($i = 1; $i <= 20; $i++)
                 @php
                     $subproject = 'subproject_' . $i;
                     $subproject_image = 'subproject_image_' . $i;
                 @endphp
                 @if ($Project->$subproject_image)
-                    <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-11  py-4 "style="margin-left:-55px">
+                    <div class="  col-xl-3 col-lg-4 col-md-5 col-sm-8 col-11  py-4 "style="" >
                         <div class="flip-container">
                             {{-- <div class="flip-header">Proyecto Concluido</div> --}}
                             <div class="flip-inner">
@@ -766,13 +620,14 @@
                                     class="flip-front"style="background: linear-gradient(to top, #03424E 10%, transparent 50%), url('../resource/{{ $Project->$subproject_image }}') no-repeat center/cover;">
                                 </div>
                                 <div class="flip-back">
-    
+
                                     <button>
                                         <h4>PÓRTICO DE INGRESO</h4>
                                         <h4>SEGURIDAD 24/7</h4>
                                         <h4>PARQUES</h4>
                                         <h4>CERCO VIVO</h4>
-                                        <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        <a class="btn btn-hover-shadow" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal"
                                             style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
                                             <b>VER MÁS »</b>
                                         </a>
@@ -781,7 +636,7 @@
                             </div>
                             <div class="flip-footer">
                                 <span>{{ $Project->$subproject }}</span>
-    
+
                                 <img src="../resource/1736870177_Flecha%20naranja.png"width="50px" alt=""
                                     srcset="">
                             </div>
@@ -789,10 +644,10 @@
                     </div>
                 @endif
             @endfor
-    
+
         </div>
     </div>
-   
+
 
 
     <script>
