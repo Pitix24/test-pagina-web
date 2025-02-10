@@ -6,7 +6,7 @@ use App\Models\Book;
 use App\Http\Requests\StoreBookRequest;
 use App\Http\Requests\UpdateBookRequest;
 use Illuminate\Support\Facades\Mail;
-
+use Illuminate\Support\Facades\Bus;
 class BookController extends Controller
 {
    /**
@@ -86,25 +86,27 @@ class BookController extends Controller
                 $name = $request->names;
                 $email = $request->email;
 
-                Mail::raw("Estimado/a $name,
+            //     Mail::raw("Estimado/a $name,
 
-            📩 Hemos recibido su reclamo en nuestro sistema. Agradecemos su tiempo y confianza en nuestro servicio. 
+            // 📩 Hemos recibido su reclamo en nuestro sistema. Agradecemos su tiempo y confianza en nuestro servicio. 
             
-            🎟️ *Número de Ticket:* $Book->ticket
+            // 🎟️ *Número de Ticket:* $Book->ticket
             
-            Nuestro equipo revisará su solicitud y se pondrá en contacto con usted a la brevedad para brindarle una respuesta. También puede hacer seguimiento a su reclamo utilizando este número de ticket.
+            // Nuestro equipo revisará su solicitud y se pondrá en contacto con usted a la brevedad para brindarle una respuesta. También puede hacer seguimiento a su reclamo utilizando este número de ticket.
             
-            📧 Se ha enviado esta notificación a su correo para su referencia.
+            // 📧 Se ha enviado esta notificación a su correo para su referencia.
             
-            Si tiene alguna consulta adicional, no dude en escribirnos.
+            // Si tiene alguna consulta adicional, no dude en escribirnos.
             
-            Atentamente,
-            El equipo de Aybar Corp", function ($message) use ($name, $email) {
-                    $message->to($email)
-                        ->subject('Confirmación de Reclamo - Aybar Corp')
-                        ->from('informesaybar@aybarcorp.com', 'Aybar Corp');
-                });
+            // Atentamente,
+            // El equipo de Aybar Corp", function ($message) use ($name, $email) {
+            //         $message->to($email)
+            //             ->subject('Confirmación de Reclamo - Aybar Corp')
+            //             ->from('informesaybar@aybarcorp.com', 'Aybar Corp');
+            //     });
 
+               // Ejecutar en segundo plano la notificación a informes
+        Bus::dispatch(fn() => $this->notify($Book->id));
                 return $Book;
             }
         } catch (\Exception $e) {
@@ -128,9 +130,52 @@ class BookController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Book $book)
+    public function notify($id)
     {
-        //
+        try {
+            // Obtener el registro del libro de reclamaciones
+            $Book = Book::findOrFail($id);
+        
+            // Enviar la notificación a informes
+            Mail::send([], [], function ($message) use ($Book) {
+                $message->to("informesaybar@aybarcorp.com")
+                    ->subject('Reclamo - Aybar Corp Ticket : '. $Book->ticket)
+                    ->from('informesaybar@aybarcorp.com', 'Aybar Corp')
+                    ->setBody("
+        📢 Nueva queja registrada en el libro de reclamaciones de la página Aybar Corp:
+        
+        👤 *Cliente:* $Book->names $Book->lastname
+        📍 *Dirección:* $Book->address
+        📞 *Teléfono:* $Book->phone
+        📧 *Correo:* $Book->email
+        🆔 *Tipo de Documento:* $Book->document_type
+        🔢 *Número de Documento:* $Book->document_number
+        
+        📌 *Tipo de Reclamo:* $Book->claim_type
+        💰 *Monto Reclamado:* $Book->claimed_amount $Book->currency_type
+        🏢 *Dirección de la Oficina:* $Book->office_address
+        
+        🛍️ *Descripción del Producto o Servicio:* 
+        $Book->product_or_service_description
+        ⚠️ *Tipo de Queja:* $Book->complaint_type
+        📝 *Detalles de la Queja:* 
+        $Book->complaint_details
+        
+        📢 *Pedido del Cliente:* 
+        $Book->complaint_request
+        
+        🎟️ *Número de Ticket:* $Book->ticket
+        🎟️ *Estado:* $Book->state
+        
+        📌 Se recomienda revisar el caso a la brevedad posible.
+                    ", 'text/plain');
+            });
+        
+            return response()->json(['message' => 'Notificación enviada a informes'], 200);
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Error al enviar el correo: ' . $e->getMessage()], 500);
+        }
+        
     }
 
     /**
@@ -184,8 +229,10 @@ class BookController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Book $book)
+    public function destroy(Request $request)
     {
-        //
+            $Book = Book::find($request->id);
+           return $Book->delete();
+            
     }
 }
