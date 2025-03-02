@@ -1,57 +1,76 @@
 @extends('production.1')
 @section("content")
-  
-
 <style>
-    /* Personalización de las tarjetas */
-    .custom-card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .bg-responsive {
+        background-image: url('../../resource/1740848426_67c33d2a32317portada-blog-escritorio.jpg');
+        height: 82vh;
+        background-size: cover;
+        /* height: 85vh; */
     }
 
-    .custom-card:hover {
-      transform: translateY(-5px); /* Elevar la tarjeta en hover */
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            height: 82vh;
+            background-size: cover;
+            background-image: url('../../resource/1740848441_67c33d393ea48portada-blog-tablet.jpg');
+        }
     }
 
-    .custom-btn {
-      background-color: #FFA500; /* Botón naranja */
-      border: none;
-      border-radius: 25px;
-      color: white;
-      padding: 8px 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 575px) {
+        .bg-responsive {
+            height: 52vh;
+            width: 100%;
+            background-size: cover;
+            background-image: url('../../resource/1740848453_67c33d45dcafaportada-blog-celular.jpg');
+        }
     }
-
-    .custom-btn:hover {
-      background-color: #FF8C00; /* Naranja más oscuro en hover */
-    }
-  </style>
-
-
-
+</style>
 <!-- INICIO SECCION -->
-<section class="text-white">
-    <!-- Contenido central -->
-    <div class="justify-content-center align-items-center text-center" style="background: linear-gradient(to bottom, #13434d 10%, transparent 40%), url('../resource/1735921011_portada_1_para_seccion_blog__2_.png'); background-size: cover; background-position: center; min-height: 300px; position: relative;">
-        <img src="../resource/1735921011_portada_1_para_seccion_blog__2_.png" alt="Imagen de fondo" style="width: 100%; visibility: hidden;">
-    </div>
-</section>
+<div class="py-1 position-relative bg-responsive"
+    style="
+background-position: center;
+background-repeat: no-repeat;
 
-<section class="text-white" style="background-color: #F6A42C">
-    <div class="container BG-WA">
-        <div class="row justify-content-center align-items-center text-center" style="height: 100px;">
-            <h2 style="word-spacing: 8px; letter-spacing: 2px;">NOTICIAS RELACIONADAS</h2>
-        </div>
+">
+    <div class="d-none d-sm-block text-center text-white position-absolute start-50 translate-middle"
+        style="bottom:5%;width:500px">
+        <h4 class="p-2  text-center fs-6" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#ffffff">NOTICIAS</span><br> RELACIONADAS
+        </h4>
+        <div class="subrayado mx-auto "></div>
+
     </div>
-</section>
-<div class="container  py-5">
-    <div class="row g-4" id="mycontent">
-     
+
+    <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
+        style="top:12%;width:290px">
+        <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
+    </div>
+    <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
+        style="bottom:5%;width:300px">
+        <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#ffffff">NOTICIAS</span><br> RELACIONADAS
+        </h4>
+
+        <div class="subrayado mx-auto "></div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container  my-5">
+    <div class="row g-4 justify-content-center" id="mycontent">
+
   </div>
 </div>
 <!-- FIN SECCION -->
