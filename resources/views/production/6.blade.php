@@ -33,8 +33,7 @@
     <form method="post" id="Customer">
         @csrf
         <!-- INICIO SECCION -->
-        <div class="py-1  position-relative bg-responsive"
-            style="
+<div class="py-1 position-relative bg-responsive" style="
         background-position: center;
         background-repeat: no-repeat;
 
@@ -53,12 +52,10 @@
 
             </div>
 
-            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
-                style="top:0%;width:290px">
+            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="top:0%;width:290px">
                 <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
             </div>
-            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
-                style="bottom:-4%;width:300px">
+            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:-4%;width:300px">
                 <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:10px">
                     <span style="color:#ffffff">CONTÁCTANOS Y </span><br> OBTÉN TU LOTE
                 </h4>
@@ -68,7 +65,6 @@
                 <span class="fs-2">¡Nosotros hacemos realidad el terreno <br> de tus sueños!</span>
             </div>
         </div>
-
 <div class="container-fluid">
   <div class="row">
             <div class="col-md-6  col-12 bg-white">
@@ -92,27 +88,23 @@
                 </div>
             </div>
             <div class="col-md-6 py-5   col-12 row container-fluid justify-content-center align-content-center">
-                <div class="col-4" class="mt-5" >
-                    <img src="../../resource/1741119482_67c75ffab0870cliente%20nuevo.svg" alt="" width="100%"style="margin-top:-10px"
-                        height="100px" style="">
+                <div class="col-4">
+                    <img src="../../resource/1741119482_67c75ffab0870cliente%20nuevo.svg" alt="" width="100%" style="margin-top:-10px" height="100px">
                 </div>
                 <div class="col-8">
                     <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Soy Cliente Nuevo</span>
                     <br>
-                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        style="color:white; border-radius:10px; background-color:#FFA726; width: 190px;">
+                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:10px; background-color:#FFA726; width: 190px;">
                         <b>Información »</b>
                     </a>
                 </div>
                 <div class="col-4" style="margin-top:-10px">
-                    <img src="../../resource/1741119495_67c760075b467propietario%20aybar.svg" alt="" width="100%"
-                        height="100px" style="">
+                    <img src="../../resource/1741119495_67c760075b467propietario%20aybar.svg" alt="" width="100%" height="100px" style="">
                 </div>
                 <div class="col-8">
                     <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Propietario Aybar</span>
                     <br>
-                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal1"
-                        style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
                         <b>Información »</b>
                     </a>
                 </div>
@@ -125,77 +117,61 @@
 
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            style="display: none;" aria-hidden="true">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="background-color:#054E5C">
                     <div class="modal-header">
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
-                            aria-label="Cerrar"></button>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="p-3 rounded"
-                            style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                        <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                             <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO
                                         INFORMACIÓN DE UN LOTE</span></b></p>
 
 
-                            <select class="form-control" name="project_id" id="project_id"
-                                style="color: white; background-color: #055261">
+                            <select class="form-control" name="project_id" id="project_id" style="color: white; background-color: #055261">
                                 <option value="">Seleccione un proyecto</option>
                             </select>
                             <br>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="names"
-                                    placeholder="Nombres y Apellidos:" style="color: white;">
+                                <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
                             </div>
                             <div class="form-floating mb-3">
 
 
-                                <input type="text" id="phone" class="form-control iti__tel-input"
-                                    name="cellphone" placeholder="Número de Teléfono"
-                                    style="color: white; width: 100%; padding-left: 74px;" autocomplete="off"
-                                    data-intl-tel-input-id="0">
+                                <input type="text" id="phone" class="form-control iti__tel-input" name="cellphone" placeholder="Número de Teléfono" style="color: white; width: 100%; padding-left: 74px;" autocomplete="off" data-intl-tel-input-id="0">
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="dni" name="dni"
-                                    placeholder="Número de DNI" style="color: white;">
+                                <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
 
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="message" name="message"
-                                    placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200"
-                                    oninput="updateCounter()">
+                                <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()">
                                 <div class="form-text text-white">
-                                    <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span
-                                            style="font-size: 8px;">/200 caracteres</span></p>
+                                    <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
                                 </div>
                             </div>
 
 
 
                             <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos"
-                                    name="data_aprobed_1" value="true">
+                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
                                 <label class="form-check-label fs-3" for="txtTratamientoDatos">
                                     <span class="fs-2">He leído y acepto la </span>
-                                    <a class="text-warning fs-2" data-bs-toggle="modal"
-                                        data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
+                                    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
                                         Política para envío de comunicaciones comerciales.
                                     </a>
                                 </label>
                             </div>
 
                             <div class="form-check text-start ">
-                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2"
-                                    name="data_aprobed_2" value="true">
+                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
                                 <label class="form-check-label fs-3" for="txtTratamientoDatos2">
                                     <span class="fs-2">He leído y acepto el </span>
-                                    <a class="text-warning fs-2" data-bs-toggle="modal"
-                                        data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
+                                    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
                                         Tratamiento de mis datos personales.
                                     </a>
                                 </label>
@@ -206,10 +182,7 @@
 
                             <div class="text-center"><span style="font-size: 9px;">
 
-                                </span><button type="button" class="btn btn-warning btn-block"
-                                    onclick="CustomerStorePublic();"
-                                    style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span
-                                        style="font-size: 9px;">
+                                </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
                                         <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
                                             datos</span>
                                     </span></button><span style="font-size: 9px;">
@@ -218,15 +191,13 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn bg-white text-dark" style="background-color:black"
-                            data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn bg-white text-dark" style="background-color:black" data-bs-dismiss="modal">Cerrar</button>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header ">
@@ -237,14 +208,12 @@
                         <h3 class="modal-title fs-8" style="color:#003b47" id="exampleModalLabel">Central Telefónico</h3>
                         <p></p>
 
-                        <a class="btn btn-hover-shadow text-center justify-content-center" href="tel:+5101-9049838"
-                            style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 320px;">
+                        <a class="btn btn-hover-shadow text-center justify-content-center" href="tel:+5101-9049838" style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 320px;">
                             &nbsp;
 
                             &nbsp;
                             <p class="fs-8 text-white " style="letter-spacing: 1px;">
-                                <img src="../resource/1736360188_icono%201.svg" width="50px" alt=""
-                                    srcset="" style="padding-bottom:10px;">
+                                <img src="../resource/1736360188_icono%201.svg" width="50px" alt="" srcset="" style="padding-bottom:10px;">
                                 <b class="py-5">&nbsp;01-9049838</b>
                             </p>
                         </a>
@@ -255,11 +224,8 @@
         </div>
 
         <div id="mycontent"></div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe"
-            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <!-- FIN SECCION -->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- FIN SECCION -->
     </form>
     <script>
         // Ejecutar cuando el DOM esté listo
