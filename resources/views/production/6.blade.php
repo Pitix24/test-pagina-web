@@ -1,47 +1,30 @@
 @extends('production.1')
 @section('content')
     <style>
-        /* Estilos personalizados */
-        .left-panel {
-            background-color: #FFA500;
-            /* Fondo naranja */
-            color: #003b47;
-            /* Texto azul oscuro */
-            border-radius: 15px;
-            padding: 30px;
+        .bg-responsive {
+            background-image: url('../../resource/1741103552_67c721c056e29portada-contactanos-escritorio.jpg');
+            height: 82vh;
+            background-size: cover;
+            /* height: 85vh; */
         }
 
-        .left-panel img {
-            width: 100%;
-            border-radius: 10px;
+        /* Para pantallas medianas (tablets) */
+        @media (max-width: 987px) {
+            .bg-responsive {
+                height: 82vh;
+                background-size: cover;
+                background-image: url('../../resource/1741103615_67c721ff7b3edportada-contactanos-tablet.jpg');
+            }
         }
 
-        .form-container {
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            /* Sombra ligera */
-            padding: 30px;
-            border-radius: 15px;
-            background-color: white;
-        }
-
-        .form-control:focus {
-            box-shadow: 0 0 5px rgba(255, 165, 0, 0.5);
-            /* Enfoque en campos */
-            border-color: #FFA500;
-        }
-
-        .btn-custom {
-            background-color: #FFA500;
-            color: white;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-        }
-
-        .btn-custom:hover {
-            background-color: #FF8C00;
-            /* Naranja más oscuro en hover */
+        /* Para pantallas pequeñas (móviles) */
+        @media (max-width: 575px) {
+            .bg-responsive {
+                height: 52vh;
+                width: 100%;
+                background-size: cover;
+                background-image: url('../../resource/1741103629_67c7220d1ecaeportada-contactanos-celular.jpg');
+            }
         }
     </style>
 
@@ -50,149 +33,169 @@
     <form method="post" id="Customer">
         @csrf
         <!-- INICIO SECCION -->
-<section class="  text-white">
-        <!-- Barra lateral -->
+        <div class="py-1  position-relative bg-responsive"
+            style="
+        background-position: center;
+        background-repeat: no-repeat;
 
-        <!-- Contenido central -->
-   <div class="container-fluid pt-5" style="background: linear-gradient(to right, #053A49 5% ,#0A7081 100%); width: 100%;">
-            <div class="row justify-content-center align-items-center text-center">
-<div class="col-xl-4 d-none d-xl-block d-lg-xl-block" style="margin-right:-7%">
-<img src="../resource/1736173424_lineas.png" style="width: 70%;">
-<img src="../resource/1736173417_imagen%20de%20asesores%20.png" style="width: 70%; margin-top: -70%; margin-bottom:-10px">
+        ">
+            <div class="d-none d-sm-block " style="margin-top:35vh;">
 
-</div>
-<div class="  col-xl-4">
-  <!-- Contenido encima -->
-                                    <img src="../ayba/4.png" alt="" width="50px" style="width: 68.6719px; height: 68.6719px;">
-
-                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"><span style="font-size: 30px;">&nbsp;<span style="font-size: 24px;">CONTÁCTANOS Y&nbsp;</span></span></h4><span style="font-size: 24px;">
-                                    </span><h4 class="font-weight-bold text-warning fs-5" style="letter-spacing: 10px;"><span style="font-size: 24px;">OPTÉN TU LOTE</span></h4>
-<center>
-<hr style=" width: 70%; height: 2px; background-color: #F6A42C;">
-
-</center>
-                                    <p class="lead mb-4 fs-3">
-                                    </p>
-                                    <div class="container">
-                                        <span style="font-size: 18px;"><span style="font-size: 18px; font-family: Montserrat-Regular;">¡Nosotros hacemos realidad el terreno de tus</span><br>&nbsp;sueños!</span><span style="font-size: 18px; font-family: Montserrat-Regular;">
-                                    </span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
-                                    </span><p><img src="../resource/1736173406_casa.png" style="width: 50%;"><br>
-</p><span style="font-size: 18px; font-family: Montserrat-Regular;">
-                               
-</span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
-                
-            </span></div><span style="font-size: 18px; font-family: Montserrat-Regular;">
-        </span></div></section>                        
-<p></p>
-<div class="text-center align-content-center" style="background-color:#054E5C;padding-top:30px;padding-bottom:10px">
-            <h2 class="mb-4">
-<span style="font-size: 36px;color:white" class="d-none d-md-block">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE
-                    IDEAL</span>
-<span style="font-size: 16px;color:white" class=" d-md-none">CONTÁCTANOS A UN PASO DE OBTENER TU LOTE
-                    IDEAL</span>
-</h2>
-        </div>
-
-        <div class="container text-center my-5">
-
-
-            <p class="mb-5"><span style="font-size: 24px;color:#054E5C">
-
-<span style="font-size: 30px;" class="d-none d-md-block">Selecciona la
-                        opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto
-                        contigo.
-</span>
-<span style="font-size: 16px;" class=" d-md-none">Selecciona la
-                        opción por la que quieres comunicarte con <br>nosotros y muy pronto nos pondremos en contacto
-                        contigo.
-</span>
-</span></p>
-            <div class="row justify-content-center g-4">
-                <!-- Card: Soy Cliente Nuevo -->
-                <div class="col-md-5">
-                    <div class="card  text-center" style="cursor: pointer; transition: all 0.3s ease-in-out;border:solid 1px #054E5C">
-                        <div class="card-body">
-
-                            <img src="../resource/1736360240_icono%203.svg" alt="Cliente Nuevo" style="width: 100px; height: 100%; object-fit: cover;">
-                            <h5 class="card-title fw-bold fs-9 py-7" style="color:#054E5C">Soy Cliente Nuevo</h5>
-                            <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
-                                <b>Información »</b>
-                            </a>
-                        </div>
-                    </div>
+                <div class="text-center" style="margin-left:50%">
+                    <h4 class="p-2  fs-7 " style="font-family:Montserrat-SemiBold;letter-spacing:15px;">
+                        <span style="color:#ffffff">CONTÁCTANOS Y </span><br> OBTÉN TU LOTE
+                        <br>
+                    </h4>
+                    <div class=" subrayado mx-auto " style="width:50px"></div>
+                    <br>
+                    <span class="fs-4">¡Nosotros hacemos realidad el terreno <br> de tus sueños!</span>
                 </div>
-                <!-- Card: Propietario Aybar -->
-                <div class="col-md-5">
-                    <div class="card  text-center" style="cursor: pointer; transition: all 0.3s ease-in-out;border:solid 1px #054E5C">
-                        <div class="card-body">
 
-                            <img src="../resource/1736360204_icono%202.svg" alt="Propietario Aybar" style="width: 105px; height: 100%; object-fit: cover;">
-                            <h5 class="card-title fw-bold fs-9 py-7" style="color:#054E5C">Propietario Aybar</h5>
-                            <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
-                                <b>Información »</b>
-                            </a>
+            </div>
 
-                        </div>
-                    </div>
-                </div>
+            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
+                style="top:0%;width:290px">
+                <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
+            </div>
+            <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle"
+                style="bottom:-4%;width:300px">
+                <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:10px">
+                    <span style="color:#ffffff">CONTÁCTANOS Y </span><br> OBTÉN TU LOTE
+                </h4>
+
+                <div class="subrayado mx-auto " style="width:40px"></div>
+                <br>
+                <span class="fs-2">¡Nosotros hacemos realidad el terreno <br> de tus sueños!</span>
             </div>
         </div>
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+<div class="container-fluid">
+  <div class="row">
+            <div class="col-md-6  col-12 bg-white">
+
+                <div class="text-justify my-5">
+                    <h4 class="p-2  fs-7 text-center " style="font-family:Montserrat-SemiBold;letter-spacing:15px;">
+                        <span style="color:#03424E">CONTÁCTANOS <br>
+                            A UN PASO DE <br>
+                            OBTENER TU
+                        </span><br> LOTE IDEAL
+                        <br>
+                    </h4>
+                    <div class=" subrayado mx-auto " style="width:50px"></div>
+                    <br>
+                    <div class="container col-9" style="text-align: justify">
+                        <span class="fs-4" style="text-align: justify">Selecciona la opción por la que quieres comunicarte
+                            connosotros y muy pronto nos pondremos en
+                            contacto contigo.</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 py-5   col-12 row container-fluid justify-content-center align-content-center">
+                <div class="col-4" class="mt-5" >
+                    <img src="../../resource/1741119482_67c75ffab0870cliente%20nuevo.svg" alt="" width="100%"style="margin-top:-10px"
+                        height="100px" style="">
+                </div>
+                <div class="col-8">
+                    <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Soy Cliente Nuevo</span>
+                    <br>
+                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="color:white; border-radius:10px; background-color:#FFA726; width: 190px;">
+                        <b>Información »</b>
+                    </a>
+                </div>
+                <div class="col-4" style="margin-top:-10px">
+                    <img src="../../resource/1741119495_67c760075b467propietario%20aybar.svg" alt="" width="100%"
+                        height="100px" style="">
+                </div>
+                <div class="col-8">
+                    <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Propietario Aybar</span>
+                    <br>
+                    <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal1"
+                        style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                        <b>Información »</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+</div>
+      
+
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            style="display: none;" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="background-color:#054E5C">
                     <div class="modal-header">
-                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
+                            aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                        <div class="p-3 rounded"
+                            style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                             <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO
                                         INFORMACIÓN DE UN LOTE</span></b></p>
 
 
-                            <select class="form-control" name="project_id" id="project_id" style="color: white; background-color: #055261">
+                            <select class="form-control" name="project_id" id="project_id"
+                                style="color: white; background-color: #055261">
                                 <option value="">Seleccione un proyecto</option>
                             </select>
                             <br>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
+                                <input type="text" class="form-control" name="names"
+                                    placeholder="Nombres y Apellidos:" style="color: white;">
                             </div>
                             <div class="form-floating mb-3">
 
 
-                                <input type="text" id="phone" class="form-control iti__tel-input" name="cellphone" placeholder="Número de Teléfono" style="color: white; width: 100%; padding-left: 74px;" autocomplete="off" data-intl-tel-input-id="0">
+                                <input type="text" id="phone" class="form-control iti__tel-input"
+                                    name="cellphone" placeholder="Número de Teléfono"
+                                    style="color: white; width: 100%; padding-left: 74px;" autocomplete="off"
+                                    data-intl-tel-input-id="0">
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
+                                <input type="number" class="form-control" id="dni" name="dni"
+                                    placeholder="Número de DNI" style="color: white;">
 
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()">
+                                <input type="text" class="form-control" id="message" name="message"
+                                    placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200"
+                                    oninput="updateCounter()">
                                 <div class="form-text text-white">
-                                    <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                                    <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span
+                                            style="font-size: 8px;">/200 caracteres</span></p>
                                 </div>
                             </div>
 
 
 
                             <div class="form-check text-start">
-                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos"
+                                    name="data_aprobed_1" value="true">
                                 <label class="form-check-label fs-3" for="txtTratamientoDatos">
                                     <span class="fs-2">He leído y acepto la </span>
-                                    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
+                                    <a class="text-warning fs-2" data-bs-toggle="modal"
+                                        data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
                                         Política para envío de comunicaciones comerciales.
                                     </a>
                                 </label>
                             </div>
 
                             <div class="form-check text-start ">
-                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+                                <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2"
+                                    name="data_aprobed_2" value="true">
                                 <label class="form-check-label fs-3" for="txtTratamientoDatos2">
                                     <span class="fs-2">He leído y acepto el </span>
-                                    <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
+                                    <a class="text-warning fs-2" data-bs-toggle="modal"
+                                        data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
                                         Tratamiento de mis datos personales.
                                     </a>
                                 </label>
@@ -203,7 +206,10 @@
 
                             <div class="text-center"><span style="font-size: 9px;">
 
-                                </span><button type="button" class="btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                </span><button type="button" class="btn btn-warning btn-block"
+                                    onclick="CustomerStorePublic();"
+                                    style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span
+                                        style="font-size: 9px;">
                                         <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
                                             datos</span>
                                     </span></button><span style="font-size: 9px;">
@@ -212,13 +218,15 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn bg-white text-dark" style="background-color:black" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn bg-white text-dark" style="background-color:black"
+                            data-bs-dismiss="modal">Cerrar</button>
 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header ">
@@ -229,12 +237,14 @@
                         <h3 class="modal-title fs-8" style="color:#003b47" id="exampleModalLabel">Central Telefónico</h3>
                         <p></p>
 
-                        <a class="btn btn-hover-shadow text-center justify-content-center" href="tel:+5101-9049838" style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 320px;">
+                        <a class="btn btn-hover-shadow text-center justify-content-center" href="tel:+5101-9049838"
+                            style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 320px;">
                             &nbsp;
 
                             &nbsp;
                             <p class="fs-8 text-white " style="letter-spacing: 1px;">
-                                <img src="../resource/1736360188_icono%201.svg" width="50px" alt="" srcset="" style="padding-bottom:10px;">
+                                <img src="../resource/1736360188_icono%201.svg" width="50px" alt=""
+                                    srcset="" style="padding-bottom:10px;">
                                 <b class="py-5">&nbsp;01-9049838</b>
                             </p>
                         </a>
@@ -245,8 +255,11 @@
         </div>
 
         <div id="mycontent"></div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<!-- FIN SECCION -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5517.423605390836!2d-76.96942789923634!3d-12.084221111291818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7ab490a4b17%3A0x50acc369406d2e3f!2sPatio%20Panorama!5e0!3m2!1ses-419!2spe!4v1733250273914!5m2!1ses-419!2spe"
+            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- FIN SECCION -->
     </form>
     <script>
         // Ejecutar cuando el DOM esté listo

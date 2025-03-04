@@ -1,38 +1,35 @@
 @extends("home_edit.template")
 @section("content")
-    
+
 
 
 <style>
-    /* Personalización de las tarjetas */
-    .custom-card {
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    .bg-responsive {
+        background-image: url('../../resource/1740848426_67c33d2a32317portada-blog-escritorio.jpg');
+        height: 82vh;
+        background-size: cover;
+        /* height: 85vh; */
     }
 
-    .custom-card:hover {
-      transform: translateY(-5px); /* Elevar la tarjeta en hover */
-      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Incrementar sombra */
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            height: 82vh;
+            background-size: cover;
+            background-image: url('../../resource/1740848441_67c33d393ea48portada-blog-tablet.jpg');
+        }
     }
 
-    .custom-btn {
-      background-color: #FFA500; /* Botón naranja */
-      border: none;
-      border-radius: 25px;
-      color: white;
-      padding: 8px 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 575px) {
+        .bg-responsive {
+            height: 52vh;
+            width: 100%;
+            background-size: cover;
+            background-image: url('../../resource/1740848453_67c33d45dcafaportada-blog-celular.jpg');
+        }
     }
-
-    .custom-btn:hover {
-      background-color: #FF8C00; /* Naranja más oscuro en hover */
-    }
-  </style>
-
+</style>
 
 
 @endsection

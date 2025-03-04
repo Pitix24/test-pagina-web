@@ -3,41 +3,33 @@
     
 
 
-
 <style>
-    /* Estilos personalizados */
-    .left-panel {
-      background-color: #FFA500; /* Fondo naranja */
-      color: #003b47; /* Texto azul oscuro */
-      border-radius: 15px;
-      padding: 30px;
+    .bg-responsive {
+        background-image: url('../../resource/1741103552_67c721c056e29portada-contactanos-escritorio.jpg');
+        height: 82vh;
+        background-size: cover;
+        /* height: 85vh; */
     }
-    .left-panel img {
-      width: 100%;
-      border-radius: 10px;
+
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            height: 82vh;
+            background-size: cover;
+            background-image: url('../../resource/1741103615_67c721ff7b3edportada-contactanos-tablet.jpg');
+        }
     }
-    .form-container {
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-      padding: 30px;
-      border-radius: 15px;
-      background-color: white;
+
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 575px) {
+        .bg-responsive {
+            height: 52vh;
+            width: 100%;
+            background-size: cover;
+            background-image: url('../../resource/1741103629_67c7220d1ecaeportada-contactanos-celular.jpg');
+        }
     }
-    .form-control:focus {
-      box-shadow: 0 0 5px rgba(255, 165, 0, 0.5); /* Enfoque en campos */
-      border-color: #FFA500;
-    }
-    .btn-custom {
-      background-color: #FFA500;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-    }
-    .btn-custom:hover {
-      background-color: #FF8C00; /* Naranja más oscuro en hover */
-    }
-  </style>
+</style>
 
  
 
