@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -106,11 +105,11 @@
         <!-- INICIO SECCION -->
 <header class="header fixed-header" id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8);">
 
-   
+
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
-            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 " href="/"> 
+            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 " href="/">
                 <img src="../resource/1738076896_logo%20aybar%20blanco.svg" alt="img-fluid" width="80px" style="margin-left:0%">
             </a>
 
@@ -138,7 +137,7 @@
                             <span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span>
                         </b></a>
                     </li>
-                    
+
                     <li class="nav-item" style="letter-sblogs: 1px;">
                         <a class="nav-link" aria-current="page" href="../blog" style="color: white">
                             <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="blog">BLOG</span></b>
@@ -156,11 +155,11 @@
                     </li>
                     <li class="nav-item ms-2">
                         <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-4 p-1 " href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
-                            <i class="ti ti-brand-whatsapp fs-6">&nbsp;</i><span class="text-white">01-9049838 </span> 
+                            <i class="ti ti-brand-whatsapp fs-6">&nbsp;</i><span class="text-white">01-9049838 </span>
                         </a>
                     </li>
-                    
- 
+
+
                 </ul>
             </div>
         </div>
@@ -174,31 +173,31 @@
                 <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;"></span>Contáctanos</h3>
                 <ul class="text-white mt-4" style="--bs-text-opacity: 1;">
                     <li>
-                       
-                       
+
+
                                     <img src="../resource/1738175771_679a751b0390btelefono.svg" class="note-float-left" style="width: 38.5px; height: 47.6503px;">
                                     <br class=" d-sm-none">
-                                   
+
                                     <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                                         (51)
                                         01-9049838</span>
-                        
-                                    
-                       
+
+
+
                     </li>
                     <li>
                         <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class=" note-float-left" style="width: 38.5px; height: 47.6503px; float: left;">
-                     
 
-                           
+
+
                             Circunvalación Del Golf Los Incas Av. 134
-                         
+
                             <br class=" d-sm-none">
                                 <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                                 Patio Panorama,&nbsp; Piso 19.&nbsp; Santiago de Surco.</span>
                             <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                                 </span>
-                    
+
                     </li>
                 </ul>
             </div>
@@ -246,10 +245,10 @@
             <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
                 <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
                     <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
-                    </div>                        
-                <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">                     
-                
-               
+                    </div>
+                <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
+
+
                 <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
                 </a>
                 <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
@@ -257,7 +256,7 @@
                 <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
                 </a>
                 <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
-                    </div>   
+                    </div>
             </div>
         </div>
     </div>
@@ -312,7 +311,7 @@
 </div>
 <!-- FIN SECCION -->
 <!-- Agrega este código dentro del <body> de tu página -->
- 
+
     {{-- <div class="whatsapp-container">
         <div class="whatsapp-message">
             ¿Necesitas ayuda?
@@ -446,16 +445,16 @@
 
         {{-- <a href="https://chatgpt.com/g/g-677d6c87f59481919ce07cf6c74af1d8-asistente-aybar-corp" target="_blank">
 <div id="chatbot-container" >
-   
+
         <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy tu asistente virtual
 
         </div>
-        
+
         <div id="chatbot-button">
             <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
         </div>
-  
-   
+
+
 </div>
 </a> --}}
 
@@ -601,7 +600,7 @@ $(document).ready(function () {
     // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
     function restartAOS() {
         $("[data-aos!='flip-left']").removeClass("aos-animate"); // Quitar animación
-        
+
         setTimeout(() => {
             $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
             AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos

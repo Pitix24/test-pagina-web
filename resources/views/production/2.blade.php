@@ -2,7 +2,7 @@
 
 <style>
     .bg-responsive {
-        background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
+        background-image: url('../../resource/1741726289_67d0a251a60fbportada-inicio-1-escritorio.png');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -17,7 +17,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-image: url('../resource/1738247474_679b8d32253e5portada-inicio-1-tablet.jpg');
+            background-image: url('../../resource/1741726302_67d0a25eba816portada-inicio-1-tablet.png');
         }
     }
 
@@ -29,7 +29,7 @@
             background-position: center;
             background-repeat: no-repeat;
             /* background-size: contain; */
-            background-image: url('../resource/1738247025_679b8b712800cportada-inicio-1-celular.jpg');
+            background-image: url('../../resource/1741726309_67d0a265ce0a9portada-inicio-1-celular.png');
         }
     }
 </style>
@@ -39,19 +39,19 @@
 
         <!-- INICIO SECCION -->
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
-            
-    
+
+
     <div class="carousel-inner" style="display: flex; align-items: center;">
-        
+
                 <!-- Diapositiva 1 -->
                 <div class=" carousel-item text-center pb-5 active bg-responsive">
                     <div class="container-fluid " style=" background-color: transparent;">
-                        <p>&nbsp; </p>
-                        <p>&nbsp; </p>
-                        <p>&nbsp; </p>
-                        <p>&nbsp; </p>
+                        <p>  </p>
+                        <p>  </p>
+                        <p>  </p>
+                        <p>  </p>
 
-                       
+
 
                         <div class="row h-100 ">
                             <!-- Columna izquierda con imagen -->
@@ -60,33 +60,42 @@
 
                                 <div class="d-lg-none">
                                     <img src="../ayba/4.png" alt="" style="width: 80px;margin-top:-30px"> <br>
-                                   
-                                   
+
+
                                 </div>
 
                                 <div>
                                     <div class="d-xl-none d-lg-none ">
-                                        <p>&nbsp;</p>
-                                        
-                                        
-                                        <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
-                                      
+                                        <p> </p>
+
+
+                                        <p> </p>
+                                        <p> </p>
+                                        <p> </p>
+                                        <p> </p>
+
                                     </div>
                                     <div class="d-sm-none ">
-                                        <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
-                                        
-                                        <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
+                                        <p> </p>
+                                        <p> </p>
+
+                                        <p> </p>
+                                        <p> </p>
+                                    </div>
+                                    <div class="d-none d-lg-block  d-xl-none">
+                                        <p> </p>
+                                        <p> </p>
+                                        <p> </p>
+                                        <p> </p>
+                                        <p> </p>
+
+
                                     </div>
                                     <!-- Contenido encima -->
                                     <div class="d-none d-lg-block mt-5">
 
                                         <img src="../ayba/4.png" alt="" style="width: 50px;"> <br>
-                                        
+
                                     </div>
                                   <div class="d-sm-none">
                                     <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
@@ -94,21 +103,22 @@
                                     <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
                                     </h4>
                                   </div>
-                                  
+
                                     <div class="d-none d-sm-block">
+
                                         <span class=" text-white  fs-6" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
                                             REALIDAD</span>
                                         <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
                                         </h4>
                                         <div class="mt-2 mb-3 subrayado mx-auto"></div>
-                                       
+
                                     </div>
                                     ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños hoy mismo, con
                                     facilidades de pago y <br class="d-none d-lg-block"> ubicaciones estratégicas!
-                                  
-                                    
-                                      
-                                
+
+
+
+
                                     <p></p>
                                     <div class="d-none d-lg-block">
                                         <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS O CONSULTAS?</span>
@@ -117,7 +127,7 @@
                                             <span class="fs-7">(51) 01-9049838</span>
                                         </a>
                                     </div>
-                                  
+
                                 </div>
                             </div>
                             <!-- Columna central con imagen adicional -->
@@ -151,7 +161,7 @@
                                     </div>
 
                                     <div class="form-floating mb-3">
-                                       
+
                                         <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                         <div class="form-text text-white">
                                             <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
@@ -206,7 +216,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-xl-8  bg-black ">
 
-                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:773px"></iframe>
+                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&mute=1&loop=1&playlist=68tbz0AyBUs&controls=0&showinfo=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:773px"></iframe>
                         </div>
                         <div class="d-none d-sm-block col-xl-4 col-12 container py-5   text-center align-content-center d-flex" style="background-image:url('../resource/1738091479_portada-descubre-nuestros-proyectos-escritorio.jpg');">
                             <div class="p-5 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);margin-top:50px">
@@ -232,7 +242,7 @@
                                 </div>
 
                                 <div class="form-floating mb-3">
-                               
+
                                     <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                     <div class="form-text text-white">
                                         <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
@@ -273,7 +283,7 @@
                                     </span></div><span style="font-size: 9px;">
                                 </span>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -315,8 +325,8 @@
                             </div>
                             <!-- Columna central con imagen adicional -->
                             <div class="d-none d-lg-block d-md-block  d-xl-block col-xl-7 col-lg-6 col-md-6  align-content-center">
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
+                                <p> </p>
+                                <p> </p>
 
                                 <img src="../resource/1735568084_imagenes.png" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;padding-bottom:38px;padding-top:38px">
                                 <p></p>
@@ -333,30 +343,30 @@
             </div>
           <!-- Indicadores del Carrusel -->
             <div class="carousel-indicators mb-3">
-                <button type="button" style=" background-color: transparent; 
-        border: solid 3px orange; 
-        width: 15px; 
-        height: 15px; 
-        border-top: none; 
+                <button type="button" style=" background-color: transparent;
+        border: solid 3px orange;
+        width: 15px;
+        height: 15px;
+        border-top: none;
         border-right: none;
         transform: rotate(135deg); margin-right: 20px;" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-label="Diapositiva 2" class="active" aria-current="true"></button>
-                <button type="button" style="background-color: transparent; 
-        border: solid 3px orange; 
-        width: 15px; 
-        height: 15px; 
-        border-top: none; 
+                <button type="button" style="background-color: transparent;
+        border: solid 3px orange;
+        width: 15px;
+        height: 15px;
+        border-top: none;
         border-right: none;
         transform: rotate(135deg);margin-right: 20px;" data-bs-target="#carouselExample" data-bs-slide-to="1" class="" aria-label="Diapositiva 1"></button>
-                <button type="button" style="background-color: transparent; 
-        border: solid 3px orange; 
-        width: 15px; 
-        height: 15px; 
-        border-top: none; 
+                <button type="button" style="background-color: transparent;
+        border: solid 3px orange;
+        width: 15px;
+        height: 15px;
+        border-top: none;
         border-right: none;
         transform: rotate(135deg);margin-right: 20px;" data-bs-target="#carouselExample" data-bs-slide-to="2" class="" aria-label="Diapositiva 3"></button>
 
             </div>
-            
+
         </div>
         <p></p>
 <div class="container-fluid text-light py-3 bg-white" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1500">
@@ -1087,7 +1097,7 @@
                 </div>
                 <div class="modal-body">
                     <h5 class="text-warning text-center" style="font-size: 1.65rem">TRATAMIENTOS DE DATOS PERSONALES</h5>
-              
+
                     <p style="text-align: justify; font-size: 15px;">
                         Declaro haber sido informado, conforme a Ley N° 29733 - Ley de Protección de Datos Personales
                         (“la Ley”) y al Decreto Supremo 003-2013/JUS - Reglamento de la Ley (“el Reglamento)”, doy mi
@@ -1153,7 +1163,7 @@
                 <div class="modal-body">
                     <h5 class="text-warning text-center" style="font-size: 1.65rem">CLÁUSULA PARA ENVÍO DE PROMOCIONES
                         COMERCIALES</h5>
-                  
+
                     <p style="text-align: justify; font-size: 15px;">
                         Autorizo a <strong>AYBAR S.A.C.</strong> a utilizar mis Datos Personales y que los mismos sean
                         tratados
@@ -1205,5 +1215,5 @@
 
         // Ejecutar cada 3 segundos
         setInterval(restartAOS, 70000);
- 
+
 </script>

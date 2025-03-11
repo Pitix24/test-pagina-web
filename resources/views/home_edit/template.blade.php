@@ -34,46 +34,36 @@
 </head>
 
 <style>
-    
     .bg-responsive {
-    background-image: url('../resource/1738080045_portada-inicio-1-escritorio.jpg');
-    background-repeat: no-repeat;
-    width: 100%;
-
-    /* height: 85vh; */
-}
-
-/* Para pantallas medianas (tablets) */
-@media (max-width: 1292px) {
-    .bg-responsive {
-        width: 100%;
+        background-image: url('../../resource/1741726289_67d0a251a60fbportada-inicio-1-escritorio.png');
+        background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('../resource/1738247474_679b8d32253e5portada-inicio-1-tablet.jpg');
-    }
-}
-
-/* Para pantallas pequeñas (móviles) */
-@media (max-width: 418px) {
-    .bg-responsive {
         width: 100%;
-        height: 70vh;
-        background-position: center;
-        background-repeat: no-repeat;
-        /* background-size: contain; */
-        background-image: url('../resource/1738247025_679b8b712800cportada-inicio-1-celular.jpg');
-    }
-}
-   
-    body {
-        font-family: 'Montserrat', sans-serif;
-        /* Aplica Montserrat como fuente principal */
-        font-size: 16px;
-        /* Tamaño base del texto */
 
-        line-height: 1.6;
-        /* Altura de línea para mejor legibilidad */
+        /* height: 85vh; */
+    }
+
+    /* Para pantallas medianas (tablets) */
+    @media (max-width: 1292px) {
+        .bg-responsive {
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url('../../resource/1741726302_67d0a25eba816portada-inicio-1-tablet.png');
+        }
+    }
+
+    /* Para pantallas pequeñas (móviles) */
+    @media (max-width: 987px) {
+        .bg-responsive {
+            width: 10%;
+            /* height: 90vh; */
+            background-position: center;
+            background-repeat: no-repeat;
+            /* background-size: contain; */
+            background-image: url('../../resource/1741726309_67d0a265ce0a9portada-inicio-1-celular.png');
+        }
     }
 </style>
 
@@ -84,7 +74,7 @@
     <div class="progress" >
         <div class="progress-bar text-bg-danger"id="progress_bar" style="width: 0%; height: 6px" role="progressbar">
         </div>
-        
+
     </div>
 
 
@@ -212,31 +202,31 @@
                     <b style="word-spacing: 1px;"class="fs-2">BLOG</b>
                 </a>
             </div>
-     
+
             <div class="col-2">
                 <a class="nav-link" aria-current="page" href="contacto" style="color: #ffffff">
                     <b style="word-spacing: 1px;"class="fs-2">CONTÁCTANOS</b>
                 </a>
-    
-            </div>
-          
-    
-   
-           
-   
-           
-       
-          
-       
-              
-                  
-                    
-              
-         
-                
 
-           
-      
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
       <script>
