@@ -601,9 +601,9 @@
                 </div>
             </div>
         </div>
-<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg'); 
-               background-repeat: no-repeat; 
-               background-size: auto 100%; 
+<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg');
+               background-repeat: no-repeat;
+               background-size: auto 100%;
                background-position: center;">
                <h4 class="d-none d-sm-block text-center display-6 pt-3 pb-2" style="margin:15px;font-family:Montserrat-SemiBold;letter-spacing:15px">
                 <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
@@ -612,7 +612,7 @@
         <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
     </h4>
     <div class="subrayado mx-auto mb-5"></div>
-    
+
 
     <!-- Carrusel para pantallas pequeñas -->
     <div id="responsiveCarousel6" class="carousel slide d-md-none pointer-event" data-bs-interval="3000" data-bs-ride="carousel">
@@ -633,8 +633,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                        
-                           
+
+
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">Proyecto <br> San Andrés</h5>
@@ -644,7 +644,7 @@
                                 <div class="d-flex align-items-center justify-content-center position-absolute " style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                                   <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
                                 </div>
-        
+
                             </a>
                         </div>
                     </div>
@@ -664,8 +664,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                        
-                           
+
+
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -695,8 +695,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-                        
-                           
+
+
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -741,8 +741,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                
-                   
+
+
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
@@ -769,8 +769,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                
-                   
+
+
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -797,8 +797,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-                
-                   
+
+
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -816,10 +816,10 @@
     </div>
 </div>
 <div class="container-fluid py-1" style=";background-image:url('../resource/1738100589_67994f6dc5aa9portada-confia-en-aybar-escritorio.jpg');margin-bottom:-16px;
- background-repeat: no-repeat; 
+ background-repeat: no-repeat;
  background-size: cover;
-      
- 
+
+
                background-position: center;">
 
 <img src="../resource/1738168541_679a58dd6cbc9portada-confiaenaybar-celular.jpg" class="d-lg-none" alt="" style="border:solid white 5px;margin-bottom:-180px;margin-top:-4px;border-radius:10px" width="100%">
@@ -827,7 +827,7 @@
         <div class="row">
             <!-- Imagen -->
             <div class="col-12 col-sm-12 col-lg-4 col-xl-6 mt-lg-5 ">
-               
+
             </div>
 
 
@@ -838,7 +838,7 @@
 
 
                     <div class="p-5 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                       
+
                         <h4 class="d-sm-none text-center display-10 aos-init aos-animate" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:5px">
                             <span style="color:#03424E" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">CONFÍA EN</span><br> AYBAR CORP
                         </h4>
@@ -846,13 +846,13 @@
                             <span style="color:#03424E" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">CONFÍA EN</span><br> AYBAR CORP
                         </h4>
                         <div class="subrayado mx-auto mb-5"></div>
-                         
+
                         <p class="fs-6  text-center" style="color:#03424E;" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
                             Construye un futuro sólido para tu familia <br class="d-none d-sm-block"> invirtiendo en confianza.
                         </p>
-                       
-                      
-    
+
+
+
                         <!-- Carrusel para pantallas SM -->
                         <div id="carouselExample5" class="carousel slide d-md-none pointer-event" data-bs-ride="carousel">
                             <div class="carousel-inner">
@@ -862,7 +862,7 @@
                                         <div class="card-body text-center">
                                             <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ 2,000 KM 2<br></b>
                                             <span style="font-size:11px">
-                                              <b>Zonas verdes proporcionadas.</b>  
+                                              <b>Zonas verdes proporcionadas.</b>
                                             </span>
                                         </div>
                                     </div>
@@ -873,7 +873,7 @@
                                         <div class="card-body text-center">
                                             <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 5 AÑOS<br></b>
                                             <span style="font-size:11px">
-                                              <b>De experiencia en el mercado.</b>  
+                                              <b>De experiencia en el mercado.</b>
                                             </span>
                                         </div>
                                     </div>
@@ -884,7 +884,7 @@
                                         <div class="card-body text-center">
                                             <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 1,000<br></b>
                                             <span style="font-size:11px">
-                                              <b>Adquirieron nuestros proyectos.</b>  
+                                              <b>Adquirieron nuestros proyectos.</b>
                                             </span>
                                         </div>
                                     </div>
@@ -894,7 +894,7 @@
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
                                             <img src="../resource/1738103999_67995cbf55c4cproyectos%20sostenibles.svg" class="mb-1" width="140px" alt=""> <br><b style="font-size: 13px">PROYECTOS <br>SOSTENIBLES</b>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -904,7 +904,7 @@
                                         <div class="card-body text-center">
                                             <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 300 PROYECTOS<br></b>
                                             <span style="font-size:11px">
-                                              <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>  
+                                              <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>
                                             </span>
                                         </div>
                                     </div>
@@ -920,7 +920,7 @@
                                 <span class="visually-hidden">Siguiente</span>
                             </button>
                         </div>
-    
+
                         <!-- Grilla para pantallas MD y superiores -->
                         <div class="row d-none d-md-flex mt-4" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000">
                             <div class="col-lg-4 col-md-6 col-xl-4">
@@ -928,66 +928,66 @@
                                     <div class="card-body text-center">
                                         <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ 2,000 KM 2<br></b>
                                         <span style="font-size:11px">
-                                          <b>Zonas verdes proporcionadas.</b>  
+                                          <b>Zonas verdes proporcionadas.</b>
                                         </span>
                                     </div>
                                 </div>
 
-                               
+
                             </div>
-                            
+
                             <div class="col-lg-4 col-md-6 col-xl-4">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
                                         <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 5 AÑOS<br></b>
                                         <span style="font-size:11px">
-                                          <b>De experiencia en el mercado.</b>  
+                                          <b>De experiencia en el mercado.</b>
                                         </span>
                                     </div>
                                 </div>
-    
+
                             </div>
                             <div class="d-none d-md-block  d-lg-none col-md-3"></div>
                             <div class="col-lg-4 col-md-6 col-xl-4">
-                            
+
 
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
                                         <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 1,000<br></b>
                                         <span style="font-size:11px">
-                                          <b>Adquirieron nuestros proyectos.</b>  
+                                          <b>Adquirieron nuestros proyectos.</b>
                                         </span>
                                     </div>
                                 </div>
                             </div>
-                      
+
                             <div class="col-lg-6 col-md-6 col-xl-6">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
                                         <img src="../resource/1738103999_67995cbf55c4cproyectos%20sostenibles.svg" class="mb-1" width="140px" alt=""> <br><b style="font-size: 13px">PROYECTOS <br>SOSTENIBLES</b>
-                                        
+
                                     </div>
                                 </div>
 
-                              
+
                             </div>
-    
+
                             <div class="col-lg-6 col-md-6 col-xl-6">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
                                         <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 300 PROYECTOS<br></b>
                                         <span style="font-size:11px">
-                                          <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>  
+                                          <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>
                                         </span>
                                     </div>
                                 </div>
-                               
+
                             </div>
                         </div>
                         <div class="text-center">
 
                             <a class="btn btn-lg btn-hover-shadow" href="../../proyectos" style="color:white;border-radius:5px;background-color:#F6A42C;width:50%">
-                                 &nbsp;CONOCER MÁS&nbsp;<b style="color:#03424E;font-size:30px"></b> 
+                                 &nbsp;CONOCER MÁS&nbsp;<b style="color:#03424E;font-size:30px"></b>
                             </a>
                         </div>
                     </div>
@@ -1005,7 +1005,7 @@
                 </div>
             </div>
         </div>
-    </div> 
+    </div>
 <div id="mycontent"></div>
 <!-- FIN SECCION -->
 <button type="button"id="boton-oculto-modal" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#autoModal">
@@ -1188,7 +1188,7 @@
 
 
     <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" >
+        <div class="modal-dialog modal-md" >
           <div class="modal-content ">
                 <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:70vh">
             <div class="modal-footer">
