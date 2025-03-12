@@ -115,7 +115,7 @@
             background-size: cover;
             /* height: 85vh; */
         }
-    
+
         /* Para pantallas medianas (tablets) */
         @media (max-width: 987px) {
             .bg-responsive {
@@ -124,7 +124,7 @@
                 background-image: url('../../resource/1738597193_67a0e3490aa87portada-proyectos-tablet.jpg');
             }
         }
-    
+
         /* Para pantallas pequeñas (móviles) */
         @media (max-width: 575px) {
             .bg-responsive {
@@ -147,71 +147,71 @@
                         <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                     </h4>
                     <div class="subrayado mx-auto "></div>
-                  
+
                  </div>
-                
+
                  <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="top:32%;width:290px">
                 <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" width="75px" alt="" srcset="">
                  </div>
-                 
+
                  <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:5%;width:300px">
                     <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:5px">
                         <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                     </h4>
-                    
+
                     <div class="subrayado mx-auto " style="width:30px;height:2px"></div>
-                  
+
                  </div>
             </div>
 
             <!-- Diapositiva 2 -->
             <div class=" carousel-item ">
-               
+
                   <div class="video-background " style="position: relative; overflow: hidden; height: 82vh;">
                     <video autoplay="" loop="" muted="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                       <source src="../../resource/1738600049_67a0ee71dc79f2sXRVvaPa0EZB5DNDGCHLZNucZX.mp4" type="video/mp4">
                       Tu navegador no soporta el video.
                     </video>
-                  
 
-               
+
+
 
                     <div class="content d-none d-sm-block text-center text-white start-50 translate-middle" style="position: relative;  color: white; text-align: center;top:50%;width:600px">
-       
+
                             <h4 class="p-2  text-center fs-7" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
                                 <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                             </h4>
                             <div class="subrayado mx-auto "></div>
-                          
-                         
+
+
                   </div>
                   <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="bottom:10%;width:300px">
                     <h4 class="p-2  text-center fs-3" style="font-family:Montserrat-SemiBold;letter-spacing:5px">
                         <span style="color:#ffffff">CUMPLIENDO EL</span><br> LOTE DE TUS SUEÑOS
                     </h4>
-                    
+
                     <div class="subrayado mx-auto " style="width:30px;height:2px"></div>
-                  
+
                  </div>
-               
-               
-               
+
+
+
             </div>
         </div>
 
         <!-- Indicadores -->
-     
+
 
         <!-- Controles de navegación -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <div style="color:orange;font-size:50px">
-                <
+                &lt;
             </div>
-     
+
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <div style="color:orange;font-size:50px">
-                >
+                &gt;
             </div>
         </button>
     </div>
@@ -227,30 +227,29 @@
 
 
         <p class="fs-5 mb-5" style="color:#047991;text-align:center">
-            Encuentra el lugar ideal para comenzar una nueva etapa. Descubre proyectos estratégicamente ubicados, rodeados
-            de oportunidades, naturaleza y todo lo que necesitas para construir tu futuro.
+            Descubre el lugar ideal para tu próximo hogar. Nuestros proyectos están estratégicamente ubicados, rodeados de oportunidades y naturaleza, para construir el futuro que mereces.
         </p>
         <div class="row">
             <!-- Tarjeta Lima -->
             <div class="col-xl-2 col-0"></div>
             <div class="col-lg-6 col-xl-4 col-md-6">
 
-                <div class="card" style="cursor:pointer;background: url('../resource/1735593981_Lima.png') center/cover no-repeat; 
+                <div class="card" style="cursor:pointer;background: url('../resource/1735593981_Lima.png') center/cover no-repeat;
                        position: relative;
-                       border-radius: 15px; 
-                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
-                       transition: transform 0.3s ease-in-out; 
-                       transform: translateY(0px); 
-                       color: white; 
-                       text-align: center; 
-                       padding: 20px; 
-                       height: 350px; 
-                       display: flex; 
-                       flex-direction: column; 
-                       align-items: center; 
+                       border-radius: 15px;
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+                       transition: transform 0.3s ease-in-out;
+                       transform: translateY(0px);
+                       color: white;
+                       text-align: center;
+                       padding: 20px;
+                       height: 350px;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
                        justify-content: center;
                        overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalLima" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-           
+
                <!-- Contenido normal (visible al inicio) -->
                <div class="default-content" style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
                            border-top-right-radius:15px;
@@ -259,7 +258,7 @@
                        LIMA <br> METROPOLITANA
                    </h4>
                </div>
-           
+
                <!-- Contenido en hover (aparece al pasar el mouse) -->
                <div class="hover-content" style="position: absolute;
                            top: 0;
@@ -281,24 +280,24 @@
                        tradición de la ciudad, además de garantizar un alto nivel de plusvalía.
                    </p>
                </div>
-           
+
                <!-- Flecha con botón circular -->
-               <div class="d-flex align-items-center justify-content-center position-absolute" style="cursor:pointer;background: white; 
-                           border-radius: 20%; 
-                           width: 60px; 
-                           height: 60px; 
-                           bottom: 5%; 
-                           right: 3%; 
-                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-                           position: absolute; 
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="cursor:pointer;background: white;
+                           border-radius: 20%;
+                           width: 60px;
+                           height: 60px;
+                           bottom: 5%;
+                           right: 3%;
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                           position: absolute;
                            z-index: 2;">
                    <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
                </div>
            </div>
-           
 
-           
-   
+
+
+
 
 
                 <!-- Modal -->
@@ -312,8 +311,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="container text-center">
-                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
-                                        con megaproyectos.</h2>
+                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti con megaproyectos diseñados para tu futuro.</h2>
 
                                     <div class="row align-content-center text-center justify-content-center">
                                         <div class="col-lg-4">
@@ -354,30 +352,30 @@
 
             <!-- Tarjeta Ica -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card shadow " style="cursor:pointer;background: url('../resource/1735593994_Ica.png') center/cover no-repeat; 
-                       position: relative; 
-                       border-radius: 15px; 
-                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
-                       transition: transform 0.3s ease-in-out; 
-                       transform: translateY(0px); 
-                       color: white; 
-                       text-align: center; 
-                       padding: 20px; 
-                       height: 350px; 
-                       display: flex; 
-                       flex-direction: column; 
-                       align-items: center; 
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1735593994_Ica.png') center/cover no-repeat;
+                       position: relative;
+                       border-radius: 15px;
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+                       transition: transform 0.3s ease-in-out;
+                       transform: translateY(0px);
+                       color: white;
+                       text-align: center;
+                       padding: 20px;
+                       height: 350px;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
                        justify-content: center;
                        overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalIca" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-           
+
                <!-- Contenido normal (visible al inicio) -->
                <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
                            border-top-right-radius:15px;
                            transition: opacity 0.3s ease-in-out;height:100px">
-                           
+
                     <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">ICA</h4>
                </div>
-           
+
                <!-- Contenido en hover (aparece al pasar el mouse) -->
                <div class="hover-content" style="position: absolute;
                            top: 0;
@@ -389,31 +387,31 @@
                            padding: 20px;
                            opacity: 0;
                            transition: opacity 0.3s ease-in-out;">
-             
+
                     <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">Ica</h4>
                     <p class="fs-3" style="text-align: justify; font-family: Montserrat-Regular;">
                         <b>5 proyectos únicos en la tierra del sol y el vino</b><br>
                        Ica te invita a descubrir el lugar perfecto para vivir, cada proyecto está cerca de destinos turísticos,
                        asegurando una excelente inversión y calidad de vida.
                     </p>
-                       
-                
+
+
                </div>
-           
+
                <!-- Flecha con botón circular -->
-               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
-                           border-radius: 20%; 
-                           width: 60px; 
-                           height: 60px; 
-                           bottom: 5%; 
-                           right: 3%; 
-                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-                           position: absolute; 
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white;
+                           border-radius: 20%;
+                           width: 60px;
+                           height: 60px;
+                           bottom: 5%;
+                           right: 3%;
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                           position: absolute;
                            z-index: 2;">
                    <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
                </div>
            </div>
-            
+
 
                 <div class="modal fade" id="modalIca" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
@@ -425,8 +423,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="container text-center">
-                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
-                                        con megaproyectos.</h2>
+                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti con megaproyectos diseñados para tu futuro.</h2>
 
                                     <div class="row align-content-center text-center justify-content-center">
                                         <div class="col-lg-4">
@@ -478,19 +475,19 @@
 
             <!-- Tarjeta Huaral -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172777_Huaral.png') center/cover no-repeat; 
-            position: relative; 
-            border-radius: 15px; 
-            box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
-            transition: transform 0.3s ease-in-out; 
-            transform: translateY(0px); 
-            color: white; 
-            text-align: center; 
-            padding: 20px; 
-            height: 350px; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172777_Huaral.png') center/cover no-repeat;
+            position: relative;
+            border-radius: 15px;
+            box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+            transition: transform 0.3s ease-in-out;
+            transform: translateY(0px);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
             overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalHuaral" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
 
@@ -498,7 +495,7 @@
     <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
                            border-top-right-radius:15px;
                            transition: opacity 0.3s ease-in-out;height:100px">
-                           
+
                     <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">HUARAL</h4>
                </div>
 
@@ -521,20 +518,20 @@
                 <br>&nbsp; <br>
                 Descubre proyectos diseñados para garantizar tu bienestar y un crecimiento constante en valor.
             </p>
-          
-            
-       
+
+
+
     </div>
 
     <!-- Flecha con botón circular -->
-    <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
-                border-radius: 20%; 
-                width: 60px; 
-                height: 60px; 
-                bottom: 5%; 
-                right: 3%; 
-                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-                position: absolute; 
+    <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white;
+                border-radius: 20%;
+                width: 60px;
+                height: 60px;
+                bottom: 5%;
+                right: 3%;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                position: absolute;
                 z-index: 2;">
         <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
     </div>
@@ -553,8 +550,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="container text-center">
-                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
-                                        con megaproyectos.</h2>
+                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti con megaproyectos diseñados para tu futuro.</h2>
 
                                     <div class="row align-content-center text-center justify-content-center">
                                         <div class="col-lg-4">
@@ -595,30 +591,30 @@
 
             <!-- Tarjeta Huacho -->
             <div class="col-lg-6 col-xl-4 col-md-6">
-                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172763_Huacho.png') center/cover no-repeat; 
-                       position: relative; 
-                       border-radius: 15px; 
-                       box-shadow: rgb(0, 0, 0) 0px 4px 10px; 
-                       transition: transform 0.3s ease-in-out; 
-                       transform: translateY(0px); 
-                       color: white; 
-                       text-align: center; 
-                       padding: 20px; 
-                       height: 350px; 
-                       display: flex; 
-                       flex-direction: column; 
-                       align-items: center; 
+                <div class="card shadow " style="cursor:pointer;background: url('../resource/1736172763_Huacho.png') center/cover no-repeat;
+                       position: relative;
+                       border-radius: 15px;
+                       box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+                       transition: transform 0.3s ease-in-out;
+                       transform: translateY(0px);
+                       color: white;
+                       text-align: center;
+                       padding: 20px;
+                       height: 350px;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: center;
                        justify-content: center;
                        overflow: hidden;" data-bs-toggle="modal" data-bs-target="#modalHuacho" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
-           
+
                <!-- Contenido normal (visible al inicio) -->
                <div class="default-content d-flex justify-content-start text-start " style="position: absolute; bottom:0px; left:0%;background-color:#03424E;width:90%;
                       border-top-right-radius:15px;
                       transition: opacity 0.3s ease-in-out;height:100px">
-                      
+
                <h4 class="pt-4  fs-8 " style="color: #f8b400; text-align:justify; margin-left:25px;margin-top:12px">HUACHO</h4>
           </div>
-           
+
                <!-- Contenido en hover (aparece al pasar el mouse) -->
                <div class="hover-content" style="position: absolute;
                            top: 0;
@@ -630,31 +626,31 @@
                            padding: 20px;
                            opacity: 0;
                            transition: opacity 0.3s ease-in-out;">
-        
+
         <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px;text-align:justify">Huacho</h4>
         <p class="fs-3" style="text-align: justify; font-family: Montserrat-Regular;">
             <b>Proyectos estratégicos en la ciudad costera</b><br>
             Ubicados en una de las zonas con mayor proyección de desarrollo, nuestros proyectos en Huacho
             combinan tranquilidad, acceso a servicios y una excelente oportunidad de inversión.
         </p>
-                      
-                  
+
+
                </div>
-           
+
                <!-- Flecha con botón circular -->
-               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white; 
-                           border-radius: 20%; 
-                           width: 60px; 
-                           height: 60px; 
-                           bottom: 5%; 
-                           right: 3%; 
-                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-                           position: absolute; 
+               <div class="d-flex align-items-center justify-content-center position-absolute" style="background: white;
+                           border-radius: 20%;
+                           width: 60px;
+                           height: 60px;
+                           bottom: 5%;
+                           right: 3%;
+                           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                           position: absolute;
                            z-index: 2;">
                    <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
                </div>
            </div>
-           
+
 
 
                 <div class="modal fade" id="modalHuacho" tabindex="-1" aria-labelledby="modalLimaLabel" aria-hidden="true">
@@ -667,8 +663,7 @@
                             </div>
                             <div class="modal-body">
                                 <div class="container text-center">
-                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti
-                                        con megaproyectos.</h2>
+                                    <h2 class="modal-title p-5" id="modalLimaLabel">Encuentra el proyecto ideal para ti con megaproyectos diseñados para tu futuro.</h2>
 
                                     <div class="row align-content-center text-center justify-content-center">
                                         <div class="col-lg-4">

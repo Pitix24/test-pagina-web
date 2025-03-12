@@ -46,10 +46,10 @@
                 <!-- Diapositiva 1 -->
                 <div class=" carousel-item text-center pb-5 active bg-responsive">
                     <div class="container-fluid " style=" background-color: transparent;">
-                        <p>  </p>
-                        <p>  </p>
-                        <p>  </p>
-                        <p>  </p>
+                        <p>&nbsp; </p>
+                        <p>&nbsp; </p>
+                        <p>&nbsp; </p>
+                        <p>&nbsp; </p>
 
 
 
@@ -66,28 +66,28 @@
 
                                 <div>
                                     <div class="d-xl-none d-lg-none ">
-                                        <p> </p>
+                                        <p>&nbsp;</p>
 
 
-                                        <p> </p>
-                                        <p> </p>
-                                        <p> </p>
-                                        <p> </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
 
                                     </div>
                                     <div class="d-sm-none ">
-                                        <p> </p>
-                                        <p> </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
 
-                                        <p> </p>
-                                        <p> </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
                                     </div>
                                     <div class="d-none d-lg-block  d-xl-none">
-                                        <p> </p>
-                                        <p> </p>
-                                        <p> </p>
-                                        <p> </p>
-                                        <p> </p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
+                                        <p>&nbsp;</p>
 
 
                                     </div>
@@ -216,7 +216,7 @@
                     <div class="row">
                         <div class="col-12 col-sm-12 col-xl-8  bg-black ">
 
-                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&mute=1&loop=1&playlist=68tbz0AyBUs&controls=0&showinfo=0&modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:773px"></iframe>
+                            <iframe src="https://www.youtube.com/embed/68tbz0AyBUs?autoplay=1&amp;mute=1&amp;loop=1&amp;playlist=68tbz0AyBUs&amp;controls=0&amp;showinfo=0&amp;modestbranding=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="object-fit: cover;width:100%;height:773px"></iframe>
                         </div>
                         <div class="d-none d-sm-block col-xl-4 col-12 container py-5   text-center align-content-center d-flex" style="background-image:url('../resource/1738091479_portada-descubre-nuestros-proyectos-escritorio.jpg');">
                             <div class="p-5 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);margin-top:50px">
@@ -316,7 +316,7 @@
                                     <p class="lead mb-4 fs-3">
                                     </p>
                                     <div class="container">
-                                        ¡Así como cambiamos la vida de muchas <br> familias podemos cambiar la tuya!
+                                        ¡Así como hemos cambiado la vida de muchas familias, podemos cambiar la tuya!
                                     </div>
                                     <img src="../resource/1735944556_logos.png" width="250px" alt="">
                                     <p></p>
@@ -325,8 +325,8 @@
                             </div>
                             <!-- Columna central con imagen adicional -->
                             <div class="d-none d-lg-block d-md-block  d-xl-block col-xl-7 col-lg-6 col-md-6  align-content-center">
-                                <p> </p>
-                                <p> </p>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
 
                                 <img src="../resource/1735568084_imagenes.png" alt="Imagen central" width="100%" class="note-float-right" style="float: right; width: 100%;padding-bottom:38px;padding-top:38px">
                                 <p></p>
@@ -496,7 +496,8 @@
                                             <img src="../resource/1738096177_67993e314cb8drentabilidad%20a%20largo%20plazo.svg" alt="Rentabilidad a Largo Plazo" style="width: 50%;border-radius:0px">
                                         </div>
                                         <div class="el-card-content text-center">
-                                            <h4 class="mb-0 card-title" style="color:#03424E">RENTABILIDAD<br>A LARGO PLAZO
+                                            <h4 class="mb-0 card-title" style="color:#03424E">RENTABILIDAD<br>A LARGO
+                                                PLAZO
                                             </h4>
                                         </div>
                                     </div>
@@ -512,7 +513,8 @@
                                             <img src="../resource/1738096259_67993e83879f3patrimonio%20para%20tu%20familia.svg" alt="Patrimonio Familiar" style="width: 50%;border-radius:0px">
                                         </div>
                                         <div class="el-card-content text-center">
-                                            <h4 class="mb-0 card-title" style="color:#03424E">PATRIMONIO PARA<br>TU FAMILIA
+                                            <h4 class="mb-0 card-title" style="color:#03424E">PATRIMONIO PARA<br>TU
+                                                FAMILIA
                                             </h4>
                                         </div>
                                     </div>
@@ -557,7 +559,7 @@
                                     <img src="../resource/1738095847_67993ce7b34f0inversion%20segura.svg" alt="Inversion Segura" style="width: 50%;border-radius:0px">
                                 </div>
                                 <div class="el-card-content text-center">
-                                    <h4 class="mb-0 card-title" style="color:#03424E">INVERSION<br>SEGURA</h4>
+                                    <h4 class="mb-0 card-title" style="color:#03424E">INVERSIÓN<br>SEGURA</h4>
                                 </div>
                             </div>
                         </div>
@@ -860,7 +862,7 @@
                                 <div class="carousel-item active">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ 2,000 KM 2<br></b>
+                                            <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 9px">+2,000 km²<br></b>
                                             <span style="font-size:11px">
                                               <b>Zonas verdes proporcionadas.</b>
                                             </span>
@@ -871,9 +873,9 @@
                                 <div class="carousel-item">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 5 AÑOS<br></b>
+                                            <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 11px">Más de 5 años de experiencia en el mercado.<br></b>
                                             <span style="font-size:11px">
-                                              <b>De experiencia en el mercado.</b>
+
                                             </span>
                                         </div>
                                     </div>
@@ -882,9 +884,9 @@
                                 <div class="carousel-item">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 1,000<br></b>
+                                            <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 10px">Más de 1000 familias adquirieron nuestros proyectos.<br></b>
                                             <span style="font-size:11px">
-                                              <b>Adquirieron nuestros proyectos.</b>
+
                                             </span>
                                         </div>
                                     </div>
@@ -926,7 +928,7 @@
                             <div class="col-lg-4 col-md-6 col-xl-4">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ 2,000 KM 2<br></b>
+                                        <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 12px">+2,000 km²<br></b>
                                         <span style="font-size:11px">
                                           <b>Zonas verdes proporcionadas.</b>
                                         </span>
@@ -939,9 +941,9 @@
                             <div class="col-lg-4 col-md-6 col-xl-4">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 5 AÑOS<br></b>
-                                        <span style="font-size:11px">
-                                          <b>De experiencia en el mercado.</b>
+                                        <img src="../resource/1738103930_67995c7a1baf4+%20de%205%20a%C3%B1os.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 11px">Más de 5 años de experiencia en el mercado.<br></b>
+                                        <span style="font-size:8px">
+
                                         </span>
                                     </div>
                                 </div>
@@ -953,9 +955,9 @@
 
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 1,000<br></b>
+                                        <img src="../resource/1738103935_67995c7fafb62+de%201000%20adquieren%20nuestros%20proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 11px">Más de 1000 familias adquirieron nuestros proyectos.<br></b>
                                         <span style="font-size:11px">
-                                          <b>Adquirieron nuestros proyectos.</b>
+
                                         </span>
                                     </div>
                                 </div>
@@ -1008,9 +1010,10 @@
     </div>
 <div id="mycontent"></div>
 <!-- FIN SECCION -->
-<button type="button"id="boton-oculto-modal" class="d-none btn btn-primary" data-bs-toggle="modal" data-bs-target="#autoModal">
-    Abrir Modal
-</button>
+        <button type="button"id="boton-oculto-modal" class="d-none btn btn-primary" data-bs-toggle="modal"
+            data-bs-target="#autoModal">
+            Abrir Modal
+        </button>
     </form>
     <style>
         input::placeholder {
@@ -1025,11 +1028,11 @@
 
 
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var myModal = document.getElementById('boton-oculto-modal');
-        myModal.click();
-    });
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var myModal = document.getElementById('boton-oculto-modal');
+            myModal.click();
+        });
     </script>
 
 
@@ -1188,32 +1191,33 @@
 
 
     <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md" >
-          <div class="modal-content ">
-                <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"style="height:70vh">
-            <div class="modal-footer">
-              <button type="button" class="btn  text-white" style="background-color:#005463" data-bs-dismiss="modal">Cerrar</button>
+        <div class="modal-dialog modal-md">
+            <div class="modal-content ">
+                <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"
+                    style="height:70vh">
+                <div class="modal-footer">
+                    <button type="button" class="btn  text-white" style="background-color:#005463"
+                        data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 @endsection
 
 <script>
     //reinicia animacion AOS
     //reinicia animacion AOS
 
-        // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
-        function restartAOS() {
-            $("[data-aos='flip-left']").removeClass("aos-animate"); // Quitar animación
+    // Función para reiniciar AOS en TODOS los elementos con atributos data-aos
+    function restartAOS() {
+        $("[data-aos='flip-left']").removeClass("aos-animate"); // Quitar animación
 
-            setTimeout(() => {
-                $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
-                AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
-            }, 1000);
-        }
+        setTimeout(() => {
+            $("[data-aos]").addClass("aos-animate"); // Volver a agregar animación
+            AOS.refreshHard(); // Refrescar AOS para que vuelva a aplicar los efectos
+        }, 1000);
+    }
 
-        // Ejecutar cada 3 segundos
-        setInterval(restartAOS, 70000);
-
+    // Ejecutar cada 3 segundos
+    setInterval(restartAOS, 70000);
 </script>
