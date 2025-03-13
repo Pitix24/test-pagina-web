@@ -94,7 +94,7 @@ function ProjectEdit(id) {
       // }
 
    // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
-   for (let i = 1; i <= 6; i++) {
+   for (let i = 1; i <= 20; i++) {
     let subProjectField = "subproject_" + i;subProjectImagePreview_1
     let subProjectImageField = "subProjectImagePreview_" + i;
     let subProjectImagePreview = document.getElementById(subProjectImageField);
