@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('detail')->nullable();
 
 
-            $table->string('country'); // 
+            $table->string('country'); //
             $table->string('location')->nullable(); //
             $table->string('land')->nullable(); //
             $table->string('land_count')->nullable(); //
@@ -42,13 +42,13 @@ return new class extends Migration
 
 
             for ($i = 1; $i <= 10; $i++) {
-               
-                $table->string("tourist_$i","30")->nullable(); //
-                $table->string("tourist_image_$i","50")->nullable(); //
+
+                $table->string("tourist_$i","100")->nullable(); //
+                $table->string("tourist_image_$i","100")->nullable(); //
             }
             for ($i = 1; $i <= 20; $i++) {
                 $table->longText("photo_$i")->nullable(); //
-               
+
                 $table->longText("subproject_$i")->nullable(); //
                 $table->longText("subproject_image_$i")->nullable();
             }
