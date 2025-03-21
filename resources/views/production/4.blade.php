@@ -326,7 +326,7 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="../proyectos/rivera">
-                                                <img src="../resource/1736196462_rivera%20del%20camp.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <img src="../../resource/1742594347_67dde12b9533bCard%20Rivera%20del%20Campo.png" width="90%" alt="" srcset="" style="border-radius: 20px">
                                                 <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
                                                         <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
                                                             más</span>
@@ -429,7 +429,7 @@
                                         <div class="col-lg-4">
                                             <a href="../proyectos/jumeirah">
 
-                                                <img src="../resource/1736197086_jumeirah.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <img src="../../resource/1742594307_67dde1030f53eCard%20Jumeirah.png" width="90%" alt="" srcset="" style="border-radius: 20px">
                                                 <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
                                                         <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
                                                             más</span>
@@ -447,13 +447,60 @@
                                         </div>
                                         <div class="col-lg-4">
                                             <a href="../proyectos/villa">
-                                                <img src="../resource/1736198419_villa-porton.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <img src="../../resource/1742594391_67dde1570ab2dCard%20Villa%20Porton.png" width="90%" alt="" srcset="" style="border-radius: 20px">
                                                 <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
                                                         <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
                                                             más</span>
                                                     </span></button>
                                             </a>
                                         </div>
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/camtabria_lagoons">
+                                                <img src="../../resource/1742594189_67dde08deb4d8Card%20Camtabria.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/poblado">
+                                                <img src="../../resource/1742594199_67dde097ca19dCard%20El%20Poblado.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/cabo">
+                                                <img src="../../resource/1742594207_67dde09f8de74Card%20El%20Cabo.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/grocio_prado">
+                                                <img src="../../resource/1742594213_67dde0a50cf83Card%20Grocio%20Prado.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <a href="../proyectos/vina_del_mar">
+                                                <img src="../../resource/1742594443_67dde18b7c222Card%20Vi%C3%B1a%20del%20Mar.png" width="90%" alt="" srcset="" style="border-radius: 20px">
+                                                <button type="button" class="btn btn-warning btn-block" style="margin-top:-40%;color: white; border-radius: 100px; background-color: #F6A42C; width: 160px;"><span style="font-size: 9px;">
+                                                        <span style="font-family: Montserrat-Bold; font-size: 12px;">Conocer
+                                                            más</span>
+                                                    </span></button>
+                                            </a>
+                                        </div>
+
+
                                     </div>
 
 
