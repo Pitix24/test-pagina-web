@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Notifications\CustomerNotification;
 class CustomerController extends Controller
 {
-  
+
     /**
      * Display a listing of the resource.
      */
@@ -59,7 +59,7 @@ class CustomerController extends Controller
         // Mail::raw('Cliente nuevo: ' . $name_, function ($message) use ($name_) {
         //     $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
         //             ->subject('Un cliente se ha registrado')
-                    
+
         //             ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
         // });
 
@@ -75,13 +75,17 @@ class CustomerController extends Controller
         $Customer->message = $data["message"] ?? '';
 
         $Customer->save();
-  
- 
-    
+
+
+
     }
     public function ProjectList()
     {
-        $Project = Project::orderBy('id','DESC')->get();
+       $Project = Project::orderBy('id','DESC')
+       ->where("title","like","Nuevo Huaral")
+       ->orWhere("title","like","Gran Valle")
+       ->orWhere("title","like","Palmilla sur")->get()
+       ;
         return $Project;
     }
     /**

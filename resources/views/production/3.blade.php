@@ -38,7 +38,7 @@
                 <span style="color:#ffffff">¿QUIÉNES</span><br> SOMOS?
             </h4>
             <div class="subrayado mx-auto "></div>
-            <p class=" fs-3 mt-3" style="text-align: justify">Somos una inmobiliaria 100% peruana, especializada en el desarrollo de proyectos de terrenos para familias en todo el país. Nos dedicamos a ofrecer espacios exclusivos en ubicaciones estratégicas, brindando seguridad y oportunidades de inversión.</p>
+            <p class=" fs-3 mt-3" style="text-align: justify">Somos una inmobiliaria 100% peruana, especializada en el desarrollo y comercialización de terrenos destinados a vivienda y proyectos de inversión en distintas regiones del país. Nos enfocamos en ofrecer espacios estratégicamente ubicados, garantizando seguridad, accesibilidad y oportunidades de crecimiento para nuestros clientes.</p>
         </div>
 
         <div class=" d-sm-none text-center text-white position-absolute start-50 translate-middle" style="top:12%;width:290px">
@@ -50,7 +50,7 @@
             </h4>
 
             <div class="subrayado mx-auto "></div>
-            <p class=" fs-1 mt-4" style="text-align: center">Somos una inmobiliaria 100% peruana, especializada en el desarrollo de proyectos de terrenos para familias en todo el país. Nos dedicamos a ofrecer espacios exclusivos en ubicaciones estratégicas, brindando seguridad y oportunidades de inversión.</p>
+            <p class=" fs-1 mt-4" style="text-align: center">Somos una inmobiliaria 100% peruana, especializada en el desarrollo y comercialización de terrenos destinados a vivienda y proyectos de inversión en distintas regiones del país. Nos enfocamos en ofrecer espacios estratégicamente ubicados, garantizando seguridad, accesibilidad y oportunidades de crecimiento para nuestros clientes.</p>
         </div>
     </div>
 <div class="container py-md-5 py-1">
@@ -278,7 +278,7 @@
     </div>
 </div>
 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="500" class="py-4 " style="background-color:#f7f7f7">
-  
+
   <div class="container mb-5  text-center justify-content-center">
     <h4 class="d-sm-none text-center display-10" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
       <span style="color:#03424E">PREGUNTAS </span><br> FRECUENTES
@@ -288,14 +288,14 @@
   </h4>
   <div class="subrayado mx-auto " style="margin-top:-13px"></div>
     <div class="row  justify-content-center mt-md-5 mt-4 ">
-      
+
 
         <!-- Preguntas frecuentes (acordeón) -->
         <div class="col-md-7 container text-center align-content-center justify-content-center">
-          
+
           <div class="accordion " id="faqAccordion">
             <!-- Pregunta 1 -->
-           
+
             <div class="accordion-item border rounded-3 mb-0 ">
                 <h2 class="accordion-header pt-4">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color: white; box-shadow: none; border-radius: 10px; background-image: none !important; padding-right: 10px;">
@@ -304,8 +304,16 @@
                     </button>
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse pb-3" data-bs-parent="#faqAccordion">
-                    <div class="accordion-body text-center " style="margin-left:5px">
-                        Las opciones de pago incluyen transferencia bancaria, tarjeta de crédito y más.
+                    <div class="accordion-body text-start " style="margin-left:5px">
+                        <h6>
+                            Elige el método de pago que más te convenga:
+                        </h6>
+
+                        - Tarjeta de crédito o débito (procesada por POS) <br>
+                        - Billeteras digitales como Yape y Plin<br>
+                        - Pago en efectivo directamente en caja
+
+
                     </div>
                 </div>
             </div>
@@ -319,17 +327,17 @@
                   </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse pb-3" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body text-center" style="margin-left:5px">
+                  <div class="accordion-body text-start" style="margin-left:5px">
                       Instapay no cobra tarifas ocultas, pero pueden aplicar cargos según el método de pago.
                   </div>
               </div>
           </div>
-          
+
         </div>
         </div>
 
         <!-- Tarjeta izquierda -->
-      
+
     </div>
 </div>
 </div>

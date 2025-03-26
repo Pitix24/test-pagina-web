@@ -603,9 +603,9 @@
                 </div>
             </div>
         </div>
-<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg');
-               background-repeat: no-repeat;
-               background-size: auto 100%;
+<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg'); 
+               background-repeat: no-repeat; 
+               background-size: auto 100%; 
                background-position: center;">
                <h4 class="d-none d-sm-block text-center display-6 pt-3 pb-2" style="margin:15px;font-family:Montserrat-SemiBold;letter-spacing:15px">
                 <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
@@ -614,7 +614,7 @@
         <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
     </h4>
     <div class="subrayado mx-auto mb-5"></div>
-
+    
 
     <!-- Carrusel para pantallas pequeñas -->
     <div id="responsiveCarousel6" class="carousel slide d-md-none pointer-event" data-bs-interval="3000" data-bs-ride="carousel">
@@ -635,8 +635,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">Proyecto <br> San Andrés</h5>
@@ -646,7 +646,7 @@
                                 <div class="d-flex align-items-center justify-content-center position-absolute " style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                                   <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
                                 </div>
-
+        
                             </a>
                         </div>
                     </div>
@@ -666,8 +666,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -697,8 +697,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -743,8 +743,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
@@ -771,8 +771,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -799,8 +799,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -862,9 +862,9 @@
                                 <div class="carousel-item active">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 9px">+2,000 km²<br></b>
+                                            <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 9px">Áreas Recreativas para disfrutar en Familia<br></b>
                                             <span style="font-size:11px">
-                                              <b>Zonas verdes proporcionadas.</b>
+
                                             </span>
                                         </div>
                                     </div>
@@ -904,7 +904,7 @@
                                 <div class="carousel-item">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 300 PROYECTOS<br></b>
+                                            <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 11px">+ DE 30 PROYECTOS INMOBILIARIOS<br></b>
                                             <span style="font-size:11px">
                                               <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>
                                             </span>
@@ -928,9 +928,9 @@
                             <div class="col-lg-4 col-md-6 col-xl-4">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 12px">+2,000 km²<br></b>
+                                        <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 12px">Áreas Recreativas para disfrutar en Familia<br></b>
                                         <span style="font-size:11px">
-                                          <b>Zonas verdes proporcionadas.</b>
+
                                         </span>
                                     </div>
                                 </div>
@@ -977,7 +977,7 @@
                             <div class="col-lg-6 col-md-6 col-xl-6">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 13px">+ DE 300 PROYECTOS<br></b>
+                                        <img src="../resource/1738103970_67995ca291fc7+de300proyectos.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 11px">+ DE 30 PROYECTOS INMOBILIARIOS<br></b>
                                         <span style="font-size:11px">
                                           <b>Con la mejor inversión en la construcción de un futuro estable para tu familia.</b>
                                         </span>
