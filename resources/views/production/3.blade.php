@@ -57,8 +57,8 @@
     <div class="row ">
         <!-- Card 1 -->
         <div class="col-md-6 col-lg-4 col-12">
-            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card " style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center " data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
                     <img src="../resource/1738421604_679e356486d28vision.svg" class="" style="width:120px;" alt="Imagen 1">
     
                 </div>
@@ -76,8 +76,8 @@
         </div>
         <!-- Card 2 -->
         <div class="col-md-6 col-lg-4 col-12">
-            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card " style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center aos-init aos-animate" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
                     <img src="../resource/1738421620_679e3574ddae2mision.svg" class="" style="width:120px;margin-left:30px" alt="Imagen 1">
     
                 </div>
@@ -98,13 +98,13 @@
         </div>
         <!-- Card 3 -->
         <div class="col-md-12 col-lg-4 col-12">
-            <div class="card" style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
-                <div class="text-center" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="card " style="box-shadow:none" data-aos="slide-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="text-center " data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
                     <img src="../resource/1738421610_679e356a803dfvalores.svg" class="" style="width:120px;" alt="Imagen 1">
     
                 </div>
                 <div class="card-body text-center">
-                  <h5 class="card-title pb-4" style="font-family: Montserrat-SemiBold;letter-spacing:10px;color:#03424E;margin-top:-20px;">MISIÓN</h5>
+                  <h5 class="card-title pb-4" style="font-family: Montserrat-SemiBold;letter-spacing:10px;color:#03424E;margin-top:-20px;">VALORES</h5>
                   <p class="card-text fs-4" style="text-align:justify;color:#03677a ">Fomentamos un <b> ambiente de
                     trabajo colaborativo y de apoyo
                     mutuo,</b> valorando a nuestro equipo
