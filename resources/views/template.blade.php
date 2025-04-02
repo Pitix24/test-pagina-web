@@ -25,7 +25,7 @@
     <script src="{{ asset('js/user.js') }}"></script>
     <script src="{{ asset('js/category.js') }}"></script>
     <script src="{{ asset('js/section.js') }}"></script>
-    <script src="{{ asset('js/topic_1.js') }}"></script>
+    <script src="{{ asset('js/topic_2.js') }}"></script>
     <script src="{{ asset('js/project.js') }}"></script>
     <script src="{{ asset('js/image.js') }}"></script>
     <script src="{{ asset('js/role.js') }}"></script>

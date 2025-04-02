@@ -135,7 +135,7 @@ function topicPublic() {
             }
 
             let card = `
-            <div class="col-md-4">
+            <div class="col-md-6 col-lg-4">
               <div class="card" style="
                 cursor: pointer;
                 background: url('../resource/${item.image_1}') center/cover no-repeat;
@@ -165,7 +165,7 @@ function topicPublic() {
                   width: 90%;
                   border-top-right-radius: 15px;
                   transition: opacity 0.3s ease-in-out;
-                  padding-left:20px
+                  padding-right:40px
                   ">
                   <h6 class='fs-3' style="color: #f8b400; text-align: left; padding-top: 25px; margin-left: 10px;">
                     ${item.description}
