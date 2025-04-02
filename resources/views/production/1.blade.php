@@ -28,7 +28,7 @@
     <script src="{{ asset('js/customer.js') }}"></script>
     <script src="{{ asset('js/Book.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
-    <script src="{{ asset('js/topic.js') }}"></script>
+    <script src="{{ asset('js/topic_1.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -105,11 +105,11 @@
         <!-- INICIO SECCION -->
 <header class="header fixed-header" id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8);">
 
-   
+
     <nav class="navbar navbar-expand-lg py-0">
         <div class="container">
 
-            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 " href="/"> 
+            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 " href="/">
                 <img src="../resource/1738076896_logo%20aybar%20blanco.svg" alt="img-fluid" width="80px" style="margin-left:0%">
             </a>
 
@@ -137,7 +137,7 @@
                             <span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span>
                         </b></a>
                     </li>
-                    
+
                     <li class="nav-item" style="letter-sblogs: 1px;">
                         <a class="nav-link" aria-current="page" href="../blog" style="color: white">
                             <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="blog">BLOG</span></b>
@@ -155,11 +155,11 @@
                     </li>
                     <li class="nav-item ms-2">
                         <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-4 p-1 " href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
-                            <i class="ti ti-brand-whatsapp fs-6">&nbsp;</i><span class="text-white">01-9049838 </span> 
+                            <i class="ti ti-brand-whatsapp fs-6">&nbsp;</i><span class="text-white">01-9049838 </span>
                         </a>
                     </li>
-                    
- 
+
+
                 </ul>
             </div>
         </div>
@@ -169,8 +169,8 @@
 <div class="container-fluid py-1" style="background-color: #054E5C; margin-top:-10px">
     <div class="container">
         <div class="row">
-            
-            
+
+
             <div class="mt-3 align-content-center col-sm-12 col-md-5 col-lg-6 col-xl-4  text-white" style="font-family: Montserrat-Regular; font-size: 14px;">
             <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;"></span>Contáctanos</h3>
            <div class="row">
@@ -183,8 +183,8 @@
                 01-9049838
             </div>
            </div>
-        
-        
+
+
 
                 <div class="row">
                     <div class="col-12 col-sm-1 text-center">
@@ -192,20 +192,20 @@
                     </div>
                     <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
                         Circunvalación Del Golf Los Incas Av. 134
-    
-                    
+
+
                         <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                        Patio Panorama,&nbsp; Piso 19.  Santiago de Surco.</span>
                     <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                         </span>
                     </div>
-                    
 
 
 
-                   
+
+
                 </div>
-               
+
 
             </div>
 

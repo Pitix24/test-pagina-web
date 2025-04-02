@@ -48,8 +48,8 @@
     <script src="{{ asset('js/exam.js') }}"></script>
     <script src="{{ asset('js/qualification.js') }}"></script>
     <script src="{{ asset('js/inscription.js') }}"></script>
-    <script src="{{ asset('js/topic.js') }}"></script>
-    
+    <script src="{{ asset('js/topic_1.js') }}"></script>
+
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -110,7 +110,7 @@
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-WDNWXGWF');</script>
-    
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed layout-footer-fixed"style="font-family:Montserrat-Regular">
@@ -177,9 +177,9 @@
         <nav class="main-header navbar navbar-expand"
             style="background: linear-gradient(to right,#023039,#0d0d0e);color:white">
 
-        
 
-              
+
+
             <ul class="navbar-nav">
                 <li class="nav-item ">
                     <a class="nav-link text-white" data-widget="pushmenu" href="#" role="button"><i
@@ -539,7 +539,7 @@
                                     </li>
                                 </ul>
                             </li>
-    
+
                             @endrole
 
 
@@ -555,7 +555,7 @@
                                         <p>jsGrid</p>
                                     </a>
                                 </li> --}}
-                  
+
                         @role('Socio Comercial')
                             <li class="nav-item has-treeview menu-open">
 
@@ -626,7 +626,7 @@
                                             {{-- <i class="far fa-circle nav-icon"></i> --}}
                                             <img  src="{{ asset('Recurso 15.png') }}" alt="" srcset=""
                                                 width="25px">
-                                                
+
                                             <p style="margin-left:5px;">Cursos</p>
                                         </a>
                                     </li>
@@ -984,7 +984,7 @@
     <script>
         function datatable_load() {
             $("#example1").DataTable({
-               
+
                 "language": {
                     "lengthMenu": "Display _MENU_ records per page",
                     "zeroRecords": "No se encontró nada",
@@ -1015,7 +1015,7 @@
                         orientation: 'landscape',
                         pageSize: 'LEGAL',
 
-                        
+
                     },
                     {
                         extend: 'excelHtml5',
@@ -1137,7 +1137,7 @@
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
-  
+
     </div>
 
     <!-- Font Awesome para el ícono de WhatsApp -->
