@@ -862,7 +862,7 @@
                                 <div class="carousel-item active">
                                     <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                         <div class="card-body text-center">
-                                            <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 9px">Áreas Recreativas para disfrutar en Familia<br></b>
+                                            <img src="../../resource/1743542479_67ec58cf3f674Area%20recreativa.png" class="mb-1" width="100px" alt=""> <br><b style="font-size: 9px">Áreas Recreativas para disfrutar en Familia<br></b>
                                             <span style="font-size:11px">
 
                                             </span>
@@ -928,7 +928,7 @@
                             <div class="col-lg-4 col-md-6 col-xl-4">
                                 <div class="card" style="background-color:white;color:#005463;font-family:Montserrat-Regular ">
                                     <div class="card-body text-center">
-                                        <img src="../resource/1738103941_67995c8516df2+de%202000%20km2.svg" class="mb-1" width="100px" alt=""> <br><b style="font-size: 12px">Áreas Recreativas para disfrutar en Familia<br></b>
+                                        <img src="../../resource/1743542479_67ec58cf3f674Area%20recreativa.png" class="mb-1" width="100px" alt=""> <br><b style="font-size: 12px">Áreas Recreativas para disfrutar en Familia<br></b>
                                         <span style="font-size:11px">
 
                                         </span>

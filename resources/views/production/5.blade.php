@@ -2,7 +2,7 @@
 @section('content')
     <style>
         .bg-responsive {
-            background-image: url('../../resource/1740848426_67c33d2a32317portada-blog-escritorio.jpg');
+            background-image: url('../../resource/1743542509_67ec58ed9317cPortada-Blog.png');
             height: 82vh;
             background-size: cover;
             /* height: 85vh; */
@@ -54,6 +54,14 @@ background-repeat: no-repeat;
         </div>
     </div>
 <div class="container  my-5">
+
+        <h4 class="p-2  text-center fs-8" style="font-family:Montserrat-SemiBold;letter-spacing:15px">
+            <span style="color:#13434d;"><b>ARTÍCULO</b></span>
+        </h4>
+
+        <div class="subrayado mx-auto "></div>
+<br>
+
         <div class="row g-4 justify-content-center" id="mycontent">
 
         </div>
