@@ -164,7 +164,9 @@ function topicPublic() {
                   background-color: #03424E;
                   width: 90%;
                   border-top-right-radius: 15px;
-                  transition: opacity 0.3s ease-in-out;">
+                  transition: opacity 0.3s ease-in-out;
+                  padding-left:20px
+                  ">
                   <h6 class='fs-3' style="color: #f8b400; text-align: left; padding-top: 25px; margin-left: 10px;">
                     ${item.description}
                   </h6>
