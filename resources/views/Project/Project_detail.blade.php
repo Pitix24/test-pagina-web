@@ -26,8 +26,8 @@
             </div>
             <div class="d-none d-xl-block  col-xl-4 pt-5 pb-4"
                 style="background-color: #fcfcfc;position:relative;border-radius:20px">
-                <h2 class="fs-5 mt-4">SEPARA TU LOTE DESDE</h2>
-                <h2 class="fw-bold display-3 mb-4">PRE VENTA</h2>
+                <h2 class="fs-5 mt-4">SEPARA TU LOTE EN</h2>
+                <h2 class="fw-bold display-3 mb-4">PREVENTA</h2>
             </div>
 
         </div>
@@ -115,11 +115,11 @@
 
 
     <h4 class="mt-2 d-sm-none text-center display-6" style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:2px">
-        <span style="color:#03424E">OFRECEMOS </span> 
+        <span style="color:#03424E">OFRECEMOS </span>
     </h4>
     <h4 class="mt-5 d-none d-sm-block text-center display-6 mt-3"
         style="margin:20px;font-family:Montserrat-SemiBold;letter-spacing:15px">
-        <span style="color:#03424E">OFRECEMOS </span> 
+        <span style="color:#03424E">OFRECEMOS </span>
     </h4>
     <div class="subrayado mx-auto " style="margin-top:-13px"></div>
 
@@ -250,7 +250,7 @@
     </div>
 
 
-   
+
     <div class="my-0 " data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
         <div class="sliding-wrapper position-relative overflow-hidden">
             <div class="slide-background d-flex w-100">
@@ -275,7 +275,7 @@
         </div>
     </div>
 
-   
+
 
 
 
@@ -284,7 +284,7 @@
         style="position: relative;  overflow: hidden;">
 
         <!-- Video de fondo -->
-    
+
 
         <!-- Contenido sobre el video -->
         <div style=" color: white;">
@@ -299,26 +299,26 @@
                             $video_2 = 'video_' . ($i + 1);
                         @endphp
                         @if (!empty($Project->$video_1) || !empty($Project->$video_2))
-                            <button type="button" 
+                            <button type="button"
                                 data-bs-target="#bootstrapCarousel"
-                                data-bs-slide-to="{{ $totalSlides }}" 
-                                class="{{ $totalSlides === 0 ? 'active' : '' }}" 
-                                aria-current="{{ $totalSlides === 0 ? 'true' : '' }}" 
-                                aria-label="Diapositiva {{ $totalSlides + 1 }}" 
-                                style="background-color: transparent; 
-                                    border: solid 3px orange; 
-                                    width: 15px; 
-                                    height: 15px; 
-                                    border-top: none; 
+                                data-bs-slide-to="{{ $totalSlides }}"
+                                class="{{ $totalSlides === 0 ? 'active' : '' }}"
+                                aria-current="{{ $totalSlides === 0 ? 'true' : '' }}"
+                                aria-label="Diapositiva {{ $totalSlides + 1 }}"
+                                style="background-color: transparent;
+                                    border: solid 3px orange;
+                                    width: 15px;
+                                    height: 15px;
+                                    border-top: none;
                                     border-right: none;
-                                    transform: rotate(135deg); 
+                                    transform: rotate(135deg);
                                     margin-right: 20px;">
                             </button>
                             @php $totalSlides++; @endphp
                         @endif
                     @endfor
                 </div>
-                
+
 
                 <!-- Contenido del Carrusel -->
                 <div class="carousel-inner">
@@ -432,7 +432,7 @@
             <span style="color:#03424E">CONOCE </span><br> {{ Str::upper($Project->title) }}
         </h4>
         <div class="subrayado mx-auto " style="margin-top:-13px"></div>
-       
+
         <div class="mt-4 row g-4 text-center align-content-center justify-content-center">
             <!-- Card 1 -->
             @for ($i = 1; $i <= 10; $i++)

@@ -71,18 +71,14 @@
 
                 <div class="text-justify my-5">
                     <h4 class="p-2  fs-7 text-center " style="font-family:Montserrat-SemiBold;letter-spacing:15px;">
-                        <span style="color:#03424E">CONTÁCTANOS <br>
-                            A UN PASO DE <br>
-                            OBTENER TU
-                        </span><br> LOTE IDEAL
+                        <span style="color:#03424E">ESTAMOS AQUÍ 
+                        </span><br> PARA AYUDARTE
                         <br>
                     </h4>
                     <div class=" subrayado mx-auto " style="width:50px"></div>
                     <br>
-                    <div class="container col-9" style="text-align: justify">
-                        <span class="fs-4" style="text-align: justify">Selecciona la opción por la que quieres comunicarte
-                            connosotros y muy pronto nos pondremos en
-                            contacto contigo.</span>
+                    <div class="container col-9" style="text-align: center;">
+                        <span class="fs-4" style="text-align: justify">Selecciona la opción por la que quieres comunicarte con nosotros, nos pondremos en contacto a la brevedad posible.</span>
                     </div>
 
                 </div>
