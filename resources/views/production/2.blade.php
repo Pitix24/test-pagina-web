@@ -55,7 +55,7 @@
 
                         <div class="row h-100 ">
                             <!-- Columna izquierda con imagen -->
-                            <div class="col-lg-6 col-xl-4 col-md-12 justify-content-center text-center align-content-center" data-aos="slide-right" data-aos-duration="700" data-aos-delay="500">
+                            <div class="col-lg-6 col-xl-4 col-md-12 justify-content-center text-center align-content-center aos-init aos-animate" data-aos="slide-right" data-aos-duration="700" data-aos-delay="500">
 
 
                                 <div class="d-lg-none">
@@ -136,7 +136,7 @@
                             </div>
 
                             <!-- Columna derecha con formulario -->
-                            <div class="col col-md-12 col-lg-4 col-xl-3 col-sm-12" data-aos="flip-left" data-aos-duration="700" data-aos-delay="400">
+                            <div class="col col-md-12 col-lg-4 col-xl-3 col-sm-12 aos-init aos-animate" data-aos="flip-left" data-aos-duration="700" data-aos-delay="400">
 
                                 <div class="p-7 mb-2 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
                                     <p class="text-center text-light mb-4"><b> <span style="font-size: 16px;color:#055261">QUIERO
@@ -309,7 +309,7 @@
                                         ENTREGADOS </h4>
 
 
-                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"> TIERRA
+                                    <h4 class="text-white font-weight-bold fs-5" style="letter-spacing: 10px;"> TERRA
                                         GALICIA <br> Y LUGO</h4>
 
 
