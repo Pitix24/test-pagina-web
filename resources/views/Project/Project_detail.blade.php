@@ -3,10 +3,17 @@
     <div class="">
         <div class="container-fluid p-0" style="background-color: #011f25;">
             <center>
+                {{-- <lite-youtube
+                videoid="{{ $Project->video_1 }}"
+                poster="../../resource/1744841889_68002ca137b9aportada_youtube.png"
+                style="width: 45%; height: 350px;"
+                autopause
+                title="Play: Video">
+            </lite-youtube> --}}
 
-                <!-- Fondo con video o imagen -->
-                <lite-youtube videoid="{{ $Project->video_1 }}" posterquality style="width: 45%;height:350px"autopause
-                    class=" " title="Play: Video"></lite-youtube>
+            <lite-youtube videoid="{{ $Project->video_1 }}"style="width: 100%; height: 450px;">
+                <img slot="image" src="../../resource/1744841889_68002ca137b9aportada_youtube.png">
+              </lite-youtube>
             </center>
 
         </div>
@@ -32,17 +39,8 @@
 
         </div>
 
-
-
-
-
-
-
     </div>
     <!-- Botón 1 -->
-
-
-
 
     <!-- Navegación inferior -->
 
@@ -108,8 +106,6 @@
     </div>
 
     <img src="../resource/{{ $Project->map_1 }}"width="100%" alt="" srcset="">
-
-
 
     <p></p>
 

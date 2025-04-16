@@ -117,24 +117,23 @@
         </div>
       </div>
 </div>
-<div class="my-0 " data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
-      <div class="sliding-wrapper position-relative overflow-hidden">
-        <div class="slide-background d-flex w-100">
+<div class="my-0" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
+    <div class="  position-relative overflow-auto" style="white-space: nowrap;">
 
-
-          <div class="slide" style="margin-right:1px">
-            <iframe width="1000" height="515" src="https://www.youtube.com/embed/4Uqn76cNr7o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-           </div>
-           <div class="slide">
-            <iframe width="1000" height="515" src="https://www.youtube.com/embed/LYImsD6hVx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-           </div>
-           <div class="slide">
-            <iframe width="1000" height="515" src="https://www.youtube.com/embed/eJ3sHYjSyaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
-           </div>
-      
+      <div class="d-flex w-100 slide-background" style="overflow-x: auto; scroll-behavior: smooth;">
+        <div class="slide" style="margin-right:1px; flex: 0 0 auto;">
+          <iframe width="1000" height="515" src="https://www.youtube.com/embed/4Uqn76cNr7o" allowfullscreen=""></iframe>
         </div>
+        <div class="slide" style="margin-right:1px; flex: 0 0 auto;">
+          <iframe width="1000" height="515" src="https://www.youtube.com/embed/LYImsD6hVx8" allowfullscreen=""></iframe>
+        </div>
+        <div class="slide" style="flex: 0 0 auto;">
+          <iframe width="1000" height="515" src="https://www.youtube.com/embed/eJ3sHYjSyaU" allowfullscreen=""></iframe>
+        </div>
+      </div>
+
     </div>
-    </div>
+  </div>
 <div class="d-none d-lg-block text-center mt-5 position-relative" style="width: 100vh; height: 90vh; margin: auto;">
       <!-- Círculo -->
       <div class="position-absolute top-1 start-0 w-100 h-100">
@@ -362,6 +361,7 @@
 
 
 
+
     <style>
         /* Ocultar flecha predeterminada de Bootstrap */
         .accordion-button::after {
@@ -376,27 +376,52 @@
 
     <p></p>
 
-    <script>
-        // Inicializamos AOS
 
 
+<style>
+    .slide-background {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  white-space: nowrap;
+}
+
+</style>
+
+
+    {{-- <script>
+        // Función que reinicia animaciones y devuelve el intervalo para poder pausarlo luego
         function restartAOSForEffect(effect, interval) {
-            setInterval(function() {
-                // Seleccionar elementos con el data-aos deseado y quitar la clase de animación
+            return setInterval(function () {
                 $("[data-aos='" + effect + "']").removeClass("aos-animate");
 
-                // Después de 1 segundo, volver a agregar la clase y refrescar AOS
-                setTimeout(function() {
+                setTimeout(function () {
                     $("[data-aos='" + effect + "']").addClass("aos-animate");
                     AOS.refreshHard();
                 }, 1000);
             }, interval);
         }
 
-        // Reinicia el efecto flip-left cada 3 segundos (3000ms)
-        restartAOSForEffect("flip-up", 3000);
+        // Guardamos referencias de los intervalos
+        let flipUpInterval = restartAOSForEffect("flip-up", 3000);
+        let flipRightInterval = restartAOSForEffect("flip-right", 3000);
 
-        // Reinicia el efecto flip-right cada 3 segundos (3000ms)
-        restartAOSForEffect("flip-right", 3000);
-    </script>
+        // Detectar mouse sobre el contenedor de los slides
+        document.addEventListener("DOMContentLoaded", function () {
+            const slideWrapper = document.querySelector(".sliding-wrapper");
+
+            slideWrapper.addEventListener("mouseenter", () => {
+                clearInterval(flipUpInterval);
+                clearInterval(flipRightInterval);
+            });
+
+            slideWrapper.addEventListener("mouseleave", () => {
+                // Reiniciar animaciones al salir el cursor
+                flipUpInterval = restartAOSForEffect("flip-up", 3000);
+                flipRightInterval = restartAOSForEffect("flip-right", 3000);
+            });
+        });
+    </script> --}}
+
+
 @endsection
