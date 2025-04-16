@@ -1,11 +1,11 @@
 @extends('production.1')
 @section('content')
     <div class="">
-        <div class="container-fluid p-0">
+        <div class="container-fluid p-0" style="background-color: #011f25;">
             <center>
 
                 <!-- Fondo con video o imagen -->
-                <lite-youtube videoid="{{ $Project->video_1 }}" posterquality style="width: 100%;height:400px"autopause
+                <lite-youtube videoid="{{ $Project->video_1 }}" posterquality style="width: 45%;height:350px"autopause
                     class=" " title="Play: Video"></lite-youtube>
             </center>
 
@@ -18,7 +18,7 @@
 
             <div class="col-sm-12 col-xl-3 pt-5 pb-4"style="background-color:#FFA726;position:relative;border-radius:20px">
                 <h3 class="fs-5 mt-4 ">SEPARA TU LOTE DESDE</h3>
-                <h2 class="f-bold display-3 mb-4">S/ 15,000</h2>
+                <h2 class="f-bold display-3 mb-4">S/ 1,500</h2>
             </div>
             <div class="d-none d-xl-block  col-xl-1 pt-5 pb-4"style="margin-top:-3%;position:relative;width:10px ">
                 <!-- Línea divisora -->

@@ -25,7 +25,7 @@ class PermissionsSeeder extends Seeder
         Permission::create(['name' => 'blogs']);
         Permission::create(['name' => 'proyectos']);
         Permission::create(['name' => 'imagenes']);
-      
+
         Permission::create(['name' => 'secciones']);
         Permission::create(['name' => 'editar_plantilla']);
         Permission::create(['name' => 'editar_inicio']);
@@ -74,7 +74,7 @@ class PermissionsSeeder extends Seeder
             'sex' => 'M',
             'email' => 'admin1@gmail.com',
         ]);
-        
+
 
     }
 

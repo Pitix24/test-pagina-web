@@ -388,13 +388,17 @@
                         &nbsp;&nbsp;
                     </p>
                     <!-- Carrusel para pantallas pequeñas y medianas -->
-                    <div id="responsiveCarousel" class="carousel slide d-lg-none pointer-event" data-bs-ride="carousel">
+                    <div id="responsiveCarousel" class="carousel slide d-lg-none pointer-event" data-bs-ride="carousel" data-bs-interval="5000">
                         <div class="carousel-inner">
                             <!-- Primera diapositiva -->
                             <div class="carousel-item active">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="rdxrSIrZISE" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="rdxrSIrZISE" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -403,7 +407,11 @@
                             <div class="carousel-item">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="uuw6UDjl0oo" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -411,7 +419,11 @@
                             <div class="carousel-item">
                                 <div class="row justify-content-center">
                                     <div class="col-12 col-md-4 mb-3">
-                                        <lite-youtube videoid="aguyG7M828M" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                                        <lite-youtube videoid="aguyG7M828M" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -430,21 +442,105 @@
                     </div>
 
                     <!-- Grilla para pantallas grandes -->
-                    <div class="row d-none d-lg-flex mt-4">
-                        <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="rdxrSIrZISE" autoload="" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                    <!-- Carrusel solo para pantallas grandes -->
+                    <div id="videoCarousel" class="carousel slide d-none d-lg-block mt-4 position-relative">
+                        <div class="carousel-inner">
 
+                            <!-- Primera página de videos -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="rdxrSIrZISE" autoload="" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="uuw6UDjl0oo" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="aguyG7M828M" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Segunda página de videos (duplicados) -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="7A0_0K7AoAQ" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/7A0_0K7AoAQ?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="0BaW0hi5_tI" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/0BaW0hi5_tI?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="AlMNtbwCusM" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/AlMNtbwCusM?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="RCQYh-kKMyE" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/RCQYh-kKMyE?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="UP3Cp61TqGM" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/UP3Cp61TqGM?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                    <div class="col-lg-4 mb-3">
+                                        <lite-youtube videoid="us4db_NzSdE" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
+<iframe credentialless frameborder="0" title="Video"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+  src="https://www.youtube.com/embed/us4db_NzSdE?autoplay=1&start=0&null"
+></iframe></noscript></lite-youtube>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="uuw6UDjl0oo" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
 
-                        </div>
-                        <div class="col-lg-4 mb-3">
-                            <lite-youtube videoid="aguyG7M828M" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"></lite-youtube>
+                        <!-- Flecha izquierda más alejada -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev" style="left: -60px;">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #F4A623; width: 20px; height: 20px;"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
 
-                        </div>
-
+                        <!-- Flecha derecha más alejada -->
+                        <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next" style="right: -60px;">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #F4A623; width: 20px; height: 20px;"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
+
+
+
                 </div>
 
 
@@ -603,9 +699,9 @@
                 </div>
             </div>
         </div>
-<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg');
-               background-repeat: no-repeat;
-               background-size: auto 100%;
+<div class="container-fluid py-4" data-aos="fade-down" data-aos-delay="300" data-aos-duration="1000" style="background-image: url('../resource/1734733260_fondo-.jpg'); 
+               background-repeat: no-repeat; 
+               background-size: auto 100%; 
                background-position: center;">
                <h4 class="d-none d-sm-block text-center display-6 pt-3 pb-2" style="margin:15px;font-family:Montserrat-SemiBold;letter-spacing:15px">
                 <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
@@ -614,7 +710,7 @@
         <span style="color:#ffffff">DESCUBRE</span><br> NUESTROS PROYECTOS
     </h4>
     <div class="subrayado mx-auto mb-5"></div>
-
+    
 
     <!-- Carrusel para pantallas pequeñas -->
     <div id="responsiveCarousel6" class="carousel slide d-md-none pointer-event" data-bs-interval="3000" data-bs-ride="carousel">
@@ -635,8 +731,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">Proyecto <br> San Andrés</h5>
@@ -646,7 +742,7 @@
                                 <div class="d-flex align-items-center justify-content-center position-absolute " style="background: #FFA726; border-radius: 20%; width: 50px; height: 50px; bottom: 5%; right: 9%; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
                                   <img src="../resource/1738274441_679bf6892121bflecha-blanca.svg" alt="" srcset="" width="50%">
                                 </div>
-
+        
                             </a>
                         </div>
                     </div>
@@ -666,8 +762,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -697,8 +793,8 @@
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
                             <p>&nbsp;</p>
-
-
+                        
+                           
                             {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                             <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                                 <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-top:-13px">PROYECTO
@@ -743,8 +839,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">Proyecto <br> San Andrés</h5>
@@ -771,8 +867,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -799,8 +895,8 @@
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
                     <p>&nbsp;</p>
-
-
+                
+                   
                     {{-- <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Proyecto" style="width: 100%; height: 220px; object-fit: cover;"> --}}
                     <div class="card-body bg-white" style="height:120px;width:85%;border-top-right-radius: 10px;border-bottom-right-radius: 10px;">
                         <h5 class=" fs-6  text-uppercase" style="color:#005563;margin-left:10px;margin-top:-10px">PROYECTO
@@ -1219,5 +1315,5 @@
     }
 
     // Ejecutar cada 3 segundos
-    setInterval(restartAOS, 70000);
+    //  setInterval(restartAOS, 70000);
 </script>

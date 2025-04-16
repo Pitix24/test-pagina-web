@@ -205,13 +205,13 @@
         <!-- Controles de navegación -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <div style="color:orange;font-size:50px">
-                &lt;
+                <
             </div>
 
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <div style="color:orange;font-size:50px">
-                &gt;
+                >
             </div>
         </button>
     </div>
