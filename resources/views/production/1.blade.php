@@ -155,7 +155,7 @@
                     </li>
                     <li class="nav-item ms-2">
                         <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-4 p-1 aos-init aos-animate" href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
-                           <img src="../../resource/1736360188_icono%201.svg" width="25px" style="margin-top:-3px"><span class="text-white"> 01-9049838 </span> 
+                           <img src="../../resource/1744048110_67f40fee33aa9Icono%20telefono.png" width="25px" style="margin-top:-3px"><span class="text-white"> 01-9049838 </span> 
                         </a>
                     </li>
                     

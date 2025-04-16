@@ -97,9 +97,7 @@
                 <div class="col-4" style="margin-top:-10px">
                     <img src="../../resource/1741119495_67c760075b467propietario%20aybar.svg" alt="" width="100%" height="100px" style="">
                 </div>
-                <div class="col-8">
-                    <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Propietario Aybar</span>
-                    <br>
+                <div class="col-8"><span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Central Telefónica</span><br>
                     <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
                         <b>Información »</b>
                     </a>
@@ -201,7 +199,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="text-center modal-body">
-                        <h3 class="modal-title fs-8" style="color:#003b47" id="exampleModalLabel">Central Telefónico</h3>
+                        <h3 class="modal-title fs-8" style="color:#003b47" id="exampleModalLabel">Central Telefónica</h3>
                         <p></p>
 
                         <a class="btn btn-hover-shadow text-center justify-content-center" href="tel:+5101-9049838" style="border-radius: 100px; background-color: rgb(19, 67, 77); width: 320px;">
