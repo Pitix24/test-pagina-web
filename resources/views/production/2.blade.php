@@ -41,7 +41,7 @@
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
 
 
-    <div class="carousel-inner" style="display: flex; align-items: center;">
+            <div class="carousel-inner" style="display: flex; align-items: center;">
 
                 <!-- Diapositiva 1 -->
                 <div class=" carousel-item text-center pb-5 active bg-responsive">
@@ -97,23 +97,26 @@
                                         <img src="../ayba/4.png" alt="" style="width: 50px;"> <br>
 
                                     </div>
-                                  <div class="d-sm-none">
-                                    <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
-                                        REALIDAD</span>
-                                    <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
-                                    </h4>
-                                  </div>
+                                    <div class="d-sm-none">
+                                        <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
+                                            REALIDAD</span>
+                                        <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
+                                            HOGAR
+                                        </h4>
+                                    </div>
 
                                     <div class="d-none d-sm-block">
 
                                         <span class=" text-white  fs-6" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
                                             REALIDAD</span>
-                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
+                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
+                                            HOGAR
                                         </h4>
                                         <div class="mt-2 mb-3 subrayado mx-auto"></div>
 
                                     </div>
-                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños hoy mismo, con
+                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños
+                                    hoy mismo, con
                                     facilidades de pago y <br class="d-none d-lg-block"> ubicaciones estratégicas!
 
 
@@ -121,8 +124,9 @@
 
                                     <p></p>
                                     <div class="d-none d-lg-block">
-                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS O CONSULTAS?</span>
-                                       <br>  Nuestros números de atención al cliente: <br>
+                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS
+                                            O CONSULTAS?</span>
+                                        <br> Nuestros números de atención al cliente: <br>
                                         <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
                                             <span class="fs-7">(51) 01-9049838</span>
                                         </a>
@@ -143,26 +147,26 @@
                                                 INFORMACIÓN DE UN LOTE</span></b></p>
 
 
-                                    <select class="form-control" name="project_id" id="project_id" style="color: white; background-color:rgb(230, 230, 230);
+                                    <select class="form-control" name="project_id_2" id="project_id" style="color: white; background-color:rgb(230, 230, 230);
                                     color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                         <option value="">Seleccione un proyecto</option>
                                     </select>
                                     <br>
 
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="text" class="form-control" name="names_2" placeholder="Nombres y Apellidos:" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                     </div>
                                     <div class=" mb-3">
-                                        <input type="text" id="phone" class="form-control" name="cellphone" placeholder="Número de Teléfono" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="text" id="phone" class="form-control" name="cellphone_2" placeholder="Número de Teléfono" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                     </div>
                                     <div class=" mb-3">
-                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="number" class="form-control" id="dni" name="dni_2" placeholder="Número de DNI" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
 
                                     </div>
 
                                     <div class="form-floating mb-3">
 
-                                        <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
+                                        <input type="text" class="form-control" id="message" name="message_2" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                         <div class="form-text text-white">
                                             <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
                                         </div>
@@ -171,7 +175,7 @@
 
 
                                     <div class="form-check text-start">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1_2" value="true">
                                         <label class="form-check-label fs-3" for="txtTratamientoDatos">
                                             <span class="fs-2">He leído y acepto la </span>
                                             <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
@@ -181,7 +185,7 @@
                                     </div>
 
                                     <div class="form-check text-start ">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2_2" value="true">
                                         <label class="form-check-label fs-3" for="txtTratamientoDatos2">
                                             <span class="fs-2">He leído y acepto el </span>
                                             <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
@@ -341,7 +345,7 @@
                     </span>
                 </div>
             </div>
-          <!-- Indicadores del Carrusel -->
+            <!-- Indicadores del Carrusel -->
             <div class="carousel-indicators mb-3">
                 <button type="button" style=" background-color: transparent;
         border: solid 3px orange;

@@ -8,6 +8,7 @@ use App\Models\Project;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCustomerRequest;
 use App\Http\Requests\UpdateCustomerRequest;
+use Illuminate\Support\Facades\Log;
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use App\Notifications\CustomerNotification;
@@ -49,36 +50,60 @@ class CustomerController extends Controller
         $Customer->save();
         return $this->create();
     }
-    public function storePublic(StoreCustomerRequest $request)
-    {
-    //      funciona localmente con hos
-        // $user = User::find(3); // Encuentra al usuario que recibirá la notificación
-        // $user->notify(new CustomerNotification());
-        //  $name_ =$request->names;
-        // // //funciona en goddady
-        // Mail::raw('Cliente nuevo: ' . $name_, function ($message) use ($name_) {
-        //     $message->to('soporte@aybar.credilotesperu.com') // Cambia por un correo real
-        //             ->subject('Un cliente se ha registrado')
-
-        //             ->from('soporte@aybar.credilotesperu.com', 'Credilotes Perú');
-        // });
-
-        $data = $request->validated();
-
-
-       $Customer = new Customer;
-        //data es un array
-        $Customer->names = $data["names"];
-        $Customer->dni = $data["dni"];
-        $Customer->project_id = $data["project_id"];
-        $Customer->cellphone = $data["code_country"]. $data["cellphone"];
-        $Customer->message = $data["message"] ?? '';
-
-        $Customer->save();
 
 
 
+public function storePublic(Request $request)
+{
+    $request->validate([
+        'code_country' => 'required|string|max:5',
+        'message' => 'nullable|string',
+    ]);
+
+    if (
+        !$request->filled('names') && !$request->filled('names_2') ||
+        !$request->filled('dni') && !$request->filled('dni_2') ||
+        !$request->filled('project_id') && !$request->filled('project_id_2') ||
+        !$request->filled('cellphone') && !$request->filled('cellphone_2')
+    ) {
+        return response()->json([
+            'error' => 'Faltan datos obligatorios: nombres, DNI, proyecto o celular'
+        ], 422);
     }
+
+    $Customer = new Customer;
+
+    $Customer->names = $request->input('names') ?? $request->input('names_2');
+    $Customer->dni = $request->input('dni') ?? $request->input('dni_2');
+    $Customer->project_id = $request->input('project_id') ?? $request->input('project_id_2');
+    $cell = $request->input('cellphone') ?? $request->input('cellphone_2');
+    $Customer->cellphone = $request->input('code_country') . $cell;
+    $Customer->message = $request->input('message') ?? $request->input('message_2');
+
+    // 🧾 Log de todos los datos recibidos
+    Log::info('📝 Registro de nuevo cliente desde formulario público', [
+        'names' => $Customer->names,
+        'dni' => $Customer->dni,
+        'project_id' => $Customer->project_id,
+        'cellphone' => $Customer->cellphone,
+        'message' => $Customer->message,
+    ]);
+
+    // 📨 Enviar correo con la vista HTML
+    Mail::send('email.customer-notification', [
+        'Customer' => $Customer
+    ], function ($message) use ($Customer) {
+        $message->to('webpageadmin@aybarcorp.com')
+            ->cc('consultasweb@aybarsac.com')
+            ->subject('🟢 Nuevo Cliente:  ME GUSTARÍA CONVERSAR CON UN ASESOR')
+            ->from('webpageadmin@aybarcorp.com', env('APP_NAME'));
+    });
+
+    $Customer->save();
+
+    return response()->json(['message' => '✅ Cliente registrado y notificado por correo']);
+}
+
     public function ProjectList()
     {
        $Project = Project::orderBy('id','DESC')
