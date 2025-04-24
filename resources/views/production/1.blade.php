@@ -26,7 +26,7 @@
     {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
     <script src="{{ asset('js/customer.js') }}"></script>
-    <script src="{{ asset('js/Book.js') }}"></script>
+    <script src="{{ asset('js/Book_2.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <script src="{{ asset('js/topic_2.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">

@@ -23,16 +23,16 @@
 
                 <div class="container mt-4">
                     <!-- Encabezado -->
-                
-            
+
+
                     <!-- Descripción -->
                     <p class="text-start fw-semibold text-white mt-3">
                         Este formulario es exclusivamente para expresar su disconformidad con algún producto o servicio brindado por <b>
                             AYBAR CORP. SOCIEDAD ANONIMA CERRADA - AYBAR CORP. S.A.C
-                        </b> 
+                        </b>
                         Todos los campos son obligatorios.
                     </p>
-            
+
                     <!-- Información de la Empresa -->
                     {{-- <div class="card shadow-sm border-0 text-start" style="background-color:#ffffff">
                         <div class="card-body text-black">
@@ -48,14 +48,14 @@
                             <h4 class="fw-bold "style="color:#054E5C">Empresa</h4>
                             <p><b>Razón Social:</b> AYBAR CORP. SOCIEDAD ANONIMA CERRADA - AYBAR CORP. S.A.C</p>
                             <p><b>RUC:</b> 20603865813</p>
-                            <p><b>Dirección Legal:</b> 
+                            <p><b>Dirección Legal:</b>
 Av. Circunvalación Del golf Los Incas 134 Patio Panorama, Santiago de Surco.
                             </p>
                             <p><b>Fecha actual:</b> <span id="current-date"></span></p>
                         </div>
                     </div>
                 </div>
-            
+
                 <script>
                     // Mostrar la fecha actual en formato YYYY-MM-DD
                     document.getElementById("current-date").textContent = new Date().toISOString().split('T')[0];
@@ -154,10 +154,10 @@ Av. Circunvalación Del golf Los Incas 134 Patio Panorama, Santiago de Surco.
                 <div class="col-12">
                     <textarea id="product_or_service_description" name="product_or_service_description" class="form-control"
                         placeholder="Descripción del producto o servicio"
-                        style="background: rgba(255, 255, 255, 0.1); 
-                       color: white; 
-                       border: 1px solid #666464; 
-                       padding: 12px; 
+                        style="background: rgba(255, 255, 255, 0.1);
+                       color: white;
+                       border: 1px solid #666464;
+                       padding: 12px;
                        font-size: 20px;
                        width: 100%;
                        min-height: 100px;
@@ -217,11 +217,12 @@ Av. Circunvalación Del golf Los Incas 134 Patio Panorama, Santiago de Surco.
                 </div>
 
                 <div class="col-12">
-                    <button data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100" type="button"
-                        onclick="BookStorePublic();return false" class="btn w-100"
-                        style="background: #FFA726; color: white; font-weight: bold; padding: 12px;">
-                        <h1 class="text-white">Enviar</h1>
-                    </button>
+                    <button id="submitBookBtn" data-aos="flip-right" data-aos-duration="1000" data-aos-delay="100" type="button"
+                    onclick="BookStorePublic(); return false" class="btn w-100"
+                    style="background: #FFA726; color: white; font-weight: bold; padding: 12px;">
+                <h1 class="text-white m-0">Enviar</h1>
+            </button>
+
                 </div>
             </div>
 
