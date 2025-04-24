@@ -6,7 +6,7 @@
   <div class="container BG-WA ">
       <div class="row justify-content-center pt-1 align-items-center text-center" style="height: 80px;">
           <h3 style="word-spacing: 8px;letter-spacing:2px">
-            {{ strtoupper($topic->description)}}</h3>
+           </h3>
       </div>
   </div>
 </section>
