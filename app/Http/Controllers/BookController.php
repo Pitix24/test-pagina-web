@@ -6,6 +6,7 @@ use App\Models\Book;
 use App\Http\Requests\StoreBookRequest;
 use App\Http\Requests\UpdateBookRequest;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Bus;
 class BookController extends Controller
 {
@@ -38,56 +39,64 @@ class BookController extends Controller
     {
 
 
-        try {
-            $Book_one = Book::where('email', '=', $request->email)->where('state', '<>', 'Finalizado')->first();
-            if ($Book_one) {
-                return $Book_one;
-            } else {
-                $Book = new Book();
-                $Book->firstname = $request->firstname;
-                $Book->lastname = $request->lastname;
-                $Book->names = $request->names;
-                $Book->address = $request->address;
-                $Book->document_type = $request->document_type;
-                $Book->document_number = $request->document_number;
-                $Book->phone = $request->code_country . $request->phone;
-                $Book->email = $request->email;
-                $Book->claim_type = $request->claim_type;
-                $Book->claimed_amount = $request->claimed_amount;
-                $Book->currency_type = $request->currency_type;
-                $Book->office_address = $request->office_address;
-                $Book->product_or_service_description = $request->product_or_service_description;
-                $Book->complaint_type = $request->complaint_type;
-                $Book->complaint_details = $request->complaint_details;
-                $Book->complaint_request = $request->complaint_request;
-                $Book->state = 'Pendiente';
-                $Book->save();
-                $Book->ticket = 'TCK-' . str_pad($Book->id, 6, '0', STR_PAD_LEFT); // Genera un número de ticket con ceros
-                $Book->save();
 
-                $name = $request->names;
-                $email = $request->email;
+try {
+    Log::info('📩 Iniciando proceso de reclamo para el correo: ' . $request->email);
 
-                Mail::send('email.book-confirmation', [
-                    'book' => $Book
-                ], function ($message) use ($Book) {
-                    $message->to($Book->email)
-                        ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
-                        ->cc('reclamacionesweb@aybarsac.com')
-                        ->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
-                });
+    $Book_one = Book::where('email', '=', $request->email)->where('state', '<>', 'Finalizado')->first();
 
-                // Ejecutar en segundo plano la notificación a informes
-                Bus::dispatch(fn() => $this->notify($Book->id));
-                return $Book;
-            }
-        } catch (\Exception $e) {
-            return 'Error al enviar el correo: ' . $e->getMessage();
-        }
+    // if ($Book_one) {
+    //     Log::info('🟡 Ya existe un reclamo en curso para este correo: ' . $request->email);
+    //     return $Book_one;
+    // } else {
+        $Book = new Book();
+        $Book->firstname = $request->firstname;
+        $Book->lastname = $request->lastname;
+        $Book->names = $request->names;
+        $Book->address = $request->address;
+        $Book->document_type = $request->document_type;
+        $Book->document_number = $request->document_number;
+        $Book->phone = $request->code_country . $request->phone;
+        $Book->email = $request->email;
+        $Book->claim_type = $request->claim_type;
+        $Book->claimed_amount = $request->claimed_amount;
+        $Book->currency_type = $request->currency_type;
+        $Book->office_address = $request->office_address;
+        $Book->product_or_service_description = $request->product_or_service_description;
+        $Book->complaint_type = $request->complaint_type;
+        $Book->complaint_details = $request->complaint_details;
+        $Book->complaint_request = $request->complaint_request;
+        $Book->state = 'Pendiente';
+        $Book->save();
+
+        $Book->ticket = 'TCK-' . str_pad($Book->id, 6, '0', STR_PAD_LEFT);
+        $Book->save();
+
+        Log::info('✅ Reclamo guardado. Intentando enviar correo a: ' . $Book->email);
+
+        // Mail::send('email.book-confirmation', [
+        //     'book' => $Book
+        // ], function ($message) use ($Book) {
+        //     $message->to($Book->email)
+        //             ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
+        //             ->cc('reclamacionesweb@aybarsac.com')
+        //             ->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
+        // });
+         Bus::dispatch(fn() => $this->notify($Book->id));
+        Log::info('📬 Correo enviado correctamente a: ' . $Book->email);
+
+        return $Book;
+  //  }
+} catch (\Exception $e) {
+    Log::error('🔥 Error en el proceso de reclamo: ' . $e->getMessage());
+    return 'Error al enviar el correo: ' . $e->getMessage();
+}
 
         // Guardar en la base de datos
     }
 
+    // // Ejecutar en segundo plano la notificación a informes
+    // Bus::dispatch(fn() => $this->notify($Book->id));
     /**
      * Display the specified resource.
      */
@@ -98,44 +107,14 @@ class BookController extends Controller
             $Book = Book::findOrFail($id);
 
             // Enviar la notificación a informes
-            Mail::send([], [], function ($message) use ($Book) {
-                $message
-                    ->to('reclamacionesweb@aybarsac.com')
-                    ->subject('Reclamo - Aybar Corp Ticket : ' . $Book->ticket)
-                    ->cc($Book->email)
-                    ->from('webpageadmin@aybarcorp.com', 'Aybar Corp')
-                    ->setBody(
-                        "
-        📢 Nueva queja registrada en el libro de reclamaciones de la página Aybar Corp:
-
-        👤 *Cliente:* $Book->names $Book->lastname
-        📍 *Dirección:* $Book->address
-        📞 *Teléfono:* $Book->phone
-        📧 *Correo:* $Book->email
-        🆔 *Tipo de Documento:* $Book->document_type
-        🔢 *Número de Documento:* $Book->document_number
-
-        📌 *Tipo de Reclamo:* $Book->claim_type
-        💰 *Monto Reclamado:* $Book->claimed_amount $Book->currency_type
-        🏢 *Dirección de la Oficina:* $Book->office_address
-
-        🛍️ *Descripción del Producto o Servicio:*
-        $Book->product_or_service_description
-        ⚠️ *Tipo de Queja:* $Book->complaint_type
-        📝 *Detalles de la Queja:*
-        $Book->complaint_details
-
-        📢 *Pedido del Cliente:*
-        $Book->complaint_request
-
-        🎟️ *Número de Ticket:* $Book->ticket
-        🎟️ *Estado:* $Book->state
-
-        📌 Se recomienda revisar el caso a la brevedad posible.
-                    ",
-                        'text/plain',
-                    );
-            });
+                 Mail::send('email.book-confirmation', [
+            'book' => $Book
+        ], function ($message) use ($Book) {
+            $message->to($Book->email)
+                    ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
+                    ->cc('reclamacionesweb@aybarsac.com')
+                    ->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
+        });
 
             return response()->json(['message' => 'Notificación enviada a informes'], 200);
         } catch (\Exception $e) {
