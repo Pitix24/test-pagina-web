@@ -41,7 +41,7 @@
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
 
 
-            <div class="carousel-inner" style="display: flex; align-items: center;">
+    <div class="carousel-inner" style="display: flex; align-items: center;">
 
                 <!-- Diapositiva 1 -->
                 <div class=" carousel-item text-center pb-5 active bg-responsive">
@@ -97,26 +97,23 @@
                                         <img src="../ayba/4.png" alt="" style="width: 50px;"> <br>
 
                                     </div>
-                                    <div class="d-sm-none">
-                                        <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
-                                            REALIDAD</span>
-                                        <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
-                                            HOGAR
-                                        </h4>
-                                    </div>
+                                  <div class="d-sm-none">
+                                    <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
+                                        REALIDAD</span>
+                                    <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
+                                    </h4>
+                                  </div>
 
                                     <div class="d-none d-sm-block">
 
                                         <span class=" text-white  fs-6" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
                                             REALIDAD</span>
-                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
-                                            HOGAR
+                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
                                         </h4>
                                         <div class="mt-2 mb-3 subrayado mx-auto"></div>
 
                                     </div>
-                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños
-                                    hoy mismo, con
+                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños hoy mismo, con
                                     facilidades de pago y <br class="d-none d-lg-block"> ubicaciones estratégicas!
 
 
@@ -124,9 +121,8 @@
 
                                     <p></p>
                                     <div class="d-none d-lg-block">
-                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS
-                                            O CONSULTAS?</span>
-                                        <br> Nuestros números de atención al cliente: <br>
+                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS O CONSULTAS?</span>
+                                       <br>  Nuestros números de atención al cliente: <br>
                                         <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
                                             <span class="fs-7">(51) 01-9049838</span>
                                         </a>
@@ -147,26 +143,26 @@
                                                 INFORMACIÓN DE UN LOTE</span></b></p>
 
 
-                                    <select class="form-control" name="project_id_2" id="project_id" style="color: white; background-color:rgb(230, 230, 230);
+                                    <select class="form-control" name="project_id" id="project_id" style="color: white; background-color:rgb(230, 230, 230);
                                     color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                         <option value="">Seleccione un proyecto</option>
                                     </select>
                                     <br>
 
                                     <div class="mb-3">
-                                        <input type="text" class="form-control" name="names_2" placeholder="Nombres y Apellidos:" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                     </div>
                                     <div class=" mb-3">
-                                        <input type="text" id="phone" class="form-control" name="cellphone_2" placeholder="Número de Teléfono" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="text" id="phone" class="form-control" name="cellphone" placeholder="Número de Teléfono" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
                                     </div>
                                     <div class=" mb-3">
-                                        <input type="number" class="form-control" id="dni" name="dni_2" placeholder="Número de DNI" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
+                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
 
                                     </div>
 
                                     <div class="form-floating mb-3">
 
-                                        <input type="text" class="form-control" id="message" name="message_2" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
+                                        <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
                                         <div class="form-text text-white">
                                             <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
                                         </div>
@@ -175,7 +171,7 @@
 
 
                                     <div class="form-check text-start">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1_2" value="true">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
                                         <label class="form-check-label fs-3" for="txtTratamientoDatos">
                                             <span class="fs-2">He leído y acepto la </span>
                                             <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
@@ -185,7 +181,7 @@
                                     </div>
 
                                     <div class="form-check text-start ">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2_2" value="true">
+                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
                                         <label class="form-check-label fs-3" for="txtTratamientoDatos2">
                                             <span class="fs-2">He leído y acepto el </span>
                                             <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
@@ -345,7 +341,7 @@
                     </span>
                 </div>
             </div>
-            <!-- Indicadores del Carrusel -->
+          <!-- Indicadores del Carrusel -->
             <div class="carousel-indicators mb-3">
                 <button type="button" style=" background-color: transparent;
         border: solid 3px orange;
@@ -402,7 +398,11 @@
 <iframe credentialless frameborder="0" title="Video"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+></iframe></noscript><noscript>
+                                                <iframe credentialless frameborder="0" title="Video"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen
+                                                    src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&start=0&null"></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -415,7 +415,11 @@
 <iframe credentialless frameborder="0" title="Video"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+></iframe></noscript><noscript>
+                                                <iframe credentialless frameborder="0" title="Video"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen
+                                                    src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&start=0&null"></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -427,7 +431,11 @@
 <iframe credentialless frameborder="0" title="Video"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+></iframe></noscript><noscript>
+                                                <iframe credentialless frameborder="0" title="Video"
+                                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen
+                                                    src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&start=0&null"></iframe></noscript></lite-youtube>
                                     </div>
 
                                 </div>
@@ -454,25 +462,55 @@
                             <div class="carousel-item active">
                                 <div class="row">
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="rdxrSIrZISE" autoload="" posterquality="maxresdefault" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/rdxrSIrZISE?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                       <!-- Imagen o div clickable -->
+
+                                       <div onclick="openVideo('rdxrSIrZISE')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+
+                                        <!-- Miniatura del video -->
+                                        <img src="https://img.youtube.com/vi/rdxrSIrZISE/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+
+                                        <!-- Botón rojo de Play (simulado con CSS) -->
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;">
+                                        </div>
+
+                                      </div>
+
+
+
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="uuw6UDjl0oo" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/uuw6UDjl0oo?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                        <div onclick="openVideo('uuw6UDjl0oo')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+
+                                            <!-- Miniatura del video -->
+                                            <img src="https://img.youtube.com/vi/uuw6UDjl0oo/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+
+                                            <!-- Botón rojo de Play -->
+                                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                        width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                        background-size: contain;">
+                                            </div>
+
+                                          </div>
+
+
+
                                     </div>
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="aguyG7M828M" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/aguyG7M828M?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                        <div onclick="openVideo('aguyG7M828M')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+
+                                            <!-- Miniatura del video -->
+                                            <img src="https://img.youtube.com/vi/aguyG7M828M/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+
+                                            <!-- Botón rojo de Play centrado -->
+                                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                        width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                        background-size: contain;">
+                                            </div>
+
+                                          </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -481,52 +519,64 @@
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="7A0_0K7AoAQ" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/7A0_0K7AoAQ?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('7A0_0K7AoAQ')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/7A0_0K7AoAQ/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
+
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="0BaW0hi5_tI" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/0BaW0hi5_tI?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('0BaW0hi5_tI')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/0BaW0hi5_tI/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
+
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="AlMNtbwCusM" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/AlMNtbwCusM?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('AlMNtbwCusM')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/AlMNtbwCusM/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
-                                </div>
+                                  </div>
+
                             </div>
                             <div class="carousel-item">
                                 <div class="row">
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="RCQYh-kKMyE" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/RCQYh-kKMyE?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('RCQYh-kKMyE')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/RCQYh-kKMyE/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
+
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="UP3Cp61TqGM" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/UP3Cp61TqGM?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('UP3Cp61TqGM')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/UP3Cp61TqGM/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
+
                                     <div class="col-lg-4 mb-3">
-                                        <lite-youtube videoid="us4db_NzSdE" autoload="" style="width: 100%;border:solid 1px #F4A623" class="rounded-1 border-2" title="Play: Video"><noscript>
-<iframe credentialless frameborder="0" title="Video"
-  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube.com/embed/us4db_NzSdE?autoplay=1&start=0&null"
-></iframe></noscript></lite-youtube>
+                                      <div onclick="openVideo('us4db_NzSdE')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                                        <img src="https://img.youtube.com/vi/us4db_NzSdE/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                                    background-size: contain;"></div>
+                                      </div>
                                     </div>
-                                </div>
+                                  </div>
+
                             </div>
                         </div>
 
@@ -1290,18 +1340,47 @@
 
 
 
-    {{-- <div class="modal fade" id="autoModal" tabindex="-1" aria-labelledby="autoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md">
-            <div class="modal-content ">
-                <img src="../../resource/1738616165_67a12d6545f1bWhatsApp%20Image%202025-02-03%20at%202.54.21%20PM.jpeg"width="100%"
-                    style="height:70vh">
-                <div class="modal-footer">
-                    <button type="button" class="btn  text-white" style="background-color:#005463"
-                        data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+ <!-- Modal -->
+ <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark">
+        <div class="modal-body p-0" id="videoModalBody">
+          <!-- Aquí se insertará el iframe dinámicamente -->
         </div>
-    </div> --}}
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const modalElement = document.getElementById('videoModal');
+    const modalBody = document.getElementById('videoModalBody');
+
+    function openVideo(videoId) {
+        // Limpia cualquier iframe previo antes de insertar uno nuevo
+        modalBody.innerHTML = `
+            <div class="ratio ratio-16x9">
+                <iframe
+                    src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                    class="w-100 h-100"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        `;
+        const modal = new bootstrap.Modal(modalElement);
+        modal.show();
+    }
+
+    // Cuando se cierra el modal, eliminamos el iframe (así sí se apaga el audio)
+    modalElement.addEventListener('hidden.bs.modal', () => {
+        modalBody.innerHTML = ''; // 🔇 Esto apaga todo
+    });
+</script>
+
+
+
 @endsection
 
 <script>
