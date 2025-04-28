@@ -883,4 +883,32 @@
             /* Naranja más oscuro en hover */
         }
     </style>
+    <script>
+        // Esta función revisa si ambos checkboxes están marcados
+        function checkCheckboxes() {
+            const checkbox1 = document.getElementById('txtTratamientoDatos');
+            const checkbox2 = document.getElementById('txtTratamientoDatos2');
+            const submitButton = document.querySelector('button[onclick="CustomerStorePublic();"]');
+
+            // Si ambos están marcados, habilitamos el botón
+            if (checkbox1.checked && checkbox2.checked) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        // Asociamos la función al evento 'change' de cada checkbox
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox1 = document.getElementById('txtTratamientoDatos');
+            const checkbox2 = document.getElementById('txtTratamientoDatos2');
+
+            checkbox1.addEventListener('change', checkCheckboxes);
+            checkbox2.addEventListener('change', checkCheckboxes);
+
+            // Al cargar la página, el botón debe empezar deshabilitado
+            checkCheckboxes();
+        });
+        </script>
+
 @endsection

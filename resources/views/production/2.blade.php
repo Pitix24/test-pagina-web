@@ -6,6 +6,7 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
+        margin-top: -100px;
 
         /* height: 85vh; */
     }
@@ -40,11 +41,10 @@
         <!-- INICIO SECCION -->
 <div id="carouselExample" class="carousel slide text-white pointer-event" data-bs-ride="carousel" data-bs-interval="30000">
 
-
-    <div class="carousel-inner" style="display: flex; align-items: center;">
+            <div class="carousel-inner" style="display: flex; align-items: center;">
 
                 <!-- Diapositiva 1 -->
-                <div class=" carousel-item text-center pb-5 active bg-responsive">
+                <div class=" carousel-item text-center pb-5 active bg-responsive" style="height: 90vh">
                     <div class="container-fluid " style=" background-color: transparent;">
                         <p>&nbsp; </p>
                         <p>&nbsp; </p>
@@ -94,39 +94,36 @@
                                     <!-- Contenido encima -->
                                     <div class="d-none d-lg-block mt-5">
 
-                                        <img src="../ayba/4.png" alt="" style="width: 50px;"> <br>
+
 
                                     </div>
-                                  <div class="d-sm-none">
-                                    <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
-                                        REALIDAD</span>
-                                    <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
-                                    </h4>
-                                  </div>
+                                    <div class="d-sm-none">
+                                        <span class=" text-white  fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
+                                            REALIDAD</span>
+                                        <h4 class=" text-warning fs-3" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
+                                            HOGAR
+                                        </h4>
+                                    </div>
 
                                     <div class="d-none d-sm-block">
 
                                         <span class=" text-white  fs-6" style="letter-spacing: 10px;font-family:Montserrat-Medium">HACIENDO
                                             REALIDAD</span>
-                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU HOGAR
+                                        <h4 class=" text-warning fs-5" style="letter-spacing: 10px;font-family:Montserrat-Medium;margin-top:-5px">TU
+                                            HOGAR
                                         </h4>
                                         <div class="mt-2 mb-3 subrayado mx-auto"></div>
 
                                     </div>
-                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños hoy mismo, con
+                                    ¡No pierdas más tiempo y asegura el lote de tus <br class="d-none d-lg-block"> sueños
+                                    hoy mismo, con
                                     facilidades de pago y <br class="d-none d-lg-block"> ubicaciones estratégicas!
 
 
 
 
                                     <p></p>
-                                    <div class="d-none d-lg-block">
-                                        <span style="color:#F6A42C;font-family:Montserrat-Medium;letter-spacing: 8px;font-size:18px;">¿DUDAS O CONSULTAS?</span>
-                                       <br>  Nuestros números de atención al cliente: <br>
-                                        <a href="tel:+5101-9049838" style="font-family:Montserrat-Regular;color:white">
-                                            <span class="fs-7">(51) 01-9049838</span>
-                                        </a>
-                                    </div>
+
 
                                 </div>
                             </div>
@@ -136,72 +133,11 @@
                             </div>
 
                             <!-- Columna derecha con formulario -->
-                            <div class="col col-md-12 col-lg-4 col-xl-3 col-sm-12 aos-init aos-animate" data-aos="flip-left" data-aos-duration="700" data-aos-delay="400">
-
-                                <div class="p-7 mb-2 rounded" style="background-color: #ffffff; color: rgb(100, 100, 100); box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                                    <p class="text-center text-light mb-4"><b> <span style="font-size: 16px;color:#055261">QUIERO
-                                                INFORMACIÓN DE UN LOTE</span></b></p>
-
-
-                                    <select class="form-control" name="project_id" id="project_id" style="color: white; background-color:rgb(230, 230, 230);
-                                    color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
-                                        <option value="">Seleccione un proyecto</option>
-                                    </select>
-                                    <br>
-
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
-                                    </div>
-                                    <div class=" mb-3">
-                                        <input type="text" id="phone" class="form-control" name="cellphone" placeholder="Número de Teléfono" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
-                                    </div>
-                                    <div class=" mb-3">
-                                        <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold">
-
-                                    </div>
-
-                                    <div class="form-floating mb-3">
-
-                                        <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
-                                        <div class="form-text text-white">
-                                            <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="form-check text-start">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
-                                        <label class="form-check-label fs-3" for="txtTratamientoDatos">
-                                            <span class="fs-2">He leído y acepto la </span>
-                                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
-                                                Política para envío de comunicaciones comerciales.
-                                            </a>
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check text-start ">
-                                        <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
-                                        <label class="form-check-label fs-3" for="txtTratamientoDatos2">
-                                            <span class="fs-2">He leído y acepto el </span>
-                                            <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
-                                                Tratamiento de mis datos personales.
-                                            </a>
-                                        </label>
-                                    </div>
-
-
-
-
-                                    <div class="text-center"><span style="font-size: 9px;">
-
-                                        </span><button type="button" class=" w-xs-100 mt-3  btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
-                                                <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
-                                                    datos</span>
-                                            </span></button><span style="font-size: 9px;">
-                                        </span></div><span style="font-size: 9px;">
-                                    </span>
+                            <div class="col col-md-12 col-lg-4 col-xl-3 col-sm-12 aos-init aos-animate">
+                                <div class="d-none d-lg-block">
+                                    <img src="../ayba/4.png" alt="" style="width: 150px;margin-top:350px" data-aos="flip-right" data-aos-duration="1700" data-aos-delay="500"> <br>
                                 </div>
+
 
                             </div>
                         </div><span style="font-size: 9px;">
@@ -244,8 +180,8 @@
                                 <div class="form-floating mb-3">
 
                                     <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="width:100%; background-color:rgb(230, 230, 230);color:rgb(124, 124, 124);font-family:Montserrat-SemiBold" maxlength="200" oninput="updateCounter()">
-                                    <div class="form-text text-white">
-                                        <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                                    <div class="form-text">
+                                        <p><span id="charCount"><span style="font-size: 8px;color:black">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
                                     </div>
                                 </div>
 
@@ -276,7 +212,7 @@
 
                                 <div class="text-center"><span style="font-size: 9px;">
 
-                                    </span><button type="button" class="w-xs-100 mt-3 btn btn-warning btn-block" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
+                                    </span><button type="button" class="w-xs-100 mt-3 btn btn-warning btn-block" disabled="" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span style="font-size: 9px;">
                                             <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
                                                 datos</span>
                                         </span></button><span style="font-size: 9px;">
@@ -341,7 +277,7 @@
                     </span>
                 </div>
             </div>
-          <!-- Indicadores del Carrusel -->
+            <!-- Indicadores del Carrusel -->
             <div class="carousel-indicators mb-3">
                 <button type="button" style=" background-color: transparent;
         border: solid 3px orange;
@@ -1260,6 +1196,10 @@
                         mantengo
                         y/o mantendré con la misma, contactarme y para fines estadísticos y/o analíticos.
                         <br><br>
+
+
+
+
                         Declaro mi derecho de revocar este consentimiento en cualquier momento.
                         Los datos personales entregados a <strong>AYBAR S.A.C.</strong> serán almacenados mientras dure mi
                         relación contractual, comercial y/o de cualquier índole con <strong>AYBAR S.A.C.</strong> y hasta
@@ -1277,13 +1217,18 @@
                         por ley bajo la regulación nacional y/o internacional vigente, incluyendo la Ley No. 29733,
                         su reglamento y aquellas que las modifiquen o sustituyan, así como las vinculadas a las autoridades
                         que fiscalizan la labor de <strong>AYBAR S.A.C.</strong><br><br>
-                        Declaro conocer mi derecho a solicitar acceso a mis datos personales y conocer su tratamiento,
-                        así como, solicitar su actualización, inclusión, rectificación, cancelación y supresión, pudiendo
-                        oponerme a su uso o divulgación, pudiendo dirigir mi solicitud de ejercicio de los derechos a través
-                        de la dirección especificada en la página web de <strong>AYBAR S.A.C.</strong>, teniendo a salvo
-                        además el
-                        ejercicio de la tutela de sus derechos ante la Autoridad Nacional de Protección de Datos Personales
-                        en vía de reclamación o ante el Poder Judicial mediante la acción de hábeas data.
+
+
+
+
+                        Declaro conocer mi derecho a solicitar acceso a mis datos personales y conocer su tratamiento, así como,
+                        solicitar su actualización, inclusión, rectificación, cancelación y supresión, pudiendo oponerme a su uso o divulgación,
+                        pudiendo dirigir mi solicitud de ejercicio de los derechos a través de la dirección especificada en la página web de AYBAR S.A.C.,
+                         o al correo datospersonales@aybarsac.com, teniendo a salvo además el ejercicio de la tutela de sus derechos ante la Autoridad
+                          Nacional de Protección de Datos Personales en vía de reclamación o ante el Poder Judicial mediante la acción de hábeas data.
+
+
+
                         <br><br> Los datos personales
                         recolectados por <strong>AYBAR S.A.C.</strong> son obligatorios, la negativa a suministrarlos
                         supondrá la imposibilidad de concretar el fin previsto.
@@ -1340,25 +1285,25 @@
 
 
 
- <!-- Modal -->
- <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content bg-dark">
-        <div class="modal-body p-0" id="videoModalBody">
-          <!-- Aquí se insertará el iframe dinámicamente -->
+    <!-- Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0" id="videoModalBody">
+                    <!-- Aquí se insertará el iframe dinámicamente -->
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
 
-  <script>
-    const modalElement = document.getElementById('videoModal');
-    const modalBody = document.getElementById('videoModalBody');
+    <script>
+        const modalElement = document.getElementById('videoModal');
+        const modalBody = document.getElementById('videoModalBody');
 
-    function openVideo(videoId) {
-        // Limpia cualquier iframe previo antes de insertar uno nuevo
-        modalBody.innerHTML = `
+        function openVideo(videoId) {
+            // Limpia cualquier iframe previo antes de insertar uno nuevo
+            modalBody.innerHTML = `
             <div class="ratio ratio-16x9">
                 <iframe
                     src="https://www.youtube.com/embed/${videoId}?autoplay=1"
@@ -1369,18 +1314,15 @@
                 ></iframe>
             </div>
         `;
-        const modal = new bootstrap.Modal(modalElement);
-        modal.show();
-    }
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        }
 
-    // Cuando se cierra el modal, eliminamos el iframe (así sí se apaga el audio)
-    modalElement.addEventListener('hidden.bs.modal', () => {
-        modalBody.innerHTML = ''; // 🔇 Esto apaga todo
-    });
-</script>
-
-
-
+        // Cuando se cierra el modal, eliminamos el iframe (así sí se apaga el audio)
+        modalElement.addEventListener('hidden.bs.modal', () => {
+            modalBody.innerHTML = ''; // 🔇 Esto apaga todo
+        });
+    </script>
 @endsection
 
 <script>
@@ -1399,4 +1341,31 @@
 
     // Ejecutar cada 3 segundos
     //  setInterval(restartAOS, 70000);
+</script>
+<script>
+    // Esta función revisa si ambos checkboxes están marcados
+    function checkCheckboxes() {
+        const checkbox1 = document.getElementById('txtTratamientoDatos');
+        const checkbox2 = document.getElementById('txtTratamientoDatos2');
+        const submitButton = document.querySelector('button[onclick="CustomerStorePublic();"]');
+
+        // Si ambos están marcados, habilitamos el botón
+        if (checkbox1.checked && checkbox2.checked) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+
+    // Asociamos la función al evento 'change' de cada checkbox
+    document.addEventListener('DOMContentLoaded', function() {
+        const checkbox1 = document.getElementById('txtTratamientoDatos');
+        const checkbox2 = document.getElementById('txtTratamientoDatos2');
+
+        checkbox1.addEventListener('change', checkCheckboxes);
+        checkbox2.addEventListener('change', checkCheckboxes);
+
+        // Al cargar la página, el botón debe empezar deshabilitado
+        checkCheckboxes();
+    });
 </script>
