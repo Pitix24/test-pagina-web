@@ -88,7 +88,7 @@
                     <img src="../../resource/1741119482_67c75ffab0870cliente%20nuevo.svg" alt="" width="100%" style="margin-top:-10px" height="100px">
                 </div>
                 <div class="col-8">
-                    <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Soy Cliente Nuevo</span>
+                    <span class="card-title fw-bold fs-5 py-7" style="color:#ffff">Estoy Interesado</span>
                     <br>
                     <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color:white; border-radius:10px; background-color:#FFA726; width: 190px;">
                         <b>Información »</b>
@@ -106,6 +106,7 @@
         </div>
 </div>
 
+      
 
 
 
@@ -333,4 +334,32 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
+
+    <script>
+        // Esta función revisa si ambos checkboxes están marcados
+        function checkCheckboxes() {
+            const checkbox1 = document.getElementById('txtTratamientoDatos');
+            const checkbox2 = document.getElementById('txtTratamientoDatos2');
+            const submitButton = document.querySelector('button[onclick="CustomerStorePublic();"]');
+
+            // Si ambos están marcados, habilitamos el botón
+            if (checkbox1.checked && checkbox2.checked) {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+
+        // Asociamos la función al evento 'change' de cada checkbox
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkbox1 = document.getElementById('txtTratamientoDatos');
+            const checkbox2 = document.getElementById('txtTratamientoDatos2');
+
+            checkbox1.addEventListener('change', checkCheckboxes);
+            checkbox2.addEventListener('change', checkCheckboxes);
+
+            // Al cargar la página, el botón debe empezar deshabilitado
+            checkCheckboxes();
+        });
+    </script>
 @endsection
