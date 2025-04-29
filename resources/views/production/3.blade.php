@@ -117,23 +117,85 @@
         </div>
       </div>
 </div>
-<div class="my-0" data-aos="flip-left" data-aos-duration="1300" data-aos-delay="500">
-    <div class="  position-relative overflow-auto" style="white-space: nowrap;">
-
-      <div class="d-flex w-100 slide-background" style="overflow-x: auto; scroll-behavior: smooth;">
-        <div class="slide" style="margin-right:1px; flex: 0 0 auto;">
-          <iframe width="1000" height="515" src="https://www.youtube.com/embed/4Uqn76cNr7o" allowfullscreen=""></iframe>
+<div id="videoCarousel" class="carousel slide d-none d-lg-block mt-4 position-relative" data-bs-ride="false" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+    <div class="carousel-inner">
+        <!-- Primera página -->
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('4Uqn76cNr7o')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/4Uqn76cNr7o/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('LYImsD6hVx8')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/LYImsD6hVx8/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('eJ3sHYjSyaU')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/eJ3sHYjSyaU/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="slide" style="margin-right:1px; flex: 0 0 auto;">
-          <iframe width="1000" height="515" src="https://www.youtube.com/embed/LYImsD6hVx8" allowfullscreen=""></iframe>
+        <div class="carousel-item  ">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('4Uqn76cNr7o')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/4Uqn76cNr7o/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('LYImsD6hVx8')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/LYImsD6hVx8/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3">
+                    <div onclick="openVideo('eJ3sHYjSyaU')" style="cursor: pointer; border: 2px solid #F4A623; border-radius: 10px; overflow: hidden; position: relative;">
+                        <img src="https://img.youtube.com/vi/eJ3sHYjSyaU/hqdefault.jpg" alt="Video preview" style="width: 100%; height: 250px; object-fit: cover; display: block; border-radius: 10px;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                                    width: 100px; height: 80px; background: url('https://img.icons8.com/ios-filled/100/fa314a/youtube-play.png') no-repeat center center;
+                                    background-size: contain;">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="slide" style="flex: 0 0 auto;">
-          <iframe width="1000" height="515" src="https://www.youtube.com/embed/eJ3sHYjSyaU" allowfullscreen=""></iframe>
-        </div>
-      </div>
-
+        <!-- (Puedes duplicar más páginas aquí si quieres más videos) -->
     </div>
-  </div>
+
+    <!-- Flechas -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev" style="left: -60px;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #F4A623; width: 30px; height: 30px; border-radius:50%;"></span>
+        <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next" style="right: -60px;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #F4A623; width: 30px; height: 30px; border-radius:50%;"></span>
+        <span class="visually-hidden">Siguiente</span>
+    </button>
+</div>
 <div class="d-none d-lg-block text-center mt-5 position-relative" style="width: 100vh; height: 90vh; margin: auto;">
       <!-- Círculo -->
       <div class="position-absolute top-1 start-0 w-100 h-100">
@@ -422,6 +484,40 @@
             });
         });
     </script> --}}
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark">
+                <div class="modal-body p-0" id="videoModalBody"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const modalElement = document.getElementById('videoModal');
+        const modalBody = document.getElementById('videoModalBody');
+
+        function openVideo(videoId) {
+            modalBody.innerHTML = `
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+                        class="w-100 h-100"
+                        frameborder="0"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            `;
+            const modal = new bootstrap.Modal(modalElement);
+            modal.show();
+        }
+
+        modalElement.addEventListener('hidden.bs.modal', () => {
+            modalBody.innerHTML = '';
+        });
+    </script>
 
 
 @endsection
