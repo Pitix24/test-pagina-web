@@ -29,7 +29,7 @@
     <script src="{{ asset('js/project.js') }}"></script>
     <script src="{{ asset('js/image.js') }}"></script>
     <script src="{{ asset('js/role.js') }}"></script>
-    <script src="{{ asset('js/customer_3.js') }}"></script>
+    <script src="{{ asset('js/customer_4.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
     <script src="{{ asset('js/Book.js') }}"></script>
