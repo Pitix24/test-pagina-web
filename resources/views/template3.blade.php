@@ -48,7 +48,7 @@
     <script src="{{ asset('js/exam.js') }}"></script>
     <script src="{{ asset('js/qualification.js') }}"></script>
     <script src="{{ asset('js/inscription.js') }}"></script>
-    <script src="{{ asset('js/topic_2.js') }}"></script>
+    <script src="{{ asset('js/topic_4.js') }}"></script>
 
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 
