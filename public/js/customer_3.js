@@ -80,7 +80,7 @@ function CustomerStorePublic() {
     btn.disabled = true;
     spinner.classList.remove("d-none");
 
-    axios.post('CustomerStorePublic', formData, {
+    axios.post('../../CustomerStorePublic', formData, {
       headers: { 'Content-Type': 'multipart/form-data' }
     })
     .then(response => {
@@ -91,7 +91,7 @@ function CustomerStorePublic() {
       // 🔁 Recargar después de 4 segundos
       setTimeout(() => {
         window.location.reload();
-      }, 2000);
+      }, 4000);
     })
     .catch(error => {
       console.error(error);

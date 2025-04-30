@@ -650,107 +650,113 @@
         // Ejecutar cuando el DOM esté listo
         document.addEventListener('DOMContentLoaded', ProjectList);
     </script>
+<form id="Customer">
+@csrf
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-color:#054E5C">
-                <div class="modal-header">
-                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal"
-                        aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="p-3 rounded"
-                        style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
-                        <p class="text-center text-light mb-4"><b> <span style="font-size: 12px;">QUIERO
-                                    INFORMACIÓN DE UN LOTE</span></b></p>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="background-color:#054E5C">
+            <div class="modal-header">
+                <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
 
+                <!-- CARD 1: Formulario -->
+                <div id="formCard" class="p-3 rounded" style="background-color: #055261; color: white; box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);">
+                  <div id="formContainer">
+                    <p class="text-center text-light mb-4"><b><span style="font-size: 12px;">QUIERO INFORMACIÓN DE UN LOTE</span></b></p>
 
-                        <select class="form-control" name="project_id" id="project_id"
-                            style="color: white; background-color: #055261">
-                            <option value="">Seleccione un proyecto</option>
-                        </select>
-                        <br>
+                    <select class="form-control mb-3" name="project_id" id="project_id" style="color: white; background-color: #055261;">
+                      <option value="">Seleccione un proyecto</option>
+                    </select>
 
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:"
-                                style="color: white;">
-                        </div>
-                        <div class="form-floating mb-3">
-
-
-                            <input type="text" id="phone" class="form-control iti__tel-input" name="cellphone"
-                                placeholder="Número de Teléfono" style="color: white; width: 100%; padding-left: 74px;"
-                                autocomplete="off" data-intl-tel-input-id="0">
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="dni" name="dni"
-                                placeholder="Número de DNI" style="color: white;">
-
-                        </div>
-
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="message" name="message"
-                                placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200"
-                                oninput="updateCounter()">
-                            <div class="form-text text-white">
-                                <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span
-                                        style="font-size: 8px;">/200 caracteres</span></p>
-                            </div>
-                        </div>
-
-
-
-                        <div class="form-check text-start">
-                            <input class="form-check-input" type="checkbox" id="txtTratamientoDatos"
-                                name="data_aprobed_1" value="true">
-                            <label class="form-check-label fs-3" for="txtTratamientoDatos">
-                                <span class="fs-2">He leído y acepto la </span>
-                                <a class="text-warning fs-2" data-bs-toggle="modal"
-                                    data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">
-                                    Política para envío de comunicaciones comerciales.
-                                </a>
-                            </label>
-                        </div>
-
-                        <div class="form-check text-start ">
-                            <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2"
-                                name="data_aprobed_2" value="true">
-                            <label class="form-check-label fs-3" for="txtTratamientoDatos2">
-                                <span class="fs-2">He leído y acepto el </span>
-                                <a class="text-warning fs-2" data-bs-toggle="modal"
-                                    data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">
-                                    Tratamiento de mis datos personales.
-                                </a>
-                            </label>
-                        </div>
-
-
-
-
-                        <div class="text-center"><span style="font-size: 9px;">
-
-                            </span><button type="button" class="btn btn-warning btn-block"
-                                onclick="CustomerStorePublic();"
-                                style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;"><span
-                                    style="font-size: 9px;">
-                                    <span style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis
-                                        datos</span>
-                                </span></button><span style="font-size: 9px;">
-                            </span></div><span style="font-size: 9px;">
-                        </span>
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" name="names" placeholder="Nombres y Apellidos:" style="color: white;">
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn bg-white text-dark" style="background-color:black"
-                        data-bs-dismiss="modal">Cerrar</button>
 
+                    <div class="form-floating mb-3">
+                      <input type="text" id="phone" class="form-control iti__tel-input" name="cellphone" placeholder="Número de Teléfono" style="color: white; width: 100%; padding-left: 74px;" autocomplete="off">
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input type="number" class="form-control" id="dni" name="dni" placeholder="Número de DNI" style="color: white;">
+                    </div>
+
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="message" name="message" placeholder="Mensaje" style="color: white; height: 70px;" maxlength="200" oninput="updateCounter()">
+                      <div class="form-text text-white">
+                        <p><span id="charCount"><span style="font-size: 8px;">0</span></span><span style="font-size: 8px;">/200 caracteres</span></p>
+                      </div>
+                    </div>
+
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="checkbox" id="txtTratamientoDatos" name="data_aprobed_1" value="true">
+                      <label class="form-check-label fs-3" for="txtTratamientoDatos">
+                        <span class="fs-2">He leído y acepto la </span>
+                        <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg2" style="cursor: pointer;">Política para envío de comunicaciones comerciales.</a>
+                      </label>
+                    </div>
+
+                    <div class="form-check text-start">
+                      <input class="form-check-input" type="checkbox" id="txtTratamientoDatos2" name="data_aprobed_2" value="true">
+                      <label class="form-check-label fs-3" for="txtTratamientoDatos2">
+                        <span class="fs-2">He leído y acepto el </span>
+                        <a class="text-warning fs-2" data-bs-toggle="modal" data-bs-target="#bs-example-modal-xlg" style="cursor: pointer;">Tratamiento de mis datos personales.</a>
+                      </label>
+                    </div>
+
+
+                    <div class="text-center mt-3">
+                        <button id="submitButton" type="button" class="btn btn-warning" onclick="CustomerStorePublic();" style="color: white; border-radius: 100px; background-color: #F6A42C; width: 180px;">
+                          <span id="buttonText" style="font-family: Montserrat-Bold; font-size: 12px;">Enviar mis datos</span>
+                          <span id="buttonSpinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                        </button>
+                      </div>
+
+
+                  </div>
                 </div>
+
+                <!-- CARD 2: Mensaje de éxito -->
+             <!-- CARD 2: Mensaje de éxito con estilo visual final -->
+<!-- CARD 2: Mensaje de éxito fiel al diseño -->
+<div id="thankYouCard" class="text-center py-5" style="display: none; background-color: white; border-radius: 15px;">
+
+<!-- Paso visual -->
+<div class="d-flex justify-content-center align-items-center mb-4">
+<div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #e5e5e5; color: #888; font-weight: bold; font-size: 14px;">1</div>
+<div style="width: 40px; height: 1px; background-color: #ccc; margin: 0 10px;"></div>
+<div class="rounded-circle d-flex justify-content-center align-items-center" style="width: 32px; height: 32px; background-color: #055261; color: white; font-weight: bold; font-size: 14px;">2</div>
+</div>
+
+<!-- Check icono en círculo naranja -->
+<div class="mb-4">
+<div class="mx-auto d-flex justify-content-center align-items-center" style="width: 72px; height: 72px; background-color: #F6A42C; border-radius: 50%;">
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" viewBox="0 0 16 16">
+  <path d="M13.485 1.929a.75.75 0 0 1 0 1.06L6.06 10.414a.75.75 0 0 1-1.06 0L2.515 7.93a.75.75 0 1 1 1.06-1.06L5.5 8.793l7.424-7.424a.75.75 0 0 1 1.061 0z"></path>
+</svg>
+</div>
+</div>
+
+<!-- Mensaje -->
+<p class="fw-bold" style="font-size: 18px; color: #002b33; margin-bottom: 8px;">¡Gracias por contactarnos!</p>
+<p style="color: #124653; font-size: 15px; margin-bottom: 0;">Nuestro equipo se comunicará<br>contigo muy pronto.</p>
+
+</div>
+
+
+
+              </div>
+
+
+            <div class="modal-footer">
+                <button type="button" class="btn bg-white text-dark" style="background-color:black" data-bs-dismiss="modal">Cerrar</button>
+
             </div>
         </div>
     </div>
-
+</div>
+</form>
     <div class="modal fade" id="bs-example-modal-xlg" tabindex="-1" aria-labelledby="bs-example-modal-lg"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
