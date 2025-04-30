@@ -197,3 +197,114 @@ function topicShow() {
       console.log(response);
     });
 }
+function topicPublic() {
+    axios({
+      method: "get",
+      url:  "../blog/topicPublic",
+    })
+      .then(function (response) {
+
+        var contentdiv = document.getElementById("mycontent");
+
+        // Verifica que el contenedor exista
+        if (contentdiv) {
+          contentdiv.innerHTML = ""; // Limpia el contenido anterior
+
+          // Accede al array correcto y verifica que exista
+          const topics = response.data.data || response.data; // Ajusta según tu estructura
+          if (Array.isArray(topics)) {
+            topics.forEach(function (item) {
+              if (item.image_1 === null) {
+                item.image_1 = "1734977972_+%20de%201,000.png";
+              }
+
+              let card = `
+              <div class="col-md-6 col-lg-4">
+                <div class="card" style="
+                  cursor: pointer;
+                  background: url('../resource/${item.image_1}') center/cover no-repeat;
+                  position: relative;
+                  border-radius: 15px;
+                  box-shadow: rgb(0, 0, 0) 0px 4px 10px;
+                  transition: transform 0.3s ease-in-out;
+                  transform: translateY(0px);
+                  color: white;
+                  text-align: center;
+                  padding: 20px;
+                  height: 350px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  overflow: hidden;"
+                  onmouseover="this.style.transform='translateY(-5px)'"
+                  onmouseout="this.style.transform='translateY(0)'">
+
+                  <!-- Contenido normal (visible al inicio) -->
+                  <div class="default-content text-start" style="
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0%;
+                    background-color: #03424E;
+                    width: 90%;
+                    border-top-right-radius: 15px;
+                    transition: opacity 0.3s ease-in-out;
+                    padding-right:40px
+                    ">
+                    <h6 class='fs-3' style="color: #f8b400; text-align: left; padding-top: 25px; margin-left: 10px;">
+                      ${item.description}
+                    </h6>
+                    <p class='fs-2' style=' margin-left: 10px;'>${item.detail}</p>
+                  </div>
+
+                  <!-- Contenido en hover (aparece al pasar el mouse) -->
+                  <div class="hover-content" style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(3, 66, 78, 0.9);
+                    border-radius: 15px;
+                    padding: 20px;
+                    opacity: 0;
+                    transition: opacity 0.3s ease-in-out;">
+                    <h4 class="mt-5" style="color: #f8b400; margin-bottom: 10px; text-align: justify;">
+                      ${item.description}
+                    </h4>
+                    <p class="fs-2" style="text-align: justify; font-family: Montserrat-Regular;">
+                      <b>${item.detail}</b>
+                    </p>
+                  </div>
+
+                  <!-- Flecha con botón circular -->
+                  <a target="_blank" href="http://${window.location.hostname + "/blog/" + item.url}" class="d-flex align-items-center justify-content-center position-absolute" style="
+                    cursor: pointer;
+                    background: white;
+                    border-radius: 20%;
+                    width: 60px;
+                    height: 60px;
+                    bottom: 5%;
+                    right: 3%;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                    position: absolute;
+                    z-index: 2;">
+                    <img src="../../resource/1738274447_679bf68f71208flecha-amarilla.svg" alt="" width="50%">
+                  </a>
+                </div>
+              </div>
+            `;
+
+              contentdiv.innerHTML += card;
+            });
+          } else {
+            console.error("El formato de datos no es un array:", topics);
+          }
+        } else {
+          console.error("Elemento con ID 'mycontent' no encontrado.");
+        }
+      })
+      .catch(function (error) {
+        console.error("Error en la solicitud:", error.response || error.message);
+      });
+  }
