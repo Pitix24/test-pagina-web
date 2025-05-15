@@ -80,7 +80,7 @@ try {
         //     $message->to($Book->email)
         //             ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
         //             ->cc('reclamacionesweb@aybarsac.com')
-        //             ->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
+        //             ->from('notificaciones@aybarcorp.com', 'Aybar Corp');
         // });
          Bus::dispatch(fn() => $this->notify($Book->id));
         Log::info('📬 Correo enviado correctamente a: ' . $Book->email);
@@ -113,7 +113,7 @@ try {
             $message->to($Book->email)
                     ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
                     ->cc('reclamacionesweb@aybarsac.com')
-                    ->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
+                    ->from('notificaciones@aybarcorp.com', 'Aybar Corp');
         });
 
             return response()->json(['message' => 'Notificación enviada a informes'], 200);
@@ -166,7 +166,7 @@ try {
         Atentamente,
         El equipo de Aybar Corp",
             function ($message) use ($email) {
-                $message->to($email)->subject('Revisión de Reclamo - Aybar Corp')->cc('reclamacionesweb@aybarsac.com')->from('webpageadmin@aybarcorp.com', 'Aybar Corp');
+                $message->to($email)->subject('Revisión de Reclamo - Aybar Corp')->cc('reclamacionesweb@aybarsac.com')->from('notificaciones@aybarcorp.com', 'Aybar Corp');
             },
         );
 

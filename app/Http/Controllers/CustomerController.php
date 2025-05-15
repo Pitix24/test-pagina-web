@@ -93,10 +93,10 @@ public function storePublic(Request $request)
     Mail::send('email.customer-notification', [
         'Customer' => $Customer
     ], function ($message) use ($Customer) {
-        $message->to('webpageadmin@aybarcorp.com')
+        $message->to('notificaciones@aybarcorp.com')
             ->cc('consultasweb@aybarsac.com')
             ->subject('🟢 Nuevo Cliente:  ME GUSTARÍA CONVERSAR CON UN ASESOR')
-            ->from('webpageadmin@aybarcorp.com', env('APP_NAME'));
+            ->from('notificaciones@aybarcorp.com', env('APP_NAME'));
     });
 
     $Customer->save();
