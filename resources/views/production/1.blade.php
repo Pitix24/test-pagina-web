@@ -25,10 +25,10 @@
 
     {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
-    <script src="{{ asset('js/customer_3.js') }}"></script>
+    <script src="{{ asset('js/customer_4.js') }}"></script>
     <script src="{{ asset('js/Book_2.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
-    <script src="{{ asset('js/topic_2.js') }}"></script>
+    <script src="{{ asset('js/topic_5.js') }}"></script>
     <link href="{{ asset('css/template.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.2.0/build/css/intlTelInput.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
