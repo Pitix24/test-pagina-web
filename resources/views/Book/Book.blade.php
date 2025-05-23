@@ -31,7 +31,7 @@
                 <!-- start File export -->
                 <div class="card">
                     <div class="card-body">
-                      
+
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
                             {{-- @canany(["administrar","agregar"])
@@ -89,7 +89,7 @@
                             aria-label="Close"></button>
                     </div>
                     <style>
-                        input::placeholder, 
+                        input::placeholder,
 textarea::placeholder {
     color: rgb(121, 121, 121) !important;
     opacity: 1 !important; /* Asegura que el color sea visible */
@@ -99,149 +99,143 @@ select option[disabled] {
 }
 
                     </style>
-                    <div class="modal-body ">
+                 <!-- MODAL BODY -->
+<div class="modal-body">
+  <form id="Book" method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
+    <input type="hidden" name="id" id="id">
 
+    <div class="row g-4">
+      <!-- Columna izquierda -->
+      <div class="col-md-6">
+        @foreach ([
+          'names' => 'Nombres',
+          'firstname' => 'Apellido Paterno',
+          'lastname' => 'Apellido Materno',
+          'address' => 'Dirección',
+          'document_number' => 'Número de documento',
+          'phone' => 'Celular',
+          'email' => 'Correo electrónico',
+          'claimed_amount' => 'Monto reclamado',
+          'office_address' => 'Dirección de oficina'
+        ] as $id => $label)
+          <div class="mb-2">
+            <label class="form-label">{{ $label }}:</label>
+            <input type="text" id="{{ $id }}" name="{{ $id }}" class="form-control" readonly>
+          </div>
+        @endforeach
 
-                        <form action="" method="post" role="form" id="Book"
-                            name="Book"enctype="multipart/form-data">
-                            <input type="hidden" name="id" id="id">
-                            {{ csrf_field() }}
-<div class="row">
-    <div class="row col-6">
-        <div class="col-12 col-md-6">
-            <input type="text" id="names" name="names" class="form-control"readonly placeholder="Ingrese su nombre">
+        <div class="mb-2">
+          <label class="form-label">Tipo de documento:</label>
+          <select id="document_type" name="document_type" class="form-control" disabled>
+            <option disabled selected>Seleccione tipo de documento</option>
+            <option value="dni">DNI</option>
+            <option value="ce">Carné de Extranjería</option>
+            <option value="passport">Pasaporte</option>
+          </select>
         </div>
-    
-        <div class="col-12 col-md-6 mt-2 mt-md-0">
-            <input type="text" id="firstname" name="firstname" class="form-control"readonly placeholder="Apellido Paterno">
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="text" id="lastname" name="lastname" class="form-control"readonly placeholder="Apellido Materno">
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="text" id="address" name="address" class="form-control"readonly placeholder="Dirección">
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <select id="document_type" name="document_type" class="form-control"readonly>
-                <option value="" disabled selected>Seleccione tipo de documento</option>
-                <option value="dni">DNI</option>
-                <option value="ce">Carné de Extranjería</option>
-                <option value="passport">Pasaporte</option>
-            </select>
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="text" id="document_number" name="document_number" class="form-control"readonly placeholder="Número de documento">
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="tel" id="phone" name="phone" class="form-control"readonly placeholder="Número celular">
-        </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="email" id="email" name="email" class="form-control"readonly placeholder="Correo electrónico">
-        </div>
-    
-        <!-- Tipo de bien a reclamar -->
-        <div class="col-12 col-md-6 mt-3">
-            <input type="radio" id="product" name="claim_type"readonly class="form-check-input" value="Producto">
+
+        <div class="mb-2">
+          <label class="form-label">Tipo de reclamo:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="claim_type" id="product" value="Producto" disabled>
             <label class="form-check-label" for="product">Producto</label>
-        </div>
-    
-        <div class="col-12 col-md-6 mt-3">
-            <input type="radio" id="service" name="claim_type" readonly class="form-check-input" value="Servicio">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="claim_type" id="service" value="Servicio" disabled>
             <label class="form-check-label" for="service">Servicio</label>
+          </div>
         </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <input type="number" id="claimed_amount" name="claimed_amount" class="form-control"readonly placeholder="Monto reclamado" step="0.01">
+
+        <div class="mb-2">
+          <label class="form-label">Moneda:</label>
+          <select id="currency_type" name="currency_type" class="form-control" disabled>
+            <option value="">Seleccione moneda</option>
+            <option value="PEN">Soles (PEN)</option>
+            <option value="USD">Dólares (USD)</option>
+          </select>
         </div>
-    
-        <div class="col-12 col-md-6 mt-2">
-            <select id="currency_type" name="currency_type" class="form-control"readonly>
-                <option value="">Seleccione moneda</option>
-                <option value="PEN">Soles (PEN)</option>
-                <option value="USD">Dólares (USD)</option>
-            </select>
+
+        <div class="mb-2">
+          <label class="form-label">Descripción del producto o servicio:</label>
+          <textarea id="product_or_service_description" name="product_or_service_description" class="form-control" rows="4" readonly></textarea>
         </div>
-    
-        <div class="col-12 col-md-12 mt-2">
-            <input type="text" id="office_address" name="office_address" class="form-control"readonly placeholder="Dirección de oficina">
-        </div>
-    
-        <div class="col-12 mt-2">
-            <textarea id="product_or_service_description" name="product_or_service_description" class="form-control"readonly placeholder="Descripción del producto o servicio"></textarea>
-        </div>
-    
-        <!-- Tipo de reclamo -->
-        <div class="col-12 col-md-6 mt-3">
-            <input type="radio" id="complaint" name="complaint_type"readonly class="form-check-input" value="Queja">
+
+        <div class="mb-2">
+          <label class="form-label">Tipo de queja:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="complaint_type" id="complaint" value="Queja" disabled>
             <label class="form-check-label" for="complaint">Queja</label>
-        </div>
-    
-        <div class="col-12 col-md-6 mt-3">
-            <input type="radio" id="claim" name="complaint_type"readonly class="form-check-input"readonly value="Reclamo">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="complaint_type" id="claim" value="Reclamo" disabled>
             <label class="form-check-label" for="claim">Reclamo</label>
+          </div>
         </div>
-    
-        <div class="col-12 mt-2">
-            <textarea id="complaint_details" name="complaint_details" class="form-control"readonly placeholder="Detalle del reclamo"></textarea>
-        </div>
-    
-        <div class="col-12 mt-2">
-            <textarea id="complaint_request" name="complaint_request" class="form-control"readonly placeholder="Pedido del reclamo"></textarea>
-        </div>
-    </div>
-    <div class="col-6">
-      <h4>¿En qué estado se encuentra el reclamo?</h4>
-      <select class="form-control mb-4" id="state"name="state">
-        <option selected="" disabled="">Seleccione el Estado</option>
-        <option value="Pendiente">Pendiente</option>
-        <option value="Proceso">Proceso</option>                               
-        <option value="Atendido">Atendido</option>
-        <option value="Observado">Observado</option>
-        <option value="Finalizado">Finalizado</option>
-        <option value="Cerrado">Cerrado</option>
-      </select>
-    
-      <span>Mensaje </span>
-      <textarea name="message" id="message" class="form-control my-2"></textarea>
-      <div class="container align-content-center">
-        <div class="form-group row">
-            Archivo 1
-            <input class="form-control" type="file" id="file_1" name="file_1" onchange="readImage(this,'#blah_1');">
-            Archivo 2
-            <input class="form-control" type="file" id="file_2" name="file_2" onchange="readImage(this,'#blah_2');">
 
-
-
+        <div class="mb-2">
+          <label class="form-label">Pedido del reclamo:</label>
+          <textarea id="complaint_request" name="complaint_request" class="form-control" rows="5" readonly></textarea>
         </div>
-        <div class="size-100">
-            <br>
-            <img id="blah_1" name="blah_1" src="https://placehold.co/150" alt="Tu imagen" class="img-bordered" width="100px">
-            <img id="blah_2" name="blah_2" src="https://placehold.co/150" alt="Tu imagen" class="img-bordered" width="100px">
+
+        <div class="mb-2">
+          <label class="form-label">Detalle del reclamo:</label>
+          <textarea id="complaint_details" name="complaint_details" class="form-control" rows="5" readonly></textarea>
         </div>
-    </div>
-      
-      @canany(['administrar', 'agregar'])<input type="button" value="Enviar" class="mt-5 btn bg-success-subtle text-success "
-      onclick="BookUpdate()" id="create">
-      @endcanany
-     
-  <button type="button" class="mt-5 btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-6">
+        <div class="mb-3">
+          <label class="form-label">Estado del reclamo:</label>
+          <select class="form-control" id="state" name="state">
+            <option disabled selected>Seleccione el Estado</option>
+            <option value="Pendiente">Pendiente</option>
+            <option value="Proceso">Proceso</option>
+            <option value="Atendido">Atendido</option>
+            <option value="Observado">Observado</option>
+            <option value="Finalizado">Finalizado</option>
+            <option value="Cerrado">Cerrado</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Mensaje:</label>
+          <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Archivo 1:</label>
+          <input class="form-control" type="file" id="file_1" name="file_1" onchange="readImage(this,'#blah_1');">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Archivo 2:</label>
+          <input class="form-control" type="file" id="file_2" name="file_2" onchange="readImage(this,'#blah_2');">
+        </div>
+
+        <div class="mb-4 d-flex gap-3">
+          <img id="blah_1" src="https://placehold.co/150" class="img-bordered" width="100">
+          <img id="blah_2" src="https://placehold.co/150" class="img-bordered" width="100">
+        </div>
+
+        @canany(['administrar', 'agregar'])
+      <button type="button" id="submitButton" class="btn btn-success w-100 mb-2" onclick="handleBookUpdate()">
+  <span id="submitSpinner" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
+  Enviar
+</button>
+
+        @endcanany
+        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cerrar</button>
+      </div>
     </div>
 
 </div>
-                           
-                            
-                            
 
-                    </div>
+
                     <div class="modal-footer">
-                       
-                       
+
+
                       </form>
 
 
