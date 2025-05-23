@@ -34,7 +34,7 @@
 
                         <p class="card-subtitle mb-3">
                             <!-- success header modal -->
-                            {{-- @canany(["administrar","agregar"])
+                            {{-- @canany(['administrar', 'agregar'])
                             <button type="button" class="btn mb-1 me-1 btn-success"
                                 data-bs-toggle="modal" data-bs-target="#success-header-modal" fdprocessedid="cw61t3"
                                  onclick="New();$('#Book')[0].reset();">
@@ -90,153 +90,166 @@
                     </div>
                     <style>
                         input::placeholder,
-textarea::placeholder {
-    color: rgb(121, 121, 121) !important;
-    opacity: 1 !important; /* Asegura que el color sea visible */
-}
-select option[disabled] {
-    color: rgb(121, 121, 121)  !important;
-}
+                        textarea::placeholder {
+                            color: rgb(121, 121, 121) !important;
+                            opacity: 1 !important;
+                            /* Asegura que el color sea visible */
+                        }
 
+                        select option[disabled] {
+                            color: rgb(121, 121, 121) !important;
+                        }
                     </style>
-                 <!-- MODAL BODY -->
-<div class="modal-body">
-  <form id="Book" method="post" enctype="multipart/form-data">
-    {{ csrf_field() }}
-    <input type="hidden" name="id" id="id">
+                    <!-- MODAL BODY -->
+                    <div class="modal-body">
+                        <form id="Book" method="post" enctype="multipart/form-data">
+                            {{ csrf_field() }}
+                            <input type="hidden" name="id" id="id">
 
-    <div class="row g-4">
-      <!-- Columna izquierda -->
-      <div class="col-md-6">
-        @foreach ([
-          'names' => 'Nombres',
-          'firstname' => 'Apellido Paterno',
-          'lastname' => 'Apellido Materno',
-          'address' => 'Dirección',
-          'document_number' => 'Número de documento',
-          'phone' => 'Celular',
-          'email' => 'Correo electrónico',
-          'claimed_amount' => 'Monto reclamado',
-          'office_address' => 'Dirección de oficina'
+                            <div class="row g-4">
+                                <!-- Columna izquierda -->
+                                <div class="col-md-6">
+                                    @foreach ([
+            'names' => 'Nombres',
+            'firstname' => 'Apellido Paterno',
+            'lastname' => 'Apellido Materno',
+            'address' => 'Dirección',
+            'document_number' => 'Número de documento',
+            'phone' => 'Celular',
+            'email' => 'Correo electrónico',
+            'claimed_amount' => 'Monto reclamado',
+            'office_address' => 'Dirección de oficina',
         ] as $id => $label)
-          <div class="mb-2">
-            <label class="form-label">{{ $label }}:</label>
-            <input type="text" id="{{ $id }}" name="{{ $id }}" class="form-control" readonly>
-          </div>
-        @endforeach
+                                        <div class="mb-2">
+                                            <label class="form-label">{{ $label }}:</label>
+                                            <input type="text" id="{{ $id }}" name="{{ $id }}"
+                                                class="form-control" readonly>
+                                        </div>
+                                    @endforeach
 
-        <div class="mb-2">
-          <label class="form-label">Tipo de documento:</label>
-          <select id="document_type" name="document_type" class="form-control" disabled>
-            <option disabled selected>Seleccione tipo de documento</option>
-            <option value="dni">DNI</option>
-            <option value="ce">Carné de Extranjería</option>
-            <option value="passport">Pasaporte</option>
-          </select>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Tipo de documento:</label>
+                                        <select id="document_type" name="document_type" class="form-control" disabled>
+                                            <option disabled selected>Seleccione tipo de documento</option>
+                                            <option value="dni">DNI</option>
+                                            <option value="ce">Carné de Extranjería</option>
+                                            <option value="passport">Pasaporte</option>
+                                        </select>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Tipo de reclamo:</label><br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="claim_type" id="product" value="Producto" disabled>
-            <label class="form-check-label" for="product">Producto</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="claim_type" id="service" value="Servicio" disabled>
-            <label class="form-check-label" for="service">Servicio</label>
-          </div>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Tipo de reclamo:</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="claim_type" id="product"
+                                                value="Producto" disabled>
+                                            <label class="form-check-label" for="product">Producto</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="claim_type" id="service"
+                                                value="Servicio" disabled>
+                                            <label class="form-check-label" for="service">Servicio</label>
+                                        </div>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Moneda:</label>
-          <select id="currency_type" name="currency_type" class="form-control" disabled>
-            <option value="">Seleccione moneda</option>
-            <option value="PEN">Soles (PEN)</option>
-            <option value="USD">Dólares (USD)</option>
-          </select>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Moneda:</label>
+                                        <select id="currency_type" name="currency_type" class="form-control" disabled>
+                                            <option value="">Seleccione moneda</option>
+                                            <option value="PEN">Soles (PEN)</option>
+                                            <option value="USD">Dólares (USD)</option>
+                                        </select>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Descripción del producto o servicio:</label>
-          <textarea id="product_or_service_description" name="product_or_service_description" class="form-control" rows="4" readonly></textarea>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Descripción del producto o servicio:</label>
+                                        <textarea id="product_or_service_description" name="product_or_service_description" class="form-control" rows="4"
+                                            readonly></textarea>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Tipo de queja:</label><br>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="complaint_type" id="complaint" value="Queja" disabled>
-            <label class="form-check-label" for="complaint">Queja</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="complaint_type" id="claim" value="Reclamo" disabled>
-            <label class="form-check-label" for="claim">Reclamo</label>
-          </div>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Tipo de queja:</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="complaint_type"
+                                                id="complaint" value="Queja" disabled>
+                                            <label class="form-check-label" for="complaint">Queja</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="complaint_type"
+                                                id="claim" value="Reclamo" disabled>
+                                            <label class="form-check-label" for="claim">Reclamo</label>
+                                        </div>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Pedido del reclamo:</label>
-          <textarea id="complaint_request" name="complaint_request" class="form-control" rows="5" readonly></textarea>
-        </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Pedido del reclamo:</label>
+                                        <textarea id="complaint_request" name="complaint_request" class="form-control" rows="5" readonly></textarea>
+                                    </div>
 
-        <div class="mb-2">
-          <label class="form-label">Detalle del reclamo:</label>
-          <textarea id="complaint_details" name="complaint_details" class="form-control" rows="5" readonly></textarea>
-        </div>
-      </div>
+                                    <div class="mb-2">
+                                        <label class="form-label">Detalle del reclamo:</label>
+                                        <textarea id="complaint_details" name="complaint_details" class="form-control" rows="5" readonly></textarea>
+                                    </div>
+                                </div>
 
-      <!-- Columna derecha -->
-      <div class="col-md-6">
-        <div class="mb-3">
-          <label class="form-label">Estado del reclamo:</label>
-          <select class="form-control" id="state" name="state">
-            <option disabled selected>Seleccione el Estado</option>
-            <option value="Pendiente">Pendiente</option>
-            <option value="Proceso">Proceso</option>
-            <option value="Atendido">Atendido</option>
-            <option value="Observado">Observado</option>
-            <option value="Finalizado">Finalizado</option>
-            <option value="Cerrado">Cerrado</option>
-          </select>
-        </div>
+                                <!-- Columna derecha -->
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label class="form-label">Estado del reclamo:</label>
+                                        <select class="form-control" id="state" name="state">
+                                            <option disabled selected>Seleccione el Estado</option>
+                                            <option value="Pendiente">Pendiente</option>
+                                            <option value="Proceso">Proceso</option>
+                                            <option value="Atendido">Atendido</option>
+                                            <option value="Observado">Observado</option>
+                                            <option value="Finalizado">Finalizado</option>
+                                            <option value="Cerrado">Cerrado</option>
+                                        </select>
+                                    </div>
 
-        <div class="mb-3">
-          <label class="form-label">Mensaje:</label>
-          <textarea name="message" id="message" class="form-control" rows="10"></textarea>
-        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Mensaje:</label>
+                                        <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+                                    </div>
 
-        <div class="mb-3">
-          <label class="form-label">Archivo 1:</label>
-          <input class="form-control" type="file" id="file_1" name="file_1" onchange="readImage(this,'#blah_1');">
-        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Archivo 1:</label>
+                                        <input class="form-control" type="file" id="file_1" name="file_1"
+                                            onchange="readImage(this,'#blah_1');">
+                                    </div>
 
-        <div class="mb-3">
-          <label class="form-label">Archivo 2:</label>
-          <input class="form-control" type="file" id="file_2" name="file_2" onchange="readImage(this,'#blah_2');">
-        </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Archivo 2:</label>
+                                        <input class="form-control" type="file" id="file_2" name="file_2"
+                                            onchange="readImage(this,'#blah_2');">
+                                    </div>
 
-        <div class="mb-4 d-flex gap-3">
-          <img id="blah_1" src="https://placehold.co/150" class="img-bordered" width="100">
-          <img id="blah_2" src="https://placehold.co/150" class="img-bordered" width="100">
-        </div>
+                                    <div class="mb-4 d-flex gap-3">
+                                        <img id="blah_1" src="https://placehold.co/150" class="img-bordered"
+                                            width="100">
+                                        <img id="blah_2" src="https://placehold.co/150" class="img-bordered"
+                                            width="100">
+                                    </div>
 
-        @canany(['administrar', 'agregar'])
-      <button type="button" id="submitButton" class="btn btn-success w-100 mb-2" onclick="handleBookUpdate()">
-  <span id="submitSpinner" class="spinner-border spinner-border-sm d-none me-2" role="status" aria-hidden="true"></span>
-  Enviar
-</button>
+                                    @canany(['administrar', 'agregar'])
+                                        <button type="button" id="submitButton" class="btn btn-success w-100 mb-2"
+                                            onclick="handleBookUpdate()">
+                                            <span id="submitSpinner" class="spinner-border spinner-border-sm d-none me-2"
+                                                role="status" aria-hidden="true"></span>
+                                            Enviar
+                                        </button>
+                                    @endcanany
+                                    <button type="button" class="btn btn-secondary w-100"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
 
-        @endcanany
-        <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-
-</div>
+                    </div>
 
 
                     <div class="modal-footer">
 
 
-                      </form>
+                        </form>
 
 
 
