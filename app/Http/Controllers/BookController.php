@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateBookRequest;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Bus;
+use App\Models\Project; // Asegúrate de importar el modelo Project
 class BookController extends Controller
 {
     /**
@@ -21,7 +22,8 @@ class BookController extends Controller
     public function indexPublic()
     {
         $Book = Book::all();
-        return view('Book.BookPublic', compact('Book'));
+        $projects =Project::all(); // Obtener todos los proyectos
+        return view('Book.BookPublic', compact('Book', 'projects'));
     }
     /**
      * Show the form for creating a new resource.
@@ -66,6 +68,8 @@ try {
         $Book->complaint_type = $request->complaint_type;
         $Book->complaint_details = $request->complaint_details;
         $Book->complaint_request = $request->complaint_request;
+        $Book->project = $request->project; // Asignar el proyecto seleccionado
+        $Book->manzana_lote = $request->manzana_lote; // As
         $Book->state = 'Pendiente';
         $Book->save();
 

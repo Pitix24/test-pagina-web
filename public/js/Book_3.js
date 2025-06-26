@@ -125,13 +125,57 @@ function BookStore() {
         });
     }
   }
-  function BookStorePublic() {
+
+function BookStorePublic() {
     const btn = document.getElementById("submitBookBtn");
+    const form = document.getElementById("Book");
 
-    // Guardamos el contenido original del botón
+    // 🔴 Validación
+    const requiredFields = [
+        'names', 'firstname', 'lastname', 'address',
+        'document_type', 'document_number', 'phone', 'email',
+        'project', 'manzana_lote', 'claimed_amount',
+        'currency_type', 'office_address',
+        'product_or_service_description', 'complaint_details', 'complaint_request'
+    ];
+
+    let valid = true;
+    let firstInvalid = null;
+
+    requiredFields.forEach(id => {
+        const field = document.getElementById(id);
+        if (!field || !field.value.trim()) {
+            field?.classList.add('is-invalid');
+            if (!firstInvalid) firstInvalid = field;
+            valid = false;
+        } else {
+            field.classList.remove('is-invalid');
+        }
+    });
+
+    // Validar radio "claim_type"
+    const claimType = form.querySelector('input[name="claim_type"]:checked');
+    if (!claimType) {
+        alert("Seleccione si es un producto o servicio.");
+        valid = false;
+    }
+
+    // Validar radio "complaint_type"
+    const complaintType = form.querySelector('input[name="complaint_type"]:checked');
+    if (!complaintType) {
+        alert("Seleccione el tipo de reclamo: queja o reclamo.");
+        valid = false;
+    }
+
+    // Si no pasa la validación, detener el envío
+    if (!valid) {
+        alert("⚠️ Por favor complete todos los campos obligatorios.");
+        if (firstInvalid) firstInvalid.focus();
+        return;
+    }
+
+    // ✅ Si todo está correcto, continuar con el envío
     const originalHTML = btn.innerHTML;
-
-    // Mostramos spinner
     btn.disabled = true;
     btn.innerHTML = `
         <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span> Enviando...
@@ -170,11 +214,12 @@ function BookStore() {
     })
     .catch(function(response) {
         console.error(response);
-        alert("⚠️ Verifique los datos correctamente");
+        alert("⚠️ Ocurrió un error al enviar el formulario. Verifique los datos.");
     })
     .finally(() => {
-        // Restauramos el botón
         btn.disabled = false;
         btn.innerHTML = originalHTML;
     });
 }
+
+

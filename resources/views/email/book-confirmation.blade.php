@@ -54,6 +54,8 @@
     <tr><th>Tipo de Moneda:</th><td>{{ $book->currency_type }}</td></tr>
     <tr><th>Nombre de Oficina:</th><td>{{ $book->office_address }}</td></tr>
     <tr><th>Descripción Servicio:</th><td>{{ $book->product_or_service_description }}</td></tr>
+    <tr><th>Proyecto:</th><td>{{ $book->project }}</td></tr>
+    <tr><th>Manzana / Lote:</th><td>{{ $book->manzana_lote }}</td></tr>
 </table>
 
 <h3 class="section-title">3. Detalle de la reclamación</h3>
