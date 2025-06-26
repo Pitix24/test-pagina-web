@@ -75,29 +75,43 @@ function BookStore() {
       });
   }
 
-  function BookUpdate() {
-    var formData = new FormData(document.getElementById("Book"));
-    axios({
-      method: "post",
-      url: "../BookUpdate",
-      data: formData,
-      headers: {
-        "Content-Type": "multipart/form-data"
-      }
+function BookUpdate() {
+  const button = document.getElementById("submitButton");
+  const spinner = document.getElementById("submitSpinner");
+  const text = document.getElementById("submitText");
+
+  // Mostrar spinner y deshabilitar botón
+  button.disabled = true;
+  spinner.classList.remove("d-none");
+  text.textContent = "Enviando...";
+
+  const formData = new FormData(document.getElementById("Book"));
+
+  axios({
+    method: "post",
+    url: "../BookUpdate",
+    data: formData,
+    headers: {
+      "Content-Type": "multipart/form-data"
+    }
+  })
+    .then(function (response) {
+      document.getElementById("mycontent").innerHTML = response.data;
+      datatable_load();
+      alert("Modificado Correctamente");
     })
-      .then(function(response) {
-        //handle success
-        var contentdiv = document.getElementById("mycontent");
-        contentdiv.innerHTML = response.data;
-        //carga pdf- csv - excel
-        datatable_load();
-        alert("Modificado Correctamente");
-      })
-      .catch(function(response) {
-        //handle error
-        console.log(response);
-      });
-  }
+    .catch(function (error) {
+      console.error("Error al modificar:", error);
+      alert("Ocurrió un error al modificar.");
+    })
+    .finally(function () {
+      // Restaurar botón y ocultar spinner
+      button.disabled = false;
+      spinner.classList.add("d-none");
+      text.textContent = "Enviar";
+    });
+}
+
 
   function BookDestroy(id) {
     if (confirm("¿Quieres eliminar este registro?")) {

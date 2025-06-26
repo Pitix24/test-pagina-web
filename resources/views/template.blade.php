@@ -32,7 +32,7 @@
     <script src="{{ asset('js/customer_4.js') }}"></script>
     <script src="{{ asset('js/function.js') }}"></script>
     <script src="{{ asset('js/axios.min.js') }}"></script>
-    <script src="{{ asset('js/Book.js') }}"></script>
+    <script src="{{ asset('js/Book_3.js') }}"></script>
 </head>
 
 <body>
@@ -118,13 +118,14 @@
                                                 <span class="hide-menu">Clientes</span>
                                             </a>
                                         </li>
-                                        <li class="sidebar-item">
+
+                                    @endcanany
+                                     <li class="sidebar-item">
                                             <a class="sidebar-link " href="{{ url('admin/reclamaciones') }}">
                                                 <iconify-icon icon="solar:shield-user-line-duotone"></iconify-icon>
                                                 <span class="hide-menu">Reclamaciones</span>
                                             </a>
                                         </li>
-                                    @endcanany
                                     {{-- <li class="nav-small-cap">
                                         <span class="hide-menu">Módulos</span>
                                     </li> --}}

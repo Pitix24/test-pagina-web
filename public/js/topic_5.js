@@ -278,7 +278,7 @@ function topicPublic() {
                   </div>
 
                   <!-- Flecha con botón circular -->
-                  <a target="_blank" href="http://${window.location.hostname + "/blog/" + item.url}" class="d-flex align-items-center justify-content-center position-absolute" style="
+                  <a  href="http://${window.location.hostname + "/blog/" + item.url}" class="d-flex align-items-center justify-content-center position-absolute" style="
                     cursor: pointer;
                     background: white;
                     border-radius: 20%;
