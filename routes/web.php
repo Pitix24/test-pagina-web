@@ -71,7 +71,7 @@ Auth::routes();
    Route::get('home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
    Route::get('home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
    Route::get('home_demo/contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
-   
+
    Route::get('blog/topicPublic', [App\Http\Controllers\TopicPublicController::class, 'index']);
 
    Route::get('/', function () {
@@ -98,7 +98,7 @@ Route::get('/contacto', function () {
 
    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
    Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:200,1440');
-   
+
    Route::get('blog/{url}', [App\Http\Controllers\TopicPublicController::class, 'report']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -112,9 +112,9 @@ Route::group(['middleware' => ['auth']], function () {
     //
     Route::get('/sistema', [App\Http\Controllers\HomeController::class, 'sistema'])->name('sistema')->middleware('permission:administrar');
 
-   
+
     Route::get('admin', [App\Http\Controllers\UserController::class, 'profile']);
-    
+
     Route::get('admin/clientes', [App\Http\Controllers\CustomerController::class, 'index'])->middleware('permission:administrar|clientes');
     Route::post('CustomerStore', [App\Http\Controllers\CustomerController::class, 'store'])->middleware('permission:administrar|agregar');
     Route::post('CustomerDestroy', [App\Http\Controllers\CustomerController::class, 'destroy'])->middleware('permission:administrar|eliminar');
@@ -126,7 +126,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('ImageDestroy', [App\Http\Controllers\ImageController::class, 'destroy'])->middleware('permission:administrar|eliminar');
     Route::post('ImageEdit', [App\Http\Controllers\ImageController::class, 'edit'])->middleware('permission:administrar|editar');
     Route::post('ImageUpdate', [App\Http\Controllers\ImageController::class, 'update'])->middleware('permission:administrar|actualizar');
-  
+
     Route::post('ImageDestroyAll', [App\Http\Controllers\ImageController::class, 'destroyAll'])->middleware('permission:administrar|eliminar');
 
     Route::get('admin/secciones', [App\Http\Controllers\SectionController::class, 'index'])->middleware('permission:administrar|secciones');
@@ -157,8 +157,8 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('home_edit/proyectos', [App\Http\Controllers\Home_edit::class, 'project'])->middleware('permission:administrar|editar_proyectos');
     Route::get('home_edit/blog', [App\Http\Controllers\Home_edit::class, 'blog'])->middleware('permission:administrar|editar_blog');
     Route::get('home_edit/contacto', [App\Http\Controllers\Home_edit::class, 'contact'])->middleware('permission:administrar|editar_contactos');
- 
- 
+
+
 
     Route::resource("admin/blog", App\Http\Controllers\TopicController::class)->middleware('permission:administrar|blogs');
     Route::post('topicStore', [App\Http\Controllers\TopicController::class, 'store'])->middleware('permission:administrar|agregar');
@@ -196,11 +196,11 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('RoleEdit', [App\Http\Controllers\RoleController::class, 'edit'])->middleware('permission:administrar|editar');
     Route::post('RoleUpdate', [App\Http\Controllers\RoleController::class, 'update'])->middleware('permission:administrar|actualizar');
     Route::post('RoleDestroy', [App\Http\Controllers\RoleController::class, 'destroy'])->middleware('permission:administrar|eliminar');
- 
+
 
     Route::post('RolePermissionUpdate', [App\Http\Controllers\RolePermissionController::class, 'update'])->middleware('permission:administrar|actualizar');
     Route::post('RolePermissionEdit', [App\Http\Controllers\RolePermissionController::class, 'edit'])->middleware('permission:administrar|editar');
-   
+
 
 
 
@@ -380,7 +380,7 @@ Route::get('/get-thread-id', function () {
 
 Route::post('/send-message', function (\Illuminate\Http\Request $request) {
     $apiKey = env('OPENAI_API_KEY'); // Tu clave API de OpenAI
-    
+
     // Recuperar el `thread_id` desde la sesión
     $threadId = Session::get('thread_id');
     if (!$threadId) {
@@ -474,3 +474,6 @@ Route::get('/get-thread-messages', function () {
     return response()->json(['messages' => $responseData]);
 });
 
+Route::get('/video1', function () {
+    return view('video.video1');
+});
