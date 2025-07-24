@@ -26,7 +26,9 @@ Route::get('/ejecutar', [App\Http\Controllers\GenerateProductionController::clas
 
 Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
 
-
+Route::get('/webmail', function () {
+ return  redirect ("https://newplanetape10481.dedicados.cl/roundcube/");
+});
 
 
 Route::get('admin/reclamaciones', [App\Http\Controllers\BookController::class, 'index']);
@@ -38,7 +40,20 @@ Route::post('BookUpdate', [App\Http\Controllers\BookController::class, 'update']
 
 
 
+use Illuminate\Support\Facades\Mail;
 
+Route::get('/test-email', function () {
+    try {
+        Mail::raw('✅ Este es un correo de prueba enviado desde Laravel.', function ($message) {
+            $message->to('logicainformatica18@gmail.com')
+                    ->subject('Correo de Prueba Laravel');
+        });
+
+        return '✅ Correo enviado exitosamente.';
+    } catch (\Exception $e) {
+        return '❌ Error al enviar correo: ' . $e->getMessage();
+    }
+});
 
 use App\Http\Controllers\ChatbotController;
 
