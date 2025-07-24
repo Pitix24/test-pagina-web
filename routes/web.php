@@ -474,6 +474,6 @@ Route::get('/get-thread-messages', function () {
     return response()->json(['messages' => $responseData]);
 });
 
-Route::get('/video1', function () {
+Route::get('/video_presentacion1', function () {
     return view('video.video1');
 });
