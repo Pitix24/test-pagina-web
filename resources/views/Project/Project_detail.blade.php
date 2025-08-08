@@ -607,7 +607,7 @@
                     $subproject = 'subproject_' . $i;
                     $subproject_image = 'subproject_image_' . $i;
                 @endphp
-                @if ($Project->$subproject_image)
+                @if ($Project->$subproject_image && $Project->$subproject!="VILLA PALERMO")
                     <div class="  col-xl-3 col-lg-4 col-md-5 col-sm-8 col-11  py-4 "style="" >
                         <div class="flip-container">
                             {{-- <div class="flip-header">Proyecto Concluido</div> --}}
