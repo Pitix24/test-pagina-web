@@ -19,7 +19,7 @@
     Estimado Cliente,<br>
     Gracias por contactarnos, sus comentarios son muy importantes para nosotros.<br>
     Confirmamos la recepción de su solicitud N.º <strong>{{ $book->ticket }}</strong><br>
-    Dentro del plazo de 15 días calendario daremos respuesta a su requerimiento.
+    Dentro de un plazo no mayor a 15 días hábiles daremos respuesta a su requerimiento.
 </p>
 
 <table>
