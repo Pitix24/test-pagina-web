@@ -2,11 +2,14 @@
 
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\RegistryDetailController;
+use App\Http\Controllers\CustomerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -477,3 +480,4 @@ Route::get('/get-thread-messages', function () {
 Route::get('/video_presentacion1', function () {
     return view('video.video1');
 });
+Route::get('/clientes/export', [CustomerController::class, 'export']);

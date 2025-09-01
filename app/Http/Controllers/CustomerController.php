@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Log;
 use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use App\Notifications\CustomerNotification;
+
+    use App\Exports\CustomersExport;
+use Maatwebsite\Excel\Facades\Excel;
 class CustomerController extends Controller
 {
 
@@ -155,4 +158,10 @@ public function storePublic(Request $request)
         Customer::find($request->id)->delete();
         return $this->create();
     }
+
+
+public function export()
+{
+    return Excel::download(new CustomersExport, 'clientes_nuevos.xlsx');
+}
 }
