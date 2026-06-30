@@ -122,6 +122,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="">
                     <li class="nav-item" style="letter-spacing: 1px;"></li>
+                    @if(!env('APP_MAINTENANCE', false))
                     <li class="nav-item" style="letter-spacing: 1px;">
                         <a class="nav-link" aria-current="page" href="../" style="color: white">
                             <b style="word-spacing: 9px;font-family: Montserrat-SemiBold;" id="inicio">INICIO</b>
@@ -147,6 +148,7 @@
                             <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="contacto">CONTÁCTANOS</span></b>
                         </a>
                     </li>
+                    @endif
 
                     <li class="nav-item ms-2" style="letter-spacing: 1px;">
                         <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-3 p-1 aos-init aos-animate" href="https://plataforma-digital.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
@@ -226,12 +228,14 @@
                 <div class="row">
                     <div class="col-6">
                         <ul class="text-white mt-4">
+                            @if(!env('APP_MAINTENANCE', false))
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
                             </li>
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
                             </li>
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
                                         somos</span></a></li>
+                            @endif
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
                                         frecuentes</span></a></li>
 
@@ -240,10 +244,12 @@
                     </div>
                     <div class="col-6">
                         <ul class="text-white mt-4">
+                            @if(!env('APP_MAINTENANCE', false))
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
                             </li>
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
                             </li>
+                            @endif
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
                                         condiciones</span></a></li>
                             <!-- <li>
@@ -313,6 +319,7 @@
     </div>
     <div class="offcanvas-body ">
         <ul class="navbar-nav  flex-grow-1 text-white">
+            @if(!env('APP_MAINTENANCE', false))
             <li class="nav-item mt-0 text-center">
                 <a class="nav-link fs-3  active" aria-current="page" href="/" id="inicio_2">Inicio</a>
             </li>
@@ -328,6 +335,7 @@
             <li class="nav-item mt-3 text-center">
                 <a class="nav-link fs-3  active" aria-current="page" href="../../contacto" id="contacto_2">Contacto</a>
             </li>
+            @endif
         </ul>
         <a href="https://plataforma-digital.aybarcorp.com" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #FFA726">MI PORTAL</a>
             <br>
