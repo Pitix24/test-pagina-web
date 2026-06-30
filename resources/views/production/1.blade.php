@@ -149,8 +149,8 @@
                     </li>
 
                     <li class="nav-item ms-2" style="letter-spacing: 1px;">
-                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-3 p-1 aos-init aos-animate" href="https://pagos.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
-                            PAGA TU LOTE
+                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-3 p-1 aos-init aos-animate" href="https://plataforma-digital.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
+                            MI PORTAL
                         </a>
                     </li>
                     <li class="nav-item ms-2">
@@ -158,8 +158,11 @@
                            <img src="../../resource/1744048110_67f40fee33aa9Icono%20telefono.png" width="25px" style="margin-top:-3px"><span class="text-white"> 01-9049838 </span>
                         </a>
                     </li>
-
-
+                     <li class="nav-item ms-2" style="letter-spacing: 1px;">
+                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow p-1 aos-init aos-animate" href="https://aybarcorp.com/consulta-tu-codigo" style="font-size: 16px; font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 230px;color:#FFA726;">
+                            <span class="text-white">CONSULTA TU CÓDIGO</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -191,19 +194,25 @@
                         <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5" style="width: 38.5px; height: 57.6503px;">
                     </div>
                     <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
-                        Circunvalación Del Golf Los Incas Av. 134
-
-
+                        Atención al cliente:
                         <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                       Patio Panorama,&nbsp; Piso 19.  Santiago de Surco.</span>
+                       Av. Javier Prado Este 4457 - Santiago de Surco.</span>
                     <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
                         </span>
                     </div>
-
-
-
-
-
+                </div>
+                
+                <div class="row">
+                    <div class="col-12 col-sm-1 text-center">
+                        <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5" style="width: 38.5px; height: 57.6503px;">
+                    </div>
+                    <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
+                        Oficinas Administrativas:
+                        <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                       Circunvalación Del Golf Los Incas Av. 134 Patio Panorama, Piso 19. Santiago de Surco.</span>
+                    <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                        </span>
+                    </div>
                 </div>
 
 
@@ -237,12 +246,19 @@
                             </li>
                             <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
                                         condiciones</span></a></li>
-                            <li>
+                            <!-- <li>
                                 <a style="color:white" onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="libro_reclamaciones"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
                                     reclamaciones</span>
                                     <img src="../../resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
                                 </a>
-                               </li>
+                            </li> -->
+
+                            <li>
+                              <a  href="https://aybarcorp.com/libro_reclamaciones"><span style="font-family:
+                                Montserrat-Regular; font-size: 14px;"></span>
+                                <img src="../../resource/libroreclamaciones.jpg" width="100px" alt="">
+                                </a>
+                            </li>
 
 
 
@@ -313,8 +329,10 @@
                 <a class="nav-link fs-3  active" aria-current="page" href="../../contacto" id="contacto_2">Contacto</a>
             </li>
         </ul>
-        <a href="../../login" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #FFA726">Administrar</a>
-        <br>
+        <a href="https://plataforma-digital.aybarcorp.com" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #FFA726">MI PORTAL</a>
+            <br>
+         <a href="https://aybarcorp.com/consulta-tu-codigo" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #054E5C">Consulta tu código</a>
+         <br>
         <a href="../../logout" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #054E5C">Salir</a>
     </div>
 </div>

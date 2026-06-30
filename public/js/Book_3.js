@@ -146,11 +146,11 @@ function BookStorePublic() {
 
     // 🔴 Validación
     const requiredFields = [
-        'names', 'firstname', 'lastname', 'address',
-        'document_type', 'document_number', 'phone', 'email',
-        'project', 'manzana_lote', 'claimed_amount',
-        'currency_type', 'office_address',
-        'product_or_service_description', 'complaint_details', 'complaint_request'
+        'names', 'firstname', 'lastname',  'email',
+        //'document_type', 'document_number', 'phone',
+        //'project', 'manzana_lote', 'claimed_amount',
+        //'currency_type', 'office_address',
+        //'product_or_service_description', 'complaint_details', 'complaint_request'
     ];
 
     let valid = true;
@@ -168,18 +168,18 @@ function BookStorePublic() {
     });
 
     // Validar radio "claim_type"
-    const claimType = form.querySelector('input[name="claim_type"]:checked');
-    if (!claimType) {
-        alert("Seleccione si es un producto o servicio.");
-        valid = false;
-    }
+    //const claimType = form.querySelector('input[name="claim_type"]:checked');
+    //if (!claimType) {
+    //    alert("Seleccione si es un producto o servicio.");
+    //    valid = false;
+    //}
 
     // Validar radio "complaint_type"
-    const complaintType = form.querySelector('input[name="complaint_type"]:checked');
-    if (!complaintType) {
-        alert("Seleccione el tipo de reclamo: queja o reclamo.");
-        valid = false;
-    }
+    //const complaintType = form.querySelector('input[name="complaint_type"]:checked');
+    //if (!complaintType) {
+    //    alert("Seleccione el tipo de reclamo: queja o reclamo.");
+    //    valid = false;
+    //}
 
     // Si no pasa la validación, detener el envío
     if (!valid) {

@@ -45,7 +45,7 @@ class BookController extends Controller
 try {
     Log::info('📩 Iniciando proceso de reclamo para el correo: ' . $request->email);
 
-    $Book_one = Book::where('email', '=', $request->email)->where('state', '<>', 'Finalizado')->first();
+    //$Book_one = Book::where('email', '=', $request->email)->where('state', '<>', 'Finalizado')->first();
 
     // if ($Book_one) {
     //     Log::info('🟡 Ya existe un reclamo en curso para este correo: ' . $request->email);
@@ -116,7 +116,10 @@ try {
         ], function ($message) use ($Book) {
             $message->to($Book->email)
                     ->subject('📄 Confirmación de Reclamo N.º ' . $Book->ticket)
-                    ->cc('reclamacionesweb@aybarsac.com')
+                    ->cc([
+                        'reclamacionesweb@aybarsac.com',
+                        'notificaciones@aybarcorp.com'
+                    ])
                     ->from('notificaciones@aybarcorp.com', 'Aybar Corp');
         });
 

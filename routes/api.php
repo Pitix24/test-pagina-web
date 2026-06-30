@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\SlinController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
+Route::post('/slin/guardar-evidencia', [SlinController::class, 'postGuardarEvidencia'])->name('slin.guardar-evidencia');
 
 Route::post('/login', [App\Http\Controllers\Api\AuthController::class, 'login']);
 

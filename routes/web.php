@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
-
-
+use App\Http\Controllers\ConsultaCodigoController;
+use App\Http\Controllers\SlinController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +20,16 @@ use Illuminate\Support\Facades\Auth;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/slin/cliente/{dni}', [SlinController::class, 'getCliente'])->name('slin.cliente');
+Route::get('/slin/lotes', [SlinController::class, 'getLotes'])->name('slin.lotes');
+Route::get('/slin/cuotas', [SlinController::class, 'getCuotas'])->name('slin.cuotas');
+Route::get('/slin/estado-cuenta', [SlinController::class, 'getEstadoCuenta'])->name('slin.estado-cuenta');
+Route::get('/slin/cuota-estado-cuenta', [SlinController::class, 'getCuotaEstadoCuenta'])->name('slin.cuota-estado-cuenta');
+Route::get('/slin/comprobante', [SlinController::class, 'getComprobante'])->name('slin.comprobante');
+Route::get('/slin/ticket', [SlinController::class, 'getTicket'])->name('slin.ticket');
+Route::post('/slin/guardar-evidencia', [SlinController::class, 'postGuardarEvidencia'])->name('slin.guardar-evidencia');
+ 
+Route::get('/consulta-tu-codigo', [ConsultaCodigoController::class, 'codigoCliente'])->name('consulta-cliente-cliente');
 
 Route::get('prueba', function () {
     return view("home.home");
@@ -34,8 +44,8 @@ Route::get('/webmail', function () {
 });
 
 
-Route::get('admin/reclamaciones', [App\Http\Controllers\BookController::class, 'index']);
-Route::get('libro_reclamaciones', [App\Http\Controllers\BookController::class, 'indexPublic']);
+Route::get('admin/reclamacion', [App\Http\Controllers\BookController::class, 'index']);
+Route::redirect('libro_reclamaciones', 'https://plataforma-digital.aybarcorp.com/libro-de-reclamaciones', 301);
 Route::post('BookStorePublic', [App\Http\Controllers\BookController::class, 'storePublic'])->middleware('throttle:50,1440');
 Route::post('BookDestroy', [App\Http\Controllers\BookController::class, 'destroy'])->middleware('permission:administrar|eliminar');
 Route::post('BookEdit', [App\Http\Controllers\BookController::class, 'edit'])->middleware('permission:administrar|editar');
@@ -92,7 +102,12 @@ Route::get('/blog', function () {
 Route::get('/contacto', function () {
     return view("production.6");
 });
-
+Route::get('/tratamiento-de-datos-personales', function () {
+    return view("production.7");
+});
+Route::get('/politica-comunicaciones-comerciales', function () {
+    return view("production.8");
+});
 
 
 
