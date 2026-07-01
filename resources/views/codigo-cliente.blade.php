@@ -34,11 +34,6 @@
             animation: slideUpFade 0.8s ease-out;
         }
 
-        .card_consulta:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
-        }
-
         .card_consulta_cabecera {
             background: linear-gradient(135deg, #054E5C 0%, #032d36 100%);
             text-align: center;
