@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateProjectRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Log;
+
 class ProjectController extends Controller
 {
 
@@ -23,12 +24,14 @@ class ProjectController extends Controller
 
     public function public(Request $request)
     {
-        $Project = Project::where("detail", "=", $request->description)->first();
-        if ($Project == "") {
+        $description = $request->route('description');
+        $Project = Project::where('detail', $description)->first();
+
+        if (! $Project) {
             abort(404);
-        } else {
-            return view("Project.Project_detail", compact("Project"));
         }
+
+        return view('Project.Project_detail', compact('Project'));
     }
     /**
      * Show the form for creating a new resource.
@@ -46,76 +49,76 @@ class ProjectController extends Controller
     {
         $Project = new Project;
 
-          // Asignación básica de campos
-          $Project->title = Str::upper($request->title);
-          $Project->description = $request->description;
-          $Project->detail = $request->detail;
-          $Project->location = $request->location;
-          $Project->land = $request->land;
-          $Project->land_count = $request->land_count;
+        // Asignación básica de campos
+        $Project->title = Str::upper($request->title);
+        $Project->description = $request->description;
+        $Project->detail = $request->detail;
+        $Project->location = $request->location;
+        $Project->land = $request->land;
+        $Project->land_count = $request->land_count;
 
-          $Project->country = $request->country;
-
-
-          // Manejo de la imagen principal
-          if ($request->file('image_1') != null) {
-              $Project->image_1 = fileStore($request->file('image_1'), "resource");
-          }
-
-          // Manejo de fotos adicionales (photo_1 a photo_10)
-          for ($i = 1; $i <= 20; $i++) {
-              $photoField = "photo_$i";
-              if ($request->file($photoField) != null) {
-                  $Project->$photoField = fileStore($request->file($photoField), "resource");
-              }
-          }
-
-          // Manejo de mapas (map_1 y map_2)
-          for ($i = 1; $i <= 2; $i++) {
-              $mapField = "map_$i";
-              if ($request->file($mapField) != null) {
-                  $Project->$mapField = fileStore($request->file($mapField), "resource");
-              }
-          }
-
-          // Manejo de videos (video_1 a video_10)
-          for ($i = 1; $i <= 10; $i++) {
-              $videoField = "video_$i";
-
-              $Project->$videoField = $request->$videoField;
-          }
-
-          // Manejo de subproyectos (subproject_1 a subproject_5)
-          for ($i = 1; $i <= 20; $i++) {
-              $subprojectField = "subproject_$i";
-              $subProjectImageField = "subproject_image_$i";
-              $Project->$subprojectField =Str::upper( $request->$subprojectField);
-
-              if ($request->file($subProjectImageField) != null) {
-                  $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
-              }
-          }
+        $Project->country = $request->country;
 
 
+        // Manejo de la imagen principal
+        if ($request->file('image_1') != null) {
+            $Project->image_1 = fileStore($request->file('image_1'), "resource");
+        }
+
+        // Manejo de fotos adicionales (photo_1 a photo_10)
+        for ($i = 1; $i <= 20; $i++) {
+            $photoField = "photo_$i";
+            if ($request->file($photoField) != null) {
+                $Project->$photoField = fileStore($request->file($photoField), "resource");
+            }
+        }
+
+        // Manejo de mapas (map_1 y map_2)
+        for ($i = 1; $i <= 2; $i++) {
+            $mapField = "map_$i";
+            if ($request->file($mapField) != null) {
+                $Project->$mapField = fileStore($request->file($mapField), "resource");
+            }
+        }
+
+        // Manejo de videos (video_1 a video_10)
+        for ($i = 1; $i <= 10; $i++) {
+            $videoField = "video_$i";
+
+            $Project->$videoField = $request->$videoField;
+        }
+
+        // Manejo de subproyectos (subproject_1 a subproject_5)
+        for ($i = 1; $i <= 20; $i++) {
+            $subprojectField = "subproject_$i";
+            $subProjectImageField = "subproject_image_$i";
+            $Project->$subprojectField = Str::upper($request->$subprojectField);
+
+            if ($request->file($subProjectImageField) != null) {
+                $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
+            }
+        }
 
 
 
-          // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
-          for ($i = 1; $i <= 6; $i++) {
-              $touristField = "tourist_$i";
-              $touristImageField = "tourist_image_$i";
 
-              if ($request->$touristField) {
-                  $Project->$touristField = Str::title($request->$touristField);
-              }
 
-              if ($request->file($touristImageField) != null) {
-                  $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
-              }
-          }
+        // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
+        for ($i = 1; $i <= 6; $i++) {
+            $touristField = "tourist_$i";
+            $touristImageField = "tourist_image_$i";
 
-          // Guardar en la base de datos
-          $Project->save();
+            if ($request->$touristField) {
+                $Project->$touristField = Str::title($request->$touristField);
+            }
+
+            if ($request->file($touristImageField) != null) {
+                $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
+            }
+        }
+
+        // Guardar en la base de datos
+        $Project->save();
 
         // Retornar la vista de creación
         return $this->create();
