@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Topic;
+
 class TopicPublicController extends Controller
 {
     /**
@@ -11,26 +12,24 @@ class TopicPublicController extends Controller
      */
     public function index()
     {
-          // Obtener datos desde la base de datos
-    $topics = Topic::all(); // Ejemplo: obtén todos los registros de la tabla `topics`
+        // Obtener datos desde la base de datos
+        $topics = Topic::all(); // Ejemplo: obtén todos los registros de la tabla `topics`
 
-    // Retornar datos en formato JSON
-    return response()->json([
-        'data' => $topics, // El contenido que necesitas enviar
-    ]);
+        // Retornar datos en formato JSON
+        return response()->json([
+            'data' => $topics, // El contenido que necesitas enviar
+        ]);
     }
     public function report(Request $request)
     {
-        $topic = Topic::where("url", "=", $request->url)->first();
-        if ($topic=="") {
+        $url = $request->route('url');
+        $topic = Topic::where('url', $url)->first();
+
+        if (! $topic) {
             abort(404);
         }
-        else{
-            return view("topic.topic_detail", compact("topic"));
 
-        }
-        
-  
+        return view('topic.topic_detail', compact('topic'));
     }
     /**
      * Show the form for creating a new resource.
