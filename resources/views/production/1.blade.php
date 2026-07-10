@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" data-bs-theme="light" data-color-theme="Blue_Theme">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8" />
@@ -14,16 +15,17 @@
     <link rel="stylesheet" href="{{ asset('assets/libs/aos/dist/aos.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/template.css') }}" />
 
-<style>
-    .montserrat-<uniquifier> {
-  font-family: "Montserrat", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-</style>
+    <style>
+        .montserrat-<uniquifier> {
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+    </style>
 
-    {{-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
+    {{--
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> --}}
 
     <script src="{{ asset('js/customer_4.js') }}"></script>
     <script src="{{ asset('js/Book_3.js') }}"></script>
@@ -93,6 +95,7 @@
 
 
 </script>
+
 <body>
 
     <!-- Preloader -->
@@ -103,196 +106,268 @@
 
 
         <!-- INICIO SECCION -->
-<header class="header " id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8); margin-top:-100px;">
+        <header class="header " id="mainHeader" style="  background-color: rgba(0, 0, 0, 0.8); margin-top:-100px;">
 
 
-    <nav class="navbar navbar-expand-lg py-0">
-        <div class="container">
+            <nav class="navbar navbar-expand-lg py-0">
+                <div class="container">
 
-            <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="position-relative navbar-brand me-0 py-0 m-2 aos-init aos-animate" href="/">
-                <img src="../resource/1738076896_logo%20aybar%20blanco.svg" alt="img-fluid" width="80px" style="margin-left:0%">
-            </a>
+                    <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+                        class="position-relative navbar-brand me-0 py-0 m-2 aos-init aos-animate" href="/">
+                        <img src="../resource/1738076896_logo%20aybar%20blanco.svg" alt="img-fluid" width="80px"
+                            style="margin-left:0%">
+                    </a>
 
-            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="ti ti-menu-2 fs-9"></i>
-            </button>
-            <button class="navbar-toggler text-white border-0 p-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <i class="ti ti-menu-2 fs-9"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="">
-                    <li class="nav-item" style="letter-spacing: 1px;"></li>
-                    @if(!env('APP_MAINTENANCE', false))
-                    <li class="nav-item" style="letter-spacing: 1px;">
-                        <a class="nav-link" aria-current="page" href="../" style="color: white">
-                            <b style="word-spacing: 9px;font-family: Montserrat-SemiBold;" id="inicio">INICIO</b>
-                        </a>
-                    </li>
-                    <li class="nav-item" style="letter-spacing: 1px;">
-                        <a class="nav-link" aria-current="page" href="../nosotros" style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
-                            <span style="font-family: Montserrat-SemiBold;" id="nosotros">NOSOTROS</span>
-                        </b></a>
-                    </li>
-                    <li class="nav-item" style="letter-spacing: 1px;">
-                        <a class="nav-link" aria-current="page" href="../proyectos" style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
-                            <span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span>
-                        </b></a>
-                    </li>
-
-                    <li class="nav-item" style="letter-sblogs: 1px;">
-                        <a class="nav-link" aria-current="page" href="../blog" style="color: white">
-                            <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="blog">BLOG</span></b>
-                        </a>                </li>
-                    <li class="nav-item" style="letter-spacing: 1px;">
-                        <a class="nav-link" aria-current="page" href="../contacto" style="color: white">
-                            <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;" id="contacto">CONTÁCTANOS</span></b>
-                        </a>
-                    </li>
-                    @endif
-
-                    <li class="nav-item ms-2" style="letter-spacing: 1px;">
-                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-3 p-1 aos-init aos-animate" href="https://plataforma-digital.aybarcorp.com" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
-                            MI PORTAL
-                        </a>
-                    </li>
-                    <li class="nav-item ms-2">
-                        <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow fs-4 p-1 aos-init aos-animate" href="tel:+5101-9049838" style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
-                           <img src="../../resource/1744048110_67f40fee33aa9Icono%20telefono.png" width="25px" style="margin-top:-3px"><span class="text-white"> 01-9049838 </span>
-                        </a>
-                    </li>
-                     <li class="nav-item ms-2" style="letter-spacing: 1px;">
-                        <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="btn btn-sm btn-hover-shadow p-1 aos-init aos-animate" href="https://aybarcorp.com/consulta-tu-codigo" style="font-size: 16px; font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 230px;color:#FFA726;">
-                            <span class="text-white">CONSULTA TU CÓDIGO</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-@yield('content')
-<div class="container-fluid py-1" style="background-color: #054E5C; margin-top:-10px">
-    <div class="container">
-        <div class="row">
-
-
-            <div class="mt-3 align-content-center col-sm-12 col-md-5 col-lg-6 col-xl-4  text-white" style="font-family: Montserrat-Regular; font-size: 14px;">
-            <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;" class=" text-md-start  text-center"><span style="font-family: Montserrat;"></span>Contáctanos</h3>
-           <div class="row">
-            <div class="col-12 col-sm-1 text-center">
-                <img src="../resource/1738175771_679a751b0390btelefono.svg" style="width: 38.5px; height: 47.6503px;">
-
-            </div>
-            <div class="col-12 col-sm-11 text-center text-sm-start mt-3">
-                (51)
-                01-9049838
-            </div>
-           </div>
-
-
-
-                <div class="row">
-                    <div class="col-12 col-sm-1 text-center">
-                        <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5" style="width: 38.5px; height: 57.6503px;">
-                    </div>
-                    <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
-                        Atención al cliente:
-                        <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                       Av. Javier Prado Este 4457 - Santiago de Surco.</span>
-                    <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-12 col-sm-1 text-center">
-                        <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5" style="width: 38.5px; height: 57.6503px;">
-                    </div>
-                    <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
-                        Oficinas Administrativas:
-                        <span class="" style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                       Circunvalación Del Golf Los Incas Av. 134 Patio Panorama, Piso 19. Santiago de Surco.</span>
-                    <span style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
-                        </span>
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-            <div class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10 aos-init aos-animate">
-                <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
-
-                <div class="row">
-                    <div class="col-6">
-                        <ul class="text-white mt-4">
+                    <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti ti-menu-2 fs-9"></i>
+                    </button>
+                    <button class="navbar-toggler text-white border-0 p-0 shadow-none" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="ti ti-menu-2 fs-9"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-items-center mb-2 mb-lg-0 mx-auto" style="">
+                            <li class="nav-item" style="letter-spacing: 1px;"></li>
                             @if(!env('APP_MAINTENANCE', false))
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="../" style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
+                            <li class="nav-item" style="letter-spacing: 1px;">
+                                <a class="nav-link" aria-current="page" href="../" style="color: white">
+                                    <b style="word-spacing: 9px;font-family: Montserrat-SemiBold;"
+                                        id="inicio">INICIO</b>
+                                </a>
                             </li>
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../contacto"><span style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
+                            <li class="nav-item" style="letter-spacing: 1px;">
+                                <a class="nav-link" aria-current="page" href="../nosotros"
+                                    style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
+                                        <span style="font-family: Montserrat-SemiBold;" id="nosotros">NOSOTROS</span>
+                                    </b></a>
                             </li>
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../../nosotros"><span style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
-                                        somos</span></a></li>
+                            <li class="nav-item" style="letter-spacing: 1px;">
+                                <a class="nav-link" aria-current="page" href="../proyectos"
+                                    style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
+                                        <span style="font-family: Montserrat-SemiBold;" id="proyectos">PROYECTOS</span>
+                                    </b></a>
+                            </li>
+                            <li class="nav-item" style="letter-spacing: 1px;">
+                                <a class="nav-link" aria-current="page" href="{{ url('transparencia') }}"
+                                    style="color: white;word-spacing: 9px;font-family:Montserrat-Regular;"><b>
+                                        <span style="font-family: Montserrat-SemiBold;"
+                                            id="transparencia">TRANSPARENCIA</span>
+                                    </b></a>
+                            </li>
+
+                            <li class="nav-item" style="letter-sblogs: 1px;">
+                                <a class="nav-link" aria-current="page" href="../blog" style="color: white">
+                                    <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;"
+                                            id="blog">BLOG</span></b>
+                                </a>
+                            </li>
+                            <li class="nav-item" style="letter-spacing: 1px;">
+                                <a class="nav-link" aria-current="page" href="../contacto" style="color: white">
+                                    <b style="word-spacing: 9px;"><span style="font-family: Montserrat-SemiBold;"
+                                            id="contacto">CONTÁCTANOS</span></b>
+                                </a>
+                            </li>
                             @endif
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
-                                        frecuentes</span></a></li>
 
-
+                            <li class="nav-item ms-2" style="letter-spacing: 1px;">
+                                <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"
+                                    class="btn btn-sm btn-hover-shadow fs-3 p-1 aos-init aos-animate"
+                                    href="https://plataforma-digital.aybarcorp.com"
+                                    style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:#FFA726; width: 148px;">
+                                    MI PORTAL
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"
+                                    class="btn btn-sm btn-hover-shadow fs-4 p-1 aos-init aos-animate"
+                                    href="tel:+5101-9049838"
+                                    style="color:white;font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 155px;color:#FFA726;">
+                                    <img src="../../resource/1744048110_67f40fee33aa9Icono%20telefono.png" width="25px"
+                                        style="margin-top:-3px"><span class="text-white"> 01-9049838 </span>
+                                </a>
+                            </li>
+                            <li class="nav-item ms-2" style="letter-spacing: 1px;">
+                                <a data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"
+                                    class="btn btn-sm btn-hover-shadow p-1 aos-init aos-animate"
+                                    href="https://aybarcorp.com/consulta-tu-codigo"
+                                    style="font-size: 16px; font-family: Montserrat-SemiBold; border-radius:5px; background-color:rgb(19, 67, 77); width: 230px;color:#FFA726;">
+                                    <span class="text-white">CONSULTA TU CÓDIGO</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-6">
-                        <ul class="text-white mt-4">
-                            @if(!env('APP_MAINTENANCE', false))
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../blog"><span style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
-                            </li>
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="../proyectos"><span style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
-                            </li>
-                            @endif
-                            <li><a onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" style="color:white" href="#"><span style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
-                                        condiciones</span></a></li>
-                            <!-- <li>
+                </div>
+            </nav>
+        </header>
+        @yield('content')
+        <div class="container-fluid py-1" style="background-color: #054E5C; margin-top:-10px">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="mt-3 align-content-center col-sm-12 col-md-5 col-lg-6 col-xl-4  text-white"
+                        style="font-family: Montserrat-Regular; font-size: 14px;">
+                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;"
+                            class=" text-md-start  text-center"><span
+                                style="font-family: Montserrat;"></span>Contáctanos</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm-1 text-center">
+                                <img src="../resource/1738175771_679a751b0390btelefono.svg"
+                                    style="width: 38.5px; height: 47.6503px;">
+
+                            </div>
+                            <div class="col-12 col-sm-11 text-center text-sm-start mt-3">
+                                (51)
+                                01-9049838
+                            </div>
+                        </div>
+
+
+
+                        <div class="row">
+                            <div class="col-12 col-sm-1 text-center">
+                                <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5"
+                                    style="width: 38.5px; height: 57.6503px;">
+                            </div>
+                            <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
+                                Atención al cliente:
+                                <span class=""
+                                    style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                    Av. Javier Prado Este 4457 - Santiago de Surco.</span>
+                                <span
+                                    style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-sm-1 text-center">
+                                <img src="../resource/1738175816_679a75485dd11ubicacion.svg" class="mr-n5"
+                                    style="width: 38.5px; height: 57.6503px;">
+                            </div>
+                            <div class="col-12 col-sm-11 text-center text-sm-start mt-2">
+                                Oficinas Administrativas:
+                                <span class=""
+                                    style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                    Circunvalación Del Golf Los Incas Av. 134 Patio Panorama, Piso 19. Santiago de
+                                    Surco.</span>
+                                <span
+                                    style="color: rgba(var(--bs-white-rgb),var(--bs-text-opacity)); font-family: Montserrat-Regular; font-size: 14px; font-weight: var(--bs-body-font-weight);">
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div
+                        class="col-sm-12 col-md-7 col-lg-6 col-xl-4 justify-content-center text-center text-lg-start text-md-end mt-10 aos-init aos-animate">
+                        <h3 style="margin-top:30px; margin-left:0px; color:#FFA726;">Descubre más</h3>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="text-white mt-4">
+                                    @if(!env('APP_MAINTENANCE', false))
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" href="../"
+                                            style="font-family: Montserrat, sans-serif; font-weight: var(--bs-body-font-weight); color: white;"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Inicio</span></a>
+                                    </li>
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white"
+                                            href="../../contacto"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Contáctanos</span></a>
+                                    </li>
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white"
+                                            href="../../nosotros"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Quiénes
+                                                somos</span></a></li>
+                                    @endif
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white" href="#"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Preguntas
+                                                frecuentes</span></a></li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="text-white mt-4">
+                                    @if(!env('APP_MAINTENANCE', false))
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white"
+                                            href="../blog"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Blog</span></a>
+                                    </li>
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white"
+                                            href="../proyectos"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Proyectos</span></a>
+                                    </li>
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white"
+                                            href="{{ url('transparencia') }}"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Transparencia</span></a>
+                                    </li>
+                                    @endif
+                                    <li><a onmouseover="this.style.color='#FFA726'"
+                                            onmouseout="this.style.color='white'" style="color:white" href="#"><span
+                                                style="font-family: Montserrat-Regular; font-size: 14px;">Términos y
+                                                condiciones</span></a></li>
+                                    <!-- <li>
                                 <a style="color:white" onmouseover="this.style.color='#FFA726'" onmouseout="this.style.color='white'" href="libro_reclamaciones"><span style="font-family: Montserrat-Regular; font-size: 14px;">Libro de
                                     reclamaciones</span>
                                     <img src="../../resource/1738953712_67a653f0b65b8libro%20de%20reclamaciones.svg" width="20px" alt="" style="filter: invert(100%);">
                                 </a>
                             </li> -->
 
-                            <li>
-                              <a  href="https://aybarcorp.com/libro_reclamaciones"><span style="font-family:
+                                    <li>
+                                        <a href="https://aybarcorp.com/libro_reclamaciones"><span style="font-family:
                                 Montserrat-Regular; font-size: 14px;"></span>
-                                <img src="../../resource/libroreclamaciones.jpg" width="100px" alt="">
-                                </a>
-                            </li>
+                                            <img src="../../resource/libroreclamaciones.jpg" width="100px" alt="">
+                                        </a>
+                                    </li>
 
 
 
-                        </ul>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
+                        <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
+                            <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login"
+                                target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px"
+                                    alt="" srcset="" style=""></a>
+                        </div>
+                        <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up"
+                            data-aos-delay="300" data-aos-duration="1000">
+
+
+                            <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img
+                                    src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
+                            </a>
+                            <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img
+                                    src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
+                            </a>
+                            <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img
+                                    src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img
+                                    src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="mt-5 text-center col-xl-4 col-lg-12 mt-lg-5 row align-content-center justify-content-center">
-                <div class="col-lg-3 col-xl-12 col-md-3 col-5 text-center">
-                    <a data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000" href="../login" target="_blank" class="aos-init aos-animate"><img src="../ayba/4.png" width="85px" alt="" srcset="" style=""></a>
-                    </div>
-                <div class="col-lg-7 col-xl-12 col-md-7 col-6 aos-init aos-animate" data-aos="slide-up" data-aos-delay="300" data-aos-duration="1000">
-
-
-                <a href="https://www.facebook.com/aybarcorpoficial" target="_blank"> <img src="../resource/1738176383_679a777f397fdfacebook.svg" width="45px" alt="">
-                </a>
-                <a href="https://www.tiktok.com/@aybarcorpoficial" target="_blank"> <img src="../resource/1738176406_679a7796a9e96tiktok.svg" width="45px" alt="">
-                </a>
-                <a href="https://www.instagram.com/aybarcorpoficial/" target="_blank"> <img src="../resource/1738176389_679a77852f7d9instagram.svg" width="45px" alt="">
-                </a>
-                <a href="https://www.linkedin.com/company/aybarcorpoficial" target="_blank"> <img src="../resource/1738176399_679a778f7de17linkedin.svg" width="45px" alt=""></a>
-                    </div>
-            </div>
         </div>
-    </div>
-</div>
-<footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
+        <footer class="footer-part pt-4 pb-3 py-2" style="background-color:#13434d;">
 
             <div class="container">
                 <div class="justify-content-center">
@@ -301,10 +376,12 @@
 
 
                         <p class="mb-0 text-white">
-                            <a class="d-none d-sm-none d-sm-block d-md-block d-lg-block  d-xl-block display-1 fs-4 text-white text-hover-primary  border-primary" href="https://anthonycode.com/" target="_blank">
+                            <a class="d-none d-sm-none d-sm-block d-md-block d-lg-block  d-xl-block display-1 fs-4 text-white text-hover-primary  border-primary"
+                                href="https://anthonycode.com/" target="_blank">
                                 Copyright 2025, Aybar Corp&nbsp;&nbsp; | &nbsp;&nbsp; Todos los Derechos reservados
                             </a>
-                            <a class="d-sm-none  display-1 fs-2 text-center text-white text-hover-primary  border-primary" href="https://anthonycode.com/" target="_blank">
+                            <a class="d-sm-none  display-1 fs-2 text-center text-white text-hover-primary  border-primary"
+                                href="https://anthonycode.com/" target="_blank">
                                 Copyright 2025, Aybar Corp <br> Todos los Derechos reservados
                             </a>
                         </p>
@@ -313,55 +390,67 @@
                 </div>
             </div>
         </footer>
-<div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #000000e1">
-    <div class="offcanvas-header p-4 text-center justify-content-center">
-        <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" alt="matdash-img" class="img-fluid" width="150">
-    </div>
-    <div class="offcanvas-body ">
-        <ul class="navbar-nav  flex-grow-1 text-white">
-            @if(!env('APP_MAINTENANCE', false))
-            <li class="nav-item mt-0 text-center">
-                <a class="nav-link fs-3  active" aria-current="page" href="/" id="inicio_2">Inicio</a>
-            </li>
-            <li class="nav-item mt-3 text-center">
-                <a class="nav-link fs-3  active" aria-current="page" href="../../nosotros" id="nosotros_2">Nosotros</a>
-            </li>
-            <li class="nav-item mt-3 text-center">
-                <a class="nav-link fs-3  active" aria-current="page" href="../../proyectos" id="proyectos_2">Proyectos</a>
-            </li>
-            <li class="nav-item mt-3 text-center">
-                <a class="nav-link fs-3  active" aria-current="page" href="../../blog" id="blogs_2">Blogs</a>
-            </li>
-            <li class="nav-item mt-3 text-center">
-                <a class="nav-link fs-3  active" aria-current="page" href="../../contacto" id="contacto_2">Contacto</a>
-            </li>
-            @endif
-        </ul>
-        <a href="https://plataforma-digital.aybarcorp.com" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #FFA726">MI PORTAL</a>
-            <br>
-         <a href="https://aybarcorp.com/consulta-tu-codigo" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #054E5C">Consulta tu código</a>
-         <br>
-        <a href="../../logout" class="btn  w-100 py-2 mt-2 text-white" style="background-color: #054E5C">Salir</a>
-    </div>
-</div>
-<!-- FIN SECCION -->
-<!-- Agrega este código dentro del <body> de tu página -->
-
-    {{-- <div class="whatsapp-container">
-        <div class="whatsapp-message">
-            ¿Necesitas ayuda?
+        <div class="offcanvas offcanvas-start matdash-lp-offcanvas" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel" style="background-color: #000000e1">
+            <div class="offcanvas-header p-4 text-center justify-content-center">
+                <img src="../../resource/1738076896_logo%20aybar%20blanco.svg" alt="matdash-img" class="img-fluid"
+                    width="150">
+            </div>
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav  flex-grow-1 text-white">
+                    @if(!env('APP_MAINTENANCE', false))
+                    <li class="nav-item mt-0 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="/" id="inicio_2">Inicio</a>
+                    </li>
+                    <li class="nav-item mt-3 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="../../nosotros"
+                            id="nosotros_2">Nosotros</a>
+                    </li>
+                    <li class="nav-item mt-3 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="../../proyectos"
+                            id="proyectos_2">Proyectos</a>
+                    </li>
+                    <li class="nav-item mt-3 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="{{ url('transparencia') }}"
+                            id="transparencia_2">Transparencia</a>
+                    </li>
+                    <li class="nav-item mt-3 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="../../blog" id="blogs_2">Blogs</a>
+                    </li>
+                    <li class="nav-item mt-3 text-center">
+                        <a class="nav-link fs-3  active" aria-current="page" href="../../contacto"
+                            id="contacto_2">Contacto</a>
+                    </li>
+                    @endif
+                </ul>
+                <a href="https://plataforma-digital.aybarcorp.com" class="btn  w-100 py-2 mt-2 text-white"
+                    style="background-color: #FFA726">MI PORTAL</a>
+                <br>
+                <a href="https://aybarcorp.com/consulta-tu-codigo" class="btn  w-100 py-2 mt-2 text-white"
+                    style="background-color: #054E5C">Consulta tu código</a>
+                <br>
+                <a href="../../logout" class="btn  w-100 py-2 mt-2 text-white"
+                    style="background-color: #054E5C">Salir</a>
+            </div>
         </div>
-        <div class="whatsapp-btn">
-            <a href="https://bit.ly/PGWSP" target="_blank" title="Enviar mensaje por WhatsApp">
+        <!-- FIN SECCION -->
+        <!-- Agrega este código dentro del <body> de tu página -->
 
-                <i class="ti ti-brand-whatsapp"></i>
-            </a>
-        </div>
+        {{-- <div class="whatsapp-container">
+            <div class="whatsapp-message">
+                ¿Necesitas ayuda?
+            </div>
+            <div class="whatsapp-btn">
+                <a href="https://bit.ly/PGWSP" target="_blank" title="Enviar mensaje por WhatsApp">
 
-    </div> --}}
+                    <i class="ti ti-brand-whatsapp"></i>
+                </a>
+            </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
+        </div> --}}
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
         // Obtiene la URL actual
         const currentURL = window.location.pathname;
 
@@ -370,6 +459,7 @@
             "/": ["inicio", "inicio_2"],
             "/nosotros": ["nosotros", "nosotros_2"],
             "/proyectos": ["proyectos","proyectos_2"],
+            "/transparencia": ["transparencia","transparencia_2"],
             "/blog": ["blog","blogs_2"],
             "/contacto": ["contacto","contacto_2"]
         };
@@ -389,7 +479,7 @@
             });
         }
     });
-</script>
+        </script>
 
 
 
@@ -479,24 +569,25 @@
         </style>
 
         {{-- <a href="https://chatgpt.com/g/g-677d6c87f59481919ce07cf6c74af1d8-asistente-aybar-corp" target="_blank">
-<div id="chatbot-container" >
+            <div id="chatbot-container">
 
-        <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy tu asistente virtual
+                <div id="chatbot-label" style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy
+                    tu asistente virtual
 
-        </div>
+                </div>
 
-        <div id="chatbot-button">
-            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
-        </div>
+                <div id="chatbot-button">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712101.png" alt="Chatbot">
+                </div>
 
 
-</div>
-</a> --}}
+            </div>
+        </a> --}}
 
         <!-- Contenedor del botón flotante -->
         {{-- <div id="chatbot-container" onclick="toggleChat()">
             <a href="https://chatgpt.com/g/g-677d6c87f59481919ce07cf6c74af1d8-asistente-aybar-corp" target="_blank">
-                <div id="chatbot-label"style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy
+                <div id="chatbot-label" style="background-color:#007bff;padding:10px;color:white;border-radius:30px">Soy
                     tu asistente virtual</div>
             </a>
             <div id="chatbot-button">
@@ -651,7 +742,7 @@ $(document).ready(function () {
 
 
     </script>
-      <style>
+    <style>
         .subrayado {
             width: 60px;
             /* Tamaño del subrayado */

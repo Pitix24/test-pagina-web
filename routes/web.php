@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\ConsultaCodigoController;
 use App\Http\Controllers\SlinController;
+use App\Models\Project;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,7 @@ use App\Http\Controllers\SlinController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
 Route::get('/slin/cliente/{dni}', [SlinController::class, 'getCliente'])->name('slin.cliente');
 Route::get('/slin/lotes', [SlinController::class, 'getLotes'])->name('slin.lotes');
 Route::get('/slin/cuotas', [SlinController::class, 'getCuotas'])->name('slin.cuotas');
@@ -31,10 +33,18 @@ Route::post('/slin/guardar-evidencia', [SlinController::class, 'postGuardarEvide
 Route::get('/consulta-tu-codigo', [ConsultaCodigoController::class, 'codigoCliente'])->name('consulta-cliente-cliente');
 
 if (env('APP_MAINTENANCE', false)) {
-    Route::get('prueba', function () { return redirect('/'); });
-    Route::get('/ejecutar', function () { return redirect('/'); });
-    Route::get('/usuarios', function () { return redirect('/'); });
-    Route::get('/webmail', function () { return redirect('/'); });
+    Route::get('prueba', function () {
+        return redirect('/');
+    });
+    Route::get('/ejecutar', function () {
+        return redirect('/');
+    });
+    Route::get('/usuarios', function () {
+        return redirect('/');
+    });
+    Route::get('/webmail', function () {
+        return redirect('/');
+    });
 } else {
     Route::get('prueba', function () {
         return view("home.home");
@@ -42,7 +52,7 @@ if (env('APP_MAINTENANCE', false)) {
     Route::get('/ejecutar', [App\Http\Controllers\GenerateProductionController::class, 'generate']);
     Route::get('/usuarios', [App\Http\Controllers\UserController::class, 'index']);
     Route::get('/webmail', function () {
-     return  redirect ("https://newplanetape10481.dedicados.cl/roundcube/");
+        return  redirect("https://newplanetape10481.dedicados.cl/roundcube/");
     });
 }
 
@@ -61,14 +71,18 @@ use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ChatbotController;
 
 if (env('APP_MAINTENANCE', false)) {
-    Route::get('/test-email', function () { return redirect('/'); });
-    Route::get('/chat', function () { return redirect('/'); });
+    Route::get('/test-email', function () {
+        return redirect('/');
+    });
+    Route::get('/chat', function () {
+        return redirect('/');
+    });
 } else {
     Route::get('/test-email', function () {
         try {
             Mail::raw('✅ Este es un correo de prueba enviado desde Laravel.', function ($message) {
                 $message->to('logicainformatica18@gmail.com')
-                        ->subject('Correo de Prueba Laravel');
+                    ->subject('Correo de Prueba Laravel');
             });
 
             return '✅ Correo enviado exitosamente.';
@@ -90,78 +104,114 @@ if (env('APP_MAINTENANCE', false)) {
 
 Auth::routes();
 
-   //USUARIOS
-   if (env('APP_MAINTENANCE', false)) {
-       Route::get('home_demo/plantilla', function () { return redirect('/'); });
-       Route::get('home_demo/inicio', function () { return redirect('/'); });
-       Route::get('home_demo/nosotros', function () { return redirect('/'); });
-       Route::get('home_demo/proyectos', function () { return redirect('/'); });
-       Route::get('home_demo/blog', function () { return redirect('/'); });
-       Route::get('home_demo/contacto', function () { return redirect('/'); });
-       Route::get('blog/topicPublic', function () { return redirect('/'); });
-   } else {
-       Route::get('home_demo/plantilla', [App\Http\Controllers\Home_demoController::class, 'template']);
-       Route::get('home_demo/inicio', [App\Http\Controllers\Home_demoController::class, 'home']);
-       Route::get('home_demo/nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
-       Route::get('home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
-       Route::get('home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
-       Route::get('home_demo/contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
-       Route::get('blog/topicPublic', [App\Http\Controllers\TopicPublicController::class, 'index']);
-   }
+//USUARIOS
+if (env('APP_MAINTENANCE', false)) {
+    Route::get('home_demo/plantilla', function () {
+        return redirect('/');
+    });
+    Route::get('home_demo/inicio', function () {
+        return redirect('/');
+    });
+    Route::get('home_demo/nosotros', function () {
+        return redirect('/');
+    });
+    Route::get('home_demo/proyectos', function () {
+        return redirect('/');
+    });
+    Route::get('home_demo/blog', function () {
+        return redirect('/');
+    });
+    Route::get('home_demo/contacto', function () {
+        return redirect('/');
+    });
+    Route::get('blog/topicPublic', function () {
+        return redirect('/');
+    });
+} else {
+    Route::get('home_demo/plantilla', [App\Http\Controllers\Home_demoController::class, 'template']);
+    Route::get('home_demo/inicio', [App\Http\Controllers\Home_demoController::class, 'home']);
+    Route::get('home_demo/nosotros', [App\Http\Controllers\Home_demoController::class, 'us']);
+    Route::get('home_demo/proyectos', [App\Http\Controllers\Home_demoController::class, 'project']);
+    Route::get('home_demo/blog', [App\Http\Controllers\Home_demoController::class, 'blog']);
+    Route::get('home_demo/contacto', [App\Http\Controllers\Home_demoController::class, 'contact']);
+    Route::get('blog/topicPublic', [App\Http\Controllers\TopicPublicController::class, 'index']);
+}
 
-    if (env('APP_MAINTENANCE', false)) {
-        Route::get('/', function () {
-            return view("production.maintenance");
-        });
-        Route::get('/nosotros', function () { return redirect('/'); });
-        Route::get('/proyectos', function () { return redirect('/'); });
-        Route::get('/blog', function () { return redirect('/'); });
-        Route::get('/contacto', function () { return redirect('/'); });
-        Route::get('/tratamiento-de-datos-personales', function () { return redirect('/'); });
-        Route::get('/politica-comunicaciones-comerciales', function () { return redirect('/'); });
-    } else {
-        Route::get('/', function () {
-            return view("production.2");
-        });
-        Route::get('/nosotros', function () {
-            return view("production.3");
-        });
-        Route::get('/proyectos', function () {
-            return view("production.4");
-        });
-        Route::get('/blog', function () {
-            return view("production.5");
-        });
-        Route::get('/contacto', function () {
-            return view("production.6");
-        });
-        Route::get('/tratamiento-de-datos-personales', function () {
-            return view("production.7");
-        });
-        Route::get('/politica-comunicaciones-comerciales', function () {
-            return view("production.8");
-        });
-    }
+if (env('APP_MAINTENANCE', false)) {
+    Route::get('/', function () {
+        return view("production.maintenance");
+    });
+    Route::get('/nosotros', function () {
+        return redirect('/');
+    });
+    Route::get('/proyectos', function () {
+        return redirect('/');
+    });
+    Route::get('/transparencia', function () {
+        return redirect('/');
+    });
+    Route::get('/blog', function () {
+        return redirect('/');
+    });
+    Route::get('/contacto', function () {
+        return redirect('/');
+    });
+    Route::get('/tratamiento-de-datos-personales', function () {
+        return redirect('/');
+    });
+    Route::get('/politica-comunicaciones-comerciales', function () {
+        return redirect('/');
+    });
+} else {
+    Route::get('/', function () {
+        return view("production.2");
+    });
+    Route::get('/nosotros', function () {
+        return view("production.3");
+    });
+    Route::get('/proyectos', function () {
+        return view("production.4");
+    });
+    Route::get('/transparencia', function () {
+        $projects = Project::orderBy('title')->get();
+
+        return view("production.9", compact('projects'));
+    });
+    Route::get('/blog', function () {
+        return view("production.5");
+    });
+    Route::get('/contacto', function () {
+        return view("production.6");
+    });
+    Route::get('/tratamiento-de-datos-personales', function () {
+        return view("production.7");
+    });
+    Route::get('/politica-comunicaciones-comerciales', function () {
+        return view("production.8");
+    });
+}
 
 
 
 
 
 
-   if (env('APP_MAINTENANCE', false)) {
-       Route::get('ProjectList', function () { return redirect('/'); });
-   } else {
-       Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
-   }
-   Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:200,1440');
+if (env('APP_MAINTENANCE', false)) {
+    Route::get('ProjectList', function () {
+        return redirect('/');
+    });
+} else {
+    Route::get('ProjectList', [App\Http\Controllers\CustomerController::class, 'ProjectList']);
+}
+Route::post('CustomerStorePublic', [App\Http\Controllers\CustomerController::class, 'storePublic'])->middleware('throttle:200,1440');
 
-    if (env('APP_MAINTENANCE', false)) {
-        Route::get('blog/{url}', function () {
-            return redirect('/');
-        });
-    } else {
-        Route::get('blog/{url}', [App\Http\Controllers\TopicPublicController::class, 'report']);
-    }
+if (env('APP_MAINTENANCE', false)) {
+    Route::get('blog/{url}', function () {
+        return redirect('/');
+    });
+} else {
+    Route::get('blog/{url}', [App\Http\Controllers\TopicPublicController::class, 'report']);
+}
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
@@ -212,7 +262,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('ProjectDetailUpdate', [App\Http\Controllers\ProjectDetailController::class, 'update'])->middleware('permission:administrar|actualizar');
 
 
-   //ADMINISTRATIVO
+    //ADMINISTRATIVO
     Route::get('home_edit/plantilla', [App\Http\Controllers\Home_edit::class, 'template'])->middleware('permission:administrar|editar_plantilla');
     Route::get('home_edit/inicio', [App\Http\Controllers\Home_edit::class, 'home'])->middleware('permission:administrar|editar_inicio');
     Route::get('home_edit/nosotros', [App\Http\Controllers\Home_edit::class, 'us'])->middleware('permission:administrar|editar_nosotros');
@@ -275,7 +325,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('home_edit/generate/{module}', [App\Http\Controllers\GenerateProductionController::class, 'generate'])->middleware('permission:administrar|actualizar');
 
 
-    Route::get('admin/documentacion', function(){
+    Route::get('admin/documentacion', function () {
         return view('doc.documentation');
     });
 });
@@ -331,7 +381,6 @@ Route::get('/auth/google/callback', function () {
     } catch (Exception $e) {
         dd($e->getMessage());
     }
-
 });
 
 Route::controller(App\Http\Controllers\UserController::class)->group(function () {
@@ -339,8 +388,6 @@ Route::controller(App\Http\Controllers\UserController::class)->group(function ()
     Route::post('users-import', 'import')->name('users.import');
 
     Route::post('userImportGoogle', 'importGoogle');
-
-
 });
 
 
@@ -392,7 +439,9 @@ Route::get('login/microsoft/callback', function () {
 
 
 if (env('APP_MAINTENANCE', false)) {
-    Route::get('google_sheet', function () { return redirect('/'); });
+    Route::get('google_sheet', function () {
+        return redirect('/');
+    });
 } else {
     Route::get('google_sheet', [\App\Http\Controllers\GoogleSheetController::class, 'index']);
 }
@@ -541,8 +590,12 @@ Route::get('/get-thread-messages', function () {
 });
 
 if (env('APP_MAINTENANCE', false)) {
-    Route::get('/video_presentacion1', function () { return redirect('/'); });
-    Route::get('/clientes/export', function () { return redirect('/'); });
+    Route::get('/video_presentacion1', function () {
+        return redirect('/');
+    });
+    Route::get('/clientes/export', function () {
+        return redirect('/');
+    });
 } else {
     Route::get('/video_presentacion1', function () {
         return view('video.video1');
