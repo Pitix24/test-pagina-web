@@ -3,11 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Project;
-use App\Http\Requests\StoreProjectRequest;
-use App\Http\Requests\UpdateProjectRequest;
+use App\Models\SubProject;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
-use Illuminate\Support\Facades\Log;
 
 class ProjectController extends Controller
 {
@@ -17,15 +15,14 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        //
-        $Project = Project::orderBy('id', 'DESC')->get();
+        $Project = Project::with('subProjects')->orderBy('id', 'DESC')->get();
         return view("Project.Project", compact("Project"));
     }
 
     public function public(Request $request)
     {
         $description = $request->route('description');
-        $Project = Project::where('detail', $description)->first();
+        $Project = Project::with('subProjects.docs')->where('detail', $description)->first();
 
         if (! $Project) {
             abort(404);
@@ -38,7 +35,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        $Project = Project::orderBy('id', 'DESC')->get();
+        $Project = Project::with('subProjects')->orderBy('id', 'DESC')->get();
         return view("Project.Projecttable", compact("Project"));
     }
 
@@ -65,14 +62,6 @@ class ProjectController extends Controller
             $Project->image_1 = fileStore($request->file('image_1'), "resource");
         }
 
-        // Manejo de fotos adicionales (photo_1 a photo_10)
-        for ($i = 1; $i <= 20; $i++) {
-            $photoField = "photo_$i";
-            if ($request->file($photoField) != null) {
-                $Project->$photoField = fileStore($request->file($photoField), "resource");
-            }
-        }
-
         // Manejo de mapas (map_1 y map_2)
         for ($i = 1; $i <= 2; $i++) {
             $mapField = "map_$i";
@@ -88,20 +77,8 @@ class ProjectController extends Controller
             $Project->$videoField = $request->$videoField;
         }
 
-        // Manejo de subproyectos (subproject_1 a subproject_5)
-        for ($i = 1; $i <= 20; $i++) {
-            $subprojectField = "subproject_$i";
-            $subProjectImageField = "subproject_image_$i";
-            $Project->$subprojectField = Str::upper($request->$subprojectField);
-
-            if ($request->file($subProjectImageField) != null) {
-                $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
-            }
-        }
-
-
-
-
+        $Project->save();
+        $this->syncSubProjects($Project, $request);
 
         // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
         for ($i = 1; $i <= 6; $i++) {
@@ -138,7 +115,7 @@ class ProjectController extends Controller
      */
     public function edit(Request $request)
     {
-        $Project = Project::find($request->id);
+        $Project = Project::with('subProjects')->find($request->id);
         return $Project;
     }
 
@@ -149,7 +126,7 @@ class ProjectController extends Controller
     {
         $Project = Project::find($request->id);
         // Asignación básica de campos
-        $Project->title = $request->title;
+        $Project->title = Str::upper($request->title);
         $Project->description = $request->description;
         $Project->detail = $request->detail;
         $Project->location = $request->location;
@@ -162,14 +139,6 @@ class ProjectController extends Controller
         // Manejo de la imagen principal
         if ($request->file('image_1') != null) {
             $Project->image_1 = fileStore($request->file('image_1'), "resource");
-        }
-
-        // Manejo de fotos adicionales (photo_1 a photo_10)
-        for ($i = 1; $i <= 20; $i++) {
-            $photoField = "photo_$i";
-            if ($request->file($photoField) != null) {
-                $Project->$photoField = fileStore($request->file($photoField), "resource");
-            }
         }
 
         // Manejo de mapas (map_1 y map_2)
@@ -187,47 +156,23 @@ class ProjectController extends Controller
             $Project->$videoField = $request->$videoField;
         }
 
-        // Manejo de subproyectos (subproject_1 a subproject_5)
-        for ($i = 1; $i <= 20; $i++) {
-            $subprojectField = "subproject_$i";
-            $subProjectImageField = "subproject_image_$i";
-            $Project->$subprojectField =  $request->$subprojectField;
-
-            if ($request->file($subProjectImageField) != null) {
-                $Project->$subProjectImageField = fileStore($request->file($subProjectImageField), "resource");
-            }
-        }
-
-
-
-
+        $Project->save();
+        $this->syncSubProjects($Project, $request);
 
         // Manejo de turistas y sus imágenes (tourist_1 a tourist_6 y tourist_image_1 a tourist_image_6)
+        for ($i = 1; $i <= 6; $i++) {
+            $touristField = "tourist_$i";
+            $touristImageField = "tourist_image_$i";
 
-
-        try {
-            for ($i = 1; $i <= 6; $i++) {
-                $touristField = "tourist_$i";
-                $touristImageField = "tourist_image_$i";
-
-                Log::info("Procesando: $touristField, $touristImageField");
-
-                if ($request->$touristField) {
-                    Log::info("Asignando valor a $touristField: " . $request->$touristField);
-                    $Project->$touristField = $request->$touristField;
-                } else {
-                    Log::warning("Campo $touristField vacío o no enviado.");
-                }
-
-                if ($request->hasFile($touristImageField)) {
-                    Log::info("Subiendo archivo para $touristImageField.");
-                    $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
-                } else {
-                    Log::warning("Archivo $touristImageField no encontrado en la solicitud.");
-                }
+            if ($request->$touristField) {
+                $Project->$touristField = Str::title($request->$touristField);
+            } else {
+                $Project->$touristField = null;
             }
-        } catch (\Exception $e) {
-            Log::error("Error en la asignación de datos del turista: " . $e->getMessage());
+
+            if ($request->hasFile($touristImageField)) {
+                $Project->$touristImageField = fileStore($request->file($touristImageField), "resource");
+            }
         }
 
 
@@ -243,7 +188,7 @@ class ProjectController extends Controller
      */
     public function destroy(Request $request)
     {
-        $table = Project::find($request["id"]);
+        $table = Project::with('subProjects.docs')->find($request["id"]);
 
         if ($table) {
             // Eliminar imagen principal
@@ -257,14 +202,6 @@ class ProjectController extends Controller
                 }
             }
 
-            // Eliminar fotos
-            for ($i = 1; $i <= 10; $i++) {
-                $photoField = "photo_$i";
-                if ($table->$photoField) {
-                    fileDestroy($table->$photoField, "resource");
-                }
-            }
-
             // Eliminar imágenes turísticas
             for ($i = 1; $i <= 6; $i++) {
                 $touristImageField = "tourist_image_$i";
@@ -273,11 +210,13 @@ class ProjectController extends Controller
                 }
             }
 
-            // Eliminar imágenes subproject
-            for ($i = 1; $i <= 6; $i++) {
-                $subProjectImageField = "subproject_image_$i";
-                if ($table->$subProjectImageField) {
-                    fileDestroy($table->$subProjectImageField, "resource");
+            foreach ($table->subProjects as $subProject) {
+                $this->deleteSubProjectAssets($subProject);
+
+                foreach ($subProject->docs as $doc) {
+                    if ($doc->pdf) {
+                        fileDestroy($doc->pdf, "resource");
+                    }
                 }
             }
             // Eliminar el registro de la base de datos
@@ -286,5 +225,74 @@ class ProjectController extends Controller
 
         // Redirigir al método create
         return $this->create();
+    }
+
+    private function syncSubProjects(Project $project, Request $request): void
+    {
+        $existingSubProjects = $project->subProjects()->orderBy('id')->get()->values();
+
+        for ($i = 1; $i <= 20; $i++) {
+            $subprojectField = "subproject_$i";
+            $subProjectImageField = "subproject_image_$i";
+            $photoField = "photo_$i";
+
+            $subProject = $existingSubProjects->get($i - 1);
+            $name = trim((string) $request->input($subprojectField, ''));
+
+            $hasImage = $request->hasFile($subProjectImageField);
+            $hasPhoto = $request->hasFile($photoField);
+
+            if (! $subProject && $name === '' && ! $hasImage && ! $hasPhoto) {
+                continue;
+            }
+
+            if (! $subProject) {
+                $subProject = new SubProject();
+                $subProject->project_id = $project->id;
+            }
+
+            $subProject->name = $name !== '' ? Str::upper($name) : null;
+
+            if ($hasImage) {
+                $newImage = fileStore($request->file($subProjectImageField), 'resource');
+                $this->deleteStoredFile($subProject->image);
+                $subProject->image = $newImage;
+            }
+
+            if ($hasPhoto) {
+                $newPhoto = fileStore($request->file($photoField), 'resource');
+                $this->deleteStoredFile($subProject->photo);
+                $subProject->photo = $newPhoto;
+            }
+
+            if (blank($subProject->name) && blank($subProject->image) && blank($subProject->photo)) {
+                if ($subProject->exists) {
+                    $this->deleteSubProjectAssets($subProject);
+                    $subProject->delete();
+                }
+
+                continue;
+            }
+
+            $subProject->save();
+        }
+
+        $existingSubProjects->slice(20)->each(function (SubProject $subProject) {
+            $this->deleteSubProjectAssets($subProject);
+            $subProject->delete();
+        });
+    }
+
+    private function deleteSubProjectAssets(SubProject $subProject): void
+    {
+        $this->deleteStoredFile($subProject->image);
+        $this->deleteStoredFile($subProject->photo);
+    }
+
+    private function deleteStoredFile(?string $path): void
+    {
+        if ($path) {
+            fileDestroy($path, 'resource');
+        }
     }
 }

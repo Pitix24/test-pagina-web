@@ -248,23 +248,19 @@
     <div class="sliding-wrapper position-relative overflow-hidden">
         <div class="slide-background d-flex w-100">
 
-            @for ($i = 0; $i <= 20; $i++) <div class="slide" style="margin-right:1px;height:400px">
-
-
-                @php
-                $photo = 'photo_' . $i;
-                @endphp
-                @if ($Project->$photo)
-                <img src="../resource/{{ $Project->$photo }}" class="hidden" style="border-radius:0px" height="100%"
+            @foreach ($Project->subProjects as $subproject)
+            @if ($subproject->photo)
+            <div class="slide" style="margin-right:1px;height:400px">
+                <img src="../resource/{{ $subproject->photo }}" class="hidden" style="border-radius:0px" height="100%"
                     alt="Imagen 1">
-                @endif
+            </div>
+            @endif
+            @endforeach
+
+
+
         </div>
-        @endfor
-
-
-
     </div>
-</div>
 </div>
 
 
@@ -587,39 +583,38 @@
 
 <div class="mt-4" style="width:100%">
     <div class="row text-center justify-content-center d-flex align-content-center" style="width:100%">
-        @for ($i = 1; $i <= 20; $i++) @php $subproject='subproject_' . $i; $subproject_image='subproject_image_' . $i;
-            @endphp @if ($Project->$subproject_image && $Project->$subproject!="VILLA PALERMO")
-            <div class="  col-xl-3 col-lg-4 col-md-5 col-sm-8 col-11  py-4 subproject-anchor" id="subproject-{{ $i }}"
-                style="">
-                <div class="flip-container">
-                    {{-- <div class="flip-header">Proyecto Concluido</div> --}}
-                    <div class="flip-inner">
-                        <div class="flip-front"
-                            style="background: linear-gradient(to top, #03424E 10%, transparent 50%), url('../resource/{{ $Project->$subproject_image }}') no-repeat center/cover;">
-                        </div>
-                        <div class="flip-back">
-
-                            <button>
-                                <h4>PÓRTICO DE INGRESO</h4>
-                                <h4>SEGURIDAD 24/7</h4>
-                                <h4>PARQUES</h4>
-                                <h4>CERCO VIVO</h4>
-                                <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                    style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
-                                    <b>VER MÁS »</b>
-                                </a>
-                            </button>
-                        </div>
+        @foreach ($Project->subProjects as $subproject)
+        @if ($subproject->image && $subproject->name && $subproject->name !== 'VILLA PALERMO')
+        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8 col-11 py-4 subproject-anchor"
+            id="subproject-{{ $loop->iteration }}" style="">
+            <div class="flip-container">
+                <div class="flip-inner">
+                    <div class="flip-front"
+                        style="background: linear-gradient(to top, #03424E 10%, transparent 50%), url('../resource/{{ $subproject->image }}') no-repeat center/cover;">
                     </div>
-                    <div class="flip-footer">
-                        <span>{{ $Project->$subproject }}</span>
+                    <div class="flip-back">
 
-                        <img src="../resource/1736870177_Flecha%20naranja.png" width="50px" alt="" srcset="">
+                        <button>
+                            <h4>PÓRTICO DE INGRESO</h4>
+                            <h4>SEGURIDAD 24/7</h4>
+                            <h4>PARQUES</h4>
+                            <h4>CERCO VIVO</h4>
+                            <a class="btn btn-hover-shadow" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                style="color:white; border-radius:100px; background-color:#FFA726; width: 190px;">
+                                <b>VER MÁS »</b>
+                            </a>
+                        </button>
                     </div>
                 </div>
+                <div class="flip-footer">
+                    <span>{{ $subproject->name }}</span>
+
+                    <img src="../resource/1736870177_Flecha%20naranja.png" width="50px" alt="" srcset="">
+                </div>
             </div>
-            @endif
-            @endfor
+        </div>
+        @endif
+        @endforeach
 
     </div>
 </div>

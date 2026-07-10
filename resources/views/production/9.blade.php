@@ -208,160 +208,157 @@ use Illuminate\Support\Str;
                 $projectSlug = $project->detail ?: Str::slug($project->title);
                 $subprojects = [];
 
-                for ($i = 1; $i <= 20; $i++) { $subproject=$project->{'subproject_' . $i};
-                    $subprojectImage = $project->{'subproject_image_' . $i};
+                foreach ($project->subProjects as $subproject) {
+                if (!empty($subproject->name) && !empty($subproject->image) && $subproject->name !== 'VILLA PALERMO') {
+                $subprojects[] = [
+                'index' => count($subprojects) + 1,
+                'label' => $subproject->name,
+                'image' => $subproject->image,
+                'slug' => Str::slug($subproject->name),
+                ];
+                }
+                }
 
-                    if (!empty($subproject) && !empty($subprojectImage) && $subproject !== 'VILLA PALERMO') {
-                    $subprojects[] = [
-                    'index' => $i,
-                    'label' => $subproject,
-                    'image' => $subprojectImage,
-                    'slug' => Str::slug($subproject),
-                    ];
-                    }
-                    }
+                $documentTypes = [
+                ['key' => 'legal', 'label' => 'Legales'],
+                ['key' => 'proyecto', 'label' => 'Proyecto'],
+                ['key' => 'casos', 'label' => 'Casos'],
+                ['key' => 'anexos', 'label' => 'Anexos'],
+                ];
+                @endphp
 
-                    $documentTypes = [
-                    ['key' => 'legal', 'label' => 'Legales'],
-                    ['key' => 'proyecto', 'label' => 'Proyecto'],
-                    ['key' => 'casos', 'label' => 'Casos'],
-                    ['key' => 'anexos', 'label' => 'Anexos'],
-                    ];
-                    @endphp
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-{{ $projectId }}">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-{{ $projectId }}" aria-expanded="false"
+                            aria-controls="collapse-{{ $projectId }}">
+                            {{ $project->title ?? 'Proyecto sin nombre' }}
+                        </button>
+                    </h2>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="heading-{{ $projectId }}">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapse-{{ $projectId }}" aria-expanded="false"
-                                aria-controls="collapse-{{ $projectId }}">
-                                {{ $project->title ?? 'Proyecto sin nombre' }}
-                            </button>
-                        </h2>
+                    <div id="collapse-{{ $projectId }}" class="accordion-collapse collapse"
+                        aria-labelledby="heading-{{ $projectId }}" data-bs-parent="#transparencyAccordion">
+                        <div class="accordion-body bg-white">
+                            <div class="row g-4 align-items-start">
+                                <div class="col-12">
+                                    <p class="mb-3 subproject-description">
+                                        {{ Str::limit($project->description ?? 'Información disponible del
+                                        proyecto.', 260) }}
+                                    </p>
 
-                        <div id="collapse-{{ $projectId }}" class="accordion-collapse collapse"
-                            aria-labelledby="heading-{{ $projectId }}" data-bs-parent="#transparencyAccordion">
-                            <div class="accordion-body bg-white">
-                                <div class="row g-4 align-items-start">
-                                    <div class="col-12">
-                                        <p class="mb-3 subproject-description">
-                                            {{ Str::limit($project->description ?? 'Información disponible del
-                                            proyecto.', 260) }}
-                                        </p>
+                                    <a href="{{ url('proyectos/' . $projectSlug) }}" class="btn btn-sm px-3 py-2"
+                                        style="background:#ffa726; color:#ffffff; border-radius:999px; font-family:Montserrat-SemiBold;">
+                                        Ver proyecto
+                                    </a>
 
-                                        <a href="{{ url('proyectos/' . $projectSlug) }}" class="btn btn-sm px-3 py-2"
-                                            style="background:#ffa726; color:#ffffff; border-radius:999px; font-family:Montserrat-SemiBold;">
-                                            Ver proyecto
-                                        </a>
+                                    <div class="mt-4 project-submenu-badge">
+                                        <span class="project-submenu-dot"></span>
+                                        Subproyectos
+                                    </div>
 
-                                        <div class="mt-4 project-submenu-badge">
-                                            <span class="project-submenu-dot"></span>
-                                            Subproyectos
-                                        </div>
+                                    <div class="accordion mt-3" id="subprojectAccordion-{{ $projectId }}">
+                                        @forelse ($subprojects as $subproject)
+                                        @php
+                                        $subId = $projectId . '-sub-' . $subproject['index'];
+                                        $subprojectFileBase = 'documentos/transparencia/' . $projectSlug . '/' .
+                                        $subproject['slug'];
+                                        @endphp
 
-                                        <div class="accordion mt-3" id="subprojectAccordion-{{ $projectId }}">
-                                            @forelse ($subprojects as $subproject)
-                                            @php
-                                            $subId = $projectId . '-sub-' . $subproject['index'];
-                                            $subprojectFileBase = 'documentos/transparencia/' . $projectSlug . '/' .
-                                            $subproject['slug'];
-                                            @endphp
+                                        <div class="subproject-card mb-3">
+                                            <h2 class="accordion-header" id="heading-{{ $subId }}">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapse-{{ $subId }}"
+                                                    aria-expanded="false" aria-controls="collapse-{{ $subId }}">
+                                                    {{ $subproject['label'] }}
+                                                </button>
+                                            </h2>
 
-                                            <div class="subproject-card mb-3">
-                                                <h2 class="accordion-header" id="heading-{{ $subId }}">
-                                                    <button class="accordion-button collapsed" type="button"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#collapse-{{ $subId }}" aria-expanded="false"
-                                                        aria-controls="collapse-{{ $subId }}">
-                                                        {{ $subproject['label'] }}
-                                                    </button>
-                                                </h2>
+                                            <div id="collapse-{{ $subId }}" class="accordion-collapse collapse"
+                                                aria-labelledby="heading-{{ $subId }}"
+                                                data-bs-parent="#subprojectAccordion-{{ $projectId }}">
+                                                <div class="p-3 p-lg-4">
+                                                    <div class="row g-4">
+                                                        <div class="col-12 col-xl-5">
+                                                            <div class="subproject-media h-100">
+                                                                <img src="{{ asset('resource/' . $subproject['image']) }}"
+                                                                    alt="{{ $subproject['label'] }}">
+                                                            </div>
+                                                        </div>
 
-                                                <div id="collapse-{{ $subId }}" class="accordion-collapse collapse"
-                                                    aria-labelledby="heading-{{ $subId }}"
-                                                    data-bs-parent="#subprojectAccordion-{{ $projectId }}">
-                                                    <div class="p-3 p-lg-4">
-                                                        <div class="row g-4">
-                                                            <div class="col-12 col-xl-5">
-                                                                <div class="subproject-media h-100">
-                                                                    <img src="{{ asset('resource/' . $subproject['image']) }}"
-                                                                        alt="{{ $subproject['label'] }}">
-                                                                </div>
+                                                        <div class="col-12 col-xl-7">
+                                                            <div class="mb-3">
+                                                                <h4 class="mb-1"
+                                                                    style="font-family: Montserrat-SemiBold; color:#03424e;">
+                                                                    {{ $subproject['label'] }}</h4>
+                                                                <p class="mb-0 subproject-description">
+                                                                    {{ $project->description ?? 'Bloque referencial
+                                                                    del subproyecto. Aquí puedes mostrar texto
+                                                                    legal, avances, casos y documentos
+                                                                    relacionados.' }}
+                                                                </p>
                                                             </div>
 
-                                                            <div class="col-12 col-xl-7">
-                                                                <div class="mb-3">
-                                                                    <h4 class="mb-1"
-                                                                        style="font-family: Montserrat-SemiBold; color:#03424e;">
-                                                                        {{ $subproject['label'] }}</h4>
-                                                                    <p class="mb-0 subproject-description">
-                                                                        {{ $project->description ?? 'Bloque referencial
-                                                                        del subproyecto. Aquí puedes mostrar texto
-                                                                        legal, avances, casos y documentos
-                                                                        relacionados.' }}
-                                                                    </p>
-                                                                </div>
+                                                            <div class="document-grid">
+                                                                @foreach ($documentTypes as $documentType)
+                                                                @php
+                                                                $pdfRelativePath = $subprojectFileBase . '/' .
+                                                                $documentType['key'] . '.pdf';
+                                                                $pdfExists =
+                                                                file_exists(public_path($pdfRelativePath));
+                                                                @endphp
 
-                                                                <div class="document-grid">
-                                                                    @foreach ($documentTypes as $documentType)
-                                                                    @php
-                                                                    $pdfRelativePath = $subprojectFileBase . '/' .
-                                                                    $documentType['key'] . '.pdf';
-                                                                    $pdfExists =
-                                                                    file_exists(public_path($pdfRelativePath));
-                                                                    @endphp
-
-                                                                    @if ($pdfExists)
-                                                                    <a class="document-card"
-                                                                        href="{{ asset($pdfRelativePath) }}"
-                                                                        target="_blank" rel="noopener noreferrer">
-                                                                        <div class="d-flex align-items-start gap-2">
-                                                                            <span class="document-icon">PDF</span>
-                                                                            <div>
-                                                                                <div class="document-title">{{
-                                                                                    $documentType['label'] }}</div>
-                                                                                <div class="document-subtitle">Descargar
-                                                                                    documento</div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </a>
-                                                                    @else
-                                                                    <div class="document-card disabled">
-                                                                        <div class="d-flex align-items-start gap-2">
-                                                                            <span class="document-icon">PDF</span>
-                                                                            <div>
-                                                                                <div class="document-title">{{
-                                                                                    $documentType['label'] }}</div>
-                                                                                <div class="document-subtitle">Pendiente
-                                                                                    de carga</div>
-                                                                            </div>
+                                                                @if ($pdfExists)
+                                                                <a class="document-card"
+                                                                    href="{{ asset($pdfRelativePath) }}" target="_blank"
+                                                                    rel="noopener noreferrer">
+                                                                    <div class="d-flex align-items-start gap-2">
+                                                                        <span class="document-icon">PDF</span>
+                                                                        <div>
+                                                                            <div class="document-title">{{
+                                                                                $documentType['label'] }}</div>
+                                                                            <div class="document-subtitle">Descargar
+                                                                                documento</div>
                                                                         </div>
                                                                     </div>
-                                                                    @endif
-                                                                    @endforeach
+                                                                </a>
+                                                                @else
+                                                                <div class="document-card disabled">
+                                                                    <div class="d-flex align-items-start gap-2">
+                                                                        <span class="document-icon">PDF</span>
+                                                                        <div>
+                                                                            <div class="document-title">{{
+                                                                                $documentType['label'] }}</div>
+                                                                            <div class="document-subtitle">Pendiente
+                                                                                de carga</div>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
+                                                                @endif
+                                                                @endforeach
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            @empty
-                                            <div class="alert alert-light border mb-0"
-                                                style="border-radius: 16px; color:#37555c;">
-                                                No hay subproyectos registrados para este proyecto.
-                                            </div>
-                                            @endforelse
                                         </div>
+                                        @empty
+                                        <div class="alert alert-light border mb-0"
+                                            style="border-radius: 16px; color:#37555c;">
+                                            No hay subproyectos registrados para este proyecto.
+                                        </div>
+                                        @endforelse
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    @empty
-                    <div class="p-4 text-center">
-                        <h3 style="font-family: Montserrat-SemiBold; color:#03424e;">No hay proyectos registrados</h3>
-                        <p class="mb-0" style="color:#37555c;">Agrega proyectos en la BD para que aparezcan aquí.</p>
-                    </div>
-                    @endforelse
+                </div>
+                @empty
+                <div class="p-4 text-center">
+                    <h3 style="font-family: Montserrat-SemiBold; color:#03424e;">No hay proyectos registrados</h3>
+                    <p class="mb-0" style="color:#37555c;">Agrega proyectos en la BD para que aparezcan aquí.</p>
+                </div>
+                @endforelse
             </div>
         </div>
     </div>
